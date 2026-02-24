@@ -42,9 +42,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   icons: {
-    icon: [{ url: FAVICON_URL }],
-    shortcut: [{ url: FAVICON_URL }],
-    apple: [{ url: FAVICON_URL }],
+    icon: [{ url: FAVICON_URL, type: "image/png", sizes: "32x32" }],
+    shortcut: [{ url: FAVICON_URL, type: "image/png" }],
+    apple: [{ url: FAVICON_URL, type: "image/png", sizes: "180x180" }],
   },
   openGraph: {
     type: "website",
@@ -97,6 +97,10 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
+        <link rel="icon" href={FAVICON_URL} type="image/png" sizes="32x32" />
+        <link rel="shortcut icon" href={FAVICON_URL} type="image/png" />
+        <link rel="apple-touch-icon" href={FAVICON_URL} sizes="180x180" />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

@@ -42,7 +42,7 @@ const faqSections = [
     items: [
       {
         q: "¿En qué formato entrego el vídeo?",
-        a: "Normalmente en MP4 (H.264) listo para web y redes. Si necesitas otros formatos (MOV, ProRes, DCP) o resoluciones concretas, lo indicamos en el presupuesto.",
+        a: "Normalmente en .MP4 (H.264) listo para web y redes. Si necesitas otros formatos (MOV, ProRes, DCP) o resoluciones concretas, lo indicamos en el presupuesto.",
       },
       {
         q: "¿Haces versiones para redes sociales?",
