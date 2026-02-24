@@ -6,6 +6,9 @@ import Header from "@/components/Header"
 import PageTransition from "@/components/PageTransition"
 import { DEFAULT_OG_IMAGE, SITE_URL } from "@/lib/seo"
 
+const FAVICON_URL =
+  "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/0a4bxjgj0xSqIihE9ktHzjeng%20(2).png?alt=media&token=ead483f1-9cd5-4169-9e3d-810307334885"
+
 const manrope = Manrope({
   subsets: ["latin"],
   display: "swap",
@@ -37,6 +40,11 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: "/",
+  },
+  icons: {
+    icon: [{ url: FAVICON_URL }],
+    shortcut: [{ url: FAVICON_URL }],
+    apple: [{ url: FAVICON_URL }],
   },
   openGraph: {
     type: "website",
