@@ -2,10 +2,12 @@
 
 import { useRef } from "react"
 import Image from "next/image"
-import { motion, useScroll, useTransform } from "framer-motion"
+import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion"
 import { ease, stagger } from "@/lib/motion"
+import { VIDEO_POSTER_URL } from "@/lib/media"
 
 export default function Hero() {
+  const prefersReducedMotion = useReducedMotion()
   const sectionRef = useRef<HTMLElement>(null)
   const { scrollYProgress } = useScroll({
     target: sectionRef,
@@ -17,6 +19,7 @@ export default function Hero() {
   const overlayOpacity = useTransform(scrollYProgress, [0, 0.4], [0.56, 0.82])
   const contentOpacity = useTransform(scrollYProgress, [0, 0.35], [1, 0])
   const contentY = useTransform(scrollYProgress, [0, 0.35], [0, 60])
+  const allowParallax = !prefersReducedMotion
 
   const container = {
     hidden: { opacity: 0 },
@@ -55,27 +58,28 @@ export default function Hero() {
       {/* Background with parallax */}
       <div className="absolute inset-0">
         <motion.div
-          style={{ y: bgY, scale: bgScale }}
+          style={allowParallax ? { y: bgY, scale: bgScale } : undefined}
           className="absolute inset-0 h-[120%] w-full -top-[10%]"
         >
           <Image
-            src="https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/Disen%CC%83o%20sin%20ti%CC%81tulo.png?alt=media&token=ae45c05e-35c1-40c4-a89a-b7a738811667"
+            src={VIDEO_POSTER_URL}
             alt=""
             fill
             priority
+            quality={72}
             sizes="100vw"
-            className="h-full w-full scale-105 object-cover blur-[4px]"
+            className="h-full w-full scale-105 object-cover blur-[7px] opacity-70"
           />
         </motion.div>
         <motion.div
-          style={{ opacity: overlayOpacity }}
-          className="pointer-events-none absolute inset-0 bg-black/60"
+          style={allowParallax ? { opacity: overlayOpacity } : undefined}
+          className="pointer-events-none absolute inset-0 bg-black/72"
         />
       </div>
 
       {/* Content — fades up on scroll */}
       <motion.div
-        style={{ opacity: contentOpacity, y: contentY }}
+        style={allowParallax ? { opacity: contentOpacity, y: contentY } : undefined}
         className="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center sm:px-6"
       >
         <motion.div

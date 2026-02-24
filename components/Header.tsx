@@ -84,7 +84,7 @@ export default function Header() {
         >
           <Link
             href="/"
-            className="flex min-h-[44px] min-w-[44px] items-center rounded font-inter text-[10px] font-medium uppercase tracking-normal text-white/88 transition-colors duration-300 hover:text-white sm:text-[11px] focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+            className="flex min-h-[44px] min-w-[44px] items-center rounded font-inter text-[10px] font-medium uppercase text-white/88 transition-colors duration-300 hover:text-white sm:text-[11px] focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
           >
             daniel acero©
           </Link>
@@ -97,7 +97,7 @@ export default function Header() {
                   <Link
                     href={item.href}
                     className={clsx(
-                      "group relative rounded py-1 font-inter text-[10px] uppercase tracking-normal text-white/72 transition-colors duration-300 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black xl:text-[11px]",
+                      "group relative rounded py-1 font-inter text-[10px] uppercase text-white/72 transition-colors duration-300 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black xl:text-[11px]",
                       isActive && "text-white"
                     )}
                   >
@@ -115,7 +115,7 @@ export default function Header() {
             <li>
               <Link
                 href="/contacto"
-                className="group relative rounded border border-white/14 bg-white/[0.03] px-3 py-2 font-inter text-[10px] uppercase tracking-normal text-white/92 transition-all duration-300 hover:border-white/25 hover:bg-white/[0.06] hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black xl:text-[11px]"
+                className="group relative rounded border border-white/14 bg-white/[0.03] px-3 py-2 font-inter text-[10px] uppercase text-white/92 transition-all duration-300 hover:border-white/25 hover:bg-white/[0.06] hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black xl:text-[11px]"
               >
                 Cuéntame tu proyecto
               </Link>
@@ -186,7 +186,7 @@ export default function Header() {
                       href={item.href}
                       onClick={() => setMobileOpen(false)}
                       className={clsx(
-                        "py-2 font-inter text-[18px] uppercase tracking-[-0.03em] transition-colors duration-300 sm:text-[21px]",
+                        "py-2 font-inter text-[18px] uppercase transition-colors duration-300 sm:text-[21px]",
                         isActive ? "text-white" : "text-white/70 hover:text-white"
                       )}
                     >
@@ -203,7 +203,7 @@ export default function Header() {
                 <Link
                   href="/contacto"
                   onClick={() => setMobileOpen(false)}
-                  className="flex min-h-[44px] items-center rounded border border-white/15 bg-white/[0.03] px-5 py-3 font-inter text-[16px] uppercase tracking-normal text-white transition-all duration-300 hover:border-white/30 hover:bg-white/[0.06] hover:opacity-95 sm:text-[18px]"
+                  className="flex min-h-[44px] items-center rounded border border-white/15 bg-white/[0.03] px-5 py-3 font-inter text-[16px] uppercase text-white transition-all duration-300 hover:border-white/30 hover:bg-white/[0.06] hover:opacity-95 sm:text-[18px]"
                 >
                   Cuéntame tu proyecto
                 </Link>

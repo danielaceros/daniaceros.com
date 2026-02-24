@@ -6,7 +6,6 @@ export const metadata: Metadata = buildMetadata({
   title: "Politica de privacidad",
   description: "Politica de privacidad del sitio web de Daniel Acero.",
   path: "/politica-de-privacidad",
-  noIndex: true,
 })
 
 export default function PrivacyPage() {
@@ -22,7 +21,7 @@ export default function PrivacyPage() {
             En cumplimiento de lo dispuesto en el Reglamento (UE) 2016/679 (RGPD) y la Ley Orgánica 3/2018 de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD), se informa a los usuarios de este sitio web de los siguientes aspectos relacionados con el tratamiento de sus datos personales.
           </p>
 
-          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase tracking-[-0.06em] text-[14px] sm:text-[15px] text-white">
+          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase text-[14px] sm:text-[15px] text-white">
             1. Responsable del tratamiento
           </h2>
           <ul className="space-y-1">
@@ -41,7 +40,7 @@ export default function PrivacyPage() {
             </li>
           </ul>
 
-          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase tracking-[-0.06em] text-[14px] sm:text-[15px] text-white">
+          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase text-[14px] sm:text-[15px] text-white">
             2. Datos personales que se recogen
           </h2>
           <p>
@@ -53,7 +52,7 @@ export default function PrivacyPage() {
             <li>Información incluida en los mensajes enviados a través de formularios o WhatsApp</li>
           </ul>
 
-          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase tracking-[-0.06em] text-[14px] sm:text-[15px] text-white">
+          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase text-[14px] sm:text-[15px] text-white">
             3. Finalidad del tratamiento de los datos
           </h2>
           <ul className="list-disc pl-4 space-y-1">
@@ -62,7 +61,7 @@ export default function PrivacyPage() {
             <li>Responder consultas enviadas a través de los canales de contacto.</li>
           </ul>
 
-          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase tracking-[-0.06em] text-[14px] sm:text-[15px] text-white">
+          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase text-[14px] sm:text-[15px] text-white">
             4. Legitimación para el tratamiento
           </h2>
           <ul className="list-disc pl-4 space-y-1">
@@ -70,14 +69,14 @@ export default function PrivacyPage() {
             <li>La ejecución de un contrato o precontrato.</li>
           </ul>
 
-          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase tracking-[-0.06em] text-[14px] sm:text-[15px] text-white">
+          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase text-[14px] sm:text-[15px] text-white">
             5. Conservación de los datos
           </h2>
           <p>
             Los datos personales se conservarán durante el tiempo necesario para cumplir con la finalidad para la que fueron recabados y para determinar posibles responsabilidades derivadas del tratamiento.
           </p>
 
-          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase tracking-[-0.06em] text-[14px] sm:text-[15px] text-white">
+          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase text-[14px] sm:text-[15px] text-white">
             6. Derechos de los usuarios
           </h2>
           <ul className="list-disc pl-4 space-y-1">
@@ -99,14 +98,14 @@ export default function PrivacyPage() {
             </a>
           </p>
 
-          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase tracking-[-0.06em] text-[14px] sm:text-[15px] text-white">
+          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase text-[14px] sm:text-[15px] text-white">
             7. Medidas de seguridad
           </h2>
           <p>
             El responsable ha adoptado las medidas técnicas y organizativas necesarias para garantizar la seguridad de los datos personales y evitar su alteración, pérdida, tratamiento o acceso no autorizado.
           </p>
 
-          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase tracking-[-0.06em] text-[14px] sm:text-[15px] text-white">
+          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase text-[14px] sm:text-[15px] text-white">
             8. Cambios en la política de privacidad
           </h2>
           <p>

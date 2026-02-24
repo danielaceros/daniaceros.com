@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useRef } from "react"
+import { VIDEO_POSTER_URL } from "@/lib/media"
 
 const items = [
   { title: "FIFA",  video: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/A1.mp4?alt=media&token=12073558-3af3-459a-bf2a-e76441a8c42e", href: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/A1.mp4?alt=media&token=12073558-3af3-459a-bf2a-e76441a8c42e"},
@@ -106,16 +107,19 @@ function MarqueeCard({
     >
       <video
         src={video}
+        autoPlay
         muted
         loop
         playsInline
-        preload="none"
+        preload="metadata"
         className="
           pointer-events-none absolute inset-0 h-full w-full object-cover
           transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]
           group-hover:scale-[1.04]
         "
-      />
+      >
+        <track kind="captions" srcLang="es" label="Sin dialogo" src="/captions/silent.vtt" />
+      </video>
       <div className="pointer-events-none absolute inset-0 bg-black/30" />
       <span
         className="

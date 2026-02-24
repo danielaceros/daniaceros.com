@@ -111,7 +111,7 @@ export default function ServicesPage() {
         </div>
 
         <section className="space-y-8 border-t border-white/10 pt-10 mt-4">
-          <h2 className="font-inter font-semibold uppercase tracking-[-0.06em] text-[18px] sm:text-[20px]">
+          <h2 className="font-inter font-semibold uppercase text-[18px] sm:text-[20px]">
             ¿Hablamos de tu proyecto?
           </h2>
           <p className="max-w-3xl font-inter text-[13px] sm:text-[14px] leading-[1.7] text-white/72">

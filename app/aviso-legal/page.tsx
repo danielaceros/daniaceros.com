@@ -7,7 +7,6 @@ export const metadata: Metadata = buildMetadata({
   title: "Aviso legal",
   description: "Informacion legal del sitio web de Daniel Acero.",
   path: "/aviso-legal",
-  noIndex: true,
 })
 
 export default function AvisoLegalPage() {
@@ -16,7 +15,7 @@ export default function AvisoLegalPage() {
       <article className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
         <h1
           className="
-            mb-12 font-inter font-semibold uppercase tracking-[-0.08em]
+            mb-12 font-inter font-semibold uppercase
             text-[32px] sm:text-[42px] lg:text-[56px]
           "
         >
@@ -44,7 +43,7 @@ export default function AvisoLegalPage() {
           </div>
 
           <div>
-            <h2 className="mb-2 font-inter font-semibold uppercase tracking-[-0.06em] text-white">
+            <h2 className="mb-2 font-inter font-semibold uppercase text-white">
               Condiciones de uso
             </h2>
             <p>
@@ -60,7 +59,7 @@ export default function AvisoLegalPage() {
           </div>
 
           <div>
-            <h2 className="mb-2 font-inter font-semibold uppercase tracking-[-0.06em] text-white">
+            <h2 className="mb-2 font-inter font-semibold uppercase text-white">
               Propiedad intelectual e industrial
             </h2>
             <p>
@@ -72,7 +71,7 @@ export default function AvisoLegalPage() {
           </div>
 
           <div>
-            <h2 className="mb-2 font-inter font-semibold uppercase tracking-[-0.06em] text-white">
+            <h2 className="mb-2 font-inter font-semibold uppercase text-white">
               Responsabilidad
             </h2>
             <p>
@@ -83,7 +82,7 @@ export default function AvisoLegalPage() {
           </div>
 
           <div>
-            <h2 className="mb-2 font-inter font-semibold uppercase tracking-[-0.06em] text-white">
+            <h2 className="mb-2 font-inter font-semibold uppercase text-white">
               Legislación aplicable y jurisdicción
             </h2>
             <p>

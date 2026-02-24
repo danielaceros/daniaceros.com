@@ -6,7 +6,6 @@ export const metadata: Metadata = buildMetadata({
   title: "Politica de cookies",
   description: "Politica de cookies del sitio web de Daniel Acero.",
   path: "/politica-de-cookies",
-  noIndex: true,
 })
 
 export default function CookiesPage() {
@@ -22,14 +21,14 @@ export default function CookiesPage() {
             Esta web, titularidad de Daniel Acero Sagredo (KLIP), utiliza cookies propias y de terceros para mejorar la experiencia de navegación, analizar el uso del sitio y ofrecer contenidos adaptados a los intereses del usuario.
           </p>
 
-          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase tracking-[-0.06em] text-[14px] sm:text-[15px] text-white">
+          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase text-[14px] sm:text-[15px] text-white">
             1. ¿Qué son las cookies?
           </h2>
           <p>
             Las cookies son pequeños archivos de texto que se almacenan en el dispositivo del usuario cuando visita una página web. Permiten recordar información sobre su visita, como el idioma preferido u otras opciones de configuración.
           </p>
 
-          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase tracking-[-0.06em] text-[14px] sm:text-[15px] text-white">
+          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase text-[14px] sm:text-[15px] text-white">
             2. Tipos de cookies utilizadas
           </h2>
           <ul className="list-disc pl-4 space-y-2">
@@ -47,7 +46,7 @@ export default function CookiesPage() {
             </li>
           </ul>
 
-          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase tracking-[-0.06em] text-[14px] sm:text-[15px] text-white">
+          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase text-[14px] sm:text-[15px] text-white">
             3. Cookies de terceros
           </h2>
           <p>
@@ -60,7 +59,7 @@ export default function CookiesPage() {
             <li>Microsoft Clarity</li>
           </ul>
 
-          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase tracking-[-0.06em] text-[14px] sm:text-[15px] text-white">
+          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase text-[14px] sm:text-[15px] text-white">
             4. Gestión y configuración de cookies
           </h2>
           <p>
@@ -113,14 +112,14 @@ export default function CookiesPage() {
             </li>
           </ul>
 
-          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase tracking-[-0.06em] text-[14px] sm:text-[15px] text-white">
+          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase text-[14px] sm:text-[15px] text-white">
             5. Consentimiento
           </h2>
           <p>
             Al acceder a este sitio web por primera vez, el usuario verá un aviso sobre el uso de cookies. Si continúa navegando, se considerará que acepta su uso conforme a lo descrito en la presente política.
           </p>
 
-          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase tracking-[-0.06em] text-[14px] sm:text-[15px] text-white">
+          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase text-[14px] sm:text-[15px] text-white">
             6. Actualización de la política de cookies
           </h2>
           <p>

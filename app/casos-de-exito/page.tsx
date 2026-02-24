@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import ContactCTA from "@/components/ContactCTA"
 import { projects } from "@/data/projects"
+import { VIDEO_POSTER_URL } from "@/lib/media"
 import { buildMetadata } from "@/lib/seo"
 
 // Casos de éxito: slug debe existir en data/projects; category es la etiqueta del diseño
@@ -37,7 +38,7 @@ export default function CasosDeExitoPage() {
     <main className="min-h-screen bg-[#0a0a0a] text-white">
       <section className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pt-20 sm:pt-28 pb-16 sm:pb-20">
         <header className="mb-14">
-          <h1 className="font-inter font-semibold uppercase tracking-[-0.08em] text-[28px] leading-[1.05] sm:text-[36px] lg:text-[48px]">
+          <h1 className="font-inter font-semibold uppercase text-[28px] leading-[1.05] sm:text-[36px] lg:text-[48px]">
             Casos de éxito
           </h1>
         </header>
@@ -45,7 +46,7 @@ export default function CasosDeExitoPage() {
         <div className="space-y-16 font-inter">
           {casesWithProject.map(({ slug, category, project }, index) => (
             <article key={slug} className="space-y-4">
-              <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase tracking-[0.08em] text-white/90">
+              <h2 className="font-inter text-[15px] sm:text-[17px] font-bold uppercase text-white/95">
                 Caso de éxito {index + 1}: {project.title.split("—")[0].trim()} ({category.toUpperCase()})
               </h2>
               <Link
@@ -55,14 +56,17 @@ export default function CasosDeExitoPage() {
               >
                 <video
                   src={project.video}
+                  autoPlay
                   muted
                   loop
                   playsInline
-                  preload="none"
+                  preload={index < 2 ? "auto" : "metadata"}
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
-                />
+                >
+                  <track kind="captions" srcLang="es" label="Sin dialogo" src="/captions/silent.vtt" />
+                </video>
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-                <span className="pointer-events-none absolute bottom-4 left-4 right-4 font-inter text-[15px] font-semibold uppercase tracking-[-0.04em] text-white sm:text-[17px]">
+                <span className="pointer-events-none absolute bottom-4 left-4 right-4 font-inter text-[15px] font-semibold uppercase text-white sm:text-[17px]">
                   {project.title.split("—")[0].trim()}
                 </span>
               </Link>
@@ -73,7 +77,7 @@ export default function CasosDeExitoPage() {
           ))}
 
           <section className="space-y-4 border-t border-white/10 pt-12">
-            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase tracking-[0.08em] text-white/90">
+            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase text-white/90">
               ¿Por qué funcionan estos proyectos?
             </h2>
             <p className="text-[13px] sm:text-[14px] leading-[1.75] text-white/85">

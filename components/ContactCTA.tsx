@@ -24,7 +24,7 @@ export default function ContactCTA() {
           hidden: { opacity: 0, y: 20 },
           visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: ease.expo } },
         }}
-        className="mb-4 font-display text-[30px] font-semibold uppercase leading-[1.02] tracking-[-0.03em] sm:mb-5 sm:text-[40px] lg:text-[48px]"
+        className="mb-4 font-display text-[30px] font-semibold uppercase leading-[1.02] sm:mb-5 sm:text-[40px] lg:text-[48px]"
       >
         ¿Hablamos de tu proyecto?
       </motion.h2>
@@ -34,7 +34,7 @@ export default function ContactCTA() {
           hidden: { opacity: 0, y: 16 },
           visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: ease.expo } },
         }}
-        className="mx-auto mb-12 max-w-2xl font-inter text-[13px] leading-[1.75] tracking-normal text-white/68 sm:text-[14px]"
+        className="mx-auto mb-12 max-w-2xl font-inter text-[13px] leading-[1.75] text-white/68 sm:text-[14px]"
       >
         Si estás valorando crear un vídeo para tu empresa, cuéntame qué tienes en mente
         y te digo en minutos si encaja y cómo lo haría. Te respondo personalmente. Sin compromiso.
@@ -47,12 +47,15 @@ export default function ContactCTA() {
         }}
         className="mx-auto max-w-3xl"
       >
-        <WhatsAppButton
-          label="Cuéntame tu proyecto"
-          phone="34711255496"
-          message="Hola Dani, vengo del anuncio. Mi empresa es ___ y estoy valorando crear un vídeo para ___. ¿Crees que encaja para mi caso?"
-          className="w-full rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
-        />
+        <div className="relative">
+          <div className="pointer-events-none absolute -inset-2 rounded-2xl bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.26),rgba(255,255,255,0)_68%)] opacity-70 blur-lg transition-opacity duration-500" />
+          <WhatsAppButton
+            label="Cuéntame tu proyecto"
+            phone="34711255496"
+            message="Hola Dani, vengo del anuncio. Mi empresa es ___ y estoy valorando crear un vídeo para ___. ¿Crees que encaja para mi caso?"
+            className="relative z-10 h-[60px] rounded-xl border-white/30 bg-gradient-to-b from-white to-white/95 px-6 shadow-[0_12px_36px_rgba(255,255,255,0.14)] hover:shadow-[0_18px_48px_rgba(255,255,255,0.2)]"
+          />
+        </div>
       </motion.div>
 
       <motion.footer

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { ease } from "@/lib/motion"
+import { VIDEO_POSTER_URL } from "@/lib/media"
 
 type Props = {
   title: string
@@ -32,7 +33,9 @@ export default function ProjectHero({ title, video, href }: Props) {
           playsInline
           preload="metadata"
           className="h-full w-full scale-105 object-cover blur-[1.5px] transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] hover:scale-[1.08]"
-        />
+        >
+          <track kind="captions" srcLang="es" label="Sin dialogo" src="/captions/silent.vtt" />
+        </video>
         <div className="absolute inset-0 bg-black/55 transition-opacity duration-500 hover:bg-black/46" />
       </a>
 

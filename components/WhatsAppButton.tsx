@@ -50,22 +50,24 @@ export default function WhatsAppButton({
     <motion.button
       type="button"
       onClick={onClick}
-      whileHover={{ y: -1.5 }}
+      whileHover={{ y: -2 }}
       whileTap={{ scale: 0.985 }}
       transition={{ duration: 0.28, ease: ease.expo }}
       className={clsx(
-        "group inline-flex h-14 min-h-[3.5rem] w-full items-center justify-between rounded-md border border-white/15 bg-white px-5 text-left text-[#0a0a0a] shadow-[0_8px_30px_rgba(255,255,255,0.08)] transition-all duration-300 hover:border-white/35 hover:shadow-[0_14px_40px_rgba(255,255,255,0.13)] focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black",
+        "group relative isolate inline-flex h-14 min-h-[3.5rem] w-full cursor-pointer items-center justify-between overflow-hidden rounded-lg border border-white/20 bg-white px-5 text-left text-[#0a0a0a] shadow-[0_10px_32px_rgba(255,255,255,0.1)] transition-all duration-300 hover:border-white/40 hover:shadow-[0_18px_46px_rgba(255,255,255,0.16)] focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black",
         className
       )}
     >
-      <span className="pr-4 font-inter text-[12px] font-semibold uppercase tracking-normal sm:text-[13px]">
+      <span className="pointer-events-none absolute inset-0 rounded-[inherit] bg-gradient-to-b from-white to-white/95" />
+      <span className="pointer-events-none absolute -left-1/3 top-[-120%] h-[340%] w-1/3 rotate-[16deg] bg-gradient-to-r from-transparent via-white/70 to-transparent opacity-0 blur-sm transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:left-[120%] group-hover:opacity-100" />
+      <span className="relative z-10 pr-4 font-inter text-[12px] font-semibold uppercase sm:text-[13px]">
         {label}
       </span>
       <motion.span
         initial={{ x: 0, y: 0 }}
-        whileHover={{ x: 2.5, y: -2.5 }}
+        whileHover={{ x: 3, y: -3 }}
         transition={{ duration: 0.25, ease: ease.expo }}
-        className="text-[15px] leading-none text-[#0a0a0a] transition-transform duration-300 group-hover:translate-x-[1px] group-hover:-translate-y-[1px]"
+        className="relative z-10 text-[15px] leading-none text-[#0a0a0a] transition-transform duration-300 group-hover:translate-x-[1px] group-hover:-translate-y-[1px]"
       >
         ↗
       </motion.span>

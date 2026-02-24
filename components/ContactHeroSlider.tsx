@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import { VIDEO_POSTER_URL } from "@/lib/media"
 
 
 const slides = [
@@ -42,7 +43,9 @@ export default function ContactHeroSlider() {
               autoPlay={i === index}
               preload={i === index ? "metadata" : "none"}
               className="h-full w-full object-cover"
-            />
+            >
+              <track kind="captions" srcLang="es" label="Sin dialogo" src="/captions/silent.vtt" />
+            </video>
             <div className="absolute inset-0 bg-black/30" />
             <span className="absolute bottom-4 left-4 font-inter text-xs font-semibold uppercase tracking-[-0.08em] text-white">
               {s.title}
