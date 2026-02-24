@@ -61,9 +61,7 @@ export default function PortfolioCard({ title, video, href, index = 0 }: Props) 
         playsInline
         preload={index < 2 ? "metadata" : "none"}
         className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.035]"
-      >
-        <track kind="captions" srcLang="es" label="Sin dialogo" src="/captions/silent.vtt" />
-      </video>
+      />
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-100" />
       <span className="pointer-events-none absolute bottom-4 left-4 right-4 font-display text-[16px] font-semibold uppercase leading-tight text-white/95 line-clamp-2 sm:bottom-5 sm:left-5 sm:right-5 sm:text-[19px]">
         {title}

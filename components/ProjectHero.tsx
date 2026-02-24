@@ -64,9 +64,7 @@ export default function ProjectHero({ title, video }: Props) {
             preload="metadata"
             onLoadedData={() => setIsHeroReady(true)}
             className="h-full w-full scale-105 object-cover blur-[1.5px] transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] hover:scale-[1.08]"
-          >
-            <track kind="captions" srcLang="es" label="Sin dialogo" src="/captions/silent.vtt" />
-          </video>
+          />
           <div
             className={`pointer-events-none absolute inset-0 flex items-center justify-center bg-black/30 transition-opacity duration-300 ${
               isHeroReady ? "opacity-0" : "opacity-100"
@@ -126,9 +124,7 @@ export default function ProjectHero({ title, video }: Props) {
                   preload="metadata"
                   onLoadedData={() => setIsModalReady(true)}
                   className="block max-h-[88svh] max-w-[94vw] bg-black object-contain"
-                >
-                  <track kind="captions" srcLang="es" label="Sin dialogo" src="/captions/silent.vtt" />
-                </video>
+                />
                 <div
                   className={`pointer-events-none absolute inset-0 flex items-center justify-center bg-black/35 transition-opacity duration-300 ${
                     isModalReady ? "opacity-0" : "opacity-100"

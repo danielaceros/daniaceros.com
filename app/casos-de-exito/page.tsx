@@ -2,7 +2,6 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import ContactCTA from "@/components/ContactCTA"
 import { projects } from "@/data/projects"
-import { VIDEO_POSTER_URL } from "@/lib/media"
 import { buildMetadata } from "@/lib/seo"
 
 // Casos de éxito: slug debe existir en data/projects; category es la etiqueta del diseño
@@ -62,9 +61,7 @@ export default function CasosDeExitoPage() {
                   playsInline
                   preload={index < 2 ? "auto" : "metadata"}
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
-                >
-                  <track kind="captions" srcLang="es" label="Sin dialogo" src="/captions/silent.vtt" />
-                </video>
+                />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                 <span className="pointer-events-none absolute bottom-4 left-4 right-4 font-inter text-[15px] font-semibold uppercase text-white sm:text-[17px]">
                   {project.title.split("—")[0].trim()}

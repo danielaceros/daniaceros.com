@@ -142,9 +142,7 @@ export default function TheRooftopContentStudioPage() {
             playsInline
             preload="metadata"
             className="h-full w-full object-cover"
-          >
-            <track kind="captions" srcLang="es" label="Sin dialogo" src="/captions/silent.vtt" />
-          </video>
+          />
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent" />
         </div>
       </section>
