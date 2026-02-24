@@ -1,7 +1,9 @@
+import type { Metadata } from "next"
 import SectionTitle from "@/components/SectionTitle"
 import PortfolioCard from "@/components/PortfolioCard"
 import PortfolioHero from "@/components/PortfolioHero"
 import ContactCTA from "@/components/ContactCTA"
+import { buildMetadata } from "@/lib/seo"
 
 const portfolioItems = [
   { title: "FIFA",  video: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/A1.mp4?alt=media&token=12073558-3af3-459a-bf2a-e76441a8c42e", href: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/A1.mp4?alt=media&token=12073558-3af3-459a-bf2a-e76441a8c42e"},
@@ -14,13 +16,21 @@ const portfolioItems = [
   { title: "CINESA",  video: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/CINESA%20(2).mp4?alt=media&token=da7f88d0-6b36-4ee8-9e9c-6b81c6a1819b", href: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/CINESA%20(2).mp4?alt=media&token=da7f88d0-6b36-4ee8-9e9c-6b81c6a1819b"},
 ]
 
+export const metadata: Metadata = buildMetadata({
+  title: "Portfolio",
+  description:
+    "Casos reales de video corporativo, institucional y eventos. Portfolio audiovisual de Daniel Acero.",
+  path: "/portfolio",
+  keywords: ["portfolio filmmaker", "casos de exito audiovisual", "video corporativo ejemplos"],
+})
+
 export default function PortfolioPage() {
   return (
-    <main className="min-h-screen bg-black text-white">
-        <section className="mx-auto max-w-7xl px-6 pt-20 pb-10">
+    <main className="min-h-screen bg-[#0a0a0a] text-white">
+      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 sm:pt-24 pb-8 sm:pb-10">
         <PortfolioHero />
         <SectionTitle>Portfolio</SectionTitle>
-        <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-6 sm:mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {portfolioItems.map((item) => (
             <PortfolioCard key={item.title} {...item} />
           ))}

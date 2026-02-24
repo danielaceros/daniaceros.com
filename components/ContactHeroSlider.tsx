@@ -26,7 +26,7 @@ export default function ContactHeroSlider() {
 
   return (
     <section className="relative mx-auto mt-10 w-full max-w-7xl overflow-hidden rounded-3xl">
-      <div className="relative aspect-[16/6] w-full bg-black">
+      <div className="relative aspect-[16/6] w-full bg-[#0a0a0a]">
         {slides.map((s, i) => (
           <div
             key={s.title}
@@ -39,7 +39,8 @@ export default function ContactHeroSlider() {
               muted
               loop
               playsInline
-              autoPlay
+              autoPlay={i === index}
+              preload={i === index ? "metadata" : "none"}
               className="h-full w-full object-cover"
             />
             <div className="absolute inset-0 bg-black/30" />

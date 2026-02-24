@@ -1,14 +1,23 @@
+import type { Metadata } from "next"
 import ContactCTA from "@/components/ContactCTA"
+import { buildMetadata } from "@/lib/seo"
+
+export const metadata: Metadata = buildMetadata({
+  title: "Politica de privacidad",
+  description: "Politica de privacidad del sitio web de Daniel Acero.",
+  path: "/politica-de-privacidad",
+  noIndex: true,
+})
 
 export default function PrivacyPage() {
   return (
-    <main className="min-h-screen bg-black text-white">
-      <section className="mx-auto max-w-5xl px-6 py-28">
-        <h1 className="mb-10 font-inter font-semibold uppercase tracking-[-0.08em] text-[32px] sm:text-[42px] lg:text-[56px]">
+    <main className="min-h-screen bg-[#0a0a0a] text-white">
+      <article className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
+        <h1 className="mb-12 font-inter font-semibold uppercase tracking-[-0.08em] text-[32px] sm:text-[42px] lg:text-[56px]">
           Política de privacidad
         </h1>
 
-        <div className="space-y-10 text-[13px] leading-[1.7] sm:text-[14px] text-white/75">
+        <div className="space-y-10 text-[14px] leading-[1.7] text-white/80 sm:text-[15px]">
           <p>
             En cumplimiento de lo dispuesto en el Reglamento (UE) 2016/679 (RGPD) y la Ley Orgánica 3/2018 de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD), se informa a los usuarios de este sitio web de los siguientes aspectos relacionados con el tratamiento de sus datos personales.
           </p>
@@ -104,7 +113,7 @@ export default function PrivacyPage() {
             El titular se reserva el derecho a modificar la presente política de privacidad para adaptarla a novedades legislativas o jurisprudenciales. Se recomienda al usuario revisar periódicamente esta política.
           </p>
         </div>
-      </section>
+      </article>
 
       <div className="mt-24">
         <ContactCTA />

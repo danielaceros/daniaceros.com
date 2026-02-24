@@ -1,20 +1,29 @@
 // app/aviso-legal/page.tsx
+import type { Metadata } from "next"
 import ContactCTA from "@/components/ContactCTA"
+import { buildMetadata } from "@/lib/seo"
+
+export const metadata: Metadata = buildMetadata({
+  title: "Aviso legal",
+  description: "Informacion legal del sitio web de Daniel Acero.",
+  path: "/aviso-legal",
+  noIndex: true,
+})
 
 export default function AvisoLegalPage() {
   return (
-    <main className="min-h-screen bg-black text-white">
-      <section className="mx-auto max-w-5xl px-6 py-24">
+    <main className="min-h-screen bg-[#0a0a0a] text-white">
+      <article className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
         <h1
           className="
-            mb-10 font-inter font-semibold uppercase tracking-[-0.08em]
+            mb-12 font-inter font-semibold uppercase tracking-[-0.08em]
             text-[32px] sm:text-[42px] lg:text-[56px]
           "
         >
           Aviso legal
         </h1>
 
-        <div className="space-y-8 text-[13px] leading-[1.6] text-white/75 sm:text-[14px]">
+        <div className="space-y-8 text-[14px] leading-[1.7] text-white/80 sm:text-[15px]">
           <p>
             En cumplimiento de lo dispuesto en la Ley 34/2002, de Servicios de la Sociedad de la
             Información y de Comercio Electrónico (LSSI-CE), se informa a los usuarios del presente
@@ -28,8 +37,8 @@ export default function AvisoLegalPage() {
             <p><strong>Domicilio:</strong> Calle de Mercedes Arteaga 24, España</p>
             <p>
               <strong>Correo electrónico de contacto:</strong>{" "}
-              <a href="mailto:work@daniaceros.com" className="underline">
-                hola@daniacero.com
+              <a href="mailto:work@daniaceros.com" className="underline hover:text-white transition-colors">
+                work@daniaceros.com
               </a>
             </p>
           </div>
@@ -84,7 +93,7 @@ export default function AvisoLegalPage() {
             </p>
           </div>
         </div>
-      </section>
+      </article>
 
       <ContactCTA />
     </main>

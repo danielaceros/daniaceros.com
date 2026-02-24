@@ -1,5 +1,9 @@
+"use client"
+
+import { motion } from "framer-motion"
 import SectionTitle from "./SectionTitle"
 import PortfolioCard from "./PortfolioCard"
+import { ease, stagger, viewport } from "@/lib/motion"
 
 const portfolioItems = [
   { title: "FIFA",  video: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/A1.mp4?alt=media&token=12073558-3af3-459a-bf2a-e76441a8c42e", href: "/portfolio/fifa"},
@@ -14,14 +18,32 @@ const portfolioItems = [
 
 export default function Portfolio() {
   return (
-    <section className="px-6 py-20">
-      <SectionTitle>Portfolio</SectionTitle>
+    <section className="page-container section-breathing">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={viewport}
+        transition={{ duration: 0.6, ease: ease.expo }}
+      >
+        <SectionTitle>Portfolio</SectionTitle>
+      </motion.div>
 
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        {portfolioItems.map((item) => (
-          <PortfolioCard key={item.title} {...item} />
+      <motion.div
+        className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4"
+        initial="hidden"
+        whileInView="visible"
+        viewport={viewport}
+        variants={{
+          hidden: {},
+          visible: {
+            transition: { staggerChildren: stagger.normal, delayChildren: 0.1 },
+          },
+        }}
+      >
+        {portfolioItems.map((item, i) => (
+          <PortfolioCard key={item.title} {...item} index={i} />
         ))}
-      </div>
+      </motion.div>
     </section>
   )
 }

@@ -9,6 +9,7 @@ export default {
     extend: {
       fontFamily: {
         inter: ["var(--font-inter)"],
+        display: ["var(--font-display)"],
       },
     },
   },

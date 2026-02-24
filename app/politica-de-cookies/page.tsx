@@ -1,14 +1,23 @@
+import type { Metadata } from "next"
 import ContactCTA from "@/components/ContactCTA"
+import { buildMetadata } from "@/lib/seo"
+
+export const metadata: Metadata = buildMetadata({
+  title: "Politica de cookies",
+  description: "Politica de cookies del sitio web de Daniel Acero.",
+  path: "/politica-de-cookies",
+  noIndex: true,
+})
 
 export default function CookiesPage() {
   return (
-    <main className="min-h-screen bg-black text-white">
-      <section className="mx-auto max-w-5xl px-6 py-28">
-        <h1 className="mb-10 font-inter font-semibold uppercase tracking-[-0.08em] text-[32px] sm:text-[42px] lg:text-[56px]">
+    <main className="min-h-screen bg-[#0a0a0a] text-white">
+      <article className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
+        <h1 className="mb-12 font-inter font-semibold uppercase tracking-[-0.08em] text-[32px] sm:text-[42px] lg:text-[56px]">
           Política de cookies
         </h1>
 
-        <div className="space-y-10 text-[13px] leading-[1.7] sm:text-[14px] text-white/75">
+        <div className="space-y-10 text-[14px] leading-[1.7] text-white/80 sm:text-[15px]">
           <p>
             Esta web, titularidad de Daniel Acero Sagredo (KLIP), utiliza cookies propias y de terceros para mejorar la experiencia de navegación, analizar el uso del sitio y ofrecer contenidos adaptados a los intereses del usuario.
           </p>
@@ -118,7 +127,7 @@ export default function CookiesPage() {
             El titular de este sitio web se reserva el derecho a modificar la presente política de cookies en función de exigencias legales o técnicas. Se recomienda al usuario revisar periódicamente esta política.
           </p>
         </div>
-      </section>
+      </article>
 
       <div className="mt-24">
         <ContactCTA />
