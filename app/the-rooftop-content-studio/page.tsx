@@ -136,7 +136,6 @@ export default function TheRooftopContentStudioPage() {
         <div className="relative aspect-[16/9] w-full overflow-hidden rounded-3xl border border-white/15 bg-black shadow-[0_24px_70px_-35px_rgba(0,0,0,0.95)]">
           <video
             src={rooftopBannerVideo}
-            poster={VIDEO_POSTER_URL}
             autoPlay
             muted
             loop

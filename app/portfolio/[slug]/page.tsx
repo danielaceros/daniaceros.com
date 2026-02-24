@@ -80,7 +80,6 @@ export default async function ProjectPage({ params }: Props) {
       <ProjectHero
         title={project.title}
         video={project.video}
-        href={project.href}
       />
 
       <ProjectContent sections={project.sections} />
