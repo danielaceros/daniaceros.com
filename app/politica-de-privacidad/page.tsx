@@ -12,7 +12,7 @@ export default function PrivacyPage() {
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-white">
       <article className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
-        <h1 className="mb-12 font-inter font-semibold uppercase tracking-[-0.08em] text-[32px] sm:text-[42px] lg:text-[56px]">
+        <h1 className="mb-12 font-inter font-semibold uppercase  text-[32px] sm:text-[42px] lg:text-[56px]">
           Política de privacidad
         </h1>
 

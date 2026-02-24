@@ -33,7 +33,7 @@ export default function FilmmakerMadridPage() {
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-white">
       <section className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pt-20 sm:pt-28 pb-6 sm:pb-8">
-        <h1 className="font-inter font-semibold uppercase tracking-[-0.08em] text-[28px] leading-[1.1] sm:text-[36px] lg:text-[44px]">
+        <h1 className="font-inter font-semibold uppercase  text-[28px] leading-[1.1] sm:text-[36px] lg:text-[44px]">
           Vídeo profesional para eventos, marcas y empresas en Madrid
         </h1>
       </section>
@@ -43,7 +43,7 @@ export default function FilmmakerMadridPage() {
       <section className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pt-8 sm:pt-10 pb-16 sm:pb-20">
         <div className="space-y-14 font-inter">
           <section className="space-y-4">
-            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase tracking-[0.08em] text-white/90">
+            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
               Servicios como filmmaker en Madrid
             </h2>
             <p className="text-[13px] sm:text-[14px] leading-[1.75] text-white/85">
@@ -52,7 +52,7 @@ export default function FilmmakerMadridPage() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase tracking-[0.08em] text-white/90">
+            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
               Por qué contratarme como filmmaker en Madrid
             </h2>
             <p className="text-[13px] sm:text-[14px] leading-[1.75] text-white/85">
@@ -61,13 +61,13 @@ export default function FilmmakerMadridPage() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase tracking-[0.08em] text-white/90">
+            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
               Cómo trabajo
             </h2>
             <ol className="space-y-4">
               {comoTrabajoSteps.map((step, i) => (
                 <li key={step.title} className="space-y-2">
-                  <h3 className="font-inter text-[14px] sm:text-[15px] font-semibold uppercase tracking-[-0.04em] text-white flex items-baseline gap-2">
+                  <h3 className="font-inter text-[14px] sm:text-[15px] font-semibold uppercase  text-white flex items-baseline gap-2">
                     <span className="text-white/50 tabular-nums">{i + 1}.</span>
                     {step.title}
                   </h3>
@@ -82,7 +82,7 @@ export default function FilmmakerMadridPage() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase tracking-[0.08em] text-white/90">
+            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
               Preguntas frecuentes
             </h2>
             <ul className="space-y-2 border-t border-white/10 pt-4">
@@ -119,7 +119,7 @@ export default function FilmmakerMadridPage() {
           </section>
 
           <section className="space-y-6 border-t border-white/10 pt-10">
-            <h2 className="font-inter text-[16px] sm:text-[18px] font-semibold uppercase tracking-[-0.04em] text-white">
+            <h2 className="font-inter text-[16px] sm:text-[18px] font-semibold uppercase  text-white">
               ¿Dónde trabajo?
             </h2>
             <p className="text-[13px] sm:text-[14px] leading-[1.7] text-white/78">

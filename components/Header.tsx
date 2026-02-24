@@ -5,8 +5,6 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useEffect, useRef, useState } from "react"
 import clsx from "clsx"
-import { motion, AnimatePresence } from "framer-motion"
-import { ease } from "@/lib/motion"
 
 const navItems = [
   { label: "Portfolio", href: "/portfolio" },
@@ -62,25 +60,17 @@ export default function Header() {
 
   return (
     <>
-      <motion.header
-        initial={{ y: -20, opacity: 0 }}
-        animate={{
-          y: 0,
-          opacity: 1,
-          transition: { duration: 0.6, ease: ease.expo, delay: 0.2 },
-        }}
+      <header
         className={clsx(
           "fixed left-1/2 z-50 w-full max-w-7xl -translate-x-1/2 px-3 sm:px-5 lg:px-6 top-[max(0.75rem,env(safe-area-inset-top))]",
           hidden && "pointer-events-none"
         )}
       >
-        <motion.nav
-          animate={{
-            y: hidden ? -100 : 0,
-            opacity: hidden ? 0 : 1,
-          }}
-          transition={{ duration: 0.4, ease: ease.expo }}
-          className="flex items-center justify-between rounded-full border border-white/10 bg-black/68 py-2.5 pl-3 pr-2.5 backdrop-blur-2xl sm:py-3 sm:pl-4 sm:pr-3 lg:pl-5 lg:pr-4"
+        <nav
+          className={clsx(
+            "flex items-center justify-between rounded-full border border-white/10 bg-black/68 py-2.5 pl-3 pr-2.5 backdrop-blur-2xl transition-all duration-300 sm:py-3 sm:pl-4 sm:pr-3 lg:pl-5 lg:pr-4",
+            hidden ? "-translate-y-24 opacity-0" : "translate-y-0 opacity-100"
+          )}
         >
           <Link
             href="/"
@@ -122,65 +112,48 @@ export default function Header() {
             </li>
           </ul>
 
-          <motion.button
+          <button
             type="button"
             aria-label={mobileOpen ? "Cerrar menú" : "Abrir menú"}
             aria-expanded={mobileOpen}
             onClick={() => setMobileOpen((o) => !o)}
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
             className="flex h-11 w-11 flex-col justify-center gap-1.5 rounded-lg text-white/90 transition-colors duration-300 hover:bg-white/5 hover:text-white lg:hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
           >
-            <motion.span
-              animate={{
-                rotate: mobileOpen ? 45 : 0,
-                y: mobileOpen ? 6 : 0,
-              }}
-              transition={{ duration: 0.3, ease: ease.expo }}
-              className="h-0.5 w-5 bg-current rounded-full origin-center block"
+            <span
+              className={clsx(
+                "h-0.5 w-5 bg-current rounded-full origin-center block transition-transform duration-300",
+                mobileOpen && "translate-y-[8px] rotate-45"
+              )}
             />
-            <motion.span
-              animate={{ opacity: mobileOpen ? 0 : 1 }}
-              transition={{ duration: 0.2 }}
-              className="h-0.5 w-5 bg-current rounded-full block"
+            <span
+              className={clsx(
+                "h-0.5 w-5 bg-current rounded-full block transition-opacity duration-200",
+                mobileOpen ? "opacity-0" : "opacity-100"
+              )}
             />
-            <motion.span
-              animate={{
-                rotate: mobileOpen ? -45 : 0,
-                y: mobileOpen ? -6 : 0,
-              }}
-              transition={{ duration: 0.3, ease: ease.expo }}
-              className="h-0.5 w-5 bg-current rounded-full origin-center block"
+            <span
+              className={clsx(
+                "h-0.5 w-5 bg-current rounded-full origin-center block transition-transform duration-300",
+                mobileOpen && "-translate-y-[8px] -rotate-45"
+              )}
             />
-          </motion.button>
-        </motion.nav>
-      </motion.header>
+          </button>
+        </nav>
+      </header>
 
-      <AnimatePresence>
-        {mobileOpen && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.25, ease: ease.expo }}
-            className="fixed inset-0 z-40 bg-black/95 backdrop-blur-md lg:hidden"
-            aria-hidden="true"
-          >
-            <motion.nav
-              initial={{ opacity: 0, y: 24 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 16 }}
-              transition={{ duration: 0.4, ease: ease.expo, delay: 0.05 }}
-              className="flex min-h-full flex-col items-center justify-center gap-8 px-6 pb-[max(2rem,env(safe-area-inset-bottom))] pt-[max(5rem,env(safe-area-inset-top)+2.5rem)]"
-            >
+      {mobileOpen && (
+        <div
+          className="fixed inset-0 z-40 bg-black/95 backdrop-blur-md lg:hidden"
+          aria-hidden="true"
+        >
+          <nav className="flex min-h-full flex-col items-center justify-center gap-8 px-6 pb-[max(2rem,env(safe-area-inset-bottom))] pt-[max(5rem,env(safe-area-inset-top)+2.5rem)]">
               {navItems.map((item, i) => {
                 const isActive = pathname === item.href
                 return (
-                  <motion.div
+                  <div
                     key={item.href}
-                    initial={{ opacity: 0, y: 16 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.4, delay: 0.08 + i * 0.05, ease: ease.expo }}
+                    style={{ transitionDelay: `${i * 20}ms` }}
+                    className="translate-y-0 opacity-100 transition-all duration-300"
                   >
                     <Link
                       href={item.href}
@@ -192,14 +165,10 @@ export default function Header() {
                     >
                       {item.label}
                     </Link>
-                  </motion.div>
+                  </div>
                 )
               })}
-              <motion.div
-                initial={{ opacity: 0, y: 16 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: 0.2, ease: ease.expo }}
-              >
+              <div>
                 <Link
                   href="/contacto"
                   onClick={() => setMobileOpen(false)}
@@ -207,11 +176,10 @@ export default function Header() {
                 >
                   Cuéntame tu proyecto
                 </Link>
-              </motion.div>
-            </motion.nav>
-          </motion.div>
-        )}
-      </AnimatePresence>
+              </div>
+          </nav>
+        </div>
+      )}
     </>
   )
 }

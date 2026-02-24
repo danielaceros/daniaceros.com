@@ -82,7 +82,7 @@ export default function ProjectHero({ title, video }: Props) {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2, ease: ease.expo }}
-            className="font-display text-[24px] font-semibold uppercase leading-[1.03] tracking-[-0.03em] sm:text-[38px] lg:text-[48px]"
+            className="font-display text-[24px] font-semibold uppercase leading-[1.03] sm:text-[38px] lg:text-[48px]"
           >
             {title}
           </motion.h1>
@@ -90,7 +90,7 @@ export default function ProjectHero({ title, video }: Props) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.4, delay: 0.35 }}
-            className="mt-2 font-inter text-[10px] font-medium uppercase tracking-[0.08em] text-white/66"
+            className="mt-2 font-inter text-[10px] font-medium uppercase  text-white/66"
           >
             Haz clic para ver el video completo
           </motion.p>
@@ -113,7 +113,7 @@ export default function ProjectHero({ title, video }: Props) {
                 <button
                   type="button"
                   onClick={() => setIsOpen(false)}
-                  className="absolute right-3 top-3 z-10 rounded-full border border-white/20 bg-black/55 px-3 py-1 text-[11px] uppercase tracking-[0.08em] text-white/85 transition hover:bg-black/75"
+                  className="absolute right-3 top-3 z-10 rounded-full border border-white/20 bg-black/55 px-3 py-1 text-[11px] uppercase  text-white/85 transition hover:bg-black/75"
                   aria-label="Cerrar video"
                 >
                   Cerrar

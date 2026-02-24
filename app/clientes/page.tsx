@@ -83,14 +83,14 @@ export default function ClientesPage() {
 
       <section className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pt-8 sm:pt-10 pb-16 sm:pb-20">
         <header className="mb-12">
-          <h1 className="font-inter font-semibold uppercase tracking-[-0.08em] text-[28px] leading-[1.05] sm:text-[36px] lg:text-[48px]">
+          <h1 className="font-inter font-semibold uppercase text-[28px] leading-[1.05] sm:text-[36px] lg:text-[48px]">
             Clientes
           </h1>
         </header>
 
         <div className="space-y-14 font-inter">
           <section className="space-y-4">
-            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase tracking-[0.08em] text-white/90">
+            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase text-white/90">
               He trabajado con empresas de diferentes sectores
             </h2>
             <ul className="grid gap-2 sm:grid-cols-2">
@@ -107,7 +107,7 @@ export default function ClientesPage() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase tracking-[0.08em] text-white/90">
+            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase text-white/90">
               Tipos de proyectos realizados
             </h2>
             <ul className="grid gap-2 sm:grid-cols-2">
@@ -124,7 +124,7 @@ export default function ClientesPage() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase tracking-[0.08em] text-white/90">
+            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase text-white/90">
               Por qué confían en mí
             </h2>
             <ul className="space-y-2">
@@ -141,7 +141,7 @@ export default function ClientesPage() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase tracking-[0.08em] text-white/90">
+            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase text-white/90">
               Preguntas frecuentes
             </h2>
             <ul className="space-y-2 border-t border-white/10 pt-4">

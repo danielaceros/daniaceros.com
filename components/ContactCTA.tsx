@@ -1,52 +1,19 @@
-"use client"
-
 import Link from "next/link"
-import { motion } from "framer-motion"
 import WhatsAppButton from "./WhatsAppButton"
-import { ease, stagger, viewport } from "@/lib/motion"
 
 export default function ContactCTA() {
   return (
-    <motion.section
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ ...viewport, margin: "-80px" }}
-      variants={{
-        hidden: {},
-        visible: {
-          transition: { staggerChildren: stagger.normal, delayChildren: 0.1 },
-        },
-      }}
-      className="mx-auto mt-20 max-w-5xl px-4 pb-24 text-center sm:mt-24 sm:px-6 sm:pb-32"
-    >
-      <motion.h2
-        variants={{
-          hidden: { opacity: 0, y: 20 },
-          visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: ease.expo } },
-        }}
-        className="mb-4 font-display text-[30px] font-semibold uppercase leading-[1.02] sm:mb-5 sm:text-[40px] lg:text-[48px]"
-      >
+    <section className="mx-auto mt-20 max-w-5xl px-4 pb-24 text-center sm:mt-24 sm:px-6 sm:pb-32">
+      <h2 className="mb-4 font-display text-[30px] font-semibold uppercase leading-[1.02] sm:mb-5 sm:text-[40px] lg:text-[48px]">
         ¿Hablamos de tu proyecto?
-      </motion.h2>
+      </h2>
 
-      <motion.p
-        variants={{
-          hidden: { opacity: 0, y: 16 },
-          visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: ease.expo } },
-        }}
-        className="mx-auto mb-12 max-w-2xl font-inter text-[13px] leading-[1.75] text-white/68 sm:text-[14px]"
-      >
+      <p className="mx-auto mb-12 max-w-2xl font-inter text-[13px] leading-[1.75] text-white/68 sm:text-[14px]">
         Si estás valorando crear un vídeo para tu empresa, cuéntame qué tienes en mente
         y te digo en minutos si encaja y cómo lo haría. Te respondo personalmente. Sin compromiso.
-      </motion.p>
+      </p>
 
-      <motion.div
-        variants={{
-          hidden: { opacity: 0, y: 12 },
-          visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: ease.expo } },
-        }}
-        className="mx-auto max-w-3xl"
-      >
+      <div className="mx-auto max-w-3xl">
         <div className="relative">
           <div className="pointer-events-none absolute -inset-2 rounded-2xl bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.26),rgba(255,255,255,0)_68%)] opacity-70 blur-lg transition-opacity duration-500" />
           <WhatsAppButton
@@ -56,15 +23,9 @@ export default function ContactCTA() {
             className="relative z-10 h-[60px] rounded-xl border-white/30 bg-gradient-to-b from-white to-white/95 px-6 shadow-[0_12px_36px_rgba(255,255,255,0.14)] hover:shadow-[0_18px_48px_rgba(255,255,255,0.2)]"
           />
         </div>
-      </motion.div>
+      </div>
 
-      <motion.footer
-        variants={{
-          hidden: { opacity: 0 },
-          visible: { opacity: 1, transition: { duration: 0.5, delay: 0.2 } },
-        }}
-        className="mt-16 border-t border-white/[0.08] pt-10"
-      >
+      <footer className="mt-16 border-t border-white/[0.08] pt-10">
         <p className="font-inter text-[11px] lowercase text-white/45">
           <Link
             href="https://www.instagram.com/daniaceros"
@@ -88,7 +49,7 @@ export default function ContactCTA() {
             política de privacidad
           </Link>
         </p>
-      </motion.footer>
-    </motion.section>
+      </footer>
+    </section>
   )
 }

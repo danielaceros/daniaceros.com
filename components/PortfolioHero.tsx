@@ -22,7 +22,7 @@ export default function PortfolioHero() {
           hidden: { opacity: 0, y: 24 },
           visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: ease.expo } },
         }}
-        className="mb-8 sm:mb-10 font-inter font-semibold uppercase tracking-[-0.08em] text-[28px] leading-[1.05] sm:text-[48px] lg:text-[64px]"
+        className="mb-8 sm:mb-10 font-inter font-semibold uppercase  text-[28px] leading-[1.05] sm:text-[48px] lg:text-[64px]"
       >
         Historias visuales que conectan con empresas, instituciones y marcas
       </motion.h1>

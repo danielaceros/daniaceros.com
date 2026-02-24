@@ -45,10 +45,10 @@ export default function SobreMiPage() {
           transition={{ duration: 0.6, ease: ease.expo }}
           className="mb-14"
         >
-          <p className="font-inter text-[11px] uppercase tracking-[0.16em] text-white/40 mb-2">
+          <p className="font-inter text-[11px] uppercase text-white/40 mb-2">
             sobre mí
           </p>
-          <h1 className="font-inter font-semibold uppercase tracking-[-0.08em] text-[28px] leading-[1.05] sm:text-[36px] lg:text-[48px]">
+          <h1 className="font-inter font-semibold uppercase  text-[28px] leading-[1.05] sm:text-[36px] lg:text-[48px]">
             Sobre mí
           </h1>
         </motion.header>
@@ -109,7 +109,7 @@ export default function SobreMiPage() {
             transition={{ duration: 0.6, ease: ease.expo }}
             className="space-y-4"
           >
-            <h2 className="font-inter text-[14px] sm:text-[15px] font-semibold uppercase tracking-[-0.04em] text-white">
+            <h2 className="font-inter text-[14px] sm:text-[15px] font-semibold uppercase  text-white">
               Mi enfoque como Filmmaker corporativo
             </h2>
             <p className="text-[13px] sm:text-[14px] leading-[1.75] text-white/85">
@@ -130,7 +130,7 @@ export default function SobreMiPage() {
             transition={{ duration: 0.6, ease: ease.expo }}
             className="space-y-6"
           >
-            <h2 className="font-inter text-[14px] sm:text-[15px] font-semibold uppercase tracking-[-0.04em] text-white">
+            <h2 className="font-inter text-[14px] sm:text-[15px] font-semibold uppercase  text-white">
               Qué me diferencia
             </h2>
             <ul className="space-y-5">
@@ -156,7 +156,7 @@ export default function SobreMiPage() {
             transition={{ duration: 0.6, ease: ease.expo }}
             className="space-y-4"
           >
-            <h2 className="font-inter text-[14px] sm:text-[15px] font-semibold uppercase tracking-[-0.04em] text-white">
+            <h2 className="font-inter text-[14px] sm:text-[15px] font-semibold uppercase  text-white">
               Experiencia con empresas e instituciones
             </h2>
             <ul className="space-y-2 text-[13px] sm:text-[14px] leading-[1.65] text-white/85 list-disc list-inside pl-2">
@@ -174,7 +174,7 @@ export default function SobreMiPage() {
             transition={{ duration: 0.6, ease: ease.expo }}
             className="space-y-4"
           >
-            <h2 className="font-inter text-[14px] sm:text-[15px] font-semibold uppercase tracking-[-0.04em] text-white">
+            <h2 className="font-inter text-[14px] sm:text-[15px] font-semibold uppercase  text-white">
               Mi filosofía
             </h2>
             <p className="text-[13px] sm:text-[14px] leading-[1.75] text-white/85">
@@ -194,7 +194,7 @@ export default function SobreMiPage() {
             transition={{ duration: 0.6, ease: ease.expo }}
             className="space-y-4"
           >
-            <h2 className="font-inter text-[14px] sm:text-[15px] font-semibold uppercase tracking-[-0.04em] text-white">
+            <h2 className="font-inter text-[14px] sm:text-[15px] font-semibold uppercase  text-white">
               Dónde trabajo
             </h2>
             <p className="text-[13px] sm:text-[14px] leading-[1.75] text-white/85">

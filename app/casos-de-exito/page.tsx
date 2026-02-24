@@ -9,7 +9,7 @@ import { buildMetadata } from "@/lib/seo"
 const casosDeExito = [
   { slug: "fifa", category: "Evento corporativo internacional" },
   { slug: "camara-de-comercio", category: "Evento subvencional" },
-  { slug: "federacion-de-esgrima", category: "Competición deportiva" },
+  { slug: "federacion-esgrima", category: "Competición deportiva" },
   { slug: "ifema", category: "Vídeo institucional" },
   { slug: "tengo-un-plan", category: "Marca personal y formación" },
   { slug: "cinesa", category: "Experiencia de marca" },

@@ -15,17 +15,17 @@ export default function PreciosPage() {
     <main className="min-h-screen bg-[#0a0a0a] text-white">
       <section className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 pt-20 sm:pt-28 pb-16 sm:pb-20">
         <header className="space-y-6 mb-14">
-          <p className="font-inter text-[11px] uppercase tracking-[0.16em] text-white/40">
+          <p className="font-inter text-[11px] uppercase text-white/40">
             precios
           </p>
-          <h1 className="font-inter font-semibold uppercase tracking-[-0.08em] text-[28px] leading-[1.05] sm:text-[36px] lg:text-[48px]">
+          <h1 className="font-inter font-semibold uppercase  text-[28px] leading-[1.05] sm:text-[36px] lg:text-[48px]">
             ¿Cuánto cuesta un servicio de vídeo corporativo o un evento?
           </h1>
         </header>
 
         <div className="space-y-12 font-inter">
           <section className="space-y-4">
-            <h2 className="font-inter text-[14px] sm:text-[15px] font-semibold uppercase tracking-[-0.04em] text-white">
+            <h2 className="font-inter text-[14px] sm:text-[15px] font-semibold uppercase  text-white">
               Cómo se calculan los precios
             </h2>
             <p className="text-[13px] sm:text-[14px] leading-[1.7] text-white/78">
@@ -42,7 +42,7 @@ export default function PreciosPage() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="font-inter text-[14px] sm:text-[15px] font-semibold uppercase tracking-[-0.04em] text-white">
+            <h2 className="font-inter text-[14px] sm:text-[15px] font-semibold uppercase  text-white">
               Qué incluyen la mayoría de mis proyectos
             </h2>
             <ul className="space-y-2 text-[13px] sm:text-[14px] leading-[1.65] text-white/78 list-disc list-inside">
@@ -56,7 +56,7 @@ export default function PreciosPage() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="font-inter text-[14px] sm:text-[15px] font-semibold uppercase tracking-[-0.04em] text-white">
+            <h2 className="font-inter text-[14px] sm:text-[15px] font-semibold uppercase  text-white">
               Por qué no trabajo con precios cerrados
             </h2>
             <p className="text-[13px] sm:text-[14px] leading-[1.7] text-white/78">

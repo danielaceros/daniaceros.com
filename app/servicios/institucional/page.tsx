@@ -15,10 +15,10 @@ export default function InstitutionalServicePage() {
     <main className="min-h-screen bg-[#0a0a0a] text-white">
       <section className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pt-20 sm:pt-28 pb-16 sm:pb-20 space-y-10">
         <header className="space-y-5">
-          <p className="font-inter text-[11px] uppercase tracking-[0.16em] text-white/40">
+          <p className="font-inter text-[11px] uppercase text-white/40">
             servicios · vídeo institucional
           </p>
-          <h1 className="font-inter font-semibold uppercase tracking-[-0.08em] text-[30px] leading-[1.05] sm:text-[40px] lg:text-[56px]">
+          <h1 className="font-inter font-semibold uppercase  text-[30px] leading-[1.05] sm:text-[40px] lg:text-[56px]">
             Vídeo institucional y cobertura audiovisual para organizaciones y entidades
           </h1>
         </header>
@@ -32,7 +32,7 @@ export default function InstitutionalServicePage() {
             </p>
 
             <section className="space-y-3">
-              <h2 className="font-inter text-[14px] sm:text-[15px] font-semibold uppercase tracking-[-0.04em]">
+              <h2 className="font-inter text-[14px] sm:text-[15px] font-semibold uppercase ">
                 Qué puedo hacer por tu institución
               </h2>
               <ul className="space-y-1 font-inter text-[13px] sm:text-[14px] leading-[1.6]">
@@ -44,7 +44,7 @@ export default function InstitutionalServicePage() {
             </section>
 
             <section className="space-y-3">
-              <h2 className="font-inter text-[14px] sm:text-[15px] font-semibold uppercase tracking-[-0.04em]">
+              <h2 className="font-inter text-[14px] sm:text-[15px] font-semibold uppercase ">
                 Estilo y enfoque
               </h2>
               <p className="font-inter text-[13px] sm:text-[14px] leading-[1.7]">
@@ -55,7 +55,7 @@ export default function InstitutionalServicePage() {
             </section>
 
             <section className="space-y-3">
-              <h2 className="font-inter text-[14px] sm:text-[15px] font-semibold uppercase tracking-[-0.04em]">
+              <h2 className="font-inter text-[14px] sm:text-[15px] font-semibold uppercase ">
                 Proceso de trabajo
               </h2>
               <ul className="space-y-1 font-inter text-[13px] sm:text-[14px] leading-[1.6]">
@@ -69,7 +69,7 @@ export default function InstitutionalServicePage() {
 
           <aside className="space-y-5">
             <div className="rounded-2xl border border-white/12 p-6 space-y-3">
-              <h2 className="font-inter text-[13px] uppercase tracking-[0.18em] text-white/50">
+              <h2 className="font-inter text-[13px] uppercase text-white/50">
                 organizaciones con las que trabajo
               </h2>
               <p className="font-inter text-[13px] sm:text-[14px] leading-[1.7] text-white/80">
@@ -79,7 +79,7 @@ export default function InstitutionalServicePage() {
             </div>
 
             <div className="rounded-2xl border border-white/12 p-6 space-y-3">
-              <h2 className="font-inter text-[13px] uppercase tracking-[0.18em] text-white/50">
+              <h2 className="font-inter text-[13px] uppercase text-white/50">
                 entregas habituales
               </h2>
               <p className="font-inter text-[13px] sm:text-[14px] leading-[1.7] text-white/80">
@@ -91,7 +91,7 @@ export default function InstitutionalServicePage() {
         </div>
 
         <section className="mt-4 border-t border-white/10 pt-10 space-y-4">
-          <h2 className="font-inter text-[16px] sm:text-[18px] font-semibold uppercase tracking-[-0.04em]">
+          <h2 className="font-inter text-[16px] sm:text-[18px] font-semibold uppercase ">
             ¿Tu institución necesita comunicar con claridad y profesionalidad?
           </h2>
           <p className="max-w-3xl font-inter text-[13px] sm:text-[14px] leading-[1.7] text-white/72">

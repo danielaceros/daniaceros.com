@@ -1,35 +1,15 @@
-"use client"
-
-import { motion } from "framer-motion"
 import SectionTitle from "./SectionTitle"
 import PortfolioCard from "./PortfolioCard"
 import { projects } from "@/data/projects"
-import { ease, stagger, viewport } from "@/lib/motion"
 
 export default function Portfolio() {
   return (
     <section className="page-container section-breathing">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={viewport}
-        transition={{ duration: 0.6, ease: ease.expo }}
-      >
+      <div>
         <SectionTitle>Portfolio</SectionTitle>
-      </motion.div>
+      </div>
 
-      <motion.div
-        className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4"
-        initial="hidden"
-        whileInView="visible"
-        viewport={viewport}
-        variants={{
-          hidden: {},
-          visible: {
-            transition: { staggerChildren: stagger.normal, delayChildren: 0.1 },
-          },
-        }}
-      >
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
         {projects.map((project, i) => (
           <PortfolioCard
             key={project.slug}
@@ -39,7 +19,7 @@ export default function Portfolio() {
             index={i}
           />
         ))}
-      </motion.div>
+      </div>
     </section>
   )
 }

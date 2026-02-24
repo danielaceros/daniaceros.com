@@ -436,7 +436,7 @@ export const projects = [
   ],
 },
 {
-  slug: "federacion-de-esgrima",
+  slug: "federacion-esgrima",
   title: "Federación Española de Esgrima",
   video: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/A5.mp4?alt=media&token=ce83614c-90e9-45ce-ae95-0feaec9c1135",
   href: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/A5.mp4?alt=media&token=ce83614c-90e9-45ce-ae95-0feaec9c1135",

@@ -57,7 +57,7 @@ export default function VideoCorporativoMadridPage() {
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-white">
       <section className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pt-20 sm:pt-28 pb-6">
-        <h1 className="font-inter font-semibold uppercase tracking-[-0.08em] text-[28px] leading-[1.1] sm:text-[36px] lg:text-[44px] text-center">
+        <h1 className="font-inter font-semibold uppercase  text-[28px] leading-[1.1] sm:text-[36px] lg:text-[44px] text-center">
           Vídeo corporativo en Madrid
         </h1>
       </section>
@@ -78,7 +78,7 @@ export default function VideoCorporativoMadridPage() {
       <section className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pt-4 pb-10 sm:pb-12">
         <div className="space-y-14 font-inter">
           <section className="space-y-4">
-            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase tracking-[0.08em] text-white/90">
+            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
               Qué es un vídeo corporativo
             </h2>
             <p className="text-[13px] sm:text-[14px] leading-[1.75] text-white/85">
@@ -87,7 +87,7 @@ export default function VideoCorporativoMadridPage() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase tracking-[0.08em] text-white/90">
+            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
               Tipos de vídeos corporativos que realizo
             </h2>
             <ul className="grid gap-2 sm:grid-cols-2">
@@ -104,7 +104,7 @@ export default function VideoCorporativoMadridPage() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase tracking-[0.08em] text-white/90">
+            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
               Por qué empresas en Madrid confían en mí
             </h2>
             <p className="text-[13px] sm:text-[14px] leading-[1.75] text-white/85">
@@ -113,7 +113,7 @@ export default function VideoCorporativoMadridPage() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase tracking-[0.08em] text-white/90">
+            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
               Cómo trabajo
             </h2>
             <p className="text-[13px] sm:text-[14px] leading-[1.75] text-white/85">
@@ -122,7 +122,7 @@ export default function VideoCorporativoMadridPage() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase tracking-[0.08em] text-white/90">
+            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
               Preguntas frecuentes
             </h2>
             <ul className="space-y-2 border-t border-white/10 pt-4">
@@ -164,13 +164,13 @@ export default function VideoCorporativoMadridPage() {
       <ContactPortfolioMarquee />
 
       <section className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pt-10 sm:pt-14 pb-16 sm:pb-20">
-        <h2 className="font-inter font-semibold uppercase tracking-[-0.08em] text-[24px] leading-[1.1] sm:text-[28px] lg:text-[32px] mb-12">
+        <h2 className="font-inter font-semibold uppercase  text-[24px] leading-[1.1] sm:text-[28px] lg:text-[32px] mb-12">
           Vídeo de eventos corporativos en Madrid
         </h2>
 
         <div className="space-y-14 font-inter">
           <section className="space-y-4">
-            <h3 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase tracking-[0.08em] text-white/90">
+            <h3 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
               Qué incluyo en la cobertura de tu evento
             </h3>
             <ul className="space-y-2">
@@ -187,7 +187,7 @@ export default function VideoCorporativoMadridPage() {
           </section>
 
           <section className="space-y-4">
-            <h3 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase tracking-[0.08em] text-white/90">
+            <h3 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
               Tipos de eventos que cubro
             </h3>
             <ul className="grid gap-2 sm:grid-cols-2">
@@ -204,7 +204,7 @@ export default function VideoCorporativoMadridPage() {
           </section>
 
           <section className="space-y-4">
-            <h3 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase tracking-[0.08em] text-white/90">
+            <h3 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
               Por qué un vídeo profesional marca la diferencia
             </h3>
             <p className="text-[13px] sm:text-[14px] leading-[1.75] text-white/85">
@@ -213,7 +213,7 @@ export default function VideoCorporativoMadridPage() {
           </section>
 
           <section className="space-y-4">
-            <h3 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase tracking-[0.08em] text-white/90">
+            <h3 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
               Estilo de grabación
             </h3>
             <p className="text-[13px] sm:text-[14px] leading-[1.75] text-white/85">
@@ -222,7 +222,7 @@ export default function VideoCorporativoMadridPage() {
           </section>
 
           <section className="space-y-4">
-            <h3 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase tracking-[0.08em] text-white/90">
+            <h3 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
               Clientes para los que trabajo
             </h3>
             <ul className="grid gap-2 sm:grid-cols-2">
@@ -239,7 +239,7 @@ export default function VideoCorporativoMadridPage() {
           </section>
 
           <section className="space-y-4">
-            <h3 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase tracking-[0.08em] text-white/90">
+            <h3 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
               Entrega del material
             </h3>
             <p className="text-[13px] sm:text-[14px] leading-[1.75] text-white/85">
@@ -248,7 +248,7 @@ export default function VideoCorporativoMadridPage() {
           </section>
 
           <section className="space-y-4 border-t border-white/10 pt-10">
-            <h3 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase tracking-[0.08em] text-white/90">
+            <h3 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
               ¿Dónde trabajo?
             </h3>
             <p className="text-[13px] sm:text-[14px] leading-[1.7] text-white/78">

@@ -125,10 +125,10 @@ export default function FAQPage() {
     <main className="min-h-screen bg-[#0a0a0a] text-white">
       <section className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 pt-20 sm:pt-28 pb-16 sm:pb-20">
         <header className="space-y-6 mb-14">
-          <p className="font-inter text-[11px] uppercase tracking-[0.16em] text-white/40">
+          <p className="font-inter text-[11px] uppercase text-white/40">
             faq
           </p>
-          <h1 className="font-inter font-semibold uppercase tracking-[-0.08em] text-[28px] leading-[1.05] sm:text-[36px] lg:text-[48px]">
+          <h1 className="font-inter font-semibold uppercase text-[28px] leading-[1.05] sm:text-[36px] lg:text-[48px]">
             Preguntas frecuentes
           </h1>
         </header>
@@ -136,7 +136,7 @@ export default function FAQPage() {
         <div className="space-y-12 font-inter">
           {faqSections.map((section) => (
             <section key={section.title} className="space-y-5">
-              <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase tracking-[0.08em] text-white/90">
+              <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase text-white/90">
                 {section.title}
               </h2>
               <ul className="space-y-5">

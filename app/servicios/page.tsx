@@ -17,10 +17,10 @@ export default function ServicesPage() {
     <main className="min-h-screen bg-[#0a0a0a] text-white">
       <section className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pt-20 sm:pt-28 pb-16 sm:pb-20 space-y-10">
         <header className="space-y-6">
-          <p className="font-inter text-[11px] uppercase tracking-[0.16em] text-white/40">
+          <p className="font-inter text-[11px] uppercase text-white/40">
             servicios
           </p>
-          <h1 className="font-inter font-semibold uppercase tracking-[-0.08em] text-[30px] leading-[1.05] sm:text-[40px] lg:text-[56px]">
+          <h1 className="font-inter font-semibold uppercase  text-[30px] leading-[1.05] sm:text-[40px] lg:text-[56px]">
             Servicios de vídeo para empresas, eventos y marcas en Madrid
           </h1>
         </header>
@@ -38,7 +38,7 @@ export default function ServicesPage() {
             </p>
 
             <div className="space-y-3">
-              <p className="font-inter text-[12px] font-semibold uppercase tracking-[0.18em] text-white/60">
+              <p className="font-inter text-[12px] font-semibold uppercase text-white/60">
                 especialidades
               </p>
               <ul className="space-y-2 font-inter text-[14px] sm:text-[15px] leading-[1.6]">
@@ -64,7 +64,7 @@ export default function ServicesPage() {
             </div>
 
             <div className="space-y-3">
-              <h2 className="font-inter text-[14px] sm:text-[15px] font-semibold uppercase tracking-[-0.04em]">
+              <h2 className="font-inter text-[14px] sm:text-[15px] font-semibold uppercase ">
                 Trabajo en Madrid y en toda España
               </h2>
               <p className="font-inter text-[13px] sm:text-[14px] leading-[1.7] text-white/72">
@@ -89,7 +89,7 @@ export default function ServicesPage() {
 
             <div className="grid gap-4 text-sm text-white/70 sm:grid-cols-2">
               <div className="border border-white/10 rounded-xl p-4">
-                <p className="font-inter text-[11px] uppercase tracking-[0.16em] text-white/40">
+                <p className="font-inter text-[11px] uppercase text-white/40">
                   para quién trabajo
                 </p>
                 <p className="mt-2 font-inter text-[13px] leading-[1.6]">
@@ -98,7 +98,7 @@ export default function ServicesPage() {
                 </p>
               </div>
               <div className="border border-white/10 rounded-xl p-4">
-                <p className="font-inter text-[11px] uppercase tracking-[0.16em] text-white/40">
+                <p className="font-inter text-[11px] uppercase text-white/40">
                   formato
                 </p>
                 <p className="mt-2 font-inter text-[13px] leading-[1.6]">
@@ -123,13 +123,13 @@ export default function ServicesPage() {
           <div className="flex flex-wrap gap-3 text-[13px] text-white/70">
             <Link
               href="/servicios/corporativo"
-              className="rounded-full border border-white/20 px-4 py-2 font-inter uppercase tracking-[0.12em] hover:border-white/60 hover:text-white transition-colors"
+              className="rounded-full border border-white/20 px-4 py-2 font-inter uppercase hover:border-white/60 hover:text-white transition-colors"
             >
               Servicios de vídeo corporativo
             </Link>
             <Link
               href="/servicios/institucional"
-              className="rounded-full border border-white/20 px-4 py-2 font-inter uppercase tracking-[0.12em] hover:border-white/60 hover:text-white transition-colors"
+              className="rounded-full border border-white/20 px-4 py-2 font-inter uppercase hover:border-white/60 hover:text-white transition-colors"
             >
               Servicios de vídeo institucional
             </Link>

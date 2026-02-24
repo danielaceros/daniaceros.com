@@ -81,10 +81,10 @@ export default function ProcesoPage() {
     <main className="min-h-screen bg-[#0a0a0a] text-white">
       <section className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 pt-20 sm:pt-28 pb-16 sm:pb-20">
         <header className="space-y-6 mb-14">
-          <p className="font-inter text-[11px] uppercase tracking-[0.16em] text-white/40">
+          <p className="font-inter text-[11px] uppercase text-white/40">
             proceso
           </p>
-          <h1 className="font-inter font-semibold uppercase tracking-[-0.08em] text-[28px] leading-[1.05] sm:text-[36px] lg:text-[48px]">
+          <h1 className="font-inter font-semibold uppercase  text-[28px] leading-[1.05] sm:text-[36px] lg:text-[48px]">
             Cómo trabajo
           </h1>
         </header>
@@ -92,7 +92,7 @@ export default function ProcesoPage() {
         <div className="space-y-10 font-inter">
           {steps.map((step, i) => (
             <section key={step.title} className="space-y-3">
-              <h2 className="font-inter text-[14px] sm:text-[15px] font-semibold uppercase tracking-[-0.04em] text-white flex items-baseline gap-3">
+              <h2 className="font-inter text-[14px] sm:text-[15px] font-semibold uppercase  text-white flex items-baseline gap-3">
                 <span className="text-white/50 tabular-nums">{i + 1}.</span>
                 {step.title}
               </h2>
@@ -105,7 +105,7 @@ export default function ProcesoPage() {
           ))}
 
           <section className="space-y-4 pt-8 border-t border-white/10">
-            <h2 className="font-inter text-[14px] sm:text-[15px] font-semibold uppercase tracking-[-0.04em] text-white">
+            <h2 className="font-inter text-[14px] sm:text-[15px] font-semibold uppercase  text-white">
               ¿Por qué trabajar conmigo?
             </h2>
             <p className="text-[13px] sm:text-[14px] leading-[1.7] text-white/78">

@@ -47,7 +47,7 @@ export default function VideoEventosMadridPage() {
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-white">
       <section className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pt-20 sm:pt-28 pb-6">
-        <h1 className="font-inter font-semibold uppercase tracking-[-0.08em] text-[28px] leading-[1.1] sm:text-[36px] lg:text-[44px]">
+        <h1 className="font-inter font-semibold uppercase  text-[28px] leading-[1.1] sm:text-[36px] lg:text-[44px]">
           Vídeo de eventos en Madrid
         </h1>
       </section>
@@ -71,7 +71,7 @@ export default function VideoEventosMadridPage() {
       <section className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pt-6 pb-16 sm:pb-20">
         <div className="space-y-14 font-inter">
           <section className="space-y-4">
-            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase tracking-[0.08em] text-white/90">
+            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
               Qué tipo de eventos cubro
             </h2>
             <ul className="space-y-2">
@@ -88,7 +88,7 @@ export default function VideoEventosMadridPage() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase tracking-[0.08em] text-white/90">
+            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
               Mi estilo de grabación de eventos
             </h2>
             <ul className="grid gap-2 sm:grid-cols-2">
@@ -105,7 +105,7 @@ export default function VideoEventosMadridPage() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase tracking-[0.08em] text-white/90">
+            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
               Ejemplos de clientes
             </h2>
             <ul className="grid gap-2 sm:grid-cols-2">
@@ -122,7 +122,7 @@ export default function VideoEventosMadridPage() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase tracking-[0.08em] text-white/90">
+            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
               Cómo trabajo
             </h2>
             <ol className="space-y-3">
@@ -139,7 +139,7 @@ export default function VideoEventosMadridPage() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase tracking-[0.08em] text-white/90">
+            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
               ¿Dónde trabajo?
             </h2>
             <p className="text-[13px] sm:text-[14px] leading-[1.7] text-white/78">

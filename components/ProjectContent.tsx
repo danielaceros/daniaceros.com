@@ -20,7 +20,7 @@ export default function ProjectContent({ sections }: { sections: Section[] }) {
             viewport={viewport}
             transition={{ duration: 0.5, delay: sectionIndex * 0.05, ease: ease.expo }}
           >
-            <h2 className="mb-5 font-display text-[26px] font-semibold uppercase leading-[1.04] tracking-[-0.03em] sm:mb-6 sm:text-[42px]">
+            <h2 className="mb-5 font-display text-[26px] font-semibold uppercase leading-[1.04] sm:mb-6 sm:text-[42px]">
               {section.title}
             </h2>
 

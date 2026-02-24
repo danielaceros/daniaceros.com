@@ -39,17 +39,17 @@ export default function ContratarPage() {
     <main className="min-h-screen bg-[#0a0a0a] text-white">
       <section className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 pt-20 sm:pt-28 pb-16 sm:pb-20">
         <header className="space-y-6 mb-14">
-          <p className="font-inter text-[11px] uppercase tracking-[0.16em] text-white/40">
+          <p className="font-inter text-[11px] uppercase text-white/40">
             contratar
           </p>
-          <h1 className="font-inter font-semibold uppercase tracking-[-0.08em] text-[28px] leading-[1.05] sm:text-[36px] lg:text-[48px]">
+          <h1 className="font-inter font-semibold uppercase text-[28px] leading-[1.05] sm:text-[36px] lg:text-[48px]">
             Empecemos tu proyecto
           </h1>
         </header>
 
         <div className="space-y-12 font-inter">
           <section className="space-y-4">
-            <h2 className="font-inter text-[14px] sm:text-[15px] font-semibold uppercase tracking-[-0.04em] text-white flex items-baseline gap-3">
+            <h2 className="font-inter text-[14px] sm:text-[15px] font-semibold uppercase text-white flex items-baseline gap-3">
               <span className="text-white/50 tabular-nums">1.</span>
               ¿Qué necesito saber antes de preparar tu presupuesto?
             </h2>
@@ -64,7 +64,7 @@ export default function ContratarPage() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="font-inter text-[14px] sm:text-[15px] font-semibold uppercase tracking-[-0.04em] text-white flex items-baseline gap-3">
+            <h2 className="font-inter text-[14px] sm:text-[15px] font-semibold uppercase text-white flex items-baseline gap-3">
               <span className="text-white/50 tabular-nums">2.</span>
               ¿Cómo funciona el proceso después de que me escribas?
             </h2>
@@ -76,7 +76,7 @@ export default function ContratarPage() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="font-inter text-[14px] sm:text-[15px] font-semibold uppercase tracking-[-0.04em] text-white flex items-baseline gap-3">
+            <h2 className="font-inter text-[14px] sm:text-[15px] font-semibold uppercase text-white flex items-baseline gap-3">
               <span className="text-white/50 tabular-nums">3.</span>
               ¿Por qué trabajar conmigo?
             </h2>

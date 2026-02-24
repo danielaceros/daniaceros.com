@@ -125,7 +125,7 @@ function MarqueeCard({
         className="
           pointer-events-none absolute bottom-2 left-2 right-2
           font-inter text-[10px] sm:text-[13px] font-semibold uppercase
-          tracking-[-0.08em] text-white truncate
+           text-white truncate
         "
       >
         {title}

@@ -52,7 +52,7 @@ export default function VideografoMadridPage() {
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-white">
       <section className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pt-20 sm:pt-28 pb-6">
-        <h1 className="font-inter font-semibold uppercase tracking-[-0.08em] text-[28px] leading-[1.1] sm:text-[36px] lg:text-[44px]">
+        <h1 className="font-inter font-semibold uppercase  text-[28px] leading-[1.1] sm:text-[36px] lg:text-[44px]">
           Grabación profesional de eventos, empresas y contenido corporativo
         </h1>
       </section>
@@ -67,7 +67,7 @@ export default function VideografoMadridPage() {
             className="h-full w-full object-cover"
           />
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-          <p className="pointer-events-none absolute bottom-0 left-0 right-0 p-6 font-inter text-[18px] font-semibold uppercase tracking-[-0.08em] text-white sm:text-[22px] lg:text-[26px]">
+          <p className="pointer-events-none absolute bottom-0 left-0 right-0 p-6 font-inter text-[18px] font-semibold uppercase  text-white sm:text-[22px] lg:text-[26px]">
             Grabación profesional de eventos, empresas y contenido corporativo
           </p>
         </div>
@@ -81,7 +81,7 @@ export default function VideografoMadridPage() {
       <section className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pt-8 sm:pt-10 pb-16 sm:pb-20">
         <div className="space-y-14 font-inter">
           <section className="space-y-4">
-            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase tracking-[0.08em] text-white/90">
+            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
               Servicios como videógrafo en Madrid
             </h2>
             <ul className="grid gap-2 sm:grid-cols-2">
@@ -98,7 +98,7 @@ export default function VideografoMadridPage() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase tracking-[0.08em] text-white/90">
+            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
               Por qué contratar un videógrafo en Madrid profesional
             </h2>
             <ul className="space-y-2">
@@ -115,7 +115,7 @@ export default function VideografoMadridPage() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase tracking-[0.08em] text-white/90">
+            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
               Cómo trabajo
             </h2>
             <ol className="space-y-3">
@@ -132,7 +132,7 @@ export default function VideografoMadridPage() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase tracking-[0.08em] text-white/90">
+            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
               Preguntas frecuentes
             </h2>
             <ul className="space-y-2 border-t border-white/10 pt-4">
