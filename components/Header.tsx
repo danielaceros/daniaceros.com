@@ -33,8 +33,23 @@ export default function Header() {
 
       requestAnimationFrame(() => {
         const currentScrollY = window.scrollY
-        const shouldHide = currentScrollY > lastScrollYRef.current && currentScrollY > 100
-        setHidden((prev) => (prev === shouldHide ? prev : shouldHide))
+        const delta = currentScrollY - lastScrollYRef.current
+
+        // Always restore the header near top of page.
+        if (currentScrollY <= 80) {
+          setHidden(false)
+          lastScrollYRef.current = currentScrollY
+          tickingRef.current = false
+          return
+        }
+
+        // Use delta threshold to avoid noisy browser UI scroll jitter.
+        if (delta > 8) {
+          setHidden(true)
+        } else if (delta < -8) {
+          setHidden(false)
+        }
+
         lastScrollYRef.current = currentScrollY
         tickingRef.current = false
       })
@@ -45,9 +60,18 @@ export default function Header() {
   }, [])
 
   useEffect(() => {
-    if (mobileOpen) document.body.style.overflow = "hidden"
-    else document.body.style.overflow = ""
-    return () => { document.body.style.overflow = "" }
+    if (mobileOpen) {
+      document.body.style.overflow = "hidden"
+      document.documentElement.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = ""
+      document.documentElement.style.overflow = ""
+    }
+
+    return () => {
+      document.body.style.overflow = ""
+      document.documentElement.style.overflow = ""
+    }
   }, [mobileOpen])
 
   useEffect(() => {
@@ -68,7 +92,7 @@ export default function Header() {
       >
         <nav
           className={clsx(
-            "flex items-center justify-between rounded-full border border-white/10 bg-black/68 py-2.5 pl-3 pr-2.5 backdrop-blur-2xl transition-all duration-300 sm:py-3 sm:pl-4 sm:pr-3 lg:pl-5 lg:pr-4",
+            "cinematic-glow lux-shine relative overflow-hidden flex items-center justify-between rounded-full border border-white/10 bg-black/68 py-2.5 pl-3 pr-2.5 backdrop-blur-2xl transition-all duration-300 sm:py-3 sm:pl-4 sm:pr-3 lg:pl-5 lg:pr-4",
             hidden ? "-translate-y-24 opacity-0" : "translate-y-0 opacity-100"
           )}
         >

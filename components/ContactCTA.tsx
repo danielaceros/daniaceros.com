@@ -1,19 +1,32 @@
 import Link from "next/link"
 import WhatsAppButton from "./WhatsAppButton"
+import type { CSSProperties } from "react"
 
 export default function ContactCTA() {
   return (
-    <section className="mx-auto mt-20 max-w-5xl px-4 pb-24 text-center sm:mt-24 sm:px-6 sm:pb-32">
-      <h2 className="mb-4 font-display text-[30px] font-semibold uppercase leading-[1.02] sm:mb-5 sm:text-[40px] lg:text-[48px]">
+    <section data-lux className="cinematic-reveal mx-auto mt-20 max-w-5xl px-4 pb-24 text-center sm:mt-24 sm:px-6 sm:pb-32">
+      <h2
+        data-lux
+        style={{ "--lux-delay": "90ms" } as CSSProperties}
+        className="cinematic-reveal-delay-1 mb-4 font-display text-[30px] font-semibold uppercase leading-[1.02] sm:mb-5 sm:text-[40px] lg:text-[48px]"
+      >
         ¿Hablamos de tu proyecto?
       </h2>
 
-      <p className="mx-auto mb-12 max-w-2xl font-inter text-[13px] leading-[1.75] text-white/68 sm:text-[14px]">
+      <p
+        data-lux
+        style={{ "--lux-delay": "160ms" } as CSSProperties}
+        className="cinematic-reveal cinematic-reveal-delay-2 mx-auto mb-12 max-w-2xl font-inter text-[13px] leading-[1.75] text-white/68 sm:text-[14px]"
+      >
         Si estás valorando crear un vídeo para tu empresa, cuéntame qué tienes en mente
         y te digo en minutos si encaja y cómo lo haría. Te respondo personalmente. Sin compromiso.
       </p>
 
-      <div className="mx-auto max-w-3xl">
+      <div
+        data-lux
+        style={{ "--lux-delay": "230ms" } as CSSProperties}
+        className="cinematic-reveal cinematic-reveal-delay-3 mx-auto max-w-3xl"
+      >
         <div className="relative">
           <div className="pointer-events-none absolute -inset-2 rounded-2xl bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.26),rgba(255,255,255,0)_68%)] opacity-70 blur-lg transition-opacity duration-500" />
           <WhatsAppButton
@@ -25,7 +38,11 @@ export default function ContactCTA() {
         </div>
       </div>
 
-      <footer className="mt-16 border-t border-white/[0.08] pt-10">
+      <footer
+        data-lux
+        style={{ "--lux-delay": "300ms" } as CSSProperties}
+        className="cinematic-reveal cinematic-reveal-delay-3 mt-16 border-t border-white/[0.08] pt-10"
+      >
         <p className="font-inter text-[11px] lowercase text-white/45">
           <Link
             href="https://www.instagram.com/daniaceros"

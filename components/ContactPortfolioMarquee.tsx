@@ -1,6 +1,7 @@
 "use client"
 
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
+import { createPortal } from "react-dom"
 
 const items = [
   { title: "FIFA",  video: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/A1.mp4?alt=media&token=12073558-3af3-459a-bf2a-e76441a8c42e", href: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/A1.mp4?alt=media&token=12073558-3af3-459a-bf2a-e76441a8c42e"},
@@ -18,6 +19,7 @@ export default function ContactPortfolioMarquee() {
   const rafRef = useRef<number | null>(null)
   const xRef = useRef(0)
   const runningRef = useRef(false)
+  const [activeVideo, setActiveVideo] = useState<{ title: string; video: string } | null>(null)
 
   useEffect(() => {
     const speed = 0.28
@@ -68,34 +70,96 @@ export default function ContactPortfolioMarquee() {
     }
   }, [])
 
-  return (
-    <section className="relative w-full overflow-hidden py-6 sm:py-8">
-      <div ref={trackRef} className="flex w-max gap-4 will-change-transform">
-        {[...items, ...items].map((item, i) => (
-          <MarqueeCard key={`${item.title}-${i}`} {...item} />
-        ))}
-      </div>
+  useEffect(() => {
+    if (!activeVideo) return
 
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-black via-black/40 to-transparent" />
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-black via-black/40 to-transparent" />
-    </section>
+    const previousBodyOverflow = document.body.style.overflow
+    const previousHtmlOverflow = document.documentElement.style.overflow
+    document.body.style.overflow = "hidden"
+    document.documentElement.style.overflow = "hidden"
+
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setActiveVideo(null)
+    }
+
+    window.addEventListener("keydown", onKeyDown)
+
+    return () => {
+      document.body.style.overflow = previousBodyOverflow
+      document.documentElement.style.overflow = previousHtmlOverflow
+      window.removeEventListener("keydown", onKeyDown)
+    }
+  }, [activeVideo])
+
+  return (
+    <>
+      <section className="relative w-full overflow-hidden py-6 sm:py-8">
+        <div ref={trackRef} className="flex w-max gap-4 will-change-transform">
+          {[...items, ...items].map((item, i) => (
+            <MarqueeCard
+              key={`${item.title}-${i}`}
+              title={item.title}
+              video={item.video}
+              onOpen={() => setActiveVideo({ title: item.title, video: item.video })}
+            />
+          ))}
+        </div>
+
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-black via-black/40 to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-black via-black/40 to-transparent" />
+      </section>
+
+      {activeVideo && typeof document !== "undefined"
+        ? createPortal(
+            <div
+              className="fixed inset-0 z-[120] flex items-center justify-center bg-black/82 px-3 py-4 backdrop-blur-sm sm:px-6"
+              onClick={() => setActiveVideo(null)}
+              role="dialog"
+              aria-modal="true"
+              aria-label={`Video de ${activeVideo.title}`}
+            >
+              <div
+                className="relative max-h-[88svh] max-w-[94vw] overflow-hidden rounded-2xl border border-white/15 bg-[#0a0a0a] shadow-[0_28px_70px_-30px_rgba(0,0,0,0.95)]"
+                onClick={(event) => event.stopPropagation()}
+              >
+                <button
+                  type="button"
+                  onClick={() => setActiveVideo(null)}
+                  className="absolute right-3 top-3 z-10 cursor-pointer rounded-full border border-white/20 bg-black/55 px-3 py-1 text-[11px] uppercase text-white/85 transition hover:bg-black/75"
+                  aria-label="Cerrar video"
+                >
+                  Cerrar
+                </button>
+                <video
+                  src={activeVideo.video}
+                  controls
+                  autoPlay
+                  playsInline
+                  preload="metadata"
+                  className="block max-h-[88svh] max-w-[94vw] bg-black object-contain"
+                />
+              </div>
+            </div>,
+            document.body
+          )
+        : null}
+    </>
   )
 }
 
 function MarqueeCard({
   title,
   video,
-  href,
+  onOpen,
 }: {
   title: string
   video: string
-  href: string
+  onOpen: () => void
 }) {
   return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
+    <button
+      type="button"
+      onClick={onOpen}
       className="
         group relative block cursor-pointer
         aspect-[3/4] h-[140px] w-[105px] overflow-hidden
@@ -103,6 +167,7 @@ function MarqueeCard({
         sm:h-[180px] sm:w-[135px]
         lg:h-[220px] lg:w-[165px]
       "
+      aria-label={`Abrir video de ${title}`}
     >
       <video
         src={video}
@@ -127,6 +192,6 @@ function MarqueeCard({
       >
         {title}
       </span>
-    </a>
+    </button>
   )
 }

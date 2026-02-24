@@ -8,23 +8,21 @@ import { ease } from "@/lib/motion"
 type Props = {
   title: string
   video: string
+  videoBlurClass?: string
 }
 
-export default function ProjectHero({ title, video }: Props) {
+export default function ProjectHero({ title, video, videoBlurClass = "blur-[0.5px]" }: Props) {
   const [isOpen, setIsOpen] = useState(false)
-  const [isMounted, setIsMounted] = useState(false)
   const [isHeroReady, setIsHeroReady] = useState(false)
   const [isModalReady, setIsModalReady] = useState(false)
 
   useEffect(() => {
-    setIsMounted(true)
-  }, [])
-
-  useEffect(() => {
     if (!isOpen) return
 
-    const previousOverflow = document.body.style.overflow
+    const previousBodyOverflow = document.body.style.overflow
+    const previousHtmlOverflow = document.documentElement.style.overflow
     document.body.style.overflow = "hidden"
+    document.documentElement.style.overflow = "hidden"
 
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") setIsOpen(false)
@@ -33,7 +31,8 @@ export default function ProjectHero({ title, video }: Props) {
     window.addEventListener("keydown", onKeyDown)
 
     return () => {
-      document.body.style.overflow = previousOverflow
+      document.body.style.overflow = previousBodyOverflow
+      document.documentElement.style.overflow = previousHtmlOverflow
       window.removeEventListener("keydown", onKeyDown)
     }
   }, [isOpen])
@@ -41,10 +40,11 @@ export default function ProjectHero({ title, video }: Props) {
   return (
     <>
       <motion.section
+        data-lux
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.6, ease: ease.expo }}
-        className="relative h-[30svh] min-h-[220px] w-full overflow-hidden bg-[#0a0a0a] sm:h-[34svh] sm:min-h-[260px] lg:h-[40svh]"
+        className="lux-shine relative h-[30svh] min-h-[220px] w-full overflow-hidden bg-[#0a0a0a] sm:h-[34svh] sm:min-h-[260px] lg:h-[40svh]"
       >
         <button
           type="button"
@@ -52,7 +52,7 @@ export default function ProjectHero({ title, video }: Props) {
             setIsModalReady(false)
             setIsOpen(true)
           }}
-          className="absolute inset-0 block transition-opacity duration-500 hover:opacity-95"
+          className="absolute inset-0 block cursor-pointer transition-opacity duration-500 hover:opacity-95"
           aria-label={`Ver vídeo de ${title}`}
         >
           <video
@@ -63,7 +63,7 @@ export default function ProjectHero({ title, video }: Props) {
             playsInline
             preload="metadata"
             onLoadedData={() => setIsHeroReady(true)}
-            className="h-full w-full scale-105 object-cover blur-[1.5px] transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] hover:scale-[1.08]"
+            className={`h-full w-full scale-105 object-cover ${videoBlurClass} transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] hover:scale-[1.08]`}
           />
           <div
             className={`pointer-events-none absolute inset-0 flex items-center justify-center bg-black/30 transition-opacity duration-300 ${
@@ -95,7 +95,7 @@ export default function ProjectHero({ title, video }: Props) {
         </div>
       </motion.section>
 
-      {isMounted && isOpen
+      {isOpen && typeof document !== "undefined"
         ? createPortal(
             <div
               className="fixed inset-0 z-[120] flex items-center justify-center bg-black/82 px-3 py-4 backdrop-blur-sm sm:px-6"
@@ -111,7 +111,7 @@ export default function ProjectHero({ title, video }: Props) {
                 <button
                   type="button"
                   onClick={() => setIsOpen(false)}
-                  className="absolute right-3 top-3 z-10 rounded-full border border-white/20 bg-black/55 px-3 py-1 text-[11px] uppercase  text-white/85 transition hover:bg-black/75"
+                  className="absolute right-3 top-3 z-10 cursor-pointer rounded-full border border-white/20 bg-black/55 px-3 py-1 text-[11px] uppercase  text-white/85 transition hover:bg-black/75"
                   aria-label="Cerrar video"
                 >
                   Cerrar

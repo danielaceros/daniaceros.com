@@ -10,7 +10,7 @@ type Section = {
 
 export default function ProjectContent({ sections }: { sections: Section[] }) {
   return (
-    <section className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8 sm:py-20">
+    <section data-lux className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8 sm:py-20">
       <div className="space-y-16 sm:space-y-20">
         {sections.map((section, sectionIndex) => (
           <motion.div

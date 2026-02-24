@@ -4,6 +4,7 @@ import "./globals.css"
 import Script from "next/script"
 import Header from "@/components/Header"
 import PageTransition from "@/components/PageTransition"
+import LuxuryMotionProvider from "@/components/LuxuryMotionProvider"
 import { DEFAULT_OG_IMAGE, SITE_URL } from "@/lib/seo"
 
 const FAVICON_URL =
@@ -189,6 +190,8 @@ export default function RootLayout({
       </head>
 
       <body className={`${manrope.variable} ${cormorant.variable} antialiased bg-[#0a0a0a] text-white`}>
+        <LuxuryMotionProvider />
+
         {enableTracking && (
           <>
             {/* GTM noscript */}

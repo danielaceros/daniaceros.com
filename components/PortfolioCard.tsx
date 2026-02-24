@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { useEffect, useRef, useState } from "react"
+import type { CSSProperties } from "react"
 
 type Props = {
   title: string
@@ -19,20 +20,17 @@ const isInternal = (href: string) => href.startsWith("/")
 
 export default function PortfolioCard({ title, video, href, index = 0 }: Props) {
   const cardRef = useRef<HTMLDivElement | null>(null)
-  const [canAutoplay, setCanAutoplay] = useState(true)
-  const [shouldLoadVideo, setShouldLoadVideo] = useState(false)
-
-  useEffect(() => {
+  const [canAutoplay] = useState(() => {
+    if (typeof navigator === "undefined") return true
     const connection = (navigator as Navigator & { connection?: NavigatorConnection }).connection
     const isDataSaver = !!connection?.saveData
     const isSlowNetwork =
       connection?.effectiveType === "slow-2g" ||
       connection?.effectiveType === "2g" ||
       connection?.effectiveType === "3g"
-
-    // Prevent heavy autoplay behavior on constrained mobile networks.
-    setCanAutoplay(!(isDataSaver || isSlowNetwork))
-  }, [])
+    return !(isDataSaver || isSlowNetwork)
+  })
+  const [shouldLoadVideo, setShouldLoadVideo] = useState(false)
 
   useEffect(() => {
     if (shouldLoadVideo || !cardRef.current) return
@@ -71,14 +69,18 @@ export default function PortfolioCard({ title, video, href, index = 0 }: Props) 
   )
 
   const baseClass =
-    "group relative block aspect-[4/5] overflow-hidden rounded-xl border border-white/10 bg-[#0a0a0a] focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+    "hover-lift group relative block aspect-[4/5] overflow-hidden rounded-xl border border-white/10 bg-[#0a0a0a] focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
 
   if (isInternal(href)) {
     return (
       <div
         ref={cardRef}
+        data-lux
+        style={{
+          transitionDelay: `${index * 25}ms`,
+          "--lux-delay": `${80 + index * 45}ms`,
+        } as CSSProperties}
         className="transition-transform duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-1"
-        style={{ transitionDelay: `${index * 25}ms` }}
       >
         <div>
           <Link
@@ -96,8 +98,12 @@ export default function PortfolioCard({ title, video, href, index = 0 }: Props) 
   return (
     <div
       ref={cardRef}
+      data-lux
+      style={{
+        transitionDelay: `${index * 25}ms`,
+        "--lux-delay": `${80 + index * 45}ms`,
+      } as CSSProperties}
       className="transition-transform duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-1"
-      style={{ transitionDelay: `${index * 25}ms` }}
     >
       <div>
         <a

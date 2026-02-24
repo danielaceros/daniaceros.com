@@ -1,6 +1,5 @@
 import type { Metadata } from "next"
 import Image from "next/image"
-import { VIDEO_POSTER_URL } from "@/lib/media"
 import { buildMetadata } from "@/lib/seo"
 
 const rooftopBannerVideo =

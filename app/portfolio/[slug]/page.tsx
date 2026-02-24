@@ -80,6 +80,7 @@ export default async function ProjectPage({ params }: Props) {
       <ProjectHero
         title={project.title}
         video={project.video}
+        videoBlurClass="blur-[3px]"
       />
 
       <ProjectContent sections={project.sections} />

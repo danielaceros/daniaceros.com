@@ -1,5 +1,6 @@
 import Image from "next/image"
 import SectionTitle from "./SectionTitle"
+import type { CSSProperties } from "react"
 
 const paragraphs = [
   "Soy Daniel Acero, filmmaker con más de seis años de experiencia ayudando a empresas y marcas a transformar sus eventos en historias visuales que perduran.",
@@ -9,20 +10,33 @@ const paragraphs = [
 
 export default function About() {
   return (
-    <section className="page-container section-breathing grid grid-cols-1 gap-12 sm:gap-14 lg:grid-cols-2 lg:gap-20">
-      <div className="lg:pr-4">
+    <section data-lux className="cinematic-reveal page-container section-breathing grid grid-cols-1 gap-12 sm:gap-14 lg:grid-cols-2 lg:gap-20">
+      <div
+        data-lux
+        style={{ "--lux-delay": "90ms" } as CSSProperties}
+        className="cinematic-reveal-delay-1 lg:pr-4"
+      >
         <SectionTitle>Sobre mí</SectionTitle>
         <div className="space-y-6">
           {paragraphs.map((p, i) => (
-            <p key={i} className="font-inter text-[14px] sm:text-[16px] leading-[1.65]  text-white/78">
+            <p
+              key={i}
+              data-lux
+              style={{ "--lux-delay": `${150 + i * 70}ms` } as CSSProperties}
+              className="font-inter text-[14px] sm:text-[16px] leading-[1.65] text-white/78"
+            >
               {p}
             </p>
           ))}
         </div>
       </div>
 
-      <div className="flex items-center justify-center">
-        <div className="relative">
+      <div
+        data-lux
+        style={{ "--lux-delay": "220ms" } as CSSProperties}
+        className="cinematic-reveal cinematic-reveal-delay-2 flex items-center justify-center"
+      >
+        <div className="hover-lift lux-shine relative">
           <Image
             src="https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/0a4bxjgj0xSqIihE9ktHzjeng%20(2).png?alt=media&token=ead483f1-9cd5-4169-9e3d-810307334885"
             alt="Daniel Acero"

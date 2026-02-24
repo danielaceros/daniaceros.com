@@ -6,6 +6,7 @@ import { ease, stagger, viewport } from "@/lib/motion"
 export default function PortfolioHero() {
   return (
     <motion.section
+      data-lux
       initial="hidden"
       whileInView="visible"
       viewport={viewport}
