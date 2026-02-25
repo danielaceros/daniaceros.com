@@ -3,7 +3,11 @@ import PortfolioCard from "./PortfolioCard"
 import { projects } from "@/data/projects"
 import type { CSSProperties } from "react"
 
-export default function Portfolio() {
+type Props = {
+  openVideosInModal?: boolean
+}
+
+export default function Portfolio({ openVideosInModal = false }: Props) {
   return (
     <section data-lux className="cinematic-reveal page-container section-breathing">
       <div className="cinematic-reveal-delay-1" style={{ "--lux-delay": "80ms" } as CSSProperties}>
@@ -22,6 +26,7 @@ export default function Portfolio() {
             video={project.video}
             href={`/portfolio/${project.slug}`}
             index={i}
+            openInModal={openVideosInModal}
           />
         ))}
       </div>

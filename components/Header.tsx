@@ -19,8 +19,16 @@ const navItems = [
   { label: "Contacto", href: "/contacto" },
 ]
 
+const headerHiddenRoutes = new Set([
+  "/aviso-legal",
+  "/politica-de-cookies",
+  "/politica-de-privacidad",
+])
+
 export default function Header() {
   const pathname = usePathname()
+  const hideHeader = headerHiddenRoutes.has(pathname)
+  const isHablemosPage = pathname === "/hablemos"
   const [hidden, setHidden] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const lastScrollYRef = useRef(0)
@@ -82,6 +90,8 @@ export default function Header() {
     return () => window.removeEventListener("keydown", onKeyDown)
   }, [])
 
+  if (hideHeader) return null
+
   return (
     <>
       <header
@@ -96,76 +106,95 @@ export default function Header() {
             hidden ? "-translate-y-24 opacity-0" : "translate-y-0 opacity-100"
           )}
         >
-          <Link
-            href="/"
-            className="flex min-h-[44px] min-w-[44px] items-center rounded font-inter text-[10px] font-medium uppercase text-white/88 transition-colors duration-300 hover:text-white sm:text-[11px] focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
-          >
-            daniel acero©
-          </Link>
-
-          <ul className="hidden items-center gap-6 lg:flex xl:gap-8">
-            {navItems.map((item) => {
-              const isActive = pathname === item.href
-              return (
-                <li key={item.href}>
-                  <Link
-                    href={item.href}
-                    className={clsx(
-                      "group relative rounded py-1 font-inter text-[10px] uppercase text-white/72 transition-colors duration-300 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black xl:text-[11px]",
-                      isActive && "text-white"
-                    )}
-                  >
-                    {item.label}
-                    <span
-                      className={clsx(
-                        "absolute bottom-0 left-0 h-px bg-white transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)]",
-                        isActive ? "w-full" : "w-0 group-hover:w-full"
-                      )}
-                    />
-                  </Link>
-                </li>
-              )
-            })}
-            <li>
+          {isHablemosPage ? (
+            <>
               <Link
-                href="/contacto"
-                className="group relative rounded border border-white/14 bg-white/[0.03] px-3 py-2 font-inter text-[10px] uppercase text-white/92 transition-all duration-300 hover:border-white/25 hover:bg-white/[0.06] hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black xl:text-[11px]"
+                href="/"
+                className="flex min-h-[44px] min-w-[44px] items-center rounded font-inter text-[10px] font-medium uppercase text-white/88 transition-colors duration-300 hover:text-white sm:text-[11px] focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+              >
+                daniel acero©
+              </Link>
+              <Link
+                href="/hablemos#contacto"
+                className="group relative flex min-h-[44px] items-center rounded border border-white/14 bg-white/[0.03] px-3 py-2 font-inter text-[10px] uppercase text-white/92 transition-all duration-300 hover:border-white/25 hover:bg-white/[0.06] hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black xl:text-[11px]"
               >
                 Cuéntame tu proyecto
               </Link>
-            </li>
-          </ul>
+            </>
+          ) : (
+            <>
+              <Link
+                href="/"
+                className="flex min-h-[44px] min-w-[44px] items-center rounded font-inter text-[10px] font-medium uppercase text-white/88 transition-colors duration-300 hover:text-white sm:text-[11px] focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+              >
+                daniel acero©
+              </Link>
 
-          <button
-            type="button"
-            aria-label={mobileOpen ? "Cerrar menú" : "Abrir menú"}
-            aria-expanded={mobileOpen}
-            onClick={() => setMobileOpen((o) => !o)}
-            className="flex h-11 w-11 flex-col justify-center gap-1.5 rounded-lg text-white/90 transition-colors duration-300 hover:bg-white/5 hover:text-white lg:hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
-          >
-            <span
-              className={clsx(
-                "h-0.5 w-5 bg-current rounded-full origin-center block transition-transform duration-300",
-                mobileOpen && "translate-y-[8px] rotate-45"
-              )}
-            />
-            <span
-              className={clsx(
-                "h-0.5 w-5 bg-current rounded-full block transition-opacity duration-200",
-                mobileOpen ? "opacity-0" : "opacity-100"
-              )}
-            />
-            <span
-              className={clsx(
-                "h-0.5 w-5 bg-current rounded-full origin-center block transition-transform duration-300",
-                mobileOpen && "-translate-y-[8px] -rotate-45"
-              )}
-            />
-          </button>
+              <ul className="hidden items-center gap-6 lg:flex xl:gap-8">
+                {navItems.map((item) => {
+                  const isActive = pathname === item.href
+                  return (
+                    <li key={item.href}>
+                      <Link
+                        href={item.href}
+                        className={clsx(
+                          "group relative rounded py-1 font-inter text-[10px] uppercase text-white/72 transition-colors duration-300 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black xl:text-[11px]",
+                          isActive && "text-white"
+                        )}
+                      >
+                        {item.label}
+                        <span
+                          className={clsx(
+                            "absolute bottom-0 left-0 h-px bg-white transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)]",
+                            isActive ? "w-full" : "w-0 group-hover:w-full"
+                          )}
+                        />
+                      </Link>
+                    </li>
+                  )
+                })}
+                <li>
+                  <Link
+                    href="/contacto"
+                    className="group relative rounded border border-white/14 bg-white/[0.03] px-3 py-2 font-inter text-[10px] uppercase text-white/92 transition-all duration-300 hover:border-white/25 hover:bg-white/[0.06] hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black xl:text-[11px]"
+                  >
+                    Cuéntame tu proyecto
+                  </Link>
+                </li>
+              </ul>
+
+              <button
+                type="button"
+                aria-label={mobileOpen ? "Cerrar menú" : "Abrir menú"}
+                aria-expanded={mobileOpen}
+                onClick={() => setMobileOpen((o) => !o)}
+                className="flex h-11 w-11 flex-col justify-center gap-1.5 rounded-lg text-white/90 transition-colors duration-300 hover:bg-white/5 hover:text-white lg:hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+              >
+                <span
+                  className={clsx(
+                    "h-0.5 w-5 bg-current rounded-full origin-center block transition-transform duration-300",
+                    mobileOpen && "translate-y-[8px] rotate-45"
+                  )}
+                />
+                <span
+                  className={clsx(
+                    "h-0.5 w-5 bg-current rounded-full block transition-opacity duration-200",
+                    mobileOpen ? "opacity-0" : "opacity-100"
+                  )}
+                />
+                <span
+                  className={clsx(
+                    "h-0.5 w-5 bg-current rounded-full origin-center block transition-transform duration-300",
+                    mobileOpen && "-translate-y-[8px] -rotate-45"
+                  )}
+                />
+              </button>
+            </>
+          )}
         </nav>
       </header>
 
-      {mobileOpen && (
+      {mobileOpen && !isHablemosPage && (
         <div
           className="fixed inset-0 z-40 bg-black/95 backdrop-blur-md lg:hidden"
           aria-hidden="true"

@@ -1,6 +1,6 @@
 import Link from "next/link"
-import WhatsAppButton from "./WhatsAppButton"
 import type { CSSProperties } from "react"
+import Script from "next/script"
 
 export default function ContactCTA() {
   return (
@@ -25,20 +25,29 @@ export default function ContactCTA() {
       <div
         data-lux
         style={{ "--lux-delay": "230ms" } as CSSProperties}
-        className="cinematic-reveal cinematic-reveal-delay-3 mx-auto max-w-3xl"
+        className="cinematic-reveal cinematic-reveal-delay-3 mx-auto w-full max-w-5xl"
       >
-        <div className="relative">
-          <div className="pointer-events-none absolute -inset-2 rounded-2xl bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.26),rgba(255,255,255,0)_68%)] opacity-70 blur-lg transition-opacity duration-500" />
-          <WhatsAppButton
-            label="Hablamos por WhatsApp"
-            phone="34711255496"
-            message="Hola Dani! Estamos valorando crear vídeo para la empresa y quería saber cómo trabajáis y si encaja para nuestro caso."
-            className="relative z-10 h-[60px] rounded-xl border-white/30 bg-gradient-to-b from-white to-white/95 px-6 shadow-[0_12px_36px_rgba(255,255,255,0.14)] hover:shadow-[0_18px_48px_rgba(255,255,255,0.2)]"
+        <div className="relative overflow-hidden rounded-xl bg-[#0a0a0a]">
+          <iframe
+            src="https://api.fitnesslaunch.es/widget/form/xIIdaDunDkxA4Mcwehu0"
+            className="block h-[640px] w-[calc(100%+24px)] -ml-3 md:h-[680px] md:w-[calc(100%+32px)] md:-ml-4"
+            style={{ border: "none", borderRadius: "0px" }}
+            id="inline-xIIdaDunDkxA4Mcwehu0"
+            data-layout="{'id':'INLINE'}"
+            data-trigger-type="alwaysShow"
+            data-trigger-value=""
+            data-activation-type="alwaysActivated"
+            data-activation-value=""
+            data-deactivation-type="neverDeactivate"
+            data-deactivation-value=""
+            data-form-name="Form - Dani Acero"
+            data-height="undefined"
+            data-layout-iframe-id="inline-xIIdaDunDkxA4Mcwehu0"
+            data-form-id="xIIdaDunDkxA4Mcwehu0"
+            title="Form - Dani Acero"
           />
         </div>
-        <p className="mt-3 text-[11px] text-white/52 sm:text-[12px]">
-          Te respondo en 2–5 minutos · Sin llamadas
-        </p>
+        <Script src="https://api.fitnesslaunch.es/js/form_embed.js" strategy="afterInteractive" />
       </div>
 
       <footer

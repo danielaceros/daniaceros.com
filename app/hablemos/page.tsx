@@ -6,22 +6,22 @@ import ContactCTA from "@/components/ContactCTA"
 import { buildMetadata } from "@/lib/seo"
 
 export const metadata: Metadata = buildMetadata({
-  title: "Filmmaker corporativo y videografo en Madrid",
+  title: "Hablemos",
   description:
     "Produccion audiovisual para empresas, marcas y eventos en Madrid. Video corporativo con enfoque cinematografico y ejecucion profesional.",
-  path: "/",
+  path: "/hablemos",
   keywords: [
+    "hablemos",
     "filmmaker corporativo madrid",
     "videografo eventos madrid",
-    "productora audiovisual madrid",
   ],
 })
 
-export default function Home() {
+export default function HablemosPage() {
   return (
     <main className="text-white">
       <Hero />
-      <Portfolio />
+      <Portfolio openVideosInModal />
       <About />
       <div id="contacto">
         <ContactCTA />
