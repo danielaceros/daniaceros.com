@@ -1,9 +1,19 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
 import type { CSSProperties } from "react"
 import { VIDEO_POSTER_URL } from "@/lib/media"
 
 export default function Hero() {
+  const handleContactClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault()
+    const contactSection = document.getElementById("contacto")
+    if (!contactSection) return
+    contactSection.scrollIntoView({ behavior: "smooth", block: "start" })
+    window.history.replaceState(null, "", `${window.location.pathname}#contacto`)
+  }
+
   return (
     <section className="relative h-[100svh] w-full overflow-hidden">
       <div className="absolute inset-0">
@@ -49,6 +59,7 @@ export default function Hero() {
             data-lux
             style={{ "--lux-delay": "320ms" } as CSSProperties}
             href="#contacto"
+            onClick={handleContactClick}
             className="hero-cta hero-fade-up hero-fade-up-delay-3 mt-7 inline-flex min-h-[58px] items-center justify-center rounded-2xl border border-white/25 bg-white px-8 py-4 text-center font-inter text-[13px] font-semibold uppercase tracking-[0.06em] text-black focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black sm:min-h-[64px] sm:px-11 sm:text-[14px]"
           >
             <span className="hero-cta-label">Pide presupuesto</span>

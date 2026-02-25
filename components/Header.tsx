@@ -91,6 +91,15 @@ export default function Header() {
     return () => window.removeEventListener("keydown", onKeyDown)
   }, [])
 
+  const handleHablemosContactClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    if (!isHablemosPage) return
+    event.preventDefault()
+    const contactSection = document.getElementById("contacto")
+    if (!contactSection) return
+    contactSection.scrollIntoView({ behavior: "smooth", block: "start" })
+    window.history.replaceState(null, "", "/hablemos#contacto")
+  }
+
   if (hideHeader) return null
 
   return (
@@ -117,6 +126,7 @@ export default function Header() {
               </Link>
               <Link
                 href="/hablemos#contacto"
+                onClick={handleHablemosContactClick}
                 className="group relative flex min-h-[44px] items-center rounded border border-white/14 bg-white/[0.03] px-3 py-2 font-inter text-[10px] uppercase text-white/92 transition-all duration-300 hover:border-white/25 hover:bg-white/[0.06] hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black xl:text-[11px]"
               >
                 Cuéntame tu proyecto
