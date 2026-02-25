@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 import { buildMetadata } from "@/lib/seo"
 
 export const metadata: Metadata = buildMetadata({
@@ -20,6 +21,14 @@ export default function GraciasPage() {
           He recibido tu mensaje correctamente. En breve te escribo por WhatsApp o email para
           hablar de tu proyecto y darte una propuesta.
         </p>
+        <div className="mt-10">
+          <Link
+            href="/"
+            className="inline-flex min-h-[58px] min-w-[280px] items-center justify-center rounded-full border border-white/35 px-8 py-3 font-inter text-[13px] font-semibold uppercase tracking-[0.18em] text-white/92 transition-all duration-300 hover:border-white/55 hover:bg-white/[0.04] hover:text-white sm:min-w-[340px] sm:text-[14px]"
+          >
+            Volver al inicio
+          </Link>
+        </div>
       </section>
     </main>
   )
