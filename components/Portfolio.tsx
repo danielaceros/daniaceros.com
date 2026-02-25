@@ -10,7 +10,7 @@ type Props = {
 export default function Portfolio({ openVideosInModal = false }: Props) {
   const gridClassName = openVideosInModal
     ? "cinematic-reveal cinematic-reveal-delay-2 grid grid-cols-2 gap-2 sm:grid-cols-3 sm:gap-3 lg:grid-cols-4"
-    : "cinematic-reveal cinematic-reveal-delay-2 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4"
+    : "cinematic-reveal cinematic-reveal-delay-2 grid grid-cols-2 gap-2 sm:grid-cols-3 sm:gap-3 lg:grid-cols-4"
 
   return (
     <section data-lux className="cinematic-reveal page-container section-breathing">
