@@ -23,6 +23,7 @@ const headerHiddenRoutes = new Set([
   "/aviso-legal",
   "/politica-de-cookies",
   "/politica-de-privacidad",
+  "/gracias",
 ])
 
 export default function Header() {
