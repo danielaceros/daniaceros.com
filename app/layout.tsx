@@ -176,10 +176,16 @@ export default function RootLayout({
             </Script>
 
             {/* Microsoft Clarity */}
-            <Script id="clarity" strategy="lazyOnload">
+            <Script id="clarity" strategy="afterInteractive">
               {`
                 (function(c,l,a,r,i,t,y){
-                  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                  var existing=c[a];
+                  if (typeof existing!=="function") {
+                    var q=(existing&&existing.q)||[];
+                    var fn=function(){fn.q.push(arguments)};
+                    fn.q=q;
+                    c[a]=fn;
+                  }
                   t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
                   y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
                 })(window, document, "clarity", "script", "tp6om1sfvt");
