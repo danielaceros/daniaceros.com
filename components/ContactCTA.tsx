@@ -30,12 +30,15 @@ export default function ContactCTA() {
         <div className="relative">
           <div className="pointer-events-none absolute -inset-2 rounded-2xl bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.26),rgba(255,255,255,0)_68%)] opacity-70 blur-lg transition-opacity duration-500" />
           <WhatsAppButton
-            label="Cuéntame tu proyecto"
+            label="Hablamos por WhatsApp"
             phone="34711255496"
-            message="Hola Dani, vengo del anuncio. Mi empresa es ___ y estoy valorando crear un vídeo para ___. ¿Crees que encaja para mi caso?"
+            message="Hola Dani! Estamos valorando crear vídeo para la empresa y quería saber cómo trabajáis y si encaja para nuestro caso."
             className="relative z-10 h-[60px] rounded-xl border-white/30 bg-gradient-to-b from-white to-white/95 px-6 shadow-[0_12px_36px_rgba(255,255,255,0.14)] hover:shadow-[0_18px_48px_rgba(255,255,255,0.2)]"
           />
         </div>
+        <p className="mt-3 text-[11px] text-white/52 sm:text-[12px]">
+          Te respondo en 2–5 minutos · Sin llamadas
+        </p>
       </div>
 
       <footer

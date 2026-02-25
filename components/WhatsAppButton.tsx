@@ -29,27 +29,28 @@ export default function WhatsAppButton({
   }, [phone, message])
 
   const onClick = React.useCallback(() => {
-    if (typeof window !== "undefined") {
-      if (typeof window.fbq === "function") {
-        window.fbq("track", "Contact")
-      }
-      if (typeof window.gtag === "function") {
-        window.gtag("event", "conversion", {
-          send_to: "AW-17644170080/62xhCODU57UbEODWst1B",
-          value: 1.0,
-          currency: "EUR",
-        })
-      }
-      window.open(waUrl, "_blank", "noopener,noreferrer")
+    if (typeof window.fbq === "function") {
+      window.fbq("track", "Contact")
     }
-  }, [waUrl])
+    if (typeof window.gtag === "function") {
+      window.gtag("event", "conversion", {
+        send_to: "AW-17644170080/62xhCODU57UbEODWst1B",
+        value: 1.0,
+        currency: "EUR",
+      })
+    }
+  }, [])
 
   return (
-    <button
-      type="button"
+    <a
+      href={waUrl}
+      target="_blank"
+      rel="noopener noreferrer"
       onClick={onClick}
+      style={{ cursor: "pointer" }}
+      aria-label={label}
       className={clsx(
-        "group relative isolate inline-flex h-14 min-h-[3.5rem] w-full cursor-pointer items-center justify-between overflow-hidden rounded-lg border border-white/20 bg-white px-5 text-left text-[#0a0a0a] shadow-[0_10px_32px_rgba(255,255,255,0.1)] transition-all duration-300 hover:-translate-y-[2px] hover:border-white/40 hover:shadow-[0_18px_46px_rgba(255,255,255,0.16)] active:translate-y-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black",
+        "whatsapp-clickable group relative isolate inline-flex h-14 min-h-[3.5rem] w-full cursor-pointer items-center justify-between overflow-hidden rounded-lg border border-white/20 bg-white px-5 text-left text-[#0a0a0a] shadow-[0_10px_32px_rgba(255,255,255,0.1)] transition-all duration-300 hover:-translate-y-[2px] hover:border-white/40 hover:shadow-[0_18px_46px_rgba(255,255,255,0.16)] active:translate-y-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black",
         className
       )}
     >
@@ -61,6 +62,6 @@ export default function WhatsAppButton({
       <span className="relative z-10 text-[15px] leading-none text-[#0a0a0a] transition-transform duration-300 group-hover:translate-x-[1px] group-hover:-translate-y-[1px]">
         ↗
       </span>
-    </button>
+    </a>
   )
 }

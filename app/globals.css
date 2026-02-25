@@ -66,6 +66,23 @@ select {
     box-shadow var(--transition-fast);
 }
 
+/* Ensure interactive affordance is consistent across site */
+a[href],
+button,
+[role="button"],
+summary,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  cursor: pointer !important;
+}
+
+button:disabled,
+input:disabled,
+[aria-disabled="true"] {
+  cursor: not-allowed !important;
+}
+
 /* Cinematic section reveal */
 @keyframes cinematic-fade-up {
   0% {
@@ -104,6 +121,12 @@ select {
 .hover-lift:hover {
   transform: translate3d(0, -4px, 0);
   box-shadow: 0 16px 34px -24px rgba(255, 255, 255, 0.35);
+}
+
+/* Hard-enforce pointer cursor on main WhatsApp CTA */
+.whatsapp-clickable,
+.whatsapp-clickable * {
+  cursor: pointer !important;
 }
 
 /* Ambient header/backdrop glow */
