@@ -119,7 +119,7 @@ export default function Header() {
           {isHablemosPage ? (
             <>
               <Link
-                href="/"
+                href="/hablemos"
                 className="flex min-h-[44px] min-w-[44px] items-center rounded font-inter text-[10px] font-medium uppercase text-white/88 transition-colors duration-300 hover:text-white sm:text-[11px] focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
               >
                 daniel acero©
