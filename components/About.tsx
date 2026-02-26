@@ -30,18 +30,38 @@ export default function About({ sectionClassName, mobileCompactSplit = false }: 
       >
         <SectionTitle>Sobre mí</SectionTitle>
         <div className={mobileCompactSplit ? "space-y-4 sm:space-y-6" : "space-y-6"}>
-          {paragraphs.map((p, i) => (
-            <p
-              key={i}
-              data-lux
-              style={{ "--lux-delay": `${150 + i * 70}ms` } as CSSProperties}
-              className={`font-inter leading-[1.65] text-white/78 ${
-                mobileCompactSplit ? "text-[12px] sm:text-[16px]" : "text-[14px] sm:text-[16px]"
-              }`}
-            >
-              {p}
-            </p>
-          ))}
+          {mobileCompactSplit ? (
+            <>
+              <p
+                data-lux
+                style={{ "--lux-delay": "150ms" } as CSSProperties}
+                className="font-inter text-[12px] leading-[1.65] text-white/78 sm:hidden"
+              >
+                {paragraphs[0]}
+              </p>
+              {paragraphs.map((p, i) => (
+                <p
+                  key={`desktop-${i}`}
+                  data-lux
+                  style={{ "--lux-delay": `${150 + i * 70}ms` } as CSSProperties}
+                  className="hidden font-inter text-[16px] leading-[1.65] text-white/78 sm:block"
+                >
+                  {p}
+                </p>
+              ))}
+            </>
+          ) : (
+            paragraphs.map((p, i) => (
+              <p
+                key={i}
+                data-lux
+                style={{ "--lux-delay": `${150 + i * 70}ms` } as CSSProperties}
+                className="font-inter text-[14px] sm:text-[16px] leading-[1.65] text-white/78"
+              >
+                {p}
+              </p>
+            ))
+          )}
         </div>
       </div>
 

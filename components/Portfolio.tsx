@@ -50,7 +50,11 @@ export default function Portfolio({
                       href={`/portfolio/${project.slug}`}
                       index={i}
                       openInModal={openVideosInModal}
+                      hideOverlayTitle
                     />
+                    <p className="mt-2 px-1 text-left font-display text-[13px] font-semibold uppercase leading-tight text-white/92">
+                      {project.title}
+                    </p>
                   </div>
                 ))}
               </div>
