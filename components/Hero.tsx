@@ -5,7 +5,25 @@ import Link from "next/link"
 import type { CSSProperties } from "react"
 import { VIDEO_POSTER_URL } from "@/lib/media"
 
-export default function Hero() {
+type Props = {
+  title?: string
+  tagline?: string
+  description?: string
+  ctaLabel?: string
+  compactTitle?: boolean
+  trustedLogosImageSrc?: string
+  trustedLogosImageAlt?: string
+}
+
+export default function Hero({
+  title = "DANIEL ACERO",
+  tagline = "Filmmaker corporativo y videógrafo de eventos en Madrid",
+  description = "Transformo eventos empresariales, congresos y conferencias en piezas audiovisuales profesionales para marcas y empresas en Madrid.",
+  ctaLabel = "Pide presupuesto",
+  compactTitle = false,
+  trustedLogosImageSrc,
+  trustedLogosImageAlt = "Logos de clientes",
+}: Props) {
   const handleContactClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault()
     const contactSection = document.getElementById("contacto")
@@ -15,7 +33,11 @@ export default function Hero() {
   }
 
   return (
-    <section className="relative h-[100svh] w-full overflow-hidden">
+    <section
+      className={`relative w-full overflow-hidden ${
+        compactTitle ? "min-h-0 sm:min-h-[86svh]" : "h-[100svh]"
+      }`}
+    >
       <div className="absolute inset-0">
         <div className="hero-bg-ambient absolute -top-[10%] inset-0 h-[120%] w-full">
           <Image
@@ -31,29 +53,40 @@ export default function Hero() {
         <div className="pointer-events-none absolute inset-0 bg-black/72" />
       </div>
 
-      <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center sm:px-6">
-        <div className="flex flex-col items-center">
+      <div
+        className={`relative z-10 flex h-full flex-col items-center justify-center px-4 text-center sm:px-6 ${
+          compactTitle ? "pb-10 pt-10 sm:pb-4 sm:pt-24" : ""
+        }`}
+      >
+        <div className="flex w-full max-w-4xl flex-col items-center">
           <h1
             data-lux
             style={{ "--lux-delay": "90ms" } as CSSProperties}
-            className="hero-fade-up font-display font-semibold uppercase leading-[0.9] text-[clamp(2.8rem,11.8vw,9.2rem)]"
+            className={`hero-fade-up font-display font-semibold uppercase ${
+              compactTitle
+                ? "leading-[1.02] text-[clamp(2rem,8.5vw,4.7rem)]"
+                : "leading-[0.9] text-[clamp(2.8rem,11.8vw,9.2rem)]"
+            }`}
           >
-            DANIEL ACERO
+            {title}
           </h1>
-          <p
-            data-lux
-            style={{ "--lux-delay": "180ms" } as CSSProperties}
-            className="hero-fade-up hero-fade-up-delay-1 mt-4 font-inter text-[clamp(0.94rem,2.8vw,1.3rem)] font-medium uppercase text-white/86 sm:mt-5"
-          >
-            Filmmaker corporativo y videógrafo de eventos en Madrid
-          </p>
+          {tagline ? (
+            <p
+              data-lux
+              style={{ "--lux-delay": "180ms" } as CSSProperties}
+              className="hero-fade-up hero-fade-up-delay-1 mt-4 font-inter text-[clamp(0.94rem,2.8vw,1.3rem)] font-medium uppercase text-white/86 sm:mt-5"
+            >
+              {tagline}
+            </p>
+          ) : null}
           <p
             data-lux
             style={{ "--lux-delay": "260ms" } as CSSProperties}
-            className="hero-fade-up hero-fade-up-delay-2 mt-4 max-w-3xl px-1 font-inter text-[13px] font-normal leading-[1.72] text-white/72 sm:mt-5 sm:text-[15px]"
+            className={`hero-fade-up hero-fade-up-delay-2 max-w-3xl px-1 font-inter text-[13px] font-normal leading-[1.72] text-white/72 sm:text-[15px] ${
+              compactTitle ? "mt-6 sm:mt-7" : "mt-4 sm:mt-5"
+            }`}
           >
-            Transformo eventos empresariales, congresos y conferencias en piezas audiovisuales
-            profesionales para marcas y empresas en Madrid.
+            {description}
           </p>
           <Link
             data-lux
@@ -62,21 +95,37 @@ export default function Hero() {
             onClick={handleContactClick}
             className="hero-cta hero-fade-up hero-fade-up-delay-3 mt-7 inline-flex min-h-[58px] items-center justify-center rounded-2xl border border-white/25 bg-white px-8 py-4 text-center font-inter text-[13px] font-semibold uppercase tracking-[0.06em] text-black focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black sm:min-h-[64px] sm:px-11 sm:text-[14px]"
           >
-            <span className="hero-cta-label">Pide presupuesto</span>
+            <span className="hero-cta-label">{ctaLabel}</span>
           </Link>
+
+          {trustedLogosImageSrc ? (
+            <div
+              data-lux
+              style={{ "--lux-delay": "380ms" } as CSSProperties}
+              className="hero-fade-up hero-fade-up-delay-3 mt-5 w-full max-w-2xl sm:mt-6"
+            >
+              <p className="mb-2 text-center font-inter text-[10px] uppercase tracking-[0.18em] text-white/58 sm:mb-3 sm:text-[11px]">
+                Algunas de las empresas que han confiado en mí:
+              </p>
+              <div className="hero-trusted-loop mx-auto w-full overflow-hidden rounded-xl">
+                <div className="hero-trusted-track">
+                  <img
+                    src={trustedLogosImageSrc}
+                    alt={trustedLogosImageAlt}
+                    className="hero-trusted-image h-14 w-auto max-w-none sm:h-16"
+                  />
+                  <img
+                    src={trustedLogosImageSrc}
+                    alt=""
+                    aria-hidden
+                    className="hero-trusted-image h-14 w-auto max-w-none sm:h-16"
+                  />
+                </div>
+              </div>
+            </div>
+          ) : null}
         </div>
 
-        <div
-          data-lux
-          style={{ "--lux-delay": "380ms" } as CSSProperties}
-          className="hero-fade-up hero-fade-up-delay-3 absolute bottom-[max(2rem,env(safe-area-inset-bottom)+1rem)] left-1/2 flex -translate-x-1/2 flex-col items-center gap-3"
-          aria-hidden
-        >
-          <span className="font-inter text-[10px] uppercase text-white/38">
-            Scroll
-          </span>
-          <span className="hero-scroll-line h-10 w-px rounded-full bg-white/50" />
-        </div>
       </div>
 
       <style>{`
@@ -103,8 +152,37 @@ export default function Hero() {
           animation-delay: 360ms;
         }
 
-        .hero-scroll-line {
-          animation: hero-scroll-line 2s ease-in-out infinite;
+        .hero-trusted-track {
+          display: flex;
+          width: max-content;
+          align-items: center;
+          gap: 0;
+          animation: hero-trusted-loop 22s linear infinite;
+          will-change: transform;
+        }
+
+        .hero-trusted-loop {
+          position: relative;
+          isolation: isolate;
+          /* Real alpha fade: blends with any background image */
+          -webkit-mask-image: linear-gradient(
+            to right,
+            transparent 0%,
+            black 12%,
+            black 88%,
+            transparent 100%
+          );
+          mask-image: linear-gradient(
+            to right,
+            transparent 0%,
+            black 12%,
+            black 88%,
+            transparent 100%
+          );
+        }
+
+        .hero-trusted-image {
+          flex: 0 0 auto;
         }
 
         .hero-cta {
@@ -192,18 +270,6 @@ export default function Hero() {
           }
         }
 
-        @keyframes hero-scroll-line {
-          0%,
-          100% {
-            opacity: 0.45;
-            transform: translateY(0);
-          }
-          50% {
-            opacity: 1;
-            transform: translateY(7px);
-          }
-        }
-
         @keyframes hero-cta-shine {
           0%,
           62% {
@@ -223,11 +289,20 @@ export default function Hero() {
           }
         }
 
+        @keyframes hero-trusted-loop {
+          0% {
+            transform: translate3d(0, 0, 0);
+          }
+          100% {
+            transform: translate3d(-50%, 0, 0);
+          }
+        }
+
         @media (prefers-reduced-motion: reduce) {
           .hero-bg-ambient,
           .hero-fade-up,
-          .hero-scroll-line,
-          .hero-cta::after {
+          .hero-cta::after,
+          .hero-trusted-track {
             animation: none;
             transform: none;
             opacity: 1;
@@ -238,6 +313,7 @@ export default function Hero() {
             transition: none;
           }
         }
+
       `}</style>
     </section>
   )

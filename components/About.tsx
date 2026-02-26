@@ -8,22 +8,36 @@ const paragraphs = [
   "Mi misión es que cada historia siga viva mucho después de que el evento acabe.",
 ]
 
-export default function About() {
+type Props = {
+  sectionClassName?: string
+  mobileCompactSplit?: boolean
+}
+
+export default function About({ sectionClassName, mobileCompactSplit = false }: Props) {
+  const sectionLayoutClassName = mobileCompactSplit
+    ? "grid grid-cols-[1fr_auto] items-start gap-5 sm:grid-cols-1 sm:gap-14 lg:grid-cols-2 lg:gap-20"
+    : "grid grid-cols-1 gap-12 sm:gap-14 lg:grid-cols-2 lg:gap-20"
+
   return (
-    <section data-lux className="cinematic-reveal page-container section-breathing grid grid-cols-1 gap-12 sm:gap-14 lg:grid-cols-2 lg:gap-20">
+    <section
+      data-lux
+      className={`cinematic-reveal page-container section-breathing ${sectionLayoutClassName} ${sectionClassName ?? ""}`}
+    >
       <div
         data-lux
         style={{ "--lux-delay": "90ms" } as CSSProperties}
-        className="cinematic-reveal-delay-1 lg:pr-4"
+        className={`cinematic-reveal-delay-1 ${mobileCompactSplit ? "pr-0 sm:pr-0 lg:pr-4" : "lg:pr-4"}`}
       >
         <SectionTitle>Sobre mí</SectionTitle>
-        <div className="space-y-6">
+        <div className={mobileCompactSplit ? "space-y-4 sm:space-y-6" : "space-y-6"}>
           {paragraphs.map((p, i) => (
             <p
               key={i}
               data-lux
               style={{ "--lux-delay": `${150 + i * 70}ms` } as CSSProperties}
-              className="font-inter text-[14px] sm:text-[16px] leading-[1.65] text-white/78"
+              className={`font-inter leading-[1.65] text-white/78 ${
+                mobileCompactSplit ? "text-[12px] sm:text-[16px]" : "text-[14px] sm:text-[16px]"
+              }`}
             >
               {p}
             </p>
@@ -34,7 +48,9 @@ export default function About() {
       <div
         data-lux
         style={{ "--lux-delay": "220ms" } as CSSProperties}
-        className="cinematic-reveal cinematic-reveal-delay-2 flex items-center justify-center"
+        className={`cinematic-reveal cinematic-reveal-delay-2 flex ${
+          mobileCompactSplit ? "items-start justify-end sm:items-center sm:justify-center" : "items-center justify-center"
+        }`}
       >
         <div className="hover-lift lux-shine relative">
           <Image
@@ -43,7 +59,11 @@ export default function About() {
             width={560}
             height={760}
             sizes="(max-width: 640px) 280px, (max-width: 1024px) 420px, 560px"
-            className="max-h-[400px] sm:max-h-[500px] h-auto w-full max-w-[280px] sm:max-w-sm object-cover grayscale rounded-lg border border-white/[0.08] transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] hover:grayscale-0 hover:border-white/20"
+            className={`h-auto w-full object-cover grayscale rounded-lg border border-white/[0.08] transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] hover:grayscale-0 hover:border-white/20 ${
+              mobileCompactSplit
+                ? "max-h-[220px] max-w-[132px] sm:max-h-[500px] sm:max-w-sm"
+                : "max-h-[400px] max-w-[280px] sm:max-h-[500px] sm:max-w-sm"
+            }`}
           />
         </div>
       </div>
