@@ -16,6 +16,7 @@ const navItems = [
   { label: "Proceso", href: "/proceso" },
   { label: "Contratar", href: "/contratar" },
   { label: "FAQ", href: "/faq" },
+  { label: "Blog", href: "/blog" },
   { label: "Contacto", href: "/contacto" },
 ]
 

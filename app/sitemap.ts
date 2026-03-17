@@ -1,4 +1,6 @@
 import type { MetadataRoute } from "next"
+import { getAllPosts } from "@/lib/blog"
+
 const sitemapUrls = [
   "https://daniaceros.com/",
   "https://daniaceros.com/contacto",
@@ -33,5 +35,6 @@ const sitemapUrls = [
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return sitemapUrls.map((url) => ({ url }))
+  const blogUrls = getAllPosts().map((post) => `https://daniaceros.com/blog/${post.slug}`)
+  return [...sitemapUrls, "https://daniaceros.com/blog", ...blogUrls].map((url) => ({ url }))
 }
