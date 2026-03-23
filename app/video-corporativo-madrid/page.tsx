@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { useState } from "react"
 import Image from "next/image"
 import { motion, AnimatePresence } from "framer-motion"
@@ -47,8 +48,26 @@ const clientesTipos = [
 ]
 
 const faqParte1 = [
-  { q: "¿Dónde trabajo?", a: "Estoy basado en Madrid y me desplazo por toda España para rodajes y cobertura de eventos cuando el proyecto lo requiere." },
-  { q: "¿Necesitas un vídeo corporativo profesional?", a: "Si quieres comunicar con claridad y calidad —presentar tu empresa, tu producto o un evento— un vídeo corporativo profesional te da credibilidad, control del mensaje y material reutilizable para web, redes y campañas. Te preparo una propuesta a medida según tu objetivo." },
+  {
+    q: "¿Dónde trabajo?",
+    a: "Estoy basado en Madrid y me desplazo por toda España para rodajes y cobertura de eventos cuando el proyecto lo requiere.",
+  },
+  {
+    q: "¿Necesitas un vídeo profesional para tu empresa en Madrid?",
+    a: "Si quieres comunicar con claridad y calidad —presentar tu empresa, tu producto o un servicio— un vídeo profesional te da credibilidad, control del mensaje y material reutilizable para web, redes, ventas y campañas. Yo y mi equipo te preparamos una propuesta a medida según tu objetivo.",
+  },
+  {
+    q: "¿También preparas presupuesto y enfoque antes de grabar?",
+    a: "Sí. Antes de rodar definimos objetivo, alcance, entregables y presupuesto. La idea es que sepas qué pieza vas a tener, para qué sirve y cómo la vamos a producir.",
+  },
+  {
+    q: "¿Cuánto cuesta un vídeo profesional para empresa en Madrid?",
+    a: "Depende del tipo de pieza, el número de jornadas, las localizaciones, el equipo técnico y las versiones finales. No trabajo con una tarifa genérica porque el objetivo y el uso cambian mucho. Si me cuentas qué necesitas, te preparo una propuesta y presupuesto claros.",
+  },
+  {
+    q: "¿Cómo pedimos presupuesto para el vídeo?",
+    a: "Lo más útil es compartir objetivo, tipo de empresa, plazo, localización y dónde vais a usar la pieza. Con eso puedo proponerte un enfoque realista y un presupuesto alineado con el resultado que buscáis.",
+  },
 ]
 
 export default function VideoCorporativoMadridPage() {
@@ -58,7 +77,7 @@ export default function VideoCorporativoMadridPage() {
     <main className="min-h-screen bg-[#0a0a0a] text-white">
       <section className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pt-20 sm:pt-28 pb-6">
         <h1 className="font-inter font-semibold uppercase  text-[28px] leading-[1.1] sm:text-[36px] lg:text-[44px] text-center">
-          Vídeo corporativo en Madrid
+          Vídeo profesional para empresas en Madrid
         </h1>
       </section>
 
@@ -66,7 +85,7 @@ export default function VideoCorporativoMadridPage() {
         <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl border border-white/10">
           <Image
             src="https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/Disen%CC%83o%20sin%20ti%CC%81tulo.png?alt=media&token=ae45c05e-35c1-40c4-a89a-b7a738811667"
-            alt="Vídeo corporativo para empresas en Madrid"
+            alt="Grabación de vídeo corporativo para empresas en Madrid"
             fill
             sizes="(max-width: 1024px) 100vw, 70vw"
             className="h-full w-full object-cover"
@@ -79,11 +98,26 @@ export default function VideoCorporativoMadridPage() {
         <div className="space-y-14 font-inter">
           <section className="space-y-4">
             <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
-              Qué es un vídeo corporativo
+              Qué significa tener un vídeo profesional para tu empresa
             </h2>
             <p className="text-[13px] sm:text-[14px] leading-[1.75] text-white/85">
-              Un vídeo corporativo es una pieza audiovisual pensada para comunicar los valores, la actividad o el mensaje de una empresa, institución o marca. Sirve para presentar la compañía, un producto, un evento o una campaña de forma clara y profesional. Puede ser un vídeo de presentación, un reportaje de un evento, testimoniales, piezas para redes sociales o spots; el objetivo es siempre alinear imagen y mensaje con tu audiencia.
+              Si estás buscando un vídeo profesional para empresas en Madrid, normalmente no necesitas solo una cámara. Necesitas una pieza que explique bien quién eres, qué vendes y por qué deberían elegirte. Yo y mi equipo trabajamos este tipo de proyectos de principio a fin: propuesta, enfoque, rodaje, edición y entrega lista para web, campañas, ventas o comunicación interna.
             </p>
+            <p className="text-[13px] sm:text-[14px] leading-[1.75] text-white/85">
+              Un vídeo profesional para empresa puede servir para presentar la compañía, reforzar marca, enseñar un servicio, captar leads o apoyar una conversación comercial. La clave es que no se quede en algo bonito: tiene que ser útil para negocio y tener sentido en presupuesto, formato y uso real.
+            </p>
+          </section>
+
+          <section className="space-y-4">
+            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
+              Qué incluye un vídeo profesional para empresas en Madrid
+            </h2>
+            <ul className="space-y-2 text-[13px] sm:text-[14px] leading-[1.65] text-white/85 list-disc list-inside">
+              <li>Definición del objetivo comercial y del mensaje que hay que dejar claro.</li>
+              <li>Planificación de rodaje, localizaciones, guion o escaleta cuando hace falta.</li>
+              <li>Grabación con equipo profesional en Madrid o donde toque el proyecto.</li>
+              <li>Edición, color, ritmo y versiones adaptadas para web, redes, ventas o campañas.</li>
+            </ul>
           </section>
 
           <section className="space-y-4">
@@ -110,6 +144,9 @@ export default function VideoCorporativoMadridPage() {
             <p className="text-[13px] sm:text-[14px] leading-[1.75] text-white/85">
               Experiencia en proyectos corporativos e institucionales, comunicación clara y plazos respetados. Trabajo de forma ágil y adaptada a cada cliente: desde el briefing hasta la entrega final, con una visión coherente del proyecto. Las empresas confían en mí por el resultado, la seriedad en la producción y la posibilidad de escalar con equipo cuando el proyecto lo requiere.
             </p>
+            <p className="text-[13px] sm:text-[14px] leading-[1.75] text-white/85">
+              El enfoque es personal y profesional: yo lidero el proyecto y, cuando hace falta, sumo equipo para cubrir rodaje, sonido, iluminación o versiones extra. Así la pieza mantiene criterio creativo y al mismo tiempo responde a una necesidad real de negocio.
+            </p>
           </section>
 
           <section className="space-y-4">
@@ -117,8 +154,39 @@ export default function VideoCorporativoMadridPage() {
               Cómo trabajo
             </h2>
             <p className="text-[13px] sm:text-[14px] leading-[1.75] text-white/85">
-              Contacto inicial para entender tu objetivo; después te envío una propuesta personalizada con concepto, plazos y presupuesto. Tras el visto bueno, planificamos la producción, grabamos (en Madrid o donde indiques) y pasamos a edición y postproducción. Incluyo hasta dos rondas de revisión y entrego el material en los formatos acordados.
+              Primero entiendo qué necesitas conseguir con el vídeo: vender mejor, presentar la empresa, apoyar una campaña o dejar una pieza sólida para reuniones, web y redes. Después te propongo una forma concreta de grabarlo. Tras el visto bueno, planificamos la producción, rodamos en Madrid o donde haga falta y cierro la edición con entregables pensados para uso real, no solo para enseñar una pieza bonita.
             </p>
+            <p className="text-[13px] sm:text-[14px] leading-[1.75] text-white/85">
+              Si ya tienes claro el objetivo, puedes escribirme con el contexto del proyecto y te preparo una propuesta cerrada. Si todavía estás comparando opciones, revisa primero mi <Link href="/portfolio" className="text-white underline underline-offset-4 hover:text-white/80">portfolio</Link>, cómo planteo los <Link href="/servicios/corporativo" className="text-white underline underline-offset-4 hover:text-white/80">proyectos corporativos</Link> y la página de <Link href="/precios" className="text-white underline underline-offset-4 hover:text-white/80">precios</Link> para aterrizar mejor el presupuesto.
+            </p>
+          </section>
+
+          <section className="space-y-4">
+            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
+              Cuándo encaja contratar este servicio
+            </h2>
+            <ul className="space-y-2 text-[13px] sm:text-[14px] leading-[1.65] text-white/85 list-disc list-inside">
+              <li>Cuando necesitas presentar tu empresa o servicio con una pieza más seria que un vídeo improvisado.</li>
+              <li>Cuando ventas, marketing o dirección necesitan un activo reutilizable para web, reuniones, campañas y redes.</li>
+              <li>Cuando buscas un proveedor en Madrid que pueda liderar la propuesta, la grabación y la edición sin marearte.</li>
+            </ul>
+          </section>
+
+          <section className="space-y-4 rounded-2xl border border-white/10 bg-white/[0.03] p-5 sm:p-6">
+            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
+              Pide presupuesto con contexto y te respondo yo
+            </h2>
+            <p className="text-[13px] sm:text-[14px] leading-[1.75] text-white/85">
+              Si me escribes con objetivo, tipo de pieza, plazo, localización y uso final, puedo decirte rápido si encaja y cómo lo plantearía. La idea no es venderte un vídeo genérico, sino proponerte una pieza útil para captar clientes, presentar mejor tu empresa o reforzar una campaña.
+            </p>
+            <div className="flex flex-wrap gap-3 pt-1">
+              <Link href="/contacto" className="inline-flex min-h-[44px] items-center rounded-full border border-white/15 bg-white px-5 py-2 text-[12px] font-semibold uppercase tracking-[0.06em] text-black transition hover:bg-white/90">
+                Pedir propuesta
+              </Link>
+              <Link href="/portfolio" className="inline-flex min-h-[44px] items-center rounded-full border border-white/15 px-5 py-2 text-[12px] font-semibold uppercase tracking-[0.06em] text-white transition hover:border-white/30 hover:text-white/85">
+                Ver trabajos
+              </Link>
+            </div>
           </section>
 
           <section className="space-y-4">
@@ -157,7 +225,6 @@ export default function VideoCorporativoMadridPage() {
               ))}
             </ul>
           </section>
-
         </div>
       </section>
 
@@ -208,7 +275,7 @@ export default function VideoCorporativoMadridPage() {
               Por qué un vídeo profesional marca la diferencia
             </h3>
             <p className="text-[13px] sm:text-[14px] leading-[1.75] text-white/85">
-              Un vídeo profesional transmite seriedad y calidad, mejora el recuerdo de tu mensaje y te da material reutilizable para web, redes y campañas. Invertir en buen contenido suele rentabilizarse en imagen y alcance; los asistentes y quienes no pudieron asistir pueden revivir el evento y tu marca gana consistencia visual.
+              Un vídeo profesional transmite seriedad, ordena mejor el mensaje y acelera conversaciones comerciales. Sirve para web, propuestas, campañas, LinkedIn, presentaciones o piezas de apoyo a ventas. Bien planteado, un solo rodaje puede darte una pieza principal y varias adaptaciones útiles para distintos puntos del embudo.
             </p>
           </section>
 
@@ -255,7 +322,6 @@ export default function VideoCorporativoMadridPage() {
               Estoy basado en Madrid y me desplazo por toda España para rodajes y cobertura de eventos cuando el proyecto lo requiere.
             </p>
           </section>
-
         </div>
       </section>
 
