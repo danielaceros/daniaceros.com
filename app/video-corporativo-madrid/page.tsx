@@ -68,6 +68,14 @@ const faqParte1 = [
     q: "¿Cómo pedimos presupuesto para el vídeo?",
     a: "Lo más útil es compartir objetivo, tipo de empresa, plazo, localización y dónde vais a usar la pieza. Con eso puedo proponerte un enfoque realista y un presupuesto alineado con el resultado que buscáis.",
   },
+  {
+    q: "¿Sois una agencia de vídeo corporativo en Madrid o un equipo de producción?",
+    a: "Trabajo de forma directa como filmmaker y director del proyecto. Cuando el alcance lo pide, sumo a mi equipo de producción, sonido, iluminación o postproducción. Tienes la solidez de una agencia de vídeo corporativo en Madrid, pero con trato directo y criterio unificado.",
+  },
+  {
+    q: "¿Qué diferencia hay entre contratar una agencia grande y trabajar conmigo?",
+    a: "La diferencia principal es la cercanía y la agilidad. Aquí hablas conmigo desde el briefing, definimos la propuesta sin capas innecesarias y yo coordino al equipo cuando hace falta. Eso suele traducirse en mejor encaje, decisiones más rápidas y un presupuesto más ajustado al proyecto real.",
+  },
 ]
 
 export default function VideoCorporativoMadridPage() {
@@ -77,7 +85,7 @@ export default function VideoCorporativoMadridPage() {
     <main className="min-h-screen bg-[#0a0a0a] text-white">
       <section className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pt-20 sm:pt-28 pb-6">
         <h1 className="font-inter font-semibold uppercase  text-[28px] leading-[1.1] sm:text-[36px] lg:text-[44px] text-center">
-          Vídeo profesional para empresas en Madrid
+          Vídeo corporativo en Madrid para empresas y marcas
         </h1>
       </section>
 
@@ -100,6 +108,9 @@ export default function VideoCorporativoMadridPage() {
             <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
               Qué significa tener un vídeo profesional para tu empresa
             </h2>
+            <p className="text-[13px] sm:text-[14px] leading-[1.75] text-white/85">
+              Si estás buscando una agencia de vídeo corporativo en Madrid, muchas veces en realidad necesitas algo más concreto: un equipo que entienda tu objetivo comercial, proponga una pieza viable y la ejecute bien de principio a fin. Yo lidero ese proceso con trato directo y, cuando el proyecto lo pide, sumo a mi equipo para cubrir producción, rodaje y postproducción sin que tengas que coordinar mil intermediarios.
+            </p>
             <p className="text-[13px] sm:text-[14px] leading-[1.75] text-white/85">
               Si estás buscando un vídeo profesional para empresas en Madrid, normalmente no necesitas solo una cámara. Necesitas una pieza que explique bien quién eres, qué vendes y por qué deberían elegirte. Yo y mi equipo trabajamos este tipo de proyectos de principio a fin: propuesta, enfoque, rodaje, edición y entrega lista para web, campañas, ventas o comunicación interna.
             </p>
@@ -139,6 +150,18 @@ export default function VideoCorporativoMadridPage() {
 
           <section className="space-y-4">
             <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
+              Si buscas una agencia de vídeo corporativo en Madrid, así trabajo
+            </h2>
+            <p className="text-[13px] sm:text-[14px] leading-[1.75] text-white/85">
+              No funciono como una agencia tradicional con capas comerciales y producción separadas. Aquí hablas conmigo, aterrizamos el objetivo, definimos la propuesta y yo coordino al equipo necesario para sacar la pieza adelante. Para muchas empresas, eso significa menos ruido, más claridad y un vídeo mejor alineado con negocio.
+            </p>
+            <p className="text-[13px] sm:text-[14px] leading-[1.75] text-white/85">
+              Este formato encaja especialmente bien cuando necesitas una solución ágil: vídeo de marca, pieza corporativa, entrevistas, cobertura de evento con enfoque comercial o contenido para campañas. Tienes la capacidad de una agencia de vídeo corporativo en Madrid, pero con una dirección creativa unificada y trato directo.
+            </p>
+          </section>
+
+          <section className="space-y-4">
+            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
               Por qué empresas en Madrid confían en mí
             </h2>
             <p className="text-[13px] sm:text-[14px] leading-[1.75] text-white/85">
@@ -157,7 +180,7 @@ export default function VideoCorporativoMadridPage() {
               Primero entiendo qué necesitas conseguir con el vídeo: vender mejor, presentar la empresa, apoyar una campaña o dejar una pieza sólida para reuniones, web y redes. Después te propongo una forma concreta de grabarlo. Tras el visto bueno, planificamos la producción, rodamos en Madrid o donde haga falta y cierro la edición con entregables pensados para uso real, no solo para enseñar una pieza bonita.
             </p>
             <p className="text-[13px] sm:text-[14px] leading-[1.75] text-white/85">
-              Si ya tienes claro el objetivo, puedes escribirme con el contexto del proyecto y te preparo una propuesta cerrada. Si todavía estás comparando opciones, revisa primero mi <Link href="/portfolio" className="text-white underline underline-offset-4 hover:text-white/80">portfolio</Link>, cómo planteo los <Link href="/servicios/corporativo" className="text-white underline underline-offset-4 hover:text-white/80">proyectos corporativos</Link> y la página de <Link href="/precios" className="text-white underline underline-offset-4 hover:text-white/80">precios</Link> para aterrizar mejor el presupuesto.
+              Si ya tienes claro el objetivo, puedes escribirme con el contexto del proyecto y te preparo una propuesta cerrada. Si todavía estás comparando opciones, revisa primero mi <Link href="/portfolio" className="text-white underline underline-offset-4 hover:text-white/80">portfolio</Link>, cómo planteo los <Link href="/servicios/corporativo" className="text-white underline underline-offset-4 hover:text-white/80">proyectos corporativos</Link>, el <Link href="/proceso" className="text-white underline underline-offset-4 hover:text-white/80">proceso de trabajo</Link> y la página de <Link href="/precios" className="text-white underline underline-offset-4 hover:text-white/80">precios</Link> para aterrizar mejor el presupuesto.
             </p>
           </section>
 

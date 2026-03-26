@@ -1,9 +1,9 @@
 import { DEFAULT_OG_IMAGE, SITE_URL } from "@/lib/seo"
 
 export default function Head() {
-  const title = "Vídeo profesional para empresas en Madrid | Presupuesto, grabación y edición"
+  const title = "Agencia de vídeo corporativo en Madrid | Daniel Acero y equipo"
   const description =
-    "Vídeo profesional para empresas en Madrid con enfoque comercial. Yo y mi equipo nos encargamos de propuesta, presupuesto, grabación y edición para web, ventas, campañas y marca."
+    "Servicio de vídeo corporativo en Madrid con enfoque comercial. Yo y mi equipo nos encargamos de propuesta, grabación, edición y entrega para web, ventas, campañas y marca."
   const canonical = `${SITE_URL}/video-corporativo-madrid`
 
   return (
@@ -11,7 +11,7 @@ export default function Head() {
       <title>{title}</title>
       <meta name="description" content={description} />
       <meta name="author" content="Daniel Acero" />
-      <meta name="keywords" content="video profesional para empresas madrid, grabacion video corporativo madrid, video corporativo madrid, grabacion de video para empresas, filmmaker corporativo" />
+      <meta name="keywords" content="agencia de vídeo corporativo en madrid, video corporativo madrid, video profesional para empresas madrid, grabacion video corporativo madrid, filmmaker corporativo" />
       <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
       <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
       <link rel="canonical" href={canonical} />
