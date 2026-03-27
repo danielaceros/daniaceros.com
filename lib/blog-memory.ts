@@ -13,8 +13,8 @@ export const blogMemory: BlogMemoryEntry[] = [
     keyword: "grabación de eventos madrid",
     intent: "comercial",
     createdAt: "2026-03-17",
-    status: "draft",
-    notes: "Oportunidad detectada en Search Console. Evitar crear otra URL para la misma intención sin revisar esta primero.",
+    status: "published",
+    notes: "URL /blog/grabacion-eventos-madrid reforzada y publicada el 2026-03-27 tras oportunidad en Search Console. Query principal: 88 impresiones, 0 clics, posición media 19.95. Sin canibalización para la query exacta; todo el volumen cae sobre esta URL.",
   },
   {
     slug: "video-corporativo-madrid",

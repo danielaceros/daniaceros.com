@@ -86,14 +86,20 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         <div className="mt-14 rounded-[24px] border border-white/10 bg-white/[0.03] p-6 sm:p-8">
           <p className="text-[11px] uppercase tracking-[0.16em] text-white/45 font-inter">Siguiente paso</p>
           <h2 className="mt-3 text-[24px] sm:text-[30px] uppercase font-inter text-white max-w-[18ch]">
-            Si quieres grabar tu evento con criterio, hablemos
+            Si quieres mover este proyecto, te respondo yo
           </h2>
           <p className="mt-4 text-[14px] sm:text-[15px] leading-[1.8] text-white/70 max-w-2xl">
-            Puedo decirte rápido cómo enfocaría la cobertura, qué entregables tienen más sentido y cómo aprovechar el material para web, redes y recap comercial.
+            Cuéntame objetivo, fecha, localización y tipo de pieza. Puedo decirte rápido cómo enfocaría la producción, qué entregables tienen más sentido y por dónde empezaría.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link href="/contacto" className="inline-flex min-h-[44px] items-center rounded-full border border-white/14 px-4 py-2 text-[11px] uppercase tracking-[0.16em] text-white/88 hover:border-white/28 hover:bg-white/[0.05] transition-all duration-300">
-              Cuéntame tu proyecto
+              Pedir propuesta
+            </Link>
+            <Link href="/portfolio" className="inline-flex min-h-[44px] items-center rounded-full border border-white/14 px-4 py-2 text-[11px] uppercase tracking-[0.16em] text-white/88 hover:border-white/28 hover:bg-white/[0.05] transition-all duration-300">
+              Ver trabajos
+            </Link>
+            <Link href="/precios" className="inline-flex min-h-[44px] items-center rounded-full border border-white/14 px-4 py-2 text-[11px] uppercase tracking-[0.16em] text-white/88 hover:border-white/28 hover:bg-white/[0.05] transition-all duration-300">
+              Ver precios
             </Link>
             <Link href="/blog" className="inline-flex min-h-[44px] items-center rounded-full border border-white/10 px-4 py-2 text-[11px] uppercase tracking-[0.16em] text-white/55 hover:text-white/85 transition-all duration-300">
               Volver al blog
