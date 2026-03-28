@@ -1,9 +1,9 @@
 import { DEFAULT_OG_IMAGE, SITE_URL } from "@/lib/seo"
 
 export default function Head() {
-  const title = "Agencia de vídeo corporativo en Madrid | Daniel Acero y equipo"
+  const title = "Agencia de vídeo corporativo en Madrid para empresas | Daniel Acero"
   const description =
-    "Servicio de vídeo corporativo en Madrid con enfoque comercial. Yo y mi equipo nos encargamos de propuesta, grabación, edición y entrega para web, ventas, campañas y marca."
+    "Agencia de vídeo corporativo en Madrid con trato directo y enfoque comercial. Yo y mi equipo llevamos propuesta, rodaje, edición, versiones y entrega para web, ventas y campañas."
   const canonical = `${SITE_URL}/video-corporativo-madrid`
 
   return (

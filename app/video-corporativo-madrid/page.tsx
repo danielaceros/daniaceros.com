@@ -76,6 +76,14 @@ const faqParte1 = [
     q: "¿Qué diferencia hay entre contratar una agencia grande y trabajar conmigo?",
     a: "La diferencia principal es la cercanía y la agilidad. Aquí hablas conmigo desde el briefing, definimos la propuesta sin capas innecesarias y yo coordino al equipo cuando hace falta. Eso suele traducirse en mejor encaje, decisiones más rápidas y un presupuesto más ajustado al proyecto real.",
   },
+  {
+    q: "¿Podéis preparar propuesta y presupuesto para un vídeo corporativo en Madrid?",
+    a: "Sí. Si me compartes objetivo, tipo de empresa, localización, plazo y uso del vídeo, te preparo una propuesta clara con enfoque, alcance y presupuesto orientativo o cerrado según el caso.",
+  },
+  {
+    q: "¿Qué entregables suele incluir un proyecto de vídeo corporativo?",
+    a: "Depende del proyecto, pero lo normal es una pieza principal y, si interesa, adaptaciones cortas para web, LinkedIn, campañas o presentaciones comerciales. La idea es aprovechar el rodaje para que el material tenga recorrido real.",
+  },
 ]
 
 export default function VideoCorporativoMadridPage() {
@@ -85,7 +93,7 @@ export default function VideoCorporativoMadridPage() {
     <main className="min-h-screen bg-[#0a0a0a] text-white">
       <section className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pt-20 sm:pt-28 pb-6">
         <h1 className="font-inter font-semibold uppercase  text-[28px] leading-[1.1] sm:text-[36px] lg:text-[44px] text-center">
-          Vídeo corporativo en Madrid para empresas y marcas
+          Agencia de vídeo corporativo en Madrid para empresas y marcas
         </h1>
       </section>
 
@@ -162,6 +170,18 @@ export default function VideoCorporativoMadridPage() {
 
           <section className="space-y-4">
             <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
+              Qué resuelvo como agencia de vídeo corporativo para empresas
+            </h2>
+            <p className="text-[13px] sm:text-[14px] leading-[1.75] text-white/85">
+              Normalmente llegáis con una necesidad bastante concreta: presentar mejor la empresa, explicar un servicio, reforzar credibilidad, lanzar una campaña o dejar un activo serio para ventas. Mi trabajo no es solo grabar. Es traducir ese objetivo en una pieza que tenga sentido en mensaje, producción, calendario y retorno comercial.
+            </p>
+            <p className="text-[13px] sm:text-[14px] leading-[1.75] text-white/85">
+              Por eso, antes de rodar, definimos público, uso real del vídeo, tono, localizaciones, formato de entrega y qué versión necesita cada canal. Si hace falta, del mismo proyecto salen versiones para web, LinkedIn, paid media o presentaciones comerciales. Así no compras un vídeo bonito sin más; compras una herramienta útil para negocio.
+            </p>
+          </section>
+
+          <section className="space-y-4">
+            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
               Por qué empresas en Madrid confían en mí
             </h2>
             <p className="text-[13px] sm:text-[14px] leading-[1.75] text-white/85">
@@ -193,6 +213,18 @@ export default function VideoCorporativoMadridPage() {
               <li>Cuando ventas, marketing o dirección necesitan un activo reutilizable para web, reuniones, campañas y redes.</li>
               <li>Cuando buscas un proveedor en Madrid que pueda liderar la propuesta, la grabación y la edición sin marearte.</li>
             </ul>
+          </section>
+
+          <section className="space-y-4">
+            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
+              Presupuesto y propuesta para vídeo corporativo en Madrid
+            </h2>
+            <p className="text-[13px] sm:text-[14px] leading-[1.75] text-white/85">
+              El presupuesto depende del objetivo, el número de jornadas, si hace falta guion, entrevistas, localizaciones, sonido, iluminación, versiones extra o adaptación para campañas. Lo importante es que la propuesta baje a tierra qué se va a hacer, qué entregables vas a recibir y para qué te van a servir.
+            </p>
+            <p className="text-[13px] sm:text-[14px] leading-[1.75] text-white/85">
+              Si me compartes contexto del proyecto, te digo rápido si encaja, cómo lo enfocaría y qué equipo tendría sentido mover. Puedes revisar también la página de <Link href="/precios" className="text-white underline underline-offset-4 hover:text-white/80">precios</Link>, algunos <Link href="/casos-de-exito" className="text-white underline underline-offset-4 hover:text-white/80">casos de éxito</Link> y el <Link href="/portfolio" className="text-white underline underline-offset-4 hover:text-white/80">portfolio</Link> para ver el nivel de acabado y el tipo de proyectos que suelo resolver.
+            </p>
           </section>
 
           <section className="space-y-4 rounded-2xl border border-white/10 bg-white/[0.03] p-5 sm:p-6">
