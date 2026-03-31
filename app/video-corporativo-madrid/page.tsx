@@ -120,6 +120,9 @@ export default function VideoCorporativoMadridPage() {
               Si estás buscando una agencia de vídeo corporativo en Madrid, muchas veces en realidad necesitas algo más concreto: un equipo que entienda tu objetivo comercial, proponga una pieza viable y la ejecute bien de principio a fin. Yo lidero ese proceso con trato directo y, cuando el proyecto lo pide, sumo a mi equipo para cubrir producción, rodaje y postproducción sin que tengas que coordinar mil intermediarios.
             </p>
             <p className="text-[13px] sm:text-[14px] leading-[1.75] text-white/85">
+              Si lo que buscas es una productora de vídeos corporativos en Madrid, el enfoque es el mismo: aterrizar qué pieza necesitas, para qué la vas a usar y cómo producirla con criterio. No vendo una estructura inflada; vendo una producción bien pensada, ejecutada por mí y por el equipo que haga falta para que el vídeo sirva de verdad a ventas, marca o captación.
+            </p>
+            <p className="text-[13px] sm:text-[14px] leading-[1.75] text-white/85">
               Si estás buscando un vídeo profesional para empresas en Madrid, normalmente no necesitas solo una cámara. Necesitas una pieza que explique bien quién eres, qué vendes y por qué deberían elegirte. Yo y mi equipo trabajamos este tipo de proyectos de principio a fin: propuesta, enfoque, rodaje, edición y entrega lista para web, campañas, ventas o comunicación interna.
             </p>
             <p className="text-[13px] sm:text-[14px] leading-[1.75] text-white/85">
@@ -177,6 +180,18 @@ export default function VideoCorporativoMadridPage() {
             </p>
             <p className="text-[13px] sm:text-[14px] leading-[1.75] text-white/85">
               Por eso, antes de rodar, definimos público, uso real del vídeo, tono, localizaciones, formato de entrega y qué versión necesita cada canal. Si hace falta, del mismo proyecto salen versiones para web, LinkedIn, paid media o presentaciones comerciales. Así no compras un vídeo bonito sin más; compras una herramienta útil para negocio.
+            </p>
+          </section>
+
+          <section className="space-y-4">
+            <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
+              Cuándo encaja una productora de vídeos corporativos en Madrid
+            </h2>
+            <p className="text-[13px] sm:text-[14px] leading-[1.75] text-white/85">
+              Encaja cuando necesitas algo más que grabar una pieza aislada: una presentación de empresa, un vídeo de marca, entrevistas, testimoniales, contenido para campañas o un activo comercial que tenga recorrido en web, LinkedIn, paid media o reuniones de ventas. Ahí es donde una productora de vídeos corporativos en Madrid aporta orden, propuesta y ejecución de principio a fin.
+            </p>
+            <p className="text-[13px] sm:text-[14px] leading-[1.75] text-white/85">
+              En mi caso, además, ese trabajo no pasa por capas comerciales separadas. Hablas conmigo, definimos la intención de la pieza y monto el equipo necesario para resolver rodaje, producción y postproducción con un criterio único. Si quieres ver cómo aterrizo esto en proyectos reales, puedes revisar el <Link href="/portfolio" className="text-white underline underline-offset-4 hover:text-white/80">portfolio</Link>, los <Link href="/casos-de-exito" className="text-white underline underline-offset-4 hover:text-white/80">casos de éxito</Link> o pedirme una propuesta desde <Link href="/contacto" className="text-white underline underline-offset-4 hover:text-white/80">contacto</Link>.
             </p>
           </section>
 
