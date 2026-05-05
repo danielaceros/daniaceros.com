@@ -1,7 +1,8 @@
 import type { Metadata } from "next"
 import { notFound } from "next/navigation"
-import Link from "next/link"
+import Image from "next/image"
 import { getAllPosts, getPostBySlug, getPostMetadata } from "@/lib/blog"
+import ContactCTA from "@/components/ContactCTA"
 
 export async function generateStaticParams() {
   return getAllPosts().map((post) => ({ slug: post.slug }))
@@ -79,34 +80,91 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               )
             }
 
+            if (block.type === "image") {
+              return (
+                <figure key={index} className="my-2 sm:my-4">
+                  <div className="overflow-hidden rounded-[20px] border border-white/10 bg-white/[0.02]">
+                    <Image
+                      src={block.src}
+                      alt={block.alt}
+                      width={block.width}
+                      height={block.height}
+                      priority={block.priority}
+                      sizes="(min-width: 1024px) 720px, 100vw"
+                      className="h-auto w-full"
+                    />
+                  </div>
+                  {block.caption ? (
+                    <figcaption className="mt-3 text-[12px] sm:text-[13px] leading-[1.6] text-white/50 font-inter">
+                      {block.caption}
+                    </figcaption>
+                  ) : null}
+                </figure>
+              )
+            }
+
+            if (block.type === "link-card") {
+              return (
+                <a
+                  key={index}
+                  href={block.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="not-prose group my-2 flex items-center gap-4 rounded-[20px] border border-white/10 bg-white/[0.03] p-4 sm:gap-5 sm:p-5 hover:border-white/25 hover:bg-white/[0.05] transition-all duration-300"
+                >
+                  <Image
+                    src={block.avatar}
+                    alt={block.avatarAlt}
+                    width={64}
+                    height={64}
+                    className="h-14 w-14 flex-shrink-0 rounded-full sm:h-16 sm:w-16"
+                  />
+                  <div className="min-w-0 flex-1">
+                    <p className="text-[15px] sm:text-[16px] font-inter text-white truncate">{block.title}</p>
+                    <p className="mt-0.5 text-[13px] sm:text-[14px] text-white/60 truncate">{block.subtitle}</p>
+                    {block.meta ? (
+                      <p className="mt-1 text-[11px] uppercase tracking-[0.14em] text-white/40 font-inter">{block.meta}</p>
+                    ) : null}
+                  </div>
+                  <span className="flex-shrink-0 text-[11px] uppercase tracking-[0.16em] text-white/55 group-hover:text-white/85 transition-colors">
+                    {block.cta ?? "Ver perfil"} →
+                  </span>
+                </a>
+              )
+            }
+
+            if (block.type === "video") {
+              const aspect = block.portrait ? "aspect-[9/16] max-w-[360px]" : "aspect-video w-full"
+              return (
+                <figure key={index} className="my-2 sm:my-4">
+                  <div className={`overflow-hidden rounded-[20px] border border-white/10 bg-black ${block.portrait ? "mx-auto " + aspect : aspect}`}>
+                    <video
+                      src={block.src}
+                      poster={block.poster}
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      preload="metadata"
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
+                  {block.caption ? (
+                    <figcaption className="mt-3 text-center text-[12px] sm:text-[13px] leading-[1.6] text-white/50 font-inter">
+                      {block.caption}
+                    </figcaption>
+                  ) : null}
+                </figure>
+              )
+            }
+
             return null
           })}
         </div>
 
-        <div className="mt-14 rounded-[24px] border border-white/10 bg-white/[0.03] p-6 sm:p-8">
-          <p className="text-[11px] uppercase tracking-[0.16em] text-white/45 font-inter">Siguiente paso</p>
-          <h2 className="mt-3 text-[24px] sm:text-[30px] uppercase font-inter text-white max-w-[18ch]">
-            Si quieres mover este proyecto, te respondo yo
-          </h2>
-          <p className="mt-4 text-[14px] sm:text-[15px] leading-[1.8] text-white/70 max-w-2xl">
-            Cuéntame objetivo, fecha, localización y tipo de pieza. Puedo decirte rápido cómo enfocaría la producción, qué entregables tienen más sentido y por dónde empezaría.
-          </p>
-          <div className="mt-6 flex flex-wrap gap-3">
-            <Link href="/contacto" className="inline-flex min-h-[44px] items-center rounded-full border border-white/14 px-4 py-2 text-[11px] uppercase tracking-[0.16em] text-white/88 hover:border-white/28 hover:bg-white/[0.05] transition-all duration-300">
-              Pedir propuesta
-            </Link>
-            <Link href="/portfolio" className="inline-flex min-h-[44px] items-center rounded-full border border-white/14 px-4 py-2 text-[11px] uppercase tracking-[0.16em] text-white/88 hover:border-white/28 hover:bg-white/[0.05] transition-all duration-300">
-              Ver trabajos
-            </Link>
-            <Link href="/precios" className="inline-flex min-h-[44px] items-center rounded-full border border-white/14 px-4 py-2 text-[11px] uppercase tracking-[0.16em] text-white/88 hover:border-white/28 hover:bg-white/[0.05] transition-all duration-300">
-              Ver precios
-            </Link>
-            <Link href="/blog" className="inline-flex min-h-[44px] items-center rounded-full border border-white/10 px-4 py-2 text-[11px] uppercase tracking-[0.16em] text-white/55 hover:text-white/85 transition-all duration-300">
-              Volver al blog
-            </Link>
-          </div>
-        </div>
       </article>
+
+      <ContactCTA hideFooter />
 
       {faqs.length > 0 ? (
         <script

@@ -21,10 +21,215 @@ export type BlogPost = {
     | { type: "heading"; level: 2 | 3; text: string }
     | { type: "list"; ordered?: boolean; items: string[] }
     | { type: "faq"; question: string; answer: string }
+    | {
+        type: "image"
+        src: string
+        alt: string
+        width: number
+        height: number
+        caption?: string
+        priority?: boolean
+      }
+    | {
+        type: "video"
+        src: string
+        poster?: string
+        caption?: string
+        portrait?: boolean
+      }
+    | {
+        type: "link-card"
+        href: string
+        avatar: string
+        avatarAlt: string
+        title: string
+        subtitle: string
+        meta?: string
+        cta?: string
+      }
   >
 }
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "caso-meridian-biohealth",
+    title: "Cómo grabamos 30 reels al mes para Meridian Biohealth en solo 2 horas",
+    description:
+      "Caso real: cómo monto un sistema de contenido mensual para una clínica en Madrid que publica 30 reels al mes invirtiendo 2 horas efectivas de grabación al mes.",
+    publishedAt: "2026-05-05",
+    readingTime: "6 min",
+    category: "Caso real",
+    tags: [
+      "contenido para empresas",
+      "reels para clínicas",
+      "filmmaker Madrid",
+      "teleprompter",
+      "Meridian Biohealth",
+    ],
+    keyword: "contenido para empresas madrid",
+    intent: "comercial",
+    excerpt:
+      "Voy una vez al mes a su clínica, montamos el equipo, leen al teleprompter y de ahí salen 30 reels que se publican durante todo el mes. Sin reuniones de guion. Sin pelearse con la cámara.",
+    seoTitle: "30 reels al mes en 2 horas: caso Meridian Biohealth | Contenido para empresas en Madrid",
+    metaDescription:
+      "Caso real de contenido para empresas en Madrid: 30 reels al mes para Meridian Biohealth grabados en 2 horas efectivas. Sistema con teleprompter, edición y publicación.",
+    heroKicker: "Blog / Caso real",
+    body: [
+      {
+        type: "paragraph",
+        text: "El equipo de Meridian Biohealth invierte dos horas al mes delante de la cámara. Y publica 30 reels.",
+      },
+      {
+        type: "link-card",
+        href: "https://www.instagram.com/meridianbiohealth/",
+        avatar: "/blog/meridian/meridian-avatar.webp",
+        avatarAlt: "Logo de Meridian Biohealth, clínica de odontología biológica en Madrid",
+        title: "Meridian Biohealth",
+        subtitle: "@meridianbiohealth · Dr. Jorge Escobar",
+        meta: "Odontología biológica · Madrid",
+        cta: "Ver Instagram",
+      },
+      {
+        type: "paragraph",
+        text: "No tienen un departamento de marketing interno. No se pelean con guiones cada semana. No paran su agenda de pacientes para grabar. Voy yo una vez al mes a su clínica en Madrid, monto el equipo, les pongo el teleprompter, leemos los textos del mes y de ahí salen las piezas. Edito, programo y se publican durante las cuatro semanas siguientes.",
+      },
+      {
+        type: "paragraph",
+        text: "Esta es la entrada en la que cuento, sin adornar, cómo está montado el sistema, qué problema resuelve y por qué a una clínica le sale rentable trabajar así en lugar de improvisar contenido en redes.",
+      },
+      {
+        type: "image",
+        src: "/blog/meridian/perfil.webp",
+        alt: "Perfil de Instagram de Meridian Biohealth: Dr. Jorge Escobar, Biological Dentist, clínica de odontología biológica e integrativa en Arturo Soria, Madrid",
+        width: 1179,
+        height: 1104,
+        caption: "Meridian Biohealth: clínica de odontología biológica e integrativa en Arturo Soria, Madrid.",
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "El reto: publicar constante sin parar la clínica" },
+      {
+        type: "paragraph",
+        text: "Meridian Biohealth es una clínica de odontología biológica e integrativa en Madrid. El Dr. Jorge Escobar quería tener presencia seria en redes para explicar conceptos que no se entienden en una consulta de 30 minutos: implantes cerámicos, terapia neural, microbiota oral, ozono, relación entre boca y salud sistémica.",
+      },
+      {
+        type: "paragraph",
+        text: "El problema no era de criterio. Tenía claro qué quería contar. El problema era operativo. Una clínica con agenda apretada no puede pararse cada semana a grabar. Y un profesional médico no debería estar editando reels a las once de la noche.",
+      },
+      {
+        type: "paragraph",
+        text: "Lo que necesitaba era un sistema. Una sola sesión mensual que dejara material suficiente para todo el mes y un proceso de edición y publicación que no le tocara a él.",
+      },
+      { type: "heading", level: 2, text: "El sistema: una sesión al mes, 30 piezas en redes" },
+      {
+        type: "paragraph",
+        text: "El método es deliberadamente simple. Cuanto menos tiene que decidir el cliente el día de grabación, mejor sale el contenido.",
+      },
+      { type: "heading", level: 3, text: "1. Guiones cerrados antes de pisar la clínica" },
+      {
+        type: "paragraph",
+        text: "Antes de la sesión, cerramos los textos del mes. No improvisamos delante de la cámara. Cada reel tiene su guion exacto, pensado para sonar natural cuando se lee y para entrar en el formato vertical de Instagram y TikTok sin recortes raros.",
+      },
+      { type: "heading", level: 3, text: "2. Una visita mensual a su clínica" },
+      {
+        type: "paragraph",
+        text: "Voy yo a Arturo Soria con el equipo. Cámara, sonido, iluminación, teleprompter. Aprovechamos varios espacios reales de la clínica: consulta, sala de implantes, recepción. Eso nos da fondos visuales distintos sin tener que cambiar de localización.",
+      },
+      { type: "heading", level: 3, text: "3. Teleprompter: cero memorización" },
+      {
+        type: "paragraph",
+        text: "Es la parte que más cambia el resultado. El Dr. Escobar lee del teleprompter mirando a cámara. No tiene que aprenderse nada. No hay quince tomas para que la frase salga limpia. Y la mirada queda fija al objetivo, que es lo que pide el formato vertical para que el espectador no haga scroll.",
+      },
+      { type: "heading", level: 3, text: "4. Dos horas efectivas, cuatro horas de bloque" },
+      {
+        type: "paragraph",
+        text: "Bloqueamos cuatro horas en la agenda, pero el tiempo real delante de cámara son dos. El resto es montaje del equipo, cambios de plano y descansos. Saltamos entre escenarios de la clínica para que las 30 piezas no se vean iguales aunque se hayan grabado el mismo día.",
+      },
+      {
+        type: "video",
+        src: "/blog/meridian/bts-story.webm",
+        poster: "/blog/meridian/bts-story-poster.webp",
+        portrait: true,
+        caption: "Behind the scenes de una sesión mensual en la clínica.",
+      },
+      { type: "heading", level: 3, text: "5. Edición y publicación gestionada" },
+      {
+        type: "paragraph",
+        text: "Después de grabar, me llevo todo el material. Edición con tipografía, subtítulos quemados, cortes ágiles, B-roll de la clínica y elementos gráficos pensados para retener atención en los primeros tres segundos. Las piezas se programan para que el feed publique constante durante el mes.",
+      },
+      { type: "heading", level: 2, text: "Resultados: 30 piezas al mes con dos horas del cliente" },
+      {
+        type: "list",
+        items: [
+          "30 reels publicados al mes en Instagram y reaprovechados en otras redes.",
+          "Dos horas efectivas de grabación al mes invertidas por el equipo de la clínica.",
+          "Una visita mensual al centro. Cero desplazamientos del cliente al estudio.",
+          "Un único interlocutor para guion, grabación, edición y publicación.",
+          "Feed coherente: misma estética, mismas tipografías, mismo criterio en todas las piezas.",
+        ],
+      },
+      {
+        type: "image",
+        src: "/blog/meridian/feed.webp",
+        alt: "Feed de Instagram de Meridian Biohealth con piezas de vídeo del Dr. Jorge Escobar sobre odontología biológica, implantología, terapia neural y microbiota oral",
+        width: 1179,
+        height: 2556,
+        caption: "Feed actual de @meridianbiohealth. Las piezas con play son reels grabados en sesión mensual.",
+      },
+      { type: "heading", level: 2, text: "Por qué funciona este modelo" },
+      {
+        type: "paragraph",
+        text: "Funciona porque elimina las tres cosas que matan el contenido en empresas que no son agencias: la fricción para sentarse a grabar, la incertidumbre sobre qué decir y la dispersión de tener a varias personas tocando el proceso.",
+      },
+      {
+        type: "paragraph",
+        text: "Una sesión mensual con guion preparado y teleprompter convierte la grabación en algo predecible. Sale en agenda, dura lo que tiene que durar y deja material para semanas. Después no hay nada que el cliente tenga que hacer hasta la siguiente sesión.",
+      },
+      {
+        type: "paragraph",
+        text: "Y funciona también porque no es contenido genérico. Está grabado en su clínica, con su material, con su criterio profesional. Eso se nota. Una pieza grabada en su sala de implantes con su equipamiento real comunica autoridad de un modo que un set genérico no puede replicar.",
+      },
+      { type: "heading", level: 2, text: "Para qué tipo de empresa tiene sentido" },
+      {
+        type: "paragraph",
+        text: "Tiene sentido cuando hay un experto que quiere comunicar pero no tiene tiempo, cuando la marca depende de explicar bien servicios complejos y cuando ya hay un volumen mínimo de pacientes, clientes o leads que justifica invertir en presencia constante. Clínicas, despachos, consultoras, formadores, empresas de servicios profesionales: el modelo se adapta sin demasiada modificación.",
+      },
+      {
+        type: "paragraph",
+        text: "Y tiene menos sentido cuando se busca contenido low-cost en alta cantidad sin criterio. Esto no es eso. Esto es producir poco volumen, bien resuelto y constante, con criterio profesional detrás de cada pieza.",
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Hace falta tener experiencia delante de la cámara?",
+        answer:
+          "No. El teleprompter resuelve el 90% del problema. Lees lo que está escrito, mirando al objetivo, y la pieza queda natural sin tener que memorizar ni improvisar.",
+      },
+      {
+        type: "faq",
+        question: "¿Quién escribe los guiones?",
+        answer:
+          "Los preparamos juntos antes de la sesión a partir de los temas que quiere tratar el cliente. La idea técnica viene de él; yo me encargo de adaptarla al formato vertical y al ritmo que pide el reel.",
+      },
+      {
+        type: "faq",
+        question: "¿Por qué grabar en la clínica y no en estudio?",
+        answer:
+          "Porque la clínica es el activo visual más fuerte. Grabar en su sala de implantes con el equipo médico real comunica autoridad. Un estudio neutro vale para cualquiera; su clínica vale solo para él.",
+      },
+      {
+        type: "faq",
+        question: "¿Trabajas con empresas que no son clínicas?",
+        answer:
+          "Sí. Lo aplico con despachos, consultoras, formadores y empresas de servicios. El sistema cambia poco: una visita mensual al cliente, sesión con teleprompter, guiones cerrados, edición y publicación gestionada.",
+      },
+      {
+        type: "faq",
+        question: "¿Dónde puedo ver el resultado?",
+        answer:
+          "En el Instagram de la clínica: instagram.com/meridianbiohealth. La mayoría de las piezas con play del feed están grabadas en sesiones mensuales como la de este caso.",
+      },
+    ],
+  },
   {
     slug: "grabacion-eventos-madrid",
     title: "Grabación de eventos en Madrid para empresas, marcas y congresos",
