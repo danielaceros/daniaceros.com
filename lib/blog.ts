@@ -438,6 +438,155 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "produccion-video-promocional-empresas-madrid",
+    title: "Producción de vídeo promocional para empresas en Madrid: cómo se hace bien",
+    description:
+      "Cómo planteo la producción de un vídeo promocional para empresas en Madrid: guion, rodaje, edición y entrega, con plazos y errores reales que evito.",
+    publishedAt: "2026-05-06",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: [
+      "video promocional madrid",
+      "produccion audiovisual empresas",
+      "filmmaker corporativo madrid",
+      "vídeo de empresa",
+      "guion vídeo promocional",
+    ],
+    keyword: "producción de vídeo promocional para empresas en madrid",
+    intent: "informacional",
+    excerpt:
+      "Un vídeo promocional bueno no se improvisa. Cuento cómo lo planteo de principio a fin trabajando con empresas en Madrid: qué decido antes de grabar, qué pasa el día del rodaje y qué entrego al final.",
+    seoTitle: "Producción vídeo promocional empresas Madrid | Daniel Acero",
+    metaDescription:
+      "Producción de vídeo promocional para empresas en Madrid: guion, rodaje, edición y entrega. Cómo lo planteo, plazos reales y errores que evito.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "La mayoría de empresas que me llama queriendo un vídeo promocional ya tiene una idea aproximada en la cabeza. Quieren algo que se vea bien, que dure poco y que sirva para vender. El problema es que esa descripción cabe en cualquier vídeo, y por eso muchos vídeos promocionales acaban siendo intercambiables.",
+      },
+      {
+        type: "paragraph",
+        text: "Llevo años produciendo vídeo promocional para empresas en Madrid y, antes de tocar la cámara, dedico tiempo a entender para qué lo quieren, dónde lo van a usar y qué tiene que pasar después de que alguien lo vea. De ahí salen las decisiones de guion, formato, duración y rodaje. Esta guía es lo que les cuento a las empresas que se sientan conmigo por primera vez.",
+      },
+      {
+        type: "image",
+        src: "/blog/produccion-video-promocional-empresas-madrid/hero.webp",
+        alt: "Set de rodaje de vídeo promocional para una empresa con cámara, luces y operador",
+        width: 1920,
+        height: 1080,
+        caption: "Foto: Voyage Pro vía Unsplash.",
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Qué es un vídeo promocional para empresa y para qué sirve",
+      },
+      {
+        type: "paragraph",
+        text: "Un vídeo promocional es una pieza pensada para mover algo concreto en quien la ve: que pida información, que entre en una landing, que entienda un producto, que confíe en una marca antes de hablar con un comercial. No es lo mismo que un vídeo institucional (cuenta quién eres) ni que un caso de estudio (cuenta qué hiciste con un cliente). Es más cercano a un anuncio.",
+      },
+      {
+        type: "paragraph",
+        text: "En empresas pequeñas y medianas en Madrid suelo encontrarme tres usos: web (hero de la home o página de producto), campañas de pago (Meta, LinkedIn, YouTube) y comerciales que envían el vídeo en frío junto a una propuesta. Cada uso pide una duración y un montaje distintos. Por eso pregunto antes dónde va a vivir el vídeo. Si va a Meta Ads, los primeros tres segundos tienen que sostenerse solos sin sonido. Si va a una web, puede respirar más.",
+      },
+      {
+        type: "paragraph",
+        text: "El error más común es grabar un vídeo único de tres minutos pensando que vale para todo. Casi nunca vale. Por eso, cuando puedo, planteo el rodaje para sacar varias versiones del mismo material: un máster largo y dos o tres cortes adaptados a redes y campañas.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cómo planteo una producción bien hecha",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Briefing y guion antes del rodaje",
+      },
+      {
+        type: "paragraph",
+        text: "Antes de poner una fecha de grabación tenemos una llamada o reunión corta. Ahí salen tres cosas: objetivo, mensaje principal y dónde se va a usar. Con eso escribo un guion en una página, sin florituras, con el plano de cabecera, las frases clave a cámara y los recursos visuales que necesito grabar. Lo enviamos al cliente, lo cerramos por escrito y a partir de ahí el rodaje deja de ser una conversación abierta.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Día de rodaje: equipo y ritmo",
+      },
+      {
+        type: "paragraph",
+        text: "Para un vídeo promocional de empresa estándar voy con dos cámaras Sony, un set de luces LED, micros de solapa y, si hay alguien hablando a cámara, teleprompter. Una jornada de rodaje suele ser de seis a ocho horas. Bloquear esa jornada bien (entrevista por la mañana, recursos por la tarde) ahorra una segunda visita y una factura mayor.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Edición y entrega",
+      },
+      {
+        type: "paragraph",
+        text: "Edito en DaVinci Resolve. Mando un primer corte en una semana o diez días. El cliente revisa, me devuelve cambios concretos y aplico una segunda y, como mucho, una tercera ronda. Más allá de tres rondas, el vídeo deja de mejorar y empieza a empeorar. Entrego máster en 16:9, recorte en 9:16 para Reels y un corte de 30 segundos para campaña, todos con subtítulos quemados opcionales.",
+      },
+      {
+        type: "image",
+        src: "/blog/produccion-video-promocional-empresas-madrid/interior.webp",
+        alt: "Equipo de rodaje grabando un plano de vídeo promocional en Madrid",
+        width: 1920,
+        height: 1404,
+        caption: "Foto: Sergio Kian vía Unsplash.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Errores que veo a menudo",
+      },
+      {
+        type: "list",
+        items: [
+          "Grabar un único máster de tres minutos sin pensar en versiones cortas para campañas.",
+          "Dejar el guion para el día del rodaje. Sale más caro y peor.",
+          "Meter al CEO a cámara sin teleprompter ni preparación. La pieza se nota forzada.",
+          "Confundir vídeo promocional con vídeo institucional. El primero vende, el segundo presenta.",
+          "Pedir cambios sin un objetivo claro entre rondas, lo que alarga la entrega y empeora la pieza.",
+          "Olvidar los subtítulos: la mayoría del consumo en redes ocurre sin sonido.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta producir un vídeo promocional para una empresa en Madrid?",
+        answer:
+          "Depende del alcance. Una pieza de un día de rodaje, edición y dos versiones suele moverse en una franja media. Producciones con localización, equipo amplio o varias jornadas suben proporcional. Hago presupuesto cerrado por proyecto, no por hora, y lo mando por escrito antes de empezar.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto se tarda desde la primera reunión hasta tener el vídeo entregado?",
+        answer:
+          "Plazo razonable: dos a cuatro semanas. Una semana para cerrar guion y agenda, una jornada de rodaje, una a dos semanas de edición con dos rondas de revisión. Si hay urgencia (lanzamiento, evento) lo planteo más comprimido, pero el guion no se salta.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta guion previo o lo improvisamos en el rodaje?",
+        answer:
+          "Hace falta. Improvisar en rodaje sale caro y produce piezas blandas. Un guion de una página, con plano de cabecera y frases a cámara, evita el 90% de los problemas de edición. Lo redacto yo a partir del briefing y lo cerramos antes de coger la cámara.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo usar el mismo vídeo para mi web y para campañas de pago?",
+        answer:
+          "Solo si está pensado así desde el principio. Lo habitual es entregar un máster largo para web y dos o tres cortes específicos para campañas, con encuadre 9:16 y duración corta. Sale del mismo rodaje, pero el montaje es distinto y conviene preverlo en el briefing.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes claro que quieres un vídeo promocional para tu empresa y prefieres planteármelo en directo, escríbeme desde la página de contacto y miramos juntos qué pieza tiene sentido para lo que estás intentando mover.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
