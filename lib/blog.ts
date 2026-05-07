@@ -587,6 +587,126 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "filmmaker-eventos",
+    title: "Filmmaker para eventos: qué hace y cuándo lo necesitas",
+    description:
+      "Qué hace un filmmaker durante un evento corporativo, qué entrega después y en qué se diferencia de contratar a un cámara por horas. Guía práctica desde rodajes reales en Madrid.",
+    publishedAt: "2026-05-07",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: [
+      "filmmaker",
+      "eventos corporativos",
+      "vídeo en directo",
+      "Madrid",
+      "producción audiovisual",
+    ],
+    keyword: "filmmaker eventos",
+    intent: "informacional",
+    excerpt:
+      "Qué hace exactamente un filmmaker en un evento, qué entrega, en qué se diferencia de un cámara contratado por horas y cuándo tiene sentido llamarle desde el principio.",
+    seoTitle: "Filmmaker para eventos | Daniel Acero",
+    metaDescription:
+      "Filmmaker para eventos: qué cubre, cómo trabajo en directo y cuándo merece la pena. Guía práctica desde rodajes corporativos reales en Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cuando una empresa me llama para cubrir un evento, casi siempre la primera pregunta es la misma: \"¿en qué se diferencia un filmmaker de contratar a un cámara por horas?\". La respuesta corta es que un cámara graba lo que ocurre y un filmmaker decide qué historia quieres contar antes de que ocurra.",
+      },
+      {
+        type: "paragraph",
+        text: "La diferencia se nota en el resultado. Un evento grabado sin criterio se convierte en treinta minutos de planos generales que nadie ve. Un evento cubierto por un filmmaker se convierte en una pieza corta que se publica esa semana y un recap más largo que la marca usa durante meses.",
+      },
+      {
+        type: "image",
+        src: "/blog/filmmaker-eventos/hero.webp",
+        alt: "Filmmaker sujetando una cámara antes de cubrir un evento corporativo",
+        width: 1920,
+        height: 1280,
+        caption: "Antes de pulsar grabar ya hay decisiones tomadas: planos clave, momentos prioritarios y cómo se va a montar.",
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué hace un filmmaker en un evento" },
+      {
+        type: "paragraph",
+        text: "Un filmmaker no llega a grabar, llega a producir. Eso quiere decir que antes del evento ya ha hablado con el cliente, ha mirado la sala, sabe quién va a hablar y cuándo, y tiene claro qué piezas finales se van a entregar. Cubrir un evento sin esa preparación es lo que produce vídeos que parecen todos iguales.",
+      },
+      {
+        type: "paragraph",
+        text: "Durante el directo, el trabajo no es solo apretar el botón. Es decidir en cada momento qué merece estar grabado y qué no. Hay un keynote que sí va a ir a redes, una mesa redonda que probablemente no, un coffee break con interacciones que dan b-roll bueno y un photocall donde la marca quiere insistir. Esa lectura en tiempo real es lo que distingue una cobertura útil de una bolsa de archivos brutos.",
+      },
+      {
+        type: "paragraph",
+        text: "Después del evento entrega los formatos que el cliente va a usar de verdad. No un único máster de cuarenta minutos, sino lo que se va a publicar: un teaser corto al día siguiente, un recap de uno a dos minutos para LinkedIn, cortes verticales para Instagram y los testimoniales editados por separado.",
+      },
+      { type: "heading", level: 2, text: "Cómo lo monto yo" },
+      { type: "heading", level: 3, text: "Antes del evento" },
+      {
+        type: "paragraph",
+        text: "Pido la escaleta el día que cerramos el proyecto. Necesito horarios, ponentes, ubicaciones dentro del recinto y los momentos que la dirección de comunicación considera no negociables. Con eso preparo un plan de cobertura: dónde se planta cada cámara, qué microfonía hace falta, en qué tramos voy a soltar la principal para coger b-roll y cuándo se hacen los testimoniales fuera de la sala.",
+      },
+      { type: "heading", level: 3, text: "Durante el evento" },
+      {
+        type: "paragraph",
+        text: "Trabajo con dos cámaras Sony cuando hay un escenario fijo (una abierta, otra a primer plano) y con una sola cuando el evento es en movimiento. El audio del escenario lo cojo siempre por línea de mesa, no por micro de cámara, porque si se pierde ese audio el evento no se monta. En paralelo voy capturando b-roll del público, manos, marcas, branding y detalles de la sala. Eso es lo que después llena el recap.",
+      },
+      { type: "heading", level: 3, text: "Después del evento" },
+      {
+        type: "paragraph",
+        text: "Edito en DaVinci Resolve. Suelo entregar un teaser de quince a treinta segundos en menos de 48 horas (para que la marca pueda publicar mientras el evento aún está caliente) y el recap principal en una a dos semanas, con una ronda de revisión incluida. Si hay testimoniales o ponencias completas, las entrego como piezas separadas con el corte limpio del audio de mesa.",
+      },
+      {
+        type: "image",
+        src: "/blog/filmmaker-eventos/mid.webp",
+        alt: "Ponente en escenario durante un evento corporativo en Madrid",
+        width: 1920,
+        height: 1280,
+        caption: "Lo que se publica de un evento son momentos concretos, no la grabación entera.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes que veo" },
+      {
+        type: "list",
+        items: [
+          "Contratar al filmmaker la semana del evento. Sin tiempo para preparar la cobertura, lo que entregas es genérico.",
+          "Pedir solo \"un vídeo del evento\" sin decidir antes para qué canal y qué duración. Acaba siendo una pieza que no encaja en ningún sitio.",
+          "Saltarse el audio de mesa. El micro de cámara en una sala grande no vale, y si pierdes el audio del ponente pierdes la pieza.",
+          "Llevar una sola cámara a un evento con escenario fijo y mesa redonda. Si se va el plano principal no tienes plan B.",
+          "No reservar espacio para grabar testimoniales fuera de la sala. Los mejores cortes para campañas suelen salir de ahí, no del escenario.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuál es la diferencia entre un filmmaker y un cámara contratado por horas?",
+        answer:
+          "Un cámara graba lo que le indicas en el sitio. Un filmmaker decide la cobertura antes, dirige el rodaje en directo y entrega las piezas editadas listas para publicar. Si solo necesitas archivo bruto, te sobra con un cámara. Si quieres material que se publique, necesitas a alguien que también edite y piense en el resultado.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuántas cámaras hace falta para cubrir un evento corporativo?",
+        answer:
+          "Depende. Un evento con escenario fijo y ponentes de hora y media en adelante pide dos cámaras (abierta y primer plano). Un evento más informal o con desplazamientos se cubre mejor con una cámara móvil y, si hay presupuesto, una segunda fija para planos generales. Más de tres cámaras suele ser excesivo si no hay realización en directo.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tarda en estar listo el vídeo del evento?",
+        answer:
+          "Suelo entregar un teaser corto en 24 a 48 horas y el recap principal en una a dos semanas. Si pides también ponencias completas o testimoniales editados por separado, sumar otros tres a cinco días. Plazos más cortos son posibles, pero conviene avisar antes del rodaje para reservar las jornadas de edición.",
+      },
+      {
+        type: "faq",
+        question: "¿Es mejor contratar un filmmaker autónomo o una productora para un evento?",
+        answer:
+          "Para eventos de un día con una o dos cámaras, un filmmaker autónomo cubre el trabajo entero y tienes una sola persona responsable. Para eventos grandes, multi-localización o con realización en directo, tiene más sentido una productora con varios equipos. La pregunta útil no es \"autónomo o productora\" sino quién va a estar el día del evento dirigiendo la cobertura.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes un evento corporativo cerca y prefieres hablarlo en directo antes de pedir presupuesto, escríbeme desde la página de contacto con la fecha y un par de líneas sobre el formato. A partir de ahí miramos qué cobertura tiene sentido y qué piezas vas a poder publicar después.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {

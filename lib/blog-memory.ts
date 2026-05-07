@@ -56,6 +56,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto. Search Console: 7 impresiones, posición media 19.6. Imágenes Unsplash/Pexels.",
   },
+  {
+    slug: "filmmaker-eventos",
+    keyword: "filmmaker eventos",
+    intent: "informacional",
+    createdAt: "2026-05-07",
+    status: "published",
+    notes: "Auto-generado por blog-auto. Search Console: 4 impresiones, posición media 11.75. Imágenes Unsplash/Pexels.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {
