@@ -707,6 +707,126 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "contenido-para-redes-sociales-madrid",
+    title: "Contenido para redes sociales en Madrid: cómo se monta un sistema que aguante el ritmo",
+    description:
+      "Cómo planteo el contenido para redes sociales de una empresa en Madrid: jornadas de grabación, formatos por canal, edición y publicación sin depender de la inspiración semanal.",
+    publishedAt: "2026-05-08",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: [
+      "contenido para redes sociales",
+      "reels para empresas",
+      "vídeo vertical",
+      "Madrid",
+      "filmmaker corporativo",
+    ],
+    keyword: "contenido para redes sociales madrid",
+    intent: "informacional",
+    excerpt:
+      "Publicar en redes cada semana sin agotarse no va de inspiración. Va de tener un sistema: una jornada de grabación, formatos definidos por canal y un calendario que ya viene cerrado.",
+    seoTitle: "Contenido para redes sociales en Madrid | Daniel Acero",
+    metaDescription:
+      "Contenido para redes sociales en Madrid: cómo monto jornadas de grabación, formatos por canal y publicación sin depender de la inspiración semanal.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Casi todas las empresas que me llaman para hacer contenido en Madrid empiezan igual: alguien dentro lleva semanas intentando mantener el feed activo y no llega. Una semana hay tres reels, la siguiente ninguno, y al mes siguiente se replantea todo.",
+      },
+      {
+        type: "paragraph",
+        text: "El problema casi nunca es de ideas. Es que se está intentando producir contenido como si fuera improvisación creativa, y eso no aguanta seis meses. Lo que aguanta es un sistema: jornadas de grabación marcadas en calendario, formatos definidos por canal y una edición que sale ya pensada para publicar.",
+      },
+      {
+        type: "image",
+        src: "/blog/contenido-para-redes-sociales-madrid/hero.webp",
+        alt: "Persona grabando contenido vertical con un smartphone para redes sociales",
+        width: 1920,
+        height: 1280,
+        caption: "El contenido que se publica de forma estable casi nunca sale de improvisar: sale de una jornada bien preparada al mes.",
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué un sistema y no \"contenido fresco\"" },
+      {
+        type: "paragraph",
+        text: "Producir contenido para redes en formato \"vamos viendo\" cuesta más caro de lo que parece. Cada semana hay que decidir el tema, escribir el guion, montar la cámara, grabar, editar y publicar. Si esa cadena se rompe en cualquier paso, se rompe la semana entera. Y cuando hablamos de un equipo interno con otras prioridades, se rompe seguro.",
+      },
+      {
+        type: "paragraph",
+        text: "Un sistema lo que hace es separar la grabación del resto. Una vez al mes se concentra todo el material que se va a usar durante las cuatro semanas siguientes. La edición y la publicación van por detrás, ya con piezas en mano, no a contrarreloj.",
+      },
+      {
+        type: "paragraph",
+        text: "El cambio mental es importante: no se trata de grabar más, se trata de grabar menos veces y aprovechar mejor cada jornada. Una mañana de cuatro horas bien planificada da material para todo un mes de publicaciones en LinkedIn, Instagram y TikTok.",
+      },
+      { type: "heading", level: 2, text: "Cómo monto un sistema mensual" },
+      { type: "heading", level: 3, text: "Calendario y guion al inicio del mes" },
+      {
+        type: "paragraph",
+        text: "Antes de la jornada de grabación cierro con el cliente los textos del mes. Suelen ser entre ocho y doce piezas: dos o tres más largas para LinkedIn, el resto cortas para reels y TikTok. Los guiones están escritos a frase corta, listos para teleprompter, en el tono que ya use la marca por escrito en otros canales.",
+      },
+      { type: "heading", level: 3, text: "Una jornada de grabación al mes" },
+      {
+        type: "paragraph",
+        text: "Voy con dos cámaras Sony, microfonía de solapa, teleprompter y dos esquemas de luz suave. La persona que va a salir lee los textos del mes seguidos, sin reuniones de guion delante. Si la jornada está bien preparada, la grabación efectiva son dos a tres horas, incluyendo cambios de plano y un par de fondos distintos para que las piezas no parezcan todas iguales.",
+      },
+      { type: "heading", level: 3, text: "Edición pensada por canal" },
+      {
+        type: "paragraph",
+        text: "El mismo material se monta en formatos distintos según donde se publica. Para LinkedIn una pieza más larga y subtitulada con tipografías limpias. Para Instagram y TikTok, cortes verticales de quince a cuarenta y cinco segundos, con ritmo más alto y subtítulos quemados. Edito en DaVinci Resolve y entrego en una carpeta organizada por semana, con los textos sugeridos para cada publicación.",
+      },
+      {
+        type: "image",
+        src: "/blog/contenido-para-redes-sociales-madrid/mid.webp",
+        alt: "Equipo de rodaje preparando una sesión de grabación de contenido para redes",
+        width: 1920,
+        height: 1280,
+        caption: "La diferencia entre publicar a menudo y publicar a veces casi siempre es esta: una jornada bien montada al mes.",
+      },
+      { type: "heading", level: 2, text: "Errores que veo cuando alguien intenta hacerlo solo" },
+      {
+        type: "list",
+        items: [
+          "Grabar sin guion escrito y editar buscando \"el momento bueno\". El tiempo que se gasta en post se multiplica por tres.",
+          "Publicar sin diferenciar formato por canal. Lo que funciona en LinkedIn no es lo mismo que en TikTok aunque venga del mismo material.",
+          "Cambiar de fondo, ropa o luz cada semana. El feed pierde reconocimiento y parece que cada pieza la haya hecho otra persona.",
+          "Esperar a tener \"algo importante que decir\" para grabar. La constancia pesa más que cualquier publicación brillante aislada.",
+          "No incluir subtítulos quemados. La mayoría del feed se ve sin sonido y sin subtítulos las primeras dos líneas se pierden.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuántas piezas se sacan de una jornada mensual de grabación?",
+        answer:
+          "Depende del formato y del nivel de preparación, pero el rango habitual es entre ocho y treinta piezas finales. Para reels y vídeos cortos suelen salir entre veinte y treinta al mes con una jornada de tres a cuatro horas. Si se mezclan piezas largas con cortas, lo razonable es entre ocho y doce.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta que la persona que sale a cámara tenga experiencia?",
+        answer:
+          "No. Casi todas las personas con las que trabajo no se sienten cómodas a cámara la primera vez. Por eso uso teleprompter siempre, los textos están escritos en su tono habitual y la jornada empieza con planos sencillos para que la persona se acostumbre antes de los textos largos. En la segunda o tercera grabación se nota mucho la diferencia.",
+      },
+      {
+        type: "faq",
+        question: "¿Es mejor grabar un día al mes o repartir varios mini rodajes?",
+        answer:
+          "Para empresas con un equipo interno ocupado, una jornada larga al mes funciona mejor que varios mini rodajes. Reduce el coste logístico, evita parar la agenda varias veces y obliga a planificar el contenido por adelantado. Mini rodajes solo tienen sentido cuando hay momentos puntuales que solo ocurren ese día (un evento, una visita, un lanzamiento concreto).",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tarda en publicarse el contenido tras la grabación?",
+        answer:
+          "El primer bloque suele estar listo en cinco a siete días para que se pueda empezar a publicar la semana siguiente al rodaje. El resto se va entregando escalonado durante las cuatro semanas, ajustado al calendario que cerramos al inicio del mes. Si hay urgencia (un lanzamiento o una campaña concreta), se prioriza esa pieza primero.",
+      },
+      {
+        type: "paragraph",
+        text: "Si estás llevando contenido para redes desde dentro de tu empresa y notas que no aguantas el ritmo, escríbeme desde la página de contacto con un par de líneas sobre qué canales quieres alimentar y con qué frecuencia. A partir de ahí miramos si tiene sentido montar un sistema mensual o algo más puntual.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
