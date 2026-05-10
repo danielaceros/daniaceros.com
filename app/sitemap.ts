@@ -9,6 +9,7 @@ const sitemapUrls = [
   "https://daniaceros.com/precios",
   "https://daniaceros.com/proceso",
   "https://daniaceros.com/contratar",
+  "https://daniaceros.com/contenido-mensual",
   "https://daniaceros.com/faq",
   "https://daniaceros.com/sobre-mi",
   "https://daniaceros.com/filmmaker-madrid",
