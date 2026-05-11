@@ -827,6 +827,127 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-vertical-profesional",
+    title: "Vídeo vertical profesional: cómo grabarlo bien para Reels, TikTok y Shorts",
+    description:
+      "Guía práctica de vídeo vertical profesional: encuadre 9:16, iluminación, sonido directo, errores comunes y consejos para grabar piezas que aguanten Reels, TikTok y Shorts.",
+    publishedAt: "2026-05-11",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: [
+      "vídeo vertical",
+      "Reels",
+      "TikTok",
+      "Shorts",
+      "filmmaker corporativo",
+      "9:16",
+    ],
+    keyword: "vídeo vertical profesional",
+    intent: "informacional",
+    excerpt:
+      "Grabar vertical no es girar la cámara noventa grados. Cambia el encuadre, la iluminación, el sonido y el montaje. Esta es la guía con la que produzco piezas verticales para empresas en Madrid.",
+    seoTitle: "Vídeo vertical profesional: cómo grabarlo | Daniel Acero",
+    metaDescription:
+      "Vídeo vertical profesional para Reels, TikTok y Shorts: encuadre 9:16, sonido directo y errores que cargan el contenido. Guía práctica desde Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Casi todo lo que se publica en redes hoy es vertical. Reels, TikTok, Shorts, Stories. Y casi todo se sigue grabando como si todavía fuera para YouTube en 2018: cámara apaisada, plano medio frontal, sonido ambiente y a rezar.",
+      },
+      {
+        type: "paragraph",
+        text: "Un vídeo vertical profesional no es lo mismo que girar la cámara noventa grados. Es una manera distinta de encuadrar, iluminar, sonorizar y montar. Esta es la guía práctica con la que planteo piezas verticales para empresas en Madrid.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-vertical-profesional/hero.webp",
+        alt: "Persona grabando vídeo vertical con un smartphone en formato 9:16",
+        width: 1920,
+        height: 1280,
+        caption: "El vertical bien grabado se nota desde el primer segundo: encuadre limpio, sonido directo y luz pensada para la cara.",
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué cambia respecto a un vídeo horizontal" },
+      {
+        type: "paragraph",
+        text: "El formato vertical aprende del móvil. Se ve a un palmo de la cara, casi siempre sin sonido, mientras alguien hace scroll. Eso obliga a cambiar varias decisiones básicas: dónde pones los ojos en el encuadre, cuánto aire dejas, dónde caen los subtítulos y cómo trabajas el primer segundo.",
+      },
+      {
+        type: "paragraph",
+        text: "El espectador medio decide si sigue mirando en los primeros dos segundos. Si en ese intervalo no entiende dónde estás, qué se ve y qué le aportas, hace scroll. Eso impone disciplina en encuadre y sonido más que ningún otro formato.",
+      },
+      {
+        type: "paragraph",
+        text: "Y luego está el detalle técnico: 1080×1920 a 30 fps como mínimo, perfil de color plano si lo vas a etalonar después y audio limpio, porque la plataforma vuelve a comprimir lo que subes y todo lo que estaba justo se rompe.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Encuadre: ojos en el tercio superior" },
+      {
+        type: "paragraph",
+        text: "Los ojos del sujeto deben caer en el primer tercio superior del encuadre. Por encima dejas aire para que la cara no quede pegada al borde y por debajo te queda espacio para subtítulos quemados sin tapar la barbilla. Si grabas con cámara, usa un objetivo de 35 mm o 50 mm equivalente full frame. Con móvil, el angular estándar (24-26 mm) basta y evita la distorsión del ultra-angular.",
+      },
+      { type: "heading", level: 3, text: "Iluminación: una fuente principal suave" },
+      {
+        type: "paragraph",
+        text: "El error más común es iluminar como si fuera horizontal: dos luces a 45 grados, plano americano. En vertical eso aplana la cara. Lo que funciona es una sola fuente principal grande (panel LED con softbox, ventana lateral) cerca del sujeto y un rebote suave al otro lado. Sin luces de fondo agresivas que delatan que es un set.",
+      },
+      { type: "heading", level: 3, text: "Sonido: microfonía cercana siempre" },
+      {
+        type: "paragraph",
+        text: "Sin sonido directo decente, da igual la cámara. Para piezas estáticas, un lavalier (Lark M2, RØDE Wireless GO II) clavado a 20 cm de la boca. Para piezas en movimiento, una shotgun en pértiga si tienes a alguien que la sostenga, o el lavalier si vas solo. El audio ambiente del móvil no aguanta una pieza de treinta segundos sin que el espectador desconecte.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-vertical-profesional/mid.webp",
+        alt: "Creadora de contenido grabando una pieza vertical para redes sociales",
+        width: 1920,
+        height: 1280,
+        caption: "Una sola luz lateral, micrófono cerca y encuadre limpio. El 90% del resultado se decide antes de grabar.",
+      },
+      { type: "heading", level: 2, text: "Errores que veo a menudo" },
+      {
+        type: "list",
+        items: [
+          "Grabar en horizontal y recortar a vertical en post. Pierdes resolución, pierdes margen para encuadrar bien y se nota a la legua.",
+          "Plano medio o americano. En vertical quedan enormes los hombros y pequeña la cara. Mejor plano corto o cintura para arriba con la persona en el tercio alto.",
+          "Texto sobreimpreso pegado a los bordes. Instagram y TikTok comen los primeros y últimos doscientos píxeles con interfaz; cualquier texto ahí queda tapado por los botones.",
+          "Música a tope tapando la voz. La voz manda en la retención; la música debe ir doce decibelios por debajo de la voz, no al revés.",
+          "Olvidarse de los subtítulos quemados. Más del 70% del consumo es sin sonido. Sin subtítulos pierdes a la mayoría en los dos primeros segundos.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Mejor grabar en 4K vertical o en 1080?",
+        answer:
+          "Para piezas que solo van a redes, 1080×1920 a 30 fps basta y ocupa la mitad de espacio en proyecto. 4K vertical (2160×3840) tiene sentido si vas a hacer recortes dentro del encuadre en post (zoom in/out simulado) o si quieres reaprovechar el material para piezas horizontales recortadas más adelante. Para una sola pieza vertical limpia, 1080 va bien.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar vídeo vertical profesional con el móvil?",
+        answer:
+          "Sí, con matices. Los iPhone recientes (15 Pro en adelante) graban material publicable si añades buena iluminación y un micrófono externo. El móvil sigue perdiendo en rango dinámico (cielos quemados, sombras tapadas) y en bokeh natural, así que para piezas que requieren ese look pulido tira de cámara. Para contenido más espontáneo, móvil con lavalier y luz natural lateral suele ser suficiente.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué duración funciona mejor en Reels, TikTok y Shorts?",
+        answer:
+          "Como punto de partida, entre quince y cuarenta y cinco segundos. Por debajo de quince cuesta entregar valor real; por encima de cuarenta y cinco hay que estar muy seguro de que el contenido aguanta. Si la pieza es informativa con guion cerrado, hasta sesenta o noventa segundos puede funcionar; si es más visual o de gancho rápido, entre veinte y treinta segundos es la zona dulce.",
+      },
+      {
+        type: "faq",
+        question: "¿Compensa hacerlo a la vez en 9:16 y 16:9?",
+        answer:
+          "Solo si lo planificas desde el principio. Eso implica encuadrar con margen suficiente arriba y abajo y trabajar dos montajes distintos en edición. Si la prioridad son redes, mejor grabar nativo vertical y olvidarse del 16:9 que casi nadie va a ver. Si la pieza también vive en una web o en YouTube, sí compensa planificar las dos versiones desde la grabación.",
+      },
+      {
+        type: "paragraph",
+        text: "Si estás produciendo contenido vertical para tu empresa y no estás seguro de si lo que sale es publicable, escríbeme desde la página de contacto con un par de líneas sobre el formato y el canal donde lo quieres publicar. Echamos un ojo a lo que tienes y vemos si conviene ajustar el proceso o producirlo distinto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {

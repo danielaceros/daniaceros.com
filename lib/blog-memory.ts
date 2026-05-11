@@ -72,6 +72,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto. Search Console: 13 impresiones, posición media 31.4. Imágenes Unsplash/Pexels.",
   },
+  {
+    slug: "video-vertical-profesional",
+    keyword: "vídeo vertical profesional",
+    intent: "informacional",
+    createdAt: "2026-05-11",
+    status: "published",
+    notes: "Auto-generado por blog-auto. Search Console: 1 impresión, posición media 20. Imágenes Unsplash/Pexels.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {
