@@ -80,6 +80,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto. Search Console: 1 impresión, posición media 20. Imágenes Unsplash/Pexels.",
   },
+  {
+    slug: "videos-profesionales-madrid",
+    keyword: "videos profesionales en madrid",
+    intent: "informacional",
+    createdAt: "2026-05-12",
+    status: "published",
+    notes: "Auto-generado por blog-auto. Search Console: 24 impresiones, posición media 35.71. Imágenes Unsplash/Pexels.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {

@@ -948,6 +948,127 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "videos-profesionales-madrid",
+    title: "Vídeos profesionales en Madrid: qué incluye y cómo elegir proveedor",
+    description:
+      "Qué son los vídeos profesionales para empresas en Madrid, cómo se producen bien y qué errores cuestan dinero. Guía práctica antes de contratar.",
+    publishedAt: "2026-05-12",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "vídeos profesionales madrid",
+      "vídeo corporativo",
+      "producción audiovisual",
+      "filmmaker madrid",
+      "vídeo de empresa",
+    ],
+    keyword: "videos profesionales en madrid",
+    intent: "informacional",
+    excerpt:
+      "Muchas empresas producen su primer vídeo sin saber para qué lo van a usar y reciben un archivo que no encaja en ningún sitio. Esta es la guía que doy antes de cerrar cualquier proyecto.",
+    seoTitle: "Vídeos profesionales en Madrid: cómo elegir | Daniel Acero",
+    metaDescription:
+      "Vídeos profesionales en Madrid para empresas: qué incluye una producción bien resuelta, cómo elegir proveedor y errores que cuestan dinero.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Muchas empresas en Madrid producen su primer vídeo profesional sin saber muy bien qué esperar y acaban recibiendo un archivo que nadie sabe dónde meter. El vídeo se ve bien en la pantalla del proveedor, pero no sirve en la web, no encaja en los anuncios y tampoco convence en las propuestas comerciales.",
+      },
+      {
+        type: "paragraph",
+        text: "Llevo años produciendo vídeos para empresas en Madrid —desde startups con presupuesto ajustado hasta corporativas con varias localizaciones— y el problema suele ser el mismo: se pide el producto antes de tener claro para qué se va a usar. Esta guía es lo que cuento antes de cerrar cualquier proyecto.",
+      },
+      {
+        type: "image",
+        src: "/blog/videos-profesionales-madrid/hero.webp",
+        alt: "Operador de cámara grabando un vídeo profesional para una empresa en exteriores",
+        width: 1920,
+        height: 1280,
+        caption: "Foto: Gordon Cowie vía Unsplash.",
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué son los vídeos profesionales para empresas y por qué marcan la diferencia" },
+      {
+        type: "paragraph",
+        text: "Un vídeo profesional para empresa no se define por la cámara que se usa. Se define por la cadena completa: un objetivo claro antes de grabar, una estructura narrativa mínima, técnica de rodaje que aguanta cualquier pantalla y una edición pensada para el canal donde va a vivir la pieza.",
+      },
+      {
+        type: "paragraph",
+        text: "En la práctica eso significa que hay trabajo antes del rodaje —briefing, guion, localización, planning de planos— y trabajo después que no consiste solo en cortar y poner música, sino en montar algo que cumpla el objetivo concreto que se acordó al principio. Un proveedor que no pregunta para qué es el vídeo antes de presupuestar está vendiendo horas de cámara, no una producción.",
+      },
+      {
+        type: "paragraph",
+        text: "Para una empresa en Madrid, contratar vídeo profesional también implica elegir a alguien que conozca los usos habituales del mercado: web, campañas en Meta y LinkedIn, propuestas comerciales, comunicación interna. Las necesidades técnicas de cada formato son distintas y producirlas con criterio ahorra dinero y tiempo.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Define el objetivo antes del formato" },
+      {
+        type: "paragraph",
+        text: "Si la primera conversación con el proveedor es sobre duración o estilo antes de haber definido qué quieres que haga quien vea el vídeo, la producción ya empieza torcida. Un vídeo de presentación de empresa que busca generar confianza en clientes B2B pide un montaje distinto al de una campaña en Instagram pensada para generar solicitudes de presupuesto. Formato, duración, ritmo de edición y música salen de saber para qué es la pieza.",
+      },
+      { type: "heading", level: 3, text: "Preproducción: la fase que más se salta" },
+      {
+        type: "paragraph",
+        text: "La preproducción es lo que diferencia una producción que sale limpia de una que tarda el doble y entrega la mitad. Consiste en cerrar por escrito el guion o la escaleta, definir las localizaciones, decidir quién habla a cámara y con qué apoyo (teleprompter, escaleta, guion memorizado), planificar los planos de recurso y confirmar que el audio va con micro dedicado. Si esto se improvisa el día del rodaje, el tiempo efectivo de grabación se multiplica.",
+      },
+      { type: "heading", level: 3, text: "Rodaje con equipo adecuado al proyecto" },
+      {
+        type: "paragraph",
+        text: "Una entrevista corporativa con dos cámaras Sony, un par de focos LED y micro de solapa sale bien con una sola persona. Un evento con varias salas o escenarios simultáneos pide más equipo. El criterio no es que más equipo sea mejor; es elegir la escala que pide el proyecto sin inflar el presupuesto con recursos que no van a aparecer en el vídeo final.",
+      },
+      {
+        type: "image",
+        src: "/blog/videos-profesionales-madrid/mid.webp",
+        alt: "Cámara de vídeo profesional en un set de producción para empresa",
+        width: 1920,
+        height: 1280,
+        caption: "Foto: Voyage Pro vía Unsplash.",
+      },
+      { type: "heading", level: 2, text: "Errores habituales en producción de vídeo para empresas" },
+      {
+        type: "list",
+        items: [
+          "Pedir presupuesto sin briefing. El proveedor presupuesta lo que le parece razonable, no lo que tú necesitas.",
+          "No reservar preproducción en el calendario. Un rodaje sin guion cerrado tarda el doble y produce material que no se monta bien.",
+          "Grabar un único máster largo pensando que vale para todo. Un vídeo de tres minutos no funciona como anuncio en Meta ni como Story; hay que planificar versiones desde el principio.",
+          "Cambiar el brief a mitad de edición. Cada cambio de dirección en edición avanzada sale caro y casi siempre empeora la pieza.",
+          "No asegurar el audio con micro dedicado. El micro de la cámara en una sala grande no vale; si el audio falla, la pieza entera se cae.",
+          "Elegir proveedor solo por precio sin ver trabajo previo en el mismo tipo de formato. Un especialista en bodas no produce corporativo igual que alguien que lo hace cada mes.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta un vídeo profesional para una empresa en Madrid?",
+        answer:
+          "Depende del alcance. Una pieza de un día de rodaje con edición y una o dos versiones finales suele moverse entre 1.500 y 4.000 euros. Proyectos con varias jornadas, equipo amplio o múltiples entregables adaptados por canal suben en proporción. Lo más útil es pedir presupuesto cerrado por proyecto, no por hora de cámara.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tarda en entregarse un vídeo corporativo?",
+        answer:
+          "Un plazo razonable para una producción estándar es dos a cuatro semanas desde el briefing hasta la entrega final. Una semana para cerrar guion y agenda, una jornada de rodaje y una a dos semanas de edición con una o dos rondas de revisión. Si hay urgencia, se puede comprimir si se prevé antes del rodaje; lo que no se puede comprimir es la fase de guion.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué diferencia hay entre un vídeo corporativo y uno para redes sociales?",
+        answer:
+          "La duración, el ritmo de montaje y cómo aguanta el primer segundo sin sonido. Un vídeo corporativo para web puede tomar dos o tres minutos y respirar; uno para redes tiene que engancharse en los primeros dos segundos, aguantar sin audio y entrar bien en vertical. Pueden salir del mismo rodaje, pero el montaje es distinto y hay que preverlo desde el principio.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta guion antes del rodaje?",
+        answer:
+          "Sí, aunque sea de una página. Improvisar delante de la cámara cuesta más en tiempo de rodaje y produce material que es difícil de montar después. Un guion mínimo —objetivo del vídeo, frases clave, planos de recurso necesarios— reduce el tiempo de grabación, reduce rondas de revisión y casi siempre mejora el resultado final.",
+      },
+      {
+        type: "paragraph",
+        text: "Si estás buscando producir un vídeo profesional para tu empresa en Madrid y quieres saber cómo lo plantearía para tu caso concreto, escríbeme desde la página de contacto con un par de líneas sobre qué necesitas y dónde va a vivir la pieza. A partir de ahí te digo si tiene sentido y cómo lo haría.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
