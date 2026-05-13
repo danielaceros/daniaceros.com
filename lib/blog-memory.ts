@@ -88,6 +88,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto. Search Console: 24 impresiones, posición media 35.71. Imágenes Unsplash/Pexels.",
   },
+  {
+    slug: "iluminacion-entrevistas-corporativas",
+    keyword: "iluminación para entrevistas corporativas",
+    intent: "informacional",
+    createdAt: "2026-05-13",
+    status: "published",
+    notes: "Auto-generado por blog-auto (fallback evergreen, sin candidate SC limpio — token SC caducado). Imágenes Unsplash/Pexels.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {

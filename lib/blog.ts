@@ -1069,6 +1069,126 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "iluminacion-entrevistas-corporativas",
+    title: "Iluminación para entrevistas corporativas: cómo conseguir un plano limpio",
+    description:
+      "Guía práctica de iluminación para entrevistas corporativas: equipo mínimo, posición de focos, temperatura de color y errores que arruinan el plano desde el set.",
+    publishedAt: "2026-05-13",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "iluminación entrevistas",
+      "vídeo corporativo",
+      "filmmaker madrid",
+      "producción audiovisual",
+      "entrevistas a cámara",
+    ],
+    keyword: "iluminación para entrevistas corporativas",
+    intent: "informacional",
+    excerpt:
+      "Iluminar bien una entrevista corporativa cambia el resultado más que el modelo de cámara. Equipo, posición de focos y errores que cuestan una sesión entera.",
+    seoTitle: "Iluminación para entrevistas corporativas | Daniel Acero",
+    metaDescription:
+      "Iluminación para entrevistas corporativas: equipo mínimo, cómo colocar los focos y errores que arruinan el plano. Guía práctica desde rodajes en Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cuando me dicen que el vídeo 'no tiene ese punto que tienen otros', casi siempre el problema está en la luz. No en la cámara. No en la edición. En cómo está iluminado el plano de entrevista, que es donde el espectador pasa la mayor parte del tiempo.",
+      },
+      {
+        type: "paragraph",
+        text: "Llevo años grabando entrevistas corporativas en Madrid: directivos, portavoces, equipos técnicos, fundadores. Lo que hace que una entrevista se vea profesional no es el equipo caro. Es tener una fuente de luz grande, bien colocada, que favorezca la cara sin levantar sombras raras en la pared de fondo.",
+      },
+      {
+        type: "image",
+        src: "/blog/iluminacion-entrevistas-corporativas/hero.webp",
+        alt: "Persona sentada en una silla preparada para una entrevista grabada en estudio con iluminación profesional",
+        width: 1920,
+        height: 1440,
+        caption: "Foto: Take the Stairs vía Unsplash.",
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es la iluminación para entrevistas corporativas y por qué importa" },
+      {
+        type: "paragraph",
+        text: "La iluminación para entrevistas corporativas tiene un objetivo concreto: que la cara del entrevistado se vea clara, con definición en los rasgos y sin sombras duras que distraigan. Suena simple, pero ejecutarlo bien en condiciones reales (una sala de reuniones con ventanas, un despacho con fluorescentes en el techo, un pasillo corporativo) requiere tomar decisiones rápidas.",
+      },
+      {
+        type: "paragraph",
+        text: "La diferencia entre un plano que parece de noticiario y uno que parece de producción no está en el número de focos. Está en entender de dónde viene la luz principal, cómo llenar las sombras sin aplanar el rostro y qué hacer con el fondo para que no compita con quien habla.",
+      },
+      {
+        type: "paragraph",
+        text: "Y tiene consecuencias directas en edición. Un plano mal iluminado puede intentarse corregir en DaVinci Resolve, pero solo hasta cierto punto. A partir de ahí, la piel toma tonos raros, el ruido se multiplica al intentar recuperar sombras y la pieza se ve forzada.",
+      },
+      { type: "heading", level: 2, text: "Cómo ilumino una entrevista corporativa" },
+      { type: "heading", level: 3, text: "La fuente principal: grande y suave" },
+      {
+        type: "paragraph",
+        text: "La primera decisión es dónde va la luz principal. Uso paneles LED con softbox o tela difusora. El tamaño importa: un panel grande a un metro del sujeto es más suave que uno pequeño a dos metros, aunque den la misma potencia. Lo coloco a unos cuarenta y cinco grados respecto al eje cámara-sujeto, ligeramente por encima de los ojos para que la nariz proyecte una sombra corta hacia abajo. Nada de luz cenital, que aplana la cara, ni de luz frontal directa, que elimina todo el volumen.",
+      },
+      { type: "heading", level: 3, text: "El relleno: no más de un tercio de la principal" },
+      {
+        type: "paragraph",
+        text: "El lado opuesto al foco principal siempre necesita algo de luz. Sin relleno, la mitad de la cara queda en sombra y la proporción queda mal en cámara, aunque en el set no lo veas así. Uso un panel LED pequeño al mínimo o un reflector plateado que recoge parte de la luz de la principal. El relleno no puede igualar a la principal en potencia; si lo hace, la cara queda plana y sin profundidad.",
+      },
+      { type: "heading", level: 3, text: "El fondo: separación limpia" },
+      {
+        type: "paragraph",
+        text: "El fondo de una entrevista corporativa tiene que servir de apoyo, no de distracción. Tres opciones que funcionan: iluminar el fondo con un foco separado para crear diferencia entre la persona y lo que tiene detrás; usar el desenfoque natural de un objetivo luminoso (f/1.8 o f/2.8); o buscar un fondo real de la empresa (una pared con logo, una estantería ordenada) que sume contexto. Lo que no funciona es una pared blanca sin tratar o una ventana a contraluz sin compensar.",
+      },
+      {
+        type: "image",
+        src: "/blog/iluminacion-entrevistas-corporativas/mid.webp",
+        alt: "Filmación de entrevista corporativa en estudio con dos personas y equipo de cámara profesional",
+        width: 1920,
+        height: 1280,
+        caption: "Foto: Jonah De Oliveira vía Unsplash.",
+      },
+      { type: "heading", level: 2, text: "Errores que arruinan una entrevista corporativa" },
+      {
+        type: "list",
+        items: [
+          "Confiar en la luz de la sala tal como está. Los fluorescentes de techo aplanan la cara y mezclan temperaturas de color. Casi siempre hay que apagar y rebobinar.",
+          "Colocar al entrevistado con una ventana a la espalda. La cámara no puede exponer bien para la cara y el fondo al mismo tiempo; el resultado habitual es cara oscura o fondo quemado.",
+          "Usar un foco pequeño muy cerca. El halo de luz en la cara es visible, las sombras quedan duras y la piel se marca en exceso.",
+          "Mezclar temperaturas de color sin control. Si los paneles están a 5600K y hay ventanas a 4200K mezcladas, la piel toma tonos verdes en partes del encuadre que no se corrigen bien en post.",
+          "No probar el plano a través de la cámara antes de llamar al entrevistado. Lo que ves a ojo en el set no es lo que registra el sensor. Siempre miro por el monitor antes de empezar.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Qué equipo mínimo hace falta para iluminar una entrevista corporativa?",
+        answer:
+          "Un panel LED de 60×60 cm o más con softbox, un reflector y un trípode de focos es lo mínimo funcional. Con eso puedes montar una iluminación de tres puntos básica en diez minutos. Si el espacio tiene ventanas aprovechables, la luz natural puede actuar como relleno o como contraluz y reduces aún más el equipo.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué temperatura de color es mejor para entrevistas de empresa?",
+        answer:
+          "5600K (luz de día) si hay ventanas en el set que no puedes tapar. 3200K o 4000K si el espacio está completamente controlado. Lo importante es que todos los focos estén a la misma temperatura o muy cerca. Las mezclas hacen que partes de la cara salgan con tonos distintos y eso no se arregla bien en post.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo usar luz natural para una entrevista corporativa?",
+        answer:
+          "Sí, con condiciones. Una ventana lateral grande funciona como fuente principal si la luz del día es suave y difusa. El problema es que la luz natural cambia en tiempo real: en quince minutos puede pasar de perfecta a inusable. Para una entrevista corta puede valer; para una sesión de dos horas, los paneles LED dan consistencia que la ventana no puede dar.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta un gaffer o puedo iluminar yo solo la entrevista?",
+        answer:
+          "Para una entrevista corporativa estándar con un único sujeto, se puede montar y ajustar el setup solo. Lo que cambia es el tiempo: en solitario llevas entre veinte y cuarenta minutos; con un gaffer son diez. Si hay prisa, set complicado o más de dos entrevistados con fondos distintos, tener a alguien que solo se encargue de luz ahorra más en tiempo del que cuesta.",
+      },
+      {
+        type: "paragraph",
+        text: "Si estás planificando un rodaje de entrevistas para tu empresa y quieres saber cómo lo resolvería, escríbeme desde la página de contacto con un par de líneas sobre el espacio y el número de personas. Puedo darte una idea del setup antes de presupuestar nada.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
