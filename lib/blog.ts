@@ -1189,6 +1189,122 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "como-elegir-filmmaker-corporativo",
+    title: "Cómo elegir un filmmaker corporativo para tu empresa",
+    description:
+      "Guía práctica para elegir un filmmaker corporativo sin cometer los errores habituales: cómo revisar el portfolio, leer la comunicación previa y entender un presupuesto antes de contratar.",
+    publishedAt: "2026-05-14",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: [
+      "filmmaker corporativo",
+      "contratar filmmaker",
+      "vídeo corporativo",
+      "producción audiovisual",
+      "guía",
+    ],
+    keyword: "cómo elegir un filmmaker corporativo",
+    intent: "informacional",
+    excerpt:
+      "Contratar al filmmaker equivocado para un proyecto corporativo sale caro. Estos son los criterios reales que aplicaría para elegir antes de firmar.",
+    seoTitle: "Cómo elegir un filmmaker corporativo | Daniel Acero",
+    metaDescription:
+      "Cómo elegir un filmmaker corporativo sin errores. Portfolio, comunicación y presupuesto: lo que revisar antes de contratar para tu empresa.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cuando alguien me pregunta cómo encontraron a alguien como yo, la respuesta habitual es: por descarte. Muchos han pasado antes por uno o dos encargos que no salieron bien. Tiempo perdido, dinero gastado y un disco duro lleno de material que no usaron.",
+      },
+      {
+        type: "paragraph",
+        text: "Con los criterios correctos, el proceso es directo. Aquí cuento lo que yo mismo miraría si estuviera al otro lado eligiendo a un filmmaker para un proyecto.",
+      },
+      {
+        type: "image",
+        src: "/blog/como-elegir-filmmaker-corporativo/hero.webp",
+        alt: "Cámara de cine profesional sobre trípode preparada para un rodaje corporativo",
+        width: 1920,
+        height: 1280,
+        caption: "Foto: Jakob Owens vía Unsplash.",
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué diferencia a un filmmaker corporativo de un videógrafo de eventos" },
+      {
+        type: "paragraph",
+        text: "Un videógrafo de eventos recoge lo que pasa. Un filmmaker corporativo tiene criterio editorial: sabe qué necesita la marca antes de llegar al set, cómo construir un relato con las imágenes disponibles y cómo resolver los imprevistos sin que se note en el resultado. La distinción importa porque el tipo de profesional que eliges determina qué clase de material vas a obtener.",
+      },
+      {
+        type: "paragraph",
+        text: "Un vídeo corporativo tiene un objetivo concreto: vender un servicio, presentar un equipo, generar confianza en un cliente potencial o documentar un evento de forma útil. Para eso no vale solo saber operar una cámara. Hace falta entender la empresa, su tono, su público y qué debe pasar cuando alguien vea el vídeo. Eso es lo que distingue a un filmmaker corporativo de alguien que simplemente filma.",
+      },
+      { type: "heading", level: 2, text: "Cómo evaluar a un filmmaker antes de firmar" },
+      { type: "heading", level: 3, text: "El portfolio: fíjate en lo que no enseñan" },
+      {
+        type: "paragraph",
+        text: "Cualquier filmación con luz correcta, montaje rítmico y música de Epidemic Sound parece bien hecha. El portfolio te dice poco si solo miras los mejores momentos. Lo que sí te dice algo: si los vídeos tienen coherencia entre sí; si hay variedad de clientes y sectores o todo parece el mismo encargo repetido; si puedes identificar un punto de vista propio más allá de la técnica. Pregunta también qué pasó en proyectos complicados. Los que saben explicar cómo resolvieron un problema son más fiables que los que solo enseñan los resultados perfectos.",
+      },
+      { type: "heading", level: 3, text: "La comunicación antes del encargo: un indicador que no falla" },
+      {
+        type: "paragraph",
+        text: "Antes de contratar a alguien, mantén una conversación sobre el proyecto. No sobre el precio: sobre el proyecto. Un filmmaker que hace buenas preguntas — qué objetivo tiene el vídeo, quién lo va a ver, cuánto tiempo tiene el espectador antes de decidir — es alguien que piensa en el resultado, no solo en los planos. Si la primera conversación va directo a presupuesto sin entender el encargo, es una señal de alerta.",
+      },
+      { type: "heading", level: 3, text: "El presupuesto: qué incluye y qué no" },
+      {
+        type: "paragraph",
+        text: "Los presupuestos de producción de vídeo varían mucho en función de lo que incluyen. Un número bajo puede significar que no está previsto el equipo de audio, los días de edición o las correcciones. Antes de comparar cifras, compara desglosados. ¿Incluye grabación y edición? ¿Cuántos días de rodaje? ¿Cuántas rondas de revisión? ¿Música con licencia o de stock gratuito? Preguntar esto antes no es desconfianza: es profesionalidad.",
+      },
+      {
+        type: "image",
+        src: "/blog/como-elegir-filmmaker-corporativo/mid.webp",
+        alt: "Equipo reunido en sala de reuniones revisando trabajo de producción audiovisual",
+        width: 1920,
+        height: 1280,
+        caption: "Foto: Ninthgrid vía Unsplash.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes al contratar un filmmaker corporativo" },
+      {
+        type: "list",
+        items: [
+          "Elegir por precio sin revisar el desglosado. El coste más bajo puede esconder ausencias de servicio que luego suponen costes extra o tiempo adicional.",
+          "No pedir referencias ni proyectos anteriores similares al tuyo. Un filmmaker que trabaja bien en bodas puede no tener el criterio necesario para un vídeo de empresa.",
+          "Dar por hecho los plazos de entrega sin acordarlos. Los tiempos de edición varían; pregunta la fecha estimada antes de cerrar el encargo.",
+          "No definir el número de revisiones incluidas. Sin ese límite, el proceso puede alargarse indefinidamente y generar tensión en la relación.",
+          "Pedir que reproduzca el estilo de otro. Si contratas a alguien por su criterio, déjale usarlo. Si necesitas un estilo muy concreto, explícalo con referencias antes de empezar.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto cobra un filmmaker corporativo en Madrid?",
+        answer:
+          "El rango habitual en Madrid para un proyecto corporativo completo — rodaje de un día más edición — va de 1.200 a 4.000 euros, según la duración del vídeo, el número de cámaras, el equipo de sonido y los días de postproducción. Los proyectos con localizaciones múltiples o requisitos técnicos más exigentes pueden superar esa cifra.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo se tarda en entregar un vídeo corporativo?",
+        answer:
+          "Para un vídeo de dos a cinco minutos con un día de rodaje, el plazo habitual de entrega es de dos a tres semanas desde que termina el rodaje. Depende del número de revisiones acordadas y de la complejidad del montaje. Los proyectos urgentes se pueden acelerar, pero conviene acordarlo antes del encargo, no después.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué información necesita un filmmaker para presupuestar un proyecto?",
+        answer:
+          "Como mínimo: tipo de vídeo (entrevista, evento, producto, marca), duración estimada del resultado, fecha y ciudad de rodaje, y número de personas en pantalla. Con eso se puede dar un rango orientativo. Para un presupuesto cerrado hace falta el brief completo y, si hay localizaciones concretas, una visita técnica previa.",
+      },
+      {
+        type: "faq",
+        question: "¿Es mejor un filmmaker independiente o una productora?",
+        answer:
+          "Depende del proyecto. Un filmmaker independiente suele ser más ágil y directo para proyectos de uno a tres días de rodaje. Una productora tiene más estructura para proyectos grandes con múltiples equipos o distribución en varios formatos. Para la mayoría de los vídeos corporativos de empresas medianas, el filmmaker independiente ofrece mejor relación entre calidad y coste.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes un proyecto en mente y quieres saber si encaja con lo que hago, escríbeme desde la página de contacto. En menos de 48 horas te cuento si puedo ayudarte y qué necesitaría saber para darte un presupuesto ajustado.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
