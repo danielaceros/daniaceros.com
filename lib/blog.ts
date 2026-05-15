@@ -1305,6 +1305,153 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "diferencias-video-institucional-video-de-marca",
+    title: "Vídeo institucional vs vídeo de marca: diferencias y cuándo usar cada uno",
+    description:
+      "Diferencias entre vídeo institucional y vídeo de marca: objetivos, formato, tono y cuándo necesitas cada uno para tu empresa.",
+    publishedAt: "2026-05-15",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "vídeo institucional",
+      "vídeo de marca",
+      "producción audiovisual",
+      "filmmaker corporativo",
+      "vídeo corporativo madrid",
+    ],
+    keyword: "diferencias entre vídeo institucional y vídeo de marca",
+    intent: "informacional",
+    excerpt:
+      "Dos formatos, dos propósitos. El vídeo institucional presenta la empresa. El vídeo de marca conecta emocionalmente con el cliente. Saber cuál necesitas cambia el presupuesto, el guion y el resultado.",
+    seoTitle: "Vídeo institucional vs vídeo de marca | Daniel Acero",
+    metaDescription:
+      "Diferencias entre vídeo institucional y vídeo de marca: objetivos, formato, tono y cuándo necesitas cada uno para tu empresa.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Dos formatos que muchas empresas confunden, y el resultado suele notarse. El vídeo institucional y el vídeo de marca tienen objetivos distintos, ritmos distintos y públicos distintos. No son intercambiables.",
+      },
+      {
+        type: "paragraph",
+        text: "Cuando un cliente me pide uno de los dos sin saber bien cuál necesita, lo primero que hago es preguntarle para qué lo va a usar. La respuesta cambia el guion, el tono, el presupuesto y el resultado final.",
+      },
+      {
+        type: "image",
+        src: "/blog/diferencias-video-institucional-video-de-marca/hero.webp",
+        alt: "The sony logo is illuminated on a dark background.",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Qué es cada uno",
+      },
+      {
+        type: "paragraph",
+        text: "El vídeo institucional es el formato que presenta la empresa. Quién es, a qué se dedica, qué valores tiene, cuánto lleva en el mercado. Es informativo, ordenado y suele tener un tono sobrio. Se usa en presentaciones, eventos del sector, webs corporativas y ferias. El espectador no tiene por qué conocerte de antemano.",
+      },
+      {
+        type: "paragraph",
+        text: "El vídeo de marca va a otro sitio. No describe la empresa: comunica por qué importa. El foco está en la emoción, en la identificación, en el por qué alguien elegiría trabajar contigo o comprarte. Puede no mencionar productos, no dar datos, no tener narración explícita. Su fuerza está en cómo hace sentir.",
+      },
+      {
+        type: "paragraph",
+        text: "Dicho de otro modo: el institucional responde 'qué somos' y el de marca responde 'qué representamos'. Son preguntas distintas y necesitan respuestas distintas.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cómo se ejecutan bien",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Vídeo institucional",
+      },
+      {
+        type: "paragraph",
+        text: "Para que funcione tiene que ser claro y creíble. Nada de aspiracionales vacíos. Necesita estructura lógica: quiénes somos, qué hacemos, cómo lo hacemos, para quién. El tono puede ser cercano o formal según la empresa, pero tiene que ser directo. Duración habitual: entre 2 y 3 minutos. Si supera los 4, pierde atención salvo que tenga un propósito muy concreto.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Vídeo de marca",
+      },
+      {
+        type: "paragraph",
+        text: "Aquí la estructura es más libre pero no menos exigente. Un buen vídeo de marca empieza con una idea concreta: un contraste, una tensión, un insight sobre el cliente o la categoría. La dirección de arte y el montaje importan más que en el institucional. La música no es decoración, es parte del mensaje. Duración habitual: entre 60 y 90 segundos, aunque puede ser más corto si el concepto es fuerte.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "El tono como señal",
+      },
+      {
+        type: "paragraph",
+        text: "Una forma rápida de distinguirlos: en el institucional la voz habla sobre la empresa. En el de marca la voz habla sobre el cliente o sobre una idea que va más allá de la empresa. Si el guion tiene frases como 'somos líderes en' o 'con más de 20 años de experiencia', es institucional. Si tiene frases como 'hay personas que' o 'en un mundo donde', apunta a marca.",
+      },
+      {
+        type: "image",
+        src: "/blog/diferencias-video-institucional-video-de-marca/mid.webp",
+        alt: "A snap shot of our Sony FS7 cinema camera system from our film set, while producing a documentary series.",
+        width: 1920,
+        height: 1080,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Errores comunes al confundirlos",
+      },
+      {
+        type: "list",
+        items: [
+          "Pedir un vídeo institucional cuando en realidad necesitas posicionamiento de marca para LinkedIn o redes.",
+          "Hacer un vídeo de marca tan abstracto que nadie entiende a qué se dedica la empresa.",
+          "Mezclar los dos formatos en uno solo: el resultado suele quedar largo, difuso y sin fuerza.",
+          "Usar el tono sobrio del institucional para el de marca, perdiendo la capacidad de conectar emocionalmente.",
+          "Publicar el institucional en redes sociales como si fuera contenido de marca: no está pensado para ese consumo.",
+          "Pensar que el vídeo de marca siempre es más caro: depende del concepto, no del formato.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo tener los dos?",
+        answer:
+          "Sí, y muchas empresas los tienen. El institucional para presentaciones B2B, ferias y la web corporativa. El de marca para campañas, redes sociales y comunicación de propósito. No se contradicen si están bien diferenciados.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuál necesito primero?",
+        answer:
+          "Si tu empresa está explicando quién es en cada reunión de ventas, necesitas el institucional. Si ya te conocen pero no conectan emocionalmente con lo que haces, necesitas el de marca. En la mayoría de los casos el institucional va antes.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto duran estos vídeos?",
+        answer:
+          "El institucional suele funcionar entre 2 y 3 minutos. El de marca entre 60 y 90 segundos, aunque hay conceptos que funcionan en 30 segundos y otros que necesitan 2 minutos. La duración tiene que responder al concepto, no al presupuesto.",
+      },
+      {
+        type: "faq",
+        question: "¿El filmmaker hace los dos tipos?",
+        answer:
+          "Depende del filmmaker. Algunos están especializados en institucional porque tienen experiencia con entrevistas de empresa y narración factual. Otros trabajan más el vídeo de marca porque tienen formación en dirección creativa. Conviene preguntar qué tipo de proyectos ha hecho antes de contratar.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes un proyecto en mente y no sabes si lo que necesitas es un institucional o un vídeo de marca, cuéntamelo desde la página de contacto. En 48 horas te digo qué formato encaja mejor con tu objetivo y qué necesitaría saber para darte un presupuesto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {

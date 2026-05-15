@@ -104,6 +104,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto (fallback evergreen, sin candidate SC limpio — token SC caducado). Imágenes Unsplash/Pexels.",
   },
+  {
+    slug: "diferencias-video-institucional-video-de-marca",
+    keyword: "diferencias entre vídeo institucional y vídeo de marca",
+    intent: "informacional",
+    createdAt: "2026-05-15",
+    status: "published",
+    notes: "Auto-generado por blog-auto (fallback evergreen, sin candidate SC limpio — token SC caducado). Imágenes Unsplash/Pexels.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {
