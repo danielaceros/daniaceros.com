@@ -1452,6 +1452,152 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "equipo-minimo-video-empresa",
+    title: "Equipo mínimo para grabar un vídeo de empresa (sin gastar de más)",
+    description:
+      "La lista corta de lo que realmente hace falta para grabar un vídeo de empresa: cámara, audio e iluminación esenciales. Sin sobreequipamiento.",
+    publishedAt: "2026-05-18",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "equipo de vídeo corporativo",
+      "cámara para entrevistas",
+      "audio para vídeo de empresa",
+      "iluminación vídeo corporativo",
+      "producción audiovisual",
+      "filmmaker Madrid",
+    ],
+    keyword: "equipo mínimo para grabar un vídeo de empresa",
+    intent: "informacional",
+    excerpt:
+      "La lista corta de lo que realmente hace falta para grabar un vídeo de empresa. Sin sobreequipamiento ni marketing de equipos.",
+    seoTitle: "Equipo mínimo para vídeo de empresa | Daniel Acero",
+    metaDescription:
+      "Equipo mínimo para grabar un vídeo de empresa: cámara, audio e iluminación. Qué priorizar, qué alquilar y qué no necesitas realmente.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "La pregunta que más escucho cuando alguien va a grabar su primer vídeo de empresa no es '¿qué quiero contar?' sino '¿qué equipo necesito?'. La respuesta corta: menos de lo que crees.",
+      },
+      {
+        type: "paragraph",
+        text: "He grabado vídeos corporativos con configuraciones muy distintas, desde rodajes con varios cuerpos de cámara hasta entrevistas resueltas con un equipo que cabe en una mochila de 25 litros. Lo que hace bueno un vídeo de empresa no es la cantidad de equipo, sino saber qué pieza importa en cada toma.",
+      },
+      {
+        type: "image",
+        src: "/blog/equipo-minimo-video-empresa/hero.webp",
+        alt: "Cámara en trípode preparada para un rodaje corporativo",
+        width: 1920,
+        height: 1280,
+        caption: "Un trípode robusto con rótula fluida es más importante que el cuerpo de cámara.",
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Por qué importa elegir bien el equipo",
+      },
+      {
+        type: "paragraph",
+        text: "Equiparse de más tiene un coste real: más tiempo de montaje y desmontaje, más cables que gestionar, más decisiones técnicas que te alejan de lo que importa, que es la persona que tienes delante o la historia que estás contando. Un equipo sobredimensionado también puede poner nervioso al portavoz de una empresa que lleva un micrófono de corbata, un softbox a 60 cm de la cara y tres cámaras apuntándole.",
+      },
+      {
+        type: "paragraph",
+        text: "Por otro lado, quedarse corto en audio o en luz es difícil de arreglar en postproducción. Puedes subir la exposición de una imagen, pero no puedes recuperar un audio con eco ambiental. Ahí es donde conviene no escatimar.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Lo mínimo que realmente necesitas",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Cámara",
+      },
+      {
+        type: "paragraph",
+        text: "Una cámara con sensor APS-C o Full Frame y control manual es suficiente para casi todo. Sony A7 III, Fujifilm X-T4, Canon R6... el modelo importa menos de lo que parece si la óptica es decente. Un objetivo fijo entre 35 mm y 85 mm en Full Frame da la compresión adecuada para entrevistas y deja el fondo suficientemente desfocado para separar al sujeto del entorno. Un trípode robusto con rótula fluida. Eso es la base.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Audio",
+      },
+      {
+        type: "paragraph",
+        text: "El audio es la pieza que más se nota cuando falla y la que más se pasa por alto al empezar. Para una entrevista corporativa lo mínimo es un micrófono de corbata inalámbrico, el Rode Wireless Go II o equivalente, grabando directamente a la cámara o a un grabador externo tipo Zoom H5. Si grabas en exterior o en una sala con reverberación, un micrófono de cañón en una pértiga ayuda a rechazar el sonido ambiente. No hacen falta los dos para empezar: el de corbata resuelve el 90 % de los casos.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Iluminación",
+      },
+      {
+        type: "paragraph",
+        text: "Con luz natural de una ventana grande y un reflector de tela blanca ya puedes hacer una entrevista presentable. Si quieres control total, un kit de dos puntos de luz LED bicolor, key light y relleno suave, resuelve casi cualquier interior. Algo como el Aputure Amaran 100d con una softbox de 60×90 cm y un panel LED de relleno es una configuración que funciona en despachos, salas de reuniones y estudios pequeños sin levantar sospechas de rodaje televisivo que intimide al entrevistado.",
+      },
+      {
+        type: "image",
+        src: "/blog/equipo-minimo-video-empresa/mid.webp",
+        alt: "Estudio fotográfico con iluminación de dos puntos para entrevista",
+        width: 1920,
+        height: 1080,
+        caption: "Dos puntos de luz LED bicolor son suficientes para una entrevista corporativa de calidad.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Errores comunes al equiparse",
+      },
+      {
+        type: "list",
+        ordered: false,
+        items: [
+          "Comprar cámara premium antes de resolver el audio. El resultado es imagen perfecta con voz que suena a sótano.",
+          "Usar trípode de foto para vídeo. Los movimientos con una rótula de bola son bruscos e impublicables. Hace falta una rótula fluida.",
+          "Depender de la luz de techo. Casi todas las luces de oficina son amarillas o verdes, quedan fatal en cámara y son difíciles de corregir en color.",
+          "Grabar en Log sin saber cómo revelarlo. Mejor una imagen bien expuesta sin Log que Log mal corregido en la entrega.",
+          "Saltarse el monitoreo de audio. Sin auriculares durante la grabación no sabes si hay un ruido de fondo hasta que llegas al montaje.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar un vídeo de empresa solo con el móvil?",
+        answer:
+          "Para ciertos formatos sí: vídeos rápidos para redes sociales, detrás de cámaras o contenido muy informal. Para una entrevista corporativa o un vídeo institucional, el control sobre la exposición, la profundidad de campo y el audio que da una cámara dedicada hace una diferencia visible en el resultado final.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta el equipo mínimo profesional?",
+        answer:
+          "Un cuerpo de cámara APS-C con óptica fija ronda los 1.200-1.800 euros de segunda mano. El kit de audio entre 300 y 500 euros. La iluminación básica de dos puntos LED entre 400 y 700 euros. En total, entre 2.000 y 3.000 euros para un equipo que resuelve el 95 % de las situaciones. Muchos profesionales empiezan alquilando en lugar de comprando.",
+      },
+      {
+        type: "faq",
+        question: "¿Es mejor alquilar que comprar al principio?",
+        answer:
+          "Si tienes pocos proyectos al año, alquilar sale más barato y te permite probar equipo antes de comprometerte. A partir de 10-12 proyectos anuales suele compensar tener lo básico en propiedad. Las casas de alquiler en Madrid tienen prácticamente cualquier pieza disponible.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué cambia si el rodaje es en exterior?",
+        answer:
+          "El principal cambio es el audio: en exterior el micrófono de corbata necesita una cubierta de pelo para evitar el ruido del viento. La iluminación en exterior se resuelve en muchos casos con reflectores y difusores sobre el sol directo. Si el sol está muy alto o muy duro, un filtro ND variable en el objetivo es imprescindible para controlar la exposición.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes un proyecto concreto y quieres saber qué equipo usaría yo para ese rodaje específico, cuéntamelo desde la página de contacto. En 48 horas te digo qué configuración tiene más sentido para lo que necesitas.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
