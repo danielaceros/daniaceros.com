@@ -1598,6 +1598,156 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "briefing-video-corporativo",
+    title: "Briefing para vídeo corporativo: qué incluir antes de empezar a grabar",
+    description:
+      "Qué preguntas responder antes del rodaje: objetivos, tono, canal de distribución y plazos. El documento corto que evita problemas largos.",
+    publishedAt: "2026-05-19",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: [
+      "briefing vídeo corporativo",
+      "producción audiovisual",
+      "vídeo corporativo",
+      "guía producción de vídeo",
+      "filmmaker Madrid",
+    ],
+    keyword: "briefing para tu vídeo corporativo",
+    intent: "informacional",
+    excerpt:
+      "Un briefing de media hora evita semanas de revisiones. Te explico qué preguntas tiene que responder antes de que enciendas la cámara.",
+    seoTitle: "Briefing para vídeo corporativo | Daniel Acero",
+    metaDescription:
+      "Qué incluir en el briefing de tu vídeo corporativo: objetivos, tono, plazos y errores comunes. Media hora que ahorra días de trabajo.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Antes de encender la cámara ya debería estar claro qué queremos conseguir con el vídeo, a quién va dirigido y qué tono tiene que tener. Ese trabajo previo es el briefing, y cuando falta o está a medias, el rodaje se complica.",
+      },
+      {
+        type: "paragraph",
+        text: "He visto proyectos que se retrasaron semanas no por problemas técnicos sino porque nadie había decidido antes si el vídeo era para captar clientes o para reforzar la comunicación interna. Un briefing de media hora evita esa clase de conversaciones a destiempo.",
+      },
+      {
+        type: "image",
+        src: "/blog/briefing-video-corporativo/hero.webp",
+        alt: "Reunión de equipo frente a portátil para planificar un proyecto de vídeo corporativo",
+        width: 1920,
+        height: 1280,
+        caption: "Definir el objetivo antes del rodaje es la mitad del trabajo.",
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Qué es un briefing de vídeo y por qué importa",
+      },
+      {
+        type: "paragraph",
+        text: "Un briefing de vídeo es un documento corto donde quedan escritos los objetivos del proyecto, quién es el destinatario del vídeo, el tono que debe tener, qué no debe aparecer y cuáles son los plazos reales. No es un guion ni una propuesta. Es la base de trabajo compartida entre la empresa y el realizador.",
+      },
+      {
+        type: "paragraph",
+        text: "Su función principal es reducir la cantidad de suposiciones. Sin él, cada persona del equipo trabaja con su propia interpretación de lo que se necesita. Con él, las decisiones importantes están tomadas antes de llegar al set.",
+      },
+      {
+        type: "paragraph",
+        text: "En proyectos de un día de rodaje el briefing puede ser una llamada de 30 minutos documentada en un mail de resumen. En proyectos más grandes conviene un documento de 2 o 3 páginas. En ningún caso necesita ser una presentación elaborada.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cómo prepararlo bien",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Objetivos y público",
+      },
+      {
+        type: "paragraph",
+        text: "Lo primero que tiene que responder el briefing es para qué sirve el vídeo. ¿Para atraer clientes nuevos? ¿Para presentar la empresa en un evento? ¿Para el onboarding de nuevos empleados? Cada respuesta cambia la estructura, la duración y el tono. También hay que definir quién lo va a ver: si va dirigido a decisores B2B o a usuarios finales, el lenguaje y lo que se muestra cambia bastante.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Tono y referencias",
+      },
+      {
+        type: "paragraph",
+        text: "El tono es uno de los puntos donde más se pierde tiempo si no se define antes. Pedir algo moderno o corporativo pero cercano es demasiado vago. Lo que funciona bien es compartir tres vídeos de referencia, de cualquier marca, sector o país, y explicar qué es lo que gusta de cada uno. No si son buenos o malos en general, sino qué elemento concreto interesa: el ritmo de corte, la música, cómo están planteadas las entrevistas.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Logística y plazos",
+      },
+      {
+        type: "paragraph",
+        text: "El briefing tiene que recoger también la fecha de rodaje estimada, la fecha límite de entrega real, no la ideal sino la que tiene consecuencias si no se cumple, y quién aprueba la versión final. Este último punto es clave: si hay varias personas con capacidad de veto, el proceso de revisiones puede alargarse indefinidamente. Acordar de inicio quién tiene la última palabra ahorra muchas fricciones.",
+      },
+      {
+        type: "image",
+        src: "/blog/briefing-video-corporativo/mid.webp",
+        alt: "Mesa de trabajo con portátil y notas para planificación de producción audiovisual",
+        width: 1920,
+        height: 1288,
+        caption: "Un documento de una página con los puntos clave vale más que una reunión de dos horas sin conclusiones.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Errores comunes en el briefing",
+      },
+      {
+        type: "list",
+        ordered: false,
+        items: [
+          "Dar instrucciones de tono contradictorias como serio pero divertido o breve pero completo, sin aclarar cuál pesa más.",
+          "No definir el canal de distribución: un vídeo para LinkedIn tiene una duración y un formato distintos a uno para la web o para una pantalla de recepción.",
+          "Cambiar los objetivos después de aprobado el guion, lo que obliga a regrabar partes ya rodadas.",
+          "Confundir el mensaje principal con la lista de cosas que la empresa quiere mencionar. Un vídeo de 90 segundos aguanta un solo mensaje claro.",
+          "No incluir restricciones: personas que no deben aparecer, instalaciones confidenciales, frases que no se pueden decir.",
+          "Aplazar el briefing para hacerlo cuando haya tiempo, lo que suele significar empezar a rodar sin él.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo lleva hacer un briefing?",
+        answer:
+          "Una sesión de 30 minutos con las personas clave suele ser suficiente para proyectos de un día de rodaje. Lo importante no es la duración sino que las decisiones queden escritas. Un mail de resumen tras la llamada cumple esa función sin necesidad de documentos formales.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué pasa si no tenemos claro el objetivo del vídeo?",
+        answer:
+          "Es más frecuente de lo que parece. Si no hay claridad sobre para qué sirve el vídeo, el problema no es técnico sino estratégico. En ese caso lo más útil es empezar la conversación desde el problema que la empresa quiere resolver, no desde el formato. De ahí suele emerger el objetivo.",
+      },
+      {
+        type: "faq",
+        question: "¿El realizador tiene que participar en el briefing?",
+        answer:
+          "Sí, siempre que sea posible. Puedo alertar en esa fase sobre problemas de viabilidad, sugerir alternativas y hacer preguntas que el cliente no se había planteado. Si el briefing se hace entre departamentos internos y el realizador lo recibe ya cerrado, pierde parte de su valor.",
+      },
+      {
+        type: "faq",
+        question: "¿Hay una plantilla estándar de briefing para vídeo corporativo?",
+        answer:
+          "Hay muchas plantillas, pero la mayoría son demasiado largas o genéricas. Lo mínimo que tiene que responder es: objetivo, público, tono, canal de distribución, duración estimada, fecha límite real y quién aprueba. Con eso resuelto, el resto se ajusta durante el proceso.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes un proyecto de vídeo corporativo y no sabes por dónde empezar el briefing, cuéntamelo desde la página de contacto. En 48 horas lo miramos juntos y te digo qué preguntas tienen más peso para tu caso concreto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
