@@ -6,15 +6,17 @@ import ContactCTA from "@/components/ContactCTA"
 import { buildMetadata } from "@/lib/seo"
 
 export const metadata: Metadata = buildMetadata({
-  title: "Pack mensual de contenido para empresas | Daniel Acero",
+  title: "Pack mensual de contenido para marcas personales | Daniel Acero",
   description:
-    "Una sesión de 2 horas al mes. Te llevas hasta 30 reels editados. Sin permanencia. Desde 620€/mes. Validado con clientes activos.",
-  path: "/contenido-mensual",
+    "Una sesión al mes en el estudio. Te llevas los reels del mes editados. Sin espacio propio. Sin improvisar. Solo apareces y lees. Desde 620€/mes.",
+  path: "/marca-personal",
   keywords: [
-    "pack mensual de contenido",
-    "contenido mensual para empresas",
-    "reels mensuales empresa",
-    "filmmaker mensual madrid",
+    "pack mensual contenido marca personal",
+    "reels mensuales marca personal madrid",
+    "estudio grabación marca personal madrid",
+    "contenido redes sociales coach consultor",
+    "filmmaker marca personal madrid",
+    "reel mensual teleprompter madrid",
   ],
 })
 
@@ -24,11 +26,7 @@ const HERO_PORTRAIT =
 const LOGO_STRIP =
   "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/bannerlegit.png?alt=media&token=99a19a7d-ffa0-4eb1-80ff-5732df48ea7b"
 
-const MERIDIAN_BROLL =
-  "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/5D8C07A0-DF6C-4A1D-B935-0DE35EE494E3.mp4?alt=media&token=74d33b70-2485-4ea6-97ad-df1b584ded8a"
-
-const MERIDIAN_AVATAR =
-  "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/553185479_17875058964420491_2090743360774964884_n.jpg?alt=media&token=9a06a5c5-7cbb-4ce1-a4c7-091907d7531e"
+const ALEJANDRO_AVATAR = "/alejandro.jpg"
 
 const PLANS = [
   { name: "Starter", price: "620", reels: "8", pubs: "2", session: "2h", extra: null, highlight: false },
@@ -47,17 +45,17 @@ const CLARIFICATIONS = [
   ["Permanencia", "Sin compromiso. Mensual cancelable. Tu contenido cada mes, mientras te encaje."],
   ["Cancelación", "Preaviso antes del siguiente ciclo. El ciclo en curso no se reembolsa."],
   ["Modificaciones", "1 ronda consolidada de cambios, hasta 72h tras la entrega."],
-  ["Desplazamiento", "Madrid M-40 incluido. Fuera, +50€/sesión. Operamos en toda España."],
+  ["Ubicación", "Estudio en Ronda de Atocha 16, Madrid. Metro Atocha y parking cercano. Horarios flexibles."],
 ]
 
 const FIRST_MONTH = [
   ["01", "Llamada inicial"],
   ["07", "Guiones revisados"],
-  ["14", "Sesión de grabación"],
+  ["14", "Sesión en el estudio"],
   ["28", "Primer reel publicado"],
 ]
 
-export default function ContenidoMensualPage() {
+export default function MarcaPersonalPage() {
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-white">
       {/* HERO */}
@@ -71,7 +69,7 @@ export default function ContenidoMensualPage() {
                 style={{ "--lux-delay": "60ms" } as CSSProperties}
                 className="hero-fade-up font-inter text-[11px] uppercase tracking-[0.18em] text-white/50"
               >
-                Servicios · Pack mensual de contenido
+                Servicios · Pack mensual · Marca personal
               </p>
 
               <h1
@@ -79,9 +77,9 @@ export default function ContenidoMensualPage() {
                 style={{ "--lux-delay": "120ms" } as CSSProperties}
                 className="hero-fade-up hero-fade-up-delay-1 mt-5 font-display font-semibold uppercase leading-[0.95] text-[clamp(2.2rem,7vw,5rem)]"
               >
-                Tu empresa.<br />
+                Tu marca personal.<br />
                 Una sesión al mes.<br />
-                <span className="text-white/55">30 reels listos.</span>
+                <span className="text-white/55">Reels listos.</span>
               </h1>
 
               <p
@@ -89,8 +87,8 @@ export default function ContenidoMensualPage() {
                 style={{ "--lux-delay": "200ms" } as CSSProperties}
                 className="hero-fade-up hero-fade-up-delay-2 mt-6 max-w-xl font-inter text-[15px] sm:text-[16px] leading-[1.65] text-white/72"
               >
-                Voy a tu negocio una vez al mes. Grabamos en 2 horas con teleprompter.
-                Te entrego el contenido editado. Tú apareces y lees. Lo demás lo hago yo.
+                Vienes a mi estudio una vez al mes. Grabamos todo en una sola sesión con teleprompter.
+                Tú apareces y lees. Los guiones, la edición, los subtítulos y el formato los hago yo.
               </p>
 
               <div
@@ -105,7 +103,7 @@ export default function ContenidoMensualPage() {
                   Empezar este mes
                 </Link>
                 <Link
-                  href="https://drive.google.com/file/d/1m4xJaT_4DuwG_PZtnaFq7_HhHjLYAOcA/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1-G9l9oeoMz9OrXiUZgj8bAzlbzOPqvj6/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex min-h-[56px] items-center justify-center rounded-2xl border border-white/25 bg-white/[0.03] px-7 py-4 font-inter text-[13px] font-semibold uppercase tracking-[0.06em] text-white hover:bg-white/[0.07] transition-colors"
@@ -120,8 +118,8 @@ export default function ContenidoMensualPage() {
                 className="hero-fade-up mt-12 grid grid-cols-3 gap-4 sm:gap-6 max-w-md"
               >
                 {[
-                  ["30", "reels al mes"],
-                  ["2h", "de tu tiempo"],
+                  ["1", "sesión al mes"],
+                  ["0", "improvisación"],
                   ["+50", "proyectos"],
                 ].map(([n, label]) => (
                   <div key={label} className="border-l border-white/15 pl-3 sm:pl-4">
@@ -156,7 +154,7 @@ export default function ContenidoMensualPage() {
       <section className="border-y border-white/[0.06] bg-[#080808]">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
           <p className="font-inter text-[10px] sm:text-[11px] uppercase tracking-[0.2em] text-white/35 text-center mb-6">
-            Empresas con las que he trabajado
+            Marcas con las que he trabajado
           </p>
           <div className="relative h-8 sm:h-10 max-w-3xl mx-auto opacity-90">
             <Image
@@ -184,9 +182,9 @@ export default function ContenidoMensualPage() {
 
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-px bg-white/10 rounded-2xl overflow-hidden">
           {[
-            ["01", "Voy a tu negocio", "Llevo todo el equipo y monto en 15 minutos. Cámaras, luces, audio, teleprompter."],
-            ["02", "Grabamos en 2h", "Lees el guion en teleprompter. Yo dirijo encuadre, ritmo y rodaje. Tú no piensas."],
-            ["03", "Te entrego los reels", "Editados, con color, audio y subtítulos. Listos para publicar el mes entero."],
+            ["01", "Vienes al estudio", "Ronda de Atocha 16. Cámara, luz, teleprompter y sonido ya montados antes de que llegues."],
+            ["02", "Grabamos en una sesión", "Los guiones pasan por el teleprompter. Solo tienes que leer. Sin memorizar, sin improvisar nada."],
+            ["03", "Te entrego los reels", "Editados, con subtítulos, en vertical. Listos para publicar en Instagram, TikTok o LinkedIn."],
           ].map(([n, title, desc]) => (
             <div key={n} className="bg-[#0a0a0a] p-7 sm:p-9">
               <p className="font-display text-[clamp(2.5rem,5vw,4rem)] font-semibold text-white/15 leading-none">{n}</p>
@@ -197,7 +195,7 @@ export default function ContenidoMensualPage() {
         </div>
       </section>
 
-      {/* CASO MERIDIAN */}
+      {/* CASO ALEJANDRO */}
       <section className="border-t border-white/[0.06] bg-[#080808]">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.05fr] gap-10 lg:gap-14 items-center">
@@ -206,53 +204,53 @@ export default function ContenidoMensualPage() {
                 Cliente activo · Validación real
               </p>
               <h2 className="font-display font-semibold uppercase leading-[1.05] text-[clamp(1.8rem,4.5vw,2.8rem)]">
-                Meridian Biohealth lleva<br className="hidden sm:block" /> meses con el sistema.
+                Alejandro Pingarrón lleva<br className="hidden sm:block" /> meses construyendo su marca.
               </h2>
               <p className="mt-5 font-inter text-[14px] sm:text-[15px] leading-[1.7] text-white/72 max-w-lg">
-                Cada mes voy a su clínica, grabamos en 2 horas, y se llevan 30 reels para publicar.
-                Su equipo invierte solo el tiempo de la grabación. Todo lo demás corre por mi cuenta.
+                Viene al estudio una vez al mes. Grabamos todos los reels en una sola sesión con teleprompter.
+                Se lleva el contenido del mes listo para publicar. Solo aparece y lee.
               </p>
 
               <div className="mt-7 grid grid-cols-3 gap-3 max-w-md">
                 {[
-                  ["30", "reels / mes"],
-                  ["2h", "de su tiempo"],
+                  ["73,9K", "seguidores"],
+                  ["1", "sesión / mes"],
                   ["0", "preocupaciones"],
                 ].map(([n, label]) => (
                   <div key={label} className="border-l border-white/15 pl-3">
-                    <p className="font-display text-[clamp(1.6rem,4vw,2.4rem)] font-semibold leading-none">{n}</p>
+                    <p className="font-display text-[clamp(1.4rem,3.5vw,2.2rem)] font-semibold leading-none">{n}</p>
                     <p className="mt-1.5 font-inter text-[10px] uppercase tracking-[0.06em] text-white/50">{label}</p>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* IG-STYLE CARD WITH BROLL VIDEO */}
+            {/* IG-STYLE CARD */}
             <div className="order-1 lg:order-2 mx-auto w-full max-w-[400px]">
               <div className="rounded-3xl overflow-hidden bg-[#0a0a0a] ring-1 ring-white/10 shadow-2xl">
                 {/* Header */}
                 <div className="flex items-center gap-3 p-4 border-b border-white/8">
                   <div className="relative h-11 w-11 rounded-full overflow-hidden shrink-0 bg-[#0a0a0a]">
                     <Image
-                      src={MERIDIAN_AVATAR}
-                      alt="Meridian Biohealth"
+                      src={ALEJANDRO_AVATAR}
+                      alt="Alejandro Pingarrón"
                       fill
                       unoptimized
                       sizes="44px"
-                      className="object-cover"
+                      className="object-cover object-top"
                     />
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-1.5">
-                      <span className="font-inter text-[14px] font-semibold text-white truncate">meridianbiohealth</span>
+                      <span className="font-inter text-[14px] font-semibold text-white truncate">alejandro_estucoach</span>
                       <svg className="h-3.5 w-3.5 shrink-0 text-[#3897F0]" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
                         <path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z" />
                       </svg>
                     </div>
-                    <span className="font-inter text-[12px] text-white/55 block">Meridian Biohealth · Madrid</span>
+                    <span className="font-inter text-[12px] text-white/55 block">Coach Personal · Madrid</span>
                   </div>
                   <Link
-                    href="https://www.instagram.com/meridianbiohealth"
+                    href="https://www.instagram.com/alejandro_estucoach/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="shrink-0 inline-flex items-center justify-center rounded-lg bg-[#0095F6] hover:bg-[#1877F2] transition-colors px-4 py-1.5 font-inter text-[12px] font-semibold text-white"
@@ -261,16 +259,15 @@ export default function ContenidoMensualPage() {
                   </Link>
                 </div>
 
-                {/* Video b-roll */}
+                {/* Foto */}
                 <div className="relative aspect-[9/16] bg-black">
-                  <video
-                    src={MERIDIAN_BROLL}
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    preload="metadata"
-                    className="absolute inset-0 h-full w-full object-cover"
+                  <Image
+                    src={ALEJANDRO_AVATAR}
+                    alt="Alejandro Pingarrón · Coach Personal"
+                    fill
+                    unoptimized
+                    sizes="400px"
+                    className="object-cover object-top"
                   />
                 </div>
 
@@ -286,7 +283,7 @@ export default function ContenidoMensualPage() {
               </div>
 
               <Link
-                href="https://www.instagram.com/meridianbiohealth"
+                href="https://www.instagram.com/alejandro_estucoach/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-4 inline-flex items-center justify-center gap-2 w-full rounded-xl border border-white/15 bg-white/[0.03] px-4 py-3 font-inter text-[12px] font-semibold uppercase tracking-[0.06em] text-white/85 hover:bg-white/[0.07] transition-colors"
@@ -365,7 +362,7 @@ export default function ContenidoMensualPage() {
           <div>
             <p className="font-inter text-[11px] uppercase tracking-[0.14em] text-white/45">Volumen · A medida</p>
             <h3 className="mt-1.5 font-display text-[20px] sm:text-[24px] font-semibold uppercase leading-tight">
-              20+ reels al mes, equipo escalado, lanzamientos.
+              20+ reels al mes, contenido escalado, lanzamientos.
             </h3>
           </div>
           <Link
@@ -396,7 +393,7 @@ export default function ContenidoMensualPage() {
         </div>
       </section>
 
-      {/* PRIMER MES + ACLARACIONES (combinados, compactos) */}
+      {/* PRIMER MES + ACLARACIONES */}
       <section className="border-t border-white/[0.06] bg-[#080808]">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24 grid grid-cols-1 lg:grid-cols-2 gap-14">
           <div>
