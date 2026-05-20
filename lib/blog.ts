@@ -1748,6 +1748,148 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "cuanto-cuesta-video-corporativo",
+    title: "Cuánto cuesta un vídeo corporativo en España: rangos reales",
+    description:
+      "Los precios de un vídeo corporativo varían mucho según el alcance. Te explico los rangos reales que manejo en mis proyectos para que puedas ir a cualquier presupuesto con los números claros.",
+    publishedAt: "2026-05-20",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "producción audiovisual",
+      "presupuesto vídeo",
+      "precio vídeo corporativo",
+      "filmmaker Madrid",
+    ],
+    keyword: "cuánto cuesta hacer un vídeo corporativo",
+    intent: "informacional",
+    excerpt:
+      "Los precios de un vídeo corporativo varían mucho según el alcance. Te explico los rangos reales que manejo en mis proyectos para que puedas ir a cualquier presupuesto con los números claros.",
+    seoTitle: "Cuánto cuesta un vídeo corporativo | Daniel Acero",
+    metaDescription:
+      "Cuánto cuesta un vídeo corporativo en Madrid: rangos de precio reales, sin marketing. Desde una entrevista básica hasta una producción de marca completa.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cuando alguien me pregunta cuánto cuesta un vídeo corporativo, la respuesta honesta es: depende. Pero eso no ayuda a nadie. Así que aquí desgrano los rangos reales que manejo en mis proyectos para que puedas ir a cualquier presupuesto con los números claros.",
+      },
+      {
+        type: "paragraph",
+        text: "No voy a darte una cifra mágica. Voy a explicarte qué componentes tiene un presupuesto de producción de vídeo y por qué varían tanto de un proyecto a otro.",
+      },
+      {
+        type: "image",
+        src: "/blog/cuanto-cuesta-video-corporativo/hero.webp",
+        alt: "Monitor SmallHD en set de producción audiovisual corporativa",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Por qué hay tanta diferencia de precio entre presupuestos",
+      },
+      {
+        type: "paragraph",
+        text: "Dos presupuestos para el mismo vídeo corporativo pueden diferir en 5.000 euros. Eso no significa que uno sea mejor o peor: es que están hablando de productos distintos. Un vídeo corporativo puede ser un operador con una cámara Sony A7 grabando durante 4 horas y entregando un corte de 90 segundos con música de stock. O puede ser dos días de rodaje, equipo de tres personas, locación en exterior, narración en off, colorización en DaVinci Resolve y tres versiones para canales distintos.",
+      },
+      {
+        type: "paragraph",
+        text: "Esa diferencia de alcance es la que explica el abanico de precios. No la calidad del profesional.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Qué determina el precio de un vídeo corporativo",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Preproducción: lo que pasa antes de encender la cámara",
+      },
+      {
+        type: "paragraph",
+        text: "La preproducción incluye las reuniones de briefing, el guion técnico, el plan de rodaje y la búsqueda de locaciones o actores si los necesitas. En proyectos básicos esto puede ser media jornada de trabajo. En proyectos complejos, dos semanas. Trabajo que a veces no se ve pero que define el resultado. En mis proyectos la preproducción representa entre el 20 y el 30% del tiempo total invertido.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Rodaje: días, equipo y locaciones",
+      },
+      {
+        type: "paragraph",
+        text: "El coste de rodaje depende de cuántos días grabes, cuántas personas forman el equipo técnico y si hay que pagar locaciones. Un rodaje de un día con un operador cuesta entre 600 y 1.200 euros, sin edición. Si añades un técnico de sonido y una persona de dirección de arte, ese día puede llegar a 2.500 euros. Con locación de alquiler en Madrid, suma entre 300 y 1.000 euros más dependiendo del espacio.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Postproducción: edición, color y música",
+      },
+      {
+        type: "paragraph",
+        text: "Editar un vídeo de dos o tres minutos a partir de seis u ocho horas de material bruto lleva entre 20 y 40 horas, dependiendo de cuántos ciclos de revisión hay. A eso se suma la colorización, los subtítulos si los necesitas, la música —que puede ser de librería o un encargo a compositor— y el masterizado para cada formato. En proyectos estándar la postproducción representa entre el 40 y el 50% del presupuesto total.",
+      },
+      {
+        type: "image",
+        src: "/blog/cuanto-cuesta-video-corporativo/mid.webp",
+        alt: "Filming a woman with a camera and gimbal rig.",
+        width: 1920,
+        height: 1280,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Rangos de precio según el tipo de vídeo",
+      },
+      {
+        type: "list",
+        items: [
+          "Entrevista ejecutiva o testimonial (media jornada, 2 cámaras, subtítulos): 800-1.800 euros",
+          "Vídeo corporativo básico (1 día de rodaje, 1 operador, 90-120 segundos editados): 1.500-3.000 euros",
+          "Cobertura de evento corporativo (jornada completa, 2 cámaras, resumen de 3-5 minutos): 2.000-4.500 euros",
+          "Vídeo de marca o manifiesto (2 días de rodaje, guion, equipo de tres, música de librería): 5.000-9.000 euros",
+          "Campaña audiovisual completa con múltiples piezas y versiones de canal: 10.000 euros en adelante",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿El presupuesto incluye el guion?",
+        answer:
+          "Depende del profesional. En mis proyectos el guion técnico está incluido en la preproducción. Si necesitas redacción de locución o guion con voz en off, lo indicamos como partida separada con un coste adicional de 200-500 euros según extensión.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuántas revisiones están incluidas?",
+        answer:
+          "Lo habitual es dos rondas de cambios en el corte de edición. Las revisiones adicionales o los cambios estructurales que implican reeditar desde cero se cotizan aparte. Es importante dejarlo claro por escrito antes de empezar.",
+      },
+      {
+        type: "faq",
+        question: "¿Hay que pagar por separado las locaciones?",
+        answer:
+          "Si el rodaje es en las instalaciones del cliente, no hay coste de locación. Si necesitas un espacio de alquiler —sala de evento, terraza, showroom— el alquiler se añade como partida independiente. En Madrid hay opciones desde 200 hasta 1.500 euros por día según el espacio.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuándo tiene sentido invertir más en producción?",
+        answer:
+          "Cuando el vídeo va a representar a tu empresa en todos los canales durante los próximos dos o tres años. Una web corporativa, una presentación a inversores o una campaña de LinkedIn de captación merecen una producción cuidada. Para contenido de consumo rápido, un vídeo básico bien ejecutado cumple igual.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes un proyecto en mente y quieres saber qué presupuesto tiene sentido para lo que necesitas, cuéntamelo desde la página de contacto. Te doy una estimación sin compromiso en 24 horas.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {

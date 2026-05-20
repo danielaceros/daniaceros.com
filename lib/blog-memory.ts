@@ -128,6 +128,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto (fallback evergreen, sin candidate SC limpio). Imágenes Unsplash/Pexels.",
   },
+  {
+    slug: "cuanto-cuesta-video-corporativo",
+    keyword: "cuánto cuesta hacer un vídeo corporativo",
+    intent: "informacional",
+    createdAt: "2026-05-20",
+    status: "published",
+    notes: "Auto-generado por blog-auto. Search Console: 1 impresión, posición media 76. Imágenes Unsplash/Pexels.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {
