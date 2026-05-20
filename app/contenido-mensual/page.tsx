@@ -6,15 +6,17 @@ import ContactCTA from "@/components/ContactCTA"
 import { buildMetadata } from "@/lib/seo"
 
 export const metadata: Metadata = buildMetadata({
-  title: "Pack mensual de contenido para empresas | Daniel Acero",
+  title: "Pack mensual de contenido · Empresas y marcas personales | Daniel Acero",
   description:
-    "Una sesión de 2 horas al mes. Te llevas hasta 30 reels editados. Sin permanencia. Desde 620€/mes. Validado con clientes activos.",
+    "Una sesión al mes. Te llevas hasta 30 reels editados. Desde 620€/mes. Para empresas (voy a tu negocio) y marcas personales (vienes al estudio en Ronda de Atocha 16, Madrid).",
   path: "/contenido-mensual",
   keywords: [
     "pack mensual de contenido",
     "contenido mensual para empresas",
-    "reels mensuales empresa",
+    "contenido mensual marca personal",
+    "reels mensuales madrid",
     "filmmaker mensual madrid",
+    "estudio grabación madrid marca personal",
   ],
 })
 
@@ -29,6 +31,8 @@ const MERIDIAN_BROLL =
 
 const MERIDIAN_AVATAR =
   "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/553185479_17875058964420491_2090743360774964884_n.jpg?alt=media&token=9a06a5c5-7cbb-4ce1-a4c7-091907d7531e"
+
+const ALEJANDRO_AVATAR = "/alejandro.jpg"
 
 const PLANS = [
   { name: "Starter", price: "620", reels: "8", pubs: "2", session: "2h", extra: null, highlight: false },
@@ -171,8 +175,26 @@ export default function ContenidoMensualPage() {
         </div>
       </section>
 
-      {/* CÓMO FUNCIONA */}
-      <section className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
+      {/* DOS CAMINOS */}
+      <section className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="#empresas" className="group rounded-3xl border border-white/12 bg-[#0a0a0a] p-6 sm:p-8 flex flex-col gap-3 hover:border-white/22 transition-colors">
+            <p className="font-inter text-[10px] uppercase tracking-[0.2em] text-white/40">Línea Empresas</p>
+            <h3 className="font-display text-[22px] sm:text-[26px] font-semibold uppercase leading-tight">Daniel va a tu negocio.</h3>
+            <p className="font-inter text-[13px] leading-[1.6] text-white/60">Clínicas, centros, oficinas, locales. Llevo todo el equipo y lo monto en tu espacio.</p>
+            <span className="font-inter text-[12px] font-semibold uppercase tracking-[0.06em] text-white/45 group-hover:text-white/80 transition-colors mt-1">Ver cómo funciona →</span>
+          </Link>
+          <Link href="#estudio" className="group rounded-3xl border border-white/12 bg-[#0a0a0a] p-6 sm:p-8 flex flex-col gap-3 hover:border-white/22 transition-colors">
+            <p className="font-inter text-[10px] uppercase tracking-[0.2em] text-white/40">Línea Estudio · Ronda de Atocha 16</p>
+            <h3 className="font-display text-[22px] sm:text-[26px] font-semibold uppercase leading-tight">Tú vienes al estudio.</h3>
+            <p className="font-inter text-[13px] leading-[1.6] text-white/60">Coaches, consultores, marcas personales. Todo montado. Solo apareces y lees.</p>
+            <span className="font-inter text-[12px] font-semibold uppercase tracking-[0.06em] text-white/45 group-hover:text-white/80 transition-colors mt-1">Ver cómo funciona →</span>
+          </Link>
+        </div>
+      </section>
+
+      {/* CÓMO FUNCIONA — EMPRESAS */}
+      <section id="empresas" className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
         <div className="max-w-3xl">
           <p className="font-inter text-[11px] uppercase tracking-[0.18em] text-white/40 mb-5">
             Cómo funciona
@@ -287,6 +309,146 @@ export default function ContenidoMensualPage() {
 
               <Link
                 href="https://www.instagram.com/meridianbiohealth"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-flex items-center justify-center gap-2 w-full rounded-xl border border-white/15 bg-white/[0.03] px-4 py-3 font-inter text-[12px] font-semibold uppercase tracking-[0.06em] text-white/85 hover:bg-white/[0.07] transition-colors"
+              >
+                Ver feed completo en Instagram <span aria-hidden>↗</span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* LÍNEA ESTUDIO — 3 pasos */}
+      <section id="estudio" className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
+        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-12">
+          <div>
+            <p className="font-inter text-[11px] uppercase tracking-[0.18em] text-white/40 mb-5">
+              Línea Estudio · Para marcas personales
+            </p>
+            <h2 className="font-display font-semibold uppercase leading-[1.05] text-[clamp(1.8rem,4.5vw,3rem)]">
+              ¿Sin espacio propio?<br /><span className="text-white/55">Vienes al estudio.</span>
+            </h2>
+            <p className="mt-5 font-inter text-[14px] sm:text-[15px] leading-[1.7] text-white/65 max-w-xl">
+              Para coaches, consultores, freelances y profesionales sin espacio donde grabar.
+              Ronda de Atocha 16, Madrid. Todo montado antes de que llegues.
+            </p>
+          </div>
+          <Link
+            href="https://drive.google.com/file/d/1-G9l9oeoMz9OrXiUZgj8bAzlbzOPqvj6/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="shrink-0 inline-flex items-center justify-center rounded-2xl border border-white/25 bg-white/[0.03] px-6 py-3.5 font-inter text-[13px] font-semibold uppercase tracking-[0.06em] text-white hover:bg-white/[0.07] transition-colors"
+          >
+            Ver dossier Estudio →
+          </Link>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-white/10 rounded-2xl overflow-hidden">
+          {[
+            ["01", "Vienes al estudio", "Ronda de Atocha 16. Cámara, luz, teleprompter y sonido ya montados antes de que llegues."],
+            ["02", "Grabamos en una sesión", "Los guiones pasan por el teleprompter. Solo tienes que leer. Sin memorizar, sin improvisar."],
+            ["03", "Te entrego los reels", "Editados, con subtítulos, en vertical. Listos para Instagram, TikTok o LinkedIn."],
+          ].map(([n, title, desc]) => (
+            <div key={n} className="bg-[#0a0a0a] p-7 sm:p-9">
+              <p className="font-display text-[clamp(2.5rem,5vw,4rem)] font-semibold text-white/15 leading-none">{n}</p>
+              <h3 className="mt-5 font-inter text-[15px] sm:text-[16px] font-semibold uppercase tracking-[0.04em]">{title}</h3>
+              <p className="mt-2.5 font-inter text-[13px] sm:text-[14px] leading-[1.6] text-white/65">{desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* CASO ALEJANDRO */}
+      <section className="border-t border-white/[0.06] bg-[#080808]">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.05fr] gap-10 lg:gap-14 items-center">
+            <div className="order-2 lg:order-1">
+              <p className="font-inter text-[11px] uppercase tracking-[0.18em] text-white/40 mb-5">
+                Cliente activo · Marca personal
+              </p>
+              <h2 className="font-display font-semibold uppercase leading-[1.05] text-[clamp(1.8rem,4.5vw,2.8rem)]">
+                Alejandro Pingarrón lleva<br className="hidden sm:block" /> meses construyendo su marca.
+              </h2>
+              <p className="mt-5 font-inter text-[14px] sm:text-[15px] leading-[1.7] text-white/72 max-w-lg">
+                Viene al estudio una vez al mes. Grabamos todos los reels en una sola sesión con teleprompter.
+                Se lleva el contenido del mes listo para publicar. Solo aparece y lee.
+              </p>
+
+              <div className="mt-7 grid grid-cols-3 gap-3 max-w-md">
+                {[
+                  ["73,9K", "seguidores"],
+                  ["1", "sesión / mes"],
+                  ["0", "preocupaciones"],
+                ].map(([n, label]) => (
+                  <div key={label} className="border-l border-white/15 pl-3">
+                    <p className="font-display text-[clamp(1.4rem,3.5vw,2.2rem)] font-semibold leading-none">{n}</p>
+                    <p className="mt-1.5 font-inter text-[10px] uppercase tracking-[0.06em] text-white/50">{label}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* IG-STYLE CARD — foto estática */}
+            <div className="order-1 lg:order-2 mx-auto w-full max-w-[400px]">
+              <div className="rounded-3xl overflow-hidden bg-[#0a0a0a] ring-1 ring-white/10 shadow-2xl">
+                {/* Header */}
+                <div className="flex items-center gap-3 p-4 border-b border-white/8">
+                  <div className="relative h-11 w-11 rounded-full overflow-hidden shrink-0 bg-[#0a0a0a]">
+                    <Image
+                      src={ALEJANDRO_AVATAR}
+                      alt="Alejandro Pingarrón"
+                      fill
+                      unoptimized
+                      sizes="44px"
+                      className="object-cover object-top"
+                    />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-1.5">
+                      <span className="font-inter text-[14px] font-semibold text-white truncate">alejandro_estucoach</span>
+                      <svg className="h-3.5 w-3.5 shrink-0 text-[#3897F0]" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+                        <path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z" />
+                      </svg>
+                    </div>
+                    <span className="font-inter text-[12px] text-white/55 block">Coach Personal · Madrid</span>
+                  </div>
+                  <Link
+                    href="https://www.instagram.com/alejandro_estucoach/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="shrink-0 inline-flex items-center justify-center rounded-lg bg-[#0095F6] hover:bg-[#1877F2] transition-colors px-4 py-1.5 font-inter text-[12px] font-semibold text-white"
+                  >
+                    Seguir
+                  </Link>
+                </div>
+
+                {/* Foto */}
+                <div className="relative aspect-[9/16] bg-black">
+                  <Image
+                    src={ALEJANDRO_AVATAR}
+                    alt="Alejandro Pingarrón · Coach Personal"
+                    fill
+                    unoptimized
+                    sizes="400px"
+                    className="object-cover object-top"
+                  />
+                </div>
+
+                {/* Footer */}
+                <div className="p-4 border-t border-white/8 flex items-center justify-between">
+                  <div className="flex items-center gap-4 text-white/85">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-6 w-6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-6 w-6"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-6 w-6"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                  </div>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-6 w-6 text-white/85"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+                </div>
+              </div>
+
+              <Link
+                href="https://www.instagram.com/alejandro_estucoach/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-4 inline-flex items-center justify-center gap-2 w-full rounded-xl border border-white/15 bg-white/[0.03] px-4 py-3 font-inter text-[12px] font-semibold uppercase tracking-[0.06em] text-white/85 hover:bg-white/[0.07] transition-colors"
