@@ -1890,6 +1890,148 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "realizador-video-corporativo-madrid",
+    title: "Realizador de vídeo corporativo en Madrid: qué hace y cómo elegirlo",
+    description:
+      "Qué hace un realizador de vídeo corporativo en Madrid, en qué se diferencia de una productora y cómo elegir al profesional adecuado para tu proyecto.",
+    publishedAt: "2026-05-21",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["realizador de vídeo", "vídeo corporativo", "Madrid", "producción audiovisual", "filmmaker"],
+    keyword: "realizador de vídeo corporativo madrid",
+    intent: "informacional",
+    excerpt:
+      "Un realizador de vídeo corporativo en Madrid dirige y ejecuta todo el proceso audiovisual de una empresa. Te cuento qué hace exactamente, en qué se diferencia de una productora y cómo elegirlo.",
+    seoTitle: "Realizador de Vídeo Corporativo Madrid | Daniel Acero",
+    metaDescription:
+      "Qué hace un realizador de vídeo corporativo en Madrid, en qué se diferencia de una productora y cómo elegir al profesional adecuado para tu proyecto.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cuando una empresa busca a alguien para grabar su vídeo corporativo, la búsqueda suele pasar por dos o tres denominaciones: filmmaker, videógrafo, realizador. La diferencia no es solo de nombre.",
+      },
+      {
+        type: "paragraph",
+        text: "Un realizador de vídeo corporativo en Madrid es el profesional que asume la dirección completa de un proyecto audiovisual: desde el concepto hasta el archivo final. Trabajo solo o con un equipo pequeño según lo que pida el proyecto.",
+      },
+      {
+        type: "image",
+        src: "/blog/realizador-video-corporativo-madrid/hero.webp",
+        alt: "Realizador de vídeo corporativo con cámara profesional preparando un rodaje en Madrid",
+        width: 1920,
+        height: 1280,
+        caption: "La dirección del rodaje determina el resultado mucho antes de llegar a la edición.",
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Qué hace un realizador de vídeo corporativo",
+      },
+      {
+        type: "paragraph",
+        text: "El trabajo no empieza el día del rodaje. Antes de encender la cámara ya he trabajado durante días en el concepto, el guion técnico, los planos que necesito y la logística del set.",
+      },
+      {
+        type: "paragraph",
+        text: "En el set, dirijo. Decido encuadres, iluminación, ritmo de las entrevistas, qué planos de recurso tiene sentido capturar. Si hay personas grabando a cámara —un CEO, un directivo, un ponente— también me encargo de prepararlas. Que se suelten, que hablen con naturalidad, que no parezca que están leyendo aunque lo estén haciendo.",
+      },
+      {
+        type: "paragraph",
+        text: "Después del rodaje viene la edición. Color, audio, subtítulos, música. El vídeo que ves al final es la suma de cientos de decisiones tomadas en las tres fases: preproducción, rodaje y postproducción.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cómo se trabaja en la práctica",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Preproducción: la fase que más determina el resultado",
+      },
+      {
+        type: "paragraph",
+        text: "Antes del rodaje hacemos una reunión de briefing. Quiero entender qué objetivo tiene el vídeo, a quién va dirigido, en qué canales se va a publicar y qué tono tiene la marca. Con esa información preparo el guion técnico o el plan de rodaje. No llego a grabar sin tener claro qué planos necesito y en qué orden los voy a hacer.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Rodaje: dirección de cámara y coordinación en set",
+      },
+      {
+        type: "paragraph",
+        text: "Trabajo con cámara Sony A7 IV, luces LED portátiles y micro de solapa inalámbrico. El equipo cabe en dos maletas, así que el montaje en tu oficina o en la sala de tu empresa se hace en 20-30 minutos sin necesidad de técnicos adicionales. Si el proyecto es más grande —un evento corporativo, una campaña con varios personajes— ampliamos el equipo según lo que pida el guion.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Postproducción: de los archivos al vídeo final",
+      },
+      {
+        type: "paragraph",
+        text: "Edito en DaVinci Resolve. El flujo habitual es: primer corte de estructura, revisión del cliente con un enlace de comentarios, ajustes, color grading, mezcla de audio y entrega en los formatos que necesites. Dos rondas de revisión están incluidas en todos mis proyectos. Los cambios estructurales que implican reeditar desde cero se cotizan como partida separada.",
+      },
+      {
+        type: "image",
+        src: "/blog/realizador-video-corporativo-madrid/mid.webp",
+        alt: "Equipo de producción de vídeo corporativo preparando iluminación y cámara para una entrevista profesional",
+        width: 1920,
+        height: 1280,
+        caption: "La configuración de equipo depende del tipo de proyecto, no del tamaño de la empresa.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "En qué se diferencia de una productora",
+      },
+      {
+        type: "list",
+        items: [
+          "Una productora tiene equipo propio —director, director de fotografía, productor ejecutivo— y costes generales que se trasladan al presupuesto mínimo.",
+          "Un realizador independiente asume todos esos roles o subcontrata solo lo que el proyecto necesita. El coste de entrada es más bajo y la comunicación más directa.",
+          "Para proyectos de escala media —entrevistas ejecutivas, vídeos institucionales, coberturas de evento o series de contenido mensual— un realizador freelance suele ser más ágil y más asequible.",
+          "Para campañas con actores, escenografía elaborada, locaciones complejas o más de 3-4 días de rodaje, una productora con estructura mayor puede ser la opción más adecuada.",
+          "La elección depende del alcance del proyecto, no de ninguna jerarquía de calidad.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo tarda un realizador de vídeo corporativo en entregar el proyecto?",
+        answer:
+          "Depende del tipo de proyecto. Una entrevista corporativa grabada en media jornada puede entregarse en 5-7 días hábiles. Un vídeo institucional de un día de rodaje suele estar listo en 10-15 días. Para proyectos más grandes o con varias rondas de revisión hay que contar 3-4 semanas desde el rodaje.",
+      },
+      {
+        type: "faq",
+        question: "¿Es lo mismo un realizador que un videógrafo?",
+        answer:
+          "En la práctica se usan como sinónimos. La distinción más habitual es que 'videógrafo' se asocia a proyectos de cobertura o contenido social, mientras que 'realizador' implica más dirección artística y responsabilidad sobre el conjunto del proyecto. No hay una regla fija.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito contratar a alguien más además del realizador?",
+        answer:
+          "Para la mayoría de los proyectos corporativos de escala media, no. El realizador cubre cámara, iluminación básica y dirección. Si el proyecto necesita un segundo operador, una maquilladora o un sonidista en set, se incorporan solo si el guion lo justifica.",
+      },
+      {
+        type: "faq",
+        question: "¿Puede un realizador grabar en mis instalaciones sin permisos especiales?",
+        answer:
+          "Si el rodaje es en tu propio espacio —oficina, showroom, fábrica, sala de reuniones— no necesitas ningún permiso adicional. Si el rodaje es en espacio público o en locaciones de terceros, hay que gestionar los permisos correspondientes. En Madrid esto suele tardar entre 3 y 10 días según el espacio.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes un proyecto en mente —entrevista ejecutiva, vídeo para tu web, cobertura de evento o serie de contenido mensual— cuéntamelo desde la página de contacto. Te doy una estimación en 24 horas.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {

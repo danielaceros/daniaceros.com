@@ -136,6 +136,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto. Search Console: 1 impresión, posición media 76. Imágenes Unsplash/Pexels.",
   },
+  {
+    slug: "realizador-video-corporativo-madrid",
+    keyword: "realizador de vídeo corporativo madrid",
+    intent: "informacional",
+    createdAt: "2026-05-21",
+    status: "published",
+    notes: "Auto-generado por blog-auto. Search Console: 45 impresiones, posición media 36.16. Imágenes Unsplash/Pexels.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {
