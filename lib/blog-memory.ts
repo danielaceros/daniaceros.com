@@ -144,6 +144,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto. Search Console: 45 impresiones, posición media 36.16. Imágenes Unsplash/Pexels.",
   },
+  {
+    slug: "storyboard-video-corporativo",
+    keyword: "storyboard para vídeo corporativo",
+    intent: "informacional",
+    createdAt: "2026-05-22",
+    status: "published",
+    notes: "Auto-generado por blog-auto (fallback evergreen, sin candidate SC limpio). Imágenes Unsplash/Pexels.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {

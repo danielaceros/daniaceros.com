@@ -2032,6 +2032,155 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "storyboard-video-corporativo",
+    title: "Storyboard para vídeo corporativo: cómo usarlo aunque no sepas dibujar",
+    description:
+      "El storyboard no es para artistas. Es una herramienta de comunicación que evita errores antes de llegar al rodaje. Guía práctica de un filmmaker en Madrid.",
+    publishedAt: "2026-05-22",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: [
+      "preproducción",
+      "vídeo corporativo",
+      "producción audiovisual",
+      "filmmaking",
+      "planificación de rodaje",
+    ],
+    keyword: "storyboard para vídeo corporativo",
+    intent: "informacional",
+    excerpt:
+      "El storyboard no es para artistas. Es una herramienta de comunicación que evita errores antes de llegar al rodaje. Te explico cómo lo uso en producción corporativa.",
+    seoTitle: "Storyboard para vídeo corporativo | Daniel Acero",
+    metaDescription:
+      "Storyboard para vídeo corporativo: qué es, cuándo usarlo y cómo prepararlo sin saber dibujar. Guía práctica de un filmmaker en Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "El storyboard es una de esas herramientas que la gente asocia con producciones grandes. Rodajes de publicidad de televisión, efectos especiales, equipos de cincuenta personas. La realidad para vídeo corporativo es más discreta.",
+      },
+      {
+        type: "paragraph",
+        text: "He preparado producciones corporativas con y sin storyboard. Lo que he aprendido es que no depende del presupuesto: depende del tipo de proyecto y de cuánto necesita el cliente visualizar el resultado antes del rodaje.",
+      },
+      {
+        type: "image",
+        src: "/blog/storyboard-video-corporativo/hero.webp",
+        alt: "Claqueta de rodaje en primer plano, herramienta clave en la producción audiovisual corporativa",
+        width: 1920,
+        height: 1280,
+        caption: "La preproducción bien hecha reduce el tiempo de rodaje y evita errores costosos.",
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Qué es un storyboard y por qué importa",
+      },
+      {
+        type: "paragraph",
+        text: "Un storyboard es una secuencia de viñetas —bocetos, fotografías de referencia o capturas de pantalla— que representa plano a plano lo que se va a grabar. Cada viñeta indica qué se ve en pantalla, cómo se mueve la cámara y, si procede, qué dice la voz en off o qué texto aparece en ese momento.",
+      },
+      {
+        type: "paragraph",
+        text: "El valor real no está en el dibujo. Está en el proceso de pensar el vídeo antes de grabar. Cuando revisas el storyboard con el cliente detectas problemas antes de que se conviertan en rodaje repetido o postproducción cara. Una viñeta que no convence cuesta cero. Una escena que hay que repetir cuesta medio día.",
+      },
+      {
+        type: "paragraph",
+        text: "No hace falta saber dibujar. Una caja con una línea de horizonte y una figura en palo ya comunica si el plano es un gran angular o un primer plano. Lo que no puede faltar es la intención: qué quiero que entienda el espectador en ese segundo.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cómo prepararlo bien",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "La estructura básica: número de plano, descripción y nota de audio",
+      },
+      {
+        type: "paragraph",
+        text: "Cada viñeta recoge tres cosas: lo que se ve en pantalla —composición, personajes, fondo—, el tipo de movimiento de cámara —fijo, traveling, pan— y el texto de la voz en off o el rótulo que aparece. Si la producción tiene guion narrado, el storyboard va pegado al guion: cada párrafo tiene sus planos correspondientes anotados al margen.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Herramientas si no dibujas bien",
+      },
+      {
+        type: "paragraph",
+        text: "Uso Canva para los storyboards más visuales: tienen plantillas donde arrastras fotos de referencia, imágenes de stock o capturas del espacio a grabar. Para proyectos más técnicos, una hoja de cálculo con tres columnas es suficiente: número de plano, descripción y nota de audio. También funciona hacer un recorrido fotográfico por la localización antes del rodaje, con las fotos numeradas y una anotación al pie. Eso es técnicamente un storyboard y cualquier cliente lo entiende.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Cómo presentarlo al cliente",
+      },
+      {
+        type: "paragraph",
+        text: "Cuando presento el storyboard, voy plano a plano explicando en voz alta: 'Aquí empezamos con un plano general del espacio de recepción, entra la voz en off con el primer mensaje, y luego cortamos a un primer plano del producto sobre la mesa.' El objetivo es que el cliente pueda seguir el vídeo mentalmente antes de que exista. Si algo no le cuadra, es mucho mejor saberlo en esta reunión que durante el montaje.",
+      },
+      {
+        type: "image",
+        src: "/blog/storyboard-video-corporativo/intermedia.webp",
+        alt: "Equipo de producción audiovisual en plató, rodando con cámara y sistema de iluminación profesional",
+        width: 1920,
+        height: 1280,
+        caption: "La preproducción clara permite al equipo de rodaje llegar al set con menos dudas.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cuándo tiene sentido usarlo (y cuándo puedes prescindir)",
+      },
+      {
+        type: "list",
+        items: [
+          "En vídeos con guion narrado: la voz en off dicta el ritmo y cada plano tiene que corresponder a una frase concreta. Sin storyboard, el montaje se convierte en un puzzle difícil de resolver.",
+          "Cuando no puedes visitar la localización antes de grabar: planificas sobre fotografías o planos del espacio y llegas al rodaje con las decisiones tomadas.",
+          "En producciones con equipo amplio —director de fotografía, técnico de luces, maquilladora—: todos trabajan sobre el mismo documento y no hay malentendidos en set.",
+          "En grabaciones documentales o de cobertura de eventos: no merece la pena. La realidad manda y el storyboard sobra.",
+          "Cuando el presupuesto es ajustado: preparar bien el storyboard reduce el tiempo de rodaje y, por tanto, el coste total del proyecto.",
+          "En vídeos sencillos de una sola cámara y un solo tema: una lista de planos es suficiente.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Cuántas viñetas necesita un storyboard para vídeo corporativo?",
+        answer:
+          "Depende de la duración y la complejidad. Un vídeo de 2 minutos suele tener entre 15 y 25 viñetas. Si hay muchos cortes rápidos puede llegar a 40. No hay un número correcto; hay el número que te permite explicar el vídeo sin ambigüedades antes de grabar.",
+      },
+      {
+        type: "faq",
+        question: "¿Quién prepara el storyboard, el cliente o el filmmaker?",
+        answer:
+          "Lo prepara el filmmaker, pero con aportaciones del cliente en la fase de revisión. El cliente no dibuja nada; solo dice si lo que ve en las viñetas corresponde a lo que imagina. Las correcciones se hacen sobre el storyboard, no sobre el vídeo ya montado.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo usar fotos de referencia en lugar de dibujos?",
+        answer:
+          "Sí. Es lo que hago la mayor parte del tiempo. Fotos de la localización, imágenes de stock o frames de otros vídeos que comuniquen el estilo. El dibujo es solo una forma de representar la imagen prevista, no la única ni necesariamente la mejor.",
+      },
+      {
+        type: "faq",
+        question: "¿El storyboard es vinculante durante el rodaje?",
+        answer:
+          "No. Es una guía. Si durante la grabación algo no funciona como estaba planeado, cambias el plano. El storyboard es una herramienta de preproducción: reduce la incertidumbre, no la elimina.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes una producción en mente y no sabes por dónde empezar, el storyboard —aunque sea en versión simple— es lo primero que pone orden. Si quieres que lo preparemos juntos antes del rodaje, cuéntame tu proyecto desde la página de contacto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
