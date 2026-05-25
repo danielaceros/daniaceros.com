@@ -2181,6 +2181,152 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "musica-y-derechos-en-video-de-empresa",
+    title: "Música y derechos de autor en vídeo de empresa",
+    description:
+      "Cómo gestionar los derechos musicales en un proyecto de vídeo corporativo: licencias de sincronización, plataformas royalty-free y errores que evitar antes de publicar.",
+    publishedAt: "2026-05-25",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "derechos de autor",
+      "música para vídeo",
+      "licencias musicales",
+      "vídeo corporativo",
+      "producción audiovisual",
+    ],
+    keyword: "música y derechos en vídeo de empresa",
+    intent: "informacional",
+    excerpt:
+      "Usar música sin los derechos correctos en un vídeo de empresa puede derivar en reclamaciones, retiradas y multas. Esto es lo que tienes que gestionar antes de publicar.",
+    seoTitle: "Música en vídeo de empresa: derechos | Daniel Acero",
+    metaDescription:
+      "Música y derechos de autor en vídeo corporativo: qué licencias necesitas, plataformas legales y errores que pueden costarte caro.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "La música puede transformar un vídeo de empresa mediocre en algo que la gente recuerda. El problema es que casi todos los proyectos corporativos que llegan a mis manos tienen el mismo punto ciego: nadie ha pensado en los derechos antes de publicar.",
+      },
+      {
+        type: "paragraph",
+        text: "Esto no es un problema de mala fe. Es falta de información. Una canción de Spotify no se puede usar en un vídeo de empresa. Una pista que suena 'gratis' en YouTube no significa que sus derechos estén cedidos para uso comercial. Aquí explico cómo funciona esto y qué opciones tienes.",
+      },
+      {
+        type: "image",
+        src: "/blog/musica-y-derechos-en-video-de-empresa/hero.webp",
+        alt: "Productor musical trabajando en estudio con teclado y software de audio",
+        width: 1920,
+        height: 1549,
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Qué significa tener derechos sobre una pieza musical",
+      },
+      {
+        type: "paragraph",
+        text: "Cuando grabas un vídeo y le pones música encima estás realizando lo que en derecho se llama una sincronización. Básicamente, sincronizas audio con imagen en movimiento. Para hacerlo legalmente necesitas permiso del titular de los derechos de esa música, que puede ser el artista, su discográfica, o ambos.",
+      },
+      {
+        type: "paragraph",
+        text: "Hay dos tipos de derechos que suelen ir de la mano: los derechos de autor sobre la composición —la melodía, la letra— y los derechos fonográficos sobre la grabación concreta. Si quieres usar una canción conocida en un vídeo de empresa, necesitas permiso de los compositores y permiso de la discográfica que posee esa grabación. Son dos entidades distintas y, en muchos casos, dos licencias distintas.",
+      },
+      {
+        type: "paragraph",
+        text: "Para vídeos de uso interno el riesgo es menor. Para vídeos publicados en web, YouTube, redes sociales o en eventos con público, el riesgo de reclamación es real y tiene consecuencias prácticas: desde la retirada del vídeo hasta la pérdida de monetización.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cómo gestionar la música en un proyecto corporativo",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Licencias de sincronización",
+      },
+      {
+        type: "paragraph",
+        text: "La licencia de sincronización es el permiso formal para usar una canción específica en un vídeo. Conseguirla requiere contactar directamente con el titular de los derechos. En canciones comerciales eso significa hablar con discográficas o con gestoras de derechos como SGAE. El proceso lleva tiempo, no siempre hay respuesta, y el precio puede ir de 200 euros a decenas de miles según la canción y el uso previsto. Para un vídeo corporativo estándar, no suele ser el camino.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Plataformas de música royalty-free",
+      },
+      {
+        type: "paragraph",
+        text: "La opción más práctica para la mayoría de proyectos corporativos es usar plataformas de música royalty-free. Artlist, Musicbed, Epidemic Sound o Pond5 ofrecen librerías de pistas con licencia para uso en vídeo. Pagas una suscripción anual y puedes usar la música en tus proyectos sin coste adicional por cada entrega. Yo suelo trabajar con Artlist para proyectos corporativos porque la licencia cubre distribución comercial sin restricciones de plataforma, lo que simplifica mucho la conversación con el cliente.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Música original",
+      },
+      {
+        type: "paragraph",
+        text: "Otra opción es encargar una pieza original. Un compositor puede crear una melodía hecha a medida para tu marca por entre 300 y 1.500 euros, dependiendo de la duración y la complejidad. A cambio recibes los derechos completos sobre esa composición y su grabación. Es la solución más cara a corto plazo, pero la más limpia a largo plazo si el vídeo va a tener mucha difusión o si quieres usar ese audio en toda tu comunicación de marca.",
+      },
+      {
+        type: "image",
+        src: "/blog/musica-y-derechos-en-video-de-empresa/intermedia.webp",
+        alt: "Mesa de mezclas en estudio de sonido para producción audiovisual",
+        width: 1920,
+        height: 1200,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Errores comunes en vídeos corporativos",
+      },
+      {
+        type: "list",
+        items: [
+          "Usar canciones de Spotify o Apple Music pensando que 'solo es una plataforma de streaming': esas licencias no incluyen sincronización con vídeo.",
+          "Descargar pistas de YouTube Audio Library sin leer los términos: algunas tienen restricciones de uso comercial o requieren atribución visible.",
+          "Pensar que si el vídeo es privado no hay problema: en eventos con público o proyecciones internas de empresa, los derechos siguen siendo necesarios.",
+          "Usar música royalty-free comprada para un proyecto en todos los proyectos futuros sin renovar la suscripción: las licencias suelen estar vinculadas a la suscripción activa.",
+          "No guardar los justificantes de licencia: si llega una reclamación de copyright en YouTube, necesitas poder demostrar que tienes derecho a usar esa pista.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo usar música de YouTube Audio Library en un vídeo comercial?",
+        answer:
+          "Depende de la pista. YouTube Audio Library tiene canciones con diferentes tipos de licencia: dominio público, Creative Commons con o sin restricciones comerciales. Antes de usar una pista, revisa la ficha de la canción. Si indica que no permite uso comercial, no la uses en un vídeo de empresa.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué pasa si YouTube detecta música con copyright en mi vídeo corporativo?",
+        answer:
+          "YouTube tiene un sistema llamado Content ID que detecta fragmentos de música registrados. Si tu vídeo coincide con una pista protegida puede pasar una de estas cosas: el vídeo se silencia, los ingresos van al titular de los derechos, o el vídeo queda bloqueado en ciertos países. En casos más graves el vídeo se retira. Esto le puede pasar tanto a canales de empresa como a agencias o productoras.",
+      },
+      {
+        type: "faq",
+        question: "¿La licencia de Artlist o Epidemic Sound cubre Instagram y TikTok?",
+        answer:
+          "En general sí, pero los términos exactos dependen del plan contratado. Artlist cubre la mayoría de plataformas con su licencia estándar. Epidemic Sound tiene planes diferenciados para creadores individuales y para uso comercial. Verifica los términos antes de publicar, especialmente si el cliente va a usar el vídeo en su propio canal y no en el de la agencia.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo usar música clásica sin pagar derechos?",
+        answer:
+          "La composición puede ser de dominio público si el compositor murió hace más de 70 años. Pero la grabación específica puede tener sus propios derechos si fue interpretada y grabada recientemente. Para estar seguro, busca grabaciones publicadas bajo licencias Creative Commons o usa plataformas royalty-free que incluyan versiones de música clásica.",
+      },
+      {
+        type: "paragraph",
+        text: "La gestión de derechos musicales es una parte de la producción que no aparece en el presupuesto hasta que aparece en forma de problema. Si tienes un proyecto en marcha y no tienes claro qué música puedes usar, puedo orientarte desde el principio. Cuéntame los detalles desde la página de contacto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {

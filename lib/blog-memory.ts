@@ -152,6 +152,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto (fallback evergreen, sin candidate SC limpio). Imágenes Unsplash/Pexels.",
   },
+  {
+    slug: "musica-y-derechos-en-video-de-empresa",
+    keyword: "música y derechos en vídeo de empresa",
+    intent: "informacional",
+    createdAt: "2026-05-25",
+    status: "published",
+    notes: "Auto-generado por blog-auto (fallback evergreen, sin candidate SC limpio). Imágenes Unsplash/Pexels.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {
