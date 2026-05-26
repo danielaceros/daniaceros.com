@@ -2327,6 +2327,148 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "produccion-eventos-corporativos-directo",
+    title: "Producción de eventos corporativos en directo: qué necesitas y cómo prepararlo",
+    description:
+      "Guía práctica sobre producción audiovisual de eventos corporativos en directo: equipo, logística, errores habituales y cómo preparar el rodaje.",
+    publishedAt: "2026-05-26",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["eventos corporativos", "producción en directo", "filmación de eventos", "vídeo corporativo", "audiovisual Madrid"],
+    keyword: "producción de eventos corporativos en directo",
+    intent: "informacional",
+    excerpt:
+      "Grabar un evento corporativo en directo implica decisiones técnicas y logísticas que no admiten error. Aquí explico qué hace falta, cómo prepararlo y qué falla más.",
+    seoTitle: "Producción de eventos corporativos en directo | Daniel Acero",
+    metaDescription:
+      "Producción de eventos corporativos en directo: equipo, logística y errores habituales. Guía práctica de un filmmaker con experiencia real en Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Un evento corporativo en directo no da segundas oportunidades. Cuando el ponente entra al escenario ya no hay tiempo para ajustar el encuadre, mover el micrófono ni cambiar el plan. O lo tienes todo preparado o improvisas sobre la marcha y el material sale cojo.",
+      },
+      {
+        type: "paragraph",
+        text: "He grabado presentaciones de empresa, conferencias, townhalls, lanzamientos de producto y cenas de gala. Lo que diferencia un resultado sólido de uno mediocre no suele ser el equipo — suele ser la preparación. Te cuento cómo lo trabajo.",
+      },
+      {
+        type: "image",
+        src: "/blog/produccion-eventos-corporativos-directo/hero.webp",
+        alt: "Equipo de producción audiovisual grabando un evento corporativo en directo con cámaras profesionales",
+        width: 1920,
+        height: 1280,
+        caption: "La producción de eventos en directo exige planificación antes, no durante.",
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Qué es y por qué la producción en directo es diferente",
+      },
+      {
+        type: "paragraph",
+        text: "Producción en directo significa grabar algo mientras ocurre, sin posibilidad de repetir. Una conferencia, una jornada de empresa, un panel de debate, un acto de inauguración. El reto es que el evento tiene su propio ritmo, sus propios imprevistos y sus propias limitaciones de espacio. Tú te adaptas. El evento no espera.",
+      },
+      {
+        type: "paragraph",
+        text: "La diferencia entre un vídeo de evento que funciona y uno que nadie vuelve a ver está en cómo se usa ese material después. ¿Es un aftermovie de dos minutos para LinkedIn? ¿Son cortes individuales de cada ponente? ¿Se necesita una versión larga para el archivo interno? Esa decisión define el equipo, las posiciones de cámara y el ritmo de grabación.",
+      },
+      {
+        type: "paragraph",
+        text: "Sin esa claridad desde el principio, llegas a postproducción con material que no encaja en ningún formato útil.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cómo se hace bien",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Previo al evento: reconocimiento y plan de rodaje",
+      },
+      {
+        type: "paragraph",
+        text: "El trabajo real empieza uno o dos días antes. Necesito ver el espacio en el que voy a grabar: dónde están las fuentes de luz natural, si hay iluminación de sala fija y de qué temperatura, dónde se pone el ponente, desde qué ángulo se ve el escenario sin que la cabeza de alguien tape el plano. Si la sala tiene tramoya o pantallas LED, necesito saber si van a interferir con la exposición de cámara. También confirmo con organización si habrá un técnico de sonido que pueda darme señal de mesa o si voy con mis propios micrófonos.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Durante el evento: posiciones, comunicación y gestión del caos",
+      },
+      {
+        type: "paragraph",
+        text: "Trabajo con un esquema de posiciones fijas y movimiento controlado. En la mayoría de eventos uso dos cámaras: una fija en un plano general estable — suele ser un Sony A7 IV en trípode al fondo de la sala — y otra para planos de detalle, reacciones del público y momentos que no están en el guion. Con dos cámaras tengo suficiente cobertura para editar sin cortes feos. Con una sola, cualquier problema en un momento clave es irrecuperable. El contacto con el organizador del evento durante el acto es clave. Si el orden del día cambia sobre la marcha — y casi siempre cambia algo — necesito saberlo con el mínimo margen para reposicionarme.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Postproducción: pieza final o entrega rápida",
+      },
+      {
+        type: "paragraph",
+        text: "Algunos clientes necesitan un corte de 90 segundos publicable en 24-48 horas para redes. Otros quieren una pieza más elaborada de 3-5 minutos con entrevistas individuales, planos del espacio y música. El proceso de edición en DaVinci Resolve es distinto en cada caso: el primero exige selección rápida de los mejores momentos y un ritmo ágil; el segundo permite estructurar una narrativa más completa. Define esto antes de grabar, no después.",
+      },
+      {
+        type: "image",
+        src: "/blog/produccion-eventos-corporativos-directo/intermedia.webp",
+        alt: "Público asistiendo a una conferencia corporativa en sala de evento profesional",
+        width: 1920,
+        height: 1280,
+        caption: "La cobertura del público y los momentos de sala aportan contexto al vídeo final.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Errores comunes en la producción de eventos corporativos",
+      },
+      {
+        type: "list",
+        items: [
+          "No reconocer el espacio antes del día. Llegas el mismo día y descubres que la iluminación es un desastre sin haber traído el equipo adecuado.",
+          "Ir con una sola cámara sin plan de contingencia. Un problema técnico o un movimiento imprevisto y pierdes el momento que el cliente necesita.",
+          "No confirmar la señal de audio con el técnico de sonido. La voz del ponente es irrecuperable si falla el micro. Sin audio limpio el vídeo no sirve.",
+          "No cerrar el formato de entrega antes del evento. Grabar sin saber el destino del material lleva a contenido que no encaja en ningún lado.",
+          "Subestimar los tiempos de postproducción. Un evento de 8 horas genera cientos de gigabytes de material; la revisión y el montaje llevan tiempo real.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Cuántas personas necesito para grabar un evento corporativo?",
+        answer:
+          "Para la mayoría de eventos de tamaño medio — entre 50 y 300 personas — trabajo con una o dos personas. Yo opero las cámaras y gestiono el audio; un asistente puede encargarse de la segunda cámara o de los planos de sala. En eventos de gran formato con múltiples salas simultáneas puede necesitarse un equipo más amplio, pero para un evento estándar de empresa no es necesario.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué pasa si el evento no tiene buena iluminación?",
+        answer:
+          "La mayoría de salas de evento tienen iluminación deficiente para vídeo — es lo habitual. Se puede compensar con luces portátiles propias si la organización lo permite, o ajustando la exposición de cámara y el tratamiento de color en postproducción. En casos muy extremos hay pérdida inevitable de calidad. Por eso el reconocimiento previo importa: se pueden tomar medidas antes, no durante el evento.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo tarda la entrega de un vídeo de evento?",
+        answer:
+          "Un corte rápido para redes puede estar listo en 24-48 horas si el cliente lo necesita con urgencia. Una pieza completa con entrevistas, planos de sala y música tarda entre 5 y 10 días hábiles, dependiendo del volumen de material y el número de revisiones. Establecer plazos realistas antes del evento evita expectativas desalineadas en postproducción.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede retransmitir en directo a la vez que se graba para edición?",
+        answer:
+          "Sí, pero son dos trabajos diferentes con equipos y flujos distintos. La retransmisión en streaming requiere mezclador de vídeo, encoder y conexión estable. La grabación para edición posterior requiere calidad máxima y cobertura multicámara. Hacer las dos cosas a la vez con el mismo equipo tiene limitaciones serias. Si necesitas ambas, lo recomendable es separar los equipos y las responsabilidades.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes un evento en los próximos meses y quieres hablar sobre qué material tiene sentido producir y cómo enfocarlo, puedes escribirme desde la página de contacto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
