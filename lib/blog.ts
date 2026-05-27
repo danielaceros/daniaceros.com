@@ -2469,6 +2469,154 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-recap-de-eventos",
+    title: "Vídeo recap de eventos: qué incluir y qué cortar",
+    description:
+      "Un buen recap de eventos no graba todo: sabe qué elegir. Qué planos son imprescindibles y cuáles van directamente a la papelera de reciclaje.",
+    publishedAt: "2026-05-27",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "vídeo de eventos",
+      "recap",
+      "montaje",
+      "postproducción",
+      "filmación corporativa",
+      "eventos Madrid",
+    ],
+    keyword: "vídeo recap de eventos",
+    intent: "informacional",
+    excerpt:
+      "Un buen recap de eventos no graba todo: sabe qué elegir. Te explico qué planos no pueden faltar y qué suele acabar en la papelera de reciclaje.",
+    seoTitle: "Recap de eventos: qué incluir y qué evitar | Daniel Acero",
+    metaDescription:
+      "Vídeo recap de eventos: qué planos y momentos no pueden faltar y qué cortar para que el resultado no parezca un archivo de grabación.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "La mayoría de recaps de eventos fallan antes de que empiece el montaje. No por falta de imágenes, sino por exceso. El cameraman grabó cuatro horas, el cliente quiere todo dentro, y el resultado final parece un archivo de seguridad más que un vídeo de comunicación.",
+      },
+      {
+        type: "paragraph",
+        text: "Un buen recap no se mide en duración ni en la cantidad de planos que mete. Se mide en cuánto corta. Si el editor no tiene criterio de selección, el resultado final dura 7 minutos y pierde al espectador en el minuto 2. Este artículo explica qué planos son imprescindibles y cuáles van directamente a la papelera.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-recap-de-eventos/hero.webp",
+        alt: "Cámara en mano cubriendo un evento corporativo en sala",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Qué es un vídeo recap y por qué importa",
+      },
+      {
+        type: "paragraph",
+        text: "Un recap de evento es una pieza corta —entre 90 segundos y 3 minutos— que resume lo que ocurrió en una jornada, congreso, gala, formación o lanzamiento de producto. Su función no es documentar: es comunicar. Se publica en LinkedIn, en la web corporativa, se envía a los asistentes o se usa como argumento para la siguiente edición.",
+      },
+      {
+        type: "paragraph",
+        text: "Lo que lo diferencia de una grabación completa es la selección. Un recap tiene ritmo, tiene estructura y tiene un punto de vista. La grabación completa existe por si acaso. El recap existe para que alguien que no estuvo quiera haber estado.",
+      },
+      {
+        type: "paragraph",
+        text: "En empresas que organizan eventos anuales, el recap es el activo audiovisual con más retorno: atrae patrocinadores, refuerza marca y convence a potenciales asistentes mejor que cualquier folleto.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Qué incluir sí o sí",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Los planos de ambiente y sala",
+      },
+      {
+        type: "paragraph",
+        text: "Los primeros 20 segundos de un recap deben colocar al espectador en el espacio. La sala llena, el escenario preparado, el público llegando, el equipo técnico montando. Cuatro o cinco planos de 3-4 segundos cada uno son suficientes para establecer el contexto sin que el vídeo arranque con una charla sin presentación. Estos planos se capturan antes de que empiece el evento y en los descansos: es cuando hay luz natural, movimiento libre y acceso sin interrumpir a los ponentes. Si no se graban en ese momento, no hay forma de recuperarlos después.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Las caras y reacciones del público",
+      },
+      {
+        type: "paragraph",
+        text: "El error más frecuente es grabar solo al ponente. Las reacciones del público son las que convierten un vídeo de una charla en un vídeo de un evento. Risas, apuntes en papel, conversaciones durante el networking, el aplauso al final de una intervención. Son los planos que hacen que el espectador piense que debería haber estado. Dedico siempre al menos un 20-25% del material final a planos de reacción y ambiente humano. En un evento de 200 personas, eso es fácil de conseguir. En uno de 30, requiere más criterio para no abusar de las mismas caras.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Los momentos de transición y clímax",
+      },
+      {
+        type: "paragraph",
+        text: "El inicio de un ponente, el momento en que levanta la mano para enfatizar algo, el aplauso al final de la charla, el corte a la sala durante una pausa. Estos momentos de transición dan estructura al montaje sin que parezca un collage de clips sin coherencia. Son los que separan un buen editor de alguien que simplemente sabe usar el software.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-recap-de-eventos/mid.webp",
+        alt: "Audiencia en evento corporativo durante una presentación",
+        width: 1920,
+        height: 1280,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Qué cortar sin dudar",
+      },
+      {
+        type: "list",
+        items: [
+          "Planos de espaldas del ponente o con cabeza cortada: si no se ve la cara, no suma.",
+          "Audiencia mirando el móvil o distraída: comunica lo contrario de lo que el cliente quiere.",
+          "Los primeros 30 segundos de cada charla antes de que el ponente encuentre el ritmo: casi siempre son arranques titubeantes.",
+          "Pasillos vacíos y mesas de catering sin gente: generan sensación de evento frío y poco concurrido.",
+          "Presentaciones de PowerPoint completas: en un recap solo va el segundo en que el ponente señala el dato clave, no la diapositiva entera.",
+          "Cualquier plano con contraluz sin compensar o grabado bajo luz de emergencia: destruye la calidad percibida del resto del vídeo.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto debe durar un recap de evento?",
+        answer:
+          "Entre 90 segundos y 3 minutos es el rango que funciona en la mayoría de plataformas. Por debajo de 90 segundos es difícil transmitir el ambiente del evento. Por encima de 3 minutos la retención cae y el vídeo empieza a parecer una grabación completa. Para eventos de un día entero, lo habitual es un recap de entre 2 y 2:30 minutos. Para conferencias de varios días con material muy variado puede llegarse a 3:30.",
+      },
+      {
+        type: "faq",
+        question: "¿Con cuántas cámaras se graba un recap de evento?",
+        answer:
+          "Dos cámaras es el mínimo razonable: una fija en el escenario y otra móvil para planos de ambiente y público. Con una sola cámara el corte entre planos es más limitado y el riesgo de perder momentos clave es mayor. Tres cámaras permiten un montaje más fluido y cubrir el evento sin interrumpir la grabación para reposicionarse. A partir de cuatro, la complejidad de sincronización y los costes de postproducción aumentan notablemente.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué música se usa en un recap corporativo?",
+        answer:
+          "Música con licencia de uso comercial. Plataformas como Artlist o Musicbed tienen catálogos amplios pensados para este tipo de producción. El ritmo de la música dicta el ritmo del montaje: para eventos dinámicos y networking, algo con tempo entre 100 y 120 BPM funciona bien. Para galas o presentaciones de empresa, piezas más pausadas y orquestales dan mejor resultado. Nunca música de Spotify sin licencia: en el momento en que el cliente sube el vídeo a LinkedIn o YouTube puede recibir una reclamación de derechos.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuándo se entrega el recap después del evento?",
+        answer:
+          "Si el cliente necesita publicarlo mientras el evento está en tendencia, hay que planificar un corte exprés con material preseleccionado durante la grabación. Ese corte puede estar listo en 4-6 horas tras el evento si hay acuerdo previo sobre duración, música y estilo. Un recap cuidado, con revisiones y aprobación del cliente, tarda entre 3 y 5 días hábiles. Hay que acordarlo antes de empezar a grabar, no al terminar el evento.",
+      },
+      {
+        type: "paragraph",
+        text: "Si estás organizando un evento y quieres hablar sobre cómo cubrir la grabación y qué tipo de recap tiene sentido para tu caso, puedes escribirme desde la página de contacto. Trabajo en Madrid y alrededores.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
