@@ -8,7 +8,7 @@ import { buildMetadata } from "@/lib/seo"
 export const metadata: Metadata = buildMetadata({
   title: "Pack mensual de contenido para empresas | Daniel Acero",
   description:
-    "Una sesión de 2 horas al mes. Te llevas hasta 30 reels editados. Sin permanencia. Desde 620€/mes. Validado con clientes activos.",
+    "En 2 horas grabamos los 12 reels de tu mes. Editados, con subtítulos, listos para publicar. Sin permanencia. Desde 620€/mes. Validado con clientes activos.",
   path: "/contenido-mensual",
   keywords: [
     "pack mensual de contenido",
@@ -28,13 +28,33 @@ const MERIDIAN_BROLL =
   "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/5D8C07A0-DF6C-4A1D-B935-0DE35EE494E3.mp4?alt=media&token=74d33b70-2485-4ea6-97ad-df1b584ded8a"
 
 const MERIDIAN_AVATAR =
-  "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/553185479_17875058964420491_2090743360774964884_n.jpg?alt=media&token=9a06a5c5-7cbb-4ce1-a4c7-091907d7531e"
+  "https://storage.googleapis.com/klip-e547f.firebasestorage.app/avatars/meridianbiohealth_avatar.jpg"
+
+const ALEJANDRO_AVATAR =
+  "https://storage.googleapis.com/klip-e547f.firebasestorage.app/avatars/alejandro_estucoach_avatar.jpg"
 
 const PLANS = [
   { name: "Starter", price: "620", reels: "8", pubs: "2", session: "2h", extra: null, highlight: false },
   { name: "Standard", price: "780", reels: "12", pubs: "3", session: "2h", extra: null, highlight: true, badge: "El más demandado" },
-  { name: "Pro", price: "990", reels: "16", pubs: "4", session: "3h", extra: "+1 reel destacado", highlight: false },
   { name: "Premium", price: "1.200", reels: "20", pubs: "5", session: "4h", extra: "+2 destacados · thumbnails", highlight: false },
+]
+
+const BONUSES = [
+  {
+    title: "Banco B-Roll",
+    desc: "Material bruto editable de tu sesión para tus Stories del mes.",
+    value: "350€",
+  },
+  {
+    title: "Pack de fotos",
+    desc: "5-10 fotos profesionales en la misma sesión. Web, LinkedIn, perfil.",
+    value: "200€",
+  },
+  {
+    title: "Primer reel 48h",
+    desc: "Entrega prioritaria del primer reel para arrancar publicación rápido.",
+    value: "150€",
+  },
 ]
 
 const ADD_ONS = [
@@ -54,7 +74,7 @@ const FIRST_MONTH = [
   ["01", "Llamada inicial"],
   ["07", "Guiones revisados"],
   ["14", "Sesión de grabación"],
-  ["28", "Primer reel publicado"],
+  ["16", "Primer reel publicado"],
 ]
 
 export default function ContenidoMensualPage() {
@@ -79,9 +99,8 @@ export default function ContenidoMensualPage() {
                 style={{ "--lux-delay": "120ms" } as CSSProperties}
                 className="hero-fade-up hero-fade-up-delay-1 mt-5 font-display font-semibold uppercase leading-[0.95] text-[clamp(2.2rem,7vw,5rem)]"
               >
-                Tu empresa.<br />
-                Una sesión al mes.<br />
-                <span className="text-white/55">30 reels listos.</span>
+                En 2 horas grabamos<br />
+                los <span className="text-white/55">12 reels de tu mes.</span>
               </h1>
 
               <p
@@ -89,8 +108,8 @@ export default function ContenidoMensualPage() {
                 style={{ "--lux-delay": "200ms" } as CSSProperties}
                 className="hero-fade-up hero-fade-up-delay-2 mt-6 max-w-xl font-inter text-[15px] sm:text-[16px] leading-[1.65] text-white/72"
               >
-                Voy a tu negocio una vez al mes. Grabamos en 2 horas con teleprompter.
-                Te entrego el contenido editado. Tú apareces y lees. Lo demás lo hago yo.
+                Tú apareces, lees el teleprompter y te vas. Yo grabo, edito y te entrego 12 piezas — 3 cada
+                semana — todo el mes activo. Sin reuniones semanales. Sin briefings infinitos.
               </p>
 
               <div
@@ -120,7 +139,7 @@ export default function ContenidoMensualPage() {
                 className="hero-fade-up mt-12 grid grid-cols-3 gap-4 sm:gap-6 max-w-md"
               >
                 {[
-                  ["30", "reels al mes"],
+                  ["12", "reels al mes"],
                   ["2h", "de tu tiempo"],
                   ["+50", "proyectos"],
                 ].map(([n, label]) => (
@@ -171,6 +190,29 @@ export default function ContenidoMensualPage() {
         </div>
       </section>
 
+      {/* PROBLEMA INVISIBLE — NUEVO */}
+      <section className="border-b border-white/[0.06]">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
+          <p className="font-inter text-[11px] uppercase tracking-[0.18em] text-white/40 mb-5">
+            El problema invisible
+          </p>
+          <h2 className="font-display font-semibold uppercase leading-[1.05] text-[clamp(1.8rem,4.5vw,3rem)]">
+            Tus clientes ya están <span className="text-white/55">mirando tu Instagram.</span>
+            <br />Lo que ven decide si te contactan.
+          </h2>
+          <div className="mt-7 max-w-2xl space-y-4">
+            <p className="font-inter text-[15px] sm:text-[16px] leading-[1.7] text-white/72">
+              Antes de llamarte, te googlean. Antes de googlearte, te buscan en Instagram. Si tu perfil
+              está parado — sin posts recientes, sin reels, sin actividad — asumen que no estás operativo.
+              Y se van con el siguiente.
+            </p>
+            <p className="font-inter text-[15px] sm:text-[16px] leading-[1.7] text-white/50 italic">
+              No se factura en ninguna cuenta. Pero pasa.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* CÓMO FUNCIONA */}
       <section className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
         <div className="max-w-3xl">
@@ -184,9 +226,9 @@ export default function ContenidoMensualPage() {
 
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-px bg-white/10 rounded-2xl overflow-hidden">
           {[
-            ["01", "Voy a tu negocio", "Llevo todo el equipo y monto en 15 minutos. Cámaras, luces, audio, teleprompter."],
+            ["01", "Una sesión al mes", "Voy a tu negocio con todo el equipo, o vienes a mi estudio en Madrid centro. Mismo precio."],
             ["02", "Grabamos en 2h", "Lees el guion en teleprompter. Yo dirijo encuadre, ritmo y rodaje. Tú no piensas."],
-            ["03", "Te entrego los reels", "Editados, con color, audio y subtítulos. Listos para publicar el mes entero."],
+            ["03", "Te entrego tus reels", "Editados, con color, audio y subtítulos. Primer reel en 48h. Resto durante el mes."],
           ].map(([n, title, desc]) => (
             <div key={n} className="bg-[#0a0a0a] p-7 sm:p-9">
               <p className="font-display text-[clamp(2.5rem,5vw,4rem)] font-semibold text-white/15 leading-none">{n}</p>
@@ -209,13 +251,13 @@ export default function ContenidoMensualPage() {
                 Meridian Biohealth lleva<br className="hidden sm:block" /> meses con el sistema.
               </h2>
               <p className="mt-5 font-inter text-[14px] sm:text-[15px] leading-[1.7] text-white/72 max-w-lg">
-                Cada mes voy a su clínica, grabamos en 2 horas, y se llevan 30 reels para publicar.
-                Su equipo invierte solo el tiempo de la grabación. Todo lo demás corre por mi cuenta.
+                Cada mes voy a su clínica, grabamos en 2 horas, y se llevan todo el contenido del mes para
+                publicar. Su equipo invierte solo el tiempo de la grabación. Todo lo demás corre por mi cuenta.
               </p>
 
               <div className="mt-7 grid grid-cols-3 gap-3 max-w-md">
                 {[
-                  ["30", "reels / mes"],
+                  ["1", "sesión / mes"],
                   ["2h", "de su tiempo"],
                   ["0", "preocupaciones"],
                 ].map(([n, label]) => (
@@ -298,6 +340,92 @@ export default function ContenidoMensualPage() {
         </div>
       </section>
 
+      {/* CASO ALEJANDRO — NUEVO */}
+      <section className="border-t border-white/[0.06] bg-[#0a0a0a]">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
+          <div className="grid grid-cols-1 lg:grid-cols-[1.05fr_1fr] gap-10 lg:gap-14 items-center">
+            {/* Alejandro Card */}
+            <div className="mx-auto w-full max-w-[400px]">
+              <div className="rounded-3xl overflow-hidden bg-[#0a0a0a] ring-1 ring-white/10 shadow-2xl">
+                <div className="flex items-center gap-3 p-4 border-b border-white/8">
+                  <div className="relative h-11 w-11 rounded-full overflow-hidden shrink-0 bg-[#0a0a0a]">
+                    <Image
+                      src={ALEJANDRO_AVATAR}
+                      alt="Alejandro Pingarrón"
+                      fill
+                      unoptimized
+                      sizes="44px"
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-1.5">
+                      <span className="font-inter text-[14px] font-semibold text-white truncate">alejandro_estucoach</span>
+                      <svg className="h-3.5 w-3.5 shrink-0 text-[#3897F0]" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+                        <path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z" />
+                      </svg>
+                    </div>
+                    <span className="font-inter text-[12px] text-white/55 block">Alejandro Pingarrón · 73.9K seguidores</span>
+                  </div>
+                  <Link
+                    href="https://www.instagram.com/alejandro_estucoach"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="shrink-0 inline-flex items-center justify-center rounded-lg bg-[#0095F6] hover:bg-[#1877F2] transition-colors px-4 py-1.5 font-inter text-[12px] font-semibold text-white"
+                  >
+                    Seguir
+                  </Link>
+                </div>
+
+                {/* Placeholder visual */}
+                <div className="relative aspect-[9/16] bg-gradient-to-br from-[#3a2f5f] via-[#2a1f4f] to-[#0a0a0a] flex items-center justify-center">
+                  <div className="text-center px-6">
+                    <p className="font-display text-[clamp(2rem,5vw,3.5rem)] font-bold text-white leading-none">73.9K</p>
+                    <p className="mt-3 font-inter text-[10px] uppercase tracking-[0.2em] text-white/70">seguidores</p>
+                    <p className="mt-8 font-inter text-[12px] text-white/85 italic">@alejandro_estucoach</p>
+                  </div>
+                </div>
+
+                <div className="p-4 border-t border-white/8 flex items-center justify-between">
+                  <div className="flex items-center gap-4 text-white/85">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-6 w-6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-6 w-6"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-6 w-6"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                  </div>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-6 w-6 text-white/85"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <p className="font-inter text-[11px] uppercase tracking-[0.18em] text-white/40 mb-5">
+                Cliente activo · Marca personal
+              </p>
+              <h2 className="font-display font-semibold uppercase leading-[1.05] text-[clamp(1.8rem,4.5vw,2.8rem)]">
+                Alejandro Pingarrón hace<br className="hidden sm:block" /> sesión mensual en mi estudio.
+              </h2>
+              <p className="mt-5 font-inter text-[14px] sm:text-[15px] leading-[1.7] text-white/72 max-w-lg">
+                Pasó de publicar esporádicamente a feed activo posicionando su marca de coaching personal.
+                Sesión mensual en el estudio Atocha — sin necesidad de tener sitio propio para grabar.
+              </p>
+
+              <div className="mt-7 grid grid-cols-3 gap-3 max-w-md">
+                {[
+                  ["73.9K", "seguidores IG"],
+                  ["2h", "una vez al mes"],
+                  ["Coach", "personal"],
+                ].map(([n, label]) => (
+                  <div key={label} className="border-l border-white/15 pl-3">
+                    <p className="font-display text-[clamp(1.2rem,3vw,2rem)] font-semibold leading-none">{n}</p>
+                    <p className="mt-1.5 font-inter text-[10px] uppercase tracking-[0.06em] text-white/50">{label}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* PLANES */}
       <section className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
@@ -314,7 +442,7 @@ export default function ContenidoMensualPage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {PLANS.map((plan) => (
             <div
               key={plan.name}
@@ -396,7 +524,54 @@ export default function ContenidoMensualPage() {
         </div>
       </section>
 
-      {/* PRIMER MES + ACLARACIONES (combinados, compactos) */}
+      {/* BONOS — NUEVO */}
+      <section className="border-t border-white/[0.06] bg-[#080808]">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
+          <div className="text-center mb-12 max-w-3xl mx-auto">
+            <p className="font-inter text-[11px] uppercase tracking-[0.18em] text-white/40 mb-5">
+              Incluido sin coste extra
+            </p>
+            <h2 className="font-display font-semibold uppercase leading-[1.05] text-[clamp(1.8rem,4.5vw,2.6rem)]">
+              Todos los planes incluyen.<br /><span className="text-white/55">Sin letra pequeña.</span>
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {BONUSES.map((bonus) => (
+              <div key={bonus.title} className="rounded-3xl border border-white/12 bg-[#0a0a0a] p-7">
+                <div className="h-1 w-12 bg-white/30 mb-6" />
+                <h3 className="font-inter text-[14px] font-semibold uppercase tracking-[0.08em] mb-3">{bonus.title}</h3>
+                <p className="font-inter text-[13px] leading-[1.6] text-white/65 mb-5">{bonus.desc}</p>
+                <p className="font-inter text-[11px] uppercase tracking-[0.14em] text-white/40">Valor · {bonus.value}</p>
+              </div>
+            ))}
+          </div>
+
+          <p className="mt-10 text-center font-inter text-[13px] text-white/55">
+            Valor total bonos incluidos · <span className="text-white font-semibold">700€/mes</span>
+          </p>
+        </div>
+      </section>
+
+      {/* CAPACIDAD LIMITADA — NUEVO */}
+      <section className="border-t border-white/[0.06]">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24 text-center">
+          <span className="inline-flex items-center rounded-full border border-white/25 bg-white/[0.03] px-4 py-2 font-inter text-[10px] uppercase tracking-[0.2em] text-white/70 mb-8">
+            Capacidad limitada · Real
+          </span>
+          <h2 className="font-display font-semibold uppercase leading-[1.05] text-[clamp(1.8rem,4.5vw,3rem)]">
+            Grabo y edito personalmente<br /><span className="text-white/55">cada cliente.</span>
+          </h2>
+          <p className="mt-7 font-inter text-[15px] sm:text-[16px] leading-[1.65] text-white/70 max-w-2xl mx-auto">
+            Sin agencia. Sin equipo externo. Sin externalizar la post-producción. Por eso solo puedo
+            mantener un máximo de <span className="text-white font-semibold">10-12 clientes activos en
+            paralelo</span> manteniendo la calidad que prometo. Cuando llegue al tope, entras en lista
+            de espera.
+          </p>
+        </div>
+      </section>
+
+      {/* PRIMER MES + ACLARACIONES (combinados) */}
       <section className="border-t border-white/[0.06] bg-[#080808]">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24 grid grid-cols-1 lg:grid-cols-2 gap-14">
           <div>
@@ -404,7 +579,7 @@ export default function ContenidoMensualPage() {
               Tu primer mes
             </p>
             <h2 className="font-display font-semibold uppercase leading-[1.05] text-[clamp(1.6rem,3.6vw,2.2rem)]">
-              De la llamada al primer reel<br /> en 28 días.
+              De la llamada al primer reel<br /> publicado en 16 días.
             </h2>
 
             <div className="mt-9 space-y-5">
