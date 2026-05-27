@@ -34,7 +34,7 @@ const ALEJANDRO_AVATAR =
   "https://storage.googleapis.com/klip-e547f.firebasestorage.app/avatars/alejandro_estucoach_avatar.jpg"
 
 const ACTIVE_CLIENTS = [
-  { handle: "meridianbiohealth", name: "Meridian Biohealth", meta: "Odontología biológica · Madrid", tag: "12 reels/mes" },
+  { handle: "meridianbiohealth", name: "Meridian Biohealth", meta: "Odontología biológica · Madrid", tag: "30 reels/mes" },
   { handle: "alejandro_estucoach", name: "Alejandro Pingarrón", meta: "73.9K seguidores · Coach personal", tag: "Sesión mensual" },
   { handle: "carloscenfermero", name: "Carlos · Enfermero", meta: "Educación clínica", tag: "Pack mensual" },
   { handle: "lipedemainstituto", name: "Lipedema Instituto", meta: "Clínica · Madrid", tag: "Recurrente" },
