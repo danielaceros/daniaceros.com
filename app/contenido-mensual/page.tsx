@@ -33,6 +33,22 @@ const MERIDIAN_AVATAR =
 const ALEJANDRO_AVATAR =
   "https://storage.googleapis.com/klip-e547f.firebasestorage.app/avatars/alejandro_estucoach_avatar.jpg"
 
+const ACTIVE_CLIENTS = [
+  { handle: "meridianbiohealth", name: "Meridian Biohealth", meta: "Odontología biológica · Madrid", tag: "12 reels/mes" },
+  { handle: "alejandro_estucoach", name: "Alejandro Pingarrón", meta: "73.9K seguidores · Coach personal", tag: "Sesión mensual" },
+  { handle: "carloscenfermero", name: "Carlos · Enfermero", meta: "Educación clínica", tag: "Pack mensual" },
+  { handle: "lipedemainstituto", name: "Lipedema Instituto", meta: "Clínica · Madrid", tag: "Recurrente" },
+  { handle: "monicavozmediano", name: "Mónica Vozmediano", meta: "Marca personal", tag: "Contenido + lanzamientos" },
+  { handle: "clinicaguinova", name: "Clínica Guinova", meta: "Clínica privada", tag: "Producción audiovisual" },
+]
+
+const WALL_AVATARS = [
+  "meridianbiohealth", "alejandro_estucoach", "carloscenfermero", "lipedemainstituto",
+  "monicavozmediano", "ainafit", "alber.thor", "brianzaballxs",
+  "culturadegym", "_celiarubio", "davidaranzabal", "clinicaguinova",
+  "instalaciones_llorente", "manupalop84", "perfumesxia",
+]
+
 const PLANS = [
   { name: "Starter", price: "620", reels: "8", pubs: "2", session: "2h", extra: null, highlight: false },
   { name: "Standard", price: "780", reels: "12", pubs: "3", session: "2h", extra: null, highlight: true, badge: "El más demandado" },
@@ -190,6 +206,77 @@ export default function ContenidoMensualPage() {
         </div>
       </section>
 
+      {/* STATS HERO — NUEVO */}
+      <section className="border-b border-white/[0.06]">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-14 sm:py-16">
+          <p className="font-inter text-[11px] uppercase tracking-[0.18em] text-white/40 mb-8 text-center">
+            Lo que hay detrás
+          </p>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10">
+            {[
+              ["+50", "Empresas, marcas e instituciones", "Desde clínicas privadas hasta FIFA, IFEMA y CINESA."],
+              ["6", "Años produciendo en España", "Marca personal, marca corporativa, eventos, campaña."],
+              ["+1.000", "Piezas producidas y publicadas", "Reels, vídeos largos, fotografía, vídeo de marca."],
+              ["100%", "Producción in-house", "Sin intermediarios. Decisión directa, ejecución directa."],
+            ].map(([num, lab, sub]) => (
+              <div key={lab}>
+                <p className="font-display text-[40px] sm:text-[56px] font-light leading-none text-[#D4A05A]">{num}</p>
+                <p className="mt-3 font-inter text-[10px] sm:text-[11px] uppercase tracking-[0.18em] text-white/70">{lab}</p>
+                <p className="mt-1.5 font-inter text-[12px] sm:text-[13px] text-white/45 leading-[1.5]">{sub}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* WALL DE AUTORIDAD — NUEVO */}
+      <section className="border-b border-white/[0.06] bg-[#080808]">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+          <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-4 mb-10">
+            <div>
+              <p className="font-inter text-[11px] uppercase tracking-[0.18em] text-white/40 mb-3">
+                Clientes activos · 2024-2026
+              </p>
+              <h2 className="font-display font-semibold uppercase leading-[1.05] text-[clamp(1.6rem,3.6vw,2.4rem)]">
+                Cuentas reales <span className="text-[#D4A05A]">publicando ahora</span>.
+              </h2>
+            </div>
+            <p className="font-inter text-[12px] sm:text-[13px] text-white/45 leading-[1.55] max-w-xs">
+              No son testimonios.<br />Son cuentas activas — verificables en Instagram.
+            </p>
+          </div>
+          <div className="grid grid-cols-5 sm:grid-cols-8 lg:grid-cols-10 gap-3 sm:gap-4">
+            {WALL_AVATARS.map((handle) => (
+              <a
+                key={handle}
+                href={`https://instagram.com/${handle}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block aspect-square rounded-full overflow-hidden border border-white/10 bg-white/[0.02] hover:border-[#D4A05A]/60 transition-colors"
+                aria-label={`@${handle}`}
+              >
+                <Image
+                  src={`/avatars/${handle}.jpg`}
+                  alt={`@${handle}`}
+                  width={120}
+                  height={120}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </a>
+            ))}
+            <div className="aspect-square rounded-full border border-dashed border-white/20 flex items-center justify-center font-inter text-[10px] tracking-[0.12em] text-white/55">
+              +más
+            </div>
+          </div>
+          <p className="mt-8 font-inter text-[11px] text-white/40 leading-[1.7] text-center tracking-[0.02em] max-w-4xl mx-auto">
+            {WALL_AVATARS.map(h => `@${h}`).join(" · ")} · +más en{" "}
+            <Link href="/portfolio" className="text-white/65 hover:text-white underline underline-offset-2">
+              daniaceros.com/portfolio
+            </Link>
+          </p>
+        </div>
+      </section>
+
       {/* PROBLEMA INVISIBLE — NUEVO */}
       <section className="border-b border-white/[0.06]">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
@@ -226,7 +313,7 @@ export default function ContenidoMensualPage() {
 
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-px bg-white/10 rounded-2xl overflow-hidden">
           {[
-            ["01", "Una sesión al mes", "Voy a tu negocio con todo el equipo, o vienes a mi estudio en Madrid centro. Mismo precio."],
+            ["01", "Una sesión al mes", "Voy a tu negocio con el equipo de grabación, o vienes a mi estudio en Madrid centro. Mismo precio."],
             ["02", "Grabamos en 2h", "Lees el guion en teleprompter. Yo dirijo encuadre, ritmo y rodaje. Tú no piensas."],
             ["03", "Te entrego tus reels", "Editados, con color, audio y subtítulos. Primer reel en 48h. Resto durante el mes."],
           ].map(([n, title, desc]) => (
@@ -426,6 +513,47 @@ export default function ContenidoMensualPage() {
         </div>
       </section>
 
+      {/* MÁS CASOS — GRID NUEVO */}
+      <section className="border-t border-white/[0.06] bg-[#080808]">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+          <div className="max-w-3xl mb-10">
+            <p className="font-inter text-[11px] uppercase tracking-[0.18em] text-white/40 mb-5">
+              Más casos · Pack mensual activo
+            </p>
+            <h2 className="font-display font-semibold uppercase leading-[1.05] text-[clamp(1.6rem,3.6vw,2.4rem)]">
+              Estos son algunos. <span className="text-[#D4A05A]">Todos verificables en su Instagram.</span>
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {ACTIVE_CLIENTS.map((c) => (
+              <a
+                key={c.handle}
+                href={`https://instagram.com/${c.handle}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-4 p-4 sm:p-5 rounded-xl border border-white/[0.08] bg-white/[0.015] hover:border-[#D4A05A]/40 hover:bg-white/[0.03] transition-colors"
+              >
+                <Image
+                  src={`/avatars/${c.handle}.jpg`}
+                  alt={c.name}
+                  width={56}
+                  height={56}
+                  className="rounded-full object-cover flex-shrink-0"
+                />
+                <div className="min-w-0 flex-1">
+                  <p className="font-inter text-[14px] sm:text-[15px] font-semibold leading-tight">{c.name}</p>
+                  <p className="font-inter text-[11px] text-white/55 mt-1 leading-snug truncate">@{c.handle}</p>
+                  <p className="font-inter text-[10px] text-white/40 mt-0.5 leading-snug">{c.meta}</p>
+                  <p className="font-inter text-[9.5px] tracking-[0.12em] uppercase text-[#D4A05A] mt-2 font-semibold">
+                    {c.tag}
+                  </p>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* PLANES */}
       <section className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
@@ -563,10 +691,10 @@ export default function ContenidoMensualPage() {
             Grabo y edito personalmente<br /><span className="text-white/55">cada cliente.</span>
           </h2>
           <p className="mt-7 font-inter text-[15px] sm:text-[16px] leading-[1.65] text-white/70 max-w-2xl mx-auto">
-            Sin agencia. Sin equipo externo. Sin externalizar la post-producción. Por eso solo puedo
-            mantener un máximo de <span className="text-white font-semibold">10-12 clientes activos en
-            paralelo</span> manteniendo la calidad que prometo. Cuando llegue al tope, entras en lista
-            de espera.
+            Producción in-house. Sin intermediarios. Sin externalizar la post-producción. Por eso solo
+            puedo mantener un máximo de <span className="text-white font-semibold">10-12 clientes
+            activos en paralelo</span> manteniendo la calidad que prometo. Cuando llegue al tope,
+            entras en lista de espera.
           </p>
         </div>
       </section>
