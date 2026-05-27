@@ -115,8 +115,8 @@ export default function ContenidoMensualPage() {
                 style={{ "--lux-delay": "120ms" } as CSSProperties}
                 className="hero-fade-up hero-fade-up-delay-1 mt-5 font-display font-semibold uppercase leading-[0.95] text-[clamp(2.2rem,7vw,5rem)]"
               >
-                En 2 horas grabamos<br />
-                los <span className="text-white/55">12 reels de tu mes.</span>
+                Una sesión al mes.<br />
+                <span className="text-white/55">Treinta días de feed activo.</span>
               </h1>
 
               <p
@@ -124,8 +124,8 @@ export default function ContenidoMensualPage() {
                 style={{ "--lux-delay": "200ms" } as CSSProperties}
                 className="hero-fade-up hero-fade-up-delay-2 mt-6 max-w-xl font-inter text-[15px] sm:text-[16px] leading-[1.65] text-white/72"
               >
-                Tú apareces, lees el teleprompter y te vas. Yo grabo, edito y te entrego 12 piezas — 3 cada
-                semana — todo el mes activo. Sin reuniones semanales. Sin briefings infinitos.
+                Tú apareces, lees el teleprompter y te vas. Yo grabo, edito y publico tu contenido del mes —
+                todo el feed activo, sin reuniones semanales, sin briefings infinitos.
               </p>
 
               <div
@@ -134,36 +134,21 @@ export default function ContenidoMensualPage() {
                 className="hero-fade-up hero-fade-up-delay-3 mt-8 flex flex-col sm:flex-row gap-3"
               >
                 <Link
-                  href="/contacto"
+                  href="https://wa.me/34711255496?text=Hola%20Dani%2C%20vengo%20de%20daniaceros.com%2Fcontenido-mensual%20y%20me%20interesa%20el%20pack%20mensual."
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex min-h-[56px] items-center justify-center rounded-2xl bg-white px-7 py-4 font-inter text-[13px] font-semibold uppercase tracking-[0.06em] text-black hover:bg-white/90 transition-colors"
                 >
-                  Empezar este mes
+                  Hablar por WhatsApp
                 </Link>
                 <Link
-                  href="https://drive.google.com/file/d/1m4xJaT_4DuwG_PZtnaFq7_HhHjLYAOcA/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1MQSyXhSypN4YZ4pihi9zeOu1sgGRUOjb/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex min-h-[56px] items-center justify-center rounded-2xl border border-white/25 bg-white/[0.03] px-7 py-4 font-inter text-[13px] font-semibold uppercase tracking-[0.06em] text-white hover:bg-white/[0.07] transition-colors"
                 >
                   Ver dossier
                 </Link>
-              </div>
-
-              <div
-                data-lux
-                style={{ "--lux-delay": "360ms" } as CSSProperties}
-                className="hero-fade-up mt-12 grid grid-cols-3 gap-4 sm:gap-6 max-w-md"
-              >
-                {[
-                  ["12", "reels al mes"],
-                  ["2h", "de tu tiempo"],
-                  ["+50", "proyectos"],
-                ].map(([n, label]) => (
-                  <div key={label} className="border-l border-white/15 pl-3 sm:pl-4">
-                    <p className="font-display text-[clamp(1.6rem,4vw,2.6rem)] font-semibold leading-none">{n}</p>
-                    <p className="mt-1.5 font-inter text-[10px] sm:text-[11px] uppercase tracking-[0.08em] text-white/45">{label}</p>
-                  </div>
-                ))}
               </div>
             </div>
 
@@ -226,54 +211,6 @@ export default function ContenidoMensualPage() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* WALL DE AUTORIDAD — NUEVO */}
-      <section className="border-b border-white/[0.06] bg-[#080808]">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-          <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-4 mb-10">
-            <div>
-              <p className="font-inter text-[11px] uppercase tracking-[0.18em] text-white/40 mb-3">
-                Clientes activos · 2024-2026
-              </p>
-              <h2 className="font-display font-semibold uppercase leading-[1.05] text-[clamp(1.6rem,3.6vw,2.4rem)]">
-                Cuentas reales <span className="text-[#D4A05A]">publicando ahora</span>.
-              </h2>
-            </div>
-            <p className="font-inter text-[12px] sm:text-[13px] text-white/45 leading-[1.55] max-w-xs">
-              No son testimonios.<br />Son cuentas activas — verificables en Instagram.
-            </p>
-          </div>
-          <div className="grid grid-cols-5 sm:grid-cols-8 lg:grid-cols-10 gap-3 sm:gap-4">
-            {WALL_AVATARS.map((handle) => (
-              <a
-                key={handle}
-                href={`https://instagram.com/${handle}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group block aspect-square rounded-full overflow-hidden border border-white/10 bg-white/[0.02] hover:border-[#D4A05A]/60 transition-colors"
-                aria-label={`@${handle}`}
-              >
-                <Image
-                  src={`/avatars/${handle}.jpg`}
-                  alt={`@${handle}`}
-                  width={120}
-                  height={120}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-              </a>
-            ))}
-            <div className="aspect-square rounded-full border border-dashed border-white/20 flex items-center justify-center font-inter text-[10px] tracking-[0.12em] text-white/55">
-              +más
-            </div>
-          </div>
-          <p className="mt-8 font-inter text-[11px] text-white/40 leading-[1.7] text-center tracking-[0.02em] max-w-4xl mx-auto">
-            {WALL_AVATARS.map(h => `@${h}`).join(" · ")} · +más en{" "}
-            <Link href="/portfolio" className="text-white/65 hover:text-white underline underline-offset-2">
-              daniaceros.com/portfolio
-            </Link>
-          </p>
         </div>
       </section>
 
@@ -513,17 +450,51 @@ export default function ContenidoMensualPage() {
         </div>
       </section>
 
-      {/* MÁS CASOS — GRID NUEVO */}
+      {/* WALL DE AUTORIDAD — MOVIDO POST-CASOS DEEP */}
       <section className="border-t border-white/[0.06] bg-[#080808]">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-          <div className="max-w-3xl mb-10">
-            <p className="font-inter text-[11px] uppercase tracking-[0.18em] text-white/40 mb-5">
-              Más casos · Pack mensual activo
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 pb-10">
+          <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-4 mb-10">
+            <div>
+              <p className="font-inter text-[11px] uppercase tracking-[0.18em] text-white/40 mb-3">
+                Clientes activos · 2024-2026
+              </p>
+              <h2 className="font-display font-semibold uppercase leading-[1.05] text-[clamp(1.6rem,3.6vw,2.4rem)]">
+                Cuentas reales <span className="text-[#D4A05A]">publicando ahora</span>.
+              </h2>
+            </div>
+            <p className="font-inter text-[12px] sm:text-[13px] text-white/45 leading-[1.55] max-w-xs">
+              No son testimonios.<br />Son cuentas activas — verificables en Instagram.
             </p>
-            <h2 className="font-display font-semibold uppercase leading-[1.05] text-[clamp(1.6rem,3.6vw,2.4rem)]">
-              Estos son algunos. <span className="text-[#D4A05A]">Todos verificables en su Instagram.</span>
-            </h2>
           </div>
+          <div className="grid grid-cols-5 sm:grid-cols-8 lg:grid-cols-10 gap-3 sm:gap-4">
+            {WALL_AVATARS.map((handle) => (
+              <a
+                key={handle}
+                href={`https://instagram.com/${handle}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block aspect-square rounded-full overflow-hidden border border-white/10 bg-white/[0.02] hover:border-[#D4A05A]/60 transition-colors"
+                aria-label={`@${handle}`}
+              >
+                <Image
+                  src={`/avatars/${handle}.jpg`}
+                  alt={`@${handle}`}
+                  width={120}
+                  height={120}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </a>
+            ))}
+            <div className="aspect-square rounded-full border border-dashed border-white/20 flex items-center justify-center font-inter text-[10px] tracking-[0.12em] text-white/55">
+              +más
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* MÁS CASOS — GRID (CONTINUACIÓN WALL) */}
+      <section className="border-b border-white/[0.06] bg-[#080808]">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pb-16 sm:pb-20">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {ACTIVE_CLIENTS.map((c) => (
               <a
