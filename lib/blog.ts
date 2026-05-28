@@ -2617,6 +2617,148 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "sonido-directo-entrevistas",
+    title: "Sonido directo para entrevistas corporativas: lo mínimo que necesitas",
+    description:
+      "Tres elementos de audio para grabar entrevistas corporativas con sonido limpio: micrófono de solapa, grabadora de backup y monitorización en tiempo real.",
+    publishedAt: "2026-05-28",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: [
+      "sonido para vídeo",
+      "entrevistas corporativas",
+      "producción audiovisual",
+      "vídeo corporativo",
+      "equipo técnico",
+    ],
+    keyword: "sonido directo para entrevistas",
+    intent: "informacional",
+    excerpt:
+      "El audio decide más cosas de las que parece. Esto es lo mínimo que necesito para grabar entrevistas corporativas con sonido limpio.",
+    seoTitle: "Sonido directo para entrevistas corporativas | Daniel Acero",
+    metaDescription:
+      "Sonido directo para entrevistas corporativas: qué micrófono, grabadora y configuración necesitas para capturar audio limpio en producción.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "El audio decide más cosas de las que parece. Puedes tener una imagen perfecta, bien expuesta, con buen color, y arruinar el vídeo entero con un sonido malo. En entrevistas corporativas esto es especialmente evidente porque el espectador escucha hablar a alguien durante dos o tres minutos. Si ese audio falla, el mensaje no llega.",
+      },
+      {
+        type: "paragraph",
+        text: "No hace falta montar un estudio de grabación. Hay tres elementos básicos que cambian completamente el resultado. Los uso en casi cada entrevista que grabo.",
+      },
+      {
+        type: "image",
+        src: "/blog/sonido-directo-entrevistas/hero.webp",
+        alt: "Micrófono de solapa listo para grabar una entrevista corporativa",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Por qué el audio arruina más vídeos que la imagen",
+      },
+      {
+        type: "paragraph",
+        text: "Los micrófonos integrados en cámaras captan todo: el aire acondicionado, el tráfico de la calle, los pasos del pasillo, el murmullo de un ordenador. Cuando hay un fondo de ruido constante, el cerebro lo detecta aunque el espectador no lo identifique conscientemente. El resultado es una sensación de baja calidad que afecta a cómo percibe el mensaje, la empresa y al entrevistado.",
+      },
+      {
+        type: "paragraph",
+        text: "El problema añadido de grabar en oficinas es que son espacios llenos de superficies reflectantes: paredes lisas, cristal, suelos de parqué. El sonido rebota y crea un reverb que hace que la voz suene lejana o encajonada. Un micrófono de solapa situado a 15-20 cm de la boca del entrevistado captura la voz antes de que ese reverb se mezcle. Esa diferencia es enorme.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Los tres elementos mínimos para sonido limpio",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Micrófono de solapa (lavalier)",
+      },
+      {
+        type: "paragraph",
+        text: "Es el elemento más crítico. Un lavalier inalámbrico como el Rode Wireless GO II o el DJI Mic Mini pone el micrófono cerca de la fuente de sonido y elimina prácticamente todos los problemas de ambiente. El receptor se conecta directamente a la cámara o a la grabadora. En exteriores añado un deadcat para cortar el viento. La calidad de estos sistemas ha mejorado enormemente en los últimos años; ya no hay excusa para grabar con el micrófono de cámara.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Grabadora portátil",
+      },
+      {
+        type: "paragraph",
+        text: "Cuando el sistema inalámbrico falla o quiero un canal de seguridad, grabo también con una Zoom H1n o una Tascam DR-05X conectada directamente al lavalier. Cuesta menos de 80 euros, cabe en el bolsillo y actúa como backup. Pongo la grabadora en el bolsillo del entrevistado o en el cinturón y sincronizo el audio en edición. DaVinci Resolve tiene una función de sincronización automática por forma de onda que lo hace en segundos. Si el sistema inalámbrico tiene cualquier problema, tengo la toma íntegra en la grabadora.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Monitor de auriculares",
+      },
+      {
+        type: "paragraph",
+        text: "No puedes corregir en postproducción lo que no sabes que está mal durante la grabación. Con unos auriculares monitorizando el audio en tiempo real, detectas cualquier problema antes de que sea tarde: un crujido en el cable, un soplido de aire acondicionado, saturación en la ganancia. No necesitas auriculares de estudio; unos in-ear con buena atenuación pasiva son suficientes. Revisa los niveles en la grabadora o en la cámara antes de empezar cada toma.",
+      },
+      {
+        type: "image",
+        src: "/blog/sonido-directo-entrevistas/mid.webp",
+        alt: "Equipo de producción audiovisual durante grabación de entrevista",
+        width: 1920,
+        height: 1282,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Errores que deberías evitar",
+      },
+      {
+        type: "list",
+        items: [
+          "Poner el lavalier demasiado bajo: cuanto más lejos de la boca, más ambiente capta. Anclarlo en el primer botón de la camisa o en la solapa, no en el cinturón.",
+          "Saltarse el deadcat en exterior: aunque no haya viento fuerte, cualquier movimiento de aire genera ruidos que no se pueden quitar en postproducción.",
+          "Fiarse del auto-gain de la cámara: el control automático de ganancia sube el volumen en los silencios y capta todo el ruido de fondo. Siempre en manual.",
+          "Grabar sin canal de seguridad: si el único micrófono falla durante la entrevista, pierdes la toma. La grabadora portátil como backup evita situaciones irreparables.",
+          "No hacer prueba de sonido antes de empezar: 30 segundos de prueba con auriculares te evitan descubrir el problema al revisar el material en el ordenador.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Mejor lavalier de cable o inalámbrico?",
+        answer:
+          "Para entrevistas en interior donde el entrevistado no se mueve, el cable funciona bien y elimina el riesgo de interferencias. En exterior o en espacios con mucho movimiento, el inalámbrico da más libertad y reduce el riesgo de tirones. Yo uso casi siempre inalámbrico porque hace la grabación más cómoda para el entrevistado y me da más flexibilidad para ajustar encuadre.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué pasa si grabo en una sala con mucho eco?",
+        answer:
+          "El eco no se puede eliminar completamente en postproducción. La solución es capturarlo lo menos posible: acercar el micrófono a la boca del entrevistado, poner tejidos o elementos blandos en la sala si es posible (cortinas, alfombras), y elegir una habitación más pequeña antes que una sala grande vacía. A veces cambiar de habitación es la solución más rápida.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito micrófonos diferentes para exteriores?",
+        answer:
+          "El mismo lavalier sirve para interior y exterior. La diferencia está en los accesorios: deadcat obligatorio en exterior y, si la entrevista es en un sitio con mucho ruido ambiente, valorar hacer la grabación en otro momento o lugar. Los micrófonos de cañón como el Rode NTG4 son una buena alternativa en exterior cuando no se puede poner un lavalier, pero requieren un operador de boom o una montura robusta en cámara.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto debería costar el equipo de audio mínimo?",
+        answer:
+          "Con unos 300-400 euros puedes montar un sistema completo: lavalier inalámbrico tipo DJI Mic Mini (200-250 €), grabadora de backup tipo Zoom H1n (75 €) y auriculares in-ear con buena atenuación (40-60 €). No hace falta más para producir entrevistas corporativas con audio profesional.",
+      },
+      {
+        type: "paragraph",
+        text: "El audio no tiene que ser complicado. Con estos tres elementos funciono en el 90% de las entrevistas corporativas que grabo. Si estás preparando una producción y quieres hablar sobre el equipo que tiene sentido para tu proyecto, puedes escribirme desde la página de contacto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
