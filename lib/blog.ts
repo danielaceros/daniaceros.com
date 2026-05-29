@@ -2759,6 +2759,167 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "color-grading-video-corporativo",
+    title: "Color grading para vídeo corporativo: coherencia visual desde el set hasta la entrega",
+    description:
+      "Qué es el color grading en vídeo corporativo, cómo se aplica en DaVinci Resolve y qué errores evitar para que todos los planos parezcan grabados el mismo día.",
+    publishedAt: "2026-05-29",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "color grading",
+      "vídeo corporativo",
+      "postproducción",
+      "DaVinci Resolve",
+      "filmmaker madrid",
+    ],
+    keyword: "color grading para vídeo corporativo",
+    intent: "informacional",
+    excerpt:
+      "El color grading no es solo aplicar un filtro. Es la capa visual que separa un vídeo corporativo profesional de uno que parece casero. Te explico cómo lo trabajo.",
+    seoTitle: "Color grading para vídeo corporativo | Daniel Acero",
+    metaDescription:
+      "Color grading para vídeo corporativo: qué es, cómo se aplica y qué errores evitar para conseguir un acabado profesional en tus producciones.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cuando entrego un vídeo corporativo, el cliente suele comentar primero la imagen. A veces con ese nombre exacto, otras dicen 'qué buena calidad' o 'parece muy profesional'. Casi siempre están hablando del color grading.",
+      },
+      {
+        type: "paragraph",
+        text: "La corrección y el etalonaje son la diferencia entre un vídeo que parece sacado de un móvil y uno que parece una producción real. No es magia. Es flujo de trabajo.",
+      },
+      {
+        type: "image",
+        src: "/blog/color-grading-video-corporativo/hero.webp",
+        alt: "Cámara de vídeo profesional en un trípode lista para una grabación corporativa.",
+        width: 1920,
+        height: 1280,
+        caption: "La coherencia visual empieza antes de encender la cámara.",
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Qué es el color grading y por qué importa",
+      },
+      {
+        type: "paragraph",
+        text: "El color grading es el proceso de manipular los valores de color de las imágenes grabadas para lograr un resultado visual coherente y con intención. Va desde la corrección básica —blancos bien, exposición equilibrada— hasta el look final: un tono concreto, una atmósfera definida.",
+      },
+      {
+        type: "paragraph",
+        text: "En vídeo corporativo no se busca un look cinematográfico agresivo. Se busca que la imagen sea limpia, que la piel de las personas salga bien y que los colores corporativos de la empresa sean reconocibles. Y, sobre todo, que todos los planos del mismo vídeo parezcan grabados el mismo día con la misma cámara.",
+      },
+      {
+        type: "paragraph",
+        text: "Trabajo principalmente en DaVinci Resolve. Tiene la mejor gestión de color del mercado para este tipo de producciones y, a diferencia de Premiere, la corrección de color no es un añadido, es el núcleo del software.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cómo se hace bien",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Corrección primaria: la base",
+      },
+      {
+        type: "paragraph",
+        text: "El primer paso es la corrección primaria. Igualar la exposición de todos los planos, corregir el balance de blancos, sacar las sombras si están muy cerradas. Si grabas en un perfil Log —S-Log2, S-Log3, C-Log—, primero tienes que aplicar un LUT técnico para llevar la imagen a un espacio de color estándar como REC.709 antes de tocar nada.",
+      },
+      {
+        type: "paragraph",
+        text: "Esta fase no tiene que ver con el estilo. Es resolver problemas: la entrevista en sala que quedó fría, el plano recurso que tiene más luz que el anterior, la toma de exterior que está un punto por encima. Sin una buena base, el look que apliques encima quedará mal.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Look y mood: del Log al REC.709",
+      },
+      {
+        type: "paragraph",
+        text: "Una vez que tienes la imagen corregida técnicamente, puedes trabajar el look. En vídeo corporativo suelo ir hacia tonos neutros, ligeramente cálidos en interiores, con piel bien saturada y fondos discretos. Nada de cruces de canales agresivos ni virados que distorsionen el azul corporativo de la empresa.",
+      },
+      {
+        type: "paragraph",
+        text: "El look lo trabajo con nodos en DaVinci: uno para la curva de contraste, otro para el ajuste de matices con el Hue vs Saturation, y un tercero para la calificación de piel si hay mucha variación entre sujetos. Llevar todo en nodos separados me permite revisar y modificar cada elemento sin deshacer el trabajo anterior.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Consistencia entre planos",
+      },
+      {
+        type: "paragraph",
+        text: "Aquí está la diferencia entre alguien que sabe hacer color grading y alguien que solo sabe usar LUTs. La consistencia. Dos planos de la misma entrevista tienen que tener exactamente el mismo aspecto aunque se grabaran con media hora de diferencia y la luz haya cambiado.",
+      },
+      {
+        type: "paragraph",
+        text: "Uso el scope vectorial y el waveform para comparar planos, no el monitor del portátil. Las pantallas mienten. Los scopes no. Si el vectorscope me dice que la piel de un plano tiene más saturación que el anterior, lo corrijo aunque al ojo parezca igual.",
+      },
+      {
+        type: "image",
+        src: "/blog/color-grading-video-corporativo/intermedia.webp",
+        alt: "Monitor con interfaz de edición de vídeo en postproducción profesional.",
+        width: 1920,
+        height: 1280,
+        caption: "La edición de color en monitor calibrado es la única manera de tomar decisiones visuales fiables.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Errores comunes en color grading corporativo",
+      },
+      {
+        type: "list",
+        items: [
+          "Aplicar un LUT de cine al metraje corporativo sin ajustarlo después. El look queda bien en el fotograma de preview y fatal en movimiento con personas reales.",
+          "No calibrar el monitor. Cualquier trabajo de color hecho en una pantalla descalibrada es trabajo rehecho.",
+          "Usar el mismo look para interiores y exteriores sin adaptar el balance de blancos base. El resultado es incoherente aunque el LUT sea el mismo.",
+          "Saturar en exceso las pieles. El visor engaña; el vectorscope dice la verdad.",
+          "No guardar el archivo original sin corregir. Si el cliente cambia de idea sobre el look, necesitas poder retomar desde cero.",
+          "Hacer el grading antes del montaje definitivo. Si después se cambian planos, hay que rehacer el trabajo de color.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito grabar en Log para hacer un buen color grading?",
+        answer:
+          "No es imprescindible, pero ayuda. Los perfiles Log comprimen la exposición y guardan más información en las luces y las sombras, lo que da más margen de ajuste en postproducción. Si grabas en un perfil estándar REC.709 y la exposición es correcta, puedes hacer un grading perfectamente válido. La diferencia se nota en situaciones de contraste extremo: una ventana iluminada detrás del entrevistado, por ejemplo.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo tarda el color grading de un vídeo corporativo?",
+        answer:
+          "Un vídeo de entrevista de 3 a 5 minutos, bien grabado, lleva entre 1 y 2 horas. Si hay muchos planos recurso con iluminación cambiante o si el metraje tiene problemas de base, puede subir a 3 o 4 horas. Esto es parte del presupuesto de postproducción y hay que dejarlo claro desde el principio.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué software es mejor para color grading corporativo?",
+        answer:
+          "DaVinci Resolve, tanto en versión gratuita como Studio. Para vídeo corporativo la versión gratuita cubre el 95% de lo que necesitas. Premiere y Final Cut tienen herramientas de color decentes, pero la gestión de nodos y los scopes de DaVinci son superiores para trabajo de color serio.",
+      },
+      {
+        type: "faq",
+        question: "¿El color grading se puede hacer en un portátil normal?",
+        answer:
+          "Depende del metraje. Para H.264 o H.265 de una cámara convencional, un portátil moderno aguanta bien con DaVinci en versión gratuita. Para RAW o ProRes de cámaras más exigentes necesitas una tarjeta gráfica decente o proxies. Lo más limitante casi siempre es el monitor: si la pantalla no está calibrada o tiene un gamut pequeño, el color que estás viendo no es real.",
+      },
+      {
+        type: "paragraph",
+        text: "El color grading no debería ser un extra que se añade al final porque falta algo. Es parte de la producción desde el momento en que decides el perfil de color con el que vas a grabar. Si estás preparando una producción y quieres que el resultado final tenga coherencia visual, puedes escribirme desde la página de contacto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
