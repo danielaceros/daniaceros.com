@@ -6,15 +6,15 @@ import ContactCTA from "@/components/ContactCTA"
 import { buildMetadata } from "@/lib/seo"
 
 export const metadata: Metadata = buildMetadata({
-  title: "Pack mensual de contenido para empresas | Daniel Acero",
+  title: "Pack mensual de contenido para clínicas | Daniel Acero",
   description:
-    "En 2 horas grabamos los 12 reels de tu mes. Editados, con subtítulos, listos para publicar. Sin permanencia. Desde 620€/mes. Validado con clientes activos.",
+    "Tus pacientes te buscan en Instagram antes de pedir cita. En 2 horas grabamos los 12 reels de tu mes. Editados, con subtítulos, listos para publicar. Sin permanencia. Desde 590€/mes.",
   path: "/contenido-mensual",
   keywords: [
-    "pack mensual de contenido",
-    "contenido mensual para empresas",
-    "reels mensuales empresa",
-    "filmmaker mensual madrid",
+    "contenido para clínicas",
+    "marketing para clínicas madrid",
+    "reels para clínicas",
+    "contenido redes clínica dental estética",
   ],
 })
 
@@ -30,27 +30,20 @@ const MERIDIAN_BROLL =
 const MERIDIAN_AVATAR =
   "https://storage.googleapis.com/klip-e547f.firebasestorage.app/avatars/meridianbiohealth_avatar.jpg"
 
-const ALEJANDRO_AVATAR =
-  "https://storage.googleapis.com/klip-e547f.firebasestorage.app/avatars/alejandro_estucoach_avatar.jpg"
-
 const ACTIVE_CLIENTS = [
-  { handle: "meridianbiohealth", name: "Meridian Biohealth", meta: "Odontología biológica · Madrid", tag: "30 reels/mes" },
-  { handle: "alejandro_estucoach", name: "Alejandro Pingarrón", meta: "73.9K seguidores · Coach personal", tag: "Sesión mensual" },
-  { handle: "carloscenfermero", name: "Carlos · Enfermero", meta: "Educación clínica", tag: "Pack mensual" },
-  { handle: "lipedemainstituto", name: "Lipedema Instituto", meta: "Clínica · Madrid", tag: "Recurrente" },
-  { handle: "monicavozmediano", name: "Mónica Vozmediano", meta: "Marca personal", tag: "Contenido + lanzamientos" },
-  { handle: "clinicaguinova", name: "Clínica Guinova", meta: "Clínica privada", tag: "Producción audiovisual" },
+  { handle: "meridianbiohealth", name: "Meridian Biohealth", meta: "Odontología biológica · Madrid", tag: "Cliente recurrente" },
+  { handle: "lipedemainstituto", name: "Instituto del Lipedema", meta: "Clínica · Madrid", tag: "Pack mensual" },
+  { handle: "clinicaguinova", name: "Clínica Guinova", meta: "Clínica integral", tag: "Producción recurrente" },
+  { handle: "carloscenfermero", name: "Carlos · Enfermero", meta: "Educación clínica · 262K", tag: "Pack mensual" },
 ]
 
 const WALL_AVATARS = [
-  "meridianbiohealth", "alejandro_estucoach", "carloscenfermero", "lipedemainstituto",
-  "monicavozmediano", "ainafit", "alber.thor", "brianzaballxs",
-  "culturadegym", "_celiarubio", "davidaranzabal", "clinicaguinova",
-  "instalaciones_llorente", "manupalop84", "perfumesxia",
+  "meridianbiohealth", "lipedemainstituto", "clinicaguinova", "carloscenfermero",
+  "ainafit", "culturadegym", "alber.thor", "brianzaballxs", "davidaranzabal",
 ]
 
 const PLANS = [
-  { name: "Starter", price: "620", reels: "8", pubs: "2", session: "2h", extra: null, highlight: false },
+  { name: "Starter", price: "590", reels: "8", pubs: "2", session: "2h", extra: null, highlight: false },
   { name: "Standard", price: "780", reels: "12", pubs: "3", session: "2h", extra: null, highlight: true, badge: "El más demandado" },
   { name: "Premium", price: "1.200", reels: "20", pubs: "5", session: "4h", extra: "+2 destacados · thumbnails", highlight: false },
 ]
@@ -71,12 +64,6 @@ const BONUSES = [
     desc: "Entrega prioritaria del primer reel para arrancar publicación rápido.",
     value: "150€",
   },
-]
-
-const ADD_ONS = [
-  { name: "Guionización", price: "+100€/mes" },
-  { name: "Publicación", price: "+100€/mes" },
-  { name: "Paid Media", price: "A consultar" },
 ]
 
 const CLARIFICATIONS = [
@@ -107,7 +94,7 @@ export default function ContenidoMensualPage() {
                 style={{ "--lux-delay": "60ms" } as CSSProperties}
                 className="hero-fade-up font-inter text-[11px] uppercase tracking-[0.18em] text-white/50"
               >
-                Servicios · Pack mensual de contenido
+                Pack mensual de contenido · Clínicas
               </p>
 
               <h1
@@ -115,8 +102,8 @@ export default function ContenidoMensualPage() {
                 style={{ "--lux-delay": "120ms" } as CSSProperties}
                 className="hero-fade-up hero-fade-up-delay-1 mt-5 font-display font-semibold uppercase leading-[0.95] text-[clamp(2.2rem,7vw,5rem)]"
               >
-                Una sesión al mes.<br />
-                <span className="text-white/55">Treinta días de feed activo.</span>
+                Tu clínica, activa en redes.<br />
+                <span className="text-white/55">Todo el mes, en una sesión.</span>
               </h1>
 
               <p
@@ -124,8 +111,8 @@ export default function ContenidoMensualPage() {
                 style={{ "--lux-delay": "200ms" } as CSSProperties}
                 className="hero-fade-up hero-fade-up-delay-2 mt-6 max-w-xl font-inter text-[15px] sm:text-[16px] leading-[1.65] text-white/72"
               >
-                Tú apareces, lees el teleprompter y te vas. Yo grabo, edito y publico tu contenido del mes —
-                todo el feed activo, sin reuniones semanales, sin briefings infinitos.
+                Tus pacientes te buscan en Instagram antes de pedir cita. Yo me encargo de que te encuentren
+                vivo: tú apareces, lees el teleprompter y te vas. Grabo, edito y publico el contenido de tu clínica.
               </p>
 
               <div
@@ -199,7 +186,7 @@ export default function ContenidoMensualPage() {
           </p>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10">
             {[
-              ["+50", "Empresas, marcas e instituciones", "Desde clínicas privadas hasta FIFA, IFEMA y CINESA."],
+              ["+50", "Empresas, marcas e instituciones", "Desde clínicas privadas hasta IFEMA y Cinesa."],
               ["6", "Años produciendo en España", "Marca personal, marca corporativa, eventos, campaña."],
               ["+1.000", "Piezas producidas y publicadas", "Reels, vídeos largos, fotografía, vídeo de marca."],
               ["100%", "Producción in-house", "Sin intermediarios. Decisión directa, ejecución directa."],
@@ -250,7 +237,7 @@ export default function ContenidoMensualPage() {
 
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-px bg-white/10 rounded-2xl overflow-hidden">
           {[
-            ["01", "Una sesión al mes", "Voy a tu negocio con el equipo de grabación, o vienes a mi estudio en Madrid centro. Mismo precio."],
+            ["01", "Una sesión al mes", "Voy a tu clínica con el equipo de grabación, o vienes a mi estudio en Madrid centro. Mismo precio."],
             ["02", "Grabamos en 2h", "Lees el guion en teleprompter. Yo dirijo encuadre, ritmo y rodaje. Tú no piensas."],
             ["03", "Te entrego tus reels", "Editados, con color, audio y subtítulos. Primer reel en 48h. Resto durante el mes."],
           ].map(([n, title, desc]) => (
@@ -359,92 +346,6 @@ export default function ContenidoMensualPage() {
               >
                 Ver feed completo en Instagram <span aria-hidden>↗</span>
               </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CASO ALEJANDRO — NUEVO */}
-      <section className="border-t border-white/[0.06] bg-[#0a0a0a]">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
-          <div className="grid grid-cols-1 lg:grid-cols-[1.05fr_1fr] gap-10 lg:gap-14 items-center">
-            {/* Alejandro Card */}
-            <div className="mx-auto w-full max-w-[400px]">
-              <div className="rounded-3xl overflow-hidden bg-[#0a0a0a] ring-1 ring-white/10 shadow-2xl">
-                <div className="flex items-center gap-3 p-4 border-b border-white/8">
-                  <div className="relative h-11 w-11 rounded-full overflow-hidden shrink-0 bg-[#0a0a0a]">
-                    <Image
-                      src={ALEJANDRO_AVATAR}
-                      alt="Alejandro Pingarrón"
-                      fill
-                      unoptimized
-                      sizes="44px"
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <div className="flex items-center gap-1.5">
-                      <span className="font-inter text-[14px] font-semibold text-white truncate">alejandro_estucoach</span>
-                      <svg className="h-3.5 w-3.5 shrink-0 text-[#3897F0]" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
-                        <path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z" />
-                      </svg>
-                    </div>
-                    <span className="font-inter text-[12px] text-white/55 block">Alejandro Pingarrón · 73.9K seguidores</span>
-                  </div>
-                  <Link
-                    href="https://www.instagram.com/alejandro_estucoach"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="shrink-0 inline-flex items-center justify-center rounded-lg bg-[#0095F6] hover:bg-[#1877F2] transition-colors px-4 py-1.5 font-inter text-[12px] font-semibold text-white"
-                  >
-                    Seguir
-                  </Link>
-                </div>
-
-                {/* Placeholder visual */}
-                <div className="relative aspect-[9/16] bg-gradient-to-br from-[#3a2f5f] via-[#2a1f4f] to-[#0a0a0a] flex items-center justify-center">
-                  <div className="text-center px-6">
-                    <p className="font-display text-[clamp(2rem,5vw,3.5rem)] font-bold text-white leading-none">73.9K</p>
-                    <p className="mt-3 font-inter text-[10px] uppercase tracking-[0.2em] text-white/70">seguidores</p>
-                    <p className="mt-8 font-inter text-[12px] text-white/85 italic">@alejandro_estucoach</p>
-                  </div>
-                </div>
-
-                <div className="p-4 border-t border-white/8 flex items-center justify-between">
-                  <div className="flex items-center gap-4 text-white/85">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-6 w-6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-6 w-6"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-6 w-6"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-                  </div>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-6 w-6 text-white/85"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <p className="font-inter text-[11px] uppercase tracking-[0.18em] text-white/40 mb-5">
-                Cliente activo · Marca personal
-              </p>
-              <h2 className="font-display font-semibold uppercase leading-[1.05] text-[clamp(1.8rem,4.5vw,2.8rem)]">
-                Alejandro Pingarrón hace<br className="hidden sm:block" /> sesión mensual en mi estudio.
-              </h2>
-              <p className="mt-5 font-inter text-[14px] sm:text-[15px] leading-[1.7] text-white/72 max-w-lg">
-                Pasó de publicar esporádicamente a feed activo posicionando su marca de coaching personal.
-                Sesión mensual en el estudio Atocha — sin necesidad de tener sitio propio para grabar.
-              </p>
-
-              <div className="mt-7 grid grid-cols-3 gap-3 max-w-md">
-                {[
-                  ["73.9K", "seguidores IG"],
-                  ["2h", "una vez al mes"],
-                  ["Coach", "personal"],
-                ].map(([n, label]) => (
-                  <div key={label} className="border-l border-white/15 pl-3">
-                    <p className="font-display text-[clamp(1.2rem,3vw,2rem)] font-semibold leading-none">{n}</p>
-                    <p className="mt-1.5 font-inter text-[10px] uppercase tracking-[0.06em] text-white/50">{label}</p>
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
         </div>
@@ -603,23 +504,19 @@ export default function ContenidoMensualPage() {
           </Link>
         </div>
 
-        {/* ADD-ONS */}
-        <div className="mt-10">
-          <p className="font-inter text-[11px] uppercase tracking-[0.18em] text-white/40 mb-4">
-            Add-ons opcionales
+        {/* TODO INCLUIDO */}
+        <div className="mt-10 rounded-2xl border border-white/12 bg-white/[0.02] p-6 text-center">
+          <p className="font-inter text-[13px] sm:text-[14px] leading-[1.6] text-white/70">
+            <span className="text-white font-semibold">Todo incluido en el pack:</span> guiones, grabación, edición, subtítulos y publicación. Sin extras ni sorpresas — pagas el resultado, no las piezas.
           </p>
-          <div className="flex flex-wrap gap-2.5">
-            {ADD_ONS.map((a) => (
-              <div
-                key={a.name}
-                className="rounded-full border border-white/15 bg-white/[0.03] px-4 py-2.5 font-inter text-[12px] flex items-center gap-2.5"
-              >
-                <span className="font-semibold uppercase tracking-[0.04em]">{a.name}</span>
-                <span className="text-white/40">·</span>
-                <span className="text-white/60">{a.price}</span>
-              </div>
-            ))}
-          </div>
+        </div>
+
+        {/* MODALIDADES DE PAGO */}
+        <div className="mt-4 rounded-2xl border border-white/12 bg-white/[0.02] p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+          <p className="font-inter text-[13px] sm:text-[14px] text-white/70">
+            <span className="text-white font-semibold">¿Pago trimestral?</span> Te baja un 10% y te congelo el precio.
+          </p>
+          <span className="font-inter text-[12px] text-white/45">Mensual cancelable · o trimestral con descuento</span>
         </div>
       </section>
 
