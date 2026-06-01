@@ -127,7 +127,7 @@ export default function ContenidoMensualPage() {
                   Hablar por WhatsApp
                 </Link>
                 <Link
-                  href="https://drive.google.com/file/d/1mmY8k8ZRxSPVFC_tT76hkHRVYZzM_aom/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1qTTN_53kWX3h057iAhZu4kNA0lQiIyTq/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex min-h-[56px] items-center justify-center rounded-2xl border border-white/25 bg-white/[0.03] px-7 py-4 font-inter text-[13px] font-semibold uppercase tracking-[0.06em] text-white hover:bg-white/[0.07] transition-colors"
