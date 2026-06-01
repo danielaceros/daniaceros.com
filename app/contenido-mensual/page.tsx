@@ -34,12 +34,10 @@ const ACTIVE_CLIENTS = [
   { handle: "meridianbiohealth", name: "Meridian Biohealth", meta: "Odontología biológica · Madrid", tag: "Cliente recurrente" },
   { handle: "lipedemainstituto", name: "Instituto del Lipedema", meta: "Clínica · Madrid", tag: "Pack mensual" },
   { handle: "clinicaguinova", name: "Clínica Guinova", meta: "Clínica integral", tag: "Producción recurrente" },
-  { handle: "carloscenfermero", name: "Carlos · Enfermero", meta: "Educación clínica · 262K", tag: "Pack mensual" },
 ]
 
 const WALL_AVATARS = [
-  "meridianbiohealth", "lipedemainstituto", "clinicaguinova", "carloscenfermero",
-  "ainafit", "culturadegym", "alber.thor", "brianzaballxs", "davidaranzabal",
+  "meridianbiohealth", "lipedemainstituto", "clinicaguinova",
 ]
 
 const PLANS = [
@@ -189,7 +187,7 @@ export default function ContenidoMensualPage() {
               ["+50", "Empresas, marcas e instituciones", "Desde clínicas privadas hasta IFEMA y Cinesa."],
               ["6", "Años produciendo en España", "Marca personal, marca corporativa, eventos, campaña."],
               ["+1.000", "Piezas producidas y publicadas", "Reels, vídeos largos, fotografía, vídeo de marca."],
-              ["100%", "Producción in-house", "Sin intermediarios. Decisión directa, ejecución directa."],
+              ["1", "Interlocutor directo", "Hablas conmigo. Yo dirijo tu cuenta de principio a fin."],
             ].map(([num, lab, sub]) => (
               <div key={lab}>
                 <p className="font-display text-[40px] sm:text-[56px] font-light leading-none text-[#D4A05A]">{num}</p>
@@ -367,7 +365,7 @@ export default function ContenidoMensualPage() {
               No son testimonios.<br />Son cuentas activas — verificables en Instagram.
             </p>
           </div>
-          <div className="grid grid-cols-5 sm:grid-cols-8 lg:grid-cols-10 gap-3 sm:gap-4">
+          <div className="grid grid-cols-3 gap-4 sm:gap-6 max-w-md">
             {WALL_AVATARS.map((handle) => (
               <a
                 key={handle}
@@ -386,9 +384,6 @@ export default function ContenidoMensualPage() {
                 />
               </a>
             ))}
-            <div className="aspect-square rounded-full border border-dashed border-white/20 flex items-center justify-center font-inter text-[10px] tracking-[0.12em] text-white/55">
-              +más
-            </div>
           </div>
         </div>
       </section>
@@ -556,42 +551,53 @@ export default function ContenidoMensualPage() {
             Capacidad limitada · Real
           </span>
           <h2 className="font-display font-semibold uppercase leading-[1.05] text-[clamp(1.8rem,4.5vw,3rem)]">
-            Grabo y edito personalmente<br /><span className="text-white/55">cada cliente.</span>
+            Dirijo cada cuenta<br /><span className="text-white/55">de principio a fin.</span>
           </h2>
           <p className="mt-7 font-inter text-[15px] sm:text-[16px] leading-[1.65] text-white/70 max-w-2xl mx-auto">
-            Producción in-house. Sin intermediarios. Sin externalizar la post-producción. Por eso solo
-            puedo mantener un máximo de <span className="text-white font-semibold">10-12 clientes
-            activos en paralelo</span> manteniendo la calidad que prometo. Cuando llegue al tope,
-            entras en lista de espera.
+            Yo llevo tu cuenta: estrategia, guiones y dirección de cada sesión, con un equipo de confianza
+            detrás para la edición. Por eso trabajo con un número <span className="text-white font-semibold">limitado de clínicas
+            activas a la vez</span> — para mantener la calidad que prometo. Cuando llego al tope, entras en lista de espera.
           </p>
         </div>
       </section>
 
-      {/* PRIMER MES + ACLARACIONES (combinados) */}
+      {/* PRIMER MES — TIMELINE VISUAL */}
       <section className="border-t border-white/[0.06] bg-[#080808]">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24 grid grid-cols-1 lg:grid-cols-2 gap-14">
-          <div>
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
+          <div className="max-w-3xl mb-14">
             <p className="font-inter text-[11px] uppercase tracking-[0.18em] text-white/40 mb-5">
               Tu primer mes
             </p>
-            <h2 className="font-display font-semibold uppercase leading-[1.05] text-[clamp(1.6rem,3.6vw,2.2rem)]">
-              De la llamada al primer reel<br /> publicado en 16 días.
+            <h2 className="font-display font-semibold uppercase leading-[1.05] text-[clamp(1.8rem,4.5vw,3rem)]">
+              De la llamada al primer reel<br /><span className="text-white/55">publicado en 16 días.</span>
             </h2>
+          </div>
 
-            <div className="mt-9 space-y-5">
-              {FIRST_MONTH.map(([day, title]) => (
-                <div key={day} className="flex items-center gap-5 border-b border-white/8 pb-4">
-                  <span className="font-display text-[28px] sm:text-[32px] font-semibold text-white/30 w-12 shrink-0">
-                    {day}
-                  </span>
-                  <span className="font-inter text-[14px] sm:text-[15px] font-semibold uppercase tracking-[0.03em]">
+          {/* Timeline */}
+          <div className="relative">
+            {/* Línea conectora */}
+            <div className="hidden md:block absolute top-7 left-0 right-0 h-px bg-gradient-to-r from-[#D4A05A]/20 via-[#D4A05A]/60 to-[#D4A05A]/20" />
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-y-12 gap-x-6">
+              {FIRST_MONTH.map(([day, title], i) => (
+                <div key={day} className="relative flex flex-col items-center text-center md:items-start md:text-left">
+                  {/* Nodo */}
+                  <div className="relative z-10 flex h-14 w-14 items-center justify-center rounded-full border border-[#D4A05A]/40 bg-[#0a0a0a]">
+                    <span className="font-display text-[20px] font-semibold text-[#D4A05A]">{day}</span>
+                  </div>
+                  <p className="mt-2 font-inter text-[10px] uppercase tracking-[0.14em] text-white/35">Día {day}</p>
+                  <h3 className="mt-2 font-inter text-[14px] sm:text-[15px] font-semibold uppercase tracking-[0.03em] leading-snug">
                     {title}
-                  </span>
+                  </h3>
                 </div>
               ))}
             </div>
           </div>
+        </div>
+      </section>
 
+      {/* ACLARACIONES */}
+      <section className="border-t border-white/[0.06] bg-[#080808]">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pb-20 sm:pb-24">
           <div>
             <p className="font-inter text-[11px] uppercase tracking-[0.18em] text-white/40 mb-5">
               Aclaraciones
@@ -600,7 +606,7 @@ export default function ContenidoMensualPage() {
               Letra pequeña, <span className="text-white/55">sin trampas.</span>
             </h2>
 
-            <div className="mt-9 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6">
+            <div className="mt-9 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-6">
               {CLARIFICATIONS.map(([title, body]) => (
                 <div key={title}>
                   <h3 className="font-inter text-[13px] font-semibold uppercase tracking-[0.04em]">{title}</h3>
