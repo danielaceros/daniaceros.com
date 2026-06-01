@@ -192,6 +192,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto (fallback evergreen, sin candidate SC limpio — token SC caducado). Imágenes Unsplash/Pexels.",
   },
+  {
+    slug: "aspect-ratio-169-916-linkedin-instagram",
+    keyword: "aspect ratio 16:9 vs 9:16 LinkedIn Instagram",
+    intent: "informacional",
+    createdAt: "2026-06-01",
+    status: "published",
+    notes: "Auto-generado por blog-auto (fallback evergreen, sin candidate SC limpio — token SC caducado). Imágenes Unsplash/Pexels.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {

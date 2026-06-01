@@ -2920,6 +2920,158 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "aspect-ratio-169-916-linkedin-instagram",
+    title: "Aspect ratio en vídeo corporativo: 16:9 vs 9:16 para LinkedIn e Instagram",
+    description:
+      "Cuándo grabar en 16:9 y cuándo en 9:16 para LinkedIn e Instagram. Criterios prácticos para tomar la decisión antes de la grabación, no en postproducción.",
+    publishedAt: "2026-06-01",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: [
+      "aspect ratio",
+      "vídeo corporativo",
+      "LinkedIn",
+      "Instagram",
+      "formato vídeo",
+      "redes sociales",
+    ],
+    keyword: "aspect ratio 16:9 vs 9:16 LinkedIn Instagram",
+    intent: "informacional",
+    excerpt:
+      "El formato en que grabas un vídeo corporativo importa tanto como el contenido. Explico cuándo usar 16:9 y cuándo 9:16 para LinkedIn e Instagram.",
+    seoTitle: "16:9 vs 9:16 para LinkedIn e Instagram | Daniel Acero",
+    metaDescription:
+      "Aspect ratio en vídeo corporativo: cuándo grabar en 16:9 y cuándo en 9:16 para LinkedIn e Instagram. Guía práctica con criterios reales de producción.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "El formato del vídeo ya no es un detalle técnico que se resuelve en postproducción. Es una decisión de producción que afecta al encuadre, al montaje y a cómo se va a ver el resultado en cada plataforma.",
+      },
+      {
+        type: "paragraph",
+        text: "Trabajo con marcas que me piden vídeos para LinkedIn e Instagram a la vez, y la pregunta del aspect ratio aparece en casi todos los proyectos. La respuesta corta es que depende de dónde va a vivir el vídeo y cuánto tiempo va a durar. La respuesta larga es esta guía.",
+      },
+      {
+        type: "image",
+        src: "/blog/aspect-ratio-169-916-linkedin-instagram/hero.webp",
+        alt: "Pantalla de edición de vídeo profesional con monitor y teclado en estudio de postproducción.",
+        width: 1920,
+        height: 1288,
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Qué es el aspect ratio y por qué importa en vídeo corporativo",
+      },
+      {
+        type: "paragraph",
+        text: "El aspect ratio es la relación entre el ancho y el alto del fotograma. El 16:9 es horizontal: 1920×1080 píxeles, el formato estándar de televisión y web. El 9:16 es vertical: 1080×1920 píxeles, el formato nativo del móvil en vertical. El 1:1 es cuadrado: 1080×1080, heredado de los primeros años de Instagram.",
+      },
+      {
+        type: "paragraph",
+        text: "En el móvil, que es donde se consume la mayor parte del vídeo corporativo hoy, un vídeo 16:9 ocupa menos de un tercio de la pantalla. Un 9:16 la ocupa entera. Esa diferencia de superficie visual es el argumento principal para adaptar el formato según la plataforma.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cómo elegir el formato según la plataforma",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "LinkedIn: 16:9 sigue siendo el estándar",
+      },
+      {
+        type: "paragraph",
+        text: "LinkedIn tiene más tráfico de escritorio que otras plataformas sociales. Sus usuarios acceden desde el trabajo, con un portátil o un monitor delante. El feed de LinkedIn muestra los vídeos en horizontal, y el 16:9 se ve limpio: sin franjas negras, sin recortes. Para entrevistas corporativas, testimonios en sala, recaps de conferencias y contenido pensado para B2B, el 16:9 es el formato correcto.",
+      },
+      {
+        type: "paragraph",
+        text: "Dicho eso, desde hace un par de años LinkedIn da más espacio en la app móvil a vídeos verticales. Si el vídeo dura menos de 60 segundos y está pensado exclusivamente para consumo en teléfono, el 9:16 puede funcionar mejor. Todavía no es la norma en LinkedIn, pero la tendencia está ahí.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Instagram: 9:16 para Reels, 4:5 para el feed",
+      },
+      {
+        type: "paragraph",
+        text: "En Instagram Reels, el 9:16 es el formato nativo. Se puede subir un vídeo 16:9, pero Instagram lo muestra con franjas negras arriba y abajo, lo que reduce el área visible. En Reels la atención se capta en los primeros 2 segundos, y un encuadre que ocupa menos pantalla que el contenido de la competencia es una desventaja real.",
+      },
+      {
+        type: "paragraph",
+        text: "Para el feed estático de Instagram, el formato más eficiente no es el 16:9 sino el 4:5 vertical, que ocupa más espacio en el scroll antes de que el usuario tenga que hacer clic en ver más. El 1:1 también funciona, pero el 4:5 rinde mejor en pantallas modernas.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Cuando tienes que publicar en las dos plataformas",
+      },
+      {
+        type: "paragraph",
+        text: "La solución práctica es grabar en 16:9 con área de seguridad 9:16. Durante la grabación me aseguro de que el sujeto principal —la cara del entrevistado, el producto, el texto clave— cabe dentro del recuadro central vertical del encuadre. En postproducción exporto dos versiones: 16:9 para LinkedIn y web, 9:16 para Instagram y Stories. No es rodar dos vídeos distintos. Es una sola grabación con una planificación de encuadre consciente.",
+      },
+      {
+        type: "image",
+        src: "/blog/aspect-ratio-169-916-linkedin-instagram/intermedia.webp",
+        alt: "Persona grabando vídeo vertical con smartphone para contenido en redes sociales.",
+        width: 1920,
+        height: 1280,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cuándo tiene sentido adaptar el formato (y cuándo no)",
+      },
+      {
+        type: "list",
+        items: [
+          "Adaptar si el vídeo va a vivir principalmente en Reels o Stories. El retorno en visibilidad justifica la edición adicional.",
+          "Adaptar si el vídeo dura menos de 90 segundos. A partir de esa duración, el consumo en formato vertical cae significativamente.",
+          "No adaptar si el presupuesto no cubre dos ediciones distintas y el destino principal es web o presentaciones corporativas.",
+          "No adaptar si el encuadre original depende del ancho: exteriores amplios, planos de locación, escenas con varios sujetos. Recortar a 9:16 puede quedar mal.",
+          "Decidirlo antes de grabar, no en postproducción. Un plano compuesto para 16:9 puede ser imposible de recortar a vertical sin perder información esencial.",
+          "Si hay dudas, grabar con más margen en la composición. Mejor tener espacio para recortar que no poder hacerlo.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Qué pasa si subo un vídeo 16:9 a Instagram Reels?",
+        answer:
+          "Instagram lo acepta, pero lo muestra con franjas negras arriba y abajo. El vídeo ocupa menos pantalla que un Reel en 9:16. En un formato donde la competencia por la atención es intensa y los primeros fotogramas son decisivos, esa reducción de área visible es una desventaja práctica.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito dos cámaras para grabar en 16:9 y 9:16?",
+        answer:
+          "No. Con una sola cámara y una planificación de encuadre correcta puedes generar ambos formatos en postproducción. La clave es dejar suficiente espacio encima y debajo del sujeto durante la grabación para que el recorte vertical no corte información relevante. Es una decisión de composición, no de equipamiento.",
+      },
+      {
+        type: "faq",
+        question: "¿El 1:1 sigue siendo útil para vídeo corporativo?",
+        answer:
+          "En el feed de Instagram y Facebook funciona razonablemente bien porque ocupa más espacio en el scroll que el 16:9. Para Reels y Stories ya no es el formato ideal. Si tengo que elegir entre 1:1 y 9:16 para contenido pensado para móvil, elijo 9:16. Si el destino es solo el feed estático, el 4:5 es mejor opción que el 1:1.",
+      },
+      {
+        type: "faq",
+        question: "¿El aspect ratio afecta al rendimiento algorítmico del vídeo?",
+        answer:
+          "De forma indirecta, sí. El algoritmo de Instagram favorece el contenido que usa el formato nativo de cada ubicación. Un Reel en 9:16 ocupa más pantalla y tiene más posibilidades de generar engagement que uno en 16:9 con franjas. No es una penalización explícita, pero la diferencia en área visual influye en el porcentaje de reproducción y en la probabilidad de aparición en la pantalla de exploración.",
+      },
+      {
+        type: "paragraph",
+        text: "El aspect ratio es una decisión que se toma antes de pulsar grabar, no después de la edición. Si estás planificando una producción para LinkedIn e Instagram y quieres asegurarte de que el resultado funciona en las dos plataformas, puedes escribirme desde la página de contacto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
