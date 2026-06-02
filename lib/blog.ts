@@ -3072,6 +3072,152 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "subtitulos-automaticos-video-corporativo",
+    title: "Subtítulos automáticos en vídeo corporativo: pros, contras y cuándo usarlos",
+    description:
+      "Guía práctica sobre subtítulos automáticos para vídeo corporativo: cómo funcionan, dónde fallan y cuándo merece la pena hacer la transcripción a mano.",
+    publishedAt: "2026-06-02",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: [
+      "subtítulos automáticos",
+      "vídeo corporativo",
+      "accesibilidad",
+      "post-producción",
+      "edición de vídeo",
+      "DaVinci Resolve",
+    ],
+    keyword: "subtítulos automáticos vídeo corporativo",
+    intent: "informacional",
+    excerpt:
+      "Los generadores automáticos de subtítulos ahorran tiempo, pero tienen límites claros. Cuándo los uso en vídeo corporativo, cuándo no, y qué revisar siempre antes de publicar.",
+    seoTitle: "Subtítulos automáticos en vídeo corporativo | Daniel Acero",
+    metaDescription:
+      "Subtítulos automáticos en vídeo corporativo: qué herramientas funcionan, cuándo ahorra tiempo y cuándo necesitan revisión manual.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "La mayoría de herramientas de edición ya incluyen algún tipo de generador de subtítulos automáticos. DaVinci Resolve, Premiere Pro, CapCut, Descript... todos tienen la función. El flujo es el mismo: subes el vídeo, el software transcribe el audio y te entrega los subtítulos en segundos. Lo que varía es lo que haces después.",
+      },
+      {
+        type: "paragraph",
+        text: "En proyectos de vídeo corporativo uso subtítulos automáticos con frecuencia, pero nunca los publico sin revisar. Aquí cuento en qué escenarios funcionan bien, dónde fallan y cuándo prefiero hacer la transcripción a mano desde el principio.",
+      },
+      {
+        type: "image",
+        src: "/blog/subtitulos-automaticos-video-corporativo/hero.webp",
+        alt: "Monitor de edición de vídeo mostrando una línea de tiempo con subtítulos en un proyecto corporativo",
+        width: 1920,
+        height: 1280,
+        caption: "La revisión de los subtítulos automáticos forma parte del proceso de edición.",
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Por qué los subtítulos importan en vídeo corporativo",
+      },
+      {
+        type: "paragraph",
+        text: "El 85% del vídeo en redes sociales se ve sin sonido. En LinkedIn, donde se consume mucho vídeo corporativo, el autoplay en silencio es el comportamiento por defecto. Sin subtítulos, el mensaje desaparece. No es un detalle de accesibilidad: es el medio para que el contenido funcione.",
+      },
+      {
+        type: "paragraph",
+        text: "En entrevistas, testimoniales o vídeos formativos internos, los subtítulos también reducen la carga cognitiva del espectador. Facilitan el seguimiento cuando hay terminología técnica o cuando el audio no es perfectamente nítido por condiciones de rodaje.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cómo funcionan los subtítulos automáticos",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Herramientas que uso",
+      },
+      {
+        type: "paragraph",
+        text: "Para proyectos editados en DaVinci Resolve, uso la función de transcripción integrada disponible desde la versión 18. Para vídeos que van directamente a redes, CapCut tiene una buena implementación en español con ajuste de tipografía sencillo. Para proyectos donde el cliente necesita el archivo SRT por separado, Whisper de OpenAI vía línea de comandos da la mayor precisión que he encontrado de forma consistente.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Dónde funcionan bien",
+      },
+      {
+        type: "paragraph",
+        text: "Cuando el audio es limpio, el hablante habla con claridad y el contenido está en castellano estándar, la precisión es alta: entre el 90 y el 95% de las palabras. En ese escenario, la revisión manual se reduce a corregir puntuación, ajustar el timing de algunos cortes y unificar estilo. El ahorro es real: lo que tardaría 45 minutos en transcribir a mano lo reviso en 10.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Dónde fallan",
+      },
+      {
+        type: "paragraph",
+        text: "Los problemas aparecen con acentos regionales marcados, términos técnicos del sector, nombres propios y habla rápida. En una entrevista donde el portavoz pronuncia denominaciones especializadas del ámbito médico, financiero o legal, el sistema las transcribe como puede. Un error en un término técnico no es un error tipográfico menor: es desinformación. En esos casos, reviso cada línea.",
+      },
+      {
+        type: "image",
+        src: "/blog/subtitulos-automaticos-video-corporativo/intermedia.webp",
+        alt: "Monitor de cámara sobre trípode en un rodaje de entrevista corporativa",
+        width: 1920,
+        height: 1280,
+        caption: "El audio captado en rodaje determina en gran medida la precisión de los subtítulos automáticos.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cuándo hacer la transcripción a mano",
+      },
+      {
+        type: "list",
+        items: [
+          "El vídeo incluye terminología técnica específica del sector del cliente.",
+          "Hay nombres propios de personas, empresas o productos que el modelo no reconoce.",
+          "El hablante tiene acento marcado o habla a ritmo elevado.",
+          "El audio tiene ruido de fondo significativo: eventos, exteriores con viento, oficinas abiertas.",
+          "El contenido tiene uso legal, formativo certificado o auditoría interna, donde cualquier error tiene consecuencias.",
+          "El cliente va a leer los subtítulos antes de aprobar el vídeo y el margen de correcciones es estrecho.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Los subtítulos automáticos son válidos para un vídeo corporativo formal?",
+        answer:
+          "Depende del nivel de precisión que exija el proyecto. Para contenido de redes, sí, con revisión. Para una presentación institucional o un vídeo donde el texto va a ser leído con atención, prefiero transcribir manualmente o revisar al 100% la salida automática antes de dar el vídeo por terminado.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué formato de subtítulos debo entregar al cliente?",
+        answer:
+          "Depende del uso final. SRT es el formato más universal: funciona en YouTube, Vimeo, plataformas de formación y la mayoría de reproductores. Si el cliente quiere subtítulos integrados en el vídeo —burned in—, lo gestiono desde la línea de tiempo de edición directamente, sin necesidad de exportar un archivo separado.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tarda revisar los subtítulos automáticos de un vídeo de 3 minutos?",
+        answer:
+          "Entre 10 y 20 minutos si el audio es limpio y el contenido está en castellano estándar. Si hay muchas correcciones, puede acercarse al tiempo de transcripción manual. Ese es el punto a partir del cual deja de tener sentido usar el automático y merece la pena empezar desde cero.",
+      },
+      {
+        type: "faq",
+        question: "¿Los subtítulos afectan al posicionamiento del vídeo en YouTube?",
+        answer:
+          "YouTube tiene en cuenta el texto de los subtítulos para indexar el contenido. Subtítulos correctos y bien sincronizados ayudan a que el vídeo aparezca en búsquedas relacionadas con lo que se dice en él. Si los subtítulos automáticos tienen errores, esos errores también se indexan.",
+      },
+      {
+        type: "paragraph",
+        text: "Los subtítulos automáticos son una herramienta útil, no un proceso que pueda funcionar sin supervisión. Antes de publicar cualquier vídeo con subtítulos, los reviso. Si estás planificando la producción de un vídeo corporativo y quieres que el resultado esté listo para publicar sin trabajo adicional de tu parte, puedes escribirme desde la página de contacto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
