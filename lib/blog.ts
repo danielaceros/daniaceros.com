@@ -3218,6 +3218,156 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "como-preparar-un-ceo-para-grabar-a-camara",
+    title: "Cómo preparar a un CEO para grabar a cámara",
+    description:
+      "Guía práctica para preparar a un director general antes de grabar a cámara: llamada previa, postura, lenguaje y errores comunes que arruinan la toma.",
+    publishedAt: "2026-06-03",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: [
+      "entrevistas corporativas",
+      "vídeo corporativo",
+      "CEO en cámara",
+      "dirección en rodaje",
+      "producción de vídeo",
+      "filmmaker madrid",
+    ],
+    keyword: "cómo preparar a un CEO para grabar a cámara",
+    intent: "informacional",
+    excerpt:
+      "Grabar a un CEO con naturalidad no es cuestión de talento delante de la cámara. Es preparación: una llamada previa, las preguntas escritas con antelación, y saber qué hacer con las manos cuando se enciende el piloto rojo.",
+    seoTitle: "Cómo preparar a un CEO para grabar a cámara | Daniel Acero",
+    metaDescription:
+      "Cómo preparar a un CEO para grabar a cámara: llamada previa, postura, lenguaje y errores que hay que evitar. Guía práctica de un filmmaker corporativo.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Hay una conversación que tengo en casi todos mis rodajes corporativos. El director general entra a la sala, mira la cámara, y dice: \"Avísame cuando empieces, que delante de la cámara me pongo nervioso.\" Lleva veinte años presentando resultados trimestrales ante cien personas sin inmutarse. Y se pone nervioso delante de un objetivo de 50 mm.",
+      },
+      {
+        type: "paragraph",
+        text: "No es debilidad. Es un problema de preparación. El CEO no sabe qué pasa exactamente cuando empieza a grabar, qué se va a preguntar ni cuánto tiempo dura. Y cuando alguien no sabe qué esperar, el cuerpo se pone en alerta. Mi trabajo, antes de encender la cámara, es eliminar esa incertidumbre.",
+      },
+      {
+        type: "image",
+        src: "/blog/como-preparar-un-ceo-para-grabar-a-camara/hero.webp",
+        alt: "Cámara de cine Sony FS7 sobre trípode en un set de rodaje profesional",
+        width: 1920,
+        height: 1080,
+        caption: "La preparación del portavoz empieza mucho antes de que la cámara se encienda.",
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Por qué la cámara intimida más que hablar en público",
+      },
+      {
+        type: "paragraph",
+        text: "Hablar ante un público da señales de respuesta. Ves caras, puedes ajustar el ritmo y percibes si alguien está siguiendo el discurso. La cámara no da nada. Mira fija y no reacciona. Para alguien que no ha grabado mucho, esa ausencia de feedback es desorientadora.",
+      },
+      {
+        type: "paragraph",
+        text: "El otro factor es la permanencia. Una presentación se olvida. Un vídeo queda. Eso añade presión. El CEO siente que cada frase va a vivir para siempre, y eso le hace buscar la perfección en tiempo real, lo que bloquea el lenguaje natural.",
+      },
+      {
+        type: "paragraph",
+        text: "Por eso la preparación no es solo técnica. Es también psicológica: que llegue al set sabiendo que los errores son normales, que hay margen para repetir, y que el resultado va a estar bien.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cómo preparo al CEO antes de grabar",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "La llamada previa",
+      },
+      {
+        type: "paragraph",
+        text: "Antes de rodar, hago una llamada de 20 minutos con el CEO o con su asistente. No para ensayar guion, sino para repasar el formato: cuántas preguntas hay, qué tipo de respuestas buscamos, si va a leer al teleprompter o improvisar, y cuánto tiempo tenemos en el set. También le digo lo que no tiene que preocuparle: los fallos de pronunciación se cortan, las pausas largas se editan, y si sale mal una toma hay tiempo para repetirla.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "La postura y el espacio antes de empezar",
+      },
+      {
+        type: "paragraph",
+        text: "Cuando llego al set, dedico entre 5 y 10 minutos a colocar al CEO antes de grabar. Le pido que se siente exactamente como se sienta normalmente, no que adopte una postura «correcta» que le va a resultar incómoda después de tres minutos. Regulamos la silla para que no haya tensión en los hombros. Le digo dónde mirar: si hay entrevistador, mira al entrevistador, no a la cámara. Si habla directo a cámara, le sitúo un punto de referencia a la altura correcta para que no eleve la mirada.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "El lenguaje durante la grabación",
+      },
+      {
+        type: "paragraph",
+        text: "Antes de la primera pregunta, hago una toma de calentamiento. Le pido que me diga en voz alta su nombre, su cargo y lo que hacía antes de llegar a ese puesto. No se graba para el vídeo final. Sirve para que la voz se asiente, para que el cuerpo se acostumbre a hablar hacia la cámara, y para que compruebe que el mundo no se acaba si se equivoca. Después de eso, la primera pregunta real sale siempre mejor.",
+      },
+      {
+        type: "image",
+        src: "/blog/como-preparar-un-ceo-para-grabar-a-camara/interior.webp",
+        alt: "Cámara profesional en estudio de producción durante un rodaje corporativo",
+        width: 1920,
+        height: 1280,
+        caption: "Un set organizado y una instrucción clara antes de empezar reduce el tiempo de rodaje.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Errores que arruinan la toma",
+      },
+      {
+        type: "list",
+        items: [
+          "Enviarle el guion completo la noche anterior para que lo memorice. Si lo memoriza, suena a memoria.",
+          "No explicarle el tiempo disponible. La incertidumbre sobre la duración añade presión innecesaria.",
+          "Empezar directamente con la primera pregunta sin una toma de calentamiento.",
+          "Pedirle que «sea natural». Es la instrucción más inútil que existe delante de una cámara.",
+          "Programar el rodaje después de un bloque de reuniones de 4 horas. La fatiga mental se nota en cámara.",
+          "Usar un fondo que el CEO encuentre incómodo o que no represente bien a la empresa.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo necesita un CEO para prepararse antes de grabar?",
+        answer:
+          "Con una llamada previa de 20 minutos y las preguntas escritas con 24 horas de antelación, suele ser suficiente. No hace falta memorizar nada. Solo leer las preguntas para que el tema no le pille de sorpresa.",
+      },
+      {
+        type: "faq",
+        question: "¿Teleprompter o respuestas improvisadas para un CEO?",
+        answer:
+          "Depende del perfil. Los que tienen mucha práctica pública suelen funcionar mejor respondiendo a una pregunta breve sin leer. Los que no graban habitualmente agradecen el teleprompter, siempre que el texto esté escrito en su propio lenguaje y no en jerga de marketing.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué pasa si el CEO no puede soltar un fragmento sin errores?",
+        answer:
+          "Le digo que no pasa nada y seguimos grabando por partes. Una respuesta de 2 minutos se puede grabar en 4 tomas de 30 segundos y montar después sin que se note. Es más trabajo de edición, pero el resultado sale igual de bien.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta maquillaje para grabar a un CEO?",
+        answer:
+          "Un poco de polvo o base ligera ayuda a reducir brillos bajo los focos. No es obligatorio, pero si el CEO va a pasar 30 minutos bajo iluminación directa, lo agradece. Llevo polvo matificante en el kit para esos casos.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes un proyecto que incluye entrevistas a directivos y quieres hablar del formato antes de entrar al set, puedes escribirme desde la página de contacto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
