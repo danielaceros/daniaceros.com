@@ -3368,6 +3368,156 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "teleprompter-cuando-usarlo-y-cuando-no",
+    title: "Teleprompter en vídeo corporativo: cuándo usarlo y cuándo no",
+    description:
+      "Guía práctica para decidir si el teleprompter tiene sentido en tu próximo rodaje corporativo. Cuándo ayuda, cuándo perjudica y qué alternativas existen.",
+    publishedAt: "2026-06-04",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: [
+      "teleprompter",
+      "vídeo corporativo",
+      "rodaje corporativo",
+      "preproducción",
+      "portavoz en cámara",
+      "comunicación corporativa",
+    ],
+    keyword: "teleprompter cuándo usarlo",
+    intent: "informacional",
+    excerpt:
+      "El teleprompter no es siempre la solución. Dos preguntas antes de cada rodaje me dicen si tiene sentido o si va a perjudicar el resultado.",
+    seoTitle: "Teleprompter corporativo: cuándo usarlo | Daniel Acero",
+    metaDescription:
+      "Teleprompter: cuándo usarlo en vídeo corporativo y cuándo no. Guía práctica de Daniel Acero, filmmaker en Madrid, para decidir antes del rodaje.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "El teleprompter lleva décadas en televisión y, en los últimos años, ha llegado a todo tipo de producciones corporativas. La pregunta que me hacen antes de casi cualquier rodaje con portavoz no es si tienen guión, sino si quieren usar teleprompter. Mi respuesta casi nunca es un sí rotundo ni un no absoluto.",
+      },
+      {
+        type: "paragraph",
+        text: "Hay situaciones donde el teleprompter salva el rodaje: reduce tomas, elimina errores y le da seguridad al presentador. Y hay situaciones donde lo arruina: la persona se ve rígida, los ojos no responden con naturalidad y el vídeo pierde credibilidad. La diferencia no está en la herramienta, sino en quién la usa y qué tiene que transmitir.",
+      },
+      {
+        type: "image",
+        src: "/blog/teleprompter-cuando-usarlo-y-cuando-no/hero.webp",
+        alt: "Cámara Sony FS7 en set de rodaje corporativo preparada para grabar con teleprompter",
+        width: 1920,
+        height: 1080,
+        caption: "El teleprompter es una herramienta, no una garantía.",
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Qué es un teleprompter y cómo funciona en producción corporativa",
+      },
+      {
+        type: "paragraph",
+        text: "Un teleprompter es un espejo semitransparente que refleja el texto del guión frente al objetivo de la cámara. El presentador lee las palabras, pero sus ojos miran directamente al objetivo. Desde el punto de vista técnico es sencillo: un tablet o monitor, un cristal a 45 grados y un software que controla la velocidad del desfile de texto.",
+      },
+      {
+        type: "paragraph",
+        text: "En producción corporativa se usa principalmente para vídeos de portavoz, mensajes del CEO, presentaciones de producto o comunicados internos. Cualquier pieza donde alguien tiene que hablar a cámara durante más de 30 segundos y el texto necesita ser preciso es candidata a teleprompter.",
+      },
+      {
+        type: "paragraph",
+        text: "El reto no es técnico. El reto es que la mayoría de las personas que se sientan delante de un teleprompter por primera vez leen. Y cuando se nota que alguien está leyendo, el vídeo pierde credibilidad al instante. El espectador no sabe decirte qué falla exactamente, pero lo percibe.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cuándo tiene sentido usar teleprompter",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Cuando el texto necesita ser exacto",
+      },
+      {
+        type: "paragraph",
+        text: "Hay mensajes donde no hay margen de imprecisión: comunicados legales, anuncios de resultados financieros, discursos de apertura de evento donde cada palabra pesa. En estos casos el teleprompter no es una muleta, es la herramienta correcta. El riesgo de improvisar y decir algo fuera de lugar es mayor que el riesgo de parecer ligeramente preparado.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Cuando el presentador está entrenado",
+      },
+      {
+        type: "paragraph",
+        text: "Los locutores y los presentadores de televisión llevan años leyendo teleprompter sin que se note. Un directivo que hace comunicaciones internas con regularidad también puede aprenderlo. Con dos o tres horas de práctica real, la mayoría consigue un resultado aceptable. Sin práctica, ningún ajuste técnico compensa la mirada vidriosa.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Cuando la pieza es larga o densa en contenido",
+      },
+      {
+        type: "paragraph",
+        text: "Para vídeos de más de dos minutos donde el protagonista tiene que cubrir muchos puntos sin perder el hilo, el teleprompter reduce errores y tomas. Sin él, tres minutos de guión pueden costar cuatro horas de rodaje. Con él, si el presentador lo maneja bien, ese tiempo se recorta a la mitad.",
+      },
+      {
+        type: "image",
+        src: "/blog/teleprompter-cuando-usarlo-y-cuando-no/mid.webp",
+        alt: "Realizadora grabando vídeo a cámara en estudio de producción corporativa",
+        width: 1920,
+        height: 1080,
+        caption: "El estilo de la pieza determina si el teleprompter encaja o sobra.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cuándo el teleprompter perjudica el vídeo",
+      },
+      {
+        type: "list",
+        items: [
+          "Cuando la pieza busca cercanía o espontaneidad: testimoniales, entrevistas de equipo, vídeos de cultura de empresa.",
+          "Cuando el presentador nunca lo ha usado y no hay tiempo para practicar antes del rodaje.",
+          "Cuando el espacio no permite montar el equipo a la distancia correcta y el ángulo de lectura se vuelve evidente.",
+          "Cuando el guión no está cerrado y se sigue editando el texto durante el propio rodaje.",
+          "Cuando el estilo del vídeo es documental o conversacional y la rigidez del teleprompter rompe ese tono.",
+          "Cuando la persona que aparece en cámara es más creíble siendo espontánea que siendo precisa.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes sobre teleprompter en vídeo corporativo",
+      },
+      {
+        type: "faq",
+        question: "¿Se nota en el vídeo que alguien está usando teleprompter?",
+        answer:
+          "Si el presentador está entrenado, no se nota. Si no lo está, sí: los ojos no hacen microexpresiones naturales, el ritmo es demasiado uniforme y la velocidad de parpadeo cambia. El espectador no sabe decirte qué falla, pero percibe que algo no cuadra.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué velocidad es la correcta para el texto del teleprompter?",
+        answer:
+          "Depende de la persona. La mayoría habla entre 130 y 160 palabras por minuto en cámara. El operador ajusta la velocidad para que coincida con el ritmo natural de habla, no al revés. Con mando remoto el propio presentador puede controlarlo, aunque al principio eso genera más nerviosismo que alivio.",
+      },
+      {
+        type: "faq",
+        question: "¿A qué distancia debe estar el presentador de la cámara?",
+        answer:
+          "Para una entrevista estándar rodada con una óptica de 85mm o similar, el presentador suele estar entre dos y tres metros de cámara. A esa distancia, el ángulo de lectura es casi imperceptible. Con ópticas más angulares el teleprompter queda más cerca y el efecto de lectura se vuelve más visible.",
+      },
+      {
+        type: "faq",
+        question: "¿Es mejor teleprompter o aprender el guión de memoria?",
+        answer:
+          "Aprender el guión de memoria da resultados más naturales, pero exige tiempo de preparación que muchos directivos no tienen. Para piezas de 30 a 60 segundos es viable. Para piezas de dos minutos o más, el teleprompter es más eficiente. Una tercera opción que funciona bien es hablar desde puntos clave en lugar de un guión literal: el presentador tiene libertad de expresión y el mensaje queda estructurado.",
+      },
+      {
+        type: "paragraph",
+        text: "Antes de decidir si incluyo teleprompter en un rodaje, pregunto dos cosas: qué tipo de pieza es y cuánto tiempo ha practicado la persona. La respuesta a esas dos preguntas suele decirlo todo. Si tienes un vídeo corporativo en mente y quieres hablar de cómo organizarlo antes del rodaje, puedes escribirme desde la página de contacto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
