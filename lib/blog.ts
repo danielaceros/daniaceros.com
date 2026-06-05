@@ -3518,6 +3518,159 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "locaciones-entrevistas-corporativas-madrid",
+    title: "Locaciones para grabar entrevistas corporativas en Madrid",
+    description:
+      "Qué espacios funcionan de verdad para grabar entrevistas corporativas en Madrid: oficinas, hoteles, coworkings y exteriores. Guía práctica con errores comunes y consejos de producción.",
+    publishedAt: "2026-06-05",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: [
+      "locaciones entrevistas corporativas",
+      "grabar entrevistas Madrid",
+      "locaciones vídeo corporativo",
+      "producción audiovisual Madrid",
+      "filmmaker Madrid",
+    ],
+    keyword: "locaciones para grabar entrevistas corporativas en Madrid",
+    intent: "informacional",
+    excerpt:
+      "Elegir bien la locación marca la diferencia entre una entrevista que parece profesional y una que parece grabada en el trastero. Te cuento las opciones que uso en Madrid y cuándo tiene sentido cada una.",
+    seoTitle: "Locaciones para entrevistas corporativas en Madrid | Daniel Acero",
+    metaDescription:
+      "Locaciones para grabar entrevistas corporativas en Madrid: oficinas, hoteles, coworking, exteriores y estudios. Qué funciona y qué evitar.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Antes de encender una sola cámara, tengo que decidir dónde grabar. La locación determina el sonido, la luz y el fondo, y los tres afectan directamente al resultado final.",
+      },
+      {
+        type: "paragraph",
+        text: "He grabado entrevistas corporativas en Madrid en casi todo tipo de espacio: desde salas de reuniones de empresa hasta jardines en azoteas. Algunas funcionan bien desde el primer momento. Otras requieren trabajo extra que no siempre es posible hacer en el tiempo disponible.",
+      },
+      {
+        type: "image",
+        src: "/blog/locaciones-entrevistas-corporativas-madrid/hero.webp",
+        alt: "Entrevista corporativa en oficina moderna, dos personas sentadas frente a frente con luz natural",
+        width: 1920,
+        height: 1080,
+        caption: "La locación define el tono visual de cualquier entrevista corporativa.",
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Por qué la locación condiciona todo",
+      },
+      {
+        type: "paragraph",
+        text: "En una entrevista corporativa, el entrevistado habla a cámara durante 10 o 20 minutos. El espacio tiene que permitirle concentrarse. Si hay ruido de tráfico, de centralita o de aire acondicionado encendido, la grabación queda comprometida desde el inicio.",
+      },
+      {
+        type: "paragraph",
+        text: "La iluminación es el segundo factor. Muchas oficinas tienen luz de techo dura o fluorescente que aplana las caras y genera sombras poco favorecedoras. Puedo compensarlo con focos propios, pero necesito espacio suficiente para colocarlos bien. El fondo comunica también: una estantería transmite una cosa, un almacén transmite otra. Antes de cualquier rodaje, inspecciono el espacio o pido fotos para evaluar qué traigo y qué evito.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Opciones que uso en Madrid",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "La oficina del cliente",
+      },
+      {
+        type: "paragraph",
+        text: "La opción más cómoda logísticamente. No hay que desplazar al entrevistado y el entorno suele reflejar la identidad de la empresa. Pero hay que reconocer el espacio antes de grabar. Las oficinas abiertas tienen mucho ruido de fondo. Las salas de reuniones suelen estar bien aisladas acústicamente, aunque pueden ser pequeñas para colocar tres puntos de luz y dos cámaras con holgura.",
+      },
+      {
+        type: "paragraph",
+        text: "Pido siempre acceso 45 minutos antes del rodaje para explorar opciones de fondo y ver cómo entra la luz natural a esa hora del día.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Hoteles con sala de reuniones",
+      },
+      {
+        type: "paragraph",
+        text: "Cuando el cliente no tiene oficina o quiere un entorno más neutro, alquilamos una sala de hotel. En Madrid hay muchas opciones en el centro que ofrecen salas por horas con buena acústica y control de luz. El coste ronda los 80-150 euros por tres horas, lo que se absorbe sin problema dentro del presupuesto de producción.",
+      },
+      {
+        type: "paragraph",
+        text: "La ventaja es el silencio: los hoteles cuidan que sus salas no tengan ruido de pasillos ni de cocinas. La desventaja es que el entorno puede quedar genérico si no se trabaja bien el encuadre.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Espacios de coworking o alquiler por horas",
+      },
+      {
+        type: "paragraph",
+        text: "Madrid tiene bastante oferta de espacios que alquilan salas diáfanas o de reuniones por horas, bien equipadas y con buena iluminación natural. El precio varía entre 30 y 80 euros por hora según el barrio y el tipo de espacio. Los de Salamanca o Chamberí suelen tener estética más cuidada.",
+      },
+      {
+        type: "paragraph",
+        text: "Funcionan bien cuando busco fondos más modernos o con estética de startup. No siempre tienen el silencio de un hotel, así que conviene preguntar antes sobre el nivel de ocupación a la hora del rodaje.",
+      },
+      {
+        type: "image",
+        src: "/blog/locaciones-entrevistas-corporativas-madrid/mid.webp",
+        alt: "Mesa de producción con auriculares y micrófono profesional para grabación de audio en entrevista",
+        width: 1920,
+        height: 1280,
+        caption: "El control del sonido empieza mucho antes de conectar el micrófono.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Errores que veo con más frecuencia",
+      },
+      {
+        type: "list",
+        items: [
+          "Grabar con el aire acondicionado encendido sin haberlo previsto: el zumbido se filtra en el audio y no tiene solución en posproducción.",
+          "Colocar al entrevistado con una ventana a la espalda sin gestionar la luz, lo que lo deja silueteado.",
+          "No pedir acceso previo y llegar sin margen para ajustar fondo, focos ni encuadre.",
+          "Elegir un espacio demasiado pequeño: cámaras y focos necesitan distancia del entrevistado para funcionar bien.",
+          "Grabar en exteriores sin plan B para el viento o el ruido de tráfico en horario de alta circulación.",
+          "Asumir que cualquier sala de reuniones sirve sin comprobar el techo, el eco y la temperatura de color de la luz.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo necesito para preparar la locación antes de grabar?",
+        answer: "Depende del espacio. En una sala que ya conozco, 30 minutos son suficientes. Si es la primera vez que trabajo allí, necesito entre 45 y 60 minutos para colocar los focos, hacer pruebas de sonido y ajustar el encuadre definitivo.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar una entrevista corporativa en una cafetería o restaurante?",
+        answer: "Puede funcionar si se graba antes de que abran o en un horario de muy baja ocupación. El problema habitual es el ruido de cocina, la música ambiental y el tránsito de personas. No es mi primera opción para una entrevista que tiene que durar más de cinco minutos.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué tipo de fondo funciona mejor para una entrevista corporativa?",
+        answer: "Prefiero fondos con algo de profundidad y textura: una estantería, una pared con buena luz, o una ventana que crea separación visual entre el entrevistado y el entorno. Los fondos completamente lisos pueden quedar bien si la iluminación es correcta, pero dejan poco margen creativo.",
+      },
+      {
+        type: "faq",
+        question: "¿Es necesario contratar un estudio para una entrevista profesional?",
+        answer: "No necesariamente. La mayoría de entrevistas corporativas que produzco se graban en las instalaciones del cliente o en salas alquiladas. Un estudio tiene sentido cuando necesito control total del entorno, fondos infinitos o croma. Para una entrevista estándar de empresa, el presupuesto se aprovecha mejor en otros elementos.",
+      },
+      {
+        type: "paragraph",
+        text: "Si estás planificando una entrevista corporativa en Madrid y no tienes claro qué locación encaja mejor con tu proyecto, puedo ayudarte a evaluarlo antes de empezar. Escríbeme desde la página de contacto y lo vemos juntos.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {

@@ -224,6 +224,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto (fallback evergreen, sin candidate SC limpio — token SC caducado). Imágenes Unsplash/Pexels.",
   },
+  {
+    slug: "locaciones-entrevistas-corporativas-madrid",
+    keyword: "locaciones para grabar entrevistas corporativas en Madrid",
+    intent: "informacional",
+    createdAt: "2026-06-05",
+    status: "published",
+    notes: "Auto-generado por blog-auto (fallback evergreen, sin candidate SC limpio — token SC caducado). Imágenes Unsplash/Pexels.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {
