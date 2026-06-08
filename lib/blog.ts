@@ -3671,6 +3671,146 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "plazos-realistas-video-corporativo",
+    title: "Plazos realistas para entregar un vídeo corporativo",
+    description:
+      "Cuánto tiempo lleva producir un vídeo corporativo: plazos reales por fase, de preproducción a entrega final. Sin sorpresas en tu planning.",
+    publishedAt: "2026-06-08",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "producción audiovisual",
+      "plazos de entrega",
+      "preproducción",
+      "postproducción",
+      "planificación",
+    ],
+    keyword: "plazos realistas para entregar un vídeo corporativo",
+    intent: "informacional",
+    excerpt:
+      "Cuando un cliente me pregunta cuándo estará listo el vídeo, la respuesta honesta no es una fecha: es un proceso. Estos son los plazos reales por fase para que no haya sorpresas.",
+    seoTitle: "Plazos para un vídeo corporativo | Daniel Acero",
+    metaDescription:
+      "Cuánto tiempo lleva producir un vídeo corporativo: plazos reales por fase, de preproducción a entrega final. Sin sorpresas en tu planning.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cuando un cliente me pregunta cuándo estará listo el vídeo, lo primero que pienso es en cuántas fases quedan por coordinar, no en cuántos días tengo libres. Un vídeo corporativo tiene fases de ida y vuelta: el cliente revisa, el cliente aprueba, yo edito de nuevo. Cada ronda de revisión que no está prevista en el planning alarga el proyecto sin que nadie lo haya pedido.",
+      },
+      {
+        type: "paragraph",
+        text: "Los plazos que describo aquí son los que manejo habitualmente con empresas en Madrid. No son los mínimos posibles ni los más cómodos: son los que permiten trabajar sin comprimir fases y entregar algo que dé orgullo a ambas partes.",
+      },
+      {
+        type: "image",
+        src: "/blog/plazos-realistas-video-corporativo/hero.webp",
+        alt: "Claqueta de rodaje en primer plano durante la producción de un vídeo corporativo",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Qué cuenta como plazo realista",
+      },
+      {
+        type: "paragraph",
+        text: "Un plazo realista no es el tiempo que tarda la edición. Es el tiempo total desde que confirmamos el proyecto hasta que el cliente tiene el archivo final en su poder. Eso incluye la preproducción, la grabación, la edición y las rondas de revisión. Cuando alguien me dice que necesita el vídeo en cuatro días, lo primero que evalúo es si hay tiempo suficiente para hacer bien cada una de esas fases.",
+      },
+      {
+        type: "paragraph",
+        text: "En proyectos simples, sin locaciones complicadas ni muchos participantes, un vídeo de 2-3 minutos puede estar listo en 10 días hábiles desde el arranque. En proyectos con entrevistas múltiples, viajes o dependencias de terceros, el rango habitual es de 3 a 5 semanas.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cómo se distribuyen los plazos por fase",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Preproducción: de 3 a 10 días hábiles",
+      },
+      {
+        type: "paragraph",
+        text: "Esta fase incluye la reunión de briefing, la definición del guion o estructura narrativa, la selección de locaciones, la coordinación de participantes y la logística de rodaje. En empresas pequeñas con buena disposición, tres días son suficientes. En organizaciones con procesos internos de aprobación, puede llegar a diez. El error más habitual es subestimarla y arrancar el rodaje sin los elementos básicos definidos.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Grabación: de 1 a 3 jornadas",
+      },
+      {
+        type: "paragraph",
+        text: "Una jornada de rodaje de 8 horas permite generar entre 6 y 10 minutos de vídeo editado final, dependiendo del ritmo y el número de participantes. Para vídeos de hasta 3 minutos, una jornada bien organizada suele ser suficiente. Para proyectos con varias locaciones o muchos testimoniales, necesito dos o tres jornadas. Comprimir más de lo razonable en un solo día compromete la calidad del material grabado.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Edición y entrega: de 5 a 15 días hábiles",
+      },
+      {
+        type: "paragraph",
+        text: "La edición de un vídeo de 2-3 minutos lleva entre 8 y 16 horas de trabajo según la complejidad del montaje, la cantidad de material grabado y el grado de acabado en colorimetría y audio. A eso hay que sumar al menos una ronda de revisión con el cliente y sus correcciones. Con dos rondas de revisión pactadas de antemano, el plazo total de postproducción suele quedar entre 8 y 12 días hábiles.",
+      },
+      {
+        type: "image",
+        src: "/blog/plazos-realistas-video-corporativo/intermedia.webp",
+        alt: "Claqueta de producción audiovisual en exterior durante una jornada de rodaje",
+        width: 1920,
+        height: 1298,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Factores que alargan los plazos sin que nadie lo vea venir",
+      },
+      {
+        type: "list",
+        items: [
+          "Revisiones por correo sin consolidar: cuando cuatro personas del cliente mandan comentarios por separado y en momentos distintos, cada ronda se convierte en dos.",
+          "Participantes que cancelan el día del rodaje: reorganizar una jornada a última hora consume tiempo de preproducción que ya no existe.",
+          "Material de archivo en formatos incompatibles: si el cliente aporta vídeos en resoluciones o códecs que necesitan conversión, eso no estaba en el planning.",
+          "Guion que cambia después del rodaje: reescribir la narrativa en postproducción es posible, pero multiplica las horas de edición.",
+          "Aprobaciones que dependen de una sola persona ausente: un director que está de viaje puede detener el proyecto durante una semana.",
+          "Música con derechos no resueltos: usar una canción sin licencia en la entrega final obliga a reemplazarla, lo que afecta al montaje y al timing.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes sobre plazos en vídeo corporativo",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tarda un vídeo corporativo de 1 minuto?",
+        answer: "Entre 7 y 12 días hábiles desde el arranque, si el briefing está claro y los participantes están disponibles. La grabación puede hacerse en medio día, pero la edición, las revisiones y la entrega final requieren su tiempo aunque el vídeo sea corto.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede hacer un vídeo corporativo en 48 horas?",
+        answer: "En casos de urgencia real, es posible tener un vídeo sencillo en 48 horas: rodaje de pocas horas, edición básica y sin rondas de revisión. Pero ese escenario implica saltarse la preproducción, lo que se nota en el resultado. No lo recomiendo como modo de trabajo habitual.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuántas rondas de revisión son razonables?",
+        answer: "Trabajo con dos rondas de revisión incluidas en el presupuesto. La primera sirve para ajustar estructura, ritmo y selección de planos. La segunda, para correcciones de detalle. Una tercera ronda es posible, pero implica tiempo adicional que hay que valorar.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué puedo hacer para acelerar los plazos sin perder calidad?",
+        answer: "Lo que más acelera un proyecto es tener el briefing cerrado antes de empezar, confirmar la disponibilidad de todos los participantes con antelación, designar una sola persona del equipo del cliente para consolidar comentarios y no cambiar el guion una vez arrancado el rodaje.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes un proyecto con una fecha de entrega ajustada y quieres saber si es viable, cuéntame los detalles desde la página de contacto. Evaluamos juntos si los plazos son realistas y qué habría que ajustar para llegar.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {

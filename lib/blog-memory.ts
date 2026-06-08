@@ -232,6 +232,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto (fallback evergreen, sin candidate SC limpio — token SC caducado). Imágenes Unsplash/Pexels.",
   },
+  {
+    slug: "plazos-realistas-video-corporativo",
+    keyword: "plazos realistas para entregar un vídeo corporativo",
+    intent: "informacional",
+    createdAt: "2026-06-08",
+    status: "published",
+    notes: "Auto-generado por blog-auto (fallback evergreen, sin candidate SC limpio — token SC caducado). Imágenes Unsplash/Pexels.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {
