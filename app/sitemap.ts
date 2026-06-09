@@ -24,7 +24,7 @@ const sitemapUrls = [
   "https://daniaceros.com/politica-de-cookies",
   "https://daniaceros.com/portfolio/fifa",
   "https://daniaceros.com/portfolio/camara-de-comercio",
-  "https://daniaceros.com/portfolio/federacion-esgrima",
+  "https://daniaceros.com/portfolio/real-madrid-riquelme",
   "https://daniaceros.com/portfolio/ikami",
   "https://daniaceros.com/portfolio/cinesa",
   "https://daniaceros.com/portfolio/tengo-un-plan",
