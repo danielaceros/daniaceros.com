@@ -437,7 +437,7 @@ export const projects = [
 },
 {
   slug: "real-madrid-riquelme",
-  title: "Riquelme · Real Madrid",
+  title: "Real Madrid",
   video: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/real-madrid-riquelme.mp4?alt=media&token=0f313db2-e4e3-4efa-8bb0-fcd8a1f00416",
   href: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/real-madrid-riquelme.mp4?alt=media&token=0f313db2-e4e3-4efa-8bb0-fcd8a1f00416",
   sections: [
