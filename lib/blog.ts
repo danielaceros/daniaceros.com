@@ -3811,6 +3811,145 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "direccion-de-arte-video-corporativo",
+    title: "Dirección de arte para vídeo corporativo: qué es y cómo aplicarla",
+    description:
+      "La dirección de arte define el aspecto visual de tu vídeo mucho antes de encender la cámara. Qué supone en un rodaje corporativo y cómo evitar los errores más frecuentes.",
+    publishedAt: "2026-06-09",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: [
+      "dirección de arte",
+      "vídeo corporativo",
+      "producción audiovisual",
+      "filmmaker madrid",
+      "rodaje corporativo",
+    ],
+    keyword: "dirección de arte para vídeo corporativo",
+    intent: "informacional",
+    excerpt:
+      "La dirección de arte define el aspecto visual de tu vídeo mucho antes de encender la cámara. Te explico qué supone en un rodaje corporativo y por qué vale la pena planificarla.",
+    seoTitle: "Dirección de arte en vídeo corporativo | Daniel Acero",
+    metaDescription:
+      "Dirección de arte para vídeo corporativo: qué es, cómo aplicarla en rodajes de empresa y los errores más comunes que arruinan el resultado visual.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "La dirección de arte no es solo poner flores en el fondo de una entrevista. Es la decisión consciente de cada elemento visual que aparece en pantalla: el espacio, la paleta de color, el vestuario, el atrezo. En un vídeo corporativo, esas decisiones determinan si la empresa parece lo que dice ser o simplemente parece una empresa más.",
+      },
+      {
+        type: "paragraph",
+        text: "He rodado con clientes que llegaban al set con la sala preparada, el portavoz bien vestido y los detalles pensados de antemano. La diferencia en postproducción es notable. Y he rodado en situaciones en las que nadie había pensado en nada, y el resultado —incluso con buena iluminación— nunca termina de convencer.",
+      },
+      {
+        type: "image",
+        src: "/blog/direccion-de-arte-video-corporativo/hero.webp",
+        alt: "Preparativos antes de una entrevista corporativa en un set de vídeo",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Qué es la dirección de arte en un vídeo corporativo",
+      },
+      {
+        type: "paragraph",
+        text: "En cine y publicidad, el director de arte gestiona todo el aspecto visual de la producción: sets, decorados, paleta cromática, vestuario, atrezo. En el vídeo corporativo, ese rol rara vez recae en una persona dedicada. Lo asume el realizador, el cliente, o nadie —y eso último se nota.",
+      },
+      {
+        type: "paragraph",
+        text: "En la práctica, dirección de arte en un vídeo de empresa significa tomar decisiones previas al rodaje: dónde grabamos, qué aparece en plano, qué colores predominan, qué viste el portavoz, qué hay —y qué no hay— sobre la mesa. No hace falta un presupuesto de producción de cine. Hace falta tiempo para pensar antes del día del rodaje.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cómo se aplica bien",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "El espacio y la escenografía",
+      },
+      {
+        type: "paragraph",
+        text: "Elegir el espacio correcto es la primera decisión de arte. Una oficina diáfana con buena luz natural funciona; una sala de reuniones con paneles grises y fluorescentes, no. Si el espacio propio no da bien, plantearse una locación externa tiene sentido. Dentro del espacio elegido, hay que despejar: quitar cables sueltos, ordenar estanterías visibles al fondo, retirar objetos que distraen. Lo que no aporta, resta.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "La paleta de color y el vestuario",
+      },
+      {
+        type: "paragraph",
+        text: "Los colores de lo que aparece en plano tienen que convivir. Si la empresa usa azul marino en su identidad, que el portavoz no llegue con una camisa de rayas verdes y naranjas. No hablo de uniformes: hablo de coherencia. Lo mismo aplica a las paredes de fondo, a los muebles visibles, al papel sobre la mesa. Una paleta de 2 o 3 colores que no se peleen entre sí es suficiente.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "El atrezo y los detalles de marca",
+      },
+      {
+        type: "paragraph",
+        text: "El atrezo corporativo son los elementos que reafirman la identidad de la empresa en plano: un producto físico bien colocado, el logo en un contexto natural —no pegado con cinta adhesiva—, materiales propios del sector. Son detalles pequeños que aportan credibilidad. Un abogado grabado sin ningún libro en la estantería no convence igual que uno con su biblioteca detrás.",
+      },
+      {
+        type: "image",
+        src: "/blog/direccion-de-arte-video-corporativo/intermedia.webp",
+        alt: "Equipo de iluminación preparado en un estudio para rodaje corporativo",
+        width: 1920,
+        height: 1080,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Errores comunes",
+      },
+      {
+        type: "list",
+        items: [
+          "Fondo saturado de elementos que distraen: pantallas encendidas, pizarras llenas, cajas apiladas.",
+          "Vestuario que choca con el espacio: colores demasiado similares al fondo o demasiado estridentes.",
+          "Iluminación fluorescente de oficina sin corregir, que aplana la imagen y da sensación de baja producción.",
+          "Logos de marca forzados: el cartel con el logotipo colocado de forma artificial en primer plano.",
+          "No pensar en los fondos secundarios: si hay tomas con movimiento o planos abiertos, todo el fondo entra en cuadro.",
+          "Cambiar el espacio entre tomas sin reorganizarlo: el raccord de arte es tan importante como el de continuidad.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito contratar a un director de arte para mi vídeo corporativo?",
+        answer: "No necesariamente. Para producciones medianas o pequeñas, el realizador y el propio cliente pueden cubrirlo bien con una sesión de preparación previa. Solo en producciones con varios sets, muchos portavoces o necesidades de escenografía elaborada tiene sentido contratar a alguien específico para ese rol.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo se necesita para preparar la dirección de arte?",
+        answer: "Para una entrevista corporativa estándar, entre 30 minutos y 2 horas de preparación el día anterior son suficientes: elegir y despejar el espacio, decidir el vestuario, preparar los elementos de atrezo. Para sets más complejos con varios planos y locaciones, un día completo de preparación es lo habitual.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué es más importante: el espacio o la iluminación?",
+        answer: "Los dos se condicionan mutuamente. Un espacio bien elegido facilita la iluminación y reduce el trabajo técnico. Una buena iluminación puede compensar algunas limitaciones del espacio, pero no puede hacer desaparecer un fondo caótico o un vestuario que chirría. Lo ideal es planificar los dos a la vez.",
+      },
+      {
+        type: "faq",
+        question: "¿Vale la pena invertir en decoración para un vídeo de empresa?",
+        answer: "Depende del uso del vídeo. Para una pieza de marca o institucional de largo recorrido, sí. Para un vídeo interno de comunicación, la prioridad puede ser otra. Lo que siempre vale la pena es limpiar y organizar el espacio antes de grabar: no cuesta dinero, solo tiempo.",
+      },
+      {
+        type: "paragraph",
+        text: "La dirección de arte en vídeo corporativo no es un capricho estético. Es la diferencia entre un resultado que refuerza la imagen de la empresa y uno que simplemente documenta un rodaje. Si tienes un proyecto en mente y quieres hablarlo, puedes escribirme desde la página de contacto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
