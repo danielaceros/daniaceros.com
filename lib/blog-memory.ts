@@ -248,6 +248,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto (fallback evergreen, sin candidate SC limpio — token SC caducado). Imágenes Unsplash/Pexels.",
   },
+  {
+    slug: "branding-sonoro-video-empresa",
+    keyword: "branding sonoro vídeo de empresa",
+    intent: "informacional",
+    createdAt: "2026-06-10",
+    status: "published",
+    notes: "Auto-generado por blog-auto (fallback evergreen, sin candidate SC limpio — token SC caducado). Imágenes Unsplash/Pexels.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {

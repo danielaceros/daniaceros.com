@@ -3950,6 +3950,146 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "branding-sonoro-video-empresa",
+    title: "Branding sonoro en vídeo de empresa: música, voz y efectos",
+    description:
+      "Cómo elegir música, voz en off y efectos de sonido para que tus vídeos corporativos refuercen la identidad de marca en lugar de ignorarla.",
+    publishedAt: "2026-06-10",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: [
+      "branding sonoro",
+      "música corporativa",
+      "voz en off",
+      "efectos de sonido",
+      "vídeo corporativo",
+      "identidad de marca",
+    ],
+    keyword: "branding sonoro vídeo de empresa",
+    intent: "informacional",
+    excerpt:
+      "El sonido define si tu vídeo corporativo parece profesional o genérico. Aquí cuento cómo trabajo la música, la voz en off y los efectos para que refuercen la marca sin distraer.",
+    seoTitle: "Branding sonoro en vídeo de empresa | Daniel Acero",
+    metaDescription:
+      "Branding sonoro para vídeo corporativo: cómo elegir música, voz en off y efectos que refuercen tu marca. Guía práctica con criterios reales.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Muchas empresas invierten en imagen, en locación, en iluminación. Y luego ponen una música de stock que descargaron en cinco minutos. El resultado se nota: el vídeo parece profesional visualmente, pero suena a algo genérico.",
+      },
+      {
+        type: "paragraph",
+        text: "El branding sonoro es el conjunto de decisiones sobre música, voz y efectos que hacen que un vídeo refuerce la identidad de la marca en lugar de ignorarla. No es un elemento secundario. En muchos vídeos, el sonido es lo que le da el tono a todo lo demás.",
+      },
+      {
+        type: "image",
+        src: "/blog/branding-sonoro-video-empresa/hero.webp",
+        alt: "Estudio de grabación con guitarra acústica y equipamiento analógico para producción sonora corporativa",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Qué es el branding sonoro y por qué importa",
+      },
+      {
+        type: "paragraph",
+        text: "Una marca tiene colores, tipografía, tono de comunicación. El sonido es otra capa de esa identidad. Cuando una empresa usa siempre el mismo tipo de música en sus vídeos, el espectador empieza a asociar ese sonido con la marca, aunque no lo note de forma consciente. Es el mismo principio que hace que reconozcas una marca antes de ver el logo.",
+      },
+      {
+        type: "paragraph",
+        text: "En vídeo corporativo el riesgo está en los dos extremos: música demasiado genérica que no dice nada, o música demasiado caracterizada que distrae del mensaje. El objetivo es encontrar algo que funcione como contexto, que soporte el contenido sin competir con él.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cómo se trabaja bien el sonido de marca",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "La música de fondo no es decoración",
+      },
+      {
+        type: "paragraph",
+        text: "El primer paso es decidir qué emoción quieres activar, no qué música te gusta. Para una entrevista de testimonios de clientes, suele funcionar algo cálido, acústico, sin mucha percusión. Para un vídeo de presentación de producto tecnológico, algo más sintético. La temperatura emocional de la música tiene que ser coherente con el contenido que está sobre ella. Uso habitualmente Artlist y Musicbed para buscar temas, y siempre ajusto el volumen para que quede entre -18 dB y -25 dB según la presencia de voz.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "La voz en off: tono, locutor y dirección",
+      },
+      {
+        type: "paragraph",
+        text: "Si el vídeo lleva locución, la elección del locutor es crítica. La voz tiene que sonar como la empresa: no más formal ni más informal. Para marcas con tono cercano y directo, uso locutores con registro conversacional, no de televisión. Para institucionales o financieras, algo más neutro y pausado. La dirección de la voz en off ocurre en la grabación: si el locutor va demasiado enérgico o demasiado plano, hay que corregirlo en ese momento. Después de la edición, arreglarlo cuesta mucho más.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Efectos de sonido y atmósfera",
+      },
+      {
+        type: "paragraph",
+        text: "Los efectos de sonido son el elemento más fácil de ignorar y el que más se nota en su ausencia. En un vídeo de evento, los sonidos ambiente del espacio —conversaciones suaves, pasos, aplausos— sitúan al espectador. En una entrevista limpia no hay que añadir nada artificial, pero sí asegurarse de que el silencio entre respuestas no sea abrupto. El fade suave de ambiente es casi siempre la solución. Lo trabajo en DaVinci Resolve Fairlight, que tiene un editor de audio suficientemente potente para este tipo de mezcla.",
+      },
+      {
+        type: "image",
+        src: "/blog/branding-sonoro-video-empresa/mid.webp",
+        alt: "Auriculares de estudio para mezcla de audio en postproducción de vídeo corporativo",
+        width: 1920,
+        height: 1281,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Errores comunes en el sonido de los vídeos corporativos",
+      },
+      {
+        type: "list",
+        items: [
+          "Música demasiado alta que compite con la voz en off",
+          "Cortes de música abruptos sin fade de salida",
+          "Usar la misma canción en todos los vídeos sin criterio de coherencia de marca",
+          "Voz en off grabada en un espacio con eco o reverb excesivo",
+          "Efectos de sonido de stock que suenan artificiales y fuera de contexto",
+          "No escuchar el vídeo con auriculares antes de entregar: los problemas de audio se notan mucho más",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito contratar a un ingeniero de sonido para un vídeo corporativo?",
+        answer: "Depende del tipo de proyecto. Para entrevistas corporativas estándar, un buen micrófono de solapa y la mezcla en postproducción son suficientes. Para eventos en directo con varios micros abiertos, presentadores y música en sala, sí tiene sentido contratar a alguien que gestione el sonido durante el rodaje. El coste es bajo comparado con el tiempo que ahorra en edición.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué licencia de música necesito para un vídeo corporativo?",
+        answer: "Si el vídeo va a publicarse en redes sociales o en la web de la empresa, necesitas una licencia comercial. Plataformas de suscripción como Artlist o Musicbed incluyen licencias para uso comercial sin límite de vistas. Con YouTube Audio Library o Pixabay, la licencia es gratuita pero tienes menos control sobre la calidad y la exclusividad.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo lleva la mezcla de audio de un vídeo de 2 minutos?",
+        answer: "Para una entrevista con voz limpia y música de fondo, entre 30 minutos y 1 hora. Para un vídeo de evento con varios micros, pistas de ambiente y música sincronizada, puede ser entre 2 y 4 horas. El audio mal grabado multiplica ese tiempo, que es la principal razón para no descuidar el sonido en el rodaje.",
+      },
+      {
+        type: "faq",
+        question: "¿Vale la pena añadir una identidad sonora a los vídeos de empresa?",
+        answer: "Para empresas que publican vídeo con cierta regularidad, sí. Una identidad sonora corta —entre 2 y 5 segundos— al principio o al final del vídeo crea reconocimiento de marca sin coste adicional en cada nueva producción. Para una empresa que produce un vídeo al año, el retorno es más limitado.",
+      },
+      {
+        type: "paragraph",
+        text: "El sonido no se ve, pero se siente. Un vídeo bien sonorizado hace que el espectador se quede más tiempo y que la marca quede mejor posicionada. Si tienes un proyecto y quieres hablar sobre cómo trabajar el audio, puedo ayudarte desde la página de contacto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
