@@ -4090,6 +4090,140 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "por-que-tu-video-corporativo-no-convierte",
+    title: "Por qué tu vídeo corporativo no convierte (y cómo arreglarlo)",
+    description: "Errores comunes que hacen que un vídeo corporativo no genere leads ni ventas, y qué cambiar para que funcione.",
+    publishedAt: "2026-06-11",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: ["vídeo corporativo", "conversión", "producción de vídeo", "marketing de vídeo", "errores de vídeo"],
+    keyword: "por qué tu vídeo corporativo no convierte",
+    intent: "informacional",
+    excerpt: "Un vídeo corporativo que no convierte suele tener el mismo problema de fondo: se hizo para gustar, no para persuadir. Aquí están los errores más frecuentes.",
+    seoTitle: "Por qué tu vídeo corporativo no convierte | Daniel Acero",
+    metaDescription: "Errores comunes que hacen que un vídeo corporativo no genere leads ni ventas, y qué cambiar para que funcione.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Un vídeo corporativo puede tener buena fotografía, buena música y un montaje limpio, y aun así no convertir. Lo veo cada semana. Las empresas invierten en producción y luego no entienden por qué el vídeo no genera leads ni llamadas.",
+      },
+      {
+        type: "paragraph",
+        text: "El problema casi siempre tiene una raíz común: el vídeo se diseñó para impresionar al equipo directivo, no para mover a quien lo ve a hacer algo. Eso tiene solución, pero hay que diagnosticarlo primero.",
+      },
+      {
+        type: "image",
+        src: "/blog/por-que-tu-video-corporativo-no-convierte/hero.webp",
+        alt: "Equipo de cámara Sony FS7 preparado para rodaje de producción audiovisual corporativa",
+        width: 1920,
+        height: 1080,
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Qué es un vídeo que no convierte y por qué ocurre",
+      },
+      {
+        type: "paragraph",
+        text: "Convertir significa conseguir que alguien dé un paso después de ver el vídeo: pida presupuesto, reserve una reunión, descargue algo. Si el vídeo recibe visualizaciones pero nadie actúa, no está funcionando como herramienta de negocio.",
+      },
+      {
+        type: "paragraph",
+        text: "Las causas más habituales no son técnicas. La imagen puede ser impecable y el montaje fluido. El fallo está en la arquitectura del mensaje: qué dice el vídeo, en qué orden lo dice y a quién se lo dice.",
+      },
+      {
+        type: "paragraph",
+        text: "Un vídeo que intenta hablar a todo el mundo acaba sin hablar a nadie. Eso, más la ausencia de un CTA claro y una duración que supera lo que el espectador está dispuesto a aguantar, explica la mayoría de los casos.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cómo corregir los fallos más frecuentes",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Define a quién le hablas antes de escribir una sola línea",
+      },
+      {
+        type: "paragraph",
+        text: "El briefing más habitual que recibo dice: quieren un vídeo para que todos sepan quiénes son. Eso es un póster, no un vídeo de conversión. Un vídeo que convierte tiene un destinatario específico: el director de compras de una empresa mediana que nunca ha trabajado con producción audiovisual, por ejemplo. Con ese perfil en mente, el guion cambia completamente: los argumentos que le importan, las dudas que tiene, el lenguaje que usa.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Construye el mensaje alrededor de un problema real",
+      },
+      {
+        type: "paragraph",
+        text: "La mayoría de los vídeos corporativos empiezan con la historia de la empresa o sus valores. Nadie que no trabaje ahí quiere escuchar eso en los primeros 10 segundos. Empezar por el problema del espectador, no por la historia de la empresa, es el cambio con mayor impacto. Un vídeo de 90 segundos que conecta con un dolor real convierte mucho más que uno de 4 minutos de presentación impecable.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "El CTA tiene que ser uno solo y aparecer en el propio vídeo",
+      },
+      {
+        type: "paragraph",
+        text: "Listar cinco formas de contacto al final no es un CTA, es ruido. El espectador no va a hacer ninguna de esas cosas. Un CTA eficaz es uno: reserva 20 minutos con nosotros, con un enlace directo. Eso tiene que aparecer en el propio vídeo, no solo en el texto que lo acompaña. Si el vídeo acaba con el logo en fade out y música, estás dejando dinero sobre la mesa.",
+      },
+      {
+        type: "image",
+        src: "/blog/por-que-tu-video-corporativo-no-convierte/intermedia.webp",
+        alt: "Profesional presentando en sala de reuniones con ordenadores portátiles",
+        width: 1920,
+        height: 1280,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Errores comunes que bloquean la conversión",
+      },
+      {
+        type: "list",
+        items: [
+          "Duración superior a 2 minutos sin una estructura narrativa que lo justifique.",
+          "Testimonios genéricos sin datos concretos ni contexto verificable.",
+          "Música tan protagonista que tapa la voz del entrevistado.",
+          "Abrir con los valores de la empresa antes de establecer ningún problema del espectador.",
+          "No poner subtítulos en un vídeo destinado a LinkedIn o Instagram, donde la mayoría se ve sin sonido.",
+          "Usar imágenes de stock reconocibles que rompen la credibilidad visual en los primeros segundos.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo debería durar un vídeo corporativo para que convierta?",
+        answer: "Depende del canal y del objetivo. Para redes sociales, entre 60 y 90 segundos. Para una landing de captación, hasta 2-3 minutos si el guion está construido en torno a un problema y una solución concretos. Por encima de eso, necesitas que el espectador tenga ya un interés previo muy definido.",
+      },
+      {
+        type: "faq",
+        question: "¿Puede hablar alguien de la empresa en lugar de un actor?",
+        answer: "Puede hablar alguien de la empresa, y muchas veces es mejor. La autenticidad pesa más que la perfección técnica. Lo importante es preparar bien a la persona: qué va a decir, en qué orden y qué no va a decir. Sin preparación, cualquiera resulta torpe delante de una cámara.",
+      },
+      {
+        type: "faq",
+        question: "¿Dónde debe aparecer el CTA dentro del vídeo?",
+        answer: "Al final, cuando el espectador ya tiene el contexto suficiente para decidir. Ponerlo al principio confunde; ponerlo a mitad interrumpe. Los últimos 10-15 segundos, con la pantalla lo más limpia posible y un solo mensaje, es donde funciona mejor.",
+      },
+      {
+        type: "faq",
+        question: "¿Puede un buen vídeo compensar una landing page mal diseñada?",
+        answer: "No. El vídeo y la página donde vive trabajan juntos. Un vídeo excelente en una landing sin botón claro o con demasiado texto alrededor pierde efectividad. Si haces el vídeo bien, vale la pena también revisar dónde vive ese vídeo.",
+      },
+      {
+        type: "paragraph",
+        text: "Si quieres revisar por qué tu vídeo actual no está convirtiendo o hablar de uno nuevo desde el principio, puedes ponerte en contacto a través de la página de contacto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
