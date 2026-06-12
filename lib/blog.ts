@@ -4224,6 +4224,149 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-testimonial-vs-caso-de-estudio",
+    title: "Vídeo testimonial vs vídeo caso de estudio: cuándo usar cada uno",
+    description:
+      "Diferencias reales entre el vídeo testimonial y el caso de estudio en vídeo: estructura, duración, coste y en qué momento del funnel encaja cada formato.",
+    publishedAt: "2026-06-12",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "vídeo testimonial",
+      "caso de estudio en vídeo",
+      "vídeo corporativo",
+      "marketing de contenidos",
+      "producción audiovisual madrid",
+    ],
+    keyword: "vídeo testimonial vs caso de estudio",
+    intent: "informacional",
+    excerpt:
+      "Un testimonial y un caso de estudio no son lo mismo. La diferencia está en quién habla, qué dice y en qué momento del ciclo de venta tiene sentido cada formato.",
+    seoTitle: "Testimonial vs caso de estudio en vídeo | Daniel Acero",
+    metaDescription:
+      "Diferencias entre vídeo testimonial y caso de estudio: qué formato convierte mejor según tu objetivo, sector y momento del ciclo de venta.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cuando una empresa quiere demostrar que funciona, casi siempre piensa en filmar a un cliente satisfecho. Eso es razonable. El problema está en que no es lo mismo grabar un testimonial que producir un caso de estudio, aunque en los dos aparezca un cliente diciendo cosas buenas.",
+      },
+      {
+        type: "paragraph",
+        text: "La diferencia no es estética. Es de estructura, de duración, de lo que se le pide al cliente y de en qué momento del proceso de compra te ven las personas que van a ver el vídeo.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-testimonial-vs-caso-de-estudio/hero.webp",
+        alt: "Cámara Sony FS7 preparada para una entrevista corporativa en plató profesional",
+        width: 1920,
+        height: 1080,
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Qué son y en qué se diferencian",
+      },
+      {
+        type: "paragraph",
+        text: "Un vídeo testimonial es una declaración. Alguien de la empresa cliente —directivo, responsable de proyecto, usuario final— habla a cámara sobre su experiencia. Sin narrador, sin datos detallados, sin reconstrucción del proceso. Solo la voz de alguien que conoce el producto o servicio y lo recomienda. Duración habitual: 60 a 90 segundos.",
+      },
+      {
+        type: "paragraph",
+        text: "Un caso de estudio en vídeo es una historia con estructura. Tiene un antes: el problema que tenía la empresa. Tiene un durante: qué se hizo y cómo. Tiene un después: qué resultados se obtuvieron y por qué importan. Aquí sí aparecen datos, métricas, contexto. La duración puede llegar a tres o cuatro minutos sin perder al espectador, porque cada parte de la historia tiene un por qué.",
+      },
+      {
+        type: "paragraph",
+        text: "El testimonial convence desde la emoción. El caso de estudio convence desde la evidencia. Los dos son útiles. El error es usar uno cuando la situación pedía el otro.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cómo se hace bien cada uno",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Estructura de un testimonial eficaz",
+      },
+      {
+        type: "paragraph",
+        text: "Tres bloques, sin más. Primero, quién es el cliente y cuál era su situación antes. Segundo, qué valoró más del trabajo conjunto: la comunicación, el resultado, algo concreto. Tercero, a quién se lo recomendaría. No guiones memorizados: son preguntas abiertas que hago fuera de cámara y el cliente responde mirando al objetivo. Lo que queda es auténtico y fluye sin parecer publicitario.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Estructura de un caso de estudio bien grabado",
+      },
+      {
+        type: "paragraph",
+        text: "El caso de estudio necesita preparación previa: saber exactamente qué se va a contar antes de entrar a grabar. Trabajo con un documento de una página que el cliente rellena con los datos clave —el problema inicial, el plazo, las métricas antes y después— para que durante el rodaje no tengamos que improvisar. En cámara, el responsable del proyecto cuenta la historia. Si hay planos del proceso o del entorno, se intercalan como B-roll. Al final, un titular con el resultado principal.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Cuánto tiempo necesita cada formato",
+      },
+      {
+        type: "paragraph",
+        text: "Un testimonial bien ejecutado se graba en una hora: preparación, rodaje y margen para repeticiones. La edición añade otra hora o dos. Un caso de estudio necesita más: media jornada de rodaje, el documento preparatorio, edición de cuatro a seis horas y una ronda de revisión. La diferencia de coste y tiempo es real, y conviene tenerla en cuenta cuando se planifica qué se va a producir.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-testimonial-vs-caso-de-estudio/intermedia.webp",
+        alt: "Presentador mostrando resultados ante equipo empresarial en sala de reuniones",
+        width: 1200,
+        height: 800,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cuándo tiene sentido cada formato",
+      },
+      {
+        type: "list",
+        items: [
+          "Testimonial al principio del funnel: cuando el espectador aún no te conoce y necesita una razón emocional para seguir mirando.",
+          "Caso de estudio al final del funnel: cuando el prospecto ya sabe quién eres pero necesita prueba de que funciona en situaciones parecidas a la suya.",
+          "Testimonial en redes: corto, sin contexto previo, fácil de compartir. Funciona como primera impresión.",
+          "Caso de estudio en landing de venta o propuesta: donde el prospecto ya tiene interés y busca validación antes de decidir.",
+          "Si el cliente no puede compartir datos por confidencialidad: testimonial, que no requiere números.",
+          "Si el resultado es medible y el cliente acepta publicar las cifras: caso de estudio, porque los datos concretos son lo que diferencia.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Puede un mismo cliente aparecer en los dos formatos?",
+        answer: "Puede, y a veces tiene sentido hacerlo en momentos distintos. El testimonial se graba al terminar el proyecto, cuando la experiencia todavía está fresca. El caso de estudio se produce unos meses después, cuando ya hay resultados medibles. Son piezas complementarias, no redundantes.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué hago si el cliente no quiere salir en cámara?",
+        answer: "En ese caso el caso de estudio funciona igualmente: se narra con voz en off o con texto en pantalla, y se complementa con planos del entorno, el proceso o el producto. El testimonial sin cámara pierde fuerza porque su valor principal es la credibilidad de quien habla.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuántos testimoniales necesita una empresa?",
+        answer: "Depende del número de perfiles de cliente distintos que atiendes. Si trabajas con pymes de tecnología, con grandes empresas de retail y con startups, cada segmento necesita ver a alguien parecido a él en el vídeo. Un solo testimonial sirve para uno de esos perfiles.",
+      },
+      {
+        type: "faq",
+        question: "¿Es mejor el testimonial en vídeo o en texto?",
+        answer: "El vídeo convierte mejor cuando el objetivo es generar confianza rápida. El texto tiene la ventaja de que los buscadores lo indexan directamente. Los dos tienen su lugar; si solo puedes elegir uno y estás pensando en el ciclo de venta, el vídeo tiene más peso en los momentos de decisión.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes dudas sobre qué formato encaja mejor en tu caso, o si quieres empezar a producir uno de los dos, puedes escribirme desde la página de contacto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
