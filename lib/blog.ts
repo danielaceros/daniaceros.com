@@ -4367,6 +4367,142 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "broll-video-corporativo",
+    title: "B-roll para vídeo corporativo: qué planos siempre funcionan",
+    description:
+      "Guía práctica sobre el b-roll en vídeo corporativo: qué planos de recurso grabar, cómo organizarlos y cuánto necesitas para que el montaje quede profesional.",
+    publishedAt: "2026-06-15",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["b-roll", "vídeo corporativo", "filmmaker", "rodaje", "planos de recurso"],
+    keyword: "b-roll para vídeo corporativo",
+    intent: "informacional",
+    excerpt:
+      "El b-roll es lo que separa un vídeo corporativo que se ve profesional de uno que parece una videoconferencia grabada. Aquí explico qué planos grabo siempre y por qué.",
+    seoTitle: "B-roll para vídeo corporativo: planos que siempre funcionan | Daniel Acero",
+    metaDescription:
+      "B-roll para vídeo corporativo: los planos de recurso que nunca fallan. Qué grabar, cómo organizarlo y cuánto necesitas para que el montaje fluya.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cuando llego a una empresa a grabar una entrevista, sé que voy a necesitar el doble de tiempo de lo que el cliente imagina. No por las entrevistas en sí — esas suelen durar 30 o 40 minutos. El tiempo extra es para el b-roll. Y ese tiempo extra es el que decide si el vídeo final parece profesional o parece amateur.",
+      },
+      {
+        type: "paragraph",
+        text: "El b-roll son los planos de recurso que van encima de la narración o entre los cortes de entrevista. Las manos que escriben, la sala de reuniones antes de que entre nadie, el producto en primer plano, la pantalla con el dashboard. Sin él, el montaje es un muro de cabezas parlantes. Con él, el vídeo respira.",
+      },
+      {
+        type: "image",
+        src: "/blog/broll-video-corporativo/hero.webp",
+        alt: "Operador de cámara grabando b-roll en estudio corporativo",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Qué es el b-roll y por qué no es decorativo",
+      },
+      {
+        type: "paragraph",
+        text: "Hay una idea extendida de que el b-roll es «relleno»: imágenes bonitas para que no sea tan aburrido ver a alguien hablando. Es un error de concepto que tiene consecuencias en cómo se planifica el rodaje. El b-roll no rellena — estructura. Permite cortar sin que se note, introduce temas antes de que el entrevistado los mencione y da al espectador algo concreto donde fijarse mientras procesa información abstracta.",
+      },
+      {
+        type: "paragraph",
+        text: "En un vídeo corporativo de tres minutos trabajo con entre 20 y 30 planos de recurso. De esos, en el montaje final probablemente entren 12 o 15. Eso no es desperdicio — es margen. El montaje siempre necesita opciones, y el b-roll que no cabe en la versión principal suele aparecer en el recut para redes.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cómo se trabaja bien el b-roll",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Planos de contexto y ambiente",
+      },
+      {
+        type: "paragraph",
+        text: "Los primeros planos que grabo al llegar son los que ubican al espectador: la entrada de la oficina, el cartel con el logo, la recepción, la sala de reuniones vacía. Suelen durar en montaje entre 2 y 4 segundos cada uno. No tienen que ser espectaculares — tienen que ser limpios, bien encuadrados y técnicamente correctos. Un plano torcido o con una cámara visible en segundo término arruina la composición. Dedico los primeros 20 minutos del rodaje solo a esto, antes de que haya movimiento.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Planos de detalle y manos",
+      },
+      {
+        type: "paragraph",
+        text: "Los planos de detalle son los que más trabajo llevan y los que más impacto tienen en montaje. Manos sobre el teclado, la taza de café en la mesa de reuniones, el bolígrafo subrayando un documento, pantallas de ordenador desde el lado — nunca de frente porque los píxeles parpadean con la cámara. Uso una focal larga, f/2.8 o f/4, para aislar el elemento del fondo. Estos planos duran 1 o 2 segundos en montaje pero tardas 5 minutos en montarlos bien porque hay que ajustar la exposición en cada uno.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Planos de acción (el trabajo real)",
+      },
+      {
+        type: "paragraph",
+        text: "El tercer tipo es el más valioso: gente trabajando de verdad, no posando. Alguien revisando un correo, participando en una reunión breve, hablando con un compañero. Les pido que hagan lo que harían normalmente y yo me muevo alrededor con el gimbal o el trípode. No dirijo — observo. Estos planos tienen una autenticidad que los planos posados no tienen, y el espectador lo nota aunque no sepa exactamente qué lo hace diferente.",
+      },
+      {
+        type: "image",
+        src: "/blog/broll-video-corporativo/mid.webp",
+        alt: "Cámara en trípode lista para grabar b-roll en interior de oficina",
+        width: 1920,
+        height: 1080,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cuánto b-roll es suficiente",
+      },
+      {
+        type: "paragraph",
+        text: "Hay una regla práctica que uso: por cada minuto de vídeo final necesito entre 8 y 12 planos de recurso utilizables. «Utilizables» significa bien expuestos, sin movimientos de cámara bruscos no intencionales y con al menos 5 segundos de duración bruta para que el editor tenga margen en el corte.",
+      },
+      {
+        type: "list",
+        items: [
+          "Para un vídeo de 2 minutos: entre 20 y 25 planos brutos de b-roll",
+          "Para un vídeo de 4-5 minutos: entre 40 y 50 planos",
+          "Tiempo de rodaje de b-roll en una empresa: 1,5 a 2 horas en una localización media",
+          "Ratio habitual: 3 planos grabados por cada 1 que entra en montaje",
+          "Si el vídeo tiene varios departamentos o localizaciones, multiplica por el número de espacios distintos",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar el b-roll sin que los empleados se pongan nerviosos?",
+        answer: "Sí, con una explicación previa de 2 minutos basta. Les digo que voy a pasar por la oficina durante un rato grabando el ambiente y que no necesitan actuar ni posar. La mayoría se olvida de la cámara en 10 minutos. Los que se quedan más tensos los evito — el b-roll forzado se nota.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito un gimbal para el b-roll corporativo?",
+        answer: "Depende del estilo del vídeo. Para un corporativo estándar prefiero el trípode en los planos de detalle y el gimbal solo para los planos de movimiento: pasillos, salidas de reuniones, recorridos por la oficina. Si el cliente quiere un look más documental, el gimbal con movimiento lento funciona bien. No es imprescindible.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué focal uso para b-roll corporativo?",
+        answer: "Trabajo principalmente con 35mm y 85mm. El 35mm da contexto y encuadres amplios. El 85mm aísla detalles y aplana el fondo. Para planos de ambiente a veces uso el 24mm, pero con cuidado porque distorsiona y no siempre queda bien en espacios con líneas arquitectónicas limpias.",
+      },
+      {
+        type: "faq",
+        question: "¿El b-roll se graba antes o después de la entrevista?",
+        answer: "Lo ideal es antes. Llego con 30-40 minutos de margen antes de la entrevista y recorro los espacios. Cuando el entrevistado está delante de la cámara ya tengo cubierta la parte técnica de b-roll y me centro solo en la captura de la conversación. Si hay algo que no he podido grabar antes — una reunión en directo, por ejemplo — lo grabo al terminar.",
+      },
+      {
+        type: "paragraph",
+        text: "El b-roll no es lo que más se nota cuando está bien. Es lo que más se nota cuando falta. Si estás pensando en grabar el vídeo de tu empresa y quieres que el resultado tenga esa solidez que distingue un vídeo profesional, puedes hablar conmigo desde la página de contacto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
