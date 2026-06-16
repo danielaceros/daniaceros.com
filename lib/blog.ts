@@ -4503,6 +4503,148 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-manifiesto-de-marca",
+    title: "Vídeo manifiesto de marca: estructura y ejemplos",
+    description:
+      "Qué es un vídeo manifiesto de marca, cómo se estructura, cuánto dura y qué errores evitar. Guía práctica de un filmmaker en Madrid.",
+    publishedAt: "2026-06-16",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "branding",
+      "producción audiovisual",
+      "comunicación empresarial",
+      "guion",
+    ],
+    keyword: "vídeo manifiesto de marca",
+    intent: "informacional",
+    excerpt:
+      "El vídeo manifiesto de marca no es un anuncio ni un corporativo al uso. Es la pieza que responde a la pregunta fundamental: por qué existe tu empresa.",
+    seoTitle: "Vídeo manifiesto de marca: cómo se estructura | Daniel Acero",
+    metaDescription:
+      "Qué es un vídeo manifiesto de marca, cómo se estructura, cuánto dura y errores frecuentes al producirlo. Guía práctica de un filmmaker en Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Hay una diferencia clara entre un vídeo corporativo estándar y un vídeo manifiesto de marca. El primero cuenta qué hace tu empresa. El segundo explica por qué existe.",
+      },
+      {
+        type: "paragraph",
+        text: "Trabajo con empresas que quieren hacer una de estas piezas y lo primero que les pregunto es: ¿tenéis una respuesta clara al 'por qué'? Si la respuesta es 'somos líderes del sector' o 'llevamos 20 años en el mercado', el manifiesto no está listo. Eso no es un 'por qué', es un historial.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-manifiesto-de-marca/hero.webp",
+        alt: "Equipo de producción colaborando en un estudio para la grabación de un vídeo de marca con equipo profesional",
+        width: 1880,
+        height: 1253,
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Qué es un vídeo manifiesto de marca",
+      },
+      {
+        type: "paragraph",
+        text: "Un manifiesto de marca en vídeo es una pieza audiovisual corta —entre 60 y 120 segundos suele ser lo óptimo— que articula la razón de ser de una empresa. No habla de productos, no lista servicios, no explica tarifas. Habla de valores, de visión, del problema que quieren resolver y de por qué les importa.",
+      },
+      {
+        type: "paragraph",
+        text: "Es la pieza que se usa en la homepage, en presentaciones a inversores, en la bienvenida a nuevos empleados y en campañas de branding. No cierra ventas directamente; construye la relación emocional que facilita que las ventas ocurran después.",
+      },
+      {
+        type: "paragraph",
+        text: "La confusión más frecuente es tratar el manifiesto como un vídeo institucional glorificado. El vídeo institucional describe. El manifiesto argumenta. Y esa diferencia cambia completamente cómo se escribe el guion, cómo se filma y cómo se edita.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cómo se estructura bien un manifiesto de marca",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "La pregunta central",
+      },
+      {
+        type: "paragraph",
+        text: "Antes de escribir una línea de guion, hay que tener clara la pregunta que el manifiesto responde. Suele ser alguna variante de estas tres: ¿por qué existe esta empresa? ¿Qué cambio quiere ver en su sector? ¿Qué tiene en común con las personas a las que sirve? Si no hay una respuesta sólida, el manifiesto se convierte en una lista de adjetivos bonitos sobre fondo negro. He visto muchos.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "El tono y la voz",
+      },
+      {
+        type: "paragraph",
+        text: "El tono del manifiesto es el punto donde veo más errores. Las marcas tienden a elevar el registro artificialmente: frases largas, metáforas vagas, voz en off solemne. El resultado suena a cualquier marca del sector, no a esa marca en concreto. Lo que funciona es lo contrario: el tono más específico y más propio que la marca pueda sostener de forma creíble.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "La duración y el ritmo",
+      },
+      {
+        type: "paragraph",
+        text: "Un manifiesto de 90 segundos bien editado supera casi siempre a uno de 3 minutos que intenta decir demasiado. La estructura que suele funcionar: 10-15 segundos de apertura con la tensión o el problema, 40-50 segundos de argumento central con el 'por qué', y 20-30 segundos de resolución. Sin títulos de crédito interminables. Sin música que dure 20 segundos sola al principio.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-manifiesto-de-marca/mid.webp",
+        alt: "Claqueta de producción y portátil en un rodaje profesional de vídeo de marca",
+        width: 1920,
+        height: 1280,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Errores comunes al hacer un vídeo manifiesto de marca",
+      },
+      {
+        type: "list",
+        items: [
+          "Confundir el manifiesto con un anuncio: el manifiesto no pide comprar nada, pide creer en algo.",
+          "Escribir el guion por comité: cuando lo revisan cinco personas, el resultado es tan consensuado que no suena a nadie.",
+          "Usar stock footage para abaratar la producción: imágenes genéricas de internet no transmiten los valores de una marca concreta.",
+          "Elegir una voz en off que no encaja con el tono de la marca: si la voz disuena, la pieza no funciona aunque el guion sea bueno.",
+          "Filmar sin plan de distribución: un manifiesto pensado para la homepage tiene dimensiones y duración distintas al que va a LinkedIn o al que se proyecta en eventos.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto dura un vídeo manifiesto de marca ideal?",
+        answer: "Entre 60 y 120 segundos. Por debajo de 60 segundos es difícil desarrollar el argumento con solidez. Por encima de 2 minutos se pierde atención si no hay una narrativa muy sólida. Las excepciones existen, pero son excepciones.",
+      },
+      {
+        type: "faq",
+        question: "¿El manifiesto necesita locución o puede funcionar solo con imágenes y música?",
+        answer: "Puede funcionar con subtítulos en lugar de locución, pero suele perder fuerza. La voz transmite matices que el texto en pantalla no puede. Si la marca tiene una voz interna —un CEO que habla bien y encarna los valores— a veces la mejor opción es prescindir de la voz en off y poner a esa persona hablando directamente a cámara.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede usar en redes sociales o es solo para web?",
+        answer: "Se puede usar en redes, pero hay que adaptar el formato. Un manifiesto en 16:9 funciona en YouTube y en la homepage. Para LinkedIn e Instagram Reels conviene editar una versión vertical o cuadrada con subtítulos. Son dos montajes diferentes, pero comparten el mismo material de rodaje.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta producir un vídeo manifiesto de marca?",
+        answer: "Depende de la complejidad del rodaje. Una pieza con un día de rodaje, locaciones internas y postproducción completa puede estar entre 3.000 y 6.000 euros. Si se necesitan locaciones externas, actores o animación, el coste sube. Para una empresa mediana o una startup, ese rango es lo habitual para una pieza bien hecha.",
+      },
+      {
+        type: "paragraph",
+        text: "Si estás pensando en hacer el manifiesto de tu marca y tienes claro tu 'por qué', lo que sigue es traducirlo a algo que se pueda ver y escuchar. Desde la página de contacto puedes contarme en qué punto estás y cuándo querrías tenerlo listo.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
