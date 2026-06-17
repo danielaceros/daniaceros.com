@@ -4645,6 +4645,148 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "como-medir-roi-video-corporativo",
+    title: "Cómo medir el ROI de un vídeo corporativo (sin hacer trampa)",
+    description:
+      "Medir el retorno de un vídeo corporativo no es tan sencillo como contar visualizaciones. Objetivos, KPIs reales y errores que distorsionan la lectura.",
+    publishedAt: "2026-06-17",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: [
+      "ROI vídeo corporativo",
+      "métricas de vídeo",
+      "marketing audiovisual",
+      "retorno inversión vídeo",
+      "video marketing empresas",
+    ],
+    keyword: "cómo medir el ROI de un vídeo corporativo",
+    intent: "informacional",
+    excerpt:
+      "Medir el retorno de un vídeo corporativo no es tan sencillo como contar visualizaciones. Te explico cómo hacerlo con métricas que de verdad importan.",
+    seoTitle: "ROI del vídeo corporativo: cómo medirlo | Daniel Acero",
+    metaDescription:
+      "Cómo medir el ROI de un vídeo corporativo sin métricas de vanidad: objetivos, KPIs reales y errores que distorsionan el resultado.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Antes de cerrar cualquier proyecto de vídeo corporativo, llega la pregunta: ¿ha valido la pena? La respuesta honesta es que depende de qué mides y de cuándo empezaste a hacerlo.",
+      },
+      {
+        type: "paragraph",
+        text: "He trabajado con empresas que tratan un vídeo como un éxito porque llegó a 50.000 visualizaciones. Y con otras que tienen una pieza institucional vista por 400 personas pero que cerró tres contratos en seis meses. Aquí explico cómo separo una cosa de la otra.",
+      },
+      {
+        type: "image",
+        src: "/blog/como-medir-roi-video-corporativo/hero.webp",
+        alt: "Mano señalando gráficos de resultados y métricas de negocio sobre una mesa de trabajo",
+        width: 1880,
+        height: 1245,
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Qué significa ROI en el contexto del vídeo corporativo",
+      },
+      {
+        type: "paragraph",
+        text: "El ROI de un vídeo no es cuántas veces se ve. Es la relación entre lo que costó producirlo y el valor que genera: leads captados, contratos firmados, tiempo de equipo ahorrado en presentaciones comerciales, posicionamiento de marca sostenido en el tiempo. Todo eso cuenta.",
+      },
+      {
+        type: "paragraph",
+        text: "El problema es que algunos de esos valores son fáciles de medir y otros no. Eso no significa que no existan. Significa que necesitas definir qué esperas del vídeo antes de grabarlo, no después.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cómo medirlo bien",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Define el objetivo antes de grabar",
+      },
+      {
+        type: "paragraph",
+        text: "El objetivo del vídeo determina qué métrica importa. Un vídeo institucional para la homepage no se mide igual que un vídeo de captación para LinkedIn. Un vídeo de onboarding interno no se mide como un spot de producto. Antes de grabar, define una sola cosa: qué comportamiento concreto quieres que provoque esta pieza.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Métricas cuantitativas: las que se pueden trackear",
+      },
+      {
+        type: "paragraph",
+        text: "Las que me resultan más útiles en proyectos de cliente: tasa de conversión en la página donde vive el vídeo (antes y después de publicarlo), tiempo de permanencia en esa página, número de solicitudes de contacto en los 30 días posteriores al lanzamiento, y —si va a LinkedIn— tasa de engagement real, es decir, comentarios y compartidos, no solo impresiones. Ninguna de estas métricas es perfecta por sí sola, pero combinadas dan una señal clara.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Métricas cualitativas: las que no aparecen en el dashboard",
+      },
+      {
+        type: "paragraph",
+        text: "A veces el retorno de un vídeo se mide en conversaciones. He visto piezas corporativas con menos de mil visualizaciones que el equipo comercial empezó a incluir en sus propuestas y que mejoraron el ratio de cierre del trimestre. Eso no aparece en ningún informe de YouTube Analytics. Pregunta a las personas que están en contacto con el cliente qué ha cambiado desde que el vídeo existe.",
+      },
+      {
+        type: "image",
+        src: "/blog/como-medir-roi-video-corporativo/mid.webp",
+        alt: "Filmmaker revisando material grabado en un portátil junto a una cámara DSLR profesional",
+        width: 1920,
+        height: 1285,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Errores comunes al medir el retorno de un vídeo",
+      },
+      {
+        type: "list",
+        items: [
+          "Medir visualizaciones totales sin distinguir de dónde vienen: un pico de tráfico de bots infla los números sin aportar nada.",
+          "Comparar el rendimiento de un vídeo institucional con el de un reel de entretenimiento: son piezas con objetivos y audiencias distintas.",
+          "Dar el vídeo por amortizado en los primeros 30 días: una pieza bien hecha sigue generando valor a los 6 meses si está bien colocada.",
+          "No establecer una línea de base antes de publicar: si no sabes cómo estaba la página antes, no puedes medir si el vídeo la mejoró.",
+          "Atribuir al vídeo resultados que corresponden a otros factores: una campaña de ads activa al mismo tiempo o la temporada alta del negocio distorsionan la lectura.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo hay que esperar para medir el ROI de un vídeo corporativo?",
+        answer:
+          "Para un vídeo en la homepage o en redes, lo mínimo razonable son 60 días. En ese tiempo tienes suficientes datos de tráfico orgánico y comportamiento de usuario para sacar conclusiones útiles. Si el vídeo forma parte de una landing con tráfico pagado, puedes tener señales en 2 o 3 semanas.",
+      },
+      {
+        type: "faq",
+        question: "¿Existe un ROI estándar o benchmark para vídeo corporativo?",
+        answer:
+          "No existe un benchmark universal porque depende del coste del vídeo, del sector, del objetivo y del canal de distribución. Lo que sí puedo decir es que una pieza bien hecha y bien colocada debería recuperar su coste en un plazo de 12 meses si el negocio tiene un ticket medio razonable.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué herramientas sirven para medir el rendimiento de un vídeo?",
+        answer:
+          "Google Analytics 4 para ver el comportamiento en la web (tiempo de permanencia, tasa de conversión antes y después), YouTube Studio si el vídeo vive ahí, y LinkedIn Analytics para el rendimiento en esa red. Para vídeos internos o de onboarding, el seguimiento suele ser más manual: encuestas de percepción o métricas de uso de la plataforma donde se aloja.",
+      },
+      {
+        type: "faq",
+        question: "¿Un vídeo con pocas visualizaciones puede tener buen ROI?",
+        answer:
+          "Sí, y es más común de lo que parece. Un vídeo visto por 200 personas correctas —decisores de compra, responsables de RRHH, socios potenciales— puede tener más valor que uno visto por 20.000 personas sin interés real en el producto. Las visualizaciones miden alcance, no retorno.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes un vídeo corporativo publicado y no sabes si está funcionando, o estás pensando en producir uno nuevo y quieres definir antes cómo vas a medir el resultado, desde la página de contacto me puedes contar en qué punto estás.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
