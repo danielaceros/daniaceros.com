@@ -4787,6 +4787,149 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-onboarding-interno",
+    title: "Vídeo onboarding interno: estructura y duración que funcionan",
+    description:
+      "Cómo estructurar un vídeo de onboarding interno para que los nuevos empleados retengan lo que necesitan sin perderse en un único archivo de 40 minutos.",
+    publishedAt: "2026-06-18",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "onboarding corporativo",
+      "vídeo interno empresa",
+      "formación en vídeo",
+      "comunicación interna",
+      "vídeo corporativo",
+    ],
+    keyword: "vídeo onboarding interno",
+    intent: "informacional",
+    excerpt:
+      "Un vídeo de onboarding mal estructurado se ve una vez y se olvida. Esto es lo que hace que una pieza de bienvenida interna sea realmente útil.",
+    seoTitle: "Vídeo onboarding interno: estructura y duración | Daniel Acero",
+    metaDescription:
+      "Vídeo onboarding interno: cómo estructurarlo, cuánto debe durar y qué incluir para que los nuevos empleados retengan lo que necesitan.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cuando una empresa me pide un vídeo de onboarding interno, lo primero que pregunto es para quién es y qué tiene que saber esa persona al terminar de verlo. Esas dos preguntas definen todo lo demás: la duración, la estructura, el tono y qué se deja fuera.",
+      },
+      {
+        type: "paragraph",
+        text: "El problema más habitual no es que el vídeo sea malo. Es que intenta cubrir demasiado. Cultura de empresa, políticas de RRHH, herramientas internas, valores de marca y protocolo de vacaciones en una sola pieza. Nadie retiene eso. Y el nuevo empleado lo ve una vez y no lo vuelve a abrir.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-onboarding-interno/hero.webp",
+        alt: "Persona de pie presentando a un grupo de empleados sentados frente a portátiles en una sala de formación",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Qué es un vídeo de onboarding interno y por qué importa",
+      },
+      {
+        type: "paragraph",
+        text: "Un vídeo de onboarding interno es una pieza audiovisual de bienvenida que una empresa produce para sus nuevos empleados. Puede ser un único vídeo generalista o una serie corta organizada por departamento. Su función principal no es impresionar: es reducir el tiempo que tarda alguien en entender cómo funciona el sitio al que acaba de llegar.",
+      },
+      {
+        type: "paragraph",
+        text: "Cuando funciona bien, libera tiempo a mánagers y a RRHH. Los primeros días del empleado son menos reactivos y el onboarding presencial se vuelve más concreto porque el contexto general ya está cubierto. Cuando funciona mal, añade fricción: el empleado tiene que ver un vídeo de 40 minutos lleno de texto en pantalla antes de poder hacer nada.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cómo se hace bien",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Estructura modular, no monolítica",
+      },
+      {
+        type: "paragraph",
+        text: "Lo más efectivo es dividir el contenido en módulos cortos de 3 a 5 minutos cada uno, en lugar de producir un solo vídeo largo. De esa forma el nuevo empleado puede ver el módulo de herramientas cuando lo necesita, no antes. Cada módulo tiene un título claro y puede revisitarse sin tener que rebobinar 30 minutos. En las producciones de onboarding que hago suelo recomendar entre 4 y 6 módulos en lugar de una sola pieza de 20 minutos.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Duración: menos de lo que crees",
+      },
+      {
+        type: "paragraph",
+        text: "La duración total que funciona en la práctica es entre 12 y 20 minutos repartidos en módulos. Cada módulo no debería superar los 5 minutos. En esos 5 minutos caben exactamente un tema, bien explicado, sin rodeos. Si el guion ocupa 2 páginas A4 a doble espacio, el módulo dura alrededor de 4 minutos. Si ocupa 4 páginas, hay que dividirlo en dos. La duración la determina el contenido necesario, no la duración deseada.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "A quién le habla y en qué tono",
+      },
+      {
+        type: "paragraph",
+        text: "El tono depende del tipo de empresa. Una startup tecnológica puede permitirse un registro cercano y directo. Una firma de consultoría necesita un registro más formal. Lo que no funciona en ningún contexto es el tono corporativo genérico: voz en off institucional, imágenes de stock y frases como 'aquí en [empresa] creemos en las personas'. Un portavoz real del equipo, hablando a cámara con naturalidad, convierte mejor que cualquier locución profesional sobre imágenes de recurso.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-onboarding-interno/mid.webp",
+        alt: "Mujer presentando una gráfica a una audiencia en una sala de conferencias corporativa",
+        width: 1920,
+        height: 1080,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Errores que lo convierten en algo inútil",
+      },
+      {
+        type: "list",
+        items: [
+          "Meterlo todo en un solo vídeo: la empresa quiere cubrirlo todo de una vez y el resultado es una pieza de 35 minutos que nadie termina de ver.",
+          "Usar la estética del vídeo corporativo genérico: si la intro tiene el mismo look que el anuncio de una aerolínea, el nuevo empleado no siente que ese vídeo es para él.",
+          "Grabar sin guion: improvisar en onboarding genera inconsistencias. Un responsable dice una cosa y otro dice algo distinto sobre el mismo proceso.",
+          "No actualizar el contenido: un vídeo que menciona una herramienta que ya no se usa o un proceso que cambió genera confusión en lugar de aclarar.",
+          "Forzar al CEO a protagonizar todos los módulos: tiene sentido que aparezca una vez para dar la bienvenida, pero no como narrador de cada bloque.",
+          "Producirlo sin definir en qué momento del proceso de incorporación lo va a ver el nuevo empleado.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta producir un vídeo de onboarding interno?",
+        answer:
+          "Depende de la cantidad de módulos, si hay desplazamientos, si necesita locuciones o voz interna, y si requiere animación o solo grabación. Un onboarding de 4 módulos grabados en las instalaciones del cliente, con edición estándar y subtítulos, puede estar entre 3.000 y 6.000 euros. Si incluye animaciones personalizadas o varios días de grabación en distintas ubicaciones, el rango sube.",
+      },
+      {
+        type: "faq",
+        question: "¿Quién debería aparecer en el vídeo?",
+        answer:
+          "El CEO o director general en el primer módulo de bienvenida, si tiene presencia natural delante de la cámara. Para los módulos específicos —herramientas, procesos, cultura de equipo— es mejor que sean los responsables de cada área. No hace falta que sean actores, hace falta que conozcan el tema y hablen con soltura. Un par de horas de preparación con guion bien escrito es suficiente para la mayoría de personas.",
+      },
+      {
+        type: "faq",
+        question: "¿Hay que actualizar el vídeo de onboarding?",
+        answer:
+          "Sí, y por eso la estructura modular tiene otra ventaja: puedes regravar solo el módulo que ha quedado obsoleto sin tocar los demás. Un vídeo monolítico de 30 minutos que cambia un proceso interno hay que rehacerlo entero. Un módulo de 4 minutos se actualiza en medio día de grabación.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede hacer con medios internos?",
+        answer:
+          "Parcialmente. El guion y el contenido lo puede preparar el equipo de RRHH o comunicación interna. La grabación con teléfono o webcam sin conocimientos técnicos suele transmitir poca seriedad. Para una primera versión con presupuesto bajo, una grabación simple pero con buena iluminación y audio decente es mejor que una producción cara con contenido vago.",
+      },
+      {
+        type: "paragraph",
+        text: "Si estás pensando en producir el vídeo de onboarding de tu empresa y no sabes por dónde empezar —cuántos módulos, qué duración, con qué medios—, en la página de contacto puedes contarme la situación y te digo qué tiene sentido para tu caso.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
