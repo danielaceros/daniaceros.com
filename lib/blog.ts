@@ -4930,6 +4930,155 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-institucional-errores-que-lo-hacen-generico",
+    title: "Vídeo institucional: los errores que lo hacen genérico",
+    description:
+      "Repaso a los errores más frecuentes que convierten un vídeo institucional en algo que parece de cualquier empresa y no de la tuya. Cómo evitarlos desde la fase de producción.",
+    publishedAt: "2026-06-19",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "vídeo institucional",
+      "producción de vídeo",
+      "vídeo corporativo",
+      "errores de producción",
+      "comunicación empresarial",
+    ],
+    keyword: "vídeo institucional errores que lo hacen genérico",
+    intent: "informacional",
+    excerpt:
+      "Un vídeo institucional genérico no convierte ni se recuerda. Repaso los errores más frecuentes que veo en producción y cómo los evito con mis clientes.",
+    seoTitle: "Vídeo institucional genérico: errores comunes | Daniel Acero",
+    metaDescription:
+      "Vídeo institucional genérico: los errores que lo arruinan y cómo evitarlos en producción. Guía práctica de Daniel Acero, filmmaker corporativo en Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "La mayoría de vídeos institucionales que veo me dicen lo mismo: 'Somos líderes en el sector, comprometidos con la innovación y centrados en las personas'. Esas frases no le dicen nada a nadie y el vídeo acaba siendo un archivo más en el servidor.",
+      },
+      {
+        type: "paragraph",
+        text: "No es un problema de presupuesto. He visto vídeos de bajo coste con una identidad clarísima y vídeos de 30.000 euros que parecen plantillas. El problema está en las decisiones que se toman —o que no se toman— durante la producción.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-institucional-errores-que-lo-hacen-generico/hero.webp",
+        alt: "Cámara en trípode lista para rodaje de vídeo institucional corporativo",
+        width: 1920,
+        height: 1280,
+        caption: "Un buen vídeo institucional empieza con decisiones claras antes de que la cámara entre en escena.",
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Qué hace genérico a un vídeo institucional",
+      },
+      {
+        type: "paragraph",
+        text: "Hay una confusión de base: creer que el vídeo institucional es un ejercicio de prestigio corporativo. Se contrata un equipo, se alquila una sala bonita, se graba al director gerente hablando de valores y se añade música emocionante de biblioteca. El resultado parece un vídeo de empresa, pero no habla de ninguna empresa en concreto.",
+      },
+      {
+        type: "paragraph",
+        text: "El vídeo genérico no engaña a nadie. El espectador que lo ve sabe en diez segundos si está ante algo real o ante una producción de relleno. Y si es relleno, hace scroll y no vuelve.",
+      },
+      {
+        type: "paragraph",
+        text: "Lo que da identidad a un vídeo no es el número de cámaras ni el tamaño del equipo. Es la claridad en el mensaje, la elección de quién aparece y la coherencia visual. Esas tres cosas se pueden tener con cualquier presupuesto.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cómo se hace bien",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Define el mensaje antes de pensar en el plano",
+      },
+      {
+        type: "paragraph",
+        text: "El error más frecuente que veo es llegar al rodaje sin haber decidido qué quiere transmitir la empresa. No el eslogan, no los valores del código de conducta: el mensaje concreto que debe quedarse en la cabeza del espectador cuando termina el vídeo. Si no tienes esa frase, no empieces a grabar.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Muestra personas reales haciendo cosas reales",
+      },
+      {
+        type: "paragraph",
+        text: "Los empleados con sonrisa forzada mirando pantallas o piezas en una cinta no engañan a nadie. El espectador distingue una actuación de un momento real. Lo que funciona es grabar a alguien explicando algo que hace todos los días, en su entorno, con el vocabulario que usa normalmente. Eso cuesta dirigir bien, pero el resultado es incomparable.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Da una dirección visual con criterio",
+      },
+      {
+        type: "paragraph",
+        text: "Muchos vídeos institucionales se ruedan sin un criterio visual definido: planos parecidos entre sí, cortes sin ritmo, color sin consistencia. Una paleta de color, un tipo de encuadre y una norma de movimiento de cámara ya dan personalidad, aunque el rodaje sea de un solo día. No hace falta un director de arte para tener criterio visual.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-institucional-errores-que-lo-hacen-generico/intermedia.webp",
+        alt: "Equipo de trabajo reunido en oficina, escena real adecuada para vídeo institucional",
+        width: 1920,
+        height: 1282,
+        caption: "Las escenas de trabajo real, sin poses, son las que dan credibilidad a un vídeo institucional.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Errores comunes que lo convierten en genérico",
+      },
+      {
+        type: "list",
+        items: [
+          "Abrir con el logo y el nombre de la empresa: el espectador ya sabe dónde está.",
+          "Usar música de biblioteca de moda en lugar de una banda sonora que case con el tono de la marca.",
+          "Escribir el guion en lenguaje corporativo en lugar de hablar como hablan sus clientes.",
+          "No incluir ningún elemento visual específico: instalaciones propias, producto real, equipo de trabajo.",
+          "Dejar que el vídeo dure cuatro minutos cuando el mensaje cabe en noventa segundos.",
+          "No tener un CTA claro al final: ¿qué quieres que haga el espectador después de verlo?",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Qué duración es correcta para un vídeo institucional?",
+        answer:
+          "Entre 90 segundos y 2 minutos para distribución digital. Si el vídeo es para un evento interno o una presentación larga, puede llegar a 4 o 5 minutos, pero cada minuto tiene que justificarse. Estirar la duración para dar más peso al vídeo es contraproducente: el espectador abandona.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuántas personas deben aparecer hablando a cámara?",
+        answer:
+          "El número no importa. Lo que importa es que quien habla tenga algo concreto que decir y que lo diga con naturalidad. Un solo portavoz con convicción es más efectivo que cinco personas repitiendo variaciones del mismo mensaje. Si usas varios testimonios, que cada uno aporte un punto de vista diferente.",
+      },
+      {
+        type: "faq",
+        question: "¿Es necesario un guion cerrado o bastan puntos orientativos?",
+        answer:
+          "Depende del portavoz. Alguien con experiencia en comunicación pública puede funcionar con puntos orientativos. Para el resto, un guion cerrado que hayan ensayado una hora antes da resultados mucho más consistentes que la improvisación. Con teleprompter, el guion no hace que parezcan rígidos: hace que mantengan contacto visual con la cámara.",
+      },
+      {
+        type: "faq",
+        question: "¿En qué se diferencia el vídeo institucional del vídeo de marca?",
+        answer:
+          "El vídeo institucional explica quién es la empresa: historia, equipo, misión, valores. El vídeo de marca trabaja la emoción y la identidad visual. En la práctica se solapan, pero tienen objetivos distintos. Muchas empresas fusionan ambos en un solo vídeo y el resultado queda a medias en los dos.",
+      },
+      {
+        type: "paragraph",
+        text: "Si estás planificando el vídeo institucional de tu empresa y quieres que tenga identidad propia en lugar de parecer el de cualquier otra, puedes escribirme desde la página de contacto y te digo si tiene sentido que trabajemos juntos.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
