@@ -312,6 +312,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto (fallback evergreen, sin candidate SC limpio — token SC caducado). Imágenes Unsplash/Pexels.",
   },
+  {
+    slug: "cuantas-camaras-para-entrevista",
+    keyword: "cuántas cámaras para grabar una entrevista",
+    intent: "informacional",
+    createdAt: "2026-06-22",
+    status: "published",
+    notes: "Auto-generado por blog-auto (fallback evergreen, sin candidate SC limpio — token SC caducado). Imágenes Pexels.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {

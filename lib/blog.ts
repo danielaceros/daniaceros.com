@@ -5079,6 +5079,154 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "cuantas-camaras-para-entrevista",
+    title: "Cuántas cámaras necesitas para grabar una entrevista corporativa",
+    description:
+      "Guía práctica sobre cuántas cámaras usar en una entrevista corporativa: cuándo basta con una, cuándo la segunda cámara cambia el montaje y qué errores evitar.",
+    publishedAt: "2026-06-22",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: [
+      "grabación de entrevistas",
+      "vídeo corporativo",
+      "producción audiovisual",
+      "cámara",
+      "entrevista corporativa",
+    ],
+    keyword: "cuántas cámaras para grabar una entrevista",
+    intent: "informacional",
+    excerpt:
+      "Una cámara puede ser suficiente para una entrevista. Dos cámaras cambian el ritmo del montaje. Te explico cuándo merece la pena añadir la segunda.",
+    seoTitle: "Cuántas cámaras para una entrevista corporativa | Daniel Acero",
+    metaDescription:
+      "¿Una o dos cámaras para tu entrevista corporativa? Cuándo basta con una y cuándo la segunda cambia el resultado del montaje. Guía práctica.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "La pregunta que me hacen casi siempre antes de presupuestar una entrevista es esa: ¿cuántas cámaras vais a traer? Como si el número lo definiera todo.",
+      },
+      {
+        type: "paragraph",
+        text: "Depende. Depende de para qué sirve la entrevista, cuánto tiempo hay en montaje y qué espera el cliente del resultado final.",
+      },
+      {
+        type: "image",
+        src: "/blog/cuantas-camaras-para-entrevista/hero.webp",
+        alt: "Cámara de vídeo profesional en set de entrevista corporativa con iluminación lateral",
+        width: 1880,
+        height: 1253,
+        caption: "El plano que eliges y la iluminación hacen más que el número de cámaras.",
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "La respuesta corta: una cámara basta, dos mejoran",
+      },
+      {
+        type: "paragraph",
+        text: "Con una cámara bien posicionada puedes grabar una entrevista que funcione. La clave está en el plano que eliges, la iluminación y la dirección del entrevistado. El montaje en una sola cámara obliga a cortar en momentos de pausa o a usar B-roll para cubrir los saltos de edición. Eso es perfectamente válido y, en muchos casos, es exactamente lo que pide el formato.",
+      },
+      {
+        type: "paragraph",
+        text: "Con dos cámaras tienes opciones reales de montaje. Puedes cortar entre plano general y plano corto sin romper la continuidad del discurso. El resultado tiene más dinamismo y la edición se vuelve más flexible. Si la entrevista dura 45 minutos y de ahí tienen que salir 3 minutos de pieza final, la segunda cámara no es un lujo: es lo que te permite editar con criterio y no solo con lo que tienes.",
+      },
+      {
+        type: "paragraph",
+        text: "Hay casos en los que la segunda cámara es prescindible. Si el montaje va a ser un vídeo con voz en off sobre imágenes de recurso y la entrevistada aparece puntualmente, no merece la pena. Si el formato es una sola pregunta de 30 segundos para redes sociales, tampoco.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cómo sacar partido a cada configuración",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Grabación con una sola cámara",
+      },
+      {
+        type: "paragraph",
+        text: "El plano habitual es un plano medio o medio corto, ligeramente desplazado del centro del encuadre, con la mirada del entrevistado dirigida hacia el entrevistador fuera de cámara. El reto del montaje es que cada corte en el discurso queda expuesto: si el entrevistado repite o titubea, tienes que cubrir ese corte con B-roll. Eso funciona bien si ya tienes imágenes de recurso preparadas o si el discurso es fluido y las pausas son naturales.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Grabación con dos cámaras",
+      },
+      {
+        type: "paragraph",
+        text: "La configuración más habitual es cámara A en plano medio o medio corto y cámara B en plano más cerrado o en un ángulo de apoyo. Ambas tienen que estar colocadas en el mismo lado del eje imaginario para que el entrevistado mire siempre en la misma dirección en los dos planos. El montaje se vuelve mucho más fluido: puedes cortar en cualquier momento del discurso sin necesidad de cubrir nada. En términos de producción, añadir una segunda cámara suma entre 20 y 40 minutos de setup y requiere atención durante la grabación, aunque sea pasiva.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "¿Y con tres cámaras?",
+      },
+      {
+        type: "paragraph",
+        text: "En entrevistas estándar, rara vez tiene sentido. Lo uso en paneles o mesas de diálogo con varios portavoces, donde una tercera cámara cubre el plano general o permite cambiar de interlocutor sin corte visible. En una entrevista de una sola persona, tres cámaras casi siempre son superfluas.",
+      },
+      {
+        type: "image",
+        src: "/blog/cuantas-camaras-para-entrevista/intermedia.webp",
+        alt: "Set de producción audiovisual con varias cámaras y pantalla verde en estudio profesional",
+        width: 1880,
+        height: 1253,
+        caption: "Un set con dos cámaras bien posicionadas da más libertad al editor sin complicar el rodaje.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Errores comunes al añadir la segunda cámara",
+      },
+      {
+        type: "list",
+        items: [
+          "Cruzar el eje: las dos cámaras apuntan desde lados opuestos y en el montaje parece que el entrevistado mira en dos direcciones distintas.",
+          "Igualar los planos: si A y B tienen el mismo ángulo y focal, no hay razón para cortar entre ellas. Los planos tienen que ser distintos para que el corte aporte algo.",
+          "No coordinar la exposición: si hay una ventana en escena y la iluminación varía, los dos planos quedan incongruentes en edición.",
+          "Mover la segunda cámara sin criterio durante la grabación: ese material se pierde en montaje.",
+          "Activarla sin audio de referencia: sin señal de audio, el sincronizado manual en DaVinci Resolve o Premiere consume tiempo innecesario.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Tengo que avisar al entrevistado de que hay dos cámaras?",
+        answer:
+          "Sí, siempre. Aunque no cambia nada en el comportamiento de quien está siendo grabado, es una cuestión de transparencia y de que la persona sepa hacia dónde mirar en cada momento.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuál es la diferencia de coste entre una y dos cámaras?",
+        answer:
+          "Depende del proyecto. Una segunda cámara puede implicar un segundo operador o simplemente montar una cámara fija en un punto secundario. En el segundo caso, el incremento de coste es mínimo comparado con lo que aporta al montaje.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué cámara va en la posición A y cuál en la B?",
+        answer:
+          "La cámara con mejor óptica o mayor resolución suele ir en la posición A, el plano principal. La B puede ser la misma gama con una focal diferente o una cámara secundaria destinada al plano de apoyo.",
+      },
+      {
+        type: "faq",
+        question: "¿Puede grabarse una entrevista sin entrevistador visible con dos cámaras?",
+        answer:
+          "Sí. La segunda cámara puede hacer un plano de apoyo diferente sin incluir al entrevistador. Es lo más habitual en entrevistas corporativas donde solo aparece el portavoz de la empresa.",
+      },
+      {
+        type: "paragraph",
+        text: "Si estás planificando una entrevista corporativa y quieres saber qué configuración tiene sentido para tu caso, puedes escribirme desde la página de contacto. En función del uso final del vídeo y del tiempo de producción disponible, te digo qué merece la pena y qué sobra.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
