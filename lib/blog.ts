@@ -5227,6 +5227,142 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "iluminacion-natural-vs-artificial-video-corporativo",
+    title: "Iluminación natural vs artificial en vídeo corporativo: cuándo usar cada una",
+    description:
+      "Luz natural o artificial en vídeo corporativo: cómo decidir según el espacio, el tiempo de grabación y el resultado que necesitas.",
+    publishedAt: "2026-06-23",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: ["iluminación", "vídeo corporativo", "producción", "técnica", "filmmaker", "Madrid"],
+    keyword: "iluminación natural vs artificial en vídeo corporativo",
+    intent: "informacional",
+    excerpt:
+      "La luz define el resultado visual de cualquier grabación. Te explico cuándo apostar por la luz natural y cuándo merece la pena montar un equipo de iluminación artificial.",
+    seoTitle: "Iluminación natural vs artificial en vídeo corporativo | Daniel Acero",
+    metaDescription:
+      "Iluminación natural o artificial en vídeo corporativo: cuándo conviene cada opción, qué equipo necesitas y cómo evitar los errores más comunes.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "La decisión no es estética. Es logística. Cuando llego a un set y tengo ventanas grandes con luz de norte, trabajo con lo que hay. Cuando grabo en una sala de reuniones con fluorescentes viejos y persianas bloqueadas, saco los focos. La pregunta no es qué queda mejor en abstracto, sino qué puedes controlar en ese espacio ese día.",
+      },
+      {
+        type: "paragraph",
+        text: "En vídeo corporativo el problema con la luz natural no es que sea mala. Es que cambia. Una nube, un cambio de hora, el sol que pasa al otro lado del edificio: de un plano al siguiente tienes una temperatura de color diferente y una exposición distinta. Eso se puede corregir en postproducción, pero tiene un coste de tiempo que muchas veces no merece.",
+      },
+      {
+        type: "image",
+        src: "/blog/iluminacion-natural-vs-artificial-video-corporativo/hero.webp",
+        alt: "Iluminación en set de vídeo corporativo con ventana y foco artificial",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Qué cambia realmente entre luz natural y artificial",
+      },
+      {
+        type: "paragraph",
+        text: "La luz natural tiene una calidad que es difícil de replicar: fuente de gran tamaño, gradaciones suaves, espectro completo. En interiores con buenas ventanas, una entrevista bien expuesta puede verse mejor que con un equipo de focos mediocre. El problema es la consistencia: a las 9 de la mañana tienes una cosa y a las 11 tienes otra.",
+      },
+      {
+        type: "paragraph",
+        text: "La luz artificial te da control. Decides la dirección, la intensidad, la temperatura de color. Si el espacio es oscuro o tienes que grabar varias horas seguidas y que todo iguale, no hay alternativa. Un equipo básico de tres focos LED bicolor, difusores y soportes cabe en el maletero de un coche y monta en 20 minutos.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cómo trabajar bien con luz natural",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Elige el momento del día",
+      },
+      {
+        type: "paragraph",
+        text: "La luz directa de mediodía entra con ángulos agresivos y genera sombras duras en la cara. Para entrevistas prefiero las horas de la mañana o las de última tarde, cuando la luz llega oblicua y más suave. En Madrid en verano hay buena ventana entre las 8 y las 10, y otra entre las 18 y las 20.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Controla la dirección y la cantidad",
+      },
+      {
+        type: "paragraph",
+        text: "Una ventana lateral es un softbox gratuito. El entrevistado a 45 grados respecto a la ventana da un modelado de luz clásico. Si la ventana queda de frente, añado un reflector plateado o blanco al lado contrario para rellenar las sombras. Si hay demasiada luz y quema, una cortina blanca difunde sin perder la calidad de la fuente.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Reflectores y difusores como aliados",
+      },
+      {
+        type: "paragraph",
+        text: "Llevar un kit de reflectores plegables de 80 cm pesa casi nada y permite manejar la luz natural con mucha más precisión. No sustituye a un foco, pero en muchas locaciones es la diferencia entre una imagen plana y una imagen con volumen real.",
+      },
+      {
+        type: "image",
+        src: "/blog/iluminacion-natural-vs-artificial-video-corporativo/mid.webp",
+        alt: "Estudio de vídeo con iluminación artificial profesional, softbox y equipo de filmación",
+        width: 1920,
+        height: 1440,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cuándo la luz artificial es la opción correcta",
+      },
+      {
+        type: "list",
+        items: [
+          "El espacio no tiene ventanas o la luz exterior es muy dura y sin posibilidad de difusión.",
+          "La grabación dura más de dos horas y necesitas que todos los planos igualen en color y exposición.",
+          "Hay mezcla de luces: fluorescentes de techo más ventana lateral. Es más fácil tapar las fuentes existentes y controlar todo artificialmente.",
+          "Grabas en varias locaciones distintas el mismo día y necesitas consistencia visual entre todas.",
+          "El cliente quiere un resultado pulido con fondo neutro en un espacio que no lo tiene de forma natural.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo usar solo la luz natural para un vídeo corporativo profesional?",
+        answer:
+          "Sí, si las condiciones son las adecuadas: ventanas grandes, luz lateral y horario controlado. El resultado puede ser muy bueno. El problema aparece cuando no controlas el espacio o el tiempo de grabación se extiende varias horas.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué equipo mínimo de iluminación artificial necesito para una entrevista?",
+        answer:
+          "Para una entrevista estándar: dos focos LED bicolor de 60 a 100 W con softbox o difusor (key y fill), y un tercer foco pequeño para separar al sujeto del fondo o iluminarlo. Un kit completo con soportes puede rondar los 400-600 euros.",
+      },
+      {
+        type: "faq",
+        question: "¿La temperatura de color importa tanto en vídeo corporativo?",
+        answer:
+          "Bastante. Una mezcla de luz fría de ventana y luz cálida de foco da pieles de colores raros que cuestan mucho de corregir en DaVinci Resolve. Lo ideal es fijar una temperatura en cámara, 5600K para luz de día o 3200K para tungsteno, y que todas las fuentes igualen.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué hago si en la locación hay mezcla de luces que no puedo controlar?",
+        answer:
+          "Primera opción: bajar las persianas y apagar los fluorescentes de techo, y trabajar solo con tus focos. Segunda opción: si no puedes eliminar las otras fuentes, usa una luz dominante con mucha más potencia que el resto y acepta que habrá algo de mezcla en zonas secundarias del encuadre.",
+      },
+      {
+        type: "paragraph",
+        text: "Si estás planificando una grabación y tienes dudas sobre cómo manejar la iluminación del espacio, escríbeme desde la página de contacto. Con las fotos del espacio y la hora prevista de grabación ya puedo decirte si merece la pena traer equipo o si la luz natural es suficiente.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {

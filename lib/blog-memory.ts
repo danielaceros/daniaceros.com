@@ -320,6 +320,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto (fallback evergreen, sin candidate SC limpio — token SC caducado). Imágenes Pexels.",
   },
+  {
+    slug: "iluminacion-natural-vs-artificial-video-corporativo",
+    keyword: "iluminación natural vs artificial en vídeo corporativo",
+    intent: "informacional",
+    createdAt: "2026-06-23",
+    status: "published",
+    notes: "Auto-generado por blog-auto (fallback evergreen, sin candidate SC limpio — token SC caducado). Imágenes Unsplash.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {
