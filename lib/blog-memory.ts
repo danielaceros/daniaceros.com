@@ -328,6 +328,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto (fallback evergreen, sin candidate SC limpio — token SC caducado). Imágenes Unsplash.",
   },
+  {
+    slug: "estabilizacion-gimbal-slider-tripode",
+    keyword: "estabilización gimbal slider trípode",
+    intent: "informacional",
+    createdAt: "2026-06-24",
+    status: "published",
+    notes: "Auto-generado por blog-auto (fallback evergreen, sin candidate SC limpio — token SC caducado). Imágenes Unsplash.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {

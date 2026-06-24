@@ -5363,6 +5363,153 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "estabilizacion-gimbal-slider-tripode",
+    title: "Gimbal, slider o trípode: cuándo usar cada herramienta de estabilización",
+    description:
+      "Guía práctica para decidir entre gimbal, slider y trípode en producciones de vídeo corporativo según el tipo de plano, espacio y movimiento que necesitas.",
+    publishedAt: "2026-06-24",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "estabilización de cámara",
+      "gimbal",
+      "trípode",
+      "slider",
+      "vídeo corporativo",
+      "producción audiovisual",
+    ],
+    keyword: "estabilización gimbal slider trípode",
+    intent: "informacional",
+    excerpt:
+      "Trípode, slider o gimbal: la elección correcta depende del tipo de plano, el espacio y el movimiento que quieres conseguir. Te explico cómo pienso yo antes de cada rodaje.",
+    seoTitle: "Estabilización: gimbal, slider o trípode | Daniel Acero",
+    metaDescription:
+      "Estabilización en vídeo corporativo: cuándo usar gimbal, slider o trípode. Errores habituales y criterios para elegir bien antes del rodaje.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "La primera vez que alguien me preguntó si necesitaba un gimbal para su vídeo corporativo, la respuesta fue no. Tenía una sala de reuniones, una sola cámara y cinco personas que debían hablar a cámara. El gimbal habría sido estorbo puro.",
+      },
+      {
+        type: "paragraph",
+        text: "La estabilización no es un valor en sí mismo. Es una decisión que depende de lo que vas a grabar, del espacio, del tiempo que tienes y del tipo de movimiento que quieres conseguir. Aquí explico cómo pienso yo cuando tengo que elegir.",
+      },
+      {
+        type: "image",
+        src: "/blog/estabilizacion-gimbal-slider-tripode/hero.webp",
+        alt: "Operador de cámara usando un gimbal durante una grabación corporativa en exteriores",
+        width: 1920,
+        height: 1080,
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Qué hace cada herramienta",
+      },
+      {
+        type: "paragraph",
+        text: "El trípode es la base de casi todo. Fija la cámara, elimina el temblor y libera energía mental para pensar en el encuadre, la luz y la persona que tienes delante. Para entrevistas, declaraciones, presentaciones de producto y cualquier plano donde la cámara no se mueve, el trípode es la opción correcta.",
+      },
+      {
+        type: "paragraph",
+        text: "El slider añade movimiento horizontal o vertical de forma controlada. Ese desplazamiento de 60 u 80 centímetros transforma un plano estático en algo con vida sin que parezca grabado con cámara en mano. Funciona bien para planos de producto, recurso en oficinas o secuencias de apertura.",
+      },
+      {
+        type: "paragraph",
+        text: "El gimbal estabiliza la cámara mientras te mueves. Compensa vibraciones y permite caminar con fluidez o seguir a una persona en movimiento. Es la herramienta correcta para grabaciones de eventos, espacios que quieres recorrer o situaciones donde el movimiento narrativo importa.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cómo elegir según la situación",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Trípode: cuando la cámara no se mueve",
+      },
+      {
+        type: "paragraph",
+        text: "Si la cámara no se desplaza durante la toma, el trípode gana siempre. Es más rápido de montar, más estable a cualquier focal y más silencioso que cualquier gimbal. En entrevistas corporativas trabajo casi siempre con dos trípodes: uno para la cámara principal y otro para la Sony A7 con focal larga. No hace falta más movimiento.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Slider: cuando el movimiento es corto y controlado",
+      },
+      {
+        type: "paragraph",
+        text: "Cuando tengo que hacer planos de recurso en oficinas o salas de reunión, el slider me da algo que el trípode no puede: el movimiento de apertura. Un travelling de 80 centímetros sobre una mesa de trabajo o un plano de cierre sobre un portátil añaden profundidad en movimiento. Lo llevo sobre todo cuando el vídeo tiene una secuencia de presentación de espacio o de producto.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Gimbal: cuando la cámara sigue la acción",
+      },
+      {
+        type: "paragraph",
+        text: "Los eventos son el terreno natural del gimbal. Cuando hay gente moviéndose, cuando quiero seguir a alguien por un pasillo o capturar el ambiente de una sala llena, el gimbal permite hacerlo con fluidez. En rodajes de ocho o diez horas en eventos, suele ser la herramienta que más tiempo tengo en la mano. La contrapartida: requiere práctica, carga en los brazos y batería.",
+      },
+      {
+        type: "image",
+        src: "/blog/estabilizacion-gimbal-slider-tripode/mid.webp",
+        alt: "Cámara Sony sobre trípode en set de producción de vídeo corporativo",
+        width: 1920,
+        height: 1080,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Errores que veo habitualmente",
+      },
+      {
+        type: "list",
+        items: [
+          "Llevar el gimbal a entrevistas estáticas: añade tiempo de montaje sin ninguna ventaja real.",
+          "No equilibrar el gimbal antes del rodaje: un gimbal mal balanceado produce movimientos erráticos difíciles de corregir en posproducción.",
+          "Usar slider en espacios pequeños sin planificar el recorrido: si no hay sitio para el travelling, el plano queda a medias.",
+          "Mezclar cámara en mano con slider en el mismo proyecto sin coherencia narrativa: el resultado visual es incoherente.",
+          "Olvidar cargar las baterías del gimbal: consume mucho en exteriores y necesita baterías propias.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo prescindir del slider en una producción corporativa?",
+        answer:
+          "Sí. En la mayoría de vídeos de empresa el slider es un extra, no una necesidad. Un vídeo bien iluminado y bien encuadrado desde un trípode es perfectamente competitivo sin ningún movimiento de cámara adicional.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué peso de cámara admite un gimbal de gama media?",
+        answer:
+          "La mayoría de gimbals de gama media, como el DJI RS 3 o el Zhiyun Crane M3, admiten entre 2 y 3 kilogramos de payload. Con una Sony A7 y un objetivo estándar estás cómodo. Con un zoom largo o filtros adicionales, revisa las especificaciones antes de comprar.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo usar el trípode con un cabezal fluido básico?",
+        answer:
+          "Técnicamente sí, pero los paneos quedarán entrecortados. Si haces paneos suaves en cámara, merece la pena invertir en un cabezal fluido de calidad. Con un Manfrotto 502AH, por ejemplo, el pan es limpio y predecible.",
+      },
+      {
+        type: "faq",
+        question: "¿El gimbal sustituye a la estabilización óptica o al IBIS de la cámara?",
+        answer:
+          "No, se complementan. El gimbal corrige los movimientos grandes, como caminar o girar. El IBIS o la estabilización óptica corrige las vibraciones pequeñas. Usarlos juntos da el resultado más limpio, aunque hay que activarlos correctamente para evitar el efecto wooble que se produce cuando se contrarrestan entre sí.",
+      },
+      {
+        type: "paragraph",
+        text: "Si estás preparando un rodaje y tienes dudas sobre qué equipo de estabilización necesitas, escríbeme desde la página de contacto. Con el briefing del proyecto puedo decirte exactamente qué llevar y ahorrarte tiempo de montaje el día de la grabación.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
