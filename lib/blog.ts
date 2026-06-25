@@ -5510,6 +5510,167 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "duracion-ideal-video-corporativo",
+    title: "Cuánto debe durar un vídeo corporativo según el formato",
+    description:
+      "Guía con los rangos de duración reales para cada tipo de vídeo corporativo: spot, testimonial, aftermovie, onboarding y vídeo de producto. Sin teoría, con criterios de rodaje.",
+    publishedAt: "2026-06-25",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "duración vídeo corporativo",
+      "formatos audiovisuales",
+      "producción audiovisual",
+      "vídeo de empresa",
+      "filmmaker Madrid",
+    ],
+    keyword: "duración ideal de un vídeo corporativo",
+    intent: "informacional",
+    excerpt:
+      "La duración correcta de un vídeo corporativo depende del formato, el canal y lo que quieres conseguir. Te doy los rangos que uso en mis proyectos y los errores que alargan un vídeo sin añadir valor.",
+    seoTitle: "Duración ideal de un vídeo corporativo | Daniel Acero",
+    metaDescription:
+      "Duración ideal de un vídeo corporativo según el formato: spot, entrevista, aftermovie, testimonial y onboarding. Rangos reales de un filmmaker en Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "La pregunta que me hacen casi en cada presupuesto es la misma: ¿cuánto tiene que durar el vídeo? La respuesta honesta es que depende. Pero 'depende' no ayuda a planificar, así que aquí van los rangos que manejo yo según el tipo de vídeo.",
+      },
+      {
+        type: "paragraph",
+        text: "Hay dos errores frecuentes: creer que más largo es mejor porque 'hay mucho que contar', y creer que más corto siempre gana porque 'la atención es escasa'. Ninguno de los dos es siempre cierto. Lo que importa es el formato, el canal y la acción que quieres que el espectador tome al terminar.",
+      },
+      {
+        type: "image",
+        src: "/blog/duracion-ideal-video-corporativo/hero.webp",
+        alt: "Sistema de cámara Sony FS7 en un set de filmación corporativa profesional",
+        width: 1920,
+        height: 1080,
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Por qué la duración importa antes del rodaje",
+      },
+      {
+        type: "paragraph",
+        text: "Definir la duración antes de grabar no es solo una decisión de edición. Cambia cuántos testimonios necesitas, cuánto b-roll hay que acumular y cuánto tiempo de locución tiene que escribir el guion. Un aftermovie de 90 segundos y uno de 4 minutos se graban de manera diferente.",
+      },
+      {
+        type: "paragraph",
+        text: "Si llegas al rodaje sin haber decidido el formato final, terminas grabando de más o de menos. Generalmente de más, porque 'por si acaso'. Eso alarga el montaje, encarece la edición y dilata las revisiones.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Rangos por formato",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Spot corporativo o vídeo de marca",
+      },
+      {
+        type: "paragraph",
+        text: "Entre 60 y 90 segundos para canal digital; entre 30 y 45 segundos si va a pauta pagada. El objetivo es impactar, no explicar. Cada segundo que superes sin añadir valor es un segundo donde pierdes espectadores. Con 75 segundos bien ejecutados puedes contar quién eres, qué haces y por qué importa.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Entrevista y vídeo testimonial",
+      },
+      {
+        type: "paragraph",
+        text: "Entre 90 segundos y 3 minutos. Menos de 90 segundos es difícil desarrollar algo con sustancia; más de 3 minutos necesita una razón narrativa clara para mantener la atención. Si el testimonio tiene que convencer a un cliente potencial, entre 2 y 2:30 minutos es el rango donde mejor funciona.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Aftermovie de evento",
+      },
+      {
+        type: "paragraph",
+        text: "Entre 2 y 4 minutos. Un aftermovie de 90 segundos puede funcionar como pieza de redes sociales, pero no comunica la escala del evento. Uno de 6 minutos suele perder espectadores salvo que haya una historia sólida que lo sostenga. El punto dulce para que quien no asistió quiera haberlo hecho y quien sí asistió lo quiera compartir está entre 2:30 y 3:30.",
+      },
+      {
+        type: "image",
+        src: "/blog/duracion-ideal-video-corporativo/intermedia.webp",
+        alt: "Línea de tiempo de edición de vídeo en Premiere Pro en monitor de postproducción",
+        width: 1920,
+        height: 1280,
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Vídeo de onboarding o formación",
+      },
+      {
+        type: "paragraph",
+        text: "Entre 3 y 8 minutos por módulo, dependiendo de la densidad del contenido. Lo que nunca funciona es el vídeo monolítico de 25 minutos que intenta abarcar todo el proceso de incorporación en un solo archivo. Divide por temas, no por duración.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Vídeo de producto o servicio",
+      },
+      {
+        type: "paragraph",
+        text: "Entre 60 segundos y 2 minutos. Si el producto es complejo y la decisión de compra es larga, puedes llegar a 3 minutos. Si es un consumidor final que decide en segundos, 45-60 segundos puede ser suficiente.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Errores que alargan un vídeo sin añadir valor",
+      },
+      {
+        type: "list",
+        items: [
+          "Introducción demasiado larga antes de entrar en materia.",
+          "Logos animados de apertura que duran 5 o 6 segundos sin narrativa.",
+          "Declaraciones que repiten lo mismo con distintas palabras.",
+          "B-roll de relleno sin conexión con el audio.",
+          "Cierre que explica lo que acaba de decir el vídeo en lugar de llamar a la acción.",
+          "Créditos completos en una pieza destinada a redes sociales.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Los vídeos cortos siempre funcionan mejor en redes sociales?",
+        answer:
+          "No siempre. En LinkedIn, por ejemplo, los vídeos de 2 a 3 minutos con contenido de valor profesional pueden superar en retención a los cortos superficiales. La clave es que los primeros 3 segundos justifiquen seguir viendo.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto dura un aftermovie profesional de una conferencia de un día?",
+        answer:
+          "Entre 2 y 4 minutos es el rango habitual. Con un día de conferencia puedes grabar suficiente para un 3 minutos sólido: apertura, ponentes, momentos de networking y cierre. Forzar 6 minutos normalmente implica añadir relleno.",
+      },
+      {
+        type: "faq",
+        question: "¿Tengo que decidir la duración antes de grabar o puedo decidirlo en edición?",
+        answer:
+          "Es mejor decidirlo antes. Si sabes que el resultado va a ser 90 segundos, en rodaje sabrás que necesitas 3 o 4 testimonios cortos y mucho b-roll de ritmo. Si llegas a edición sin ese criterio, suele sobrar material sin estructura y la duración la acaba decidiendo el editor por defecto.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué hago si el cliente pide un vídeo que 'lo cuente todo', que normalmente implica algo muy largo?",
+        answer:
+          "Lo redirijo hacia el objetivo. Pregunto: ¿quieres que quien lo vea conozca la empresa, que se decida a contrataros o que aprenda a usar el producto? Cada objetivo tiene una duración natural. Si la respuesta es 'todo a la vez', propongo dividir en piezas distintas para distintos momentos del embudo.",
+      },
+      {
+        type: "paragraph",
+        text: "Si estás en fase de presupuesto y tienes dudas sobre qué formato y duración encaja mejor con tu objetivo, escríbeme desde la página de contacto. Con el briefing del proyecto puedo orientarte antes de comprometer el rodaje.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {

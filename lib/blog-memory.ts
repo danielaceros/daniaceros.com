@@ -336,6 +336,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto (fallback evergreen, sin candidate SC limpio — token SC caducado). Imágenes Unsplash.",
   },
+  {
+    slug: "duracion-ideal-video-corporativo",
+    keyword: "duración ideal de un vídeo corporativo",
+    intent: "informacional",
+    createdAt: "2026-06-25",
+    status: "published",
+    notes: "Auto-generado por blog-auto (fallback evergreen — todos los 30 temas de la lista cubiertos; tema generado fuera de lista, sin candidate SC limpio — token SC caducado). Imágenes Unsplash.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {
