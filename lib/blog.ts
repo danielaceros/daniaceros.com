@@ -5671,6 +5671,149 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "guion-video-corporativo",
+    title: "Guion para vídeo corporativo: estructura y errores habituales",
+    description:
+      "Cómo escribir un guion para vídeo corporativo que funcione: estructura en columnas, errores que evitar y consejos prácticos de un filmmaker corporativo en Madrid.",
+    publishedAt: "2026-06-26",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "guion vídeo corporativo",
+      "producción audiovisual",
+      "vídeo corporativo Madrid",
+      "preproducción",
+      "filmmaker corporativo",
+    ],
+    keyword: "guion para vídeo corporativo",
+    intent: "informacional",
+    excerpt:
+      "Sin guion, el rodaje se alarga, el mensaje se diluye y el montaje se convierte en rescatar algo coherente de horas de material sin estructura. Así se escribe uno que funcione.",
+    seoTitle: "Guion para vídeo corporativo | Daniel Acero",
+    metaDescription:
+      "Guion para vídeo corporativo: estructura, errores habituales y cómo escribirlo para que el mensaje llegue limpio desde el rodaje hasta la pantalla.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Antes de encender una cámara, hay una pregunta que siempre hago al cliente: ¿tienes guion? La respuesta más habitual es 'más o menos'. Eso, en la práctica, significa que no lo hay. Y sin guion, el rodaje se alarga, el mensaje se diluye y el montaje se convierte en rescatar algo coherente de horas de material sin estructura.",
+      },
+      {
+        type: "paragraph",
+        text: "El guion no es el documento más glamuroso de una producción. Pero es el que más dinero ahorra. Cuando está bien hecho, todo lo demás —casting, locación, equipo técnico— encaja con precisión.",
+      },
+      {
+        type: "image",
+        src: "/blog/guion-video-corporativo/hero.webp",
+        alt: "Persona revisando guion de vídeo corporativo antes de un rodaje",
+        width: 1920,
+        height: 1281,
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Qué es un guion en vídeo corporativo",
+      },
+      {
+        type: "paragraph",
+        text: "En vídeo corporativo, el guion no siempre es un texto que alguien lee en cámara. A veces es una estructura narrativa que define qué van a decir los testimonios, qué planos de b-roll necesitas y en qué orden monta el editor. Un guion puede tener forma de texto corrido, de tabla con columnas (imagen / sonido / tiempo), o de simple lista de bloques con instrucciones.",
+      },
+      {
+        type: "paragraph",
+        text: "Lo que sí debe tener siempre es un objetivo claro. No 'presentar la empresa'. Sino: hacer que quien vea el vídeo entienda qué problema resuelves y por qué elegirte a ti. Eso es lo que marca el tono, la duración y la estructura.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cómo se escribe bien un guion corporativo",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Empieza por el mensaje central, no por la historia",
+      },
+      {
+        type: "paragraph",
+        text: "Antes de abrir un documento, define una sola frase: qué debe pensar el espectador al terminar de ver el vídeo. No dos frases, una. Si no puedes resumirlo en una línea, el guion va a ser largo, difuso y difícil de editar. A partir de esa frase, todo lo que escribas tiene que empujar hacia ella.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Estructura el texto como un guion, no como una redacción",
+      },
+      {
+        type: "paragraph",
+        text: "Divide el documento en columnas o bloques: imagen (qué se ve), audio (qué se oye), texto en pantalla (si hay). Añade tiempos orientativos por bloque. Esto permite que el director, el editor y el cliente vean a la vez cómo encaja todo. Un guion sin estructura visual termina siendo una redacción que nadie usa en rodaje.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Escribe en voz natural, como se habla",
+      },
+      {
+        type: "paragraph",
+        text: "Lee el guion en voz alta. Si suena a texto de presentación de empresa, hay que reescribirlo. La cámara detecta cuando alguien está recitando, no hablando. Las frases cortas funcionan mejor. Los verbos activos funcionan mejor. Cuanto más parecido al habla real, más cómodo estará el portavoz delante de la cámara.",
+      },
+      {
+        type: "image",
+        src: "/blog/guion-video-corporativo/intermedia.webp",
+        alt: "Libreta de guion sobre mesa de trabajo de un filmmaker",
+        width: 1920,
+        height: 1280,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Errores habituales en el guion de un vídeo corporativo",
+      },
+      {
+        type: "list",
+        items: [
+          "Querer meter demasiado en poco tiempo: un minuto de vídeo son unas 150 palabras habladas, no 400.",
+          "Escribir en tercera persona sobre la propia empresa ('Empresa X es líder en...'): nadie habla así.",
+          "Dejar los mensajes clave para el final: si el espectador abandona a los 20 segundos, ya no los ve.",
+          "No indicar los planos de b-roll: el editor no puede imaginar qué quieres si no lo especificas.",
+          "Confundir el guion con el briefing: el guion dice qué sucede en pantalla, no qué quiere el cliente de forma genérica.",
+          "No validar el guion antes del rodaje: los cambios en plató cuestan diez veces más que los cambios en el documento.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tarda en hacerse un guion para un vídeo corporativo?",
+        answer:
+          "Depende del tipo de pieza. Un guion para un vídeo de 60-90 segundos puede estar listo en dos o tres horas si el cliente sabe lo que quiere transmitir. Si hay que hacer preguntas, revisar mensajes clave e iterar, suma un día más. Es el paso donde más compensa invertir tiempo antes de rodar.",
+      },
+      {
+        type: "faq",
+        question: "¿El portavoz tiene que memorizar el guion?",
+        answer:
+          "No necesariamente. Si hay teleprompter, puede leerlo en cámara. Si no, lo mejor es que interiorice los mensajes y hable con naturalidad sobre ellos, no que memorice frases. La diferencia entre alguien que recita y alguien que conversa es inmediata en pantalla.",
+      },
+      {
+        type: "faq",
+        question: "¿Un guion sirve también para vídeos con b-roll sin portavoz?",
+        answer:
+          "Sí. En ese caso tiene menos texto hablado y más indicaciones visuales: qué planos, en qué orden, con qué música, qué texto aparece en pantalla. Sin ese documento, el rodaje se convierte en grabar mucho sin saber exactamente qué montar.",
+      },
+      {
+        type: "faq",
+        question: "¿Tiene que aprobarlo el cliente antes del rodaje?",
+        answer:
+          "Siempre. Es mucho más fácil cambiar una frase en un documento que repetir una toma en locación. Además, la aprobación del guion implica que el cliente ha validado el mensaje, lo que reduce revisiones en postproducción.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes un proyecto en mente y no sabes por dónde empezar, el guion es el primer paso. Desde la página de contacto puedo revisar tu briefing y ayudarte a definir la estructura antes de que empiece el rodaje.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {

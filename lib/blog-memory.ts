@@ -344,6 +344,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto (fallback evergreen — todos los 30 temas de la lista cubiertos; tema generado fuera de lista, sin candidate SC limpio — token SC caducado). Imágenes Unsplash.",
   },
+  {
+    slug: "guion-video-corporativo",
+    keyword: "guion para vídeo corporativo",
+    intent: "informacional",
+    createdAt: "2026-06-26",
+    status: "published",
+    notes: "Auto-generado por blog-auto (fallback evergreen — todos los 30 temas cubiertos; tema extra generado fuera de lista, sin candidate SC limpio — token SC caducado). Imágenes Unsplash/Pexels.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {
