@@ -352,6 +352,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto (fallback evergreen — todos los 30 temas cubiertos; tema extra generado fuera de lista, sin candidate SC limpio — token SC caducado). Imágenes Unsplash/Pexels.",
   },
+  {
+    slug: "preproduccion-video-corporativo",
+    keyword: "preproducción de un vídeo corporativo",
+    intent: "informacional",
+    createdAt: "2026-06-30",
+    status: "published",
+    notes: "Auto-generado por blog-auto (fallback evergreen — todos los 30 temas cubiertos; tema extra generado fuera de lista, sin candidate SC limpio — token SC caducado). Imágenes Unsplash.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {

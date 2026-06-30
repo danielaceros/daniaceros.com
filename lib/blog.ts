@@ -5814,6 +5814,166 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "preproduccion-video-corporativo",
+    title: "Preproducción de un vídeo corporativo: qué hacer antes de llegar al rodaje",
+    description:
+      "La preproducción determina si el rodaje fluye o se convierte en improvisación cara. Guion, locaciones, plan de rodaje y logística: esto es lo que preparo antes de encender la cámara.",
+    publishedAt: "2026-06-30",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: [
+      "preproducción",
+      "vídeo corporativo",
+      "rodaje",
+      "planificación audiovisual",
+      "filmmaker corporativo",
+      "Madrid",
+    ],
+    keyword: "preproducción de un vídeo corporativo",
+    intent: "informacional",
+    excerpt:
+      "Lo que pasa antes del rodaje determina casi todo lo que pasa durante y después. Esto es lo que preparo antes de encender la cámara.",
+    seoTitle: "Preproducción de Vídeo Corporativo | Daniel Acero",
+    metaDescription:
+      "Preproducción de un vídeo corporativo: guion, locaciones, plan de rodaje y logística. Todo lo que hay que tener listo antes de empezar a grabar.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Antes de que llegue el día del rodaje, hay una fase de trabajo que determina si todo va a fluir o va a convertirse en improvisación cara. Esa fase es la preproducción. No es glamurosa. Nadie la fotografía. Pero es donde se gana o se pierde un vídeo.",
+      },
+      {
+        type: "paragraph",
+        text: "Trabajo con empresas de tamaños muy distintos y con niveles de experiencia muy distintos en producción audiovisual. Lo que tienen en común los proyectos que mejor salen es siempre lo mismo: alguien se tomó en serio la fase previa al rodaje.",
+      },
+      {
+        type: "image",
+        src: "/blog/preproduccion-video-corporativo/hero.webp",
+        alt: "Equipo de producción audiovisual revisando planificación antes de un rodaje corporativo",
+        width: 1920,
+        height: 1080,
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Qué es la preproducción en un vídeo corporativo",
+      },
+      {
+        type: "paragraph",
+        text: "La preproducción abarca todo lo que ocurre entre que el proyecto está aprobado y el primer día de rodaje. Incluye el guion o escaleta, la elección y visita de locaciones, la definición del equipo técnico y humano, la logística del día de rodaje y la coordinación con el cliente y con los interlocutores que van a aparecer en cámara.",
+      },
+      {
+        type: "paragraph",
+        text: "No tiene una duración fija. Un vídeo de entrevista simple —una cámara, un interlocutor, una locación— puede tener 3 o 4 horas de preproducción real. Un vídeo de empresa con varios departamentos, múltiples locaciones y portavoces distintos puede necesitar una semana entera de preparación antes de encender ninguna cámara.",
+      },
+      {
+        type: "paragraph",
+        text: "El tiempo invertido en esta fase siempre se recupera durante el rodaje. Cada problema que detecto en la visita previa a la locación es una discusión que no interrumpe el rodaje. Cada mensaje clave validado en el guion es una toma que no hay que repetir.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cómo se hace bien",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "El guion o escaleta",
+      },
+      {
+        type: "paragraph",
+        text: "El primer documento que necesita cualquier producción es uno que diga qué se va a decir y en qué orden. Para entrevistas, esto toma la forma de preguntas preparadas y mensajes clave que el interlocutor debe comunicar. Para vídeos con presentador o con locución en off, necesito un guion completo antes de reservar ninguna fecha.",
+      },
+      {
+        type: "paragraph",
+        text: "No hace falta que sea perfecto. Lo que sí hace falta es que esté aprobado por el cliente antes del rodaje. Un cambio en un documento cuesta cero. Un cambio en plató puede costar horas.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "La visita previa a la localización",
+      },
+      {
+        type: "paragraph",
+        text: "Visitar la localización antes del rodaje es casi siempre imprescindible. Necesito saber cómo entra la luz a las horas en que vamos a grabar, qué ruido ambiental hay —tráfico, aire acondicionado, obras cercanas—, qué espacio real existe para colocar cámaras y luces sin que el plano quede forzado, y si hay tomas de corriente accesibles o si hay que llevar baterías.",
+      },
+      {
+        type: "paragraph",
+        text: "Para locaciones en Madrid en interiores, también compruebo si el espacio tiene restricciones de uso o si necesito coordinar acceso con el responsable del edificio. Para exteriores, hay que saber si hacen falta permisos, especialmente si el rodaje es en espacio público o en zonas con mucha afluencia.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "El plan de rodaje",
+      },
+      {
+        type: "paragraph",
+        text: "El plan de rodaje es un documento que especifica, hora por hora, qué se graba y en qué orden. Quién tiene que estar disponible a qué hora, cuánto tiempo de preparación hay antes de empezar a grabar, cuándo hay pausa y a qué hora se termina.",
+      },
+      {
+        type: "paragraph",
+        text: "Sin ese documento, el rodaje se retrasa. No porque la gente no trabaje, sino porque nadie tiene claro qué viene después. Un plan de rodaje bien hecho es un coordinador silencioso que mantiene el día en marcha sin que nadie tenga que preguntar constantemente qué toca ahora.",
+      },
+      {
+        type: "image",
+        src: "/blog/preproduccion-video-corporativo/intermedia.webp",
+        alt: "Equipo técnico preparando equipo de cámara antes de un rodaje corporativo",
+        width: 1920,
+        height: 1280,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Errores habituales en la preproducción",
+      },
+      {
+        type: "list",
+        items: [
+          "Empezar el rodaje sin guion aprobado: el cliente llega con cambios que podían haberse resuelto en papel.",
+          "No visitar la localización antes del rodaje: los problemas de luz, ruido o espacio se descubren cuando ya no hay solución fácil.",
+          "No confirmar la disponibilidad de los interlocutores con suficiente antelación: una baja de última hora desbarata el plan entero.",
+          "Asumir que la locación tiene buena acústica sin comprobarlo: el eco o el ruido de fondo arruinan el sonido directo.",
+          "No dejar margen de preparación al inicio del día: montar luces y hacer pruebas de cámara consume 45-60 minutos que no deben restarse del tiempo de grabación.",
+          "Olvidar coordinar los accesos: llegar y descubrir que el espacio no está disponible a la hora acordada es un error de preproducción, no de rodaje.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo de antelación necesito para hacer bien la preproducción?",
+        answer:
+          "Para la mayoría de vídeos corporativos, con 5-7 días laborables antes del rodaje tengo margen suficiente. Proyectos más complejos —varios días de rodaje, múltiples locaciones, casting externo o animaciones— pueden necesitar dos o tres semanas de preparación.",
+      },
+      {
+        type: "faq",
+        question: "¿Incluye la preproducción un coste adicional?",
+        answer:
+          "Siempre está incluida en el presupuesto del proyecto. No existe el rodaje sin preproducción. El tiempo de preparación forma parte del precio, aunque no siempre aparezca como una partida separada en el presupuesto.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito estar presente en la visita previa a la localización?",
+        answer:
+          "No es imprescindible, pero ayuda. Si el cliente conoce bien el espacio, puede compartir fotos y vídeos que resuelven buena parte de las preguntas. Cuando hay dudas sobre la luz, el sonido o la distribución del espacio, prefiero hacer la visita en persona.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué pasa si la preproducción detecta que la locación no funciona?",
+        answer:
+          "Se cambia antes del rodaje, no durante. Tengo locaciones de reserva que conozco bien en Madrid y que sé que funcionan para entrevistas corporativas, planos de recurso o presentaciones en cámara. Cambiar la locación en preproducción no tiene coste; cambiarla el día del rodaje sí.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes un proyecto en marcha y no sabes cómo estructurar la fase previa, puedo ayudarte. Desde la selección de locación hasta la preparación del guion. Escríbeme desde la página de contacto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
