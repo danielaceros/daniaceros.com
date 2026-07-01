@@ -5974,6 +5974,142 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "grabacion-exteriores-empresas",
+    title: "Grabación en exteriores para empresas: lo que hay que controlar",
+    description:
+      "Grabar fuera de una oficina puede dar mucho valor a un vídeo corporativo, pero también multiplica las variables. Cómo gestionar luz natural, sonido ambiente, logística y permisos en una producción corporativa.",
+    publishedAt: "2026-07-01",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["vídeo corporativo", "exteriores", "producción audiovisual", "grabación", "filmmaker", "Madrid"],
+    keyword: "grabación en exteriores para empresas",
+    intent: "informacional",
+    excerpt:
+      "Grabar fuera de una oficina puede dar mucho valor a un vídeo corporativo, pero también multiplica las variables. Te explico qué controlar para que nada falle.",
+    seoTitle: "Grabación en exteriores para empresas | Daniel Acero",
+    metaDescription:
+      "Grabación en exteriores para empresas: cómo gestionar luz natural, sonido ambiente, logística y permisos en una producción corporativa en Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Hay proyectos que respiran mejor fuera de cuatro paredes. Un testimonio con la ciudad de fondo, una apertura de sede con luz natural, una secuencia de producto en un espacio que dice algo. Grabar en exteriores añade textura a un vídeo corporativo que ningún set de estudio puede imitar.",
+      },
+      {
+        type: "paragraph",
+        text: "Pero también multiplica los problemas. El sol se mueve, los aviones no consultan el plan de rodaje, y el permiso que pediste hace tres semanas todavía no ha llegado. Aquí van las variables que controlo antes de que empiece cualquier grabación en calle.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabacion-exteriores-empresas/hero.webp",
+        alt: "Equipo de filmación preparando una grabación en exteriores para un vídeo corporativo",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Por qué grabar en exteriores",
+      },
+      {
+        type: "paragraph",
+        text: "Un exterior reconocible ancla la empresa en un contexto real. Cuando una consultora aparece con Madrid de fondo o una empresa de logística con su nave y sus camiones, el espectador procesa información que ningún texto puede transmitir tan rápido: tamaño, ubicación, energía.",
+      },
+      {
+        type: "paragraph",
+        text: "Además, la luz natural bien manejada tiene una calidad que cuesta mucho imitar con equipos. Un amanecer suave o una tarde de nubes altas puede darle a una entrevista corporativa un aspecto que justifica todo el trabajo extra.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cómo controlar las variables",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "La luz natural",
+      },
+      {
+        type: "paragraph",
+        text: "La hora dorada no es un recurso opcional: es la única ventana donde el sol trabaja a tu favor. Entre las 7 y las 9 de la mañana en verano, o entre las 17 y las 19 en primavera, la luz es lateral, suave y muy cálida. Fuera de esas ventanas, el sol directo aplana las caras y crea sombras duras que no tienen solución en postproducción. Uso un difusor de 120 cm para suavizar cuando no hay más remedio, pero si puedo escoger, prefiero mover la hora. Para planos de recurso busco sombra de edificio o nublado homogéneo. El cielo azul claro con sol cenital es el escenario más difícil.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "El sonido ambiente",
+      },
+      {
+        type: "paragraph",
+        text: "El ruido de calle es el mayor enemigo de un vídeo corporativo en exterior. Una entrevista con tráfico de fondo es inutilizable, da igual lo bueno que sea el micrófono. Los pasos que funcionan: micrófono de solapa con windscreen, grabación paralela con H6 como backup, y scouting de audio previo donde identifico fuentes de ruido fijas —obras, terrazas, líneas de metro en superficie—. Si hay viento por encima de 20 km/h, la cita exterior cae. Sin excepción. En ese caso muevo la entrevista a un espacio con luz controlada o replanifico.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "La logística del espacio",
+      },
+      {
+        type: "paragraph",
+        text: "Los permisos en Madrid se tramitan a través del Ayuntamiento y pueden tardar entre 5 y 15 días hábiles dependiendo del tipo de grabación. Para uso de vía pública con trípode y equipo de más de una persona, hay que pedirlo. Para espacio privado —sede empresarial, parking, azotea— basta con la autorización del propietario por escrito. El día del rodaje compruebo: acceso para la furgoneta, punto de descarga, distancia a corriente, baños para el equipo y sombra para los intervalos.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabacion-exteriores-empresas/mid.webp",
+        alt: "Silueta de cámara en exteriores durante una producción audiovisual",
+        width: 1920,
+        height: 1272,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cuándo tiene sentido (y cuándo no)",
+      },
+      {
+        type: "list",
+        items: [
+          "Tiene sentido cuando la empresa quiere mostrar sus instalaciones, nave o entorno de trabajo real.",
+          "Funciona bien para vídeos de apertura de sede, presentaciones de proyecto o inauguraciones.",
+          "Vale la pena cuando la imagen de marca del cliente tiene una dimensión urbana o de movilidad.",
+          "Pierde sentido si el presupuesto no incluye tiempo de scouting y gestión de permisos.",
+          "En vídeos de formación interna o comunicación legal, los exteriores añaden coste sin añadir valor.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta añadir un día de exterior a un rodaje corporativo?",
+        answer:
+          "Depende del tipo de exterior. Una terraza de la propia empresa no añade coste. Un espacio público en Madrid con equipo de más de una persona requiere permiso, con una tasa municipal de entre 50 y 150 euros dependiendo del uso. Un exterior emblemático con gestión de seguridad y cierre parcial puede añadir entre 500 y 1.500 euros al presupuesto de producción.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué pasa si llueve el día del rodaje?",
+        answer:
+          "Tengo siempre un plan B. Antes del rodaje acuerdo con el cliente una ventana de reprogramación de 3 a 5 días hábiles sin coste adicional. Si la lluvia es leve y el plano no incluye personas, a veces se puede trabajar. Para rodajes de un solo día sin margen de reprogramación, preparo un interior alternativo con luz artificial que dé un resultado aceptable.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar en exteriores en invierno en Madrid?",
+        answer:
+          "Sí, con condiciones. El invierno en Madrid tiene luz baja —el sol ronda los 25-30 grados sobre el horizonte— que puede ser muy fotogénica entre las 11 y las 14 horas. El problema es la temperatura: una entrevista exterior a 4 grados durante más de 20 minutos tiene límites obvios para el entrevistado. Para exteriores de invierno prefiero planos de recurso y apertura, no entrevistas largas.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito permiso para grabar con drone en exterior urbano?",
+        answer:
+          "Sí, siempre. En zonas urbanas de Madrid el uso de drone para filmación requiere coordinación con la Agencia Estatal de Seguridad Aérea y autorización del Ayuntamiento. El proceso tarda entre 2 y 4 semanas. Además, hay zonas de exclusión permanente cerca de Barajas y el centro histórico. Lo contrato con un operador certificado que gestiona todo el papeleo.",
+      },
+      {
+        type: "paragraph",
+        text: "Si estás planificando un vídeo corporativo que incluya exteriores en Madrid y quieres saber si el espacio que tienes en mente es viable, escríbeme desde la página de /contacto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {

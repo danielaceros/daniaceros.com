@@ -360,6 +360,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto (fallback evergreen — todos los 30 temas cubiertos; tema extra generado fuera de lista, sin candidate SC limpio — token SC caducado). Imágenes Unsplash.",
   },
+  {
+    slug: "grabacion-exteriores-empresas",
+    keyword: "grabación en exteriores para empresas",
+    intent: "informacional",
+    createdAt: "2026-07-01",
+    status: "published",
+    notes: "Auto-generado por blog-auto (fallback evergreen — todos los 30 temas cubiertos; tema extra generado fuera de lista, sin candidate SC limpio — token SC caducado). Imágenes Unsplash.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {
