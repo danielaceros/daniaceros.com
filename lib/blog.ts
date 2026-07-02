@@ -6110,6 +6110,125 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "microfono-solapa-vs-boom-entrevistas-corporativas",
+    title: "Micrófono de solapa o boom: cuál usar en entrevistas corporativas",
+    description:
+      "Comparo micrófono de solapa y micrófono de boom en entrevistas corporativas: cómo funciona cada uno, cuándo falla y qué uso yo según el rodaje.",
+    publishedAt: "2026-07-02",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "sonido en vídeo corporativo",
+      "micrófono de solapa",
+      "boom microphone",
+      "entrevistas corporativas",
+      "grabación de audio",
+      "producción audiovisual",
+    ],
+    keyword: "micrófono de solapa vs boom en entrevistas corporativas",
+    intent: "informacional",
+    excerpt:
+      "Solapa o boom en una entrevista corporativa: no hay opción mejor en abstracto, depende del movimiento, el ruido de la ropa y el tiempo de montaje que tengas.",
+    seoTitle: "Micrófono de solapa vs boom en entrevistas | Daniel Acero",
+    metaDescription:
+      "Micrófono de solapa o boom en entrevistas corporativas: cuándo uso cada uno y qué evita fallos de audio en tu vídeo de empresa.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cada vez que preparo una entrevista corporativa me hacen la misma pregunta: ¿solapa o boom? La respuesta corta es que depende del entorno, del tiempo que tengo para montar y de cuánto se mueve la persona que entrevisto. La respuesta larga es este artículo.",
+      },
+      {
+        type: "paragraph",
+        text: "Llevo años grabando entrevistas para empresas en Madrid y he usado ambos sistemas en casi todos los escenarios posibles: salas de reuniones silenciosas, oficinas abiertas con aire acondicionado de fondo, exteriores con tráfico y platós improvisados en un almacén. Cada situación pide una solución distinta.",
+      },
+      {
+        type: "image",
+        src: "/blog/microfono-solapa-vs-boom-entrevistas-corporativas/hero.webp",
+        alt: "Técnico de sonido preparando una entrevista corporativa en plató con cámara y micrófono",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es cada micrófono y para qué sirve" },
+      {
+        type: "paragraph",
+        text: "El micrófono de solapa, o lavalier, es pequeño y se sujeta a la ropa cerca del pecho. Capta la voz de cerca, aísla bien el ruido ambiente y es prácticamente invisible en plano una vez colocado bien. Lo uso con petaca inalámbrica cuando la persona se mueve o necesita libertad de manos.",
+      },
+      {
+        type: "paragraph",
+        text: "El boom es un micrófono direccional montado en una pértiga que un técnico sostiene fuera de plano, apuntando hacia quien habla. Capta un sonido más natural y con más cuerpo porque no está pegado a la ropa, pero exige a alguien dedicado solo a sujetarlo durante toda la grabación.",
+      },
+      {
+        type: "paragraph",
+        text: "Ninguno es mejor en abstracto. La pregunta correcta no es cuál suena mejor en general, sino cuál resuelve mejor la situación que tengo delante.",
+      },
+      { type: "heading", level: 2, text: "Cómo elijo en un rodaje corporativo" },
+      { type: "heading", level: 3, text: "Cuando el entrevistado se mueve o gesticula mucho" },
+      {
+        type: "paragraph",
+        text: "Si la persona camina, gira la cabeza con frecuencia o gesticula con las manos cerca del pecho, el boom pierde consistencia: el técnico tiene que perseguir el movimiento y es fácil que el sonido varíe de volumen. Con solapa, el micrófono se mueve con la persona y el nivel se mantiene estable de principio a fin. Para testimoniales de pie o entrevistas caminando por una oficina, uso solapa casi siempre.",
+      },
+      { type: "heading", level: 3, text: "Cuando el entorno tiene ruido de roce con la ropa" },
+      {
+        type: "paragraph",
+        text: "El problema clásico de la solapa es el roce: una bufanda, una corbata que se mueve o una chaqueta con textura áspera generan un ruido seco que se cuela en la pista de audio y es complicado de limpiar en posproducción. En esos casos prefiero el boom, que no toca al entrevistado y evita el roce por completo. También es mi opción cuando hay dos personas hablando muy cerca y no quiero microfonar a ambas por separado.",
+      },
+      { type: "heading", level: 3, text: "Cuando el tiempo de montaje es corto" },
+      {
+        type: "paragraph",
+        text: "En rodajes con agenda apretada, donde entro y salgo de varias salas en una mañana, la solapa gana por rapidez: colocarla lleva menos de dos minutos y no necesito a nadie sujetando la pértiga. El boom exige un técnico dedicado y más tiempo de prueba de sonido antes de cada toma. Si voy solo con una segunda persona en cámara, la solapa es casi obligatoria.",
+      },
+      {
+        type: "image",
+        src: "/blog/microfono-solapa-vs-boom-entrevistas-corporativas/mid.webp",
+        alt: "Equipo de grabación de vídeo corporativo montando cámara y sonido en set",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores que veo con frecuencia" },
+      {
+        type: "list",
+        items: [
+          "Colocar la solapa demasiado cerca de la barbilla: capta más respiración y menos voz natural. El punto correcto está a la altura del esternón.",
+          "No probar el roce de la ropa antes de grabar: dos minutos de prueba con movimiento real evitan horas de limpieza de audio después.",
+          "Usar boom sin monitorizar con auriculares: sin escucha en directo es fácil no darse cuenta de que el ángulo captó eco de la sala.",
+          "Mezclar solapa inalámbrica con interferencias de wifi corporativo sin comprobar el canal antes: en oficinas con mucha red, cambia de frecuencia antes de grabar.",
+          "No llevar un grabador de respaldo: si la petaca falla a mitad de entrevista, un grabador tipo Zoom H5 grabando en paralelo salva la toma.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Puedo usar los dos micrófonos a la vez en la misma entrevista?",
+        answer:
+          "Sí, y en producciones importantes lo recomiendo. Grabo solapa como pista principal y boom como respaldo en una pista separada. Si la solapa falla o capta roce, tengo el boom para sustituir esa parte en la edición.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué marca de solapa inalámbrica uso normalmente?",
+        answer:
+          "Trabajo con el sistema Rode Wireless Pro para la mayoría de entrevistas corporativas. Es compacto, tiene grabación interna de respaldo y aguanta bien un día completo de rodaje con baterías de sobra.",
+      },
+      {
+        type: "faq",
+        question: "¿El boom necesita una persona dedicada siempre?",
+        answer:
+          "En la práctica, sí. Aunque existen soportes fijos tipo jirafa para entornos controlados, en un rodaje corporativo real necesito a alguien siguiendo el movimiento del entrevistado, y esa persona no puede hacer otra cosa a la vez.",
+      },
+      {
+        type: "faq",
+        question: "¿Se nota la diferencia de calidad en el vídeo final?",
+        answer:
+          "Un espectador normal no distingue técnicamente cuál se usó si el audio está bien grabado y limpio. Lo que sí nota, sin saber por qué, es cuando el audio tiene roces, cambios de volumen o eco. Ahí es donde se paga la elección equivocada.",
+      },
+      {
+        type: "paragraph",
+        text: "Si estás preparando una entrevista corporativa y no sabes qué configuración de sonido necesitas para tu espacio, cuéntamelo desde la página de contacto. Con dos datos —número de personas y tipo de sala— te puedo decir qué equipo llevar antes del día del rodaje.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
