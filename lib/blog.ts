@@ -6229,6 +6229,126 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-employer-branding",
+    title: "Vídeo de employer branding: qué es y cómo lo grabo bien",
+    description:
+      "Qué es un vídeo de employer branding, para qué sirve en procesos de selección y cómo lo grabo para que se vea creíble y no un anuncio corporativo.",
+    publishedAt: "2026-07-03",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "employer branding",
+      "vídeo corporativo",
+      "recursos humanos",
+      "reclutamiento",
+      "vídeo institucional",
+      "contenido para empresas",
+    ],
+    keyword: "vídeo de employer branding",
+    intent: "informacional",
+    excerpt:
+      "Qué es un vídeo de employer branding, por qué cada vez más empresas en Madrid lo piden y cómo lo planteo para que resulte creíble y no publicidad.",
+    seoTitle: "Vídeo de employer branding: cómo grabarlo | Daniel Acero",
+    metaDescription:
+      "Vídeo de employer branding: qué es, para qué sirve y cómo lo grabo para que una empresa atraiga talento de forma creíble.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cada vez más empresas en Madrid me piden un vídeo de employer branding sin saber muy bien cómo llamarlo. Me lo describen de otra forma: queremos algo para atraer gente que quiera trabajar aquí, necesitamos mostrar cómo es el equipo por dentro, la web de empleo se ve muy fría. Eso es justo lo que resuelve este tipo de vídeo.",
+      },
+      {
+        type: "paragraph",
+        text: "No es un vídeo corporativo institucional ni un testimonial de cliente. Va dirigido a un público distinto: candidatos, no clientes. Y eso cambia el tono, la duración y hasta lo que se enseña. Aquí no hablo de resultados de negocio, hablo de personas y de cómo es el día a día real dentro de la empresa.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-employer-branding/hero.webp",
+        alt: "Reunión de equipo en oficina para grabación de vídeo de employer branding",
+        width: 1920,
+        height: 1080,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es un vídeo de employer branding y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Un vídeo de employer branding muestra cómo es trabajar en una empresa desde dentro. No vende un producto ni un servicio, vende la experiencia de formar parte del equipo. Habla de cultura, de espacio de trabajo, de las personas que ya están ahí y de por qué se quedan.",
+      },
+      {
+        type: "paragraph",
+        text: "Lo piden sobre todo empresas que compiten por perfiles técnicos escasos: desarrolladores, ingenieros, perfiles de datos. Cuando el salario y las condiciones son parecidos entre varias ofertas, lo que suele inclinar la decisión de un candidato es la impresión que se lleva de la cultura y el equipo. Un vídeo bien hecho comunica eso en 90 segundos mejor que cualquier texto en una oferta de empleo.",
+      },
+      {
+        type: "paragraph",
+        text: "También lo veo cada vez más en departamentos de RRHH que quieren reducir la rotación temprana. Un candidato que ve con honestidad cómo es el día a día antes de aceptar la oferta llega con expectativas más realistas, y eso reduce las bajas en los primeros meses de contrato, que suelen ser las más caras de gestionar para cualquier equipo de selección.",
+      },
+      { type: "heading", level: 2, text: "Cómo lo grabo bien" },
+      { type: "heading", level: 3, text: "Elegir a quién poner delante de cámara" },
+      {
+        type: "paragraph",
+        text: "No elijo a la persona con el cargo más alto, elijo a la que mejor cuenta su experiencia real. Suelo grabar a dos o tres perfiles distintos: alguien que lleva poco tiempo en la empresa, para hablar de la incorporación, y alguien con más antigüedad, para hablar de evolución interna. Nunca uso un guion cerrado, sí preguntas guía para que la respuesta salga natural y no suene ensayada.",
+      },
+      { type: "heading", level: 3, text: "Grabar el día a día real, no un guion artificial" },
+      {
+        type: "paragraph",
+        text: "Evito las escenas impostadas de reunión sonriendo a cámara. Prefiero grabar en plano detalle mientras trabajan de verdad: una pizarra con notas, una conversación real entre dos compañeros, el café de media mañana. Ese material de apoyo, el b-roll, es el que hace creíble el vídeo. Sin él, cualquier testimonial suena a publicidad, por bien iluminado que esté.",
+      },
+      { type: "heading", level: 3, text: "Dónde y cómo se usa después" },
+      {
+        type: "paragraph",
+        text: "La pieza final casi nunca vive sola. La trocean en clips cortos para LinkedIn, para la página de empleo y para procesos de selección concretos, donde un reclutador la envía directamente al candidato en la fase final antes de una entrevista. Por eso entrego siempre un máster largo de 2 a 3 minutos y una batería de cortes verticales de 60 a 90 segundos listos para redes, sin que haya que volver a montar nada después.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-employer-branding/mid.webp",
+        alt: "Cámara de vídeo profesional preparada para grabar una entrevista de employer branding",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Guionizar demasiado las respuestas: se nota y pierde toda la credibilidad que se busca.",
+          "Grabar solo a directivos: el candidato quiere ver a alguien en un puesto parecido al suyo, no solo al CEO.",
+          "No mostrar el espacio físico real: si luego la oficina no se parece al vídeo, genera el efecto contrario.",
+          "Hacerlo demasiado largo: para redes y procesos de selección funciona mejor entre 60 y 120 segundos por pieza.",
+          "Olvidar los subtítulos: la mayoría lo ve sin sonido en LinkedIn, y sin subtítulos se pierde el mensaje.",
+          "No renovarlo nunca: un vídeo de hace tres años con gente que ya no trabaja ahí resta credibilidad en vez de sumarla.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto dura un vídeo de employer branding?",
+        answer:
+          "La pieza principal suele durar entre 2 y 3 minutos para la web de empleo. Para redes, corto piezas de 60 a 90 segundos centradas en un solo mensaje: incorporación, cultura o un testimonio concreto.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuántas personas necesito grabar?",
+        answer:
+          "Con 3 o 4 testimonios cortos suele ser suficiente para cubrir varios perfiles y departamentos sin que el vídeo se alargue. Prefiero calidad de respuesta a cantidad de gente.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar en una sola jornada?",
+        answer:
+          "Sí, normalmente lo resuelvo en un día: entrevistas por la mañana y b-roll del espacio y del equipo trabajando por la tarde. Si la empresa tiene varias sedes, sumo medio día más por ubicación.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito un guion cerrado antes de grabar?",
+        answer:
+          "No, y de hecho lo desaconsejo. Preparo preguntas guía con RRHH antes del rodaje, pero dejo que cada persona responda con sus propias palabras. Un guion memorizado se nota casi siempre.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tu empresa está compitiendo por talento y la oferta de empleo no está contando la parte humana del equipo, escríbeme desde /contacto y vemos qué formato encaja con vuestro proceso de selección y con el tiempo que tenéis disponible para grabar.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
