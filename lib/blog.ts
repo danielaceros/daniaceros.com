@@ -6349,6 +6349,126 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "dron-en-video-corporativo",
+    title: "Dron en vídeo corporativo: cuándo tiene sentido usarlo",
+    description:
+      "Cuándo un plano de dron aporta de verdad a un vídeo corporativo, cuándo no compensa el gasto y qué permisos hacen falta para volar en Madrid.",
+    publishedAt: "2026-07-06",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: [
+      "dron",
+      "vídeo corporativo",
+      "grabación aérea",
+      "producción audiovisual",
+      "equipo de grabación",
+      "Madrid",
+    ],
+    keyword: "dron en vídeo corporativo",
+    intent: "informacional",
+    excerpt:
+      "Cuándo un plano de dron aporta escala real a un vídeo corporativo, cuándo es mejor gastar ese presupuesto en otra cosa y qué permisos necesito para volar cerca de una empresa en Madrid.",
+    seoTitle: "Dron en vídeo corporativo: cuándo usarlo | Daniel Acero",
+    metaDescription:
+      "Dron en vídeo corporativo: cuándo aporta escala real a una grabación de empresa, cuándo no compensa el gasto y qué permisos hacen falta en Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Me piden dron en casi la mitad de los presupuestos de vídeo corporativo que preparo, aunque luego no siempre acabo usándolo. Un par de planos aéreos bien colocados elevan la producción, pero meterlo sin criterio suma coste y a veces resta en vez de sumar.",
+      },
+      {
+        type: "paragraph",
+        text: "En esta guía cuento cuándo un dron aporta de verdad a un vídeo corporativo, cuándo es mejor invertir ese presupuesto en otra cosa y qué necesito legalmente para volar cerca de una empresa o una nave industrial en Madrid.",
+      },
+      {
+        type: "image",
+        src: "/blog/dron-en-video-corporativo/hero.webp",
+        alt: "Dron profesional sobrevolando una zona industrial durante una grabación corporativa",
+        width: 1920,
+        height: 1279,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué aporta un plano de dron y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Un plano de dron aporta escala. Muestra el tamaño real de unas instalaciones, la ubicación de una nave respecto a su entorno o el volumen de un evento cuando la cámara en mano no llega a transmitirlo. Es el recurso más rápido para dar contexto a algo que en tierra se ve fragmentado en planos sueltos.",
+      },
+      {
+        type: "paragraph",
+        text: "También funciona como transición. Un plano aéreo de entrada o de cierre marca que empieza o termina un bloque, sin necesidad de un rótulo ni una animación de por medio. Lo uso mucho para abrir vídeos institucionales de empresas con sede propia o para cerrar aftermovies de eventos al aire libre.",
+      },
+      {
+        type: "paragraph",
+        text: "Pero no es un recurso gratuito. Implica piloto certificado, seguro de responsabilidad civil específico y, según la zona, autorización previa del control de tránsito aéreo o del ayuntamiento. En la mayoría de rodajes en Madrid eso son entre 200 y 500 euros adicionales, según la complejidad del espacio aéreo de la zona.",
+      },
+      { type: "heading", level: 2, text: "Cómo lo integro bien en la producción" },
+      { type: "heading", level: 3, text: "Elegir el momento del día" },
+      {
+        type: "paragraph",
+        text: "Vuelo casi siempre a primera hora de la mañana o al final de la tarde. La luz rasante da relieve a fachadas y naves que a mediodía se ven planas y sin volumen, y a esas horas hay menos tráfico aéreo y menos gente alrededor si el rodaje es en un espacio exterior transitado.",
+      },
+      { type: "heading", level: 3, text: "Planificar la ruta antes de despegar" },
+      {
+        type: "paragraph",
+        text: "Reviso el espacio aéreo de la zona antes de cada rodaje: cercanía a aeropuertos, hospitales o zonas restringidas. Buena parte de los polígonos industriales de Madrid caen dentro de restricciones por proximidad a Barajas, así que confirmo el permiso con semanas de antelación, nunca el mismo día del rodaje.",
+      },
+      { type: "heading", level: 3, text: "Combinar el plano aéreo con planos en tierra" },
+      {
+        type: "paragraph",
+        text: "Nunca dejo el dron como único recurso visual. Grabo siempre planos en tierra del mismo espacio o evento y edito el aéreo como puntuación, dos o tres segundos como mucho salvo que sea el recurso central de la pieza. Un vídeo corporativo entero a base de plano de dron cansa y no cuenta nada de las personas que trabajan ahí.",
+      },
+      {
+        type: "image",
+        src: "/blog/dron-en-video-corporativo/mid.webp",
+        alt: "Piloto manejando los mandos de un dron durante una grabación corporativa al aire libre",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Cuándo tiene sentido y cuándo no" },
+      {
+        type: "list",
+        items: [
+          "Instalaciones grandes o naves industriales: el dron muestra la escala que ningún plano en tierra transmite.",
+          "Eventos al aire libre con mucho público: un plano cenital cuenta el volumen de gente en dos segundos.",
+          "Oficinas pequeñas o espacios interiores: aquí el dron no aporta nada, mejor invertir ese presupuesto en más planos de personas.",
+          "Zonas urbanas restringidas sin margen para tramitar permiso: no vale la pena forzarlo, el rodaje se puede retrasar semanas.",
+          "Presupuestos ajustados con una sola jornada de grabación: prefiero cubrir bien las entrevistas antes que sumar dron y quedarme corto en el resto.",
+          "Días de viento fuerte o lluvia: pospongo el vuelo, un plano aéreo tembloroso se nota más que su ausencia.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Necesito permiso para grabar con dron en Madrid?",
+        answer:
+          "Sí, en la mayoría de casos. Toda la zona cercana a Barajas y buena parte del entorno urbano requiere autorización previa. Lo tramito con antelación, no se puede improvisar el mismo día del rodaje.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta añadir dron a un vídeo corporativo?",
+        answer:
+          "Entre 200 y 500 euros adicionales según la complejidad de la zona y si hace falta permiso especial. Incluye piloto certificado, seguro específico y el tiempo de gestión del permiso.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto se tarda en conseguir el permiso de vuelo?",
+        answer:
+          "En zonas sin restricción especial, un par de días. Cerca de aeropuertos o en el centro de Madrid puede llevar entre una y tres semanas, así que lo pido en cuanto se confirma la fecha de rodaje.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo usar un dron de aficionado para el vídeo?",
+        answer:
+          "No lo recomiendo para uso comercial. Hace falta licencia de piloto, seguro de responsabilidad civil y un dron con los certificados adecuados. Un vuelo sin esos papeles puede acabar en sanción para la empresa que lo contrata.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tu próximo vídeo corporativo tiene una nave, una sede grande o un evento al aire libre y no sabes si el dron merece la pena, escríbeme desde /contacto y te digo con qué presupuesto encaja y qué permisos hacen falta antes de la fecha de grabación.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
