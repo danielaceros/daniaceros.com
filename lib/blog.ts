@@ -6469,6 +6469,130 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "como-grabar-mesa-redonda-corporativa",
+    title: "Cómo grabar una mesa redonda o panel corporativo",
+    description:
+      "Cómo planteo cámaras, audio y luz para grabar una mesa redonda o panel con varios ponentes en un evento corporativo, sin perder ninguna intervención.",
+    publishedAt: "2026-07-07",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "mesa redonda",
+      "paneles corporativos",
+      "grabación multicámara",
+      "eventos corporativos",
+      "producción audiovisual",
+      "Madrid",
+    ],
+    keyword: "cómo grabar una mesa redonda corporativa",
+    intent: "informacional",
+    excerpt:
+      "Grabar una mesa redonda con varios ponentes exige otra lógica que una entrevista individual. Cámaras, audio y coordinación del equipo cambian por completo.",
+    seoTitle: "Cómo grabar una mesa redonda corporativa | Daniel Acero",
+    metaDescription:
+      "Cómo grabar una mesa redonda corporativa: cámaras, audio y luz para paneles con varios ponentes. Guía práctica desde mi experiencia en Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Una mesa redonda no es una entrevista con más gente delante. Cambia el número de cámaras que necesito, el audio se complica con cada ponente que se suma y el ritmo de la conversación exige un montaje distinto al de una entrevista a una sola persona.",
+      },
+      {
+        type: "paragraph",
+        text: "En esta guía cuento cómo planteo la grabación de un panel o mesa redonda corporativa con tres o cuatro ponentes: qué cámaras uso, cómo resuelvo el audio sin que se pierda ninguna intervención, cómo coordino a los operadores de cámara durante la sesión y qué errores veo repetirse cuando alguien intenta grabarlo con el mismo esquema que una entrevista individual.",
+      },
+      {
+        type: "image",
+        src: "/blog/como-grabar-mesa-redonda-corporativa/hero.webp",
+        alt: "Público y ponentes durante una mesa redonda en un evento corporativo",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué cambia frente a una entrevista individual" },
+      {
+        type: "paragraph",
+        text: "Con un solo entrevistado controlo el encuadre, la luz y el audio de una persona. En una mesa redonda multiplico cada uno de esos elementos por el número de ponentes, y encima nadie habla en el orden que yo querría. Alguien interrumpe, otro se ríe fuera de plano, y el moderador cede la palabra sin avisarme.",
+      },
+      {
+        type: "paragraph",
+        text: "El resultado en bruto es mucho más difícil de montar que una entrevista: no hay un guion de preguntas cerrado, las intervenciones se solapan y necesito material de recurso (planos generales, reacciones, manos, público) para tapar los cortes de la conversación real.",
+      },
+      {
+        type: "paragraph",
+        text: "Por eso una mesa redonda me lleva casi el doble de cámaras y de tiempo de montaje que una entrevista a un único ponente, aunque dure lo mismo en pantalla. Una sesión de 30 minutos en directo puede suponerme un día entero de montaje si el número de ponentes sube de tres.",
+      },
+      { type: "heading", level: 2, text: "Cómo la planteo bien" },
+      { type: "heading", level: 3, text: "Cámaras y encuadres para varios ponentes" },
+      {
+        type: "paragraph",
+        text: "Uso mínimo tres cámaras: un plano general que cubre a todos los ponentes y sirve de plano de seguridad, y dos cámaras que se reparten los planos individuales o de dos personas según quién habla. Si el presupuesto da para una cuarta, la pongo detrás del público mirando hacia el escenario, para tener también la reacción de la sala.",
+      },
+      { type: "heading", level: 3, text: "Audio: un micro por persona, sin excepciones" },
+      {
+        type: "paragraph",
+        text: "Cada ponente lleva su propio micrófono de solapa, conectado a un receptor independiente. Nunca comparto un solo micro de mesa entre varias personas: en cuanto dos hablan a la vez o alguien gira la cabeza, se pierde inteligibilidad y en postproducción no hay forma de arreglarlo. Grabo cada canal por separado y mezclo después.",
+      },
+      { type: "heading", level: 3, text: "Iluminación y disposición de la mesa" },
+      {
+        type: "paragraph",
+        text: "Coloco a los ponentes en semicírculo abierto hacia las cámaras, nunca en línea recta, porque en línea recta las cámaras laterales solo ven perfiles. La luz principal viene de frente y algo elevada, igual para todos los puestos, así no hay un ponente mejor iluminado que el resto de la mesa.",
+      },
+      {
+        type: "image",
+        src: "/blog/como-grabar-mesa-redonda-corporativa/mid.webp",
+        alt: "Equipo técnico preparando cámaras e iluminación antes de una mesa redonda corporativa",
+        width: 1920,
+        height: 1282,
+      },
+      { type: "heading", level: 3, text: "Comunicación con los operadores de cámara" },
+      {
+        type: "paragraph",
+        text: "Con tres o cuatro cámaras operando a la vez, uso intercomunicador para indicar a cada operador quién tiene que abrir el plano en cada momento. Sin esa coordinación, las cámaras acaban enfocando al mismo ponente al mismo tiempo y me quedo sin planos de reacción cuando los necesito en el montaje.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Un solo micro de mesa para varios ponentes: la solución más barata y la que peor suena en postproducción.",
+          "Cámaras fijas en plano general sin ningún primer plano: la mesa redonda se vuelve plana y monótona al montarla.",
+          "No grabar planos de recurso del público o de la sala: sin ellos no hay dónde cortar cuando dos personas hablan a la vez.",
+          "Sentar a los ponentes en línea recta: las cámaras laterales pierden el rostro de la mitad de la mesa.",
+          "No asignar un técnico de sonido en directo: con cuatro micros abiertos a la vez, alguien tiene que vigilar niveles durante toda la sesión.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuántas cámaras necesito para grabar una mesa redonda?",
+        answer:
+          "Con tres cubro lo esencial: un plano general y dos que se reparten los primeros planos. Con cuatro ponentes o más, prefiero sumar una cuarta cámara para no perder reacciones.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo grabar una mesa redonda con un solo micrófono central?",
+        answer:
+          "Se puede, pero no lo recomiendo para uso profesional. En cuanto dos ponentes hablan a la vez la pista se vuelve inutilizable. Un micro de solapa por persona resuelve el problema desde el origen.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto dura el montaje de una mesa redonda frente a una entrevista?",
+        answer:
+          "En mi experiencia, casi el doble. Sincronizar varias cámaras y canales de audio, y cubrir los solapes de la conversación con planos de recurso, lleva más tiempo que montar una entrevista con guion cerrado.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto dura normalmente una mesa redonda corporativa?",
+        answer:
+          "Entre 30 y 45 minutos suele ser lo habitual en un evento de empresa. A partir de ahí la atención del público baja y conviene cortar para el vídeo final aunque la sesión en directo se alargue más.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tu próximo evento incluye una mesa redonda o un panel con varios ponentes y no sabes cuántas cámaras o micros necesitas, escríbeme desde /contacto y te digo qué equipo encaja con el número de ponentes y el espacio donde vais a grabar.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
