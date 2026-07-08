@@ -6593,6 +6593,124 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-ferias-stands",
+    title: "Vídeo corporativo para ferias y stands: qué grabar y cómo",
+    description:
+      "Cómo planteo la grabación de vídeo corporativo en una feria o un stand: qué planos priorizo, cómo resuelvo el audio con ruido de fondo y qué equipo llevo.",
+    publishedAt: "2026-07-08",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "ferias y eventos",
+      "vídeo corporativo",
+      "marketing B2B",
+      "producción audiovisual",
+      "Madrid",
+    ],
+    keyword: "vídeo corporativo para ferias y stands",
+    intent: "informacional",
+    excerpt:
+      "Grabar en una feria o un stand corporativo exige otro planteamiento que grabar en la oficina: ruido, gente pasando por delante de cámara y una sola oportunidad para cazar cada momento.",
+    seoTitle: "Vídeo corporativo para ferias y stands | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo para ferias y stands: qué planos priorizar, cómo resolver el audio con ruido y qué equipo llevar. Guía práctica desde Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Grabar en una feria o un stand corporativo tiene poco que ver con grabar en la oficina. Hay ruido ambiente, luz cambiante, gente pasando por delante de cámara todo el rato y un cliente que quiere resultados aunque el espacio no esté pensado para grabar.",
+      },
+      {
+        type: "paragraph",
+        text: "En esta guía cuento cómo planteo la grabación de vídeo corporativo en una feria o un stand: qué planos priorizo, cómo resuelvo el audio en un pabellón lleno de gente, qué equipo llevo encima para moverme rápido y qué errores veo repetirse cuando alguien intenta grabar una feria con el mismo esquema que una entrevista en estudio.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-ferias-stands/hero.webp",
+        alt: "Stand corporativo en un pabellón de feria con visitantes recorriendo los pasillos",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué grabar en una feria y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Una feria da contenido que no consigo en ningún otro sitio: el stand montado, el flujo de visitantes, las conversaciones reales con clientes potenciales y el ambiente del pabellón completo. Ese material sirve para el aftermovie del evento, pero también para vídeos de venta y para redes sociales durante meses después de que la feria haya terminado.",
+      },
+      {
+        type: "paragraph",
+        text: "El problema es que la feria dura uno o dos días y no hay margen para repetir una toma. Si se me escapa el momento en que el director general cierra una conversación en el stand, no vuelve a pasar. Por eso planifico antes de llegar qué momentos quiero cazar sí o sí y cuáles son secundarios, y reparto mi atención en función de esa lista.",
+      },
+      {
+        type: "paragraph",
+        text: "También reservo tiempo fuera del horario de apertura del pabellón, normalmente la primera media hora o la última, para grabar planos limpios del stand sin público delante. Esos planos de recurso salvan el montaje cuando el resto del material está lleno de gente pasando por delante de cámara y no hay ni un solo plano despejado del diseño del stand.",
+      },
+      { type: "heading", level: 2, text: "Cómo lo planteo bien" },
+      { type: "heading", level: 3, text: "Priorizar los planos que no se repiten" },
+      {
+        type: "paragraph",
+        text: "Antes de entrar al pabellón tengo una lista corta con los momentos imprescindibles: la apertura del stand, la primera demo de producto, cualquier ponencia o presentación programada y las conversaciones con los clientes clave que el equipo comercial ya tiene agendadas. Todo lo demás lo grabo si hay tiempo, pero esa lista corta va primero y la reviso con el cliente antes de llegar al recinto.",
+      },
+      { type: "heading", level: 3, text: "Audio en un pabellón lleno de ruido" },
+      {
+        type: "paragraph",
+        text: "El sonido ambiente de una feria tapa cualquier micrófono de cámara. Uso micrófono de solapa inalámbrico en la persona que habla y, si hay una demo con altavoces, conecto también una salida de línea desde la mesa de sonido del stand cuando existe. Sin eso, el audio de las conversaciones se pierde entre la música de fondo y el ruido de los stands vecinos.",
+      },
+      { type: "heading", level: 3, text: "Cámara y movimiento en espacios reducidos" },
+      {
+        type: "paragraph",
+        text: "En un stand no hay sitio para trípodes grandes ni para moverme con calma. Trabajo con cámara al hombro o con un gimbal ligero para poder seguir a la gente entre los pasillos sin chocar con nadie. Llevo una sola cámara compacta tipo Sony A7 con un objetivo versátil y baterías y tarjetas de sobra, porque cambiar de óptica o parar a recargar en mitad de la feria no es una opción.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-ferias-stands/mid.webp",
+        alt: "Visitantes caminando entre pasillos de un pabellón de feria durante un evento corporativo",
+        width: 1920,
+        height: 1064,
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Grabar solo con el pabellón lleno de gente y sin planos limpios del stand, así el montaje no tiene dónde respirar.",
+          "Confiar en el micrófono de la cámara para las conversaciones en el stand: se pierde entre el ruido de fondo.",
+          "No agendar con el equipo comercial qué conversaciones o demos van a pasar y a qué hora, y perderse el momento clave.",
+          "Llevar demasiado equipo pesado a un espacio donde apenas hay sitio para moverse.",
+          "No reservar tiempo antes de la apertura para grabar el stand vacío.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo hace falta para grabar bien una feria o un stand?",
+        answer:
+          "Con un día completo de feria suele bastar si reservo la primera media hora sin público para los planos limpios del stand. En ferias de varios días, prefiero cubrir al menos dos jornadas para no depender de un único día bueno.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito un equipo de varias personas para grabar una feria?",
+        answer:
+          "Con una sola persona cubro un stand pequeño o mediano. Si el evento tiene varias actividades a la vez en un pabellón grande, sumo un segundo operador para no perderme la mitad de lo que pasa.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar con la luz del pabellón sin llevar iluminación propia?",
+        answer:
+          "En la mayoría de ferias sí, la luz del pabellón es suficiente para planos generales. Para primeros planos de conversaciones o demos, llevo un panel LED pequeño de mano que corrige el tono sin necesitar toma de corriente adicional.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué diferencia hay entre grabar una feria y grabar un evento corporativo cerrado?",
+        answer:
+          "En una feria compito por atención con decenas de stands alrededor y no controlo el ruido ni el paso de gente. En un evento cerrado sí controlo el espacio y el sonido, así que puedo planificar con más precisión los planos y el guion.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes una feria o un stand programado y no sabes qué planos priorizar ni cómo resolver el audio con tanto ruido alrededor, escríbeme desde /contacto y te digo qué equipo y qué plan de grabación encajan con tu stand.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
