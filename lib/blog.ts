@@ -6711,6 +6711,121 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "dirigir-empleados-sin-experiencia-camara",
+    title: "Cómo dirigir a empleados sin experiencia frente a cámara",
+    description:
+      "Cómo preparo a empleados que nunca han grabado un vídeo corporativo: qué digo antes de encender la cámara, cómo pregunto y dónde pongo la mirada.",
+    publishedAt: "2026-07-09",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "dirección de talento",
+      "entrevistas corporativas",
+      "producción audiovisual",
+      "Madrid",
+    ],
+    keyword: "cómo dirigir a empleados sin experiencia frente a cámara",
+    intent: "informacional",
+    excerpt:
+      "La mayoría de empleados se ponen rígidos en cuanto ven la cámara encendida. No es un problema de personalidad, es que nadie les ha explicado qué se espera de ellos.",
+    seoTitle: "Dirigir a empleados sin experiencia en cámara | Daniel Acero",
+    metaDescription:
+      "Cómo dirigir a empleados sin experiencia frente a cámara: preparación previa, preguntas en vez de guion y encuadre para que salga natural.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "La mayoría de empleados se congelan en cuanto enciendo la cámara. No es un problema de personalidad ni de que no sepan hablar de su trabajo, es que nunca han hecho esto y nadie les ha explicado qué se espera de ellos delante del objetivo.",
+      },
+      {
+        type: "paragraph",
+        text: "Llevo años dirigiendo a gente que no es actor ni portavoz de comunicación para vídeos corporativos: testimonios internos, entrevistas de cultura de empresa, vídeos de producto grabados con el propio equipo técnico. En esta guía cuento cómo preparo esas grabaciones para que la persona hable con naturalidad y no como si estuviera leyendo un comunicado.",
+      },
+      {
+        type: "image",
+        src: "/blog/dirigir-empleados-sin-experiencia-camara/hero.webp",
+        alt: "Empleado sentado en una mesa de oficina siendo entrevistado frente a una cámara",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué la mayoría se pone rígida delante de la cámara" },
+      {
+        type: "paragraph",
+        text: "La cámara cambia el comportamiento de cualquiera, incluso de gente que domina su trabajo. Hay miedo a equivocarse, a decir algo que suene mal delante de sus jefes o de otros compañeros, y una sensación de examen que no existe en una conversación normal. Ese nervio se nota en la voz, en la mirada y en las pausas.",
+      },
+      {
+        type: "paragraph",
+        text: "Un actor o un portavoz entrenado sabe gestionar esa presión porque lo ha hecho muchas veces. Un empleado normal no tiene esa costumbre, así que mi trabajo no es conseguir una interpretación perfecta, es bajar la sensación de examen lo suficiente para que hable como habla en una reunión cualquiera.",
+      },
+      { type: "heading", level: 2, text: "Cómo dirijo a alguien que nunca ha grabado" },
+      { type: "heading", level: 3, text: "La conversación previa, antes de encender nada" },
+      {
+        type: "paragraph",
+        text: "Antes de montar nada hablo con la persona diez o quince minutos sin cámara delante. Le explico de qué va el vídeo, dónde se va a usar y qué tipo de respuesta busco, pero no le doy un guion cerrado. Esa charla sirve para que se acostumbre a mi cara y a mi forma de preguntar antes de que haya un objetivo grabando.",
+      },
+      { type: "heading", level: 3, text: "Preguntas, no guion" },
+      {
+        type: "paragraph",
+        text: "En vez de darle frases para memorizar, le hago preguntas abiertas y dejo que responda con sus propias palabras. Si la respuesta sale muy corta o muy plana, repito la pregunta de otra forma en vez de sugerirle qué decir. Luego, en montaje, elijo la mejor versión de entre varias respuestas a la misma pregunta.",
+      },
+      { type: "heading", level: 3, text: "Dónde pongo la mirada y el encuadre" },
+      {
+        type: "paragraph",
+        text: "Sitúo a la persona en un ángulo de tres cuartos y le pido que me mire a mí, de pie junto al objetivo, en vez de mirar directamente a la cámara salvo que el formato lo pida así de forma deliberada. Mirar a una persona real en vez de a una lente negra baja la tensión de inmediato y el resultado se nota en la mirada durante el montaje.",
+      },
+      {
+        type: "image",
+        src: "/blog/dirigir-empleados-sin-experiencia-camara/mid.webp",
+        alt: "Equipo de grabación preparando una cámara para una entrevista corporativa",
+        width: 1920,
+        height: 1080,
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Dar un guion cerrado para memorizar: suena artificial y la persona se traba intentando recordarlo palabra por palabra.",
+          "Grabar la primera toma sin dejar antes un margen para que la persona se relaje delante de la cámara.",
+          "Colocar al empleado frente a su jefe o a varios compañeros mirando durante la grabación.",
+          "Hacer preguntas cerradas de sí o no que no dan material aprovechable en montaje.",
+          "No explicar antes dónde se va a ver el vídeo y para qué sirve.",
+          "Interrumpir a media respuesta para corregir en vez de dejar terminar y repetir la toma después.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo hace falta para grabar a alguien sin experiencia frente a cámara?",
+        answer:
+          "Calculo entre 30 y 45 minutos por persona, contando la conversación previa sin cámara y varias tomas de las preguntas principales. Meter prisa es lo que peor resultado da.",
+      },
+      {
+        type: "faq",
+        question: "¿Es mejor dar un guion cerrado o dejar que hable libre?",
+        answer:
+          "Prefiero preguntas guía en vez de un guion cerrado. Un texto memorizado se nota siempre, mientras que una respuesta espontánea a una buena pregunta suena natural aunque no sea perfecta.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué hago si la persona se traba varias veces seguidas?",
+        answer:
+          "Paro, le quito presión con una pausa corta y cambio la pregunta por una versión más sencilla. Insistir en la misma frase solo aumenta el bloqueo.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuántas personas puedo grabar en una sola sesión?",
+        answer:
+          "En una jornada de trabajo normal suelo grabar entre cuatro y seis testimonios cortos, dejando margen entre cada uno para montar el set y para que la siguiente persona se relaje antes de sentarse.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes que grabar testimonios internos o entrevistas con empleados que nunca han estado delante de una cámara, escríbeme desde /contacto y te cuento cómo planteo la sesión para que salga natural sin perder un día entero de trabajo del equipo.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
