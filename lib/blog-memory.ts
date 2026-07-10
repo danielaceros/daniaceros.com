@@ -416,6 +416,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto (fallback evergreen — todos los 30 temas cubiertos; tema extra generado fuera de lista, sin candidate SC limpio — token SC de Search Console sigue caducado, invalid_grant persistente desde hace semanas, requiere reautenticación manual). Imágenes Unsplash.",
   },
+  {
+    slug: "showreel-corporativo",
+    keyword: "showreel corporativo",
+    intent: "informacional",
+    createdAt: "2026-07-10",
+    status: "published",
+    notes: "Auto-generado por blog-auto (fallback evergreen — todos los 30 temas cubiertos; tema extra generado fuera de lista, sin candidate SC limpio — token SC de Search Console sigue caducado, invalid_grant persistente desde hace semanas, requiere reautenticación manual). Imágenes Unsplash.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {

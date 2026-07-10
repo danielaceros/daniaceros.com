@@ -6826,6 +6826,126 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "showreel-corporativo",
+    title: "Showreel corporativo: qué es y cómo lo monto",
+    description:
+      "Qué es un showreel corporativo, para qué sirve realmente y cómo selecciono los planos, el ritmo y la música para que dure lo justo.",
+    publishedAt: "2026-07-10",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "showreel corporativo",
+      "vídeo corporativo",
+      "portfolio audiovisual",
+      "producción de vídeo",
+      "edición de vídeo",
+      "Madrid",
+    ],
+    keyword: "showreel corporativo",
+    intent: "informacional",
+    excerpt:
+      "Un showreel corporativo no es un resumen de todo lo que has grabado. Es una pieza corta pensada para convencer a alguien en los primeros ocho segundos.",
+    seoTitle: "Showreel corporativo: qué es y cómo montarlo | Daniel Acero",
+    metaDescription:
+      "Showreel corporativo: qué es, para qué sirve y cómo selecciono planos, ritmo y música para montar una pieza corta que venda tu trabajo.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Un showreel corporativo no es un resumen de todo lo que has grabado en el último año. Es una pieza corta, pensada para convencer a alguien en los primeros ocho segundos de que sabes lo que haces.",
+      },
+      {
+        type: "paragraph",
+        text: "Muchos clientes me piden un showreel pensando en un vídeo de dos minutos con todo lo bonito que tienen. Yo trabajo al revés: primero decido a quién se lo van a enseñar y qué decisión quieren que tome esa persona después de verlo. El montaje sale de ahí, no de la carpeta de material disponible.",
+      },
+      {
+        type: "image",
+        src: "/blog/showreel-corporativo/hero.webp",
+        alt: "Editor de vídeo revisando una línea de tiempo con clips de vídeo corporativo",
+        width: 1920,
+        height: 1298,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es un showreel corporativo y para qué sirve" },
+      {
+        type: "paragraph",
+        text: "Un showreel es una pieza breve que reúne los mejores momentos de varios proyectos para mostrar el nivel de producción de una empresa o de un profesional. En el mundo corporativo se usa para presentaciones comerciales, para la web, para eventos de empresa o para procesos de selección de proveedor audiovisual.",
+      },
+      {
+        type: "paragraph",
+        text: "No es un making of. No es un vídeo de empresa al uso, con mensaje corporativo y voz en off explicando la misión. Es una demostración visual: aquí está el nivel de cámara, de luz, de montaje y de sonido que puedes esperar si trabajas conmigo o con mi productora.",
+      },
+      {
+        type: "paragraph",
+        text: "Por eso la duración manda sobre todo lo demás. Un showreel de tres minutos pierde a la mitad de la gente antes del segundo minuto. Prefiero entregar 45 segundos que se ven enteros a un minuto y medio que nadie termina.",
+      },
+      { type: "heading", level: 2, text: "Cómo lo monto paso a paso" },
+      { type: "heading", level: 3, text: "Selecciono antes de mirar el calendario, no al revés" },
+      {
+        type: "paragraph",
+        text: "El error más común es montar el showreel por orden cronológico, metiendo el proyecto más reciente primero. Yo reviso todo el material disponible y marco solo los planos que funcionan sin contexto: si necesitas explicar qué está pasando en el plano para que se entienda, ese plano no sirve para un showreel.",
+      },
+      { type: "heading", level: 3, text: "El ritmo lo marca la música, no al revés" },
+      {
+        type: "paragraph",
+        text: "Elijo la pista antes de cortar el primer clip. Marco los golpes de la música y corto los planos sobre esos golpes, no después. Un showreel que ignora el ritmo de la música se siente desincronizado aunque cada plano individual esté bien grabado.",
+      },
+      { type: "heading", level: 3, text: "Duración: entre 30 y 60 segundos, casi siempre" },
+      {
+        type: "paragraph",
+        text: "Para uso comercial o web me quedo en 45 segundos de media. Si el showreel va a abrir una presentación en directo delante de un cliente, puedo llegar a 90 segundos porque ahí hay alguien controlando la atención de la sala. Para redes o para la home de una web, cuanto más corto, mejor retención.",
+      },
+      {
+        type: "image",
+        src: "/blog/showreel-corporativo/intermedia.webp",
+        alt: "Cámara de vídeo profesional montada en trípode en un set de producción",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes al montar un showreel" },
+      {
+        type: "list",
+        items: [
+          "Meter un plano por cada cliente para no dejar a nadie fuera, en vez de elegir los planos que mejor venden.",
+          "Usar música con derechos dudosos que luego da problemas al publicar en redes o en la web.",
+          "Alargar la pieza porque \"queda poco\" para meter un plano más que no aporta nada nuevo.",
+          "No repetir el mismo tipo de plano dos veces seguidas: entrevista, entrevista, entrevista cansa aunque cada una sea distinta.",
+          "Dejar el logo o la marca de agua tapando la imagen durante toda la pieza en vez de solo al final.",
+          "Actualizar el showreel una vez cada dos o tres años en vez de revisarlo cada pocos meses con el material nuevo.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto debería durar un showreel corporativo?",
+        answer:
+          "Entre 30 y 60 segundos para uso web o redes. Puede subir a 90 segundos si se usa para abrir una presentación comercial en directo, donde hay alguien controlando la atención del público.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito grabar material nuevo o sirve con lo que ya tengo?",
+        answer:
+          "Casi siempre se puede montar con material ya grabado si hay variedad de proyectos. Solo recomiendo grabar planos nuevos cuando todo el archivo es muy similar entre sí y el showreel queda repetitivo.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué música puedo usar sin problemas de derechos?",
+        answer:
+          "Uso librerías de música con licencia comercial válida para web y redes. Evito subir cualquier pista sin verificar antes la licencia, porque un reclamo de derechos puede tumbar la publicación justo cuando más se necesita.",
+      },
+      {
+        type: "faq",
+        question: "¿Cada cuánto hay que renovar el showreel?",
+        answer:
+          "Lo reviso cada seis meses o cada vez que hay dos o tres proyectos nuevos que suben claramente el nivel del anterior. Un showreel desactualizado transmite lo contrario de lo que busca.",
+      },
+      {
+        type: "paragraph",
+        text: "Si necesitas montar un showreel con tu material actual o grabar piezas nuevas pensadas para eso, escríbeme desde /contacto y te cuento cómo lo plantearía para tu caso.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
