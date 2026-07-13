@@ -6946,6 +6946,125 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "grabacion-video-corporativo-plantas-industriales",
+    title: "Grabación de vídeo corporativo en plantas industriales: qué tener en cuenta",
+    description:
+      "Grabar en una fábrica o una planta industrial exige otra lógica: normativa de seguridad, turnos de producción y ruido que condiciona el sonido. Cuento cómo organizo estos rodajes.",
+    publishedAt: "2026-07-13",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "producción industrial",
+      "filmmaker Madrid",
+      "vídeo institucional",
+      "seguridad en rodaje",
+    ],
+    keyword: "grabación de vídeo corporativo en plantas industriales",
+    intent: "informacional",
+    excerpt:
+      "Grabar en una planta industrial no es como grabar en una oficina. Hay normativa de seguridad, ruido, turnos de producción y espacios que no se pueden parar. Cuento cómo organizo estos rodajes.",
+    seoTitle: "Vídeo corporativo en plantas industriales | Daniel Acero",
+    metaDescription:
+      "Grabación de vídeo corporativo en plantas industriales: normativa de seguridad, turnos de producción y logística para no parar la fábrica.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Grabar vídeo corporativo en una fábrica o una planta industrial no se parece a grabar en una oficina. Hay maquinaria en marcha, ruido constante, normativa de seguridad y turnos de producción que no se pueden parar solo porque haya una cámara delante.",
+      },
+      {
+        type: "paragraph",
+        text: "He grabado en naves logísticas, plantas de fabricación y almacenes en la zona industrial de Madrid. Cada vez el reto es el mismo: conseguir imágenes que se vean bien sin interrumpir la operativa ni poner en riesgo a nadie.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabacion-video-corporativo-plantas-industriales/hero.webp",
+        alt: "Línea de producción automatizada en el interior de una planta industrial",
+        width: 1920,
+        height: 1281,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué una planta industrial exige otro enfoque" },
+      {
+        type: "paragraph",
+        text: "Una oficina se puede vaciar un rato o mover un escritorio de sitio. Una línea de producción no se detiene porque sí. Cada hora de parada tiene un coste real para la empresa, así que el rodaje se planifica alrededor del proceso productivo, no al revés.",
+      },
+      {
+        type: "paragraph",
+        text: "Además entra en juego la seguridad. Casco, chaleco reflectante, calzado de protección y a veces protección auditiva son obligatorios en ciertas zonas. Si el equipo de grabación no cumple esos requisitos, no entra a esa área, sin excepciones.",
+      },
+      {
+        type: "paragraph",
+        text: "El ruido de las máquinas también condiciona el sonido directo. En muchas zonas de planta es imposible grabar una entrevista limpia sin aislamiento, así que hay que buscar una sala cercana más silenciosa para las partes habladas.",
+      },
+      { type: "heading", level: 2, text: "Cómo organizo un rodaje en planta" },
+      { type: "heading", level: 3, text: "Visita técnica antes del día de grabación" },
+      {
+        type: "paragraph",
+        text: "Siempre pido una visita previa, aunque sea de una hora. Reviso qué zonas tienen mejor luz, dónde hay ruido excesivo, qué pasillos se pueden usar sin cruzar zonas de tránsito de maquinaria y qué permisos de seguridad necesito para el equipo.",
+      },
+      { type: "heading", level: 3, text: "Encajar el rodaje en los turnos de producción" },
+      {
+        type: "paragraph",
+        text: "Pregunto siempre por los cambios de turno y los momentos de menor actividad. Los planos generales de la línea suelen salir mejor a media mañana, cuando el ritmo es estable. Las entrevistas con responsables encajan mejor en descansos o al final del turno.",
+      },
+      { type: "heading", level: 3, text: "Equipo compacto y rápido de montar" },
+      {
+        type: "paragraph",
+        text: "En planta no llevo trípodes grandes ni montajes de luz complejos. Prefiero una cámara ligera, un estabilizador de mano y luz LED portátil. Cuanto menos tiempo tarde en montar y desmontar, menos molesto soy para el equipo que sigue trabajando alrededor.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabacion-video-corporativo-plantas-industriales/intermedia.webp",
+        alt: "Equipo de cámara profesional preparado para un rodaje corporativo",
+        width: 1920,
+        height: 1080,
+      },
+      { type: "heading", level: 2, text: "Errores comunes al grabar en una planta industrial" },
+      {
+        type: "list",
+        items: [
+          "Llegar sin conocer la normativa de seguridad de la planta y perder tiempo el día del rodaje resolviendo permisos.",
+          "Programar la grabación en el pico de producción, cuando cualquier imprevisto genera más fricción.",
+          "Grabar sonido directo en zonas con maquinaria en marcha sin un plan B de sala silenciosa.",
+          "Ignorar el ruido de fondo durante la grabación y descubrir en postproducción que las voces no se entienden.",
+          "No avisar al personal de planta de que habrá cámaras, lo que genera sorpresas o negativas de última hora a aparecer en imagen.",
+          "Subestimar el tiempo de desplazamiento interno entre naves dentro del mismo polígono.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Necesito un seguro especial para grabar en una fábrica?",
+        answer:
+          "Depende de la planta. Muchas empresas industriales exigen que el equipo de grabación tenga seguro de responsabilidad civil vigente antes de entrar. Lo suelo aportar antes del día del rodaje para no bloquear el acceso.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar mientras la producción sigue en marcha?",
+        answer:
+          "Sí, es lo habitual. Grabo desde zonas señalizadas y con la ropa de protección que exige cada área, sin interrumpir el proceso. Los planos que necesitan que una máquina esté detenida se acuerdan con antelación con el responsable de planta.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué pasa con el ruido de las máquinas en las entrevistas?",
+        answer:
+          "Busco una sala cercana con puerta, como una oficina o sala de reuniones dentro de la propia planta, para grabar la parte hablada con un sonido limpio. Los planos de la línea de producción no necesitan sonido directo, así que ahí el ruido no es un problema.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo se necesita para grabar en una planta industrial?",
+        answer:
+          "Para una pieza corta suelo reservar media jornada: dos o tres horas de planos generales y un par de entrevistas. Si la planta es grande y hay varias áreas que mostrar, puede requerir una jornada completa.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes que grabar un vídeo corporativo dentro de una planta o una nave industrial y no sabes por dónde empezar con los permisos y la logística, escríbeme desde /contacto y lo planificamos juntos antes de fijar fecha.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
