@@ -7065,6 +7065,126 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "derechos-imagen-empleados-video-corporativo",
+    title: "Derechos de imagen de empleados en vídeo corporativo: qué necesitas cubrir",
+    description:
+      "Grabar a empleados en un vídeo corporativo implica gestionar su derecho de imagen. Cuento qué documento uso, qué cubre y qué hacer con extrabajadores, menores o terceros en el rodaje.",
+    publishedAt: "2026-07-14",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "derechos de imagen",
+      "RGPD",
+      "protección de datos",
+      "recursos humanos",
+      "filmmaker Madrid",
+    ],
+    keyword: "derechos de imagen de empleados en vídeo corporativo",
+    intent: "informacional",
+    excerpt:
+      "Grabar a empleados en un vídeo corporativo implica gestionar su derecho de imagen. Cuento qué documento necesito, qué cubre y qué hacer con extrabajadores, menores o terceros que aparecen en el rodaje.",
+    seoTitle: "Derechos de imagen de empleados en vídeo | Daniel Acero",
+    metaDescription:
+      "Derechos de imagen de empleados en vídeo corporativo: qué documento firmar, casos especiales y errores a evitar antes de grabar.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cada vez que grabo un vídeo corporativo con empleados delante de cámara, hay un documento que reviso antes de encender nada: la cesión de derechos de imagen. No es un trámite decorativo. Es lo que protege a la empresa y a la persona que aparece en el vídeo si algo se usa mal, se reutiliza fuera de contexto o simplemente cambia de opinión con el tiempo.",
+      },
+      {
+        type: "paragraph",
+        text: "En España, el derecho a la propia imagen está protegido por ley. Que alguien trabaje para una empresa no significa que esa empresa pueda grabarle, usar su imagen en LinkedIn, en la web o en un anuncio sin su consentimiento explícito. Por eso, antes de cualquier rodaje con empleados, me aseguro de que ese consentimiento existe por escrito.",
+      },
+      {
+        type: "image",
+        src: "/blog/derechos-imagen-empleados-video-corporativo/hero.webp",
+        alt: "Persona firmando un documento de cesión de derechos de imagen en una oficina",
+        width: 1920,
+        height: 1281,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué son los derechos de imagen y por qué importan en un rodaje corporativo" },
+      {
+        type: "paragraph",
+        text: "El derecho de imagen es la facultad de decidir si tu imagen se capta, se reproduce o se publica, y en qué condiciones. Aparece recogido en la Constitución y se desarrolla en la Ley Orgánica 1/1982. Aplica igual a un empleado que sale treinta segundos en un vídeo de cultura de empresa que al CEO que protagoniza un vídeo institucional.",
+      },
+      {
+        type: "paragraph",
+        text: "El problema aparece cuando una empresa asume que, por ser trabajador, la persona ya ha aceptado aparecer en cualquier contenido. No es así. El contrato laboral no incluye automáticamente la cesión de derechos de imagen para uso publicitario o de marca. Son dos cosas distintas y hay que tratarlas por separado.",
+      },
+      {
+        type: "paragraph",
+        text: "Además entra en juego la protección de datos. La imagen de una persona identificable es un dato personal según el RGPD, así que el tratamiento necesita una base legal, que casi siempre es el consentimiento expreso, informado y revocable.",
+      },
+      { type: "heading", level: 2, text: "Cómo gestiono los derechos de imagen en cada rodaje" },
+      { type: "heading", level: 3, text: "El documento de cesión de derechos de imagen" },
+      {
+        type: "paragraph",
+        text: "Antes de cada rodaje corporativo con empleados, la empresa (o yo, si me lo piden) prepara un documento breve donde se especifica qué se va a grabar, para qué se va a usar el material, en qué canales se va a publicar y durante cuánto tiempo. Cada persona que va a salir en imagen lo firma antes de empezar. No hace falta un contrato de diez páginas: con media cara clara y concreta es suficiente.",
+      },
+      { type: "heading", level: 3, text: "Qué cubre y qué no cubre la autorización" },
+      {
+        type: "paragraph",
+        text: "Una autorización genérica de 'salgo en el vídeo de empresa' no cubre todo. Si el vídeo se va a usar en redes sociales, en la web, en un anuncio pagado o en una feria, mejor especificarlo. Si más adelante la empresa quiere reutilizar ese material en otro contexto, como un anuncio, lo correcto es volver a pedir consentimiento o dejarlo previsto desde el principio en el documento.",
+      },
+      { type: "heading", level: 3, text: "Casos especiales: extrabajadores, menores y terceros" },
+      {
+        type: "paragraph",
+        text: "Cuando alguien deja la empresa, su cesión de derechos de imagen no desaparece automáticamente, pero es buena práctica revisar si sigue teniendo sentido mantener ese material activo, sobre todo si la salida no fue amistosa. Con menores de edad, como hijos de empleados en un evento familiar, la autorización la firma el padre, madre o tutor legal. Y si en el vídeo aparecen terceros que no son empleados, como clientes o proveedores en un evento, aplican las mismas reglas: sin su consentimiento, no se publica su imagen.",
+      },
+      {
+        type: "image",
+        src: "/blog/derechos-imagen-empleados-video-corporativo/intermedia.webp",
+        alt: "Equipo de grabación con cámara en trípode preparado para una entrevista corporativa",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes con los derechos de imagen en vídeo corporativo" },
+      {
+        type: "list",
+        items: [
+          "Grabar a un empleado sin haberle explicado antes dónde se va a usar el vídeo.",
+          "Asumir que el contrato laboral ya cubre el uso de la imagen en marketing.",
+          "No guardar constancia escrita de la autorización, solo un permiso verbal.",
+          "Reutilizar material antiguo de un extrabajador sin comprobar si sigue siendo válido usarlo.",
+          "No prever qué pasa si alguien pide retirar su imagen después de la publicación.",
+          "Grabar a terceros, como visitantes o clientes en un evento, sin avisar de que hay cámaras.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Puedo obligar a un empleado a salir en el vídeo corporativo?",
+        answer:
+          "No. Puedes pedírselo como parte razonable del trabajo, pero si la persona se niega explícitamente a aparecer en imagen, no hay forma legal de forzarlo. Lo habitual es ofrecer alternativas, como grabar solo su voz o mostrarlo de espaldas.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito un abogado para redactar la cesión de derechos de imagen?",
+        answer:
+          "Para un vídeo corporativo estándar no suele hacer falta un contrato complejo. Con un documento claro que recoja qué se graba, para qué se usa y en qué canales, firmado por cada persona, cubres lo esencial. Para usos más delicados, como publicidad pagada a gran escala, sí conviene que lo revise un abogado.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo dura una cesión de derechos de imagen?",
+        answer:
+          "Depende de lo que se acuerde en el documento. Puede ser indefinida mientras no se revoque, o limitada a un periodo concreto. Yo recomiendo dejarlo por escrito con claridad, incluyendo que la persona puede pedir retirar su imagen en cualquier momento.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué pasa si un empleado pide retirar su imagen después de que el vídeo esté publicado?",
+        answer:
+          "Hay que atender la solicitud y retirar o sustituir el contenido donde aparece, dentro de un plazo razonable. Por eso conviene guardar los proyectos de edición organizados: así se puede volver a montar la pieza sin esa persona sin tener que regrabar todo desde cero.",
+      },
+      {
+        type: "paragraph",
+        text: "Si vas a grabar un vídeo corporativo con empleados y no tienes claro cómo gestionar la cesión de derechos de imagen, escríbeme desde /contacto y te paso el modelo de documento que uso antes de cada rodaje.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
