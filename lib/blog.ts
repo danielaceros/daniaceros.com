@@ -7185,6 +7185,127 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-captacion-inversores",
+    title: "Vídeo para captación de inversores: qué debe incluir un pitch video corporativo",
+    description:
+      "Cómo estructuro un vídeo para captación de inversores: qué contar en los primeros segundos, cómo presentar al equipo y la tracción, y los errores que restan credibilidad frente a un fondo.",
+    publishedAt: "2026-07-15",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "pitch video",
+      "inversores",
+      "startups",
+      "producción audiovisual",
+      "filmmaker Madrid",
+    ],
+    keyword: "vídeo para captación de inversores",
+    intent: "informacional",
+    excerpt:
+      "Un vídeo para captación de inversores no sustituye al pitch deck, lo refuerza. Cuento cómo lo estructuro para que un fondo o business angel entienda el negocio en menos de tres minutos.",
+    seoTitle: "Vídeo para captación de inversores | Daniel Acero",
+    metaDescription:
+      "Vídeo para captación de inversores: qué incluir, cómo estructurarlo y qué evitar antes de grabarlo.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cuando una startup me pide un vídeo para captación de inversores, lo primero que aclaro es qué NO va a ser: no sustituye al pitch deck ni a la reunión en persona. Es una pieza que se manda antes, se ve en un tren o entre reuniones, y sirve para que quien la ve decida si merece la pena sentarse contigo media hora.",
+      },
+      {
+        type: "paragraph",
+        text: "He grabado varios de estos vídeos y todos comparten un problema de fondo: el fundador quiere meter demasiado. Producto, mercado, equipo, roadmap, cada métrica que tiene a mano. El resultado es una pieza de ocho minutos que nadie termina de ver. Un vídeo de este tipo funciona cuando dice menos, no más.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-captacion-inversores/hero.webp",
+        alt: "Fundadores de una startup reunidos alrededor de una mesa preparando su presentación a inversores",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es un vídeo para captación de inversores y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Es una pieza corta, de dos a tres minutos, que resume el problema que resuelve el negocio, cómo lo resuelve, quién forma el equipo y por qué ahora es el momento de invertir. Se usa como adjunto en el primer contacto por email, como material de apoyo en una ronda, o como pieza que circula internamente en un fondo antes del comité de inversión.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque un inversor recibe decenas de propuestas a la semana. Un documento de texto se hojea; un vídeo bien hecho se ve entero si engancha en los primeros quince segundos. Y a diferencia de un deck, transmite algo que el papel no transmite: cómo habla el fundador, si convence, si tiene claro lo que está construyendo.",
+      },
+      {
+        type: "paragraph",
+        text: "No es un vídeo institucional ni un anuncio de marca. Es una herramienta de venta muy concreta, dirigida a un público muy concreto, y eso condiciona el tono: directo, sin música épica de fondo, sin planos aéreos de oficinas que no aportan nada al argumento.",
+      },
+      { type: "heading", level: 2, text: "Cómo estructuro un pitch video que funciona" },
+      { type: "heading", level: 3, text: "El problema y la oportunidad en los primeros 30 segundos" },
+      {
+        type: "paragraph",
+        text: "Empiezo siempre por el problema, no por la empresa. Si el fundador abre hablando de cuándo fundó la compañía o de su currículum, ya ha perdido diez segundos que no recupera. Prefiero una frase que plantee el problema de forma concreta, con un dato o un ejemplo reconocible, y enlazar directamente con la solución.",
+      },
+      { type: "heading", level: 3, text: "Quién es el equipo y por qué puede ejecutarlo" },
+      {
+        type: "paragraph",
+        text: "Un inversor no invierte solo en una idea, invierte en quién va a ejecutarla. Dedico entre treinta y cuarenta segundos a mostrar al equipo fundador hablando a cámara, no en una lista de nombres con cargos. Que se les vea cómodos, que expliquen con sus palabras por qué son las personas adecuadas para este problema en concreto.",
+      },
+      { type: "heading", level: 3, text: "Tracción, números y la llamada a la acción" },
+      {
+        type: "paragraph",
+        text: "El cierre es para los números que ya existen: usuarios, ingresos, clientes firmados, lo que haya. Si la empresa es muy temprana y no hay tracción todavía, mejor centrar ese bloque en el tamaño del mercado y en el hito concreto que se va a alcanzar con la ronda. Termino siempre con una llamada a la acción clara: qué se busca, cuánto, y el siguiente paso para quien quiera hablar.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-captacion-inversores/intermedia.webp",
+        alt: "Emprendedor presentando su proyecto frente a un pequeño grupo de inversores",
+        width: 1880,
+        height: 1253,
+        caption: "Grabación de una presentación real como base del vídeo para inversores.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes en un vídeo para inversores" },
+      {
+        type: "list",
+        items: [
+          "Alargar el vídeo más de tres minutos porque \"hay mucho que contar\".",
+          "Empezar por la historia personal del fundador en lugar de por el problema.",
+          "Usar gráficos genéricos de stock en vez de datos reales del negocio.",
+          "Grabar al equipo leyendo un guion memorizado, sin naturalidad.",
+          "No incluir ninguna cifra de tracción cuando sí existe.",
+          "Olvidar la llamada a la acción final: qué se pide y cómo contactar.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto debe durar un vídeo para captación de inversores?",
+        answer:
+          "Entre dos y tres minutos. Si el fundador tiene mucho que contar, mejor dejarlo para la reunión en persona o el deck extendido. El vídeo es la puerta de entrada, no el argumentario completo.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito animaciones o basta con grabación real?",
+        answer:
+          "Para la mayoría de startups, grabación real del equipo hablando a cámara funciona mejor que motion graphics genérico. Las animaciones tienen sentido cuando hay que explicar un producto técnico difícil de mostrar en pantalla, y ahí sí conviene combinar ambos formatos.",
+      },
+      {
+        type: "faq",
+        question: "¿El vídeo sustituye al pitch deck?",
+        answer:
+          "No. El deck sigue siendo el documento de referencia con todos los datos, el modelo de negocio y las proyecciones. El vídeo es un complemento que abre la puerta y genera la primera impresión antes de que alguien revise el deck con calma.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué pasa si la empresa todavía no tiene tracción?",
+        answer:
+          "Se puede grabar igualmente. En ese caso pongo el peso en el problema, el tamaño de mercado y el equipo. Un vídeo honesto sobre una empresa en etapa temprana funciona mejor que uno que infla cifras que luego no se sostienen en la reunión.",
+      },
+      {
+        type: "paragraph",
+        text: "Si estás preparando una ronda y quieres un vídeo para captación de inversores que no se quede en genérico, escríbeme desde /contacto y lo planteamos juntos antes de la grabación.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
