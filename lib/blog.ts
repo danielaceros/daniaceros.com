@@ -7306,6 +7306,130 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-multiidioma-subtitulado-doblaje",
+    title: "Vídeo corporativo multiidioma: subtitulado y doblaje",
+    description:
+      "Cómo decido entre subtítulos y doblaje en un vídeo corporativo que se lanza en varios idiomas: cuándo basta con subtítulos, cuándo compensa doblar y cómo mantener la coherencia de marca en cada versión.",
+    publishedAt: "2026-07-16",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "subtitulado",
+      "doblaje",
+      "localización de vídeo",
+      "producción audiovisual",
+      "filmmaker Madrid",
+    ],
+    keyword: "vídeo corporativo multiidioma",
+    intent: "informacional",
+    excerpt:
+      "Subtítulos o doblaje no es una decisión estética. Cuento cómo decido entre uno y otro según el canal, el mercado y el presupuesto, y cómo cuido que la marca suene igual en cada idioma.",
+    seoTitle: "Vídeo corporativo multiidioma | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo multiidioma: cuándo subtitular, cuándo doblar y cómo cuidar la coherencia de marca en cada idioma.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cuando una empresa graba un vídeo corporativo pensando en varios mercados, tarde o temprano me pregunta lo mismo: ¿subtítulos o doblaje? La respuesta cambia según el idioma, el canal donde se va a ver y el presupuesto, pero hay un criterio de fondo que uso siempre para decidir.",
+      },
+      {
+        type: "paragraph",
+        text: "No es una decisión estética. Subtitular mal o doblar sin cuidado desluce un vídeo que en el idioma original funciona bien. Y cambiar de un idioma a otro sin perder el tono de marca cuesta más trabajo del que parece desde fuera.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-multiidioma-subtitulado-doblaje/hero.webp",
+        alt: "Claqueta de rodaje sobre fondo oscuro en un set de grabación de vídeo corporativo",
+        width: 1920,
+        height: 1298,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es la localización de un vídeo corporativo y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Localizar un vídeo corporativo es adaptarlo a un idioma y a una cultura distintos sin que se note el trabajo detrás. No es traducir palabra por palabra: es ajustar ritmo, duración de las frases y a veces ejemplos culturales para que el mensaje llegue igual de claro en cada mercado.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque una empresa que se expande a otro país suele reutilizar el mismo vídeo institucional o de producto en varios idiomas antes de grabar contenido nuevo. Si la localización es floja, el vídeo se percibe como una traducción barata, y eso resta la credibilidad que el vídeo original construyó.",
+      },
+      {
+        type: "paragraph",
+        text: "La decisión entre subtitular y doblar no es solo de presupuesto. Cambia también según dónde se va a ver: un vídeo para LinkedIn se sigue viendo en gran parte sin sonido, mientras uno para una feria o una presentación en sala necesita audio limpio en el idioma del público.",
+      },
+      { type: "heading", level: 2, text: "Cómo decido entre subtítulos y doblaje" },
+      { type: "heading", level: 3, text: "Subtítulos: cuándo bastan" },
+      {
+        type: "paragraph",
+        text: "Los subtítulos funcionan bien cuando el vídeo se mueve por redes sociales, cuando el presupuesto es ajustado o cuando el mercado de destino está acostumbrado a ver contenido subtitulado en vez de doblado, como los países nórdicos. También los prefiero cuando la voz del protagonista, un CEO o un fundador, forma parte del mensaje: se pierde autenticidad si esa voz desaparece detrás de un doblaje.",
+      },
+      { type: "heading", level: 3, text: "Doblaje: cuándo compensa" },
+      {
+        type: "paragraph",
+        text: "El doblaje compensa cuando el vídeo va dirigido a un público que no lee subtítulos con comodidad, cuando se reproduce en pantallas sin interacción, como una sala de espera o un stand de feria, o cuando el mercado de destino tiene una cultura fuerte de doblaje, como España o Alemania. Aquí sí hace falta presupuesto real: una voz profesional, dirección de doblaje y ajuste de sincronía labial si el plano es un primer plano hablando a cámara.",
+      },
+      { type: "heading", level: 3, text: "Coherencia de marca entre idiomas" },
+      {
+        type: "paragraph",
+        text: "Sea cual sea la opción, hay un punto que cuido siempre: que la terminología de marca se mantenga igual en todos los idiomas. Nombres de producto, claims, tono. Antes de traducir, preparo un glosario corto con los términos que no se tocan, para que el traductor o el estudio de doblaje no improvisen sobre la marcha. En edición uso DaVinci Resolve para quemar los subtítulos con la misma tipografía y el mismo color de marca en cada idioma, así que ese detalle no queda en manos del traductor ni del estudio de doblaje.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-multiidioma-subtitulado-doblaje/intermedia.webp",
+        alt: "Micrófono de estudio para grabación de voz en off y doblaje de vídeo corporativo",
+        width: 1920,
+        height: 1080,
+      },
+      {
+        type: "paragraph",
+        text: "Otro punto que subestima casi todo el mundo es el tiempo. Doblar bien un vídeo de tres minutos, con dirección de doblaje y revisión de sincronía, lleva entre cuatro y seis días hábiles. Subtitular con calidad, con revisión de un nativo incluida, suele resolverse en dos o tres días. Si el vídeo tiene fecha de lanzamiento fija, ese margen hay que reservarlo desde el principio del proyecto, no al final.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes al llevar un vídeo corporativo a varios idiomas" },
+      {
+        type: "list",
+        items: [
+          "Traducir el guion sin ajustar el ritmo, lo que deja subtítulos que van más rápido que la lectura cómoda.",
+          "Usar doblaje automático o voces sintéticas en un vídeo institucional donde se espera una voz humana cuidada.",
+          "No revisar el resultado con un hablante nativo del idioma de destino antes de publicar.",
+          "Cambiar el claim o eslogan de marca en la traducción sin que nadie lo apruebe.",
+          "Subtitular con una fuente o tamaño que no se lee bien en móvil.",
+          "Olvidar los tiempos de espera: doblar bien un vídeo de tres minutos lleva días, no horas.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta doblar un vídeo corporativo a otro idioma?",
+        answer:
+          "Depende de la duración y del número de voces, pero para un vídeo de dos o tres minutos con una sola voz en off, el rango habitual está entre unos cientos de euros y algo más de mil si hace falta dirección de doblaje y ajuste de sincronía labial.",
+      },
+      {
+        type: "faq",
+        question: "¿Los subtítulos automáticos de las plataformas son suficientes?",
+        answer:
+          "Para contenido interno o de bajo riesgo, pueden servir de punto de partida. Para un vídeo corporativo que representa a la marca, siempre reviso y corrijo el subtítulo automático a mano: la puntuación, los cortes de línea y los términos técnicos suelen fallar.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo doblar solo una parte del vídeo y dejar el resto subtitulado?",
+        answer:
+          "Sí, y de hecho lo recomiendo en vídeos con varias voces: si el protagonista principal aporta autenticidad con su voz original, puede quedarse en versión original con subtítulos mientras el resto del vídeo, la locución en off por ejemplo, se dobla.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué idioma reviso primero cuando lanzo un vídeo a varios mercados?",
+        answer:
+          "El que tenga más peso comercial para la empresa en ese momento, no el que sea más fácil de traducir. Prefiero hacer bien uno o dos idiomas que repartir el mismo presupuesto entre cinco versiones flojas.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes un vídeo corporativo que necesitas llevar a otro idioma sin que pierda naturalidad, escríbeme desde /contacto y lo planteamos antes de tocar el guion.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
