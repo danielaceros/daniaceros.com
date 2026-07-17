@@ -7430,6 +7430,129 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "diferencia-videografo-filmmaker-corporativo",
+    title: "Videógrafo o filmmaker corporativo: en qué se diferencian",
+    description:
+      "Videógrafo y filmmaker corporativo se usan como sinónimos, pero no cubren lo mismo. Explico en qué cambia el enfoque, el proceso y el tipo de entregable de cada uno.",
+    publishedAt: "2026-07-17",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "filmmaker corporativo",
+      "videógrafo",
+      "vídeo corporativo",
+      "producción audiovisual",
+      "filmmaker Madrid",
+    ],
+    keyword: "diferencia entre videógrafo y filmmaker corporativo",
+    intent: "informacional",
+    excerpt:
+      "Videógrafo y filmmaker corporativo se usan como sinónimos, pero no lo son. Cuento qué cambia en el enfoque, el proceso y el resultado final de cada uno.",
+    seoTitle: "Videógrafo vs filmmaker corporativo | Daniel Acero",
+    metaDescription:
+      "Diferencia entre videógrafo y filmmaker corporativo: enfoque, proceso y entregables. Te explico cuándo necesitas uno u otro.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cuando una empresa busca a alguien para grabar un vídeo, casi siempre usa las palabras videógrafo y filmmaker corporativo como si fueran lo mismo. En la práctica describen dos enfoques distintos del mismo oficio, y confundirlos lleva a expectativas que luego no encajan con el resultado.",
+      },
+      {
+        type: "paragraph",
+        text: "No es una diferencia de prestigio ni de precio en sí misma. Es una diferencia de qué se te entrega y de cuánto criterio narrativo hay detrás del vídeo final. Te cuento cómo lo distingo yo, después de haber trabajado desde los dos lados.",
+      },
+      {
+        type: "image",
+        src: "/blog/diferencia-videografo-filmmaker-corporativo/hero.webp",
+        alt: "Cámara y trípode preparados en un set de grabación corporativa",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es cada figura y por qué importa distinguirlas" },
+      {
+        type: "paragraph",
+        text: "Un videógrafo cubre un evento o una grabación siguiendo un guion o un briefing cerrado: graba lo que pasa, con buena técnica de cámara y sonido, y entrega el material montado sin desviarse demasiado de lo pactado. Es la figura adecuada para cubrir una jornada, un evento o una entrevista puntual.",
+      },
+      {
+        type: "paragraph",
+        text: "Un filmmaker corporativo entra antes, en la fase de concepto. Propone cómo contar la historia de la empresa, qué planos van a sostener ese relato y qué se descarta aunque quede bonito. El trabajo no termina en apretar el botón de grabar: empieza ahí.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa distinguirlos porque cambia lo que puedes pedir. Si contratas un videógrafo esperando dirección creativa completa, te vas a quedar corto. Si contratas un filmmaker solo para cubrir un evento de tres horas sin margen de decisión, estás pagando de más por algo que no vas a usar.",
+      },
+      { type: "heading", level: 2, text: "En qué se nota la diferencia en la práctica" },
+      { type: "heading", level: 3, text: "El briefing inicial" },
+      {
+        type: "paragraph",
+        text: "Con un videógrafo, el briefing suele ser una lista de planos y momentos a cubrir. Con un filmmaker, la primera conversación es sobre el mensaje: qué quiere transmitir la empresa, a quién le habla y qué reacción busca. El plan de rodaje sale de ahí, no al revés.",
+      },
+      { type: "heading", level: 3, text: "El día de grabación" },
+      {
+        type: "paragraph",
+        text: "El videógrafo sigue la lista de planos con eficiencia y buen ojo técnico. El filmmaker improvisa dentro de un marco: si aparece un momento mejor que el previsto, lo persigue, aunque eso signifique reordenar el plan del día. Esa flexibilidad solo funciona si hay un criterio narrativo claro detrás.",
+      },
+      { type: "heading", level: 3, text: "La entrega final" },
+      {
+        type: "paragraph",
+        text: "El resultado de un videógrafo es un montaje correcto y fiel a lo grabado. El de un filmmaker corporativo es una pieza con estructura narrativa: arranque, tensión, cierre, aunque el tema sea tan poco dramático como un proceso de fabricación. Uso DaVinci Resolve en ambos casos, pero el tiempo de montaje de un filmmaker suele ser mayor porque hay más decisiones de ritmo por tomar.",
+      },
+      {
+        type: "image",
+        src: "/blog/diferencia-videografo-filmmaker-corporativo/intermedia.webp",
+        alt: "Línea de tiempo de edición de vídeo en un software de montaje profesional",
+        width: 1920,
+        height: 1280,
+      },
+      {
+        type: "paragraph",
+        text: "En proyectos reales, esta diferencia se nota sobre todo en el presupuesto de tiempo. Cubrir un evento con un videógrafo puede resolverse en un día de grabación y dos o tres de montaje. Un vídeo de marca con un filmmaker corporativo suele llevar una semana de preproducción, uno o dos días de rodaje y entre cinco y ocho días de edición, porque el guion se revisa varias veces antes de darlo por cerrado.",
+      },
+      { type: "heading", level: 2, text: "Cuándo tiene sentido cada uno" },
+      {
+        type: "list",
+        items: [
+          "Evento puntual, conferencia o feria sin necesidad de narrativa de marca: un videógrafo es suficiente y más económico.",
+          "Vídeo institucional, de marca o de captación de inversores: aquí el criterio narrativo del filmmaker marca la diferencia.",
+          "Entrevista corta para redes sin gran producción: un videógrafo con buen ojo cubre la necesidad.",
+          "Serie de contenido con hilo conductor a lo largo de varios meses: mejor un filmmaker que mantenga la coherencia de tono.",
+          "Presupuesto ajustado y objetivo puramente documental: no pagues por dirección creativa que no vas a aprovechar.",
+          "Vídeo que va a representar a la empresa durante años en su web o en captación comercial: invierte en el enfoque de filmmaker.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Un filmmaker corporativo también puede cubrir un evento?",
+        answer:
+          "Sí, y de hecho muchos filmmakers, yo incluido, cubrimos eventos. La diferencia está en cómo se plantea el encargo: si además de cubrir se pide una pieza narrativa con hilo propio, entra el enfoque de filmmaker aunque el origen sea un evento puntual.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuesta más contratar a un filmmaker que a un videógrafo?",
+        answer:
+          "Normalmente sí, porque incluye tiempo de preproducción y un montaje más elaborado. La diferencia de precio suele reflejar horas reales de trabajo adicional, no solo posicionamiento de marca personal.",
+      },
+      {
+        type: "faq",
+        question: "¿Cómo sé qué necesito antes de pedir presupuesto?",
+        answer:
+          "Pregúntate si el vídeo necesita contar algo o solo mostrar algo. Si necesitas transmitir una idea o un valor de marca, buscas un filmmaker. Si necesitas un registro fiel de un momento, un videógrafo cubre la necesidad.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede empezar con un videógrafo y escalar a filmmaker más adelante?",
+        answer:
+          "Sí, es habitual. Muchas empresas empiezan cubriendo eventos y, cuando necesitan un vídeo de marca más elaborado, cambian de enfoque. Lo importante es que el proveedor sea transparente sobre qué tipo de trabajo está entregando en cada encargo.",
+      },
+      {
+        type: "paragraph",
+        text: "Si no tienes claro qué necesitas para tu próximo vídeo, escríbeme desde /contacto y te ayudo a decidir antes de pedir presupuesto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
