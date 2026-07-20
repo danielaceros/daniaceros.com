@@ -7553,6 +7553,133 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "como-entrevistar-cliente-video-testimonial",
+    title: "Cómo entrevistar a un cliente para un vídeo testimonial",
+    description:
+      "Entrevistar a un cliente para un vídeo testimonial no es poner preguntas frente a una cámara. Cuento cómo preparo la entrevista para que la respuesta suene natural y aporte algo real a la empresa.",
+    publishedAt: "2026-07-20",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "vídeo testimonial",
+      "entrevistas corporativas",
+      "producción de vídeo",
+      "filmmaker corporativo",
+      "guion vídeo corporativo",
+    ],
+    keyword: "cómo entrevistar a un cliente para un vídeo testimonial",
+    intent: "informacional",
+    excerpt:
+      "Entrevistar a un cliente para un vídeo testimonial exige más preparación que una cámara y una lista de preguntas. Explico cómo lo planteo para que la respuesta suene real, no ensayada.",
+    seoTitle: "Cómo entrevistar para un vídeo testimonial | Daniel Acero",
+    metaDescription:
+      "Cómo entrevistar a un cliente para un vídeo testimonial: preguntas, entorno y ritmo para que la respuesta suene real y no ensayada.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Un vídeo testimonial vale lo que valga la respuesta del cliente delante de cámara. Puedes tener la mejor luz y el mejor plano, que si la persona contesta con frases de manual, el vídeo no sirve para nada. La entrevista es el 80% del resultado, y se prepara antes de encender la cámara, no durante.",
+      },
+      {
+        type: "paragraph",
+        text: "Llevo años grabando testimonios de clientes para empresas en Madrid, y la diferencia entre un testimonio que convence y uno que suena a publicidad casi nunca está en la técnica. Está en cómo se plantea la conversación. Te cuento cómo lo preparo yo.",
+      },
+      {
+        type: "image",
+        src: "/blog/como-entrevistar-cliente-video-testimonial/hero.webp",
+        alt: "Set de grabación con cámara y micrófono preparado para una entrevista",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué la preparación cambia el resultado" },
+      {
+        type: "paragraph",
+        text: "Un cliente que accede a grabar un testimonio casi nunca es actor ni portavoz. Le pones un micrófono de solapa, enciendes dos focos y una cámara, y lo normal es que se ponga rígido. Si a eso le sumas que no sabe qué le vas a preguntar, la respuesta sale medida y defensiva, no natural.",
+      },
+      {
+        type: "paragraph",
+        text: "La preparación no significa darle las preguntas por escrito para que las memorice. Significa que antes de grabar ya sabes qué historia quieres sacar de esa persona, y que la conversación previa ha bajado su nivel de tensión lo suficiente para que hable como habla en realidad, no como cree que debe sonar en un vídeo corporativo.",
+      },
+      {
+        type: "paragraph",
+        text: "Cuando eso falla, el síntoma es siempre el mismo: frases genéricas tipo 'la experiencia ha sido muy positiva' o 'el equipo es muy profesional'. Son frases verdaderas pero inútiles, porque no dicen nada que un espectador no pueda suponer solo por ver el vídeo.",
+      },
+      { type: "heading", level: 2, text: "Cómo preparo la entrevista" },
+      { type: "heading", level: 3, text: "El guion de preguntas, no un cuestionario cerrado" },
+      {
+        type: "paragraph",
+        text: "Antes de la grabación hago una llamada de 15-20 minutos con el cliente para entender qué problema tenía la empresa antes de contratar el servicio y qué cambió después. De ahí saco entre 6 y 8 preguntas abiertas, nunca de sí o no. En vez de '¿Estás contento con el resultado?', pregunto '¿Qué es lo que más te sorprendió del proceso?'. La pregunta abierta obliga a construir una respuesta con contenido real.",
+      },
+      { type: "heading", level: 3, text: "El entorno y la cámara" },
+      {
+        type: "paragraph",
+        text: "Grabo con dos cámaras, una frontal ligeramente descentrada y otra en plano más abierto, para poder cortar entre planos sin que se note el salto cuando la persona duda o repite una respuesta. El micrófono suele ser de solapa, discreto, porque un micrófono de mano frente a la cara recuerda demasiado a una entrevista de telediario y tensiona al cliente.",
+      },
+      {
+        type: "paragraph",
+        text: "Elijo un espacio donde el cliente se sienta cómodo, casi siempre su propia oficina o el lugar donde usa el producto o servicio, no un fondo neutro de estudio. Eso ayuda a que hable de su día a día en vez de ponerse en modo presentación.",
+      },
+      { type: "heading", level: 3, text: "Romper el hielo antes de grabar" },
+      {
+        type: "paragraph",
+        text: "Los primeros cinco minutos con la cámara ya encendida no los uso. Charlo con la persona sobre algo que no tiene que ver con el vídeo, reviso el encuadre, ajusto el audio. Ese tiempo muerto sirve para que se olvide de que está siendo grabada. La primera respuesta buena casi nunca es la primera que se graba, es la tercera o cuarta.",
+      },
+      {
+        type: "image",
+        src: "/blog/como-entrevistar-cliente-video-testimonial/intermedia.webp",
+        alt: "Persona hablando con naturalidad frente a un equipo de grabación",
+        width: 1920,
+        height: 1280,
+      },
+      {
+        type: "paragraph",
+        text: "Una entrevista de testimonio suele durar entre 30 y 45 minutos grabados para acabar usando 2 o 3 minutos en el montaje final. Ese ratio es normal: se necesita mucho material para encontrar las frases que realmente aportan. Recortar en DaVinci Resolve las respuestas planas y quedarte con las que tienen matiz es donde se gana el vídeo, no en la grabación en sí.",
+      },
+      { type: "heading", level: 2, text: "Errores que evito" },
+      {
+        type: "list",
+        items: [
+          "Enviar las preguntas exactas por escrito antes de grabar: la respuesta sale memorizada y se nota.",
+          "Empezar a grabar la primera respuesta que da la persona, sin dejarla entrar en calor antes.",
+          "Hacer preguntas cerradas que se contestan con una palabra.",
+          "Grabar en un entorno que no es el suyo, forzando una puesta en escena artificial.",
+          "No preguntar por el problema previo: sin el 'antes', el 'después' no tiene contraste ni fuerza.",
+          "Cortar la entrevista en cuanto sale una respuesta decente, sin buscar una segunda mejor.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Debo darle las preguntas al cliente antes de la grabación?",
+        answer:
+          "Yo prefiero compartir los temas generales que vamos a tocar, no las preguntas exactas. Así la persona llega con ideas pero sin una respuesta ensayada palabra por palabra.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto dura una sesión de grabación de testimonio?",
+        answer:
+          "Entre 30 y 45 minutos de grabación efectiva, más el tiempo de preparación de luz y sonido. Para el cliente suele ser una hora en total, incluyendo el rato de charla previa a encender la cámara.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué hago si el cliente se pone nervioso frente a la cámara?",
+        answer:
+          "Paro, hablo con él sin grabar y retomo cuando esté más relajado. Forzar una respuesta con la persona tensa se nota en el vídeo final, y ese material casi nunca se acaba usando.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito un guion técnico para este tipo de entrevista?",
+        answer:
+          "No en el sentido de un guion cerrado. Sí necesito una lista de preguntas abiertas y una idea clara de qué historia busco antes de sentar a la persona delante de la cámara.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes un cliente dispuesto a grabar un testimonio y no sabes por dónde empezar la conversación previa, escríbeme desde /contacto y te ayudo a plantear las preguntas.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
