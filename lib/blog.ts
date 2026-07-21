@@ -7680,6 +7680,130 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "grabar-en-oficina-sin-interrumpir-trabajo",
+    title: "Cómo grabar en una oficina sin interrumpir el trabajo del equipo",
+    description:
+      "Grabar un vídeo corporativo dentro de una oficina en horario laboral tiene su logística propia. Cuento cómo organizo el rodaje para no parar la operativa del equipo.",
+    publishedAt: "2026-07-21",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "rodaje en oficina",
+      "producción de vídeo",
+      "filmmaker corporativo",
+      "logística de rodaje",
+    ],
+    keyword: "cómo grabar en una oficina sin interrumpir el trabajo del equipo",
+    intent: "informacional",
+    excerpt:
+      "Rodar dentro de una oficina en horario laboral exige tanta planificación como la propia grabación. Explico cómo organizo el equipo, los horarios y el espacio para no frenar el trabajo de nadie.",
+    seoTitle: "Grabar en oficina sin interrumpir el trabajo | Daniel Acero",
+    metaDescription:
+      "Cómo grabar en una oficina sin interrumpir el trabajo del equipo: horarios, espacio y aviso previo para rodar sin parar la operativa diaria.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "La primera vez que grabé dentro de una oficina en horario laboral aprendí que el problema no era la cámara. Era la gente trabajando alrededor. Un rodaje mal planteado en un espacio de trabajo real puede parar reuniones, bloquear pasillos y dejar a medio equipo con cara de fastidio antes de que hayas grabado el primer plano.",
+      },
+      {
+        type: "paragraph",
+        text: "Llevo años grabando vídeo corporativo dentro de oficinas ocupadas en Madrid, con gente trabajando a pocos metros del equipo. Te cuento cómo organizo el rodaje para que la empresa siga funcionando mientras yo grabo.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabar-en-oficina-sin-interrumpir-trabajo/hero.webp",
+        alt: "Equipo de grabación trabajando dentro de una oficina mientras un empleado sigue en su puesto",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué la logística pesa tanto como la imagen" },
+      {
+        type: "paragraph",
+        text: "Un vídeo corporativo grabado en oficina no se juega solo en el encuadre. Se juega en si consigues el material que necesitas sin generar fricción con la gente que sigue trabajando. Si el rodaje molesta, el cliente lo nota, el equipo lo comenta, y la próxima vez te ponen más trabas para volver a grabar.",
+      },
+      {
+        type: "paragraph",
+        text: "La oficina no es un set. Hay llamadas en curso, reuniones que no se pueden mover y personas que no han firmado para salir en cámara ese día. Cada uno de esos factores condiciona por dónde puedes moverte y a qué hora.",
+      },
+      {
+        type: "paragraph",
+        text: "Cuando planteo el rodaje bien, la mayoría de empleados ni se entera de que hubo una grabación hasta que ve el vídeo terminado. Esa es la señal de que la logística ha funcionado.",
+      },
+      { type: "heading", level: 2, text: "Cómo organizo el rodaje" },
+      { type: "heading", level: 3, text: "Antes de llegar: horario y aviso al equipo" },
+      {
+        type: "paragraph",
+        text: "Pido siempre el calendario de salas y reuniones del día antes de fijar la franja de grabación. Las horas mejores suelen ser primera hora de la mañana, antes de que la oficina se llene, o la franja de después de comer, cuando bajan las llamadas. Pido a mi contacto en la empresa que avise al equipo con un email corto: qué día, qué zonas, y que nadie tiene obligación de salir en plano si no quiere.",
+      },
+      { type: "heading", level: 3, text: "Equipo compacto para moverte rápido" },
+      {
+        type: "paragraph",
+        text: "En oficina trabajo con cámara al hombro o en trípode ligero, casi nunca con raíles ni luces grandes salvo que la escena lo pida. Cuanto más aparatoso es el montaje, más tiempo se tarda en cambiar de zona y más se nota la presencia del equipo. Un par de paneles LED pequeños y un micrófono de solapa cubren la mayoría de planos de oficina sin necesitar cortar el paso por un pasillo.",
+      },
+      { type: "heading", level: 3, text: "Cómo me muevo sin bloquear el espacio" },
+      {
+        type: "paragraph",
+        text: "Grabo en tramos cortos, de 10 a 15 minutos por zona, y libero el espacio en cuanto tengo el plano. Si necesito repetir una toma, prefiero volver más tarde a esa misma zona antes que tener a alguien esperando de pie mientras ajusto la cámara. También evito grabar de espaldas a los accesos: la gente necesita poder pasar sin rodear el equipo o esperar a que grite 'corten'.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabar-en-oficina-sin-interrumpir-trabajo/intermedia.webp",
+        alt: "Pasillo de oficina despejado con luz natural durante una jornada de grabación",
+        width: 1920,
+        height: 1501,
+        caption: "Despejar el paso siempre tiene prioridad sobre conseguir el plano perfecto a la primera.",
+      },
+      {
+        type: "paragraph",
+        text: "Cuando hay que grabar cerca de puestos de trabajo activos, pido al empleado que siga con lo suyo en vez de fingir que trabaja. Un actor improvisado tecleando sin sentido se nota a kilómetros en el montaje final. Prefiero planos donde la persona hace algo real, aunque tenga que repetir el gesto dos o tres veces para que quede natural en cámara.",
+      },
+      { type: "heading", level: 2, text: "Errores que evito" },
+      {
+        type: "list",
+        items: [
+          "Fijar el rodaje sin consultar el calendario de reuniones de la empresa.",
+          "Montar equipo grande en pasillos estrechos o zonas de paso obligado.",
+          "Grabar a alguien sin avisarle antes, aunque sea de espaldas o de fondo.",
+          "Alargar una toma en una zona más de lo necesario cuando hay gente esperando para pasar.",
+          "Pedir a un empleado que finja estar trabajando en vez de dejarle hacer su tarea real.",
+          "No tener un plan B de horario si una sala se ocupa a última hora.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo necesito bloquear en la oficina para grabar?",
+        answer:
+          "Para un vídeo corporativo estándar con varias zonas, entre 3 y 4 horas suele ser suficiente, repartidas en tramos cortos por espacio para no ocupar ninguna zona demasiado tiempo seguido.",
+      },
+      {
+        type: "faq",
+        question: "¿Hay que avisar a todos los empleados aunque no salgan en cámara?",
+        answer:
+          "Sí. Aunque solo grabe a dos o tres personas, aviso a todo el equipo de la zona con antelación. Evita caras de sorpresa y reduce las interrupciones durante el rodaje.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar durante una jornada normal sin parar la actividad?",
+        answer:
+          "Sí, si se planifica por franjas y zonas. La clave es no ocupar el mismo espacio más de 15 minutos seguidos y evitar las horas de mayor actividad, como el inicio de la mañana o las reuniones fijas.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué hago si un empleado no quiere salir en el vídeo?",
+        answer:
+          "Se respeta sin preguntar por qué. Cambio el encuadre o espero a que esa persona no esté en la zona que voy a grabar. Forzar la aparición de alguien incómodo nunca compensa.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes que grabar en tu oficina y no sabes cómo encajarlo sin parar el día a día del equipo, escríbeme desde /contacto y planteamos juntos la logística.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
