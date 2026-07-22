@@ -7804,6 +7804,126 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-resultados-anuales",
+    title: "Vídeo corporativo de resultados anuales: cómo comunicarlos bien",
+    description:
+      "Cómo planteo un vídeo corporativo de resultados anuales para que informe a empleados e inversores sin sonar a autobombo ni a PDF leído en voz alta.",
+    publishedAt: "2026-07-22",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "comunicación interna",
+      "vídeo institucional",
+      "resultados anuales",
+      "producción audiovisual",
+    ],
+    keyword: "vídeo corporativo de resultados anuales",
+    intent: "informacional",
+    excerpt:
+      "Un vídeo de resultados anuales no vende hacia fuera, informa hacia dentro. Cuento cómo lo estructuro para que empleados e inversores recuerden lo importante sin aburrirse a los tres minutos.",
+    seoTitle: "Vídeo corporativo de resultados anuales | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo de resultados anuales: cómo estructurarlo, qué duración usar y qué errores evitar para comunicar bien a empleados e inversores.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "La primera vez que un cliente me pidió un vídeo para presentar los resultados anuales a toda la empresa, mi primer instinto fue tratarlo como un vídeo institucional cualquiera. Me equivoqué. Un vídeo de resultados anuales no vende nada hacia fuera: informa hacia dentro, a gente que ya conoce la empresa y que va a notar enseguida si el tono suena a autobombo.",
+      },
+      {
+        type: "paragraph",
+        text: "Llevo varios años grabando este tipo de piezas para equipos de dirección que quieren cerrar el año de otra forma que no sea un PDF de cuarenta diapositivas leído en una sala con las luces apagadas. Te cuento cómo lo planteo para que funcione.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-resultados-anuales/hero.webp",
+        alt: "Directivo presentando los resultados anuales de la empresa a su equipo en una sala de reuniones",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Un vídeo corporativo de resultados anuales es una pieza breve, normalmente entre tres y seis minutos, en la que la dirección comunica cómo ha ido el año a empleados, socios o inversores. No es un vídeo de marca ni una pieza de captación: es comunicación interna con forma de vídeo.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque el formato cambia cómo se recibe el mensaje. Un CEO leyendo cifras en una diapositiva transmite datos. El mismo CEO hablando a cámara, con las cifras apoyadas por gráficos claros y un par de testimonios de equipo, transmite además contexto y compromiso. La gente recuerda mejor lo que ve dicho en voz alta que lo que lee en una tabla.",
+      },
+      {
+        type: "paragraph",
+        text: "También filtra mejor la información. En un vídeo de cinco minutos no caben cuarenta métricas. Obliga a la dirección a decidir qué tres o cuatro cosas quiere que el equipo recuerde del año, y eso ya es un ejercicio útil antes de encender la cámara.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Definir para quién es antes que qué se dice" },
+      {
+        type: "paragraph",
+        text: "Antes de escribir una sola línea de guion, pregunto quién va a ver esto: solo empleados, también inversores, o una mezcla de ambos. El tono cambia bastante. Para un equipo interno se puede hablar de tú a tú, con más cercanía y hasta bromas internas. Para inversores el registro sube, se pide más precisión en las cifras y menos margen para la improvisación.",
+      },
+      { type: "heading", level: 3, text: "Combinar datos con una historia humana" },
+      {
+        type: "paragraph",
+        text: "Las cifras solas cansan a los tres minutos. Intercalo los datos clave con algo tangible: un proyecto concreto que salió bien, una anécdota de un cliente, un momento del equipo que ilustre por qué esas cifras tienen sentido. No hace falta un storytelling elaborado, basta con anclar cada dato a algo que la gente pueda visualizar en vez de solo escuchar un porcentaje.",
+      },
+      { type: "heading", level: 3, text: "Decidir la duración y el formato con la audiencia en mente" },
+      {
+        type: "paragraph",
+        text: "Para un equipo de veinte personas grabo algo más cercano, con la dirección a cámara en un espacio de la propia oficina. Para una comunicación a inversores suelo apoyar más en gráficos animados y menos en el careo directo, porque el peso recae en la precisión del dato. En ambos casos evito pasar de los seis minutos: si hace falta más tiempo para contar todo, mejor partirlo en dos piezas cortas que en una única pieza larga que nadie termina de ver.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-resultados-anuales/intermedia.webp",
+        alt: "Pantalla con gráficas de resultados anuales durante una reunión de equipo",
+        width: 1920,
+        height: 1280,
+        caption: "Un par de gráficos claros comunican más que veinte cifras leídas seguidas.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Meter todas las métricas del año sin filtrar cuáles importan de verdad.",
+          "Grabar a la dirección leyendo un guion sin ensayar, lo que se nota enseguida en cámara.",
+          "Usar un tono de venta o marketing cuando la audiencia es interna.",
+          "Alargar el vídeo más de seis o siete minutos por no querer dejar nada fuera.",
+          "No enseñar el guion final a la dirección antes de grabar, lo que genera dudas delante de la cámara.",
+          "Ignorar el sonido de la sala de grabación, algo que se agrava si hay eco o ruido de oficina de fondo.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto debería durar un vídeo de resultados anuales?",
+        answer:
+          "Entre tres y seis minutos suele ser el punto óptimo. Por debajo de tres minutos es difícil dar contexto a las cifras, y por encima de seis empieza a perderse atención, sobre todo en un vídeo interno que la gente ve desde el móvil.",
+      },
+      {
+        type: "faq",
+        question: "¿Quién debería aparecer hablando en el vídeo?",
+        answer:
+          "Normalmente la persona con más peso simbólico en la empresa, ya sea CEO o socio fundador. Si el equipo es grande, ayuda añadir una segunda voz, como un responsable de área, para que no todo el peso del mensaje recaiga en una sola persona.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta un guion cerrado o se puede improvisar?",
+        answer:
+          "Recomiendo un guion con los puntos clave escritos, aunque no palabra por palabra. Dejo margen para que la persona hable con sus propias palabras sobre esos puntos, porque leer un texto cerrado a cámara casi siempre se nota artificial.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar en la propia oficina o hace falta un estudio?",
+        answer:
+          "Se puede grabar en la oficina sin problema, siempre que se controle el sonido y la luz. Una sala de reuniones con buena luz natural y sin eco suele bastar; no hace falta un estudio para este tipo de pieza.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tu empresa está pensando en cerrar el año con un vídeo de resultados en vez de otra presentación en PDF, escríbeme desde /contacto y hablamos de cómo plantearlo.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
