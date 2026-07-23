@@ -7924,6 +7924,125 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-lanzamiento-producto",
+    title: "Vídeo corporativo para lanzamiento de producto: cómo lo planteo",
+    description:
+      "Cómo organizo un vídeo de lanzamiento de producto cuando la fecha del evento no se puede mover: planificación inversa, formato por canal y qué dejar para el final.",
+    publishedAt: "2026-07-23",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "lanzamiento de producto",
+      "vídeo de marca",
+      "producción audiovisual",
+      "filmmaker Madrid",
+    ],
+    keyword: "vídeo corporativo para lanzamiento de producto",
+    intent: "informacional",
+    excerpt:
+      "Un vídeo de lanzamiento no tiene margen para retrasarse: la fecha del evento manda. Cuento cómo planifico hacia atrás para que el vídeo llegue a tiempo sin sacrificar calidad.",
+    seoTitle: "Vídeo corporativo para lanzamiento de producto | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo para lanzamiento de producto: cómo planifico el rodaje hacia atrás desde la fecha del evento y qué errores evito antes de grabar.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Un cliente me escribió hace unos meses con la fecha ya cerrada: la presentación de lanzamiento era en cinco semanas y necesitaba un vídeo para abrir el evento. No había guion, ni referencias, solo el producto y la fecha. Es el punto de partida más habitual cuando hablo de vídeo de lanzamiento.",
+      },
+      {
+        type: "paragraph",
+        text: "Un vídeo de lanzamiento de producto es distinto a un vídeo corporativo genérico porque tiene una fecha límite que no se puede mover y un único objetivo: generar expectación justo antes de que el producto salga al mercado. Aquí no hay margen para retrasar la entrega dos semanas porque el equipo de marketing esté revisando el naming.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-lanzamiento-producto/hero.webp",
+        alt: "Presentación de lanzamiento de producto ante una sala con pantalla grande",
+        width: 1920,
+        height: 1372,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Un vídeo de lanzamiento es la pieza audiovisual que acompaña la salida al mercado de un producto: puede abrir un evento en directo, protagonizar una campaña en redes o servir de teaser antes de la fecha oficial. Combina lenguaje de marca con información concreta sobre qué hace el producto y por qué importa ahora.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque el calendario manda sobre el proceso creativo. En un vídeo institucional normal puedo permitirme mover el rodaje una semana si algo no encaja. En un lanzamiento no: la fecha del evento, la campaña de prensa y las redes ya están coordinadas, y el vídeo tiene que llegar a tiempo aunque el producto cambie de aspecto hasta el último momento.",
+      },
+      {
+        type: "paragraph",
+        text: "También importa porque suele ser la primera vez que mucha gente ve el producto en movimiento. Un catálogo o una ficha técnica explican qué hace. El vídeo explica por qué debería importarte, y eso cambia el tipo de planos y de ritmo que necesito.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Planificar hacia atrás desde la fecha del evento" },
+      {
+        type: "paragraph",
+        text: "Lo primero que hago es coger la fecha de lanzamiento y contar hacia atrás: cuándo tiene que estar el máster final, cuándo la primera versión para aprobación interna, cuándo el rodaje, y cuándo tengo que tener cerrado el guion. Casi siempre el margen real de rodaje y montaje es más corto de lo que el cliente cree, porque la mitad del calendario se va en aprobaciones internas.",
+      },
+      { type: "heading", level: 3, text: "Elegir el formato según el canal de lanzamiento" },
+      {
+        type: "paragraph",
+        text: "No es lo mismo un vídeo pensado para abrir una keynote en una pantalla grande que uno pensado para un teaser de quince segundos en Instagram. Antes de grabar pregunto dónde se va a ver primero: si es en el evento, priorizo planos que funcionen en pantalla completa y un ritmo más pausado; si es para redes, dejo margen en el encuadre para recortar a formato vertical sin perder al producto de plano.",
+      },
+      { type: "heading", level: 3, text: "Dejar el rodaje del producto físico para el final" },
+      {
+        type: "paragraph",
+        text: "Grabo primero todo lo que no depende del producto terminado: entrevistas, planos de contexto, b-roll del equipo trabajando. El producto físico o el prototipo definitivo lo dejo para las últimas fechas posibles, porque casi siempre hay un cambio de última hora en acabado, color o packaging que llega justo antes del lanzamiento.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-lanzamiento-producto/intermedia.webp",
+        alt: "Estudio de fotografía y vídeo preparado para grabar un producto",
+        width: 1920,
+        height: 1280,
+        caption: "El producto físico se graba al final, cuando ya está en su acabado definitivo.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Empezar a grabar sin tener cerrado el naming final del producto.",
+          "No dejar margen para un segundo corte si cambia el mensaje de marketing a última hora.",
+          "Grabar el producto en un entorno que no refleja el packaging o acabado definitivo.",
+          "Subestimar el tiempo que tarda la aprobación interna del guion y del primer corte.",
+          "No preparar desde el principio una versión corta para redes además de la pieza principal del evento.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto margen necesito antes de la fecha de lanzamiento?",
+        answer:
+          "Como mínimo cuatro semanas entre el cierre del guion y el evento, contando rodaje, montaje y una ronda de aprobación interna. Con menos de eso hay que recortar fases, casi siempre a costa de la revisión.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta grabar el producto físico o vale con renders?",
+        answer:
+          "Depende del producto. Si es algo tangible que se puede tocar y manipular en cámara, grabarlo en directo transmite más que un render. Los renders funcionan bien como apoyo cuando el producto todavía no existe en su forma final o cuando hay piezas que no se pueden fotografiar a tiempo.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué duración debe tener un vídeo de lanzamiento?",
+        answer:
+          "Para abrir un evento en directo, entre noventa segundos y tres minutos suele funcionar. Para redes conviene tener además una versión de quince a treinta segundos, pensada para verse sin sonido y con el mensaje claro en los primeros tres segundos.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede reutilizar este vídeo después del lanzamiento?",
+        answer:
+          "Sí, y conviene planificarlo desde el rodaje. Grabo siempre algo más de material del necesario para poder montar después piezas cortas para redes o para la web, sin tener que organizar un segundo rodaje solo para eso.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes una fecha de lanzamiento ya cerrada y necesitas un vídeo que llegue a tiempo, escríbeme desde /contacto y vemos cómo encajarlo en el calendario.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
