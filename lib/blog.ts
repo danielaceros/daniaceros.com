@@ -8043,6 +8043,127 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-rsc-sostenibilidad",
+    title: "Vídeo corporativo de RSC y sostenibilidad: cómo lo planteo",
+    description:
+      "Cómo planteo un vídeo de RSC y sostenibilidad para que muestre hechos filmables en vez de discurso genérico, y qué errores evito para no caer en el greenwashing.",
+    publishedAt: "2026-07-24",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "RSC",
+      "sostenibilidad",
+      "vídeo corporativo",
+      "comunicación corporativa",
+      "vídeo de marca",
+      "filmmaker Madrid",
+    ],
+    keyword: "vídeo corporativo de RSC y sostenibilidad",
+    intent: "informacional",
+    excerpt:
+      "Un vídeo de RSC no se sostiene con paneles solares de stock ni discursos de intenciones. Cuento cómo lo planteo para que muestre hechos filmables en vez de postureo.",
+    seoTitle: "Vídeo corporativo de RSC y sostenibilidad | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo de RSC y sostenibilidad: cómo lo cuento con hechos filmables, sin imágenes de stock ni promesas que no se pueden verificar.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Un cliente me llamó con el informe de sostenibilidad ya cerrado y me pidió un vídeo para acompañarlo. Cuando le pregunté qué quería mostrar, la respuesta fue vaga: algo sobre valores, sobre compromiso con el planeta. Es el punto de partida más habitual cuando hablo de vídeo de RSC: mucho discurso y poca imagen concreta que lo sostenga.",
+      },
+      {
+        type: "paragraph",
+        text: "Un vídeo de RSC y sostenibilidad no es un vídeo institucional con paneles solares de fondo de stock. Es la pieza que demuestra, con hechos filmables, que las iniciativas que la empresa cuenta en su memoria anual existen de verdad. Ahí está la diferencia entre un vídeo que suma credibilidad y uno que parece publicidad barata sacada de un banco de imágenes.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-rsc-sostenibilidad/hero.webp",
+        alt: "Equipo de una empresa reunido para revisar iniciativas de sostenibilidad",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Un vídeo de RSC recoge las acciones de una empresa en materia ambiental, social y de gobernanza y las traduce a imágenes que se pueden enseñar a empleados, inversores o clientes. No sustituye a la memoria de sostenibilidad, la complementa: donde el informe da cifras y tablas, el vídeo da contexto humano y muestra el lugar donde ocurre el cambio.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque el escrutinio ha subido. Un vídeo con imágenes de stock de paneles solares y bosques que no tienen nada que ver con la actividad real de la empresa se nota a la legua, y hoy se paga caro en reputación. Cualquiera que trabaje en comunicación corporativa sabe que el greenwashing se detecta en segundos, y un vídeo mal planteado puede hacer más daño que no tener vídeo.",
+      },
+      {
+        type: "paragraph",
+        text: "También importa puertas adentro. Cada vez veo más empresas que usan estos vídeos en procesos de selección o en el onboarding de nuevos empleados, no solo de cara al exterior. Un candidato que ve acciones reales antes de firmar el contrato llega con expectativas distintas a uno que solo lee un PDF.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Buscar hechos concretos, no declaraciones de intenciones" },
+      {
+        type: "paragraph",
+        text: "Antes de montar el equipo pido una lista de acciones ya ejecutadas, no de intenciones a futuro: una planta que cambió de proveedor energético, un programa de voluntariado con horas reales invertidas, una política de conciliación que se aplica de verdad. Si la acción no se puede filmar o documentar con datos concretos, no entra en el guion, por muy bien que suene en una diapositiva.",
+      },
+      { type: "heading", level: 3, text: "Grabar los procesos reales, no naturaleza genérica" },
+      {
+        type: "paragraph",
+        text: "En vez de recurrir a b-roll de bosques o energías renovables sin relación con la empresa, grabo la planta, la oficina o el almacén donde ocurre el cambio real: el punto de reciclaje interno, la línea de producción con el nuevo proceso, la persona que gestiona el programa social. Cuesta más planificar el rodaje que comprar stock, pero es lo único que hace creíble el resultado.",
+      },
+      { type: "heading", level: 3, text: "Dejar hablar a quien ejecuta, no solo a dirección" },
+      {
+        type: "paragraph",
+        text: "El discurso institucional de un director de sostenibilidad es necesario pero no basta por sí solo. Meto siempre testimonios de empleados que llevan la iniciativa en el día a día: el responsable de planta que gestiona los residuos, la persona de RRHH que coordina el programa de voluntariado, el operario que usa la maquinaria nueva. Son quienes dan la textura real que un guion corporativo no puede fabricar desde un despacho.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-rsc-sostenibilidad/intermedia.webp",
+        alt: "Trabajador de planta industrial implicado en una iniciativa de sostenibilidad",
+        width: 1920,
+        height: 1280,
+        caption: "Las personas que ejecutan la iniciativa dan más credibilidad que el discurso de dirección.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Usar imágenes de banco genéricas de renovables o naturaleza que no tienen relación con la actividad real de la empresa.",
+          "Centrar todo el vídeo en el discurso de dirección sin mostrar ninguna acción concreta en marcha.",
+          "Prometer cifras de impacto que no se pueden sustentar con datos verificables cuando alguien pregunte.",
+          "Quedarse solo en lo medioambiental e ignorar la parte social y de gobernanza de la RSC.",
+          "Grabar una única vez al año en vez de ir documentando iniciativas a lo largo de los meses.",
+          "No adaptar el mismo material a los distintos públicos: empleados, inversores y clientes esperan cosas distintas.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto debe durar un vídeo de RSC y sostenibilidad?",
+        answer:
+          "Entre dos y cuatro minutos para la versión completa que acompaña la memoria anual, con cortes de treinta segundos para redes sociales centrados en una sola iniciativa cada uno.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta esperar a tener cerrado el informe de sostenibilidad?",
+        answer:
+          "No. Prefiero grabar las iniciativas a medida que ocurren durante el año y montar el vídeo cuando el informe esté listo. Esperar al cierre del informe suele dejar poco margen y obliga a recrear situaciones que ya pasaron.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar en varias sedes o plantas de la empresa?",
+        answer:
+          "Sí, y muchas veces es necesario si las iniciativas relevantes están repartidas. Hay que planificar bien los desplazamientos porque cada sede añade un día de rodaje que no siempre está presupuestado desde el principio.",
+      },
+      {
+        type: "faq",
+        question: "¿Sirve el mismo vídeo para la memoria anual y para redes sociales?",
+        answer:
+          "La pieza larga funciona para la memoria y para presentaciones a inversores, pero para redes conviene cortar piezas independientes de una sola iniciativa cada una, porque el consumo ahí es más corto y disperso.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tu empresa tiene iniciativas de RSC reales y quieres contarlas sin que suenen a relleno, escríbeme desde /contacto y vemos qué merece la pena filmar.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
