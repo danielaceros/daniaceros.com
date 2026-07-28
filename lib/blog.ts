@@ -8164,6 +8164,125 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "actores-vs-empleados-reales-video-corporativo",
+    title: "Actores o empleados reales en tu vídeo corporativo: qué elegir",
+    description:
+      "Cuándo conviene contratar actores para un vídeo corporativo y cuándo es mejor grabar a los empleados reales, con los criterios que uso para decidirlo en cada rodaje.",
+    publishedAt: "2026-07-28",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "casting corporativo",
+      "actores vs empleados",
+      "producción audiovisual",
+      "filmmaker Madrid",
+    ],
+    keyword: "actores vs empleados reales en vídeo corporativo",
+    intent: "informacional",
+    excerpt:
+      "Contratar actores da control y ahorra tiempo de rodaje. Grabar a los empleados da credibilidad pero pide más paciencia. Cuento cómo decido cuál usar en cada proyecto.",
+    seoTitle: "Actores o empleados en vídeo corporativo | Daniel Acero",
+    metaDescription:
+      "Actores vs empleados reales en vídeo corporativo: cuándo contratar actores y cuándo grabar a tu propio equipo, con criterios prácticos de rodaje.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Un director de RRHH me preguntó hace poco si debía contratar a un actor para el vídeo de bienvenida de la empresa o si mejor grababa a alguien del equipo. Le noté la duda real: temía que un empleado se pusiera nervioso delante de la cámara, pero también le costaba imaginar a un actor hablando de la cultura de la empresa como si la conociera de verdad.",
+      },
+      {
+        type: "paragraph",
+        text: "Las dos opciones son válidas. La pregunta no es cuál es mejor en abstracto, sino qué necesita esa pieza en concreto: credibilidad, control de la interpretación, tiempo de rodaje disponible y presupuesto. Cuento aquí cómo decido cuál usar según el proyecto.",
+      },
+      {
+        type: "image",
+        src: "/blog/actores-vs-empleados-reales-video-corporativo/hero.webp",
+        alt: "Reunión de equipo en una oficina durante la preparación de un vídeo corporativo",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Elegir entre actor y empleado real no es un detalle de casting, es una decisión que afecta al tono de toda la pieza. Un actor da consistencia: repite la toma sin cansarse, modula el ritmo, no se traba con las palabras técnicas. Un empleado real da autenticidad: su forma de hablar, sus gestos y sus silencios no se pueden fabricar en un casting.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque el espectador nota la diferencia, aunque no sepa explicarla. Un discurso demasiado perfecto en boca de alguien que se supone que es de la casa genera desconfianza. Y al revés: un empleado incómodo delante de la cámara, con miradas a un papel fuera de plano, resta profesionalidad a un vídeo que quiere transmitir solidez.",
+      },
+      {
+        type: "paragraph",
+        text: "También importa por tiempo y presupuesto. Un actor con experiencia resuelve una escena de dos minutos en media hora de rodaje. El mismo texto con un empleado sin experiencia en cámara puede llevar dos o tres horas de repeticiones, pausas y ánimos. Ese tiempo hay que contarlo en el presupuesto antes de decidir.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Cuándo tiene sentido usar empleados reales" },
+      {
+        type: "paragraph",
+        text: "Uso empleados reales cuando la pieza necesita testimonio: vídeos de cultura interna, casos de éxito, entrevistas sobre un proyecto concreto o testimonios de clientes internos. Ahí la autenticidad pesa más que la dicción perfecta. Si el vídeo dice así trabajamos y quien habla no trabaja ahí, se nota y resta credibilidad a todo lo demás.",
+      },
+      { type: "heading", level: 3, text: "Cuándo conviene contratar actores" },
+      {
+        type: "paragraph",
+        text: "Recurro a actores cuando el texto es largo, técnico o necesita varias tomas idénticas para distintos idiomas o versiones. También cuando el papel requiere una interpretación concreta, como una escena dramatizada de atención al cliente o una situación hipotética que ningún empleado ha vivido de verdad. Ahí pedirle a alguien del equipo que actúe un papel que no es el suyo suele salir forzado.",
+      },
+      { type: "heading", level: 3, text: "Cómo preparar a cada uno para cámara" },
+      {
+        type: "paragraph",
+        text: "Con empleados, dedico los primeros quince minutos a hablar sin grabar: les pregunto lo que les voy a preguntar en cámara para que la primera vez que respondan no sea también la primera vez que piensan la respuesta. Con actores, mando el guion con antelación y dejo margen para dos o tres interpretaciones distintas de la misma frase, para elegir en montaje la que suene menos impostada.",
+      },
+      {
+        type: "image",
+        src: "/blog/actores-vs-empleados-reales-video-corporativo/intermedia.webp",
+        alt: "Actor grabando una escena en un set con iluminación de estudio",
+        width: 1920,
+        height: 1280,
+        caption: "Un actor con experiencia resuelve varias tomas del mismo texto en menos tiempo que un empleado sin experiencia en cámara.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Poner a un actor a hablar en primera persona de logros o proyectos que no son suyos, sin dejarlo claro con el contexto de la pieza.",
+          "Exigir a un empleado sin experiencia el mismo ritmo y dicción que a un profesional, lo que genera más tomas fallidas de las necesarias.",
+          "Mezclar actores y empleados reales en la misma escena sin ensayo conjunto, lo que hace evidente la diferencia de nivel.",
+          "No avisar al empleado con antelación suficiente del contenido exacto que va a decir, lo que aumenta los nervios el día del rodaje.",
+          "Elegir actor solo por precio sin comprobar si tiene experiencia en vídeo corporativo, que pide un registro distinto al publicitario.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Se nota si el vídeo corporativo usa un actor?",
+        answer:
+          "Se nota cuando el actor habla en primera persona de algo que no vivió, con datos que suenan aprendidos. Se nota menos cuando su papel está bien definido como voz narrativa o como situación ilustrativa, sin fingir ser parte del equipo.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta contratar a un actor para un vídeo corporativo?",
+        answer:
+          "Depende de su experiencia y de si el vídeo tiene difusión comercial, que añade derechos de imagen. Para una pieza interna con un actor con experiencia moderada, calculo entre 150 y 400 euros por media jornada de rodaje.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo mezclar actores y empleados en el mismo vídeo?",
+        answer:
+          "Sí, es habitual: actor como voz en off o presentador y empleados reales en los testimonios. Lo que evito es ponerlos en el mismo plano interactuando, porque ahí la diferencia de naturalidad se nota más.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué hago si un empleado se bloquea delante de la cámara?",
+        answer:
+          "Paro, hablamos fuera de plano y grabamos la respuesta como si fuera una conversación, no una recitación. Casi siempre funciona mejor hacer preguntas cortas y dejar que conteste con sus palabras que darle un guion cerrado para memorizar.",
+      },
+      {
+        type: "paragraph",
+        text: "Si no sabes qué encaja mejor para tu próximo vídeo, cuéntame qué quieres contar y decidimos juntos el reparto. Escríbeme desde /contacto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
