@@ -8283,6 +8283,125 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "animacion-2d-vs-video-real-corporativo",
+    title: "Animación 2D o vídeo real: qué elegir para tu contenido corporativo",
+    description:
+      "Cuándo conviene usar animación 2D y cuándo grabar vídeo real para tu contenido corporativo, con los criterios que uso para decidir según el mensaje, el presupuesto y el plazo.",
+    publishedAt: "2026-07-29",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "animación 2D",
+      "motion graphics",
+      "producción audiovisual",
+      "contenido de marca",
+    ],
+    keyword: "animación 2D vs vídeo real para contenido corporativo",
+    intent: "informacional",
+    excerpt:
+      "La animación 2D explica lo que la cámara no puede mostrar. El vídeo real transmite confianza porque enseña personas y espacios de verdad. Cuento cómo decido cuál usar en cada encargo.",
+    seoTitle: "Animación 2D vs vídeo real corporativo | Daniel Acero",
+    metaDescription:
+      "Animación 2D vs vídeo real para contenido corporativo: cuándo cada técnica funciona mejor, con criterios prácticos de presupuesto, plazo y mensaje.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Un cliente de software me escribió hace unas semanas preguntando si su próximo vídeo explicativo debía ser animado o grabado con personas reales. Su producto no tiene una interfaz vistosa y sus procesos internos son difíciles de filmar. Le costaba imaginar cómo contar eso con una cámara.",
+      },
+      {
+        type: "paragraph",
+        text: "Es una duda que me llega varias veces al año, casi siempre de empresas con productos técnicos o procesos abstractos. No hay una respuesta única: depende de qué tienes que explicar, cuánto presupuesto manejas y en cuánto tiempo necesitas la pieza terminada. Cuento aquí cómo decido entre animación 2D y vídeo real según el proyecto.",
+      },
+      {
+        type: "image",
+        src: "/blog/animacion-2d-vs-video-real-corporativo/hero.webp",
+        alt: "Cámara de cine profesional preparada en un set de grabación corporativa",
+        width: 1920,
+        height: 1080,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "El vídeo real graba personas, espacios y objetos que existen. Transmite confianza porque el espectador ve algo verificable: una oficina, un equipo, un producto físico. La animación 2D construye esa realidad desde cero con ilustración y movimiento, lo que permite representar procesos internos, flujos de datos o conceptos que no tienen una forma visible.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque cada técnica resuelve un problema distinto. Si tu producto es un software de gestión interna, ninguna cámara va a hacer visible cómo viaja un dato entre dos sistemas: eso lo resuelve mejor un esquema animado. Si tu fuerte es el equipo humano y la forma de trabajar, la cámara capta matices que ninguna animación reproduce con la misma credibilidad.",
+      },
+      {
+        type: "paragraph",
+        text: "También hay una diferencia práctica de producción. Una animación 2D se puede corregir en montaje sin volver a grabar nada: cambias un texto, ajustas un color, actualizas una cifra. Un vídeo real, si hay que cambiar algo grabado, casi siempre implica repetir el rodaje o al menos parte de él.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Cuándo tiene sentido la animación 2D" },
+      {
+        type: "paragraph",
+        text: "Recurro a la animación cuando el mensaje es abstracto: explicar un modelo de negocio, un flujo de datos, una arquitectura técnica o un proceso interno sin elementos visuales propios. También cuando el contenido va a necesitar actualizaciones frecuentes, como cifras de producto que cambian cada trimestre, porque editar una animación es mucho más rápido que volver a grabar.",
+      },
+      { type: "heading", level: 3, text: "Cuándo conviene grabar vídeo real" },
+      {
+        type: "paragraph",
+        text: "Grabo vídeo real cuando el mensaje depende de la confianza en las personas: testimonios de clientes, entrevistas a directivos, cultura de equipo o cualquier pieza donde el espectador necesita ver caras y espacios reales para creerse lo que se cuenta. También cuando el producto es físico y su calidad se aprecia mejor en imagen real que en una representación dibujada.",
+      },
+      { type: "heading", level: 3, text: "Cómo combinar ambas técnicas" },
+      {
+        type: "paragraph",
+        text: "La mayoría de los vídeos que entrego combinan las dos cosas: grabación real para las entrevistas y los planos de equipo, y animación 2D superpuesta para explicar cifras, procesos o conceptos que necesitan apoyo gráfico. Monto ese tipo de piezas en DaVinci Resolve integrando los gráficos animados como capas sobre el vídeo real, sin que el cambio de técnica rompa el ritmo.",
+      },
+      {
+        type: "image",
+        src: "/blog/animacion-2d-vs-video-real-corporativo/intermedia.webp",
+        alt: "Diseñador trabajando en una animación de motion graphics en pantalla",
+        width: 1920,
+        height: 1280,
+        caption: "La animación 2D permite corregir textos y cifras en montaje sin necesidad de volver a grabar.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Animar un mensaje que depende de la confianza humana, como un testimonio de cliente, en vez de grabarlo con personas reales.",
+          "Grabar en vídeo real un proceso abstracto que ninguna cámara puede mostrar con claridad, en vez de explicarlo con un esquema animado.",
+          "Elegir la técnica por moda visual del momento sin pensar en qué necesita entender el espectador.",
+          "No prever que una animación con cifras de negocio va a necesitar actualizarse cada pocos meses, y montarla como si fuera estática.",
+          "Mezclar estilos de animación distintos dentro del mismo vídeo, lo que rompe la coherencia visual de la pieza.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Es más barata la animación 2D que el vídeo real?",
+        answer:
+          "No siempre. Una animación sencilla con pocos elementos puede costar menos que un rodaje con equipo y localización, pero una animación detallada con muchos gráficos e ilustraciones a medida puede superar el coste de un vídeo real de un día de rodaje.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tarda en producirse un vídeo animado frente a uno grabado?",
+        answer:
+          "Un vídeo real con un día de rodaje puede estar montado en una semana. Una animación 2D de dos minutos con ilustración a medida suele llevar entre dos y tres semanas, porque cada fotograma se construye desde cero.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo reutilizar una animación para varios idiomas?",
+        answer:
+          "Sí, y es una de sus ventajas: si el texto está separado de la ilustración, cambiar el idioma es sustituir capas de texto y volver a grabar la locución, sin tocar el resto de la animación.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué formato prefieren las empresas para LinkedIn, animación o vídeo real?",
+        answer:
+          "No hay un ganador fijo. Los testimonios y vídeos de cultura funcionan mejor en real porque generan confianza. Los vídeos explicativos de producto o servicio suelen funcionar mejor animados, porque sintetizan mejor la información en pocos segundos.",
+      },
+      {
+        type: "paragraph",
+        text: "Si no tienes claro qué técnica encaja con tu próximo vídeo, cuéntame qué quieres explicar y te digo cómo lo enfocaría. Escríbeme desde /contacto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
