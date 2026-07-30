@@ -8402,6 +8402,126 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "voz-en-off-video-corporativo",
+    title: "Voz en off para vídeo corporativo: cómo elegirla bien",
+    description:
+      "Cómo elegir el tono, el ritmo y el tipo de voz en off para un vídeo corporativo según el mensaje, el sector y el público al que se dirige.",
+    publishedAt: "2026-07-30",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "voz en off",
+      "vídeo corporativo",
+      "locución",
+      "narración",
+      "postproducción",
+      "producción audiovisual",
+    ],
+    keyword: "voz en off para vídeo corporativo",
+    intent: "informacional",
+    excerpt:
+      "La voz en off puede reforzar la confianza en tu vídeo corporativo o arruinarlo con un tono equivocado. Cuento cómo elijo el tipo de voz, el ritmo y el idioma según el mensaje y el público.",
+    seoTitle: "Voz en off para vídeo corporativo | Daniel Acero",
+    metaDescription:
+      "Voz en off para vídeo corporativo: cómo elegir el tono, el ritmo y la voz adecuada según el mensaje y el público al que te diriges.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Hace poco un cliente me pidió que la voz en off de su vídeo institucional sonara \"como la de un documental de naturaleza\". Contraté a un locutor con ese registro grave y pausado, y el resultado no encajaba: su empresa vende software de gestión para pymes, no documenta migraciones de ballenas. Cambiamos a una voz más cercana y directa, y el vídeo funcionó mucho mejor.",
+      },
+      {
+        type: "paragraph",
+        text: "La voz en off es uno de los elementos que menos se planifica en un vídeo corporativo y más puede cambiar cómo se percibe el mensaje. No es solo elegir una voz que suene bien: es decidir un tono, un ritmo y una forma de hablar que encajen con lo que cuenta la empresa y con quién lo va a escuchar.",
+      },
+      {
+        type: "image",
+        src: "/blog/voz-en-off-video-corporativo/hero.webp",
+        alt: "Micrófono de condensador profesional en un estudio de grabación",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "La voz en off es la narración que acompaña las imágenes sin que quien habla aparezca en pantalla. Se usa para explicar procesos, dar contexto a planos de producto, introducir un vídeo institucional o guiar al espectador entre bloques de un vídeo más largo.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque es lo primero que transmite el tono de la marca antes de que el espectador procese ninguna imagen. Una voz demasiado formal en una startup joven suena impostada. Una voz demasiado informal en un vídeo para inversores resta seriedad. El desajuste se nota en los primeros cinco segundos.",
+      },
+      {
+        type: "paragraph",
+        text: "También cumple una función práctica: sostiene el ritmo del vídeo. Si el montaje tiene planos cortos y dinámicos pero la voz habla despacio y con pausas largas, el vídeo se siente descoordinado. La voz y el montaje tienen que respirar al mismo compás.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Elegir el tono según el mensaje" },
+      {
+        type: "paragraph",
+        text: "Antes de buscar locutor, defino tres cosas: si el vídeo es institucional (tono más neutro y pausado), comercial (tono con más energía) o formativo (tono claro y didáctico, sin prisa). Con eso decidido, busco una voz que encaje con la edad y el sector de la empresa. Una fintech para autónomos jóvenes no necesita la misma voz que un despacho de abogados con clientes corporativos grandes.",
+      },
+      { type: "heading", level: 3, text: "Voz humana vs voz sintética (IA)" },
+      {
+        type: "paragraph",
+        text: "Las voces generadas por IA han mejorado mucho y las uso para guiones cortos, versiones de prueba o vídeos internos donde el presupuesto no llega a un locutor profesional. Para el vídeo final que va a publicar la marca sigo prefiriendo una voz humana: matiza mejor la ironía, las pausas y el énfasis en palabras concretas, y de momento se nota la diferencia en cualquier oído medianamente entrenado.",
+      },
+      { type: "heading", level: 3, text: "Grabar y dirigir la sesión de locución" },
+      {
+        type: "paragraph",
+        text: "Cuando trabajo con un locutor profesional, le mando el guion con marcas de énfasis y le explico el contexto del vídeo, no solo el texto. Grabamos varias tomas de cada frase con ritmos distintos, porque en montaje casi siempre acabo mezclando la toma más pausada de una frase con la más enérgica de la siguiente, según lo que pide cada plano.",
+      },
+      {
+        type: "image",
+        src: "/blog/voz-en-off-video-corporativo/intermedia.webp",
+        alt: "Ingeniero de sonido editando una forma de onda de audio en pantalla",
+        width: 1920,
+        height: 1281,
+        caption: "Grabar varias tomas de cada frase da margen para ajustar el ritmo en montaje.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Elegir la voz por gusto personal sin pensar en quién va a verlo el cliente final.",
+          "Escribir el guion como si fuera para leer en silencio, con frases demasiado largas que el locutor no puede respirar.",
+          "Grabar una sola toma por frase y quedarse sin margen para ajustar el ritmo en montaje.",
+          "Usar una voz sintética para el vídeo final por ahorrar coste, cuando el mensaje necesita transmitir confianza humana.",
+          "No dar contexto al locutor sobre el tono del vídeo, solo el texto a leer.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta una voz en off profesional para un vídeo corporativo?",
+        answer:
+          "Depende de la duración del guion y de la tarifa del locutor, por proyecto o por palabra. Para un vídeo corporativo de dos o tres minutos, los precios suelen moverse entre 100 y 300 euros con un locutor profesional en español.",
+      },
+      {
+        type: "faq",
+        question: "¿La voz en off tiene que ser siempre la misma persona en todos mis vídeos?",
+        answer:
+          "Ayuda a la consistencia de marca mantener la misma voz en la mayoría de los vídeos, sobre todo en contenido institucional. Para piezas puntuales o campañas concretas puedo usar una voz distinta sin que rompa la identidad general.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo usar voz en off generada por IA para un vídeo que sí se va a publicar?",
+        answer:
+          "Sí, y cada vez es más habitual, sobre todo en vídeos internos, explicativos técnicos o contenido con presupuesto ajustado. Para vídeos de marca con vocación de permanencia sigo recomendando voz humana.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué pasa si mi vídeo corporativo va a tener varias versiones en idiomas distintos?",
+        answer:
+          "Cada idioma necesita su propia locución, no una traducción leída por la misma voz sin más. El ritmo y la duración de las frases cambian entre idiomas, así que el montaje también se ajusta versión a versión.",
+      },
+      {
+        type: "paragraph",
+        text: "Si no sabes qué tono de voz encaja con tu próximo vídeo, cuéntame de qué trata y te propongo cómo enfocarlo. Escríbeme desde /contacto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
