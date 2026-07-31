@@ -8522,6 +8522,126 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "organizar-rodaje-corporativo",
+    title: "Cómo organizar un rodaje corporativo: call sheet y logística",
+    description:
+      "Cómo preparo el call sheet, los horarios y la logística de un rodaje corporativo para que el día de grabación salga bien sin sorpresas.",
+    publishedAt: "2026-07-31",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "rodaje corporativo",
+      "producción audiovisual",
+      "logística de rodaje",
+      "call sheet",
+      "preproducción",
+      "vídeo corporativo",
+    ],
+    keyword: "cómo organizar un rodaje corporativo",
+    intent: "informacional",
+    excerpt:
+      "Un rodaje corporativo se pierde o se gana antes de encender la cámara. Cuento cómo preparo el call sheet, los horarios y el plan B para que el día salga según lo previsto.",
+    seoTitle: "Cómo organizar un rodaje corporativo | Daniel Acero",
+    metaDescription:
+      "Cómo organizar un rodaje corporativo: call sheet, horarios por bloques y logística para que el día de grabación salga bien.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "El peor rodaje que he tenido no falló por la cámara ni por la luz. Falló porque nadie avisó a recepción de que llegábamos con trípode y dos maletas de equipo, y perdimos cuarenta minutos esperando una acreditación que no existía. Desde entonces mando un call sheet a todo el mundo, sin excepción, aunque el rodaje dure dos horas.",
+      },
+      {
+        type: "paragraph",
+        text: "Organizar un rodaje corporativo no es distinto de organizar cualquier operación con horarios ajustados y varias personas dependiendo unas de otras. La diferencia es que aquí no hay margen para repetir el día: el CEO tiene media hora libre entre reuniones, y esa media hora es la que hay.",
+      },
+      {
+        type: "image",
+        src: "/blog/organizar-rodaje-corporativo/hero.webp",
+        alt: "Equipo de producción audiovisual preparando el equipo de cámara antes de un rodaje",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es un call sheet y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Un call sheet es el documento de una página que resume todo lo que pasa el día del rodaje: hora de llegada, dirección exacta, quién está en cada bloque, qué se graba en cada tramo y los contactos de emergencia. Lo mando por email y lo repito por WhatsApp la noche anterior, porque el email se pierde entre otros cien.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque elimina la ambigüedad. Si alguien pregunta a qué hora empieza la entrevista con el director financiero, la respuesta está en el documento, no en mi memoria ni en un mensaje suelto de hace tres semanas. Cuantas más personas dependen del rodaje, más se nota su ausencia.",
+      },
+      {
+        type: "paragraph",
+        text: "También sirve como filtro de expectativas con el cliente. Si en el call sheet pone que grabamos de 9:00 a 13:00 y necesitamos una sala cerrada sin ruido de fondo, esa condición queda por escrito antes del día, no se negocia en el pasillo con la cámara ya montada.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Cerrar el call sheet 48 horas antes" },
+      {
+        type: "paragraph",
+        text: "Preparo el call sheet en cuanto tengo confirmados los horarios de las personas que salen en cámara, normalmente entre tres y cinco días antes del rodaje. Lo cierro 48 horas antes como muy tarde, porque necesito ese margen para resolver dudas: si falta un permiso de acceso, si hace falta reservar una sala, si hay que avisar a seguridad del edificio.",
+      },
+      { type: "heading", level: 3, text: "Definir roles y horarios por bloques" },
+      {
+        type: "paragraph",
+        text: "Divido el día en bloques de treinta o sesenta minutos y asigno cada uno a una persona o a un tipo de plano: entrevista con dirección, planos generales de oficina, b-roll de equipo trabajando. Así, si un bloque se retrasa, sé exactamente cuánto tiempo le puedo quitar al siguiente sin que el día se desmonte entero.",
+      },
+      { type: "heading", level: 3, text: "Preparar el plan B para imprevistos" },
+      {
+        type: "paragraph",
+        text: "Siempre reservo margen: si el rodaje termina en teoría a las 14:00, aviso al cliente de que puede alargarse hasta las 14:30. También llevo un plano de reserva que puedo grabar si alguien cancela su bloque a última hora, para no volver con las manos vacías. Un rodaje sin margen es un rodaje que depende de que todo salga perfecto, y eso no pasa casi nunca.",
+      },
+      {
+        type: "image",
+        src: "/blog/organizar-rodaje-corporativo/intermedia.webp",
+        alt: "Cámara de vídeo profesional sobre trípode lista para grabar",
+        width: 1920,
+        height: 1280,
+        caption: "Llegar con el equipo montado y probado antes de la hora acordada evita perder los primeros minutos del rodaje.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "No confirmar el acceso al edificio: acreditaciones, aparcamiento o normas de seguridad que nadie mencionó antes.",
+          "Meter demasiados bloques en poco tiempo sin margen para imprevistos.",
+          "No avisar a las personas que van a salir en cámara de cuánto va a durar realmente su parte.",
+          "Olvidar el sonido ambiente: una sala con aire acondicionado ruidoso o cerca de una zona de paso arruina el audio.",
+          "Depender de una sola toma de corriente o de wifi del cliente sin tener alternativa propia.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Con cuánta antelación hay que enviar el call sheet?",
+        answer:
+          "Lo ideal es 48 horas antes del rodaje. Da tiempo a resolver accesos, permisos o cambios de última hora sin la presión del mismo día.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué información no puede faltar en un call sheet?",
+        answer:
+          "Dirección exacta con punto de encuentro, hora de llegada del equipo, horario por bloques, nombre y teléfono de la persona de contacto en el sitio, y cualquier requisito de acceso o acreditación.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo hay que reservar para un rodaje corporativo de medio día?",
+        answer:
+          "Para un rodaje de cuatro horas efectivas suelo bloquear cinco, con margen de media hora al principio para montar equipo y otra media al final por si algún bloque se alarga.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué hago si alguien clave cancela su parte el mismo día del rodaje?",
+        answer:
+          "Tener un plano de reserva preparado (b-roll de oficina, producto o equipo trabajando) permite aprovechar el tiempo sin depender de reprogramar todo el rodaje para otro día.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes un rodaje corporativo a la vista y no sabes por dónde empezar a organizarlo, cuéntame los detalles y te ayudo a montar el call sheet. Escríbeme desde /contacto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
