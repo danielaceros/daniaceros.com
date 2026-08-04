@@ -8761,6 +8761,126 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "camara-lenta-video-corporativo",
+    title: "Cámara lenta en vídeo corporativo: cuándo tiene sentido usarla",
+    description:
+      "Cuándo meto cámara lenta en un vídeo corporativo, a qué fps grabo según el efecto que busco y los errores más comunes al abusar del slow motion en piezas de empresa.",
+    publishedAt: "2026-08-04",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "cámara lenta",
+      "slow motion",
+      "vídeo corporativo",
+      "producción audiovisual",
+      "postproducción",
+      "Sony A7",
+    ],
+    keyword: "cámara lenta en vídeo corporativo",
+    intent: "informacional",
+    excerpt:
+      "La cámara lenta bien usada resalta un gesto o un detalle de producto. Mal usada, alarga un vídeo que ya iba sobrado de minutos. Cuento cuándo la meto, a qué fps grabo y qué evito.",
+    seoTitle: "Cámara lenta en vídeo corporativo | Daniel Acero",
+    metaDescription:
+      "Cámara lenta en vídeo corporativo: cuándo usarla, qué fps grabar y los errores más comunes al meter slow motion en piezas de empresa.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cada pocos meses un cliente me pide que meta cámara lenta en su vídeo corporativo porque la ha visto en un anuncio y le ha gustado el resultado. La respuesta casi siempre es la misma: depende de qué plano sea y de qué esté pasando en él. La cámara lenta no es un efecto que se añade para que un vídeo se vea más cuidado. Es una herramienta con un uso concreto, y fuera de ese uso resta más de lo que suma.",
+      },
+      {
+        type: "paragraph",
+        text: "Llevo años grabando vídeo corporativo con equipos que permiten frame rates altos, así que la pregunta no es técnica, es de criterio: cuándo aporta y cuándo solo alarga un vídeo que ya iba justo de minutos. Aquí explico cómo lo decido, a qué fps grabo y los fallos más habituales que veo cuando alguien la mete sin pensarlo.",
+      },
+      {
+        type: "image",
+        src: "/blog/camara-lenta-video-corporativo/hero.webp",
+        alt: "Cámara de cine profesional montada sobre trípode en un set de grabación",
+        width: 1920,
+        height: 1080,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Grabar en cámara lenta significa capturar más fotogramas por segundo de los que se van a reproducir después. Si grabo a 96 fps y el vídeo final se reproduce a 24 fps, cada segundo real de grabación se convierte en cuatro segundos en pantalla. Cuanto más alto el fps de grabación respecto al de reproducción, más lento y más marcado el efecto.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque cambia el ritmo de lectura del espectador. Un plano en velocidad normal se procesa rápido y pasa. El mismo plano en cámara lenta obliga a detenerse un instante más, y eso solo tiene sentido cuando hay algo en ese instante que merece la pena mirar con calma: un gesto, una textura, un movimiento que en velocidad real pasaría desapercibido.",
+      },
+      {
+        type: "paragraph",
+        text: "El error habitual es tratarla como un filtro estético que se aplica porque queda bien, sin preguntarse si el contenido del plano justifica ese tiempo extra. Un vídeo corporativo suele tener entre 90 segundos y tres minutos. Cada segundo en cámara lenta que no aporta información visual nueva es un segundo que no está transmitiendo el mensaje que el cliente está pagando por transmitir.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Elegir el fps según el efecto que busco" },
+      {
+        type: "paragraph",
+        text: "Para un efecto sutil, casi imperceptible, grabo a 50 o 60 fps sobre un timeline a 25. El movimiento se suaviza sin que el espectador note conscientemente que está en cámara lenta. Para un efecto marcado, el que se nota y se busca a propósito, subo a 96 o 120 fps con la Sony A7. Por encima de eso ya entramos en terreno de vídeo publicitario de producto, casi nunca lo necesito en una pieza corporativa.",
+      },
+      { type: "heading", level: 3, text: "Elegir qué planos merecen cámara lenta" },
+      {
+        type: "paragraph",
+        text: "Funciona bien en manos trabajando sobre un producto, en detalles de material o textura, en un gesto concreto de una persona hablando de algo importante, o en b-roll de proceso donde no hay diálogo que sincronizar. No funciona en un plano de alguien hablando a cámara: la voz se deforma si se ralentiza junto al vídeo, y separar audio de vídeo para mantener el ritmo natural de la voz complica el montaje sin necesidad.",
+      },
+      { type: "heading", level: 3, text: "Dosificarla en el montaje" },
+      {
+        type: "paragraph",
+        text: "En un vídeo corporativo de dos minutos, rara vez meto más de dos o tres planos en cámara lenta, y ninguno dura más de dos o tres segundos. Si el espectador nota que casi todo el vídeo está ralentizado, deja de ser un recurso y se convierte en el estilo del vídeo entero, que normalmente no es lo que el cliente busca cuando pide algo dinámico y directo.",
+      },
+      {
+        type: "image",
+        src: "/blog/camara-lenta-video-corporativo/intermedia.webp",
+        alt: "Persona sosteniendo una cámara réflex profesional preparándose para grabar",
+        width: 1920,
+        height: 1080,
+        caption: "A más fps de grabación, más luz hace falta: cada fotograma recibe menos tiempo de exposición.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Ralentizar un plano con diálogo sin separar el audio, con lo que la voz suena distorsionada o hay que doblarla después.",
+          "Meter cámara lenta en todo el vídeo hasta que deja de leerse como un recurso y se convierte en el ritmo general de la pieza.",
+          "No subir la luz al grabar a fps alto, lo que deja el plano oscuro o con más grano del necesario en posproducción.",
+          "Usarla para disimular un encuadre flojo o un movimiento de cámara mal ejecutado en lugar de repetir la toma.",
+          "No comprobar el frame rate del proyecto en DaVinci Resolve antes de exportar, lo que puede dejar el plano a una velocidad distinta de la esperada.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿A cuántos fps se graba la cámara lenta en vídeo corporativo?",
+        answer:
+          "Para un efecto sutil, 50 o 60 fps sobre un timeline a 25. Para un efecto marcado y evidente, entre 96 y 120 fps. Rara vez hace falta subir más en una pieza de empresa.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta más luz para grabar en cámara lenta?",
+        answer:
+          "Sí. A más fotogramas por segundo, menos tiempo de exposición recibe cada fotograma, así que la escena necesita más luz de la que haría falta a velocidad normal para no quedar oscura o con ruido.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede usar cámara lenta en un plano con la persona hablando?",
+        answer:
+          "No de forma directa: la voz se deforma si se ralentiza junto al vídeo. Se reserva para b-roll sin diálogo, o se graba el audio aparte y se sincroniza después, lo que añade trabajo de montaje que casi nunca compensa.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto del vídeo corporativo debería ir en cámara lenta?",
+        answer:
+          "Muy poco. En una pieza de dos minutos, dos o tres planos puntuales de dos o tres segundos cada uno suelen ser suficientes. Más que eso y el recurso pierde su efecto.",
+      },
+      {
+        type: "paragraph",
+        text: "Si estás preparando un vídeo corporativo y no tienes claro qué planos merecen cámara lenta y cuáles no, cuéntame qué quieres transmitir y te digo cómo lo plantearía. Escríbeme desde /contacto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
