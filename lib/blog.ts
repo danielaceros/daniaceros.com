@@ -8881,6 +8881,126 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "rondas-revision-video-corporativo",
+    title: "Rondas de revisión en un vídeo corporativo: cómo las gestiono",
+    description:
+      "Cómo organizo las rondas de cambios en un vídeo corporativo, cuántas incluyo en el presupuesto, cómo pido feedback ordenado al cliente y qué hago cuando se sale del guion aprobado.",
+    publishedAt: "2026-08-05",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "rondas de revisión",
+      "vídeo corporativo",
+      "postproducción",
+      "feedback cliente",
+      "DaVinci Resolve",
+      "producción audiovisual",
+    ],
+    keyword: "rondas de revisión en un vídeo corporativo",
+    intent: "informacional",
+    excerpt:
+      "Sin un número de rondas cerrado desde el presupuesto, un montaje puede alargarse semanas. Cuento cuántas incluyo, cómo pido feedback y qué hago cuando un cambio se sale del guion aprobado.",
+    seoTitle: "Rondas de revisión en un vídeo corporativo | Daniel Acero",
+    metaDescription:
+      "Rondas de revisión en un vídeo corporativo: cuántas incluyo en el presupuesto, cómo pido feedback ordenado y qué hago con los cambios fuera de guion.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "El primer montaje de un vídeo corporativo casi nunca es el que se entrega. Entre medias hay una o varias rondas de revisión donde el cliente ve el corte y pide cambios: un plano más corto, otro orden en las entrevistas, quitar una frase que suena mal. Eso es normal y forma parte del proceso. El problema aparece cuando esas rondas no tienen límite ni estructura, y el montaje se convierte en un ida y vuelta sin fecha de cierre.",
+      },
+      {
+        type: "paragraph",
+        text: "Llevo años entregando vídeo corporativo y la diferencia entre un cierre limpio y un proyecto que se alarga un mes de más casi siempre está en cómo se plantean las revisiones desde el presupuesto, no en la calidad del montaje. Cuento aquí cómo lo organizo, cuántas rondas incluyo y qué hago cuando un cambio se sale de lo que se aprobó al principio.",
+      },
+      {
+        type: "image",
+        src: "/blog/rondas-revision-video-corporativo/hero.webp",
+        alt: "Editor de vídeo revisando una línea de tiempo de montaje en pantalla",
+        width: 1920,
+        height: 1298,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Una ronda de revisión es el momento en el que entrego un corte del vídeo, el cliente lo ve, y me devuelve una lista de cambios concretos sobre ese corte. No es una conversación abierta sobre si el vídeo gusta o no gusta en general: es feedback puntual sobre decisiones ya tomadas en un guion y un briefing que se aprobaron antes de grabar.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque cada ronda cuesta tiempo real: revisar el feedback, aplicar los cambios en DaVinci Resolve, exportar de nuevo, mandar el nuevo corte. Si el número de rondas no está cerrado desde el presupuesto, cada ronda extra es trabajo que hago gratis, y eso tarde o temprano afecta a la calidad del resultado porque deja de haber tiempo dedicado a pulir en lugar de a repetir.",
+      },
+      {
+        type: "paragraph",
+        text: "El otro motivo por el que importa es que un proceso de revisión mal definido genera fricción con el cliente. Si no sabe cuántas rondas tiene ni qué se puede cambiar en cada una, pide todo lo que se le ocurre en el momento en que lo piensa, y el montaje pierde coherencia porque va acumulando parches en lugar de una edición pensada de principio a fin.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Cerrar el número de rondas en el presupuesto" },
+      {
+        type: "paragraph",
+        text: "Incluyo dos rondas de revisión en el presupuesto de un vídeo corporativo estándar. La primera sobre el primer corte, con cambios de estructura, ritmo y selección de planos. La segunda sobre la versión ya corregida, con ajustes más finos: color, sonido, algún corte puntual. Una tercera ronda existe si hace falta, pero se factura aparte, y eso lo digo desde el presupuesto, no cuando ya se ha pedido.",
+      },
+      { type: "heading", level: 3, text: "Pedir feedback en un único documento" },
+      {
+        type: "paragraph",
+        text: "Pido que todos los cambios lleguen en una lista con minutaje: 'en el segundo 0:45, cortar la frase X'. Nada de comentarios sueltos por WhatsApp en momentos distintos, porque eso obliga a abrir el proyecto varias veces por la misma ronda y multiplica el tiempo de aplicar los cambios. Un documento cerrado con todo el feedback junto es una sesión de trabajo; varios mensajes sueltos son varias sesiones.",
+      },
+      { type: "heading", level: 3, text: "Separar cambios de forma y cambios de fondo" },
+      {
+        type: "paragraph",
+        text: "Un cambio de forma es mover un plano, acortar una toma, ajustar un subtítulo. Un cambio de fondo es añadir una entrevista que no se grabó, cambiar el mensaje central del vídeo, o pedir un plano que no existe en el material bruto. Los primeros entran en las rondas normales. Los segundos implican volver a plantear el guion, y a veces volver a grabar, así que los trato aparte desde el momento en que aparecen.",
+      },
+      {
+        type: "image",
+        src: "/blog/rondas-revision-video-corporativo/intermedia.webp",
+        alt: "Dos personas revisando juntas un proyecto en la pantalla de un ordenador portátil",
+        width: 1920,
+        height: 1282,
+        caption: "Un feedback ordenado y con minutaje reduce las rondas necesarias, no las elimina.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "No cerrar el número de rondas en el presupuesto, lo que deja la puerta abierta a revisiones indefinidas.",
+          "Recibir el feedback en mensajes sueltos y en momentos distintos en lugar de en una lista única y con minutaje.",
+          "Confundir un cambio de fondo (mensaje, estructura del guion) con un ajuste de forma que sí entra en una ronda normal.",
+          "Aplicar cambios directamente sobre el máster sin guardar una versión anterior, lo que complica volver atrás si el cliente prefiere el corte previo.",
+          "Dejar que en cada ronda participen varias personas del lado del cliente sin que haya una sola persona que centralice y prioriza el feedback.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuántas rondas de revisión incluye normalmente un vídeo corporativo?",
+        answer:
+          "En mis presupuestos incluyo dos rondas: una sobre el primer corte y otra sobre la versión ya corregida. Rondas adicionales se pueden añadir, pero se facturan aparte y lo dejo claro desde el presupuesto inicial.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué pasa si el cliente pide un cambio que no estaba en el guion aprobado?",
+        answer:
+          "Si es un cambio de fondo, como añadir una entrevista nueva o cambiar el mensaje central, lo trato como un ajuste de alcance y no como parte de las rondas normales. Se valora aparte antes de aplicarlo.",
+      },
+      {
+        type: "faq",
+        question: "¿Cómo se debe entregar el feedback para que la revisión sea rápida?",
+        answer:
+          "En un único documento, con minutaje exacto de cada cambio pedido. Los comentarios sueltos y repartidos en varios mensajes obligan a repetir sesiones de trabajo sobre el mismo corte.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede volver a una versión anterior del montaje si el cliente prefiere el corte previo?",
+        answer:
+          "Sí, siempre que se hayan guardado versiones intermedias del proyecto en DaVinci Resolve. Por eso cada ronda se guarda como una versión aparte antes de aplicar los cambios siguientes.",
+      },
+      {
+        type: "paragraph",
+        text: "Si estás organizando un vídeo corporativo y quieres que el proceso de revisión quede cerrado desde el principio, cuéntame el alcance del proyecto y te propongo cómo estructurar las rondas. Escríbeme desde /contacto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
