@@ -9001,6 +9001,125 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-cultura-de-empresa",
+    title: "Vídeo de cultura de empresa: qué mostrar y qué evitar",
+    description:
+      "Cómo planteo un vídeo de cultura de empresa para que no parezca un anuncio genérico: qué momentos grabo, cómo trato los testimonios y qué dejo fuera para que se note real.",
+    publishedAt: "2026-08-06",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "vídeo de cultura de empresa",
+      "employer branding",
+      "vídeo corporativo",
+      "recursos humanos",
+      "producción audiovisual",
+    ],
+    keyword: "vídeo de cultura de empresa",
+    intent: "informacional",
+    excerpt:
+      "Un vídeo de cultura de empresa puede sumar en captación de talento o sonar a postureo corporativo. La diferencia está en qué decides mostrar y qué dejas fuera.",
+    seoTitle: "Vídeo de cultura de empresa: qué mostrar | Daniel Acero",
+    metaDescription:
+      "Vídeo de cultura de empresa: qué momentos grabar, cómo tratar los testimonios y qué evitar para que no parezca un anuncio genérico de RRHH.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cada vez me llegan más encargos de vídeo de cultura de empresa: piezas que no venden un producto ni explican un servicio, sino que enseñan cómo es trabajar en una empresa. Se usan para captar talento, para acompañar una ronda de inversión o para reforzar la marca hacia dentro del propio equipo. El problema es que la mayoría de estos vídeos acaban pareciendo el mismo anuncio: oficina luminosa, gente sonriendo a cámara, música de fondo optimista y una voz en off que no dice nada concreto.",
+      },
+      {
+        type: "paragraph",
+        text: "He grabado varios proyectos de este tipo y la diferencia entre un vídeo que se queda y uno que se olvida a los cinco minutos está casi siempre en qué se decide mostrar y qué se deja fuera. Cuento aquí cómo lo planteo desde el primer briefing.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-cultura-de-empresa/hero.webp",
+        alt: "Equipo de trabajo reunido alrededor de un ordenador portátil en una oficina",
+        width: 1920,
+        height: 1281,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Un vídeo de cultura de empresa no explica qué hace la empresa ni cómo funciona su producto. Explica cómo es un día normal ahí dentro: quién trabaja, cómo se comunican, qué espacio ocupan, qué normas tácitas existen. Es distinto de un vídeo institucional centrado en la actividad del negocio; aquí el foco está en las personas y en el ambiente, no en la facturación ni en los servicios.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque cada vez más candidatos buscan referencias antes de mandar un currículum. Un vídeo honesto reduce el desajuste entre lo que promete la oferta de trabajo y lo que se encuentra la persona el primer día, lo que a la larga baja la rotación temprana. También sirve puertas adentro: da a un equipo que crece rápido un punto de referencia común sobre cómo se trabaja ahí.",
+      },
+      {
+        type: "paragraph",
+        text: "El riesgo es real: si el vídeo no tiene una dirección clara, sale genérico. Cualquier persona que trabaje en marketing ha visto docenas de vídeos de cultura casi idénticos entre sí, y ese es justo el resultado que hay que evitar.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Elegir dos o tres momentos reales, no un discurso" },
+      {
+        type: "paragraph",
+        text: "Antes de grabar pido al cliente que identifique dos o tres momentos concretos que pasan de verdad en su semana laboral: una reunión de equipo los lunes, cómo se resuelve una incidencia con un cliente, cómo se celebra cuando cierra un proyecto. Grabar esos momentos tal cual ocurren da mucho más que pedirle a alguien que hable a cámara sobre los valores de la empresa en abstracto.",
+      },
+      { type: "heading", level: 3, text: "Grabar testimonios espontáneos, no guionizados palabra por palabra" },
+      {
+        type: "paragraph",
+        text: "Con los empleados que van a hablar a cámara preparo preguntas abiertas, no un guion cerrado. Prefiero una respuesta con dudas y pausas reales antes que una frase perfecta que suena leída. En montaje se recortan las muletillas, pero se mantiene el tono natural de cada persona.",
+      },
+      { type: "heading", level: 3, text: "Mostrar el espacio de trabajo tal cual es" },
+      {
+        type: "paragraph",
+        text: "No monto una oficina para la ocasión. Si el espacio tiene mesas ocupadas y algo de desorden un martes cualquiera, eso también forma parte de la cultura real. Limpiar en exceso el entorno antes de grabar es lo primero que delata que el vídeo está impostado.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-cultura-de-empresa/intermedia.webp",
+        alt: "Tres compañeros de trabajo riendo juntos durante una pausa en la oficina",
+        width: 1920,
+        height: 1280,
+        caption: "Un momento espontáneo entre compañeros dice más que un testimonio guionizado.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Pedir a los empleados que memoricen frases sobre \"pasión\" o \"familia\", que suenan impostadas en cuanto se leen a cámara.",
+          "Grabar solo a directivos y dejar fuera a quien realmente hace el trabajo día a día.",
+          "Usar planos de stock de oficinas genéricas en lugar de grabar el espacio real de la empresa.",
+          "Montar el vídeo únicamente con música motivacional sin dejar entrar nada de sonido ambiente real.",
+          "No mostrar ningún momento de dificultad o aprendizaje, lo que hace que el vídeo se perciba como publicidad y no como cultura real.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto dura un vídeo de cultura de empresa?",
+        answer:
+          "Entre 90 segundos y 3 minutos si es para redes o para la página de empleo. Si es material interno o para una ronda de inversión, puede llegar a 5-6 minutos porque el público ya está predispuesto a verlo entero.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito un guion cerrado antes de grabar?",
+        answer:
+          "Necesito un guion de bloques: qué momentos se van a grabar y en qué orden aproximado. No necesito que cada persona tenga las frases escritas, porque eso es justo lo que hace que el vídeo suene impostado.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuántos empleados deberían aparecer?",
+        answer:
+          "Prefiero cuatro o cinco personas de distintos puestos y antigüedad antes que veinte apariciones de dos segundos cada una. Con menos gente se puede profundizar algo más en cada testimonio.",
+      },
+      {
+        type: "faq",
+        question: "¿Sirve para captación de talento o solo para marca interna?",
+        answer:
+          "Sirve para ambas cosas si se piensa bien la distribución: la versión completa para la página de empleo y cortes de 15-20 segundos para redes durante procesos de contratación activa.",
+      },
+      {
+        type: "paragraph",
+        text: "Si estás valorando grabar un vídeo de cultura de empresa y quieres que se note real en lugar de impostado, cuéntame cómo es tu equipo y te propongo qué momentos grabar. Escríbeme desde /contacto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
