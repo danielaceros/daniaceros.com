@@ -9120,6 +9120,125 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-aniversario-de-empresa",
+    title: "Vídeo de aniversario de empresa: cómo contarlo sin caer en el institucional aburrido",
+    description:
+      "Cómo planteo un vídeo de aniversario de empresa para que no se quede en una sucesión de cifras y fotos antiguas: qué historia elijo, a quién entrevisto y qué material de archivo pido.",
+    publishedAt: "2026-08-07",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "vídeo de aniversario de empresa",
+      "vídeo corporativo",
+      "vídeo institucional",
+      "storytelling de marca",
+      "producción audiovisual",
+    ],
+    keyword: "vídeo de aniversario de empresa",
+    intent: "informacional",
+    excerpt:
+      "Un vídeo de aniversario de empresa puede quedarse en un institucional aburrido o convertirse en una pieza que la gente comparte. La diferencia está en qué historia decides contar.",
+    seoTitle: "Vídeo de aniversario de empresa | Daniel Acero",
+    metaDescription:
+      "Vídeo de aniversario de empresa: qué contar, a quién entrevistar y qué evitar para que no parezca un vídeo institucional genérico.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cada cierto tiempo me llega el encargo de grabar un vídeo de aniversario de empresa: 10 años, 15, a veces 25. El briefing casi siempre empieza igual: \"queremos algo emotivo, que resuma nuestra historia\". El problema es que la mayoría de vídeos de aniversario que he visto se parecen entre sí: fotos antiguas en blanco y negro, música orquestal, un fundador hablando de sus inicios y un cierre con el logo actual. Funciona la primera vez que lo ves. A la quinta empresa que hace lo mismo, ya no dice nada.",
+      },
+      {
+        type: "paragraph",
+        text: "He grabado varios proyectos de este tipo y la parte que más trabajo cuesta no es la producción en sí, sino decidir qué historia se cuenta y desde qué ángulo. Cuento aquí cómo lo planteo desde el primer briefing hasta la entrega final.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-aniversario-de-empresa/hero.webp",
+        alt: "Equipo de oficina celebrando un aniversario de empresa con gorros de fiesta y tarta",
+        width: 1920,
+        height: 1080,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Un vídeo de aniversario de empresa no es un resumen cronológico de hitos corporativos. Es una pieza que explica por qué esa empresa sigue en pie después de X años y qué ha cambiado por el camino. La diferencia entre un vídeo institucional plano y uno que funciona está en si cuenta una decisión, un riesgo o un cambio real, en lugar de limitarse a enumerar cifras de crecimiento.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque suele ser una de las pocas veces al año en que una empresa tiene permiso para hablar de sí misma sin vender nada directamente. Se proyecta en el evento interno de celebración, se comparte con clientes antiguos y a menudo acaba en LinkedIn como pieza de marca. Si el vídeo suena a autobombo vacío, el efecto es el contrario al buscado.",
+      },
+      {
+        type: "paragraph",
+        text: "También sirve puertas adentro. Un equipo que ha crecido rápido tiene gente que se incorporó hace seis meses y no conoce la historia de la empresa de primera mano. El vídeo de aniversario, bien hecho, funciona como memoria compartida.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Elegir un hilo conductor, no una lista de hitos" },
+      {
+        type: "paragraph",
+        text: "Antes de grabar nada pido al cliente que me cuente, sin mirar ninguna presentación corporativa, cuál fue el momento más difícil de estos años y cuál el que más recuerdan con orgullo. Esa conversación informal casi siempre da mejor material que cualquier dossier de hitos que me hayan preparado. El vídeo final se construye alrededor de esa tensión: qué estuvo a punto de no salir bien y cómo se resolvió.",
+      },
+      { type: "heading", level: 3, text: "Entrevistar a quien lleva desde el principio, no solo al fundador" },
+      {
+        type: "paragraph",
+        text: "El fundador suele tener el discurso más pulido, pero también el más repetido. Prefiero incluir a alguien que lleva en la empresa casi desde el origen sin ser el rostro visible: un responsable de operaciones, una primera empleada. Su versión de los hechos añade matices que el discurso oficial no tiene.",
+      },
+      { type: "heading", level: 3, text: "Usar material de archivo real, no reconstruido" },
+      {
+        type: "paragraph",
+        text: "Si hay fotos, vídeos caseros o grabaciones de eventos antiguos, los pido todos aunque tengan mala calidad de imagen. Ese material real, aunque esté grabado con un móvil de hace ocho años, transmite más autenticidad que cualquier recreación actual con actores vestidos de época.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-aniversario-de-empresa/intermedia.webp",
+        alt: "Compañeros de trabajo celebrando un logro juntos en la oficina",
+        width: 1920,
+        height: 1080,
+        caption: "Un brindis real dice más que cualquier plano recreado para la cámara.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Reducir el vídeo a una sucesión de cifras (facturación, empleados, oficinas) sin ninguna historia que las sostenga.",
+          "Grabar solo al equipo directivo y dejar fuera a quien lleva la operación del día a día.",
+          "Usar música orquestal genérica que ya han usado decenas de vídeos corporativos parecidos.",
+          "No mostrar ningún momento de dificultad, lo que hace que la celebración suene vacía.",
+          "Alargar el vídeo más de 4-5 minutos porque \"hay mucho que contar\"; el exceso de metraje diluye lo que de verdad importa.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto debería durar un vídeo de aniversario de empresa?",
+        answer:
+          "Entre 3 y 5 minutos para la versión completa que se proyecta en el evento interno. Para redes, suelo sacar cortes de 60-90 segundos centrados en un único momento de la historia.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta contratar actores para recrear los inicios?",
+        answer:
+          "No lo recomiendo. Si no hay material de archivo suficiente, prefiero resolverlo con la propia persona contando la anécdota a cámara en vez de reconstruir la escena con actores; suele quedar más creíble.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué pasa si la empresa ha tenido una etapa complicada (crisis, despidos, cambio de rumbo)?",
+        answer:
+          "No lo escondo del todo, pero tampoco entro en detalle. Una frase honesta sobre un momento difícil suma credibilidad al resto del vídeo; ignorarlo por completo hace que el discurso suene artificial.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede reutilizar el vídeo más allá del aniversario?",
+        answer:
+          "Sí. Cortado en piezas más pequeñas sirve como contenido de marca en LinkedIn durante meses, y la versión larga funciona bien en la sección \"sobre nosotros\" de la web.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tu empresa está a punto de cumplir un aniversario redondo y quieres que el vídeo cuente algo más que cifras de crecimiento, cuéntame la historia y te propongo cómo estructurarlo. Escríbeme desde /contacto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
