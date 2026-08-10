@@ -9239,6 +9239,126 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "grabacion-croma-video-corporativo",
+    title: "Grabación en croma para vídeo corporativo: cuándo tiene sentido usarlo",
+    description:
+      "Cuándo compensa grabar en croma para un vídeo corporativo, qué necesito de estudio y equipo, y los errores de iluminación que arruinan la clave verde en postproducción.",
+    publishedAt: "2026-08-10",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "croma",
+      "green screen",
+      "vídeo corporativo",
+      "producción audiovisual",
+      "postproducción",
+      "estudio de grabación",
+    ],
+    keyword: "grabación en croma para vídeo corporativo",
+    intent: "informacional",
+    excerpt:
+      "Grabar en croma no es la opción por defecto: solo tiene sentido cuando el fondo tiene que cambiar según el canal o cuando no hay localización real que funcione. Cuento cuándo lo uso y cuándo lo descarto.",
+    seoTitle: "Grabación en croma para vídeo corporativo | Daniel Acero",
+    metaDescription:
+      "Grabación en croma para vídeo corporativo: cuándo compensa, qué necesita el estudio y errores de iluminación que arruinan la clave verde.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Me piden grabar en croma menos de lo que la gente cree. La mayoría de vídeos corporativos que hago se graban en la oficina real del cliente, en una sala de reuniones o en su nave industrial, porque el contexto real aporta una credibilidad que ningún fondo virtual sustituye. Pero hay proyectos donde el croma sí resuelve un problema concreto: cuando el mismo vídeo necesita fondos distintos para cada mercado, cuando no existe una localización presentable, o cuando el ponente va a aparecer compuesto sobre gráficos de datos.",
+      },
+      {
+        type: "paragraph",
+        text: "Aquí explico cuándo recomiendo croma, qué necesito en plató para que la clave salga limpia y qué errores veo repetirse en rodajes improvisados con una tela verde comprada por internet.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabacion-croma-video-corporativo/hero.webp",
+        alt: "Fondo verde de croma (chroma key) uniforme usado en producción de vídeo profesional",
+        width: 1920,
+        height: 1080,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "El croma es una técnica de composición: grabo al sujeto sobre un fondo de color uniforme (verde casi siempre, azul si viste de verde) y en postproducción sustituyo ese color por otra imagen o vídeo. Funciona bien en vídeos institucionales con gráficos en pantalla, presentaciones de resultados con datos flotando alrededor del ponente, o piezas que se traducen a varios idiomas con un fondo distinto según la región.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa decidirlo antes de rodar, no en postproducción. El croma exige una iluminación y una distancia al fondo específicas; si se graba sin pensarlo y luego se intenta arreglar en edición, el resultado se nota: bordes con halo verde, pelo mal recortado, sombras que delatan la tela.",
+      },
+      {
+        type: "paragraph",
+        text: "También hay que valorar el coste. Un croma bien resuelto necesita estudio, iluminación adicional y más horas de postproducción que una entrevista grabada en localización real. Solo compensa cuando el fondo virtual aporta algo que la localización real no puede dar.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Separar al sujeto del fondo al menos dos metros" },
+      {
+        type: "paragraph",
+        text: "El error más habitual es pegar a la persona contra la tela verde. Necesito al menos dos metros de distancia entre el sujeto y el fondo para que la luz verde no rebote sobre la piel o la ropa oscura. Esa distancia también permite desenfocar el fondo, lo que ayuda al software de croma a separar los bordes con más limpieza.",
+      },
+      { type: "heading", level: 3, text: "Iluminar el fondo aparte del sujeto" },
+      {
+        type: "paragraph",
+        text: "El fondo verde necesita su propia iluminación, uniforme y sin sombras, independiente de las luces que uso para el sujeto. Si ilumino con los mismos focos, aparecen zonas más oscuras en la tela que luego generan huecos en la clave. Suelo usar dos paneles a ambos lados del fondo, a la misma altura, para que quede parejo de esquina a esquina.",
+      },
+      { type: "heading", level: 3, text: "Evitar ropa y accesorios del mismo tono que el croma" },
+      {
+        type: "paragraph",
+        text: "Parece obvio pero se me ha colado más de una vez: si el ponente lleva una camisa verde o unas gafas con reflejo verdoso, esas zonas desaparecen al aplicar la clave. Reviso el vestuario antes de la sesión y pido colores sólidos, ni verde ni azul saturado, para que la separación en postproducción sea limpia.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabacion-croma-video-corporativo/intermedia.webp",
+        alt: "Equipo de iluminación y cámara en un estudio de grabación de vídeo corporativo",
+        width: 1920,
+        height: 1080,
+        caption: "Iluminar el fondo por separado del sujeto es lo que marca la diferencia en una clave limpia.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Grabar con poca separación entre sujeto y fondo, lo que genera halos verdes en el pelo y los bordes.",
+          "Usar una sola fuente de luz para sujeto y fondo, dejando zonas de la tela más oscuras que otras.",
+          "Comprimir el vídeo en cámara con un códec de baja calidad, lo que dificulta una clave limpia en postproducción.",
+          "Elegir croma por defecto cuando una localización real habría dado más credibilidad al mensaje.",
+          "No revisar en el monitor cómo queda el sujeto recortado durante el propio rodaje, y descubrir el problema ya en edición.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Necesito un estudio para grabar en croma o vale con una tela?",
+        answer:
+          "Una tela de croma tensada y bien iluminada puede funcionar para planos sencillos, pero para un vídeo corporativo con movimiento de cámara prefiero un ciclorama de estudio: la superficie curva sin esquinas evita sombras en las uniones y da un resultado mucho más limpio.",
+      },
+      {
+        type: "faq",
+        question: "¿Croma verde o azul, cuál uso?",
+        answer:
+          "Casi siempre verde, porque las cámaras digitales tienen más sensibilidad en ese canal y separa mejor en postproducción. Cambio a azul solo si el sujeto viste de verde o lleva elementos verdes en el vestuario que no se pueden retirar.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo añade el croma a la postproducción?",
+        answer:
+          "Depende del plano, pero calculo entre 30 y 60 minutos extra por minuto de vídeo final para limpiar bordes, ajustar la clave y componer el fondo definitivo, frente a una edición estándar sin croma.",
+      },
+      {
+        type: "faq",
+        question: "¿El croma funciona bien en exteriores o solo en estudio?",
+        answer:
+          "En exteriores es mucho más difícil de controlar: la luz cambia, el viento mueve la tela y aparecen sombras irregulares. Si el proyecto puede montarse en interior con luz controlada, siempre lo recomiendo antes que intentarlo fuera.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tu vídeo corporativo necesita fondos distintos por mercado o quieres componer al ponente sobre gráficos de datos, cuéntame el proyecto y te digo si el croma es la solución adecuada o si conviene resolverlo de otra forma. Escríbeme desde /contacto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
