@@ -9359,6 +9359,126 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "making-of-video-corporativo",
+    title: "Making-of corporativo: qué es y cuándo tiene sentido grabarlo",
+    description:
+      "Qué es un making-of corporativo, cuándo aporta valor real más allá del vídeo principal y cómo lo planifico desde el briefing para no duplicar el esfuerzo de rodaje.",
+    publishedAt: "2026-08-11",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "making-of",
+      "vídeo corporativo",
+      "producción audiovisual",
+      "detrás de cámaras",
+      "contenido para redes",
+      "Madrid",
+    ],
+    keyword: "making-of corporativo",
+    intent: "informacional",
+    excerpt:
+      "El making-of no es la sobra del rodaje principal. Solo funciona si se planea desde el briefing, con su propio objetivo y su propio formato. Cuento cuándo lo recomiendo y cuándo prefiero no grabarlo.",
+    seoTitle: "Making-of corporativo: cuándo grabarlo | Daniel Acero",
+    metaDescription:
+      "Making-of corporativo: qué es, cuándo aporta valor y cómo lo planifico junto al vídeo principal sin duplicar el esfuerzo de rodaje.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cuando un cliente me pide un making-of, la mitad de las veces lo que imagina es un vídeo que sale gratis del rodaje principal. Alguien graba con el móvil mientras trabajo y luego se monta algo con lo que haya. Ese making-of casi nunca se usa: queda en una carpeta de Drive y no lo ve nadie.",
+      },
+      {
+        type: "paragraph",
+        text: "El making-of que sí funciona es el que se decide antes de llegar al plató, con un objetivo claro y un formato pensado para dónde se va a publicar. Cuento cuándo tiene sentido añadirlo a un proyecto y cuándo prefiero decirle al cliente que no lo necesita.",
+      },
+      {
+        type: "image",
+        src: "/blog/making-of-video-corporativo/hero.webp",
+        alt: "Claqueta de rodaje profesional en el suelo, detrás de cámaras de una producción de vídeo",
+        width: 1920,
+        height: 1298,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Un making-of corporativo es una pieza que muestra el proceso de creación del vídeo principal: el equipo trabajando, la preparación de la escena, momentos de rodaje que no entran en el corte final. No es el vídeo principal con un filtro distinto, es otro contenido, con otro objetivo.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque humaniza a la marca de una forma que el vídeo corporativo pulido no puede. Un cliente potencial ve el vídeo final y piensa que todo salió perfecto a la primera. El making-of enseña la mesa de luces, al director dando indicaciones, al ponente repitiendo una frase por tercera vez. Eso genera cercanía, y funciona muy bien en redes internas o en LinkedIn cuando la empresa quiere mostrar cultura de trabajo.",
+      },
+      {
+        type: "paragraph",
+        text: "Pero solo aporta si tiene un sitio claro donde vivir: un post de LinkedIn de la empresa, un vídeo para redes internas de RRHH, contenido de employer branding. Si no hay un canal pensado para él, se queda sin publicar y todo el tiempo extra de grabación se pierde.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Asignar una segunda cámara solo para el making-of" },
+      {
+        type: "paragraph",
+        text: "No intento sacar el making-of con la misma cámara que uso para el vídeo principal entre toma y toma. Llevo una segunda cámara, normalmente una compacta o un móvil bien estabilizado, y alguien del equipo la dedica en exclusiva a capturar el proceso sin interferir en el rodaje real.",
+      },
+      { type: "heading", level: 3, text: "Grabar proceso, no solo bambalinas sueltas" },
+      {
+        type: "paragraph",
+        text: "Un making-of con planos aleatorios de gente moviendo cables no cuenta nada. Busco momentos con narrativa: la preparación de la luz antes de que llegue el ponente, la instrucción del director antes de una toma, la reacción del equipo cuando sale bien. Son cuatro o cinco momentos concretos, no una hora de material sin estructura.",
+      },
+      { type: "heading", level: 3, text: "Editarlo como pieza independiente, no como sobras" },
+      {
+        type: "paragraph",
+        text: "El making-of tiene su propio montaje, su propia música y su propia duración, casi siempre entre 60 y 90 segundos para redes. No es un descarte del vídeo principal con un rótulo de 'behind the scenes' pegado encima. Si no le dedico tiempo de edición aparte, se nota y no se publica.",
+      },
+      {
+        type: "image",
+        src: "/blog/making-of-video-corporativo/intermedia.webp",
+        alt: "Cámara de vídeo profesional sobre trípode en un rodaje de producción corporativa",
+        width: 1920,
+        height: 1280,
+        caption: "El making-of necesita su propia cámara y su propio montaje para no restar horas al rodaje principal.",
+      },
+      { type: "heading", level: 2, text: "Cuándo tiene sentido" },
+      {
+        type: "list",
+        items: [
+          "Cuando la empresa tiene un canal activo de employer branding o cultura interna donde publicarlo.",
+          "Cuando el rodaje principal es una producción grande, con set, iluminación o localización llamativa que vale la pena mostrar.",
+          "Cuando el objetivo es reforzar la marca del equipo o del estudio, no solo el vídeo del cliente.",
+          "Cuando hay presupuesto y tiempo para una segunda cámara dedicada, sin restar recursos al rodaje principal.",
+          "Cuando NO tiene sentido: si es un rodaje corto de medio día sin margen de tiempo, o si nadie en el equipo del cliente va a publicarlo en ningún sitio.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿El making-of alarga el tiempo de rodaje?",
+        answer:
+          "No debería, si está bien planeado. La segunda cámara graba en paralelo sin parar el rodaje principal. Lo que sí añade es tiempo de edición aparte, normalmente entre 2 y 4 horas para una pieza de 60-90 segundos.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito un operador extra o puede grabarlo alguien del equipo?",
+        answer:
+          "Con equipos pequeños, suelo pedirle a la persona de producción o al asistente que dedique ratos sueltos a grabar con el móvil. En rodajes grandes sí prefiero un segundo operador dedicado, porque el resultado se nota mucho en la narrativa del making-of.",
+      },
+      {
+        type: "faq",
+        question: "¿El making-of se publica antes o después del vídeo principal?",
+        answer:
+          "Casi siempre después, como contenido complementario que amplía la historia una vez el vídeo principal ya está circulando. Publicarlo antes solo tiene sentido si se usa como teaser para generar expectación.",
+      },
+      {
+        type: "faq",
+        question: "¿Vale la pena para un rodaje pequeño, de una sola entrevista?",
+        answer:
+          "Casi nunca. En una sesión de un par de horas con una sola persona delante de cámara no hay suficiente proceso visual que contar. El making-of rinde mejor en producciones con más movimiento: sets, varios localizaciones, equipo grande.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tu próxima producción tiene entidad suficiente para justificar un making-of, cuéntame el proyecto y lo planeamos juntos desde el briefing para que no sea un añadido de última hora. Escríbeme desde /contacto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
