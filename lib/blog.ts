@@ -9479,6 +9479,126 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "storytelling-video-corporativo",
+    title: "Storytelling en vídeo corporativo: cómo estructuro la narrativa",
+    description:
+      "Cómo construyo el storytelling de un vídeo corporativo: por qué empiezo por el conflicto y no por la empresa, quién es el protagonista y cómo evito que el guion se quede en una lista de atributos.",
+    publishedAt: "2026-08-12",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "storytelling",
+      "vídeo corporativo",
+      "narrativa",
+      "guion",
+      "producción audiovisual",
+      "branding",
+    ],
+    keyword: "storytelling en vídeo corporativo",
+    intent: "informacional",
+    excerpt:
+      "El storytelling en vídeo corporativo no es añadir emoción a un catálogo de productos. Es decidir un conflicto, un protagonista humano y una resolución antes de escribir la primera línea del guion.",
+    seoTitle: "Storytelling en vídeo corporativo | Daniel Acero",
+    metaDescription:
+      "Storytelling en vídeo corporativo: cómo elijo el conflicto, el protagonista y el arco narrativo para que el vídeo se recuerde y no se quede en una lista de atributos.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cuando un cliente me dice que quiere 'contar una historia' en su vídeo corporativo, casi siempre se refiere a algo distinto de lo que después me pide en el guion. Quiere emoción, pero también quiere que salgan los diez productos, los tres valores de marca y el logo en los primeros cinco segundos. Eso no es storytelling, es un catálogo con música de fondo.",
+      },
+      {
+        type: "paragraph",
+        text: "El storytelling en vídeo corporativo funciona cuando hay una estructura narrativa real detrás: un conflicto, un protagonista y una resolución. No hace falta un guion de ficción, pero sí hace falta renunciar a meter todo lo que la empresa querría decir.",
+      },
+      {
+        type: "image",
+        src: "/blog/storytelling-video-corporativo/hero.webp",
+        alt: "Claqueta de cine marcando la toma 3 durante un rodaje de vídeo corporativo",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Storytelling, en este contexto, es decidir de qué trata el vídeo antes de decidir qué se enseña. La mayoría de vídeos corporativos sin narrativa son una lista de razones para contratar a la empresa, ordenadas por importancia. Se entienden, pero no se recuerdan.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque la gente retiene historias, no listas de atributos. Si el vídeo plantea un problema real al principio y una resolución al final, el espectador se queda hasta el final para saber cómo termina. Si el vídeo empieza con 'somos una empresa líder desde 2005', ya ha perdido a media audiencia en el segundo tres.",
+      },
+      {
+        type: "paragraph",
+        text: "No es solo cuestión de guion. Un rodaje pensado para contar una historia también cambia qué planos pido, en qué orden entrevisto y qué preguntas hago. Si sé que el vídeo gira en torno a un problema que resolvió el equipo, dirijo la entrevista hacia ese momento en vez de hacia una lista de logros genéricos.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Empiezo por el conflicto, no por la empresa" },
+      {
+        type: "paragraph",
+        text: "Antes de escribir una sola línea sobre la empresa, defino cuál es el problema que el vídeo resuelve para quien lo ve. Puede ser un problema del cliente final, un reto interno del equipo o una duda que tiene el espectador sobre si confiar en la marca. Ese conflicto es el primer plano, no el logo.",
+      },
+      { type: "heading", level: 3, text: "Elijo un protagonista humano" },
+      {
+        type: "paragraph",
+        text: "La empresa no puede ser el protagonista de una historia, es una entidad abstracta. El protagonista es siempre una persona: un empleado, un cliente, un fundador. Entrevisto a esa persona con preguntas que buscan el momento de duda o dificultad, no solo el resultado final. 'Cuéntame cuándo no sabías si esto iba a funcionar' da mejor material que 'cuéntame por qué es bueno vuestro producto'.",
+      },
+      { type: "heading", level: 3, text: "Construyo un arco de antes y después" },
+      {
+        type: "paragraph",
+        text: "Cada bloque del guion tiene que mover la historia de un punto A a un punto B. Si un bloque solo repite información que ya dio el bloque anterior con otras palabras, lo corto. En montaje marco explícitamente dónde está el antes -la situación incómoda- y dónde está el después -la resolución- para que el espectador note el movimiento.",
+      },
+      {
+        type: "image",
+        src: "/blog/storytelling-video-corporativo/intermedia.webp",
+        alt: "Línea de tiempo de edición de vídeo en un software de montaje profesional",
+        width: 1920,
+        height: 1280,
+        caption: "En montaje es donde termina de notarse si la historia tiene un antes y un después claros.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Meter todos los productos o servicios en el mismo vídeo en lugar de elegir una sola historia.",
+          "Empezar por la empresa ('somos líderes en...') en vez de por el conflicto o la pregunta del espectador.",
+          "Usar testimonios que solo dicen que todo fue perfecto, sin mencionar ninguna dificultad real.",
+          "Escribir un guion de frases hechas ('pasión', 'excelencia', 'compromiso') que no dice nada concreto.",
+          "Cerrar el vídeo sin resolución clara, dejando al espectador sin saber qué pasó al final.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿El storytelling sirve para cualquier tipo de vídeo corporativo?",
+        answer:
+          "Funciona mejor en vídeos institucionales, de marca o de testimonios, donde hay margen para desarrollar una historia. Para un vídeo de producto muy técnico o un tutorial interno, la narrativa clásica pesa menos que la claridad de la información.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito guionista o lo puedo escribir yo mismo?",
+        answer:
+          "Para vídeos cortos, de uno a tres minutos, suelo escribir el guion yo mismo a partir del briefing del cliente. Para piezas más largas o con varios protagonistas, recomiendo sumar a alguien especializado en guion solo para esa fase.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo añade el storytelling a la preproducción?",
+        answer:
+          "Entre dos y cuatro horas extra de trabajo en guion y estructura de entrevista, comparado con un guion de lista de puntos. Se recupera en montaje, porque hay menos material sin usar y menos indecisión sobre qué cortar.",
+      },
+      {
+        type: "faq",
+        question: "¿Cómo sé si mi vídeo tiene una historia o es solo una lista de datos?",
+        answer:
+          "Pregúntate si alguien podría contar qué pasó en el vídeo en dos frases, con un antes y un después. Si solo puedes resumirlo como una lista de temas -habla de historia, equipo, valores y clientes- no hay historia todavía, hay un índice.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes un vídeo corporativo en mente y no sabes por dónde coger la historia, cuéntame el contexto y te ayudo a encontrar el conflicto real antes de escribir el guion. Escríbeme desde /contacto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
