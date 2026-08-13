@@ -9599,6 +9599,125 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-multisede",
+    title: "Vídeo corporativo multisede: cómo coordino grabaciones en varias ciudades",
+    description:
+      "Cómo organizo un vídeo corporativo cuando la empresa tiene sede en varias ciudades: dirección de arte compartida, orden de rodaje, equipo que viaja y consistencia visual entre sedes.",
+    publishedAt: "2026-08-13",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "multisede",
+      "producción audiovisual",
+      "logística de rodaje",
+      "empresas con varias sedes",
+    ],
+    keyword: "vídeo corporativo multisede",
+    intent: "informacional",
+    excerpt:
+      "Grabar en varias sedes no es repetir el mismo rodaje tres veces. Cambia el equipo, cambia la luz, cambia quién está disponible. Y el resultado tiene que parecer grabado por la misma persona la misma tarde.",
+    seoTitle: "Vídeo corporativo multisede: cómo coordinarlo | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo multisede: cómo coordino rodajes en varias ciudades sin perder consistencia visual ni calendario.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cuando una empresa tiene sede en Madrid, Barcelona y Valencia, el vídeo corporativo deja de ser un rodaje. Se convierte en una operación logística con cámara de por medio.",
+      },
+      {
+        type: "paragraph",
+        text: "Coordinar varias sedes desde un único briefing es distinto de repetir el mismo rodaje tres veces. Cambia el equipo disponible en cada oficina, cambia la luz de cada espacio, cambia quién puede sentarse delante de la cámara ese día concreto. Y aun así, el resultado final tiene que verse como si lo hubiera grabado la misma persona la misma tarde.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-multisede/hero.webp",
+        alt: "Director de rodaje trabajando con una protagonista durante una grabación en localización",
+        width: 1920,
+        height: 1277,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Un vídeo corporativo multisede es cualquier pieza que necesita material grabado en más de una ubicación de la misma empresa: distintas oficinas, distintas plantas, distintos países. No hablo de grabar en exteriores un solo día, sino de repetir el proceso completo -luz, sonido, entrevistas- en cada sitio y que el montaje final no delate el salto entre ciudades.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque cada vez más empresas piden vídeos que representen a toda la organización, no solo a la sede central. Un vídeo de employer branding que solo muestra Madrid cuando la empresa tiene 200 personas en Barcelona se queda cojo. Lo mismo pasa con vídeos de cultura, de resultados anuales o de captación de inversores: si la empresa opera en varios sitios, el vídeo tiene que reflejarlo o pierde credibilidad.",
+      },
+      {
+        type: "paragraph",
+        text: "El riesgo real no es logístico, es visual. Si cada sede se graba con una luz distinta, un encuadre distinto y un tono de entrevista distinto, el espectador nota la costura entre bloques aunque no sepa explicar por qué. Ahí es donde se nota si hay una dirección de arte pensada de antemano o si cada parada del viaje se resolvió sobre la marcha.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Un único documento de dirección de arte" },
+      {
+        type: "paragraph",
+        text: "Antes de reservar el primer billete, cierro un documento corto con la paleta de color, el tipo de plano de entrevista (encuadre, altura de cámara, distancia focal) y la lista de preguntas base. Ese documento viaja conmigo a cada sede y es lo que me permite tomar decisiones rápidas cuando el espacio real no se parece a las fotos que me mandaron.",
+      },
+      { type: "heading", level: 3, text: "Planifico el orden de las sedes por logística, no por importancia" },
+      {
+        type: "paragraph",
+        text: "Suena obvio pero se ignora a menudo: el orden de las ciudades lo decide el vuelo o el tren, no el organigrama. Si Madrid y Valencia se pueden encadenar en dos días con un trayecto corto, van juntas, aunque la sede de Valencia sea más pequeña. Dejar la logística para el final es la forma más rápida de acabar grabando con prisa el último día.",
+      },
+      { type: "heading", level: 3, text: "Un equipo reducido que viaja, no equipos distintos por ciudad" },
+      {
+        type: "paragraph",
+        text: "Para 3 sedes suelo moverme con un equipo de 2 personas -cámara y sonido- que repite en todas las ubicaciones, en vez de contratar operadores locales en cada ciudad. Cuesta más en billetes y hoteles, pero la consistencia de imagen que se gana compensa: la misma persona que expuso la luz en Madrid sabe replicar esa decisión en Bilbao sin tener que explicarla por escrito.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-multisede/intermedia.webp",
+        alt: "Equipo de producción de vídeo esperando en pista junto a una avioneta antes de viajar a la siguiente sede",
+        width: 1920,
+        height: 1080,
+        caption: "Con 3 o más sedes, el calendario de vuelos condiciona el guion tanto como el contenido.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Contratar equipos de grabación distintos en cada sede sin un documento de dirección de arte compartido.",
+          "No prever los tiempos reales de desplazamiento entre sedes en el mismo día de rodaje.",
+          "Grabar cada sede con una temperatura de color distinta y confiar en corregirlo todo en postproducción.",
+          "Adaptar el guion sobre la marcha en cada oficina en lugar de partir de una estructura común.",
+          "No confirmar la disponibilidad real de los protagonistas locales antes de comprar los billetes.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta grabar un vídeo corporativo en varias sedes?",
+        answer:
+          "Depende del número de ciudades y de si hay que volar o basta con tren. Como referencia, para 3 sedes en España con desplazamientos de un día, el presupuesto extra sobre un rodaje de una sola ubicación suele moverse entre 800 y 1.500 euros en billetes, dietas y alojamiento del equipo.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuántos días hacen falta para grabar en 3 sedes?",
+        answer:
+          "Con una jornada de 4 horas efectivas por sede y trayectos cortos entre ciudades, suelo planificar 3 o 4 días completos, contando el margen de un día para imprevistos de vuelos o disponibilidad de protagonistas.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo usar equipos de grabación locales en cada ciudad para abaratar costes?",
+        answer:
+          "Se puede, y a veces es la única opción si hay muchas sedes o presupuesto ajustado. El riesgo es la consistencia visual: hace falta un documento de dirección de arte muy detallado y una llamada de coordinación con cada operador antes de grabar, o el montaje final se nota descosido.",
+      },
+      {
+        type: "faq",
+        question: "¿Cómo mantengo la consistencia visual sin viajar con el mismo equipo a todas las sedes?",
+        answer:
+          "Fijando de antemano los parámetros técnicos no negociables: misma cámara o modelo equivalente, mismo perfil de color, misma altura y distancia de cámara en entrevistas, y el mismo esquema de iluminación de 2 o 3 puntos. Cuanto más cerrado esté ese documento, menos depende el resultado de quién sostenga la cámara.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tu empresa tiene varias sedes y necesitas un vídeo corporativo que las represente a todas sin que se note la costura entre ciudades, cuéntame cuántas sedes son y qué plazos manejas desde /contacto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
