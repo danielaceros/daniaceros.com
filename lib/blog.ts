@@ -9718,6 +9718,126 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-seguridad-laboral",
+    title: "Vídeo corporativo de seguridad laboral: cómo lo grabo bien",
+    description:
+      "Cómo grabo un vídeo de seguridad laboral para empresas industriales: procedimiento real en planta, guion validado por el técnico de PRL, planos claros y piezas cortas por riesgo.",
+    publishedAt: "2026-08-14",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "seguridad laboral",
+      "prevención de riesgos laborales",
+      "formación interna",
+      "vídeo industrial",
+    ],
+    keyword: "vídeo corporativo de seguridad laboral",
+    intent: "informacional",
+    excerpt:
+      "Un vídeo de seguridad laboral no vende, enseña. Grabo el procedimiento real de la planta, lo valido con el técnico de PRL y lo dejo listo para repetirse cuantas veces haga falta.",
+    seoTitle: "Vídeo corporativo de seguridad laboral | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo de seguridad laboral: cómo grabo procedimientos de PRL claros y validados para plantas industriales en Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Un vídeo de seguridad laboral no es un vídeo corporativo cualquiera. Tiene que enseñar un procedimiento exacto, no vender una idea. Si el operario que lo ve no entiende a la primera cómo colocarse el arnés o por dónde no debe pasar la carretilla elevadora, el vídeo ha fallado.",
+      },
+      {
+        type: "paragraph",
+        text: "Llevo varios años grabando este tipo de piezas para empresas industriales y de construcción en Madrid. La diferencia con un vídeo institucional normal está en el enfoque: aquí el protagonista es el procedimiento, no la persona que lo explica.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-seguridad-laboral/hero.webp",
+        alt: "Operarios de construcción coordinándose en obra antes de una grabación de seguridad laboral",
+        width: 1920,
+        height: 840,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Un vídeo corporativo de seguridad laboral es la pieza audiovisual que una empresa usa para formar a su plantilla en prevención de riesgos: uso de EPI, protocolos de evacuación, manejo de maquinaria, actuación ante un accidente. No sustituye la formación presencial obligatoria, pero la refuerza y deja un material que se puede repetir cuantas veces haga falta.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque la ley obliga a formar en prevención de riesgos laborales, y un vídeo bien hecho cumple esa obligación mejor que un PDF de 40 páginas que nadie termina de leer. Un operario retiene mucho más viendo 4 minutos de vídeo con el procedimiento real grabado en su propia planta que leyendo un manual genérico traducido de otro país.",
+      },
+      {
+        type: "paragraph",
+        text: "También importa por responsabilidad legal. Si hay un accidente y la empresa puede demostrar que formó a la plantilla con un material claro, específico y fechado, la posición ante una inspección o una reclamación cambia por completo.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Grabo el procedimiento real, no una recreación genérica" },
+      {
+        type: "paragraph",
+        text: "El error más común es comprar un vídeo de seguridad genérico de stock y ponerle el logo de la empresa encima. No sirve. Grabo en la planta real, con la maquinaria real y, cuando es posible, con un trabajador de la propia empresa demostrando el procedimiento. El operario que lo ve reconoce el sitio y la máquina, y eso hace que preste atención.",
+      },
+      { type: "heading", level: 3, text: "El guion lo revisa el responsable de PRL, no solo comunicación" },
+      {
+        type: "paragraph",
+        text: "Antes de grabar, el guion pasa por el técnico de prevención de riesgos de la empresa. Un fallo en el orden de un procedimiento -por ejemplo, cortar la corriente antes de aislar una máquina- puede convertir el vídeo en un problema legal en vez de una solución. Esa revisión técnica es innegociable, aunque alargue el calendario una semana.",
+      },
+      { type: "heading", level: 3, text: "Planos claros, sin decoración" },
+      {
+        type: "paragraph",
+        text: "Nada de planos aéreos con dron ni música dramática de fondo. Priorizo primeros planos de manos, encuadres fijos que muestren el paso a paso completo y rótulos con el nombre de cada EPI o herramienta. En posproducción reviso esos rótulos y los subtítulos en DaVinci Resolve antes de entregar el máster: la estética queda siempre en segundo plano frente a la claridad.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-seguridad-laboral/intermedia.webp",
+        alt: "Trabajadores con chaleco de alta visibilidad en el lugar de rodaje de un vídeo de seguridad laboral",
+        width: 1920,
+        height: 1280,
+        caption: "En planta, el chaleco reflectante y el casco no son atrezzo: son norma incluso para el equipo de grabación.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Usar vídeo de stock genérico en vez de grabar el procedimiento real de la planta.",
+          "No validar el guion técnico con el responsable de PRL antes de grabar.",
+          "Grabar con planos artísticos que dificultan ver el detalle del procedimiento.",
+          "Hacer un único vídeo de 20 minutos en vez de piezas cortas por procedimiento.",
+          "No subtitular el vídeo para plantilla que no tiene el español como lengua materna.",
+          "No prever una revisión anual del contenido cuando cambia la normativa o la maquinaria.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Un vídeo de seguridad laboral sustituye la formación presencial en PRL?",
+        answer:
+          "No. La normativa exige formación presencial certificada por técnico competente. El vídeo es un refuerzo: sirve para repasar el procedimiento antes de una tarea concreta o para formar a alguien que se incorpora fuera del calendario de formación general.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto dura un vídeo de seguridad laboral bien hecho?",
+        answer:
+          "Entre 3 y 6 minutos por procedimiento. Si la empresa necesita cubrir varios riesgos -EPI, evacuación, manejo de carretilla- prefiero grabar piezas cortas independientes a un único vídeo largo que nadie termina de ver entero.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta grabar un vídeo de seguridad laboral?",
+        answer:
+          "Para una jornada de grabación en una sola planta con 2 o 3 procedimientos, el presupuesto suele moverse entre 1.200 y 2.500 euros, dependiendo de si hace falta grafismo con rótulos y subtítulos en varios idiomas.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta un actor o puede aparecer un trabajador real de la empresa?",
+        answer:
+          "Mejor un trabajador real siempre que esté dispuesto y conozca bien el procedimiento. El objetivo es que el resto de la plantilla se identifique con quien aparece en pantalla, no que parezca un anuncio.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tu empresa necesita formar a la plantilla en prevención de riesgos con un vídeo claro y validado por tu técnico de PRL, cuéntame la planta y los procedimientos que quieres cubrir desde /contacto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
