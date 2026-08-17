@@ -9838,6 +9838,127 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-sector-inmobiliario",
+    title: "Vídeo corporativo para el sector inmobiliario: cómo lo planteo",
+    description:
+      "Cómo planteo un vídeo corporativo para promotoras e inmobiliarias en Madrid: qué grabar en cada fase de obra, qué planos venden de verdad y qué errores evito en interiores.",
+    publishedAt: "2026-08-17",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "sector inmobiliario",
+      "vídeo inmobiliario",
+      "marketing inmobiliario",
+      "producción audiovisual",
+      "Madrid",
+    ],
+    keyword: "vídeo corporativo para el sector inmobiliario",
+    intent: "informacional",
+    excerpt:
+      "En inmobiliario no vendo metros cuadrados, vendo cómo se vive en ese espacio. Por eso priorizo luz natural, entorno real y planos que un render nunca va a transmitir.",
+    seoTitle: "Vídeo corporativo para inmobiliarias | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo para el sector inmobiliario: cómo grabo promociones y sedes para promotoras e inmobiliarias en Madrid, con planos que venden de verdad.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Un vídeo inmobiliario mal planteado enseña metros cuadrados. Uno bien planteado enseña cómo se vive ahí dentro. Esa diferencia es la que marca si alguien sigue viendo el vídeo hasta el final o lo cierra a los cinco segundos.",
+      },
+      {
+        type: "paragraph",
+        text: "Llevo varios años grabando para promotoras e inmobiliarias en Madrid, tanto vivienda nueva como oficinas y locales comerciales. El reto siempre es el mismo: convertir un espacio vacío o a medio construir en algo que alguien pueda imaginarse habitando.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-inmobiliario/hero.webp",
+        alt: "Interior moderno de una vivienda con luz natural y acabados de calidad",
+        width: 1920,
+        height: 1016,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Un vídeo corporativo para el sector inmobiliario cubre distintos objetivos según quién lo encarga: una promotora quiere vender pisos sobre plano o ya entregados, una inmobiliaria quiere posicionarse como referencia en una zona, y una empresa con oficinas o naves quiere mostrar sus instalaciones a clientes o inversores. El punto común es que el vídeo tiene que sustituir, en parte, la visita física.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque en este sector la decisión de compra es lenta y cara, y el primer filtro casi siempre pasa por una pantalla. Si el vídeo no transmite cómo entra la luz por la mañana o cómo de cerca está el metro, ese lead se pierde antes de pedir cita.",
+      },
+      {
+        type: "paragraph",
+        text: "También importa porque compite directamente con el render 3D. El render vende una promesa; el vídeo real, cuando la obra ya está avanzada, vende una certeza. Y esa certeza es la que cierra visitas.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Grabo en fases, no solo al final" },
+      {
+        type: "paragraph",
+        text: "En vivienda nueva, planteo grabaciones cortas en distintos momentos de la obra: estructura, fachada, y entrega de piso piloto. No es solo contenido para redes durante la construcción, es la prueba de que el proyecto avanza de verdad, algo que un comprador que ya ha firmado señas valora mucho.",
+      },
+      { type: "heading", level: 3, text: "Priorizo luz natural y espacios reales sobre planos vacíos" },
+      {
+        type: "paragraph",
+        text: "Grabo siempre con luz natural como protagonista, en la franja horaria en la que mejor entra en cada estancia. Y evito los planos fijos de habitación vacía sin escala: meto un mueble de referencia, una persona caminando por el pasillo, algo que dé la medida real del espacio. Sin eso, cualquier salón parece más pequeño de lo que es.",
+      },
+      { type: "heading", level: 3, text: "El entorno pesa tanto como la vivienda" },
+      {
+        type: "paragraph",
+        text: "Una parte del rodaje siempre sale del interior: el barrio, el acceso al metro o la autovía, el parque de al lado, la zona comunitaria si la promoción la tiene. Eso es lo que de verdad decide muchas compras, y es justo lo que un render nunca enseña con naturalidad.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-inmobiliario/intermedia.webp",
+        alt: "Reunión de trabajo revisando la estrategia de una promoción inmobiliaria",
+        width: 1920,
+        height: 1280,
+        caption: "Antes de grabar reviso con el equipo comercial qué argumento de venta tiene que quedar claro en el vídeo.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Depender solo del render 3D cuando la obra ya está lo bastante avanzada para grabar en real.",
+          "Grabar interiores sin luz natural controlada, dejando espacios con aspecto frío y artificial.",
+          "No mostrar el entorno -barrio, accesos, zonas comunes- que suele ser lo que decide la compra.",
+          "Usar un único vídeo genérico para todas las promociones en vez de adaptarlo al target de cada una.",
+          "Olvidar la normativa de dron vigente cuando se planea una toma aérea de la promoción.",
+          "Entregar solo un corte horizontal largo, sin recortes verticales pensados para Instagram o portales inmobiliarios.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta un vídeo corporativo para una promoción inmobiliaria?",
+        answer:
+          "Para una promoción con piso piloto y toma de dron del edificio, el rango habitual está entre 1.500 y 3.500 euros, según número de estancias y si se necesitan varias entregas -horizontal para web y verticales para redes.",
+      },
+      {
+        type: "faq",
+        question: "¿Es mejor grabar la vivienda amueblada o vacía?",
+        answer:
+          "Amueblada, siempre que se pueda. Un piso vacío pierde escala y calidez en cámara. Si no hay mobiliario real, uso al menos piezas de referencia -una mesa, una silla- para que el espectador entienda el tamaño real de cada estancia.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto dura un buen vídeo inmobiliario?",
+        answer:
+          "Entre 60 y 90 segundos para el corte principal de una vivienda o local. Para una promoción completa con varias tipologías, prefiero un vídeo algo más largo -2 a 3 minutos- más recortes cortos por tipología para redes.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta dron para este tipo de vídeo?",
+        answer:
+          "No siempre, pero ayuda mucho a situar la promoción en su entorno -cercanía a vías, zonas verdes, otros edificios. Si el emplazamiento es el argumento fuerte de venta, sí lo recomiendo. Si el argumento es el interior, no es imprescindible.",
+      },
+      {
+        type: "paragraph",
+        text: "Si estás lanzando una promoción o quieres mostrar tus oficinas a clientes e inversores, cuéntame el proyecto y la fase en la que está desde /contacto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
