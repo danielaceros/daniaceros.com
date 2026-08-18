@@ -9959,6 +9959,127 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-sector-sanitario",
+    title: "Vídeo corporativo para el sector sanitario: cómo lo planteo",
+    description:
+      "Cómo planteo un vídeo corporativo para clínicas, hospitales y centros sanitarios en Madrid: privacidad de pacientes, luz clínica y qué planos generan confianza real.",
+    publishedAt: "2026-08-18",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "sector sanitario",
+      "vídeo para clínicas",
+      "marketing sanitario",
+      "producción audiovisual",
+      "Madrid",
+    ],
+    keyword: "vídeo corporativo para el sector sanitario",
+    intent: "informacional",
+    excerpt:
+      "En sanidad el vídeo no vende un servicio, vende confianza. Por eso cuido tanto la privacidad del paciente como los planos que muestran seriedad sin resultar frío.",
+    seoTitle: "Vídeo corporativo para el sector sanitario | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo para el sector sanitario: cómo grabo en clínicas y centros médicos en Madrid cuidando la privacidad del paciente y generando confianza real.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "En sanidad el vídeo no vende un tratamiento, vende confianza. Un paciente que busca clínica no compara solo precios, compara quién le va a tocar y en qué condiciones. Si el vídeo no transmite seriedad y cercanía a la vez, no cumple su función por muy buena que sea la imagen.",
+      },
+      {
+        type: "paragraph",
+        text: "He grabado en clínicas dentales, centros de fisioterapia y consultas médicas privadas en Madrid, y el reto siempre se repite: mostrar un espacio clínico sin que parezca frío, y mostrar al equipo médico sin que parezca un anuncio genérico de stock.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-sanitario/hero.webp",
+        alt: "Pasillo de un centro sanitario con bancos y puertas de consulta",
+        width: 1920,
+        height: 1440,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Un vídeo corporativo para el sector sanitario cubre objetivos distintos según quién lo encarga: una clínica quiere presentar sus instalaciones y su equipo médico, un centro quiere explicar un tratamiento concreto, y un hospital privado quiere reforzar su marca frente a la competencia. El punto común es que el vídeo sustituye, en parte, la primera visita presencial.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque la decisión de acudir a una clínica implica poner el cuerpo -o la cara- en manos de alguien. Ese nivel de confianza no se genera con música épica y planos de stock, se genera viendo el espacio real, el instrumental, y sobre todo, viendo a las personas que van a atender.",
+      },
+      {
+        type: "paragraph",
+        text: "También importa porque en este sector la normativa de protección de datos y de imagen del paciente es más exigente que en cualquier otro. Un vídeo mal planteado no solo queda peor, puede generar un problema legal serio si se graba a un paciente sin consentimiento explícito y por escrito.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "El consentimiento se gestiona antes de encender la cámara" },
+      {
+        type: "paragraph",
+        text: "Antes de cualquier rodaje con pacientes reales, pido que la clínica tenga el consentimiento firmado y específico para uso audiovisual, no solo para el tratamiento. Si no hay tiempo de gestionarlo con antelación, opto por grabar con pacientes voluntarios del propio equipo o por priorizar planos de instalaciones y personal sanitario sin pacientes identificables.",
+      },
+      { type: "heading", level: 3, text: "La luz clínica necesita un tratamiento propio" },
+      {
+        type: "paragraph",
+        text: "La iluminación fluorescente de una consulta suele ser plana y dura en cámara. Añado siempre un punto de luz suave -un panel LED con difusión- para suavizar sombras en cara sin perder ese aspecto limpio y clínico que el espacio necesita transmitir. Nada de ambientes oscuros o cálidos: en sanidad, la limpieza visual es parte del mensaje.",
+      },
+      { type: "heading", level: 3, text: "El equipo médico habla, no recita" },
+      {
+        type: "paragraph",
+        text: "Cuando grabo a un médico o fisioterapeuta explicando un tratamiento, evito el guion memorizado palabra por palabra: suena artificial y se nota. Prefiero preguntas abiertas con teleprompter de apoyo solo para las ideas clave, y dejo que la persona hable con su propio vocabulario. Se graba más metraje, pero el resultado suena a persona real, no a spot.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-sanitario/intermedia.webp",
+        alt: "Consulta médica con conversación entre profesional sanitario y paciente",
+        width: 1920,
+        height: 1251,
+        caption: "Antes de grabar reviso con la clínica qué mensaje de confianza tiene que quedar claro en el vídeo.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Grabar a pacientes reconocibles sin consentimiento firmado específico para uso audiovisual.",
+          "Usar música o ritmo de montaje agresivo, que transmite el tono equivocado en un contexto sanitario.",
+          "Dejar la iluminación fluorescente sin corregir, con caras planas y sombras duras.",
+          "Guiones memorizados palabra por palabra que suenan a anuncio y restan credibilidad al profesional.",
+          "No mostrar el equipamiento ni la limpieza del espacio, que es justo lo que un paciente quiere comprobar.",
+          "Grabar solo el edificio y olvidar al equipo humano, que es lo que realmente genera confianza.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta un vídeo corporativo para una clínica o centro médico?",
+        answer:
+          "Para una clínica con instalaciones y dos o tres entrevistas al equipo médico, el rango habitual está entre 1.200 y 3.000 euros, según duración final y si se necesitan varias piezas para redes.",
+      },
+      {
+        type: "faq",
+        question: "¿Es obligatorio el consentimiento de los pacientes que aparecen en el vídeo?",
+        answer:
+          "Sí, siempre. No basta con el consentimiento del tratamiento médico: hace falta uno específico para uso de la imagen en vídeo corporativo o marketing, firmado antes de grabar.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto dura un buen vídeo para una clínica?",
+        answer:
+          "Entre 60 y 120 segundos para el vídeo principal de presentación. Si el objetivo es explicar un tratamiento concreto, prefiero piezas más cortas y específicas, de 30 a 45 segundos, pensadas para redes.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar sin interrumpir la actividad de la clínica?",
+        answer:
+          "Sí, planificando el rodaje en horas de menor afluencia o en salas que no estén en uso ese día. Coordino siempre con la dirección del centro un horario que no afecte a la atención de pacientes.",
+      },
+      {
+        type: "paragraph",
+        text: "Si diriges una clínica o centro sanitario y quieres un vídeo que transmita confianza real, sin perder de vista la privacidad de tus pacientes, cuéntame tu proyecto desde /contacto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
