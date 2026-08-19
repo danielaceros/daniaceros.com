@@ -10080,6 +10080,127 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-sector-educativo",
+    title: "Vídeo corporativo para el sector educativo: cómo lo planteo",
+    description:
+      "Cómo planteo un vídeo corporativo para colegios, academias y universidades en Madrid: permisos de imagen de menores, dinamismo real y qué transmite confianza a las familias.",
+    publishedAt: "2026-08-19",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "sector educativo",
+      "vídeo para colegios",
+      "marketing educativo",
+      "producción audiovisual",
+      "Madrid",
+    ],
+    keyword: "vídeo corporativo para el sector educativo",
+    intent: "informacional",
+    excerpt:
+      "En educación el vídeo no vende solo un centro, vende una decisión de futuro para un hijo o una carrera. Por eso cuido tanto la imagen de los menores como el ambiente real que transmite el aula.",
+    seoTitle: "Vídeo corporativo para el sector educativo | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo para el sector educativo: cómo grabo en colegios y universidades en Madrid cuidando la imagen de los menores y mostrando el ambiente real del centro.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "En educación el vídeo no vende una matrícula, vende una decisión de futuro. Una familia que elige colegio para su hijo, o un estudiante que elige universidad, no compara solo el plan de estudios: compara qué ambiente va a vivir esa persona durante años. Si el vídeo no transmite eso, se queda en un folleto institucional más.",
+      },
+      {
+        type: "paragraph",
+        text: "He grabado en colegios, academias y facultades universitarias en Madrid, y el reto siempre se repite: mostrar el dinamismo real de las aulas sin caer en el vídeo institucional acartonado, y gestionar la imagen de los menores con el cuidado que exige la ley y el sentido común.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-educativo/hero.webp",
+        alt: "Estudiantes caminando por el campus de una universidad",
+        width: 1920,
+        height: 1278,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Un vídeo corporativo para el sector educativo cubre objetivos distintos según quién lo encarga: un colegio quiere mostrar sus instalaciones y su metodología en una jornada de puertas abiertas, una academia quiere mostrar resultados reales de sus alumnos, y una universidad quiere reforzar su marca frente a otras facultades con oferta parecida. El punto común es que el vídeo sustituye, en parte, la visita presencial que muchas familias no llegan a hacer.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque elegir centro educativo es una decisión de riesgo alto, económico y emocional a la vez. Nadie matricula a un hijo, ni se matricula a sí mismo en un grado, solo por un plan de estudios en PDF. Se necesita sentir el ambiente: cómo se mueven los alumnos por los pasillos, cómo habla un profesor de su asignatura, qué cara tiene el centro un día normal de clase.",
+      },
+      {
+        type: "paragraph",
+        text: "También importa porque la normativa de protección de imagen de menores es más exigente aquí que en casi cualquier otro sector. Un vídeo bien intencionado puede convertirse en un problema serio si aparece un alumno identificable sin la autorización firmada de su familia.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "El consentimiento de menores se gestiona con el centro, no el día del rodaje" },
+      {
+        type: "paragraph",
+        text: "Antes de grabar pido que el centro tenga identificados qué alumnos cuentan con autorización de imagen firmada por sus familias, algo que muchos colegios ya recogen al inicio de curso. Si esa gestión no está hecha con antelación, priorizo planos generales donde ningún rostro es claramente identificable, o grabo solo con alumnos mayores de edad y personal docente.",
+      },
+      { type: "heading", level: 3, text: "El dinamismo real vale más que el aula vacía" },
+      {
+        type: "paragraph",
+        text: "Un plano de pupitres vacíos con luz de mediodía no transmite nada. Prefiero grabar una clase en movimiento, un laboratorio en uso, el recreo, un pasillo entre cambio de hora. Se pierde algo de control sobre la composición, pero se gana lo que de verdad convence a una familia: ver que ese centro tiene vida propia.",
+      },
+      { type: "heading", level: 3, text: "Profesores y alumnos hablan con sus palabras" },
+      {
+        type: "paragraph",
+        text: "Cuando grabo a un profesor o a un antiguo alumno contando su experiencia, evito el guion memorizado: se nota enseguida y resta credibilidad. Prefiero preguntas abiertas, con teleprompter de apoyo solo para las ideas clave, y dejo que la persona hable con su vocabulario. El resultado suena a testimonio real, no a anuncio de centro.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-educativo/intermedia.webp",
+        alt: "Profesora hablando con un grupo de alumnos en el aula",
+        width: 1920,
+        height: 1280,
+        caption: "Antes de grabar reviso con el centro qué momento del día muestra mejor su ambiente real.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Grabar a menores identificables sin autorización de imagen firmada por sus familias.",
+          "Mostrar solo edificio y aulas vacías, sin el ambiente real de alumnos y profesores.",
+          "Guiones recitados palabra por palabra que suenan a anuncio institucional, no a testimonio.",
+          "No coordinar el rodaje con dirección del centro, interrumpiendo clases o exámenes.",
+          "Usar música y ritmo de montaje pensados para otro público, sin encajar con familias o jóvenes.",
+          "No incluir resultados concretos -salidas profesionales, testimonios de antiguos alumnos- que es lo que de verdad genera confianza.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta un vídeo corporativo para un colegio o universidad?",
+        answer:
+          "Para un centro con instalaciones y dos o tres testimonios de profesores o alumnos, el rango habitual está entre 1.200 y 3.000 euros, según duración final y si se necesitan piezas adicionales para redes.",
+      },
+      {
+        type: "faq",
+        question: "¿Es obligatorio el consentimiento de los padres para grabar a los alumnos?",
+        answer:
+          "Sí, siempre que el menor sea identificable en el vídeo. Muchos centros ya recogen esta autorización al inicio de curso, pero conviene confirmarla específicamente para el uso audiovisual antes de grabar.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto dura un buen vídeo institucional educativo?",
+        answer:
+          "Entre 90 y 150 segundos para el vídeo principal de presentación del centro. Para jornadas de puertas abiertas o redes sociales, prefiero piezas más cortas, de 30 a 45 segundos, centradas en un solo mensaje.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar sin interrumpir las clases?",
+        answer:
+          "Sí, planificando el rodaje en cambios de hora, recreos o franjas concretas acordadas con dirección. Evito siempre entrar a un aula en mitad de una explicación o un examen.",
+      },
+      {
+        type: "paragraph",
+        text: "Si diriges un colegio, academia o facultad y quieres un vídeo que transmita el ambiente real de tu centro, cuidando la imagen de tus alumnos, cuéntame tu proyecto desde /contacto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
