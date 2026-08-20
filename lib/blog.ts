@@ -10201,6 +10201,127 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-sector-tecnologico",
+    title: "Vídeo corporativo para el sector tecnológico: cómo lo planteo",
+    description:
+      "Cómo planteo un vídeo corporativo para startups y empresas de software en Madrid: hacer visible un producto intangible, mostrar el equipo real y evitar el tono genérico de stock.",
+    publishedAt: "2026-08-20",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "sector tecnológico",
+      "vídeo para startups",
+      "vídeo de producto",
+      "producción audiovisual",
+      "Madrid",
+    ],
+    keyword: "vídeo corporativo para el sector tecnológico",
+    intent: "informacional",
+    excerpt:
+      "En tecnología el problema casi nunca es el presupuesto, es que el producto no se ve. Por eso mi trabajo empieza traduciendo lo que hace el software a algo que se entienda en diez segundos.",
+    seoTitle: "Vídeo corporativo para el sector tecnológico | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo para el sector tecnológico: cómo grabo para startups y empresas de software en Madrid, mostrando producto y equipo sin caer en el vídeo genérico.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Una startup o una empresa de software casi nunca tiene un problema de presupuesto para su vídeo corporativo. Tiene un problema de traducción: lo que vende no se ve. Un producto que vive dentro de una pantalla, un servicio que corre en un servidor, un algoritmo que resuelve algo que el cliente ni siquiera sabe nombrar.",
+      },
+      {
+        type: "paragraph",
+        text: "He grabado para varias empresas tecnológicas en Madrid y el reto se repite casi siempre igual: convertir algo intangible en imágenes que un cliente entienda en los primeros diez segundos, sin caer en el vídeo corporativo genérico de manos escribiendo en teclado y gráficas flotando sobre pantallas verdes.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-tecnologico/hero.webp",
+        alt: "Equipo de una startup tecnológica trabajando junto con portátiles en una oficina",
+        width: 1920,
+        height: 1281,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Un vídeo corporativo para el sector tecnológico normalmente persigue uno de tres objetivos: presentar el producto a un cliente potencial, dar confianza a un inversor, o mostrar cultura de empresa para atraer talento. Cada objetivo pide un vídeo distinto, aunque muchas empresas intentan resolver los tres con la misma pieza y el resultado se queda a medias en todos.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque en tecnología la confianza se construye distinto que en otros sectores. Un cliente no puede tocar el producto antes de comprarlo, así que necesita ver quién hay detrás: el equipo, la oficina, la forma de trabajar. Eso reduce el riesgo percibido de forma que ninguna landing page consigue por sí sola.",
+      },
+      {
+        type: "paragraph",
+        text: "También importa porque el sector se satura de vídeos con la misma estética: stock de código en pantalla, música electrónica genérica, voz en off que promete disrupción. Cuando todos suenan igual, el vídeo deja de diferenciar y se convierte en ruido de fondo.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "El producto se muestra en uso real, no en capturas de pantalla sueltas" },
+      {
+        type: "paragraph",
+        text: "En vez de grabar capturas de pantalla estáticas con zooms artificiales, prefiero grabar a una persona real usando el producto para resolver un problema concreto. Se ve el cursor moverse con intención, se ve la cara de la persona reaccionar. Eso comunica utilidad de una forma que ninguna animación de interfaz consigue por sí sola.",
+      },
+      { type: "heading", level: 3, text: "El equipo habla de lo que construye, no de la misión de empresa" },
+      {
+        type: "paragraph",
+        text: "Cuando grabo testimonios de fundadores o de equipo técnico, evito las frases de manual sobre visión y disrupción. Pido que expliquen, con sus palabras, qué problema resuelve el producto y para quién. Esa concreción es lo que un cliente técnico o un inversor identifican como credibilidad real.",
+      },
+      { type: "heading", level: 3, text: "La oficina se graba en jornada normal, no montada para la cámara" },
+      {
+        type: "paragraph",
+        text: "Prefiero llegar un día de trabajo cualquiera antes que pedir que preparen una escena. Una sala de reuniones a media conversación, alguien revisando código con auriculares puestos, una pizarra con notas reales. Se pierde control sobre la composición, pero se gana autenticidad, que en este sector pesa más que la estética pulida.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-tecnologico/intermedia.webp",
+        alt: "Programador trabajando con código en la pantalla de su ordenador",
+        width: 1920,
+        height: 1282,
+        caption: "Grabar el producto en uso real comunica más que cualquier animación de interfaz.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Abrir el vídeo con música electrónica y frases genéricas sobre disrupción o innovación.",
+          "Mostrar solo capturas de pantalla sin ninguna persona usando el producto.",
+          "Testimonios de fundadores recitando el discurso de inversores en vez de hablar del producto.",
+          "Grabar una oficina vacía o montada artificialmente para la cámara, sin gente trabajando de verdad.",
+          "No explicar en los primeros segundos qué problema resuelve el producto para quién lo ve por primera vez.",
+          "Usar planos de stock de código o servidores que no tienen nada que ver con el producto real.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta un vídeo corporativo para una startup o empresa de software?",
+        answer:
+          "Para una pieza con grabación de producto en uso, dos o tres testimonios de equipo y planos de oficina, el rango habitual está entre 1.200 y 3.000 euros, según duración final y número de piezas derivadas para redes.",
+      },
+      {
+        type: "faq",
+        question: "¿Cómo se graba un producto que solo existe en una pantalla?",
+        answer:
+          "Grabando a una persona real interactuando con la interfaz para resolver una tarea concreta, con la cámara enfocando tanto la pantalla como la reacción de esa persona. Funciona mejor que las capturas de pantalla aisladas.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto debe durar el vídeo principal de una empresa tecnológica?",
+        answer:
+          "Entre 60 y 120 segundos para la pieza principal de presentación de producto. Para redes sociales o campañas de captación de talento, prefiero piezas más cortas, de 20 a 40 segundos, centradas en un único mensaje.",
+      },
+      {
+        type: "faq",
+        question: "¿Tiene sentido grabar en la oficina si el equipo trabaja en remoto?",
+        answer:
+          "Sí, aunque el enfoque cambia: en ese caso combino grabación presencial puntual del núcleo del equipo con videollamadas grabadas en buena calidad de audio e imagen para el resto, en vez de forzar una oficina que no representa el día a día real.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes una startup o una empresa de software y quieres un vídeo que muestre tu producto y tu equipo sin caer en el tono genérico del sector, cuéntame tu proyecto desde /contacto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
