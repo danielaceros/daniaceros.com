@@ -10322,6 +10322,127 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-sector-financiero",
+    title: "Vídeo corporativo para el sector financiero: qué cambia en la práctica",
+    description:
+      "Cómo planteo un vídeo corporativo para bancos, aseguradoras y fintech en Madrid: qué pasa por compliance, cómo se graba con confianza como objetivo y qué errores evitar.",
+    publishedAt: "2026-08-25",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "sector financiero",
+      "vídeo para bancos",
+      "fintech",
+      "producción audiovisual",
+      "Madrid",
+    ],
+    keyword: "vídeo corporativo para el sector financiero",
+    intent: "informacional",
+    excerpt:
+      "En banca, seguros y fintech el vídeo no solo tiene que verse bien: tiene que pasar por compliance sin perder autenticidad. Cuento cómo planteo un vídeo corporativo para el sector financiero.",
+    seoTitle: "Vídeo corporativo para el sector financiero | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo para el sector financiero: cómo grabo para bancos, aseguradoras y fintech en Madrid cuidando compliance, tono y confianza.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "En el sector financiero el vídeo corporativo se enfrenta a un filtro que casi ningún otro sector tiene con la misma intensidad: compliance. Cada frase que dice un empleado, cada cifra que aparece en pantalla, cada afirmación sobre rentabilidad o seguridad pasa por revisión legal antes de publicarse.",
+      },
+      {
+        type: "paragraph",
+        text: "He grabado para entidades financieras y fintech en Madrid, y el reto no suele ser técnico. Es de proceso: cómo producir algo que transmita confianza real sin que el guion se convierta en un documento legal leído a cámara.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-financiero/hero.webp",
+        alt: "Reunión de profesionales del sector financiero discutiendo documentos en una sala de reuniones",
+        width: 1920,
+        height: 1080,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Un vídeo corporativo para el sector financiero suele perseguir uno de estos objetivos: explicar un producto complejo de forma simple, dar confianza a un cliente que va a mover su dinero, o mostrar solidez institucional ante inversores y reguladores. Cada objetivo pide un tono distinto, aunque la tentación habitual es resolverlos todos con el mismo vídeo corporativo genérico.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque en finanzas la confianza se construye de una forma particular: el cliente no ve el producto, ve promesas sobre su dinero. Un vídeo bien planteado reduce esa incertidumbre mostrando personas reales, procesos claros y un tono sobrio que no promete de más.",
+      },
+      {
+        type: "paragraph",
+        text: "También importa porque el sector arrastra una estética muy reconocible y agotada: manos sobre teclados, gráficas ascendentes de stock, voz en off grave prometiendo crecimiento. Cuando el vídeo suena a plantilla, el espectador lo descarta antes de escuchar el mensaje.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "El guion se valida con compliance antes de grabar, no después" },
+      {
+        type: "paragraph",
+        text: "Antes de montar el equipo pido que el guion completo pase por el departamento legal o de compliance del cliente. Cambiar una frase en montaje es caro y lento; cambiarla en el papel es gratis. Esto evita repeticiones de rodaje y protege al cliente de publicar algo que luego tenga que retirar.",
+      },
+      { type: "heading", level: 3, text: "Las personas hablan de procesos concretos, no de cifras de rentabilidad" },
+      {
+        type: "paragraph",
+        text: "En vez de pedir a un directivo que hable de resultados o proyecciones, prefiero que explique cómo funciona un proceso: cómo se revisa una solicitud, cómo se protege un dato, cómo se atiende una incidencia. Es información que no necesita disclaimer legal y que comunica seriedad mejor que cualquier cifra.",
+      },
+      { type: "heading", level: 3, text: "La estética se aleja del stock de bolsa y gráficas genéricas" },
+      {
+        type: "paragraph",
+        text: "Evito los recursos visuales que todo el sector repite: velas de trading, mapas de datos flotando, luces azules frías. Prefiero grabar oficinas reales, personas trabajando en su puesto, conversaciones con clientes simuladas de forma natural. Se ve menos futurista, pero se percibe más real.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-financiero/intermedia.webp",
+        alt: "Equipo de profesionales trabajando juntos con portátiles en una oficina",
+        width: 1920,
+        height: 1280,
+        caption: "En finanzas, mostrar el proceso real pesa más que las gráficas de stock genéricas.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Grabar antes de que legal revise el guion, obligando a repetir tomas o descartar material.",
+          "Prometer rentabilidad o resultados concretos en boca de un empleado sin el disclaimer correspondiente.",
+          "Abusar de recursos visuales genéricos de bolsa: velas de trading, gráficas ascendentes, luces azules frías.",
+          "Usar un tono de voz en off excesivamente solemne que suena a publicidad de los años noventa.",
+          "No dejar claro en los primeros segundos qué tipo de entidad es y qué problema resuelve para el espectador.",
+          "Grabar testimonios de clientes con lenguaje ambiguo que compliance termina vetando en revisión final.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta un vídeo corporativo para una entidad financiera?",
+        answer:
+          "Para una pieza con guion validado por compliance, dos o tres testimonios y grabación en oficina, el rango habitual está entre 1.500 y 3.500 euros, según el número de piezas derivadas y las rondas de revisión legal previstas.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tarda en aprobarse el guion antes de poder grabar?",
+        answer:
+          "Depende del tamaño de la entidad, pero conviene reservar entre una y dos semanas para la ronda de compliance antes de fijar fecha de rodaje, sobre todo si hay varias personas que deben dar el visto bueno.",
+      },
+      {
+        type: "faq",
+        question: "¿Se pueden usar cifras o resultados en el vídeo?",
+        answer:
+          "Sí, pero casi siempre requieren un disclaimer visible en pantalla durante el tiempo que dure la afirmación. Por eso prefiero centrar el mensaje en procesos y personas, y dejar las cifras solo cuando aportan algo que el disclaimer no diluye.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué diferencia hay entre grabar para un banco tradicional y para una fintech?",
+        answer:
+          "El banco tradicional suele necesitar más rondas de compliance y un tono más institucional. La fintech tiene procesos de revisión más ágiles y admite un tono más cercano, aunque el filtro legal sobre las afirmaciones financieras sigue siendo igual de estricto.",
+      },
+      {
+        type: "paragraph",
+        text: "Si trabajas en banca, seguros o fintech y necesitas un vídeo corporativo que transmita confianza sin chocar con compliance, cuéntame tu proyecto desde /contacto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
