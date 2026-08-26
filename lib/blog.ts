@@ -10443,6 +10443,127 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-sector-logistico-transporte",
+    title: "Vídeo corporativo para el sector logístico y de transporte: qué cambia en la práctica",
+    description:
+      "Cómo planteo un vídeo corporativo para empresas de logística y transporte en Madrid: qué planos cuentan la operación real, cómo se graba en un almacén sin parar la actividad y qué errores evitar.",
+    publishedAt: "2026-08-26",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "sector logístico",
+      "vídeo para transporte",
+      "vídeo en almacén",
+      "producción audiovisual",
+      "Madrid",
+    ],
+    keyword: "vídeo corporativo para el sector logístico y de transporte",
+    intent: "informacional",
+    excerpt:
+      "En logística y transporte el vídeo corporativo tiene que enseñar una operación en marcha sin detenerla. Cuento cómo planteo un vídeo corporativo para este sector: qué planos importan y qué se evita.",
+    seoTitle: "Vídeo corporativo sector logístico y transporte | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo para el sector logístico y de transporte: cómo grabo en almacenes y flotas en Madrid sin frenar la operación diaria.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "En logística y transporte el vídeo corporativo tiene un problema de partida distinto al de otros sectores: la operación no se detiene para que grabes. Un almacén sigue moviendo mercancía, una flota sigue saliendo a ruta, y el rodaje tiene que encajar dentro de ese movimiento sin frenarlo.",
+      },
+      {
+        type: "paragraph",
+        text: "He grabado en centros de distribución y con empresas de transporte en Madrid, y lo que mejor funciona no es el vídeo más espectacular, sino el que consigue mostrar la escala y el orden de la operación real sin interrumpir un solo turno de trabajo.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-logistico-transporte/hero.webp",
+        alt: "Carretilla elevadora cargando mercancía en un camión en el exterior de un almacén",
+        width: 1920,
+        height: 864,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Un vídeo corporativo para logística y transporte suele buscar uno de estos objetivos: demostrar capacidad operativa ante un cliente potencial, explicar un proceso de picking o distribución de forma clara, o mostrar la flota y las instalaciones como argumento de confianza en una licitación. Cada objetivo pide un ritmo distinto, pero todos comparten el mismo material de base: la operación tal cual es.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque en este sector el cliente que decide contratar rara vez visita el almacén en persona antes de firmar. El vídeo hace ese papel: enseña volumen, orden y control sin que nadie tenga que desplazarse a comprobarlo.",
+      },
+      {
+        type: "paragraph",
+        text: "También importa porque la estética genérica de este sector —planos aéreos de naves y música corporativa sin ningún rostro humano— transmite lo contrario de lo que se busca. Un cliente que contrata logística confía en personas y procesos, no solo en metros cuadrados de nave.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "El rodaje se planifica alrededor de los turnos, no al revés" },
+      {
+        type: "paragraph",
+        text: "Antes de fijar fecha pido el cuadro de turnos y los picos de actividad del almacén o la flota. Grabar en el momento de menor carga operativa reduce el riesgo de interrumpir procesos críticos y facilita que los empleados hablen a cámara sin la presión de un pedido urgente esperando.",
+      },
+      { type: "heading", level: 3, text: "Los planos siguen el flujo real de la mercancía" },
+      {
+        type: "paragraph",
+        text: "En vez de plantear tomas sueltas y bonitas, sigo el recorrido real: entrada de mercancía, almacenaje, picking, embalaje, carga y salida. Ese hilo conductor da al vídeo una lógica que el espectador entiende sin necesidad de voz en off explicando cada paso.",
+      },
+      { type: "heading", level: 3, text: "Los empleados hablan de su función concreta, no de la empresa en general" },
+      {
+        type: "paragraph",
+        text: "Prefiero que un mozo de almacén cuente cómo prepara un pedido, o que un conductor explique cómo planifica una ruta, antes que un directivo hablando de valores corporativos. Es un testimonio corto, específico, y transmite más credibilidad que cualquier eslogan sobre eficiencia.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-logistico-transporte/intermedia.webp",
+        alt: "Camión de transporte de mercancías en un muelle de carga de un almacén industrial",
+        width: 1920,
+        height: 1252,
+        caption: "Seguir el flujo real de la mercancía da al vídeo una lógica que no necesita explicación.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Grabar en hora punta y forzar a los empleados a actuar con normalidad mientras gestionan pedidos reales.",
+          "Abusar de planos aéreos de la nave sin mostrar a ninguna persona trabajando dentro.",
+          "Pedir testimonios genéricos sobre 'compromiso' en vez de explicaciones concretas de una tarea.",
+          "No coordinar con seguridad y prevención de riesgos laborales antes de moverse por zonas de tránsito de carretillas.",
+          "Grabar la flota parada en el parking en vez de en ruta o en el muelle de carga real.",
+          "Ignorar el ruido ambiente del almacén y grabar audio que luego resulta inservible en montaje.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta un vídeo corporativo para una empresa de logística o transporte?",
+        answer:
+          "Para una pieza de una jornada de rodaje en almacén o ruta, con dos o tres testimonios de empleados, el rango habitual está entre 1.200 y 3.000 euros, según el número de localizaciones y si se incluye grabación con dron en exteriores.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar sin parar la actividad del almacén?",
+        answer:
+          "Sí, es lo habitual. Con un equipo reducido y planos definidos de antemano se graba en paralelo a la operación, coordinando con el responsable de turno los momentos de menor carga para las tomas que necesitan más calma.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta permiso especial para grabar en un almacén o centro logístico?",
+        answer:
+          "No suele hacer falta un permiso externo, pero sí una autorización interna de seguridad y prevención de riesgos laborales, sobre todo para moverse por zonas de tránsito de carretillas o muelles de carga.",
+      },
+      {
+        type: "faq",
+        question: "¿Conviene incluir imágenes de dron en este tipo de vídeo?",
+        answer:
+          "Ayuda para mostrar la escala de las instalaciones o de una flota en movimiento, pero solo como complemento. Un vídeo hecho solo de planos aéreos sin personas transmite frialdad y pierde la parte humana que da confianza al cliente.",
+      },
+      {
+        type: "paragraph",
+        text: "Si gestionas un almacén, un centro de distribución o una flota de transporte y necesitas un vídeo corporativo que muestre tu operación real, cuéntame tu proyecto desde /contacto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
