@@ -664,6 +664,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto (fallback evergreen — todos los 30 temas base cubiertos; tema extra generado fuera de lista, sin candidate SC limpio — token SC de Search Console sigue caducado, invalid_grant persistente desde hace semanas, requiere reautenticación manual). Imágenes Unsplash.",
   },
+  {
+    slug: "video-corporativo-sector-retail",
+    keyword: "vídeo corporativo para el sector retail",
+    intent: "informacional",
+    createdAt: "2026-08-27",
+    status: "published",
+    notes: "Auto-generado por blog-auto (fallback evergreen — todos los 30 temas base cubiertos; tema extra generado fuera de lista, sin candidate SC limpio — token SC de Search Console sigue caducado, invalid_grant persistente desde hace semanas, requiere reautenticación manual). Imágenes Unsplash.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {

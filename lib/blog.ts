@@ -10564,6 +10564,127 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-sector-retail",
+    title: "Vídeo corporativo para el sector retail: qué funciona y qué no",
+    description:
+      "Cómo planteo un vídeo corporativo para tiendas y cadenas retail en Madrid: qué planos transmiten marca, cómo grabar con la tienda abierta al público y qué errores evitar.",
+    publishedAt: "2026-08-27",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "sector retail",
+      "vídeo para tiendas",
+      "vídeo de marca",
+      "producción audiovisual",
+      "Madrid",
+    ],
+    keyword: "vídeo corporativo para el sector retail",
+    intent: "informacional",
+    excerpt:
+      "En retail el vídeo corporativo convive con tiendas abiertas y clientes reales entrando y saliendo. Cuento cómo planteo el rodaje para respetar el punto de venta y aun así transmitir marca.",
+    seoTitle: "Vídeo corporativo sector retail | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo para el sector retail: cómo grabo en tiendas abiertas al público en Madrid sin interrumpir la venta.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "En retail el vídeo corporativo tiene que convivir con tiendas abiertas al público, clientes reales entrando y saliendo, y un espacio pensado para vender, no para grabar. Eso cambia por completo cómo planteo el rodaje frente a otros sectores donde el espacio se puede vaciar sin más.",
+      },
+      {
+        type: "paragraph",
+        text: "He grabado en tiendas y cadenas en Madrid, y lo que mejor funciona no es el vídeo más pulido, sino el que respeta el ritmo del punto de venta y aun así consigue transmitir la marca con claridad.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-retail/hero.webp",
+        alt: "Interior de una boutique con ropa organizada en percheros bajo luz cálida",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Un vídeo corporativo para retail suele perseguir uno de tres objetivos: presentar una apertura o remodelación de tienda, mostrar la experiencia de compra para redes o web, o documentar la cultura interna de cara a captación de personal. Cada objetivo cambia el tipo de plano, pero todos parten del mismo reto: el espacio ya está diseñado para el cliente, no para la cámara.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque en retail la decisión de compra se juega en segundos, y ese mismo criterio se traslada a cómo un vídeo capta o pierde la atención. Un plano mal iluminado o un lineal desordenado en pantalla comunica justo lo contrario de lo que la marca proyecta en la tienda física.",
+      },
+      {
+        type: "paragraph",
+        text: "También importa porque muchas cadenas graban con el móvil de un encargado y suben ese material a redes sin ningún criterio de imagen de marca. Un vídeo corporativo bien planteado eleva ese mismo contenido sin perder la espontaneidad que funciona en redes sociales.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "El rodaje se coordina con las horas de menor afluencia" },
+      {
+        type: "paragraph",
+        text: "Pido siempre el dato de tráfico de la tienda por franjas horarias y planteo el rodaje en los momentos de menor afluencia, normalmente a primera hora antes de la apertura o en el cambio de turno de mediodía entre semana. Así se evita interrumpir a clientes reales y se gana margen para repetir tomas sin presión.",
+      },
+      { type: "heading", level: 3, text: "Los planos muestran producto y personas, no solo el local vacío" },
+      {
+        type: "paragraph",
+        text: "Un error habitual es grabar la tienda vacía y perfecta, sin nadie dentro. Prefiero combinar tomas del espacio con producto colocado y con al menos un dependiente atendiendo o reponiendo, porque eso es lo que un cliente ve al entrar y es lo que da credibilidad al vídeo.",
+      },
+      { type: "heading", level: 3, text: "El sonido ambiente se cuida tanto como la imagen" },
+      {
+        type: "paragraph",
+        text: "La música de tienda, el ruido de caja y las conversaciones de fondo forman parte de la experiencia real de compra. Grabo un poco de ese ambiente sonoro y lo dejo de fondo a bajo volumen en montaje, en vez de sustituirlo todo por música de librería que desconecta el vídeo del local real.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-retail/intermedia.webp",
+        alt: "Pasillo de una tienda con estanterías de producto bien organizadas",
+        width: 1920,
+        height: 1440,
+        caption: "Combinar producto colocado con presencia de personal da más credibilidad que un local vacío.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Grabar con la tienda cerrada al público y perder el ritmo natural que da tener gente dentro.",
+          "Encuadrar solo estanterías y producto sin ningún rostro que dé cercanía a la marca.",
+          "Usar música genérica que no tiene nada que ver con la identidad sonora real de la tienda.",
+          "No pedir permiso a los clientes que aparecen reconocibles en plano.",
+          "Programar el rodaje en fin de semana o en campaña, cuando el personal no tiene margen para atender al equipo de grabación.",
+          "Entregar un vídeo en horizontal cuando el destino real es Instagram o TikTok en vertical.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta un vídeo corporativo para una tienda o cadena retail?",
+        answer:
+          "Para una jornada de rodaje en un único punto de venta, con planos de producto y uno o dos testimonios de empleados, el rango habitual está entre 800 y 2.000 euros, según si se cubre una sola tienda o varias localizaciones de la cadena.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar con la tienda abierta al público?",
+        answer:
+          "Sí, es lo recomendable. Con un equipo reducido y planos definidos de antemano se graba en horas de menor afluencia, avisando al personal de turno para que colabore sin descuidar la atención a los clientes.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta pedir permiso a los clientes que salen en el vídeo?",
+        answer:
+          "Si un cliente aparece reconocible en plano, sí conviene pedirle autorización verbal o una cesión de imagen breve. Lo habitual es priorizar planos de manos, producto o clientes de espaldas para evitar ese trámite.",
+      },
+      {
+        type: "faq",
+        question: "¿Conviene grabar en vertical para una tienda retail?",
+        answer:
+          "Depende del destino. Si el vídeo va a Instagram, TikTok o pantallas del propio punto de venta, sí conviene grabar en vertical desde el principio en vez de recortar un vídeo horizontal después.",
+      },
+      {
+        type: "paragraph",
+        text: "Si gestionas una tienda o una cadena retail y necesitas un vídeo corporativo que muestre tu punto de venta real, cuéntame tu proyecto desde /contacto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
