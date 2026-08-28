@@ -10685,6 +10685,127 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-sector-energetico",
+    title: "Vídeo corporativo para el sector energético: qué lo hace distinto",
+    description:
+      "Cómo planteo un vídeo corporativo para parques eólicos, plantas solares y otras instalaciones energéticas en España: accesos, seguridad y planos que transmiten operación real.",
+    publishedAt: "2026-08-28",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "sector energético",
+      "renovables",
+      "vídeo industrial",
+      "seguridad laboral",
+      "producción audiovisual",
+    ],
+    keyword: "vídeo corporativo para el sector energético",
+    intent: "informacional",
+    excerpt:
+      "En el sector energético el vídeo corporativo se juega en instalaciones activas, con protocolos de seguridad estrictos y accesos limitados. Cuento cómo planteo el rodaje para cumplir la normativa y aun así transmitir la escala del proyecto.",
+    seoTitle: "Vídeo corporativo sector energético | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo para el sector energético: cómo grabo en parques eólicos y plantas solares respetando la seguridad y sin parar la operación.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "El sector energético plantea un reto distinto al resto: la mayoría de instalaciones (parques eólicos, plantas solares, subestaciones) son activas, con protocolos de seguridad estrictos y accesos restringidos por motivos técnicos, no de imagen. Grabar ahí exige planificar con la operación, no alrededor de ella.",
+      },
+      {
+        type: "paragraph",
+        text: "He grabado en parques eólicos y plantas solares en España, y lo que cambia respecto a un rodaje de oficina es que el entorno manda: la meteorología, los turnos de mantenimiento y las normas de acceso deciden cuándo y cómo se graba, no el calendario de producción.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-energetico/hero.webp",
+        alt: "Parque eólico con aerogeneradores junto a paneles solares al atardecer",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Un vídeo corporativo para el sector energético suele responder a tres necesidades: mostrar la operación real de una planta o parque a inversores y stakeholders, documentar un proyecto de construcción o ampliación fase a fase, o comunicar el compromiso de una compañía con la transición energética de forma creíble, sin caer en el greenwashing visual.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque este es un sector donde la confianza técnica pesa más que la estética. Un inversor o un cliente industrial no busca un vídeo bonito, busca ver que la instalación funciona, que el equipo humano detrás sabe lo que hace y que los datos que se comunican en la memoria del proyecto se sostienen con imagen real.",
+      },
+      {
+        type: "paragraph",
+        text: "También importa porque el acceso a estas instalaciones no se repite fácilmente. Una vez el equipo de grabación entra y sale, volver la semana siguiente suele implicar coste doble o triple, así que la planificación previa pesa mucho más que en otros sectores.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "El acceso se coordina con el responsable de seguridad, no solo con marketing" },
+      {
+        type: "paragraph",
+        text: "Antes de fijar fecha de rodaje pido hablar directamente con el responsable de PRL o el jefe de planta, no solo con el equipo de comunicación. Son ellos quienes marcan qué zonas son accesibles, qué EPI hace falta y en qué franjas horarias la operación permite tener personal ajeno dentro.",
+      },
+      { type: "heading", level: 3, text: "El equipo de grabación lleva el mismo EPI que un trabajador de planta" },
+      {
+        type: "paragraph",
+        text: "Casco, calzado de seguridad, chaleco reflectante y, según la instalación, arnés o formación específica de acceso. No es un trámite: sin ese equipo simplemente no se entra, y llevarlo desde el primer día evita perder una jornada de rodaje por no cumplir un requisito básico.",
+      },
+      { type: "heading", level: 3, text: "Los planos combinan la escala de la instalación con el trabajo humano" },
+      {
+        type: "paragraph",
+        text: "Un aerogenerador o un campo solar sin nadie dentro transmite tamaño, pero no transmite operación. Prefiero intercalar planos generales, muchas veces con dron cuando el espacio aéreo lo permite, con planos de técnicos haciendo mantenimiento o revisión, porque es lo que da credibilidad al proyecto frente a inversores.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-energetico/intermedia.webp",
+        alt: "Técnico instalando y revisando un panel solar",
+        width: 1920,
+        height: 1281,
+        caption: "Los planos de mantenimiento real dan más credibilidad que la instalación vacía y perfecta.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Pedir vuelo de dron sin verificar antes las restricciones de espacio aéreo cerca de la instalación o de líneas eléctricas.",
+          "Grabar sin el EPI o sin la formación de acceso que exige la planta, y perder el permiso de entrada el mismo día.",
+          "Mostrar solo la instalación vacía, sin ningún técnico ni proceso de mantenimiento en plano.",
+          "No tener un plan B si la meteorología cambia el día del rodaje (viento, lluvia, niebla).",
+          "Usar gráficos genéricos de \"sostenibilidad\" en vez de datos reales de producción del propio proyecto.",
+          "Subestimar el tiempo de tránsito interno de la planta al planificar la jornada de grabación.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta un vídeo corporativo para una instalación energética?",
+        answer:
+          "Para una jornada de rodaje en una única instalación, con planos generales, dron si el espacio aéreo lo permite y una o dos entrevistas técnicas, el rango habitual está entre 1.200 y 3.000 euros, según la complejidad de accesos y si hace falta más de un día.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta formación específica para grabar en un parque eólico o una planta solar?",
+        answer:
+          "Depende de la instalación, pero es habitual que se exija al menos un curso básico de PRL del sector y, en parques eólicos, formación de trabajo en altura si se accede a la góndola. Lo normal es que la propia planta facilite esa formación antes del acceso.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar con dron cerca de una instalación energética?",
+        answer:
+          "Solo si el espacio aéreo lo permite y con autorización previa de la planta y, en algunos casos, de AESA. Cerca de líneas de alta tensión o de aerogeneradores en movimiento hay restricciones estrictas que conviene verificar semanas antes del rodaje, no el mismo día.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto dura un rodaje típico en una planta energética?",
+        answer:
+          "Una jornada completa, entre 6 y 8 horas, suele bastar para una instalación de tamaño medio con planos generales, de detalle y un par de entrevistas. Proyectos de construcción por fases requieren varias visitas repartidas en semanas o meses.",
+      },
+      {
+        type: "paragraph",
+        text: "Si gestionas un parque eólico, una planta solar o cualquier instalación energética y necesitas un vídeo corporativo que muestre la operación real, cuéntame tu proyecto desde /contacto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
