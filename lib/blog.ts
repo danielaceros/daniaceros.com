@@ -10806,6 +10806,127 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-sector-hostelero-turistico",
+    title: "Vídeo corporativo para el sector hostelero y turístico: qué cambia",
+    description:
+      "Cómo planteo un vídeo corporativo para hoteles, restaurantes y negocios turísticos: qué planos, sonido y formato transmiten mejor la experiencia real al cliente.",
+    publishedAt: "2026-08-31",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "hostelería",
+      "turismo",
+      "vídeo para hoteles",
+      "marketing audiovisual",
+      "producción audiovisual",
+    ],
+    keyword: "vídeo corporativo para el sector hostelero y turístico",
+    intent: "informacional",
+    excerpt:
+      "En hostelería y turismo el vídeo corporativo vende una experiencia, no un servicio. Cuento cómo planteo el rodaje para que funcione en la web, en redes y en plataformas de reserva.",
+    seoTitle: "Vídeo corporativo sector hostelero y turismo | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo para el sector hostelero y turístico: qué planos, sonido y formato transmiten mejor la experiencia real de un hotel o restaurante.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "En hostelería y turismo el vídeo corporativo vende una experiencia, no un servicio. Un hotel, un restaurante o una ruta guiada no se compran por sus características técnicas, se compran porque el cliente se imagina viviéndolos. Eso cambia por completo cómo planteo el rodaje.",
+      },
+      {
+        type: "paragraph",
+        text: "He grabado en hoteles boutique, restaurantes y negocios turísticos, y lo que distingue a este sector es que el vídeo tiene que generar deseo en segundos, no explicar procesos. Aquí cuento cómo lo enfoco para que funcione en la web, en redes y en plataformas de reserva.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-hostelero-turistico/hero.webp",
+        alt: "Recepción de un hotel boutique con mostrador de madera e iluminación cálida",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Un vídeo corporativo para hostelería y turismo suele responder a tres objetivos: mostrar el espacio y la experiencia para elevar la percepción de valor, apoyar la conversión en la propia web o en plataformas de reserva, y generar contenido recurrente para redes que mantenga el negocio visible entre estancias de clientes.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque en este sector la decisión de compra es mayoritariamente visual y emocional. Un usuario decide en pocos segundos si un hotel o un restaurante encaja con lo que busca, y las fotos estáticas ya no bastan para transmitir atmósfera, movimiento y sonido ambiente.",
+      },
+      {
+        type: "paragraph",
+        text: "También importa porque la competencia es alta y el margen de diferenciación real, bajo. Dos hoteles con la misma categoría y precio similar compiten sobre todo por cómo comunican la experiencia, y ahí el vídeo pesa más que cualquier otro formato.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "El espacio se graba en horario real de servicio, no vacío" },
+      {
+        type: "paragraph",
+        text: "Un hotel sin huéspedes o un restaurante sin comensales transmite lo contrario de lo que se busca. Prefiero coordinar el rodaje en franjas con actividad real, como el check-in de la tarde o el servicio de cena, aunque eso complique la logística, porque el resultado se nota en la credibilidad.",
+      },
+      { type: "heading", level: 3, text: "El sonido ambiente importa tanto como la imagen" },
+      {
+        type: "paragraph",
+        text: "En hostelería el sonido vende tanto como el plano: el ruido de una cocina, el murmullo de una terraza, la música de un lobby. Grabo sonido directo siempre que puedo, y cuando no es viable por ruido ambiente añado capas de sonido en postproducción para no dejar la pieza muda de atmósfera.",
+      },
+      { type: "heading", level: 3, text: "El formato se piensa para cada canal desde el guion" },
+      {
+        type: "paragraph",
+        text: "No grabo un único vídeo y lo recorto después para todo. Un hotel necesita piezas verticales cortas para Instagram y TikTok, un vídeo horizontal más largo para la web y, en muchos casos, clips específicos para la ficha de Booking o Google. Decidir esto antes del rodaje evita planos que no sirven para ningún canal.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-hostelero-turistico/intermedia.webp",
+        alt: "Cocinero emplatando un plato en un restaurante durante el servicio",
+        width: 1920,
+        height: 1281,
+        caption: "Los planos de servicio real, cocina, sala, atención, transmiten más que el espacio vacío y perfecto.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Grabar solo el espacio vacío, sin ningún cliente ni personal en plano, perdiendo la sensación de experiencia real.",
+          "No pedir autorización de imagen a los clientes que aparecen en plano, lo que obliga a desechar material útil después.",
+          "Ignorar el sonido ambiente y entregar un vídeo mudo de atmósfera que hay que rellenar con música genérica.",
+          "Grabar en temporada baja o con poca ocupación y usar ese material para vender temporada alta.",
+          "No adaptar el vídeo a formato vertical, perdiendo la mayor parte del alcance en Instagram y TikTok.",
+          "Centrar todo el vídeo en las instalaciones y no dejar ni un plano de las personas que dan el servicio.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta un vídeo corporativo para un hotel o restaurante?",
+        answer:
+          "Para una jornada de rodaje con planos generales, ambiente y dos o tres piezas cortas para redes, el rango habitual está entre 900 y 2.500 euros, según el número de espacios y si hace falta grabar en varios turnos del día.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta pedir permiso a los clientes que salen en el vídeo?",
+        answer:
+          "Sí. Lo más práctico es tener un consentimiento de imagen breve preparado de antemano y pedirlo en el momento, o directamente trabajar con figurantes o personal del negocio si no se quiere depender de clientes reales.",
+      },
+      {
+        type: "faq",
+        question: "¿En qué momento del día conviene grabar un hotel o restaurante?",
+        answer:
+          "Depende del objetivo, pero suelo combinar la luz natural de primera hora de la tarde para exteriores y terrazas con el ambiente real del servicio de comidas o cenas, que aporta la actividad que hace creíble el vídeo.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto dura un vídeo corporativo para hostelería?",
+        answer:
+          "Para la web funciona mejor una pieza de 60 a 90 segundos. Para redes recorto esa misma sesión en clips de 15 a 30 segundos pensados para cada plataforma, en lugar de subir el vídeo largo entero.",
+      },
+      {
+        type: "paragraph",
+        text: "Si gestionas un hotel, un restaurante o un negocio turístico y quieres un vídeo corporativo que transmita la experiencia real, no solo el espacio, cuéntame tu proyecto desde /contacto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
