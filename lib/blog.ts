@@ -10927,6 +10927,127 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-sector-construccion",
+    title: "Vídeo corporativo para el sector de la construcción: cómo lo planteo",
+    description:
+      "Cómo enfoco un vídeo corporativo en obra: seguridad, dron, documentación de fases y los errores que veo repetirse en constructoras y promotoras.",
+    publishedAt: "2026-09-01",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "construcción",
+      "obra civil",
+      "vídeo institucional",
+      "dron",
+      "producción audiovisual",
+    ],
+    keyword: "vídeo corporativo para el sector de la construcción",
+    intent: "informacional",
+    excerpt:
+      "En construcción el vídeo corporativo tiene que convivir con seguridad, ruido y polvo. Cuento cómo planteo el rodaje en obra para que el resultado sea útil y no solo bonito.",
+    seoTitle: "Vídeo corporativo para el sector de la construcción | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo para el sector de la construcción: seguridad en obra, uso de dron, documentación de fases y errores comunes al grabar en una constructora.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Grabar en una obra no se parece a grabar en una oficina. Hay ruido, polvo, maquinaria en movimiento y normas de seguridad que no son opcionales. Un vídeo corporativo para una constructora o promotora tiene que asumir todo eso desde el planteamiento, no improvisarlo el día del rodaje.",
+      },
+      {
+        type: "paragraph",
+        text: "He grabado en obras de vivienda, naves industriales y proyectos de obra civil, y lo que distingue a este sector es que el vídeo casi nunca es el objetivo principal de la jornada: la obra sigue funcionando alrededor. Aquí cuento cómo me organizo para que el rodaje no interfiera y el resultado sirva de verdad.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-construccion/hero.webp",
+        alt: "Trabajador con casco sobre una excavadora en una obra de construcción",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Un vídeo corporativo en construcción suele responder a tres necesidades: mostrar el avance de un proyecto a inversores o clientes, documentar la capacidad técnica de la constructora para futuras licitaciones, y dejar constancia visual de fases de obra que luego quedan ocultas bajo otras capas de trabajo.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque en este sector la confianza se construye con evidencia. Un promotor que enseña avance real de obra, con fechas y contexto, transmite más seguridad que cualquier render o folleto. Y una constructora que documenta bien su trabajo tiene material reutilizable durante años, no solo para un cliente puntual.",
+      },
+      {
+        type: "paragraph",
+        text: "También importa porque muchas fases de una obra no se repiten. Una cimentación, una estructura antes de cerrar fachada, una instalación que después queda tapada: si no se graba en su momento, esa imagen se pierde para siempre.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "La seguridad condiciona todo el rodaje" },
+      {
+        type: "paragraph",
+        text: "Antes de pensar en planos, coordino el acceso con el coordinador de seguridad y salud de la obra. Eso significa casco, chaleco y botas homologadas siempre, formación básica de acceso cuando la exige la obra, y aceptar que ciertas zonas o momentos simplemente no son grabables. No negocio esto nunca, aunque suponga perder un plano que me gustaría tener.",
+      },
+      { type: "heading", level: 3, text: "El dron aporta la escala que el suelo no puede dar" },
+      {
+        type: "paragraph",
+        text: "En obra, el plano aéreo no es un capricho estético: es la única forma de mostrar la magnitud real de un proyecto, su relación con el entorno y el avance entre fases si se repite el mismo encuadre cada cierto tiempo. Necesita autorización previa de la promotora y, según la zona, de AESA, así que lo planifico con semanas de antelación, no el día antes.",
+      },
+      { type: "heading", level: 3, text: "Documentar el avance de obra requiere planificación a medio plazo" },
+      {
+        type: "paragraph",
+        text: "Un solo rodaje no cuenta la historia de una obra. Cuando el objetivo es mostrar evolución, propongo visitas repartidas en varias fases, con los mismos puntos de cámara siempre que sea posible, para que el contraste entre una visita y otra se note con claridad al montarlo.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-construccion/intermedia.webp",
+        alt: "Grupo de trabajadores de la construcción de pie en una obra",
+        width: 1920,
+        height: 1280,
+        caption: "Los planos con personas trabajando transmiten actividad real, no solo maquinaria y estructura vacía.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "No coordinar el acceso con el responsable de seguridad y salud, lo que puede paralizar el rodaje en obra.",
+          "Grabar sin el equipo de protección adecuado, algo que además de peligroso puede impedir el acceso.",
+          "Exponer cámaras y objetivos al polvo y la vibración sin protección, acortando su vida útil.",
+          "No dejar constancia de fases tempranas que luego quedan ocultas bajo hormigón, fachada o instalaciones.",
+          "Subestimar el ruido de maquinaria y confiar en sonido directo para entrevistas junto a la obra activa.",
+          "No pedir autorización explícita de la promotora o constructora antes de publicar imágenes del proyecto.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta un vídeo corporativo para una obra o constructora?",
+        answer:
+          "Para una jornada de rodaje con planos generales, dron y una o dos entrevistas, el rango habitual está entre 1.000 y 2.800 euros. Si el proyecto requiere varias visitas para documentar fases, el presupuesto se plantea por sesión y se cierra un paquete conjunto.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar con dron en una obra en construcción?",
+        answer:
+          "Sí, pero requiere autorización previa de la promotora y, en muchos casos, notificación o permiso de AESA según la zona y la altura de vuelo. Cerca de grúas en movimiento o líneas eléctricas hay restricciones estrictas que hay que verificar antes del día de vuelo.",
+      },
+      {
+        type: "faq",
+        question: "¿En qué fase de la obra conviene empezar a grabar?",
+        answer:
+          "Cuanto antes, si el objetivo es documentar la evolución completa. La cimentación y la estructura son fases que después quedan ocultas, así que si hay interés en mostrar el proceso completo conviene empezar desde el movimiento de tierras.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta EPI para el equipo de grabación?",
+        answer:
+          "Sí, siempre. Casco, chaleco reflectante y botas de seguridad homologadas son obligatorios en cualquier obra activa, y algunas exigen además formación básica de prevención de riesgos antes de permitir el acceso.",
+      },
+      {
+        type: "paragraph",
+        text: "Si gestionas una constructora o promotora y necesitas documentar el avance de un proyecto o mostrar tu capacidad técnica en vídeo, cuéntame tu proyecto desde /contacto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
