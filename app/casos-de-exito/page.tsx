@@ -8,9 +8,9 @@ import { buildMetadata } from "@/lib/seo"
 const casosDeExito = [
   { slug: "fifa", category: "Evento corporativo internacional" },
   { slug: "camara-de-comercio", category: "Evento subvencional" },
-  { slug: "federacion-esgrima", category: "Competición deportiva" },
+  { slug: "real-madrid-riquelme", category: "Campaña electoral · Real Madrid" },
   { slug: "ifema", category: "Vídeo institucional" },
-  { slug: "tengo-un-plan", category: "Marca personal y formación" },
+  { slug: "rimmel-london", category: "Campaña de marca · Rimmel London" },
   { slug: "cinesa", category: "Experiencia de marca" },
   { slug: "omar-montes", category: "Concierto" },
   { slug: "brahim-diaz", category: "Proyecto promocional Sony Pictures" },
