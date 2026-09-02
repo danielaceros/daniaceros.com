@@ -11048,6 +11048,126 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-sector-automocion",
+    title: "Vídeo corporativo para el sector de la automoción: cómo lo planteo",
+    description:
+      "Cómo enfoco un vídeo corporativo de automoción: iluminación de producto, rodaje en planta y vehículos en movimiento, y los errores que veo repetirse en concesionarios y fabricantes.",
+    publishedAt: "2026-09-02",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "automoción",
+      "sector industrial",
+      "vídeo de producto",
+      "producción audiovisual",
+    ],
+    keyword: "vídeo corporativo para el sector de la automoción",
+    intent: "informacional",
+    excerpt:
+      "En automoción grabo cosas muy distintas bajo un mismo encargo: el vehículo como producto y la fábrica o el taller como proceso. Cuento cómo separo ambos enfoques al rodar.",
+    seoTitle: "Vídeo corporativo para automoción | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo para el sector de la automoción: producto, planta y vehículos en movimiento, y cómo planteo cada rodaje sin mezclarlos.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "En automoción grabo dos cosas muy distintas bajo el mismo encargo: el vehículo como producto y la fábrica o el taller como proceso. Cada una pide una iluminación y un ritmo de cámara distintos, y mezclarlas sin darse cuenta es el error que más veo repetirse en presupuestos que llegan ya cerrados.",
+      },
+      {
+        type: "paragraph",
+        text: "He rodado en concesionarios, en naves de montaje y en talleres de flota, y lo que cambia entre ellos no es solo el tamaño del espacio: cambia qué tiene que brillar y qué tiene que parecer sólido. Un concesionario vende deseo, una planta vende confianza técnica, y un taller de flota vende disponibilidad. Aquí cuento cómo planteo el rodaje según el objetivo real del vídeo.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-automocion/hero.webp",
+        alt: "Carrocería de un vehículo sin pintar sobre la línea de montaje de una fábrica de automóviles",
+        width: 1920,
+        height: 1281,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Un vídeo corporativo de automoción suele responder a tres necesidades: vender el vehículo o el servicio en un concesionario o una flota de alquiler, mostrar capacidad de producción a un cliente B2B como fabricante de componentes o carrocero, o documentar procesos internos de calidad y seguridad.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque en este sector la percepción de precisión pesa mucho. Un vídeo que muestra chapa con reflejos limpios y una línea de montaje ordenada transmite control de calidad antes de que el cliente lea una sola cifra de producción. Un vídeo con reflejos sucios o encuadres torcidos transmite justo lo contrario, aunque el proceso real detrás sea impecable.",
+      },
+      {
+        type: "paragraph",
+        text: "También importa porque buena parte del proceso no se puede repetir fácilmente. Una vez montado el vehículo, un plano de una pieza desnuda o de una soldadura concreta ya no vuelve a estar disponible sin desmontar de nuevo. Si el vídeo tiene que documentar una fase concreta, esa fase hay que grabarla cuando existe, no cuando queda hueco en la agenda.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "El producto pide luz controlada, no luz abundante" },
+      {
+        type: "paragraph",
+        text: "Para planos de vehículo uso luz difusa y paneles grandes para controlar el reflejo en la chapa, nunca luz directa. Un solo foco mal colocado se ve como una mancha sobre el capó. Prefiero mover el coche o la cámara antes que mover luces sobre una superficie tan reflectante, y reviso el encuadre en un monitor externo para detectar reflejos que a simple vista pasan desapercibidos.",
+      },
+      { type: "heading", level: 3, text: "La planta pide orden y anticipación, no espontaneidad" },
+      {
+        type: "paragraph",
+        text: "En una línea de montaje coordino el rodaje con el responsable de producción para grabar en las franjas donde el ritmo de la cadena es constante, no en arranques ni paradas. Pido siempre el equipo de protección exigido y respeto las zonas señalizadas sin excepción, aunque eso suponga perder un plano. También pregunto qué se puede mostrar y qué no: hay procesos que la empresa considera confidenciales frente a la competencia.",
+      },
+      { type: "heading", level: 3, text: "El vehículo en movimiento se planifica como un rodaje aparte" },
+      {
+        type: "paragraph",
+        text: "Si el vídeo incluye tomas del coche circulando, trato esa parte como un rodaje distinto: circuito cerrado o vía autorizada, coche de seguimiento o dron, y comunicación por radio con el conductor. No lo improviso el mismo día que grabo interiores de fábrica, porque las necesidades de equipo, seguros y permisos son otras.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-automocion/intermedia.webp",
+        alt: "Mecánico inspeccionando el motor de un vehículo con el capó abierto en un taller",
+        width: 1920,
+        height: 1080,
+        caption: "Los planos de detalle sobre el proceso transmiten precisión mejor que un plano general del taller.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Iluminar el vehículo como si fuera una entrevista, generando reflejos duros en la carrocería.",
+          "Grabar en planta sin coordinar con el responsable de producción, interrumpiendo la cadena de montaje.",
+          "Grabar vehículos en movimiento fuera de un circuito cerrado o una vía autorizada.",
+          "Mezclar en el mismo bloque el tono de venta del producto con el tono técnico del proceso sin transición clara.",
+          "Confiar el sonido ambiente de la planta a la postproducción en lugar de gestionarlo en el rodaje.",
+          "No proteger el equipo de aceite, virutas o polvo metálico en zonas de taller.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta un vídeo corporativo para automoción?",
+        answer:
+          "Para una jornada de rodaje de producto con dos o tres vehículos y algunos planos de instalaciones, el rango habitual está entre 1.200 y 3.000 euros. Si se añade rodaje del vehículo en movimiento con coche de seguimiento o dron, el presupuesto sube según los medios necesarios.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar dentro de una fábrica o línea de montaje?",
+        answer:
+          "Sí, pero siempre con autorización previa y coordinación con el responsable de producción y de seguridad. Cada planta tiene sus propias normas de acceso, equipo de protección y zonas restringidas, y hay que respetarlas sin excepción.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué cámara conviene para planos de producto de vehículos?",
+        answer:
+          "Trabajo con una Sony A7 y objetivos macro o teleobjetivo para controlar el reflejo y aislar detalles como logotipos, llantas o acabados interiores, sin tener que acercar demasiado la luz al vehículo.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto dura un vídeo corporativo típico de automoción?",
+        answer:
+          "Entre 60 y 120 segundos si es para venta o marketing de producto, y entre 3 y 5 minutos si el objetivo es mostrar capacidad de producción a un cliente B2B en un proceso de licitación.",
+      },
+      {
+        type: "paragraph",
+        text: "Si necesitas un vídeo corporativo para tu concesionario, tu planta de producción o tu taller de flota, escríbeme desde /contacto y lo planteamos según el objetivo real del vídeo: vender producto, demostrar capacidad técnica o documentar un proceso que no se va a repetir.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
