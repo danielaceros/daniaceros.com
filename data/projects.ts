@@ -3,9 +3,9 @@ export const projects = [
   {
     slug: "fifa",
     title: "FIFA",
-    video: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/fifa-98WBaS11GLqjg48M9ONvYb8cMUoOGU.mp4",
-    poster: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/fifa-poster-woE2AZxKs3YljPYx3UTbT8uHL6K8hd.jpg",
-    href: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/fifa-98WBaS11GLqjg48M9ONvYb8cMUoOGU.mp4",
+    video: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/fifa-v2-FQFtfBRirZMbcbgpuORPcL6npjsD8F.mp4",
+    poster: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/fifa-v2-poster-l63w9FIz7i8a38HA8SkF4QjuKUsBZ5.jpg",
+    href: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/fifa-v2-FQFtfBRirZMbcbgpuORPcL6npjsD8F.mp4",
     sections: [
         {
         title: "",
