@@ -39,7 +39,7 @@ export default function Hero({
       }`}
     >
       <div className="absolute inset-0">
-        <div className="hero-bg-ambient absolute -top-[10%] inset-0 h-[120%] w-full">
+        <div className="hero-bg-ambient absolute inset-0 h-full w-full">
           <Image
             src={VIDEO_POSTER_URL}
             alt=""
@@ -47,10 +47,11 @@ export default function Hero({
             priority
             quality={72}
             sizes="100vw"
-            className="h-full w-full scale-105 object-cover blur-[7px] opacity-70"
+            style={{ objectPosition: "center 22%" }}
+            className="h-full w-full scale-105 object-cover blur-[1.5px] opacity-90"
           />
         </div>
-        <div className="pointer-events-none absolute inset-0 bg-black/72" />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/85 via-black/45 to-black/80" />
       </div>
 
       <div
