@@ -74,8 +74,9 @@ export const projects = [
   {
   slug: "brahim-diaz",
   title: "Brahim Díaz",
-  video: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/ssstik.io_%40sonypicturesspain_1765025166403.mp4?alt=media&token=85e6bd4f-2ae0-4e7b-a795-84e34d415928",
-  href: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/ssstik.io_%40sonypicturesspain_1765025166403.mp4?alt=media&token=85e6bd4f-2ae0-4e7b-a795-84e34d415928",
+  video: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/brahim-diaz-oVDpWNAUiT0lgMCyHaGq2cnLaBNTvQ.mp4",
+  poster: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/brahim-diaz-poster-uRFFMrLpmkLp8nOHDgDWkqaY94gMiv.jpg",
+  href: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/brahim-diaz-oVDpWNAUiT0lgMCyHaGq2cnLaBNTvQ.mp4",
   sections: [
     {
       title: "",
@@ -363,8 +364,9 @@ export const projects = [
 {
   slug: "ifema",
   title: "IFEMA",
-  video: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/%F0%9F%8E%A5%20Un%20punto%20de%20encuentro%2C%20un%20impulso%2C%20y%20una%20sen%CC%83al%20clara-%20el%20sector%20esta%CC%81%20despertando.Tercer%20an%CC%83o%20c.mp4?alt=media&token=e9318ece-6817-48e0-a1a0-f6c90daf774f",
-  href: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/%F0%9F%8E%A5%20Un%20punto%20de%20encuentro%2C%20un%20impulso%2C%20y%20una%20sen%CC%83al%20clara-%20el%20sector%20esta%CC%81%20despertando.Tercer%20an%CC%83o%20c.mp4?alt=media&token=e9318ece-6817-48e0-a1a0-f6c90daf774f",
+  video: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/ifema-M2z4wQuTl5xemnLUxjFrS4fx9J0Eq6.mp4",
+  poster: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/ifema-poster-m2zfbFvOQ4XE2mEURnSbK3ByvgEIzh.jpg",
+  href: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/ifema-M2z4wQuTl5xemnLUxjFrS4fx9J0Eq6.mp4",
   sections: [
     {
       title: "",
