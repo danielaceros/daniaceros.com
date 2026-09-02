@@ -74,7 +74,7 @@ export default function About({ sectionClassName, mobileCompactSplit = false }: 
       >
         <div className="hover-lift lux-shine relative">
           <Image
-            src="https://kgtz1gujr7extokb.public.blob.vercel-storage.com/sobre-mi/daniel-acero-vJCpxybUH3PXw2EXt7bwa01vHZwbQL.jpeg"
+            src="https://kgtz1gujr7extokb.public.blob.vercel-storage.com/sobre-mi/daniel-acero-ceo-awards-bqVq9Ciw7DVt6yXSt5RamnQXn0WOJj.jpeg"
             alt="Daniel Acero"
             width={560}
             height={760}

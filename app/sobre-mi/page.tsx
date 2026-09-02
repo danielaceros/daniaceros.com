@@ -6,7 +6,7 @@ import ContactCTA from "@/components/ContactCTA"
 import { ease, stagger, viewport } from "@/lib/motion"
 
 const portraitUrl =
-  "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/sobre-mi/daniel-acero-vJCpxybUH3PXw2EXt7bwa01vHZwbQL.jpeg"
+  "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/sobre-mi/daniel-acero-ceo-awards-bqVq9Ciw7DVt6yXSt5RamnQXn0WOJj.jpeg"
 
 const diferenciadores = [
   {

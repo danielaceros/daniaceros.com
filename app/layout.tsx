@@ -8,7 +8,7 @@ import LuxuryMotionProvider from "@/components/LuxuryMotionProvider"
 import { DEFAULT_OG_IMAGE, SITE_URL } from "@/lib/seo"
 
 const FAVICON_URL =
-  "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/sobre-mi/daniel-acero-vJCpxybUH3PXw2EXt7bwa01vHZwbQL.jpeg"
+  "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/sobre-mi/daniel-acero-ceo-awards-bqVq9Ciw7DVt6yXSt5RamnQXn0WOJj.jpeg"
 
 const manrope = Manrope({
   subsets: ["latin"],
