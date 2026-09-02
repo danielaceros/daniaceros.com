@@ -8,6 +8,7 @@ import { createPortal } from "react-dom"
 type Props = {
   title: string
   video: string
+  poster?: string
   href: string
   index?: number
   openInModal?: boolean
@@ -24,6 +25,7 @@ const isInternal = (href: string) => href.startsWith("/")
 export default function PortfolioCard({
   title,
   video,
+  poster,
   href,
   index = 0,
   openInModal = false,
@@ -88,6 +90,7 @@ export default function PortfolioCard({
     <>
       <video
         src={shouldLoadVideo ? video : undefined}
+        poster={poster}
         autoPlay={canAutoplay}
         muted
         loop
@@ -153,6 +156,7 @@ export default function PortfolioCard({
                   </button>
                   <video
                     src={video}
+                    poster={poster}
                     controls
                     autoPlay
                     playsInline

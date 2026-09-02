@@ -6,7 +6,7 @@ import ContactCTA from "@/components/ContactCTA"
 import { ease, stagger, viewport } from "@/lib/motion"
 
 const portraitUrl =
-  "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/0a4bxjgj0xSqIihE9ktHzjeng%20(2).png?alt=media&token=ead483f1-9cd5-4169-9e3d-810307334885"
+  "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/sobre-mi/daniel-acero-vJCpxybUH3PXw2EXt7bwa01vHZwbQL.jpeg"
 
 const diferenciadores = [
   {

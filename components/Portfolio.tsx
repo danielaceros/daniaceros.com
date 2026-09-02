@@ -47,6 +47,7 @@ export default function Portfolio({
                     <PortfolioCard
                       title={project.title}
                       video={project.video}
+                      poster={project.poster}
                       href={`/portfolio/${project.slug}`}
                       index={i}
                       openInModal={openVideosInModal}
@@ -69,6 +70,7 @@ export default function Portfolio({
                     <PortfolioCard
                       title={project.title}
                       video={project.video}
+                      poster={project.poster}
                       href={`/portfolio/${project.slug}`}
                       index={i}
                       openInModal={openVideosInModal}
@@ -171,6 +173,7 @@ export default function Portfolio({
               key={project.slug}
               title={project.title}
               video={project.video}
+              poster={project.poster}
               href={`/portfolio/${project.slug}`}
               index={i}
               openInModal={openVideosInModal}

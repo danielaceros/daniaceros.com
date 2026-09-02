@@ -8,10 +8,11 @@ import { ease } from "@/lib/motion"
 type Props = {
   title: string
   video: string
+  poster?: string
   videoBlurClass?: string
 }
 
-export default function ProjectHero({ title, video, videoBlurClass = "blur-[0.5px]" }: Props) {
+export default function ProjectHero({ title, video, poster, videoBlurClass = "blur-[0.5px]" }: Props) {
   const [isOpen, setIsOpen] = useState(false)
   const [isHeroReady, setIsHeroReady] = useState(false)
   const [isModalReady, setIsModalReady] = useState(false)
@@ -57,6 +58,7 @@ export default function ProjectHero({ title, video, videoBlurClass = "blur-[0.5p
         >
           <video
             src={video}
+            poster={poster}
             autoPlay
             muted
             loop
@@ -118,6 +120,7 @@ export default function ProjectHero({ title, video, videoBlurClass = "blur-[0.5p
                 </button>
                 <video
                   src={video}
+                  poster={poster}
                   controls
                   autoPlay
                   playsInline
