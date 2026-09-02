@@ -293,9 +293,9 @@ export const projects = [
 {
   slug: "camara-de-comercio",
   title: "Cámara de Comercio",
-  video: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/camara-de-comercio-XNK3RizlkFMl0WnZO7F3D0Is7aGXsp.mp4",
-  poster: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/camara-de-comercio-poster-KLIdWG4OH0sLzqyOghAvPUEie6YOY9.jpg",
-  href: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/camara-de-comercio-XNK3RizlkFMl0WnZO7F3D0Is7aGXsp.mp4",
+  video: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/camara-de-comercio-v2-MHUeVJIHLxgmNPJgkMvQ6rsndafkMY.mp4",
+  poster: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/camara-de-comercio-v2-poster-ZbRQboqj3Sm5GFgRqDfGeFBywMTsfd.jpg",
+  href: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/camara-de-comercio-v2-MHUeVJIHLxgmNPJgkMvQ6rsndafkMY.mp4",
   sections: [
     {
       title: "",
