@@ -2,11 +2,13 @@
    infinito estilo Instagram Reels. Medidas y capas calcadas del mockup de
    iPhone usado en lavueltaalmundosinunduro.com (reel-frame / reel-screen). */
 
+/* El padre (en app/tv/page.tsx) es un contenedor [container-type:size] del
+   ancho de la página y del alto que sobre entre el título y el pie — nunca
+   viewport units directas, para que el móvil siempre quepa entero sin
+   forzar scroll de página, sea cual sea esa altura disponible. */
 .stage {
-  --phone-w: min(390px, 90vw);
-  --phone-h: min(760px, 78dvh);
-  width: min(var(--phone-w), calc(var(--phone-h) * 9 / 19.5));
-  height: min(var(--phone-h), calc(var(--phone-w) * 19.5 / 9));
+  width: min(390px, 100cqw, calc(100cqh * 9 / 19.5));
+  height: min(844px, 100cqh, calc(100cqw * 19.5 / 9));
   position: relative;
 }
 

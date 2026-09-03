@@ -8,6 +8,7 @@ const flushTopRoutes = new Set([
   "/politica-de-cookies",
   "/politica-de-privacidad",
   "/gracias",
+  "/tv",
 ])
 
 export default function PageTransition({ children }: { children: React.ReactNode }) {
