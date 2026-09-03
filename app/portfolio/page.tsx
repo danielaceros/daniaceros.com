@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 import SectionTitle from "@/components/SectionTitle"
 import PortfolioCard from "@/components/PortfolioCard"
 import PortfolioHero from "@/components/PortfolioHero"
@@ -29,6 +30,18 @@ export default function PortfolioPage() {
               href={`/portfolio/${project.slug}`}
             />
           ))}
+        </div>
+
+        <div className="mt-8 flex justify-center sm:mt-10">
+          <Link
+            href="/tv"
+            className="group relative inline-flex items-center gap-2 rounded-full border border-white/14 bg-white/[0.03] px-5 py-2.5 font-inter text-[11px] uppercase text-white/85 transition-all duration-300 hover:border-white/25 hover:bg-white/[0.06] hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+          >
+            Ver más, como en Instagram
+            <span className="transition-transform duration-300 group-hover:translate-x-0.5">
+              →
+            </span>
+          </Link>
         </div>
       </section>
       <ContactCTA />
