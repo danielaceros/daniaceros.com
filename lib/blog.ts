@@ -11168,6 +11168,126 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-para-pymes",
+    title: "Vídeo corporativo para pymes: qué necesitas y qué te puedes saltar",
+    description:
+      "Guía práctica de vídeo corporativo para pymes: qué objetivo fijar antes de pedir presupuesto, cuánto equipo hace falta de verdad y los errores que más dinero hacen perder.",
+    publishedAt: "2026-09-03",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "pymes",
+      "presupuesto audiovisual",
+      "producción audiovisual",
+      "marketing para pymes",
+    ],
+    keyword: "vídeo corporativo para pymes",
+    intent: "informacional",
+    excerpt:
+      "Una pyme no necesita un vídeo con valores de producción de gran marca. Necesita un objetivo claro, el equipo justo y una duración pensada para dónde se va a ver. Cuento cómo lo planteo.",
+    seoTitle: "Vídeo corporativo para pymes | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo para pymes: qué presupuesto, equipo y planificación necesitas realmente, sin pagar por cosas que luego no vas a usar.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Con las pymes veo el mismo patrón repetirse: o no graban nada porque asocian el vídeo corporativo a presupuestos de multinacional, o encargan una producción sobredimensionada porque nadie les dijo qué necesitaban realmente. Las dos cosas cuestan dinero, solo que de formas distintas.",
+      },
+      {
+        type: "paragraph",
+        text: "Llevo varios años grabando para negocios de 5 a 50 empleados en Madrid: despachos, talleres, clínicas, estudios y pequeñas fábricas. Aquí cuento cómo planteo un vídeo corporativo cuando el cliente es una pyme, qué parte del presupuesto importa de verdad y qué parte se puede recortar sin que se note.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-para-pymes/hero.webp",
+        alt: "Equipo de una pequeña empresa reunido alrededor de una mesa durante una sesión de trabajo",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Un vídeo corporativo para pyme suele tener un trabajo muy concreto: dar confianza a alguien que ya está mirando la web o el LinkedIn de la empresa y todavía no ha decidido escribir. No vende en frío, refuerza una decisión que ya está en marcha.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque una pyme compite contra empresas más grandes con presupuestos de marketing que no tiene. Un vídeo bien planteado, aunque sea sencillo, iguala la percepción de seriedad en los primeros quince segundos de una visita, que es donde se decide si alguien sigue mirando o se va.",
+      },
+      {
+        type: "paragraph",
+        text: "Y también importa saber qué no hace falta. Una pyme no necesita dron, ni actores, ni tres días de rodaje. Necesita que el fundador o el equipo se vean bien, se escuchen bien, y que el mensaje quede claro en menos de dos minutos. Todo lo demás es opcional y se paga aparte.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Fija un único objetivo antes de pedir presupuesto" },
+      {
+        type: "paragraph",
+        text: "Antes de hablar de cámaras pregunto para qué es el vídeo: ¿va en la home de la web?, ¿se usa en una reunión comercial?, ¿es para captar talento? Cada objetivo pide un enfoque distinto, y mezclar los tres en un único vídeo de dos minutos suele diluir el mensaje hasta que no sirve para ninguno de ellos bien.",
+      },
+      { type: "heading", level: 3, text: "Ajusta el equipo de rodaje al tamaño real del proyecto" },
+      {
+        type: "paragraph",
+        text: "Para la mayoría de pymes trabajo solo, con una Sony A7, un par de focos LED y un micrófono de solapa. Es suficiente para entrevistas y planos de oficina o taller. Solo sumo un segundo cámara si hay más de dos personas hablando el mismo día o si hace falta cubrir un evento en vivo que no se puede repetir.",
+      },
+      { type: "heading", level: 3, text: "Planifica la duración según dónde se va a ver" },
+      {
+        type: "paragraph",
+        text: "Para web y LinkedIn me muevo entre 60 y 90 segundos. Para una presentación comercial interna, hasta 3 minutos, porque ahí el espectador está más comprometido con el contenido. Un vídeo de 5 minutos en la home de una pyme casi nunca se ve entero, y ese metraje sobrante solo ha costado dinero de rodaje y edición.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-para-pymes/intermedia.webp",
+        alt: "Cámara de vídeo profesional sobre trípode preparada para grabar una entrevista",
+        width: 1920,
+        height: 1280,
+        caption: "Con una pyme, un equipo sencillo bien usado rinde más que una producción sobredimensionada.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Encargar un vídeo de empresa sin decidir antes dónde se va a publicar.",
+          "Pedir presupuesto para dron, actores o localizaciones adicionales sin que aporten al mensaje.",
+          "Grabar testimoniales de clientes sin haber preparado antes tres o cuatro preguntas guía.",
+          "Dejar el guion para el mismo día de la grabación, lo que suele alargar la jornada a más del doble.",
+          "No reservar presupuesto para subtítulos, clave si el vídeo se va a ver sin sonido en LinkedIn.",
+          "Grabar un solo vídeo genérico para usarlo en web, redes y ventas a la vez, sin adaptarlo a cada canal.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta un vídeo corporativo para una pyme?",
+        answer:
+          "Para una jornada de rodaje con una o dos entrevistas y planos del negocio, el rango habitual está entre 700 y 1.800 euros, según la duración final y si se incluye guion previo o subtítulos.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto dura una grabación típica para una pyme?",
+        answer:
+          "Entre 3 y 5 horas es suficiente para entrevistas, planos de equipo y del espacio de trabajo. Si hay que documentar un proceso completo en un taller o fábrica pequeña, puede subir a una jornada entera.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito guion escrito si voy a improvisar la entrevista?",
+        answer:
+          "No hace falta un guion cerrado, pero sí un listado de preguntas o puntos clave. Sin eso, la entrevista se alarga, la persona entrevistada se pierde y en edición cuesta mucho más encontrar el mensaje central.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo reutilizar el mismo vídeo en web, LinkedIn e Instagram?",
+        answer:
+          "La base sí, pero conviene cortar versiones distintas: una horizontal más larga para web, y recortes verticales más cortos con subtítulos para redes. Publicar el mismo archivo horizontal en todos los canales suele perder calidad de visionado en móvil.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes una pyme en Madrid y quieres un vídeo corporativo con el equipo justo para tu presupuesto, escríbeme desde /contacto y lo planteamos según el objetivo real, sin añadir nada que no vayas a usar.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
