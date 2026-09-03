@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image"
+import ViewMoreOnTV from "@/components/ViewMoreOnTV"
 import ContactCTA from "@/components/ContactCTA"
 
 const tiposEventos = [
@@ -149,6 +150,8 @@ export default function VideoEventosMadridPage() {
 
         </div>
       </section>
+
+      <ViewMoreOnTV className="px-4 pb-2" />
 
       <ContactCTA />
     </main>

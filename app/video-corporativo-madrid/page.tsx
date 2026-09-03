@@ -5,6 +5,7 @@ import { useState } from "react"
 import Image from "next/image"
 import { motion, AnimatePresence } from "framer-motion"
 import ContactPortfolioMarquee from "@/components/ContactPortfolioMarquee"
+import ViewMoreOnTV from "@/components/ViewMoreOnTV"
 import ContactCTA from "@/components/ContactCTA"
 import { ease } from "@/lib/motion"
 
@@ -394,6 +395,8 @@ export default function VideoCorporativoMadridPage() {
           </section>
         </div>
       </section>
+
+      <ViewMoreOnTV className="px-4 pb-2" />
 
       <ContactCTA />
     </main>

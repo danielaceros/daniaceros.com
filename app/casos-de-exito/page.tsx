@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import ContactCTA from "@/components/ContactCTA"
+import ViewMoreOnTV from "@/components/ViewMoreOnTV"
 import { projects } from "@/data/projects"
 import { buildMetadata } from "@/lib/seo"
 
@@ -82,6 +83,7 @@ export default function CasosDeExitoPage() {
             </p>
           </section>
 
+          <ViewMoreOnTV className="pt-2" />
         </div>
       </section>
 

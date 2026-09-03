@@ -4,6 +4,7 @@ import { notFound } from "next/navigation"
 import { projects } from "@/data/projects"
 import ProjectHero from "@/components/ProjectHero"
 import ProjectContent from "@/components/ProjectContent"
+import ViewMoreOnTV from "@/components/ViewMoreOnTV"
 import ContactCTA from "@/components/ContactCTA"
 import { DEFAULT_OG_IMAGE, SITE_URL } from "@/lib/seo"
 
@@ -85,6 +86,8 @@ export default async function ProjectPage({ params }: Props) {
       />
 
       <ProjectContent sections={project.sections} />
+
+      <ViewMoreOnTV className="px-4 pt-2 sm:pt-4" />
 
       <ContactCTA />
     </main>

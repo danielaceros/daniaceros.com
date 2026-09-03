@@ -1,5 +1,6 @@
 import SectionTitle from "./SectionTitle"
 import PortfolioCard from "./PortfolioCard"
+import ViewMoreOnTV from "./ViewMoreOnTV"
 import { projects } from "@/data/projects"
 import type { CSSProperties } from "react"
 
@@ -181,6 +182,10 @@ export default function Portfolio({
           ))}
         </div>
       )}
+
+      {/* Solo en la grid completa (home) — el slideshow de /hablemos es una
+          landing de conversión pura, sin distracciones hacia /tv. */}
+      {!desktopSlideshow && <ViewMoreOnTV className="mt-8 sm:mt-10" />}
     </section>
   )
 }
