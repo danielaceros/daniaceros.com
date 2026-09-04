@@ -11288,6 +11288,126 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "contrato-derechos-uso-video-corporativo",
+    title: "Contrato y derechos de uso en un vídeo corporativo: qué debe incluir",
+    description:
+      "Qué cláusulas de licencia, exclusividad, duración y territorio conviene cerrar por escrito antes de grabar un vídeo corporativo, y qué pasa si no se pacta nada.",
+    publishedAt: "2026-09-04",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "derechos de uso",
+      "contrato audiovisual",
+      "licencia de vídeo",
+      "producción audiovisual",
+    ],
+    keyword: "contrato y derechos de uso de un vídeo corporativo",
+    intent: "informacional",
+    excerpt:
+      "El precio de un vídeo corporativo no solo paga el rodaje y la edición. Paga también un permiso de uso concreto. Cuento qué cláusulas conviene cerrar antes de grabar para no descubrir después qué no puedes hacer con tu propio vídeo.",
+    seoTitle: "Contrato y derechos de uso en un vídeo corporativo | Daniel Acero",
+    metaDescription:
+      "Qué cláusulas de licencia, territorio, duración y exclusividad debe llevar el contrato de un vídeo corporativo antes de empezar a grabar.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Casi nadie pregunta por los derechos de uso antes de grabar un vídeo corporativo. Se habla de fecha, de presupuesto, de cuántas entrevistas caben en la jornada, y el contrato se firma dando por hecho que \"el vídeo es mío porque lo he pagado\". Esa idea es solo parcialmente cierta, y la parte que falta es la que después genera problemas.",
+      },
+      {
+        type: "paragraph",
+        text: "Llevo años cerrando este tipo de acuerdos con clientes en Madrid, y cada contrato lleva las mismas cláusulas de fondo aunque cambie el formato del vídeo. Aquí explico qué debe quedar por escrito antes de encender la cámara, para que ni el cliente ni yo tengamos dudas sobre qué se puede hacer con el material una vez entregado.",
+      },
+      {
+        type: "image",
+        src: "/blog/contrato-derechos-uso-video-corporativo/hero.webp",
+        alt: "Dos personas firmando un documento de acuerdo sobre una mesa",
+        width: 1920,
+        height: 1440,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Cuando grabo un vídeo corporativo, el cliente no compra el archivo en bruto sin más: compra una licencia de uso sobre una obra de la que yo, como autor, mantengo los derechos morales por defecto. Lo que se negocia en el contrato es el alcance de esa licencia: para qué canales, durante cuánto tiempo, en qué territorio y si es exclusiva o no.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque sin esa cláusula escrita, cualquier uso que se salga de lo hablado de palabra queda en zona gris. He visto empresas que graban un vídeo pensado para su web y terminan usándolo en una campaña de pago sin haberlo pactado, o que ceden un clip a un partner comercial sin saber que eso también requiere permiso explícito.",
+      },
+      {
+        type: "paragraph",
+        text: "Y también importa para mí como filmmaker: sin límites claros de uso, no puedo tasar bien el proyecto. Un vídeo con licencia limitada a redes sociales durante un año cuesta distinto que uno con uso ilimitado y exclusividad total. El precio depende del derecho que se transmite, no solo de las horas de rodaje.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Define el alcance de canales y formatos" },
+      {
+        type: "paragraph",
+        text: "Antes de grabar, dejo por escrito dónde se va a usar el vídeo: web, redes sociales orgánicas, publicidad de pago, pantallas en feria, presentaciones internas. Cada canal adicional que se añada después del contrato original se negocia aparte, porque implica un derecho de explotación distinto al pactado.",
+      },
+      { type: "heading", level: 3, text: "Fija duración y territorio de la licencia" },
+      {
+        type: "paragraph",
+        text: "Un vídeo corporativo no suele licenciarse \"para siempre y en todo el mundo\" salvo que se pague expresamente por ello. Lo habitual es acotar la licencia a un plazo, por ejemplo tres o cinco años, y a un territorio, como España o la Unión Europea. Pasado ese plazo, se renueva la licencia o se retira el contenido de circulación.",
+      },
+      { type: "heading", level: 3, text: "Aclara la exclusividad y el uso del making-of" },
+      {
+        type: "paragraph",
+        text: "Si el cliente quiere que ese material no lo use ningún otro filmmaker ni yo mismo lo enseñe en mi portfolio, eso es exclusividad y se cobra aparte. Por defecto, salvo que se pacte lo contrario, suelo reservarme el derecho a mostrar fragmentos en mi propio site y redes como muestra de trabajo, siempre citando al cliente.",
+      },
+      {
+        type: "image",
+        src: "/blog/contrato-derechos-uso-video-corporativo/intermedia.webp",
+        alt: "Persona revisando el montaje de un vídeo en un ordenador portátil",
+        width: 1920,
+        height: 1280,
+        caption: "El contrato se cierra antes de grabar, no después de entregar el vídeo montado.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Dar por hecho que pagar el rodaje incluye derechos ilimitados sobre el material sin pactarlo por escrito.",
+          "No fijar una fecha de caducidad de la licencia, lo que deja el uso del vídeo en ambigüedad pasados varios años.",
+          "Olvidar quién puede usar el material en bruto (raw footage) además del vídeo montado y entregado.",
+          "No aclarar si terceros, como una agencia de medios o un partner comercial, pueden reutilizar el vídeo.",
+          "Pactar solo de palabra la exclusividad, sin dejarla reflejada en el presupuesto ni en el contrato.",
+          "No mencionar qué pasa con los derechos de imagen de los empleados grabados, que es un permiso distinto al de la obra audiovisual.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿El vídeo es mío si lo he pagado?",
+        answer:
+          "El cliente adquiere una licencia de uso, normalmente amplia, pero el autor conserva por defecto los derechos morales sobre la obra. El contrato debe fijar el alcance exacto de esa licencia: canales, plazo y territorio.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo usar el vídeo en publicidad de pago si el contrato no lo menciona?",
+        answer:
+          "No sin riesgo. Si el uso publicitario de pago no está incluido en la licencia original, conviene ampliar el contrato antes de lanzar la campaña, porque ese tipo de explotación suele valorarse y cobrarse aparte del uso orgánico.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo suele durar la licencia de un vídeo corporativo?",
+        answer:
+          "Lo habitual en mis contratos es entre tres y cinco años, renovable. Un plazo indefinido y sin límite territorial es posible, pero se refleja en un precio más alto porque el derecho cedido es mayor.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito un contrato aparte para los derechos de imagen de los empleados?",
+        answer:
+          "Sí. El contrato de producción regula los derechos sobre la obra audiovisual como tal; el consentimiento de cada persona grabada para aparecer en el vídeo es un permiso independiente y debe recogerse por separado, normalmente con una autorización firmada antes del rodaje.",
+      },
+      {
+        type: "paragraph",
+        text: "Si vas a encargar un vídeo corporativo y quieres dejar los derechos de uso claros desde el primer presupuesto, escríbeme desde /contacto y lo cerramos por escrito antes de grabar, sin sorpresas después.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
