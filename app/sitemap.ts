@@ -1,41 +1,46 @@
 import type { MetadataRoute } from "next"
 import { getAllPosts } from "@/lib/blog"
+import { projects } from "@/data/projects"
+import { SITE_URL } from "@/lib/seo"
 
-const sitemapUrls = [
-  "https://daniaceros.com/",
-  "https://daniaceros.com/contacto",
-  "https://daniaceros.com/servicios",
-  "https://daniaceros.com/portfolio",
-  "https://daniaceros.com/precios",
-  "https://daniaceros.com/proceso",
-  "https://daniaceros.com/contratar",
-  "https://daniaceros.com/contenido-mensual",
-  "https://daniaceros.com/faq",
-  "https://daniaceros.com/sobre-mi",
-  "https://daniaceros.com/filmmaker-madrid",
-  "https://daniaceros.com/videografo-madrid",
-  "https://daniaceros.com/the-rooftop-content-studio",
-  "https://daniaceros.com/clientes",
-  "https://daniaceros.com/casos-de-exito",
-  "https://daniaceros.com/video-corporativo-madrid",
-  "https://daniaceros.com/video-eventos-madrid",
-  "https://daniaceros.com/aviso-legal",
-  "https://daniaceros.com/politica-de-privacidad",
-  "https://daniaceros.com/politica-de-cookies",
-  "https://daniaceros.com/portfolio/fifa",
-  "https://daniaceros.com/portfolio/camara-de-comercio",
-  "https://daniaceros.com/portfolio/real-madrid-riquelme",
-  "https://daniaceros.com/portfolio/ikami",
-  "https://daniaceros.com/portfolio/cinesa",
-  "https://daniaceros.com/portfolio/rimmel-london",
-  "https://daniaceros.com/portfolio/ifema",
-  "https://daniaceros.com/portfolio/omar-montes",
-  "https://daniaceros.com/portfolio/brahim-diaz",
-  "https://daniaceros.com/servicios/corporativo",
-  "https://daniaceros.com/servicios/instituciones",
+const staticPaths = [
+  "/",
+  "/contacto",
+  "/servicios",
+  "/servicios/corporativo",
+  "/servicios/institucional",
+  "/portfolio",
+  "/precios",
+  "/proceso",
+  "/contratar",
+  "/contenido-mensual",
+  "/marca-personal",
+  "/faq",
+  "/sobre-mi",
+  "/hablemos",
+  "/tv",
+  "/filmmaker-madrid",
+  "/videografo-madrid",
+  "/video-corporativo-madrid",
+  "/video-eventos-madrid",
+  "/the-rooftop-content-studio",
+  "/clientes",
+  "/casos-de-exito",
+  "/aviso-legal",
+  "/politica-de-privacidad",
+  "/politica-de-cookies",
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const blogUrls = getAllPosts().map((post) => `https://daniaceros.com/blog/${post.slug}`)
-  return [...sitemapUrls, "https://daniaceros.com/blog", ...blogUrls].map((url) => ({ url }))
+  const portfolioUrls = projects.map((project) => `${SITE_URL}/portfolio/${project.slug}`)
+  const blogUrls = getAllPosts().map((post) => `${SITE_URL}/blog/${post.slug}`)
+
+  const urls = [
+    ...staticPaths.map((path) => `${SITE_URL}${path}`),
+    `${SITE_URL}/blog`,
+    ...blogUrls,
+    ...portfolioUrls,
+  ]
+
+  return urls.map((url) => ({ url }))
 }

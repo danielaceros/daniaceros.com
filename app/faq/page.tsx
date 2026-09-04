@@ -120,9 +120,29 @@ export const metadata: Metadata = buildMetadata({
   keywords: ["faq video corporativo", "dudas videografo madrid", "preguntas produccion audiovisual"],
 })
 
+const faqPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqSections.flatMap((section) =>
+    section.items.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.a,
+      },
+    }))
+  ),
+}
+
 export default function FAQPage() {
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
+      />
+
       <section className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 pt-20 sm:pt-28 pb-16 sm:pb-20">
         <header className="space-y-6 mb-14">
           <p className="font-inter text-[11px] uppercase text-white/40">
@@ -142,9 +162,9 @@ export default function FAQPage() {
               <ul className="space-y-5">
                 {section.items.map((item) => (
                   <li key={item.q} className="space-y-2">
-                    <p className="font-inter text-[14px] sm:text-[15px] font-medium text-white">
+                    <h3 className="font-inter text-[14px] sm:text-[15px] font-medium text-white">
                       {item.q}
-                    </p>
+                    </h3>
                     <p className="font-inter text-[13px] sm:text-[14px] leading-[1.7] text-white/78">
                       {item.a}
                     </p>

@@ -6,7 +6,7 @@ import ContactCTA from "@/components/ContactCTA"
 import { buildMetadata } from "@/lib/seo"
 
 export const metadata: Metadata = buildMetadata({
-  title: "Pack mensual de contenido para marcas personales | Daniel Acero",
+  title: "Pack mensual de contenido para marcas personales",
   description:
     "Una sesión al mes en el estudio. Te llevas los reels del mes editados. Sin espacio propio. Sin improvisar. Solo apareces y lees. Desde 620€/mes.",
   path: "/marca-personal",

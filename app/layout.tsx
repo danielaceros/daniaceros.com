@@ -125,6 +125,18 @@ export default function RootLayout({
                 "Video de eventos",
                 "Produccion audiovisual",
               ],
+              founder: {
+                "@type": "Person",
+                name: "Daniel Acero",
+                jobTitle: "Filmmaker corporativo",
+                url: SITE_URL,
+                image: DEFAULT_OG_IMAGE,
+                sameAs: ["https://www.instagram.com/daniaceros"],
+                worksFor: {
+                  "@type": "ProfessionalService",
+                  name: "Daniel Acero",
+                },
+              },
             }),
           }}
         />

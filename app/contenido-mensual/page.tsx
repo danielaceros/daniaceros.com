@@ -6,7 +6,7 @@ import ContactCTA from "@/components/ContactCTA"
 import { buildMetadata } from "@/lib/seo"
 
 export const metadata: Metadata = buildMetadata({
-  title: "Pack mensual de contenido para clínicas | Daniel Acero",
+  title: "Pack mensual de contenido para clínicas",
   description:
     "Tus pacientes te buscan en Instagram antes de pedir cita. En 2 horas grabamos los 12 reels de tu mes. Editados, con subtítulos, listos para publicar. Sin permanencia. Desde 590€/mes.",
   path: "/contenido-mensual",

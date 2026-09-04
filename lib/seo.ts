@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 
-export const SITE_URL = "https://danielacero.com"
+export const SITE_URL = "https://www.daniaceros.com"
 export const DEFAULT_OG_IMAGE =
   "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/Disen%CC%83o%20sin%20ti%CC%81tulo.png?alt=media&token=ae45c05e-35c1-40c4-a89a-b7a738811667"
 
