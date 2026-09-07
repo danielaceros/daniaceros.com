@@ -11408,6 +11408,130 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-sector-legal",
+    title: "Vídeo corporativo para el sector legal: qué necesita un despacho de abogados",
+    description:
+      "Cómo planteo un vídeo corporativo para despachos de abogados y consultoras legales: formatos, tono de edición, preparación de los socios y confidencialidad.",
+    publishedAt: "2026-09-07",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "despachos de abogados",
+      "sector legal",
+      "vídeo institucional",
+      "filmmaker Madrid",
+    ],
+    keyword: "vídeo corporativo para el sector legal",
+    intent: "informacional",
+    excerpt:
+      "En un despacho de abogados el vídeo no busca viralizar, busca transmitir seriedad y criterio antes de la primera llamada. Cuento cómo planteo formato, tono y rodaje para que encaje con el sector.",
+    seoTitle: "Vídeo corporativo para el sector legal | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo para el sector legal: qué formatos, tono de edición y preparación necesita un despacho de abogados antes de grabar.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Un despacho de abogados no vende lo mismo que una marca de consumo, y el vídeo que necesita tampoco se parece al de una startup. Aquí el objetivo no es viralizar: es transmitir seriedad, criterio y confianza antes de que el cliente descuelgue el teléfono.",
+      },
+      {
+        type: "paragraph",
+        text: "Llevo varios proyectos con despachos y consultoras legales en Madrid, y el patrón se repite. Quieren presencia en vídeo pero temen que salga con el tono equivocado: demasiado corporativo y frío, o demasiado casual y poco creíble. Cuento aquí cómo lo planteo para que el resultado encaje con el sector.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-legal/hero.webp",
+        alt: "Reunión de trabajo en un despacho de abogados con documentos sobre la mesa",
+        width: 1920,
+        height: 1080,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "En un despacho, el vídeo corporativo suele cubrir tres piezas distintas: una presentación institucional del despacho, vídeos breves por área de práctica y perfiles de los socios que lideran cada equipo. No es un único vídeo que lo explica todo, son piezas cortas que se pueden usar por separado según el canal.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque la decisión de contratar un despacho casi nunca empieza con una llamada. Empieza con una búsqueda: la web del despacho, el perfil de LinkedIn del socio, alguna referencia de un contacto. El vídeo entra justo ahí, antes del primer contacto, y ayuda a validar si ese despacho transmite el criterio que el cliente busca.",
+      },
+      {
+        type: "paragraph",
+        text: "También hay una capa distinta al resto de sectores: la deontología. Un despacho no puede mostrar documentos de clientes, ni hablar de casos concretos sin permiso explícito, ni dar la sensación de estar presumiendo de resultados de forma poco seria. Eso condiciona qué se graba y cómo se edita, no solo el discurso.",
+      },
+      {
+        type: "paragraph",
+        text: "Al mismo tiempo, seriedad no significa distancia. Un despacho demasiado rígido en cámara transmite lo contrario de lo que busca: intimida en lugar de generar confianza. El equilibrio que persigo es que los socios se vean cercanos sin perder autoridad, algo que se consigue más en la preparación del rodaje que en el montaje posterior.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Elige el formato según el objetivo" },
+      {
+        type: "paragraph",
+        text: "Antes de encender la cámara decido qué formato responde al objetivo real. Si el despacho quiere posicionarse como referencia en una materia concreta, funciona mejor una serie de vídeos cortos por área de práctica que un único vídeo institucional genérico. Si el objetivo es reputación de marca, entonces sí tiene sentido una pieza más amplia con los socios principales.",
+      },
+      { type: "heading", level: 3, text: "Cuida el tono y el ritmo de edición" },
+      {
+        type: "paragraph",
+        text: "El ritmo de montaje en este sector no es el de una marca de consumo. Evito cortes rápidos, música con subidas de tensión y gráficos llamativos. Prefiero planos estables, encuadres limpios y una música de fondo casi imperceptible. El objetivo es que el vídeo transmita solidez, no dinamismo.",
+      },
+      { type: "heading", level: 3, text: "Prepara a los socios para hablar a cámara" },
+      {
+        type: "paragraph",
+        text: "Los abogados están acostumbrados a argumentar, no a hablar a cámara, y son dos habilidades distintas. En el rodaje trabajo con un brief de ideas clave, no un guion cerrado para memorizar. Si hace falta teleprompter lo uso, pero en tomas cortas y con pausas, para que la frase suene dicha y no leída.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-legal/intermedia.webp",
+        alt: "Cámara de vídeo grabando una entrevista en una sala de reuniones",
+        width: 1920,
+        height: 1080,
+        caption: "Antes de grabar dentro del despacho, reviso qué queda visible en cámara.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Grabar en un despacho desordenado, con papeles de clientes reales o pantallas de casos abiertas de fondo.",
+          "Usar música y gráficos genéricos de stock que no distinguen al despacho de ningún competidor.",
+          "Dejar que el socio improvise sin ningún tipo de brief, lo que alarga el rodaje y diluye el mensaje.",
+          "No pedir permiso explícito y por escrito a un cliente que aparece en un testimonial.",
+          "Publicar el vídeo solo en la web y no en LinkedIn, donde se mueve gran parte de la decisión B2B en este sector.",
+          "Alargar el vídeo más de dos o tres minutos sin un caso concreto que sostenga la atención.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Qué tipo de vídeo funciona mejor para un despacho de abogados?",
+        answer:
+          "Suele rendir mejor una serie de vídeos cortos por área de práctica, de uno a dos minutos, que un único vídeo institucional largo. Se pueden publicar por separado según el área que interese a cada cliente.",
+      },
+      {
+        type: "faq",
+        question: "¿Los socios tienen que memorizar un guion?",
+        answer:
+          "No, y no conviene que lo hagan. Trabajo con un brief de ideas clave y, si hace falta apoyo, teleprompter en tomas cortas. El objetivo es que suene argumentado, no leído.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar dentro del despacho sin comprometer la confidencialidad?",
+        answer:
+          "Sí, revisando antes qué queda visible en cámara: documentos, pantallas y pizarras con anotaciones. Aviso al equipo con antelación para que la sala esté despejada el día del rodaje.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tarda la producción de este tipo de vídeo?",
+        answer:
+          "Para una pieza institucional con dos o tres entrevistas, suelo necesitar una jornada de rodaje y entre una y dos semanas de edición, según el número de piezas finales.",
+      },
+      {
+        type: "paragraph",
+        text: "Si diriges un despacho o una consultora legal en Madrid y quieres un vídeo que transmita seriedad sin sonar acartonado, escríbeme desde /contacto y lo planteamos según tus áreas de práctica.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
