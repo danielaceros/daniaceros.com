@@ -5,7 +5,7 @@ import { buildMetadata } from "@/lib/seo"
 export const metadata: Metadata = buildMetadata({
   title: "Precios de servicios audiovisuales",
   description:
-    "Como se calcula el precio de un video corporativo o cobertura de evento en Madrid. Presupuesto personalizado y transparente.",
+    "Cómo se calcula el precio de un vídeo corporativo o cobertura de evento en Madrid. Presupuesto personalizado y transparente.",
   path: "/precios",
   keywords: ["precio video corporativo", "presupuesto videografo madrid", "coste video evento"],
 })

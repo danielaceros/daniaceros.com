@@ -29,7 +29,7 @@ const processSteps = [
 export const metadata: Metadata = buildMetadata({
   title: "Contratar servicio audiovisual",
   description:
-    "Guia para contratar un proyecto audiovisual: que informacion enviar, como funciona el proceso y pasos para empezar.",
+    "Guía para contratar un proyecto audiovisual: qué información enviar, cómo funciona el proceso y pasos para empezar.",
   path: "/contratar",
   keywords: ["contratar filmmaker madrid", "contratar videografo", "proyecto audiovisual empresas"],
 })

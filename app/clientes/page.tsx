@@ -5,7 +5,7 @@ import ClientesClient from "./ClientesClient"
 export const metadata: Metadata = buildMetadata({
   title: "Clientes",
   description:
-    "Clientes y proyectos audiovisuales para empresas, instituciones, agencias y marcas en Madrid y toda Espana.",
+    "Clientes y proyectos audiovisuales para empresas, instituciones, agencias y marcas en Madrid y toda España.",
   path: "/clientes",
   keywords: ["clientes filmmaker", "video corporativo clientes", "casos audiovisuales"],
 })

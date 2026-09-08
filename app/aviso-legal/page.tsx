@@ -5,7 +5,7 @@ import { buildMetadata } from "@/lib/seo"
 
 export const metadata: Metadata = buildMetadata({
   title: "Aviso legal",
-  description: "Informacion legal del sitio web de Daniel Acero.",
+  description: "Información legal del sitio web de Daniel Acero.",
   path: "/aviso-legal",
 })
 

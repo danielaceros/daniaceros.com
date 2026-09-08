@@ -3,9 +3,9 @@ import ContactCTA from "@/components/ContactCTA"
 import { buildMetadata } from "@/lib/seo"
 
 export const metadata: Metadata = buildMetadata({
-  title: "Servicio de video institucional",
+  title: "Servicio de vídeo institucional",
   description:
-    "Video institucional y cobertura audiovisual para entidades, organizaciones e instituciones en Madrid y toda Espana.",
+    "Vídeo institucional y cobertura audiovisual para entidades, organizaciones e instituciones en Madrid y toda España.",
   path: "/servicios/institucional",
   keywords: ["video institucional madrid", "cobertura audiovisual institucional", "filmmaker para entidades"],
 })

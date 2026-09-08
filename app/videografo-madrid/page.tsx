@@ -3,9 +3,9 @@ import { buildMetadata } from "@/lib/seo"
 import VideografoMadridClient from "./VideografoMadridClient"
 
 export const metadata: Metadata = buildMetadata({
-  title: "Videografo en Madrid | Grabacion profesional",
+  title: "Videógrafo en Madrid | Grabación profesional",
   description:
-    "Videografo profesional en Madrid para eventos, empresas y contenido corporativo. Video de alta calidad para comunicacion de marca.",
+    "Videógrafo profesional en Madrid para eventos, empresas y contenido corporativo. Vídeo de alta calidad para comunicación de marca.",
   path: "/videografo-madrid",
   keywords: ["videografo madrid", "grabacion eventos madrid", "video corporativo madrid"],
 })

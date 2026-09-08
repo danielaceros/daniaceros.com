@@ -3,8 +3,8 @@ import ContactCTA from "@/components/ContactCTA"
 import { buildMetadata } from "@/lib/seo"
 
 export const metadata: Metadata = buildMetadata({
-  title: "Politica de cookies",
-  description: "Politica de cookies del sitio web de Daniel Acero.",
+  title: "Política de cookies",
+  description: "Política de cookies del sitio web de Daniel Acero.",
   path: "/politica-de-cookies",
 })
 

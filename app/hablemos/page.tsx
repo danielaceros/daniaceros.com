@@ -14,7 +14,7 @@ const WHATSAPP_URL = `https://wa.me/34711255496?text=${WHATSAPP_MESSAGE}`
 export const metadata: Metadata = buildMetadata({
   title: "Hablemos",
   description:
-    "Produccion audiovisual para empresas, marcas y eventos en Madrid. Video corporativo con enfoque cinematografico y ejecucion profesional.",
+    "Producción audiovisual para empresas, marcas y eventos en Madrid. Vídeo corporativo con enfoque cinematográfico y ejecución profesional.",
   path: "/hablemos",
   keywords: [
     "hablemos",

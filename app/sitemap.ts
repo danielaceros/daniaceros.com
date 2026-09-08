@@ -31,16 +31,36 @@ const staticPaths = [
   "/politica-de-cookies",
 ]
 
+// Fecha de build: lastmod razonable para páginas estáticas y de portfolio,
+// que no tienen fecha de publicación propia.
+const BUILD_DATE = new Date()
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const portfolioUrls = projects.map((project) => `${SITE_URL}/portfolio/${project.slug}`)
-  const blogUrls = getAllPosts().map((post) => `${SITE_URL}/blog/${post.slug}`)
+  const posts = getAllPosts()
+  const latestPostDate = posts.reduce<Date>((latest, post) => {
+    const date = new Date(post.updatedAt ?? post.publishedAt)
+    return date > latest ? date : latest
+  }, new Date(0))
 
-  const urls = [
-    ...staticPaths.map((path) => `${SITE_URL}${path}`),
-    `${SITE_URL}/blog`,
-    ...blogUrls,
-    ...portfolioUrls,
-  ]
+  const staticEntries = staticPaths.map((path) => ({
+    url: `${SITE_URL}${path}`,
+    lastModified: BUILD_DATE,
+  }))
 
-  return urls.map((url) => ({ url }))
+  const blogIndexEntry = {
+    url: `${SITE_URL}/blog`,
+    lastModified: latestPostDate > new Date(0) ? latestPostDate : BUILD_DATE,
+  }
+
+  const blogEntries = posts.map((post) => ({
+    url: `${SITE_URL}/blog/${post.slug}`,
+    lastModified: new Date(post.updatedAt ?? post.publishedAt),
+  }))
+
+  const portfolioEntries = projects.map((project) => ({
+    url: `${SITE_URL}/portfolio/${project.slug}`,
+    lastModified: BUILD_DATE,
+  }))
+
+  return [...staticEntries, blogIndexEntry, ...blogEntries, ...portfolioEntries]
 }

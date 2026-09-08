@@ -95,7 +95,7 @@ const faq = [
 export const metadata: Metadata = buildMetadata({
   title: "Rooftop Content Studio - Madrid",
   description:
-    "Estudio de grabacion profesional con vistas al atardecer de Madrid. Produce contenido premium para redes, podcast y video corporativo.",
+    "Estudio de grabación profesional con vistas al atardecer de Madrid. Produce contenido premium para redes, podcast y vídeo corporativo.",
   path: "/the-rooftop-content-studio",
   keywords: [
     "rooftop content studio madrid",
