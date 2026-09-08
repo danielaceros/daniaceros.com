@@ -1,11 +1,9 @@
 "use client"
 
 import { useState } from "react"
-import { motion, AnimatePresence } from "framer-motion"
 import ContactPortfolioMarquee from "@/components/ContactPortfolioMarquee"
 import ViewMoreOnTV from "@/components/ViewMoreOnTV"
 import ContactCTA from "@/components/ContactCTA"
-import { ease } from "@/lib/motion"
 
 const sectores = [
   "Instituciones públicas",
@@ -148,36 +146,45 @@ export default function ClientesPage() {
             <ul className="space-y-2 border-t border-white/10 pt-4">
               {faqItems.map((item, i) => (
                 <li key={item.q} className="border-b border-white/10">
-                  <button
-                    type="button"
-                    onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                    className="flex w-full items-center justify-between gap-4 py-4 text-left font-inter text-[14px] sm:text-[15px] font-medium text-white transition-colors hover:text-white/90"
-                  >
-                    {item.q}
-                    <span
-                      className={[
-                        "shrink-0 text-white/50 transition-transform duration-200",
-                        openFaq === i ? "rotate-180" : "",
-                      ].join(" ")}
+                  <h3 className="m-0">
+                    <button
+                      type="button"
+                      id={`clientes-faq-question-${i}`}
+                      aria-expanded={openFaq === i}
+                      aria-controls={`clientes-faq-answer-${i}`}
+                      onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                      className="flex w-full items-center justify-between gap-4 py-4 text-left font-inter text-[14px] sm:text-[15px] font-medium text-white transition-colors hover:text-white/90"
                     >
-                      ▼
-                    </span>
-                  </button>
-                  <AnimatePresence initial={false}>
-                    {openFaq === i && (
-                      <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: "auto", opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.25, ease: ease.expo }}
-                        className="overflow-hidden"
+                      {item.q}
+                      <span
+                        aria-hidden="true"
+                        className={[
+                          "shrink-0 text-white/50 transition-transform duration-200",
+                          openFaq === i ? "rotate-180" : "",
+                        ].join(" ")}
                       >
-                        <p className="pb-4 font-inter text-[13px] sm:text-[14px] leading-[1.7] text-white/78">
-                          {item.a}
-                        </p>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
+                        ▼
+                      </span>
+                    </button>
+                  </h3>
+                  {/* Respuesta siempre presente en el HTML (server-rendered) para
+                      crawlers, incluso cuando está colapsada visualmente: solo se
+                      anima con CSS (grid-template-rows), nunca se desmonta del DOM. */}
+                  <div
+                    id={`clientes-faq-answer-${i}`}
+                    role="region"
+                    aria-labelledby={`clientes-faq-question-${i}`}
+                    className={[
+                      "grid overflow-hidden transition-[grid-template-rows,opacity] duration-200 ease-out",
+                      openFaq === i ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0",
+                    ].join(" ")}
+                  >
+                    <div className="min-h-0">
+                      <p className="pb-4 font-inter text-[13px] sm:text-[14px] leading-[1.7] text-white/78">
+                        {item.a}
+                      </p>
+                    </div>
+                  </div>
                 </li>
               ))}
             </ul>

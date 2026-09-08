@@ -5,7 +5,7 @@ import Script from "next/script"
 import Header from "@/components/Header"
 import PageTransition from "@/components/PageTransition"
 import LuxuryMotionProvider from "@/components/LuxuryMotionProvider"
-import { DEFAULT_OG_IMAGE, SITE_URL } from "@/lib/seo"
+import { BUSINESS_ID, DEFAULT_OG_IMAGE, PERSON_ID, SITE_URL } from "@/lib/seo"
 
 const FAVICON_URL =
   "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/sobre-mi/daniel-acero-ceo-awards-bqVq9Ciw7DVt6yXSt5RamnQXn0WOJj.jpeg"
@@ -108,42 +108,47 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
+              "@id": BUSINESS_ID,
               name: "Daniel Acero",
               image: DEFAULT_OG_IMAGE,
               url: SITE_URL,
               telephone: "+34 711 25 54 96",
               areaServed: "ES",
+              priceRange: "€€",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Madrid",
                 addressCountry: "ES",
               },
-              sameAs: ["https://www.instagram.com/daniaceros"],
+              sameAs: [
+                "https://www.instagram.com/daniaceros",
+                "https://es.linkedin.com/in/daniaceros",
+                "https://www.youtube.com/@daniacerxs/videos",
+              ],
               serviceType: [
                 "Video corporativo",
                 "Video institucional",
                 "Video de eventos",
                 "Produccion audiovisual",
               ],
-              founder: {
-                "@type": "Person",
-                name: "Daniel Acero",
-                jobTitle: "Filmmaker corporativo",
-                url: SITE_URL,
-                image: DEFAULT_OG_IMAGE,
-                sameAs: ["https://www.instagram.com/daniaceros"],
-                worksFor: {
-                  "@type": "ProfessionalService",
-                  name: "Daniel Acero",
-                },
-              },
+              // Referencia por @id al Person completo definido en /sobre-mi, en
+              // vez de duplicar el objeto entero aquí.
+              founder: { "@id": PERSON_ID },
             }),
           }}
         />
 
         {enableTracking && (
           <>
-            {/* Google Analytics 4 */}
+            {/* Google Analytics 4 + Google Ads (3 IDs: GA4 + 2 conversiones).
+                TODO (pendiente, requiere acceso al panel de GTM-5NK4CTSS que
+                no tenemos desde código): GTM puede disparar los 3
+                config/conversion tags de este bloque él solo (Configuración
+                GA4 + 2 tags de Google Ads), lo que eliminaría este script
+                gtag.js independiente y sus 3 llamadas de red de bootstrap.
+                NO lo hemos quitado aquí para no romper en silencio el
+                tracking de conversiones de Ads mientras esos tags no estén
+                verificados dentro del contenedor GTM. */}
             <Script
               src="https://www.googletagmanager.com/gtag/js?id=G-96SSL5X2QH"
               strategy="lazyOnload"
@@ -188,8 +193,10 @@ export default function RootLayout({
               `}
             </Script>
 
-            {/* Microsoft Clarity */}
-            <Script id="clarity" strategy="afterInteractive">
+            {/* Microsoft Clarity — no es analítica crítica para negocio (a
+                diferencia de GA4/Ads), así que se difiere a lazyOnload junto
+                con el resto para no competir con el LCP. */}
+            <Script id="clarity" strategy="lazyOnload">
               {`
                 (function(c,l,a,r,i,t,y){
                   var existing=c[a];

@@ -71,7 +71,7 @@ const steps = [
 export const metadata: Metadata = buildMetadata({
   title: "Proceso de trabajo",
   description:
-    "Conoce el proceso de trabajo de Daniel Acero: briefing, produccion, edicion y entrega final para proyectos audiovisuales corporativos.",
+    "Conoce el proceso de trabajo de Daniel Acero: briefing, producción, edición y entrega final para proyectos audiovisuales corporativos.",
   path: "/proceso",
   keywords: ["proceso de video corporativo", "como trabaja un filmmaker", "produccion audiovisual empresas"],
 })

@@ -115,7 +115,7 @@ const faqSections = [
 export const metadata: Metadata = buildMetadata({
   title: "Preguntas frecuentes",
   description:
-    "Respuestas a preguntas frecuentes sobre video corporativo, eventos, entregas, plazos, presupuestos y derechos de uso.",
+    "Respuestas a preguntas frecuentes sobre vídeo corporativo, eventos, entregas, plazos, presupuestos y derechos de uso.",
   path: "/faq",
   keywords: ["faq video corporativo", "dudas videografo madrid", "preguntas produccion audiovisual"],
 })

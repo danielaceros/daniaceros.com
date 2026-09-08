@@ -2,19 +2,28 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import ContactCTA from "@/components/ContactCTA"
-import { buildMetadata } from "@/lib/seo"
+import { buildBreadcrumbSchema, buildMetadata } from "@/lib/seo"
 
 export const metadata: Metadata = buildMetadata({
-  title: "Servicios de video para empresas y marcas",
+  title: "Servicios de vídeo para empresas y marcas",
   description:
-    "Servicios de video corporativo e institucional en Madrid: grabacion, edicion y piezas para web, redes y comunicacion empresarial.",
+    "Servicios de vídeo corporativo e institucional en Madrid: grabación, edición y piezas para web, redes y comunicación empresarial.",
   path: "/servicios",
   keywords: ["servicios de video madrid", "video corporativo", "video institucional"],
 })
 
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: "Inicio", path: "/" },
+  { name: "Servicios", path: "/servicios" },
+])
+
 export default function ServicesPage() {
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <section className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pt-20 sm:pt-28 pb-16 sm:pb-20 space-y-10">
         <header className="space-y-6">
           <p className="font-inter text-[11px] uppercase text-white/40">
@@ -78,9 +87,10 @@ export default function ServicesPage() {
           <div className="space-y-4">
             <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl border border-white/10">
               <Image
-                src="https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/Disen%CC%83o%20sin%20ti%CC%81tulo.png?alt=media&token=ae45c05e-35c1-40c4-a89a-b7a738811667"
+                src="https://kgtz1gujr7extokb.public.blob.vercel-storage.com/hero/daniel-acero-hero-v2-llWDLWKhpBLHLD1VcbHNvWsLL7DeYZ.jpg"
                 alt="Rodaje de vídeo para empresa"
                 fill
+                priority
                 sizes="(max-width: 1024px) 100vw, 60vw"
                 className="h-full w-full object-cover"
               />

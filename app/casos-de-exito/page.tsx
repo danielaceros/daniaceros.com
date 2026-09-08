@@ -3,11 +3,10 @@ import Link from "next/link"
 import ContactCTA from "@/components/ContactCTA"
 import ViewMoreOnTV from "@/components/ViewMoreOnTV"
 import { projects } from "@/data/projects"
-import { buildMetadata } from "@/lib/seo"
+import { buildBreadcrumbSchema, buildMetadata } from "@/lib/seo"
 
 // Casos de éxito: slug debe existir en data/projects; category es la etiqueta del diseño
 const casosDeExito = [
-  { slug: "fifa", category: "Evento corporativo internacional" },
   { slug: "camara-de-comercio", category: "Evento subvencional" },
   { slug: "real-madrid-riquelme", category: "Campaña electoral · Real Madrid" },
   { slug: "ifema", category: "Vídeo institucional" },
@@ -18,12 +17,17 @@ const casosDeExito = [
 ]
 
 export const metadata: Metadata = buildMetadata({
-  title: "Casos de exito",
+  title: "Casos de éxito",
   description:
-    "Casos de exito audiovisuales para empresas, marcas e instituciones. Proyectos reales con resultados medibles.",
+    "Casos de éxito audiovisuales para empresas, marcas e instituciones. Proyectos reales con resultados medibles.",
   path: "/casos-de-exito",
   keywords: ["casos de exito video", "portfolio corporativo", "proyectos audiovisuales madrid"],
 })
+
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: "Inicio", path: "/" },
+  { name: "Casos de éxito", path: "/casos-de-exito" },
+])
 
 function getProjectBySlug(slug: string) {
   return projects.find((p) => p.slug === slug)
@@ -36,6 +40,10 @@ export default function CasosDeExitoPage() {
 
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <section className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pt-20 sm:pt-28 pb-16 sm:pb-20">
         <header className="mb-14">
           <h1 className="font-inter font-semibold uppercase text-[28px] leading-[1.05] sm:text-[36px] lg:text-[48px]">

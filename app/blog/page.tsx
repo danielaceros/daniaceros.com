@@ -1,14 +1,24 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { getAllPosts, getBlogMetadata } from "@/lib/blog"
+import { buildBreadcrumbSchema } from "@/lib/seo"
 
 export const metadata: Metadata = getBlogMetadata()
+
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: "Inicio", path: "/" },
+  { name: "Blog", path: "/blog" },
+])
 
 export default function BlogPage() {
   const posts = getAllPosts()
 
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <section className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pt-24 sm:pt-32 pb-10 sm:pb-14">
         <div className="max-w-3xl">
           <p className="font-inter text-[11px] uppercase tracking-[0.22em] text-white/45">Blog</p>

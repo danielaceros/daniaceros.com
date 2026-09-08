@@ -1,40 +1,10 @@
 import type { Metadata } from "next"
-import Image from "next/image"
 import { buildMetadata } from "@/lib/seo"
 
-const rooftopBannerVideo =
-  "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/banner.mp4?alt=media&token=17ca0411-8d86-43b7-9458-bb430e1db6b6"
-
-const rooftopSlideImages = [
-  {
-    src: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/1.png?alt=media&token=1cbec153-09a1-4b16-90c0-ba396a707040",
-    alt: "Rooftop Content Studio escena 1",
-  },
-  {
-    src: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/2.png?alt=media&token=104bbed7-b2bd-468f-9897-8f812cf9915e",
-    alt: "Rooftop Content Studio escena 2",
-  },
-  {
-    src: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/3.png?alt=media&token=6a29fb99-a6df-418f-838a-5776ab8c4ed4",
-    alt: "Rooftop Content Studio escena 3",
-  },
-  {
-    src: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/4.png?alt=media&token=b1c5b273-74b4-40b2-ac3a-410f8a8d669d",
-    alt: "Rooftop Content Studio escena 4",
-  },
-  {
-    src: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/5.png?alt=media&token=80dd6bb9-7347-46fc-ab41-960859222af1",
-    alt: "Rooftop Content Studio escena 5",
-  },
-  {
-    src: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/6.png?alt=media&token=e51cee40-d8ef-497f-a519-b2ca3eb68b00",
-    alt: "Rooftop Content Studio escena 6",
-  },
-  {
-    src: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/7.png?alt=media&token=5b94aa7d-2fb6-4cee-a09d-e4426c828862",
-    alt: "Rooftop Content Studio escena 7",
-  },
-]
+// TODO: Dani debe subir reemplazos reales a Vercel Blob para estos assets
+// (vídeo banner + 7 fotos del estudio, antes en Firebase Storage, ahora
+// rotos). Hasta entonces se han quitado la sección de vídeo hero y la
+// galería completa más abajo.
 
 const formatos = [
   "Reels y TikToks",
@@ -95,7 +65,7 @@ const faq = [
 export const metadata: Metadata = buildMetadata({
   title: "Rooftop Content Studio - Madrid",
   description:
-    "Estudio de grabacion profesional con vistas al atardecer de Madrid. Produce contenido premium para redes, podcast y video corporativo.",
+    "Estudio de grabación profesional con vistas al atardecer de Madrid. Produce contenido premium para redes, podcast y vídeo corporativo.",
   path: "/the-rooftop-content-studio",
   keywords: [
     "rooftop content studio madrid",
@@ -106,8 +76,6 @@ export const metadata: Metadata = buildMetadata({
 })
 
 export default function TheRooftopContentStudioPage() {
-  const rooftopSlideTrack = [...rooftopSlideImages, ...rooftopSlideImages]
-
   return (
     <main className="min-h-screen bg-[#080808] text-white">
       <section className="mx-auto max-w-5xl px-4 pb-8 pt-6 sm:px-6 sm:pt-8 lg:px-8">
@@ -131,28 +99,13 @@ export default function TheRooftopContentStudioPage() {
         </h1>
       </section>
 
-      <section className="mx-auto max-w-5xl px-4 pb-10 sm:px-6 lg:px-8">
-        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-3xl border border-white/15 bg-black shadow-[0_24px_70px_-35px_rgba(0,0,0,0.95)]">
-          <video
-            src={rooftopBannerVideo}
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="metadata"
-            className="h-full w-full object-cover"
-          />
-          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent" />
-        </div>
-      </section>
-
       <section className="mx-auto max-w-5xl overflow-hidden border-y border-white/10 py-3">
         <div className="rooftop-ticker whitespace-nowrap text-[10px] uppercase text-white/55 sm:text-[11px]">
           {"CONTENT STUDIO · MADRID · ROOFTOP · GRABACION PROFESIONAL · REELS · PODCAST · VIDEO · ".repeat(8)}
         </div>
       </section>
 
-      <section className="mx-auto grid max-w-5xl gap-8 px-4 py-14 sm:px-6 lg:grid-cols-2 lg:px-8">
+      <section className="mx-auto max-w-3xl px-4 py-14 sm:px-6 lg:px-8">
         <div>
           <p className="text-[12px] uppercase text-white/55">( Que es )</p>
           <h2 className="mt-3 text-[27px] font-semibold leading-[1.15] sm:text-[33px]">
@@ -178,43 +131,12 @@ export default function TheRooftopContentStudioPage() {
             ))}
           </ul>
         </div>
-
-        <div className="relative overflow-hidden rounded-2xl border border-white/10">
-          <Image
-            src={rooftopSlideImages[0].src}
-            alt="Sesion de grabacion con teleprompter y equipamiento profesional"
-            width={1200}
-            height={1500}
-            className="h-full w-full object-cover"
-          />
-        </div>
       </section>
 
-      <section className="mx-auto max-w-5xl px-4 pb-14 sm:px-6 lg:px-8">
-        <p className="mb-4 text-[12px] uppercase text-white/55">( Galeria )</p>
-        <h2 className="mb-6 text-[26px] font-semibold sm:text-[32px]">Nuestro Estudio.</h2>
-
-        <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] px-3 py-3 sm:px-4">
-          <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-[#080808] to-transparent" />
-          <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-[#080808] to-transparent" />
-          <div className="rooftop-marquee flex w-max gap-3 sm:gap-4" aria-label="Galeria de imagenes del rooftop">
-            {rooftopSlideTrack.map((image, index) => (
-              <article
-                key={`${image.src}-${index}`}
-                className="relative aspect-[4/5] w-[220px] shrink-0 overflow-hidden rounded-xl border border-white/12 sm:w-[250px] lg:w-[270px]"
-              >
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  fill
-                  sizes="(max-width: 640px) 220px, (max-width: 1024px) 250px, 270px"
-                  className="h-full w-full object-cover"
-                />
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* TODO: Dani debe subir reemplazos reales a Vercel Blob para los
+          assets de esta sección (galería de 7 fotos del estudio, antes en
+          Firebase Storage, ahora rotas). Se quitó la sección "Galeria"
+          completa. */}
 
       <section className="mx-auto max-w-5xl px-4 pb-14 sm:px-6 lg:px-8">
         <p className="mb-4 text-[12px] uppercase text-white/55">( Beneficios )</p>
@@ -386,23 +308,9 @@ export default function TheRooftopContentStudioPage() {
       </footer>
 
       <style>{`
-        .rooftop-marquee {
-          animation: rooftop-marquee 34s linear infinite;
-          will-change: transform;
-        }
-
         .rooftop-ticker {
           animation: rooftop-ticker 38s linear infinite;
           will-change: transform;
-        }
-
-        @keyframes rooftop-marquee {
-          0% {
-            transform: translateX(-50%);
-          }
-          100% {
-            transform: translateX(0);
-          }
         }
 
         @keyframes rooftop-ticker {
@@ -415,7 +323,6 @@ export default function TheRooftopContentStudioPage() {
         }
 
         @media (prefers-reduced-motion: reduce) {
-          .rooftop-marquee,
           .rooftop-ticker {
             animation: none;
           }

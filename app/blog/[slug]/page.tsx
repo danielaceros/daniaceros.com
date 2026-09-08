@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 import Image from "next/image"
-import { getAllPosts, getPostBySlug, getPostMetadata } from "@/lib/blog"
+import { getAllPosts, getPostArticleSchema, getPostBreadcrumbSchema, getPostBySlug, getPostMetadata } from "@/lib/blog"
 import ContactCTA from "@/components/ContactCTA"
 
 export async function generateStaticParams() {
@@ -22,9 +22,19 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   if (!post) notFound()
 
   const faqs = post.body.filter((block) => block.type === "faq")
+  const articleSchema = getPostArticleSchema(post)
+  const breadcrumbSchema = getPostBreadcrumbSchema(post)
 
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <article className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pt-24 sm:pt-32 pb-16 sm:pb-24">
         <div className="max-w-3xl border-b border-white/10 pb-10 sm:pb-12">
           <p className="font-inter text-[11px] uppercase tracking-[0.22em] text-white/45">{post.heroKicker}</p>

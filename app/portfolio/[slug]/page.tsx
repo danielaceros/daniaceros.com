@@ -6,7 +6,7 @@ import ProjectHero from "@/components/ProjectHero"
 import ProjectContent from "@/components/ProjectContent"
 import ViewMoreOnTV from "@/components/ViewMoreOnTV"
 import ContactCTA from "@/components/ContactCTA"
-import { DEFAULT_OG_IMAGE, SITE_URL } from "@/lib/seo"
+import { DEFAULT_OG_IMAGE, SITE_URL, buildBreadcrumbSchema } from "@/lib/seo"
 
 type Props = {
   params: Promise<{ slug: string }>
@@ -76,8 +76,39 @@ export default async function ProjectPage({ params }: Props) {
 
   if (!project) return notFound()
 
+  const cleanTitle = project.title.replace(/\s*—\s*.*/, "").trim()
+  const description =
+    project.sections?.[0]?.items?.[0] ?? "Proyecto audiovisual corporativo de Daniel Acero."
+
+  // Solo incluimos los campos que existen realmente en data/projects.ts
+  // (nombre, descripción, vídeo y thumbnail) — sin inventar duración ni
+  // fecha de publicación, que no se guardan ahí.
+  const videoSchema = {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    name: cleanTitle,
+    description,
+    thumbnailUrl: [project.poster],
+    contentUrl: project.video,
+  }
+
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Inicio", path: "/" },
+    { name: "Portfolio", path: "/portfolio" },
+    { name: cleanTitle, path: `/portfolio/${project.slug}` },
+  ])
+
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(videoSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+
       <ProjectHero
         title={project.title}
         video={project.video}
