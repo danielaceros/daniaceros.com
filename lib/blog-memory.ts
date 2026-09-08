@@ -728,6 +728,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto (fallback evergreen — todos los 30 temas base cubiertos; tema extra generado fuera de lista, sin candidate SC limpio — token SC de Search Console sigue caducado con invalid_grant persistente desde hace semanas, requiere reautenticación manual). Imágenes Unsplash.",
   },
+  {
+    slug: "formatos-entrega-video-corporativo",
+    keyword: "formatos de entrega de un vídeo corporativo",
+    intent: "informacional",
+    createdAt: "2026-09-08",
+    status: "published",
+    notes: "Auto-generado por blog-auto (fallback evergreen — todos los 30 temas base cubiertos; tema extra generado fuera de lista, sin candidate SC limpio — token SC de Search Console sigue caducado con invalid_grant persistente desde hace semanas, requiere reautenticación manual). Imágenes Unsplash.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {

@@ -11532,6 +11532,126 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "formatos-entrega-video-corporativo",
+    title: "Formatos de entrega de un vídeo corporativo: qué pedir a tu productora",
+    description:
+      "Qué formatos, resoluciones, subtítulos y derechos de uso pedir a tu productora al cerrar un vídeo corporativo, para evitar sorpresas en la entrega final.",
+    publishedAt: "2026-09-08",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "postproducción",
+      "entrega de vídeo",
+      "producción audiovisual",
+      "DaVinci Resolve",
+    ],
+    keyword: "formatos de entrega de un vídeo corporativo",
+    intent: "informacional",
+    excerpt:
+      "Antes de cerrar un vídeo corporativo conviene dejar claro qué formatos, resoluciones y derechos incluye la entrega. Cuento qué pido yo mismo cuando cierro un proyecto, para evitar sorpresas al final.",
+    seoTitle: "Formatos de entrega de vídeo corporativo | Daniel Acero",
+    metaDescription:
+      "Formatos de entrega de un vídeo corporativo: qué pedir a tu productora antes de grabar para evitar sorpresas en el máster final.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cuando cierro un proyecto de vídeo corporativo, la parte que más dudas genera casi nunca es el rodaje. Es la entrega. El cliente recibe un archivo por WeTransfer y no sabe si eso es todo o si falta algo por venir.",
+      },
+      {
+        type: "paragraph",
+        text: "Llevo años entregando piezas para LinkedIn, web corporativa, pantallas de recepción y presentaciones internas. Cada canal pide un formato distinto, y si no se habla antes del rodaje, se acaba reexportando semanas después. Esto es lo que pido yo mismo cuando cierro un proyecto, y lo que recomiendo pedir si estás al otro lado.",
+      },
+      {
+        type: "image",
+        src: "/blog/formatos-entrega-video-corporativo/hero.webp",
+        alt: "Editor de vídeo trabajando frente a varios monitores con el timeline y el color grading de un proyecto",
+        width: 1920,
+        height: 1401,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Un formato de entrega no es solo el archivo final que llega por email. Incluye la resolución, el códec, la relación de aspecto, si los subtítulos van incrustados o en archivo aparte, y qué derechos de uso cubre exactamente ese archivo.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque si no queda por escrito antes de grabar, el problema aparece al final del proyecto: el máster está en 1080p cuando hacía falta 4K para una pantalla de feria, o el vertical para Instagram no estaba incluido en el presupuesto y hay que negociarlo aparte con el proyecto ya cerrado.",
+      },
+      {
+        type: "paragraph",
+        text: "Esto no depende del tamaño del proyecto. Un vídeo de tres minutos para una web corporativa necesita las mismas preguntas que uno de treinta segundos para redes: qué resolución, qué formatos y qué se puede reutilizar más adelante sin volver a rodar.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "El máster: resolución y códec" },
+      {
+        type: "paragraph",
+        text: "Pido siempre el máster en la resolución más alta con la que he grabado, normalmente 4K con una Sony A7S III o similar, aunque el uso final sea 1080p en web. Sirve como archivo fuente si dentro de un año hace falta recortar una pieza nueva sin volver a rodar. Para máster suelo entregar ProRes o un H.264 de bitrate alto; para difusión web, H.264 a 1080p con un bitrate entre 8 y 12 Mbps da buen resultado sin pesar de más.",
+      },
+      { type: "heading", level: 3, text: "Verticales y recortes para redes" },
+      {
+        type: "paragraph",
+        text: "Si el vídeo va a LinkedIn, Instagram o Stories, dejo claro desde el guion que habrá versión en 9:16 y 1:1. Recortar un plano horizontal a vertical después del rodaje casi siempre pierde composición: la persona queda descentrada o el logo se sale del encuadre. Lo correcto es pensar el recorte vertical durante el rodaje, dejando margen a los lados del plano.",
+      },
+      { type: "heading", level: 3, text: "Subtítulos, música y derechos de uso" },
+      {
+        type: "paragraph",
+        text: "Entrego los subtítulos en dos formatos: incrustados para difusión directa en redes, y en archivo .srt aparte por si hace falta traducirlos o editarlos sin volver a exportar el vídeo. En música, dejo por escrito qué licencia cubre la pista — no es lo mismo una canción con licencia de plataforma tipo Epidemic Sound que una composición con derechos cedidos en exclusiva. Y aclaro siempre si el precio incluye el vídeo íntegro o solo cortes cortos para redes, que es una de las confusiones más comunes en un presupuesto.",
+      },
+      {
+        type: "image",
+        src: "/blog/formatos-entrega-video-corporativo/intermedia.webp",
+        alt: "Cables USB y de datos preparados para transferir un archivo de vídeo",
+        width: 1920,
+        height: 1280,
+        caption: "El máster en alta resolución es el archivo que te permite reutilizar el material sin volver a rodar.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Aceptar solo el archivo final sin pedir el máster en la resolución más alta grabada.",
+          "No especificar los formatos verticales antes del rodaje, y acabar pagándolos aparte después.",
+          "Dar por hecho que los subtítulos están incluidos sin confirmarlo en el presupuesto.",
+          "No preguntar por la licencia de la música de fondo del vídeo.",
+          "Recibir el archivo sin un nombre claro ni número de versión, lo que complica encontrarlo meses después.",
+          "No pedir los b-roll sueltos para poder reutilizarlos en piezas futuras.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Qué resolución debo pedir para un vídeo corporativo?",
+        answer:
+          "Como mínimo 1080p para uso web, pero si el presupuesto lo permite pide el máster en 4K aunque el uso final sea menor. Da margen para recortes y usos futuros sin repetir el rodaje.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tarda una productora en entregar el vídeo final?",
+        answer:
+          "Depende del proyecto, pero entre dos y cuatro semanas desde el rodaje es un plazo realista para un vídeo corporativo con un par de rondas de revisión.",
+      },
+      {
+        type: "faq",
+        question: "¿Los subtítulos van incluidos en el presupuesto?",
+        answer:
+          "No siempre. Conviene preguntarlo antes de firmar, porque muchas productoras los cobran aparte si hacen falta varios idiomas.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo pedir el proyecto de edición además del vídeo final?",
+        answer:
+          "Puedes pedirlo, pero no todas las productoras lo entregan por defecto porque incluye recursos con licencias de terceros. Como mínimo, pide los b-roll sueltos sin editar.",
+      },
+      {
+        type: "paragraph",
+        text: "Si estás a punto de cerrar un vídeo corporativo y quieres tener claro qué formatos necesitas antes de grabar, escríbeme desde /contacto y lo dejamos por escrito en el presupuesto, sin sorpresas en la entrega.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
