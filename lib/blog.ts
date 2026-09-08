@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { buildMetadata, SITE_URL } from "@/lib/seo"
+import { PERSON_ID, buildBreadcrumbSchema, buildMetadata, DEFAULT_OG_IMAGE, SITE_URL } from "@/lib/seo"
 
 export type BlogPost = {
   slug: string
@@ -11436,9 +11436,15 @@ export function getBlogMetadata(): Metadata {
 }
 
 export function getPostMetadata(post: BlogPost): Metadata {
+  // post.seoTitle ya termina en "| Daniel Acero" y el <title> pasa por el
+  // template "%s | Daniel Acero" del layout raíz, así que sin recortar el
+  // sufijo aquí el <title> queda duplicado ("... | Daniel Acero | Daniel
+  // Acero"). openGraph/twitter no pasan por ese template, así que ahí sí
+  // usamos el seoTitle completo.
+  const bareTitle = post.seoTitle.replace(/\s*\|\s*Daniel Acero\s*$/i, "")
   return {
     ...buildMetadata({
-      title: post.seoTitle,
+      title: bareTitle,
       description: post.metaDescription,
       path: `/blog/${post.slug}`,
       keywords: [post.keyword, ...post.tags],
@@ -11453,5 +11459,34 @@ export function getPostMetadata(post: BlogPost): Metadata {
       publishedTime: post.publishedAt,
       modifiedTime: post.updatedAt ?? post.publishedAt,
     },
+    twitter: {
+      card: "summary_large_image",
+      title: post.seoTitle,
+      description: post.metaDescription,
+      images: [DEFAULT_OG_IMAGE],
+    },
   }
+}
+
+/** BlogPosting JSON-LD con las fechas reales del post (article:published_time ya vive en el <meta>, pero le faltaba el JSON-LD). */
+export function getPostArticleSchema(post: BlogPost) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.description,
+    url: `${SITE_URL}/blog/${post.slug}`,
+    datePublished: post.publishedAt,
+    dateModified: post.updatedAt ?? post.publishedAt,
+    author: { "@id": PERSON_ID },
+    image: DEFAULT_OG_IMAGE,
+  }
+}
+
+export function getPostBreadcrumbSchema(post: BlogPost) {
+  return buildBreadcrumbSchema([
+    { name: "Inicio", path: "/" },
+    { name: "Blog", path: "/blog" },
+    { name: post.title, path: `/blog/${post.slug}` },
+  ])
 }

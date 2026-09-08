@@ -1,8 +1,33 @@
 import type { Metadata } from "next"
 
 export const SITE_URL = "https://www.daniaceros.com"
+// Antes apuntaba a un asset de Firebase Storage que devuelve 402 Payment
+// Required (bucket con la facturación caída). Usamos el hero ya alojado en
+// Vercel Blob, que sí está disponible y es la imagen de marca principal.
 export const DEFAULT_OG_IMAGE =
-  "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/Disen%CC%83o%20sin%20ti%CC%81tulo.png?alt=media&token=ae45c05e-35c1-40c4-a89a-b7a738811667"
+  "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/hero/daniel-acero-hero-v2-llWDLWKhpBLHLD1VcbHNvWsLL7DeYZ.jpg"
+
+// @id estables para referenciar las mismas entidades entre distintos bloques
+// JSON-LD (evita duplicar el objeto Person/ProfessionalService completo en
+// cada página).
+export const PERSON_ID = `${SITE_URL}/sobre-mi#person`
+export const BUSINESS_ID = `${SITE_URL}/#business`
+
+export type BreadcrumbEntry = { name: string; path: string }
+
+/** BreadcrumbList JSON-LD a partir de una lista de {name, path} (path relativo, sin dominio). */
+export function buildBreadcrumbSchema(items: BreadcrumbEntry[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      item: `${SITE_URL}${item.path}`,
+    })),
+  }
+}
 
 type BuildMetadataArgs = {
   title: string

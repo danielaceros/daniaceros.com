@@ -56,9 +56,10 @@ export default function VideoEventosMadridPage() {
       <section className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pb-6">
         <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl border border-white/10">
           <Image
-            src="https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/Disen%CC%83o%20sin%20ti%CC%81tulo.png?alt=media&token=ae45c05e-35c1-40c4-a89a-b7a738811667"
+            src="https://kgtz1gujr7extokb.public.blob.vercel-storage.com/hero/daniel-acero-hero-v2-llWDLWKhpBLHLD1VcbHNvWsLL7DeYZ.jpg"
             alt="Grabación de vídeo de eventos en Madrid"
             fill
+            priority
             sizes="(max-width: 1024px) 100vw, 70vw"
             className="h-full w-full object-cover"
           />
