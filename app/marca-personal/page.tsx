@@ -20,12 +20,6 @@ export const metadata: Metadata = buildMetadata({
   ],
 })
 
-const HERO_PORTRAIT =
-  "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/0a4bxjgj0xSqIihE9ktHzjeng%20(2).png?alt=media&token=ead483f1-9cd5-4169-9e3d-810307334885"
-
-const LOGO_STRIP =
-  "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/bannerlegit.png?alt=media&token=99a19a7d-ffa0-4eb1-80ff-5732df48ea7b"
-
 const ALEJANDRO_AVATAR = "/alejandro.jpg"
 
 const PLANS = [
@@ -62,8 +56,8 @@ export default function MarcaPersonalPage() {
       <section className="relative w-full overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-[#0a0a0a]/95 to-[#0a0a0a]" />
         <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pt-28 sm:pt-36 pb-14 sm:pb-20">
-          <div className="grid grid-cols-1 lg:grid-cols-[7fr_5fr] gap-10 lg:gap-14 items-center">
-            <div>
+          <div className="grid grid-cols-1 gap-10 lg:gap-14 items-center">
+            <div className="max-w-3xl">
               <p
                 data-lux
                 style={{ "--lux-delay": "60ms" } as CSSProperties}
@@ -129,45 +123,17 @@ export default function MarcaPersonalPage() {
                 ))}
               </div>
             </div>
-
-            <div
-              data-lux
-              style={{ "--lux-delay": "240ms" } as CSSProperties}
-              className="hero-fade-up hero-fade-up-delay-2 hidden lg:block relative aspect-[683/1024] rounded-3xl overflow-hidden"
-            >
-              <Image
-                src={HERO_PORTRAIT}
-                alt="Daniel Acero filmmaker corporativo en Madrid"
-                fill
-                priority
-                unoptimized
-                sizes="(max-width: 1024px) 0px, 480px"
-                className="object-cover"
-              />
-              <div className="absolute inset-0 ring-1 ring-inset ring-white/8 rounded-3xl" />
-            </div>
+            {/* TODO: Dani debe subir un reemplazo real a Vercel Blob para este
+                asset (retrato hero de Daniel Acero, antes en Firebase Storage,
+                ahora roto). Se quitó la columna de imagen; el hero pasa a una
+                sola columna centrada. */}
           </div>
         </div>
       </section>
 
-      {/* LOGO STRIP */}
-      <section className="border-y border-white/[0.06] bg-[#080808]">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
-          <p className="font-inter text-[10px] sm:text-[11px] uppercase tracking-[0.2em] text-white/35 text-center mb-6">
-            Marcas con las que he trabajado
-          </p>
-          <div className="relative h-8 sm:h-10 max-w-3xl mx-auto opacity-90">
-            <Image
-              src={LOGO_STRIP}
-              alt="Real Madrid, IFEMA, Cinesa, Cámara de Comercio Madrid"
-              fill
-              unoptimized
-              sizes="(max-width: 768px) 100vw, 768px"
-              className="object-contain"
-            />
-          </div>
-        </div>
-      </section>
+      {/* TODO: Dani debe subir un reemplazo real a Vercel Blob para este
+          asset (banner de logos de clientes, antes en Firebase Storage,
+          ahora roto). Se quitó la sección "LOGO STRIP" completa. */}
 
       {/* CÓMO FUNCIONA */}
       <section className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24">

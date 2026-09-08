@@ -18,17 +18,10 @@ export const metadata: Metadata = buildMetadata({
   ],
 })
 
-const HERO_PORTRAIT =
-  "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/0a4bxjgj0xSqIihE9ktHzjeng%20(2).png?alt=media&token=ead483f1-9cd5-4169-9e3d-810307334885"
-
-const LOGO_STRIP =
-  "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/bannerlegit.png?alt=media&token=99a19a7d-ffa0-4eb1-80ff-5732df48ea7b"
-
-const MERIDIAN_BROLL =
-  "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/5D8C07A0-DF6C-4A1D-B935-0DE35EE494E3.mp4?alt=media&token=74d33b70-2485-4ea6-97ad-df1b584ded8a"
-
-const MERIDIAN_AVATAR =
-  "https://storage.googleapis.com/klip-e547f.firebasestorage.app/avatars/meridianbiohealth_avatar.jpg"
+// Avatar de Meridian ya usado en /avatars para el resto de menciones a este
+// cliente en esta misma página (WALL_AVATARS, ACTIVE_CLIENTS). Reemplaza la
+// URL rota de Firebase Storage.
+const MERIDIAN_AVATAR = "/avatars/meridianbiohealth.jpg"
 
 const ACTIVE_CLIENTS = [
   { handle: "meridianbiohealth", name: "Meridian Biohealth", meta: "Odontología biológica · Madrid", tag: "Cliente recurrente" },
@@ -85,8 +78,8 @@ export default function ContenidoMensualPage() {
       <section className="relative w-full overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-[#0a0a0a]/95 to-[#0a0a0a]" />
         <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pt-28 sm:pt-36 pb-14 sm:pb-20">
-          <div className="grid grid-cols-1 lg:grid-cols-[7fr_5fr] gap-10 lg:gap-14 items-center">
-            <div>
+          <div className="grid grid-cols-1 gap-10 lg:gap-14 items-center">
+            <div className="max-w-3xl">
               <p
                 data-lux
                 style={{ "--lux-delay": "60ms" } as CSSProperties}
@@ -136,45 +129,17 @@ export default function ContenidoMensualPage() {
                 </Link>
               </div>
             </div>
-
-            <div
-              data-lux
-              style={{ "--lux-delay": "240ms" } as CSSProperties}
-              className="hero-fade-up hero-fade-up-delay-2 hidden lg:block relative aspect-[683/1024] rounded-3xl overflow-hidden"
-            >
-              <Image
-                src={HERO_PORTRAIT}
-                alt="Daniel Acero filmmaker corporativo en Madrid"
-                fill
-                priority
-                unoptimized
-                sizes="(max-width: 1024px) 0px, 480px"
-                className="object-cover"
-              />
-              <div className="absolute inset-0 ring-1 ring-inset ring-white/8 rounded-3xl" />
-            </div>
+            {/* TODO: Dani debe subir un reemplazo real a Vercel Blob para este
+                asset (retrato hero de Daniel Acero, antes en Firebase Storage,
+                ahora roto). Se quitó la columna de imagen; el hero pasa a una
+                sola columna centrada. */}
           </div>
         </div>
       </section>
 
-      {/* LOGO STRIP */}
-      <section className="border-y border-white/[0.06] bg-[#080808]">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
-          <p className="font-inter text-[10px] sm:text-[11px] uppercase tracking-[0.2em] text-white/35 text-center mb-6">
-            Empresas con las que he trabajado
-          </p>
-          <div className="relative h-8 sm:h-10 max-w-3xl mx-auto opacity-90">
-            <Image
-              src={LOGO_STRIP}
-              alt="IFEMA, Cinesa, Cámara de Comercio Madrid"
-              fill
-              unoptimized
-              sizes="(max-width: 768px) 100vw, 768px"
-              className="object-contain"
-            />
-          </div>
-        </div>
-      </section>
+      {/* TODO: Dani debe subir un reemplazo real a Vercel Blob para este
+          asset (banner de logos de empresas, antes en Firebase Storage,
+          ahora roto). Se quitó la sección "LOGO STRIP" completa. */}
 
       {/* STATS HERO — NUEVO */}
       <section className="border-b border-white/[0.06]">
@@ -278,7 +243,7 @@ export default function ContenidoMensualPage() {
               </div>
             </div>
 
-            {/* IG-STYLE CARD WITH BROLL VIDEO */}
+            {/* IG-STYLE CARD */}
             <div className="order-1 lg:order-2 mx-auto w-full max-w-[400px]">
               <div className="rounded-3xl overflow-hidden bg-[#0a0a0a] ring-1 ring-white/10 shadow-2xl">
                 {/* Header */}
@@ -312,16 +277,17 @@ export default function ContenidoMensualPage() {
                   </Link>
                 </div>
 
-                {/* Video b-roll */}
+                {/* Foto. TODO: Dani debe subir un b-roll real (vídeo) a
+                    Vercel Blob para este asset — el vídeo de Firebase Storage
+                    estaba roto. De momento reutiliza el avatar del cliente. */}
                 <div className="relative aspect-[9/16] bg-black">
-                  <video
-                    src={MERIDIAN_BROLL}
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    preload="metadata"
-                    className="absolute inset-0 h-full w-full object-cover"
+                  <Image
+                    src={MERIDIAN_AVATAR}
+                    alt="Meridian Biohealth"
+                    fill
+                    unoptimized
+                    sizes="400px"
+                    className="object-cover"
                   />
                 </div>
 

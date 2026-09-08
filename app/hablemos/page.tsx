@@ -26,13 +26,16 @@ export const metadata: Metadata = buildMetadata({
 export default function HablemosPage() {
   return (
     <main className="text-white">
+      {/* TODO: Dani debe subir un reemplazo real a Vercel Blob para este asset
+          (banner de logos de clientes, antes en Firebase Storage, ahora roto).
+          Hero oculta el bloque de logos de confianza automáticamente cuando
+          no se le pasa trustedLogosImageSrc. */}
       <Hero
         title="¿Hablamos de tu proyecto?"
         tagline=""
         description="Te digo presupuesto y disponibilidad en 2 minutos por WhatsApp."
         ctaLabel="Pedir presupuesto ahora"
         compactTitle
-        trustedLogosImageSrc="https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/bannerlegit.png?alt=media&token=99a19a7d-ffa0-4eb1-80ff-5732df48ea7b"
       />
       <Portfolio
         openVideosInModal
@@ -74,7 +77,7 @@ export default function HablemosPage() {
         </div>
       </section>
       <footer className="mx-auto w-full max-w-6xl px-4 pb-5 pt-0 text-center sm:px-6 sm:pb-6">
-        <p className="font-inter text-[11px] lowercase text-white/45">
+        <p className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 font-inter text-[11px] lowercase text-white/45">
           <Link
             href="https://www.instagram.com/daniaceros"
             target="_blank"
@@ -82,6 +85,24 @@ export default function HablemosPage() {
             className="hover:text-white/90 transition-colors duration-300 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
           >
             @danielaceros
+          </Link>
+          <span aria-hidden>·</span>
+          <Link
+            href="https://es.linkedin.com/in/daniaceros"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white/90 transition-colors duration-300 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+          >
+            linkedin
+          </Link>
+          <span aria-hidden>·</span>
+          <Link
+            href="https://www.youtube.com/@daniacerxs/videos"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white/90 transition-colors duration-300 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+          >
+            youtube
           </Link>
         </p>
         <p className="mt-3 flex flex-wrap items-center justify-center gap-x-2 gap-y-1 font-inter text-[11px] lowercase text-white/45">

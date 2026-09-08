@@ -117,7 +117,7 @@ export default function ContactCTA({
           style={{ "--lux-delay": "300ms" } as CSSProperties}
           className="cinematic-reveal cinematic-reveal-delay-3 mt-14 pt-2"
         >
-          <p className="font-inter text-[11px] lowercase text-white/45">
+          <p className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 font-inter text-[11px] lowercase text-white/45">
             <Link
               href="https://www.instagram.com/daniaceros"
               target="_blank"
@@ -125,6 +125,24 @@ export default function ContactCTA({
               className="hover:text-white/90 transition-colors duration-300 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
             >
               @danielaceros
+            </Link>
+            <span aria-hidden>·</span>
+            <Link
+              href="https://es.linkedin.com/in/daniaceros"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white/90 transition-colors duration-300 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+            >
+              linkedin
+            </Link>
+            <span aria-hidden>·</span>
+            <Link
+              href="https://www.youtube.com/@daniacerxs/videos"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white/90 transition-colors duration-300 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+            >
+              youtube
             </Link>
           </p>
           <p className="mt-3 flex flex-wrap items-center justify-center gap-x-2 gap-y-1 font-inter text-[11px] lowercase text-white/45">

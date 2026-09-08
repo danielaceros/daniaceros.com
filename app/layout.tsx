@@ -120,8 +120,11 @@ export default function RootLayout({
                 addressLocality: "Madrid",
                 addressCountry: "ES",
               },
-              // TODO: añadir LinkedIn/YouTube a sameAs cuando Dani pase las URLs
-              sameAs: ["https://www.instagram.com/daniaceros"],
+              sameAs: [
+                "https://www.instagram.com/daniaceros",
+                "https://es.linkedin.com/in/daniaceros",
+                "https://www.youtube.com/@daniacerxs/videos",
+              ],
               serviceType: [
                 "Video corporativo",
                 "Video institucional",

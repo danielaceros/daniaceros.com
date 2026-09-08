@@ -20,7 +20,11 @@ const personSchema = {
   jobTitle: "Filmmaker corporativo",
   url: `${SITE_URL}/sobre-mi`,
   image: DEFAULT_OG_IMAGE,
-  sameAs: ["https://www.instagram.com/daniaceros"],
+  sameAs: [
+    "https://www.instagram.com/daniaceros",
+    "https://es.linkedin.com/in/daniaceros",
+    "https://www.youtube.com/@daniacerxs/videos",
+  ],
   worksFor: { "@id": BUSINESS_ID },
 }
 
