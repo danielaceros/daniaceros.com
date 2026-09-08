@@ -1,6 +1,6 @@
 import Link from "next/link"
 import type { CSSProperties } from "react"
-import Script from "next/script"
+import LazyContactForm from "./LazyContactForm"
 
 const WHATSAPP_MESSAGE = encodeURIComponent(
   "Hola Dani! Estamos valorando crear vídeo para la empresa y quería saber cómo trabajáis y si encaja para nuestro caso."
@@ -79,24 +79,7 @@ export default function ContactCTA({
           </aside>
 
           <div className={`relative overflow-hidden ${mobileFormFirst ? "order-1" : ""}`}>
-            <iframe
-              src="https://api.fitnesslaunch.es/widget/form/xIIdaDunDkxA4Mcwehu0"
-              className="block h-[640px] w-[calc(100%+24px)] -ml-3 md:h-[680px] md:w-[calc(100%+32px)] md:-ml-4 lg:h-[640px]"
-              style={{ border: "none", borderRadius: "0px" }}
-              id="inline-xIIdaDunDkxA4Mcwehu0"
-              data-layout="{'id':'INLINE'}"
-              data-trigger-type="alwaysShow"
-              data-trigger-value=""
-              data-activation-type="alwaysActivated"
-              data-activation-value=""
-              data-deactivation-type="neverDeactivate"
-              data-deactivation-value=""
-              data-form-name="Form - Dani Acero"
-              data-height="undefined"
-              data-layout-iframe-id="inline-xIIdaDunDkxA4Mcwehu0"
-              data-form-id="xIIdaDunDkxA4Mcwehu0"
-              title="Form - Dani Acero"
-            />
+            <LazyContactForm />
           </div>
 
           {mobileFormFirst && !hideMobileContactInfo ? (
@@ -126,7 +109,6 @@ export default function ContactCTA({
             </aside>
           ) : null}
         </div>
-        <Script src="https://api.fitnesslaunch.es/js/form_embed.js" strategy="afterInteractive" />
       </div>
 
       {hideFooter ? null : (
