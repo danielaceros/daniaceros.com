@@ -159,7 +159,7 @@ export default function MarcaPersonalPage() {
           <div className="relative h-8 sm:h-10 max-w-3xl mx-auto opacity-90">
             <Image
               src={LOGO_STRIP}
-              alt="FIFA, IFEMA, Cinesa, Cámara de Comercio Madrid"
+              alt="Real Madrid, IFEMA, Cinesa, Cámara de Comercio Madrid"
               fill
               unoptimized
               sizes="(max-width: 768px) 100vw, 768px"

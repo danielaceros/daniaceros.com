@@ -23,13 +23,6 @@ const PORTFOLIO_META: Record<
   string,
   { ig: string; avatar?: string; caption: string; cat: string; town?: string }
 > = {
-  fifa: {
-    ig: "fifa",
-    avatar: "https://icons.duckduckgo.com/ip3/fifa.com.ico",
-    caption: "Cobertura 4K de un evento corporativo de FIFA, para marca y redes 🎥",
-    cat: "🎥 Evento corporativo",
-    town: "Madrid",
-  },
   "brahim-diaz": {
     ig: "sonypicturesspain",
     avatar: "https://icons.duckduckgo.com/ip3/sonypictures.es.ico",

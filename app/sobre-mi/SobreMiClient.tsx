@@ -75,7 +75,7 @@ export default function SobreMiPage() {
               className="space-y-6"
             >
               <p className="text-[13px] sm:text-[14px] leading-[1.75] text-white/85">
-                Soy Daniel Acero, Filmmaker y comunicador audiovisual con más de 10 años de
+                Soy Daniel Acero, Filmmaker y comunicador audiovisual con más de seis años de
                 experiencia creando contenido de valor para marcas. Desde pequeño he sentido una
                 fascinación especial por el arte visual y la forma en que la imagen puede transmitir
                 emociones y contar historias. Esto me ha llevado a explorar el mundo de la
