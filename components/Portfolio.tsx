@@ -1,5 +1,6 @@
 import SectionTitle from "./SectionTitle"
 import PortfolioCard from "./PortfolioCard"
+import PortfolioMarquee from "./PortfolioMarquee"
 import ViewMoreOnTV from "./ViewMoreOnTV"
 import { projects } from "@/data/projects"
 import type { CSSProperties } from "react"
@@ -15,7 +16,9 @@ type Props = {
 export default function Portfolio({
   openVideosInModal = false,
   projectSlugs,
-  forceTwoColumns = false,
+  // forceTwoColumns ya no afecta a nada: solo se usaba para el ancho de la
+  // grid estática que este componente sustituyó por PortfolioMarquee. Se
+  // mantiene en Props para no romper a quien lo siga pasando (p.ej. /hablemos).
   sectionClassName,
   desktopSlideshow = false,
 }: Props) {
@@ -24,10 +27,6 @@ export default function Portfolio({
         .map((slug) => projects.find((project) => project.slug === slug))
         .filter((project): project is (typeof projects)[number] => Boolean(project))
     : projects
-
-  const gridClassName = forceTwoColumns
-    ? "cinematic-reveal cinematic-reveal-delay-2 grid grid-cols-2 gap-2 sm:grid-cols-2 sm:gap-3 lg:grid-cols-4"
-    : "cinematic-reveal cinematic-reveal-delay-2 grid grid-cols-2 gap-2 sm:grid-cols-3 sm:gap-3 lg:grid-cols-4"
 
   return (
     <section
@@ -166,20 +165,20 @@ export default function Portfolio({
       ) : (
         <div
           data-lux
-          className={gridClassName}
           style={{ "--lux-delay": "160ms" } as CSSProperties}
+          className="relative left-1/2 w-screen -translate-x-1/2"
         >
-          {selectedProjects.map((project, i) => (
-            <PortfolioCard
-              key={project.slug}
-              title={project.title}
-              video={project.video}
-              poster={project.poster}
-              href={`/portfolio/${project.slug}`}
-              index={i}
-              openInModal={openVideosInModal}
-            />
-          ))}
+          <PortfolioMarquee
+            items={selectedProjects.map((project) => ({
+              slug: project.slug,
+              title: project.title,
+              video: project.video,
+              poster: project.poster,
+            }))}
+            size="sm"
+            mode={openVideosInModal ? "modal" : "link"}
+            basePath="/portfolio"
+          />
         </div>
       )}
 
