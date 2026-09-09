@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import SectionTitle from "@/components/SectionTitle"
-import PortfolioCard from "@/components/PortfolioCard"
 import PortfolioHero from "@/components/PortfolioHero"
+import PortfolioMarquee from "@/components/PortfolioMarquee"
 import ViewMoreOnTV from "@/components/ViewMoreOnTV"
 import ContactCTA from "@/components/ContactCTA"
 import { projects } from "@/data/projects"
@@ -30,18 +30,22 @@ export default function PortfolioPage() {
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 sm:pt-24 pb-8 sm:pb-10">
         <PortfolioHero />
         <SectionTitle>Portfolio</SectionTitle>
-        <div className="mt-6 sm:mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {projects.map((project) => (
-            <PortfolioCard
-              key={project.slug}
-              title={project.title}
-              video={project.video}
-              href={`/portfolio/${project.slug}`}
-            />
-          ))}
-        </div>
+      </section>
 
-        <ViewMoreOnTV className="mt-8 sm:mt-10" />
+      <PortfolioMarquee
+        items={projects.map((project) => ({
+          slug: project.slug,
+          title: project.title,
+          video: project.video,
+          poster: project.poster,
+        }))}
+        size="lg"
+        mode="link"
+        basePath="/portfolio"
+      />
+
+      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-8 sm:pb-10">
+        <ViewMoreOnTV className="mt-2 sm:mt-4" />
       </section>
       <ContactCTA />
     </main>
