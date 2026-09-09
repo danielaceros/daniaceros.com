@@ -11652,6 +11652,126 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-sector-agroalimentario",
+    title: "Vídeo corporativo para el sector agroalimentario: qué lo hace funcionar",
+    description:
+      "Cómo planteo un vídeo corporativo dentro de una planta agroalimentaria: normativa de higiene, rodaje sin parar la línea de producción y cómo contar el proceso sin caer en el vídeo institucional genérico.",
+    publishedAt: "2026-09-09",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "sector agroalimentario",
+      "vídeo industrial",
+      "producción audiovisual",
+      "vídeo de producto",
+    ],
+    keyword: "vídeo corporativo para el sector agroalimentario",
+    intent: "informacional",
+    excerpt:
+      "Grabar en una planta agroalimentaria tiene reglas propias: higiene, seguridad y una línea de producción que no se detiene por una cámara. Cuento cómo lo planteo para que el vídeo salga bien sin frenar la operativa.",
+    seoTitle: "Vídeo corporativo sector agroalimentario | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo para el sector agroalimentario: cómo grabar en planta, cumplir normativa y contar el proceso sin parecer publicidad genérica.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Grabar en una planta agroalimentaria no se parece a grabar en una oficina. Hay una línea de producción que no para porque haya una cámara delante, protocolos de higiene que hay que respetar desde el minuto uno, y maquinaria que marca su propio ritmo de trabajo.",
+      },
+      {
+        type: "paragraph",
+        text: "He grabado en conserveras, envasadoras y talleres de producto fresco. Cada planta tiene sus normas concretas, pero el patrón se repite: hace falta más planificación que en un rodaje de oficina, y el mejor resultado sale cuando dejo que el proceso hable por sí solo, sin forzar nada delante de cámara.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-agroalimentario/hero.webp",
+        alt: "Trabajadores dentro de una planta de procesado de alimentos con maquinaria industrial",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Un vídeo corporativo para una empresa agroalimentaria suele cubrir dos necesidades a la vez: mostrar el proceso de producción con transparencia y transmitir confianza a distribuidores, clientes B2B o consumidor final. No es publicidad de producto en el sentido clásico, es enseñar cómo se trabaja para que quien lo ve confíe en lo que compra.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque en este sector la confianza se construye con detalles concretos: control de calidad, trazabilidad, condiciones de la planta. Un vídeo bien planteado convierte esos procesos, que normalmente son invisibles para el cliente, en algo que se puede ver y verificar.",
+      },
+      {
+        type: "paragraph",
+        text: "También hay una capa que no está en otros sectores: la normativa sanitaria. No se entra a una zona de producción con cualquier equipo ni cualquier ropa, y eso condiciona qué se puede grabar y cómo, no solo el discurso del vídeo.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Normativa de higiene y acceso a planta" },
+      {
+        type: "paragraph",
+        text: "Antes de pisar la planta pregunto por el protocolo de higiene exacto: bata, gorro, calzado específico, a veces guantes. El equipo de cámara también tiene que pasar ese filtro, y algunas zonas simplemente no permiten cámaras por normativa. Confirmo esto con el responsable de calidad antes de cerrar fecha de rodaje, no el mismo día.",
+      },
+      { type: "heading", level: 3, text: "Grabar sin parar la línea de producción" },
+      {
+        type: "paragraph",
+        text: "La línea no se detiene por el rodaje salvo excepción acordada de antemano. Trabajo alrededor del ritmo real de producción: planos generales mientras la línea sigue funcionando, y algún primer plano puntual en pausas naturales del proceso. Esto exige llegar con el plan de plano cerrado, porque no hay margen para improvisar sobre la marcha sin interrumpir a los operarios.",
+      },
+      { type: "heading", level: 3, text: "Mostrar el proceso sin caer en el vídeo institucional genérico" },
+      {
+        type: "paragraph",
+        text: "El error más común es grabar maquinaria y cinta transportadora sin ningún hilo narrativo, lo que da un vídeo que podría ser de cualquier fábrica. Prefiero seguir el producto: de dónde viene la materia prima, qué controles pasa, cómo llega al envasado final. Esa estructura, aunque simple, convierte planos técnicos en una historia que se sigue sin esfuerzo.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-agroalimentario/intermedia.webp",
+        alt: "Cámara de vídeo sobre trípode preparada para grabar",
+        width: 1920,
+        height: 1280,
+        caption: "En planta, el plan de plano se cierra antes del rodaje: no hay margen para improvisar sin frenar la línea.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "No confirmar el protocolo de higiene y acceso con calidad antes del día de rodaje.",
+          "Grabar maquinaria sin ningún hilo narrativo que conecte los planos con el producto final.",
+          "Pedir parar la línea de producción sin haberlo acordado con antelación, lo que genera fricción con planta.",
+          "No prever un plano de trazabilidad o control de calidad, que suele ser lo que más confianza transmite al ver el vídeo.",
+          "Grabar con equipo o ropa inadecuada para una zona de producción, lo que puede frenar el rodaje sobre la marcha.",
+          "Alargar el vídeo mostrando todo el proceso al mismo ritmo, sin dar más peso a los pasos que aportan más confianza.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Se puede grabar dentro de una zona de producción alimentaria?",
+        answer:
+          "Depende de la planta y de la zona concreta. Algunas exigen bata, gorro y calzado específico para el equipo de cámara; otras no permiten grabación por normativa. Se confirma siempre con el responsable de calidad antes de la fecha de rodaje.",
+      },
+      {
+        type: "faq",
+        question: "¿Hay que parar la línea de producción para grabar?",
+        answer:
+          "No, salvo un plano puntual acordado de antemano. Lo habitual es grabar alrededor del ritmo real de la línea, aprovechando pausas naturales del proceso para primeros planos.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto dura un vídeo corporativo de este tipo?",
+        answer:
+          "Entre dos y tres minutos suele ser suficiente para mostrar el proceso completo sin perder la atención del espectador. Piezas más largas funcionan mejor como material técnico interno que como vídeo corporativo de cara al cliente.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué se debe mostrar para transmitir más confianza?",
+        answer:
+          "Los pasos de control de calidad y trazabilidad, aunque parezcan menos vistosos que la maquinaria. Es lo que más ayuda a un distribuidor o cliente B2B a confiar en el proceso.",
+      },
+      {
+        type: "paragraph",
+        text: "Si diriges una empresa del sector agroalimentario en Madrid y quieres un vídeo que muestre tu proceso de producción con criterio, escríbeme desde /contacto y lo planteamos según la normativa de tu planta.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
