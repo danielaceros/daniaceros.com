@@ -304,3 +304,43 @@
     animation: none;
   }
 }
+
+/* Por debajo del breakpoint sm de Tailwind (640px) no hay título ni pie de
+   página alrededor (ver app/tv/page.tsx): el "móvil" deja de ser una
+   maqueta con marco y pasa a ser el feed real, a pantalla completa, borde
+   a borde — como si ya estuvieras dentro de la app de Instagram. */
+@media (max-width: 639px) {
+  .stage {
+    width: 100vw;
+    height: 100dvh;
+  }
+
+  .frame {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .notch {
+    display: none;
+  }
+
+  .viewport {
+    border-radius: 0;
+  }
+
+  /* El vídeo va a sangre real (sin respetar el notch/home indicator, igual
+     que en la app de Instagram); solo la UI encima se aparta de esas zonas
+     para no quedar tapada por ellas. */
+  .muteBtn {
+    top: calc(16px + env(safe-area-inset-top));
+  }
+
+  .rail {
+    bottom: calc(128px + env(safe-area-inset-bottom));
+  }
+
+  .bottom {
+    bottom: calc(20px + env(safe-area-inset-bottom));
+  }
+}

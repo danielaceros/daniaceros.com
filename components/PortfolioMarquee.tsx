@@ -23,6 +23,12 @@ type Props = {
   basePath?: string
   speed?: number
   className?: string
+  /** Contacto sigue siendo la tira animada de siempre (auto-scroll, no
+   *  interactiva). El Portfolio (home + /portfolio) necesita que la gente
+   *  pueda desplazarlo a mano para ver todas las piezas: con scrollable=true
+   *  se desactiva la animación automática y el track pasa a ser un scroll
+   *  horizontal real (swipe/trackpad/arrastre con el ratón). */
+  scrollable?: boolean
 }
 
 const SIZE_CLASSES: Record<CardSize, string> = {
@@ -52,6 +58,7 @@ export default function PortfolioMarquee({
   basePath = "/portfolio",
   speed = 0.28,
   className,
+  scrollable = false,
 }: Props) {
   const trackRef = useRef<HTMLDivElement>(null)
   const rafRef = useRef<number | null>(null)
@@ -59,7 +66,47 @@ export default function PortfolioMarquee({
   const runningRef = useRef(false)
   const [activeVideo, setActiveVideo] = useState<{ title: string; video: string } | null>(null)
 
+  // Arrastre con ratón en desktop: el scroll nativo (swipe/trackpad) ya
+  // funciona solo con overflow-x-auto, esto añade la afordancia de "coger y
+  // tirar" con el ratón que la gente espera en una tira horizontal.
+  const dragRef = useRef({ active: false, startX: 0, startScroll: 0, moved: false })
+
+  const onPointerDown = (event: React.PointerEvent<HTMLDivElement>) => {
+    if (!scrollable || !trackRef.current) return
+    dragRef.current = {
+      active: true,
+      startX: event.clientX,
+      startScroll: trackRef.current.scrollLeft,
+      moved: false,
+    }
+    trackRef.current.setPointerCapture(event.pointerId)
+  }
+
+  const onPointerMove = (event: React.PointerEvent<HTMLDivElement>) => {
+    if (!scrollable || !dragRef.current.active || !trackRef.current) return
+    const delta = event.clientX - dragRef.current.startX
+    if (Math.abs(delta) > 4) dragRef.current.moved = true
+    trackRef.current.scrollLeft = dragRef.current.startScroll - delta
+  }
+
+  const endDrag = (event: React.PointerEvent<HTMLDivElement>) => {
+    if (!scrollable) return
+    dragRef.current.active = false
+    trackRef.current?.releasePointerCapture(event.pointerId)
+  }
+
+  // Tras un arrastre, evita que el click final en la tarjeta abra el vídeo
+  // (el navegador dispara click aunque haya habido movimiento de por medio).
+  const onTrackClickCapture = (event: React.MouseEvent<HTMLDivElement>) => {
+    if (scrollable && dragRef.current.moved) {
+      event.preventDefault()
+      event.stopPropagation()
+    }
+  }
+
   useEffect(() => {
+    if (scrollable) return
+
     const animate = () => {
       if (!runningRef.current) return
       if (trackRef.current) {
@@ -104,7 +151,7 @@ export default function PortfolioMarquee({
       observer.disconnect()
       document.removeEventListener("visibilitychange", onVisibilityChange)
     }
-  }, [speed])
+  }, [speed, scrollable])
 
   useEffect(() => {
     if (mode !== "modal" || !activeVideo) return
@@ -129,24 +176,55 @@ export default function PortfolioMarquee({
 
   return (
     <>
-      <section className={`relative w-full overflow-hidden py-6 sm:py-8 ${className ?? ""}`}>
-        <div ref={trackRef} className={`flex w-max ${GAP_CLASSES[size]} will-change-transform`}>
-          {[...items, ...items].map((item, i) => (
-            <MarqueeCard
-              key={`${item.slug}-${i}`}
-              title={item.title}
-              video={item.video}
-              poster={item.poster}
-              size={size}
-              href={mode === "link" ? `${basePath}/${item.slug}` : undefined}
-              onOpen={
-                mode === "modal"
-                  ? () => setActiveVideo({ title: item.title, video: item.video })
-                  : undefined
-              }
-            />
-          ))}
-        </div>
+      <section className={`relative w-full py-6 sm:py-8 ${scrollable ? "" : "overflow-hidden"} ${className ?? ""}`}>
+        {scrollable ? (
+          <div
+            ref={trackRef}
+            onPointerDown={onPointerDown}
+            onPointerMove={onPointerMove}
+            onPointerUp={endDrag}
+            onPointerLeave={endDrag}
+            onClickCapture={onTrackClickCapture}
+            className="cursor-grab touch-pan-x snap-x snap-proximity overflow-x-auto overscroll-x-contain scroll-smooth px-4 pb-2 active:cursor-grabbing sm:px-6"
+          >
+            <div className={`flex w-max ${GAP_CLASSES[size]}`}>
+              {items.map((item) => (
+                <div key={item.slug} className="snap-start">
+                  <MarqueeCard
+                    title={item.title}
+                    video={item.video}
+                    poster={item.poster}
+                    size={size}
+                    href={mode === "link" ? `${basePath}/${item.slug}` : undefined}
+                    onOpen={
+                      mode === "modal"
+                        ? () => setActiveVideo({ title: item.title, video: item.video })
+                        : undefined
+                    }
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        ) : (
+          <div ref={trackRef} className={`flex w-max ${GAP_CLASSES[size]} will-change-transform`}>
+            {[...items, ...items].map((item, i) => (
+              <MarqueeCard
+                key={`${item.slug}-${i}`}
+                title={item.title}
+                video={item.video}
+                poster={item.poster}
+                size={size}
+                href={mode === "link" ? `${basePath}/${item.slug}` : undefined}
+                onOpen={
+                  mode === "modal"
+                    ? () => setActiveVideo({ title: item.title, video: item.video })
+                    : undefined
+                }
+              />
+            ))}
+          </div>
+        )}
 
         <div
           className={`pointer-events-none absolute inset-y-0 left-0 bg-gradient-to-r from-[#0a0a0a] via-[#0a0a0a]/40 to-transparent ${EDGE_FADE_CLASSES[size]}`}
