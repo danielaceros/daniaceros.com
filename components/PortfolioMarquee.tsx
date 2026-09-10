@@ -11,7 +11,7 @@ export type MarqueeItem = {
   poster?: string
 }
 
-type CardSize = "sm" | "lg"
+type CardSize = "sm" | "lg" | "xl"
 
 type Props = {
   items: MarqueeItem[]
@@ -34,21 +34,29 @@ type Props = {
 const SIZE_CLASSES: Record<CardSize, string> = {
   sm: "aspect-[3/4] h-[140px] w-[105px] sm:h-[180px] sm:w-[135px] lg:h-[220px] lg:w-[165px]",
   lg: "aspect-[3/4] h-[220px] w-[165px] sm:h-[300px] sm:w-[225px] lg:h-[380px] lg:w-[285px]",
+  // "xl" = Portfolio del home. Mismo tamaño que "sm" hasta el móvil/tablet
+  // (no toca esa experiencia ya validada) pero crece bastante más a partir de
+  // desktop para que 7 proyectos llenen pantallas anchas (1440-2560px) en
+  // vez de dejar un hueco enorme a la derecha tras la última tarjeta.
+  xl: "aspect-[3/4] h-[140px] w-[105px] sm:h-[180px] sm:w-[135px] lg:h-[300px] lg:w-[225px] xl:h-[360px] xl:w-[270px] 2xl:h-[420px] 2xl:w-[315px]",
 }
 
 const TITLE_SIZE_CLASSES: Record<CardSize, string> = {
   sm: "text-[10px] sm:text-[13px]",
   lg: "text-[13px] sm:text-[16px] lg:text-[19px]",
+  xl: "text-[10px] sm:text-[13px] lg:text-[17px] 2xl:text-[20px]",
 }
 
 const GAP_CLASSES: Record<CardSize, string> = {
   sm: "gap-4",
   lg: "gap-5 sm:gap-6",
+  xl: "gap-4 sm:gap-5 lg:gap-6 xl:gap-7 2xl:gap-8",
 }
 
 const EDGE_FADE_CLASSES: Record<CardSize, string> = {
   sm: "w-32",
   lg: "w-24 sm:w-40 lg:w-56",
+  xl: "w-24 sm:w-32 lg:w-48 2xl:w-64",
 }
 
 export default function PortfolioMarquee({
@@ -185,7 +193,8 @@ export default function PortfolioMarquee({
             onPointerUp={endDrag}
             onPointerLeave={endDrag}
             onClickCapture={onTrackClickCapture}
-            className="cursor-grab touch-pan-x snap-x snap-proximity overflow-x-auto overscroll-x-contain scroll-smooth px-4 pb-2 active:cursor-grabbing sm:px-6"
+            className="cursor-grab touch-pan-x snap-x snap-proximity overflow-x-auto overscroll-x-contain scroll-smooth px-4 active:cursor-grabbing sm:px-6 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+            style={{ msOverflowStyle: "none" }}
           >
             <div className={`flex w-max ${GAP_CLASSES[size]}`}>
               {items.map((item) => (

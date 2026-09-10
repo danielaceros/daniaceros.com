@@ -188,7 +188,7 @@ export default function Portfolio({
               video: project.video,
               poster: project.poster,
             }))}
-            size="sm"
+            size="xl"
             mode={openVideosInModal ? "modal" : "link"}
             basePath="/portfolio"
             scrollable
