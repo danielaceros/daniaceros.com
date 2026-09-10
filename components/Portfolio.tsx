@@ -178,6 +178,7 @@ export default function Portfolio({
             size="sm"
             mode={openVideosInModal ? "modal" : "link"}
             basePath="/portfolio"
+            scrollable
           />
         </div>
       )}
