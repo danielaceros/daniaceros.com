@@ -29,16 +29,19 @@ export default function Portfolio({
     : projects
 
   return (
-    <section
-      data-lux
-      className={`cinematic-reveal page-container section-breathing ${sectionClassName ?? ""}`}
-    >
-      <div className="cinematic-reveal-delay-1" style={{ "--lux-delay": "80ms" } as CSSProperties}>
-        <SectionTitle>Portfolio</SectionTitle>
-      </div>
+    <section data-lux className={`cinematic-reveal section-breathing ${sectionClassName ?? ""}`}>
+      {/* El título (y, en el slideshow de /hablemos, las tiras de tarjetas)
+          siguen dentro del contenedor centrado habitual de la página. La tira
+          scrollable de abajo NO va aquí: necesita ser hija directa de esta
+          section (sin max-width) para poder ocupar el ancho completo del
+          viewport de verdad — ver comentario junto a PortfolioMarquee. */}
+      <div className="page-container">
+        <div className="cinematic-reveal-delay-1" style={{ "--lux-delay": "80ms" } as CSSProperties}>
+          <SectionTitle>Portfolio</SectionTitle>
+        </div>
 
-      {desktopSlideshow ? (
-        <>
+        {desktopSlideshow && (
+          <>
           <div data-lux style={{ "--lux-delay": "160ms" } as CSSProperties} className="lg:hidden">
             <div className="portfolio-slideshow-wrap overflow-hidden">
               <div className="portfolio-mobile-track">
@@ -161,13 +164,23 @@ export default function Portfolio({
               }
             }
           `}</style>
-        </>
-      ) : (
-        <div
-          data-lux
-          style={{ "--lux-delay": "160ms" } as CSSProperties}
-          className="relative left-1/2 w-screen -translate-x-1/2"
-        >
+          </>
+        )}
+      </div>
+
+      {/* Tira scrollable: hija directa de la section (sin page-container de
+          por medio) para que ocupe el 100% del ancho real del viewport. Antes
+          vivía dentro de .page-container (max-width 76rem) envuelta en un
+          truco "relative left-1/2 w-screen -translate-x-1/2" para
+          desbordarse a full-bleed — pero ese truco calcula el offset de
+          `left` como % del ancho del contenedor PADRE (page-container), no
+          del viewport, así que en desktop ancho (1440/1920/2560px, donde
+          page-container ya está topado a 1216px) el offset se quedaba corto
+          y la tira aparecía desplazada a la derecha con un hueco enorme a la
+          izquierda. Al no estar ya anidada en page-container, no hace falta
+          ningún truco: la section es full-width de por sí. */}
+      {!desktopSlideshow && (
+        <div data-lux style={{ "--lux-delay": "160ms" } as CSSProperties}>
           <PortfolioMarquee
             items={selectedProjects.map((project) => ({
               slug: project.slug,
@@ -183,9 +196,11 @@ export default function Portfolio({
         </div>
       )}
 
-      {/* Solo en la grid completa (home) — el slideshow de /hablemos es una
-          landing de conversión pura, sin distracciones hacia /tv. */}
-      {!desktopSlideshow && <ViewMoreOnTV className="mt-8 sm:mt-10" />}
+      <div className="page-container">
+        {/* Solo en la grid completa (home) — el slideshow de /hablemos es una
+            landing de conversión pura, sin distracciones hacia /tv. */}
+        {!desktopSlideshow && <ViewMoreOnTV className="mt-8 sm:mt-10" />}
+      </div>
     </section>
   )
 }
