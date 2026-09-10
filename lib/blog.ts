@@ -11772,6 +11772,126 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "ia-en-posproduccion-video-corporativo",
+    title: "Inteligencia artificial en la posproducción de vídeo corporativo: qué uso y qué no",
+    description:
+      "Repaso qué tareas de posproducción de vídeo corporativo delego ya a herramientas de inteligencia artificial, cuáles sigo haciendo a mano y por qué el criterio humano sigue marcando la diferencia.",
+    publishedAt: "2026-09-10",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "posproducción",
+      "inteligencia artificial",
+      "edición de vídeo",
+      "DaVinci Resolve",
+      "flujo de trabajo",
+    ],
+    keyword: "inteligencia artificial en la posproducción de vídeo corporativo",
+    intent: "informacional",
+    excerpt:
+      "Uso herramientas de IA para transcribir, subtitular y limpiar audio. No las uso para decidir el ritmo del montaje ni para escribir el guion. Cuento dónde está la línea y por qué.",
+    seoTitle: "IA en posproducción de vídeo corporativo | Daniel Acero",
+    metaDescription:
+      "Inteligencia artificial en la posproducción de vídeo corporativo: qué tareas automatizo, cuáles no delego nunca y qué herramientas uso en el día a día.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Hace tres años transcribía entrevistas escuchando el audio dos veces y tomando notas a mano. Hoy subo el archivo, tengo la transcripción en minutos y busco la frase exacta con Ctrl+F. Eso es IA en posproducción, y no tiene nada de espectacular: es una herramienta que quita horas de trabajo mecánico.",
+      },
+      {
+        type: "paragraph",
+        text: "Lo que ha cambiado en el último par de años es la cantidad de tareas que se pueden automatizar sin perder calidad. Pero también he visto vídeos corporativos que se notan hechos con piloto automático: ritmo plano, transiciones genéricas, un guion que no dice nada porque lo escribió una IA sin briefing real. Aquí cuento dónde uso estas herramientas y dónde no las toco.",
+      },
+      {
+        type: "image",
+        src: "/blog/ia-en-posproduccion-video-corporativo/hero.webp",
+        alt: "Equipo de dos profesionales revisando edición de vídeo en una mesa con dos monitores",
+        width: 1880,
+        height: 1253,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Cuando hablo de IA en posproducción no me refiero a generar vídeo desde cero con un prompt. Hablo de herramientas concretas que aceleran tareas repetitivas dentro de un flujo de edición tradicional: transcripción automática, subtitulado, reducción de ruido, selección preliminar de tomas por palabras clave.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque el tiempo de posproducción de un vídeo corporativo se va, en gran parte, en tareas que no requieren criterio editorial: sincronizar audio, buscar el momento exacto donde el entrevistado dice una frase concreta, limpiar ruido de fondo. Automatizar eso deja más horas para lo que sí requiere ojo: el ritmo, la selección de planos, la historia.",
+      },
+      {
+        type: "paragraph",
+        text: "El riesgo aparece cuando se automatiza también la parte que no debería automatizarse. Un guion generado sin conocer al cliente real, un montaje con cortes que sigue un patrón genérico de plantilla: eso se nota, y en vídeo corporativo la credibilidad es la mitad del producto.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Transcripción y búsqueda de fragmentos" },
+      {
+        type: "paragraph",
+        text: "Subo cada entrevista a una herramienta de transcripción automática antes de montar nada. En veinte minutos tengo el texto completo con marcas de tiempo. A partir de ahí busco por palabra y salto directo al segundo exacto en el clip original, en vez de rebobinar a ciegas. En una entrevista de 40 minutos esto ahorra fácilmente una hora de visionado.",
+      },
+      { type: "heading", level: 3, text: "Subtitulado y limpieza de audio" },
+      {
+        type: "paragraph",
+        text: "Genero subtítulos automáticos como primera pasada y luego los reviso a mano, porque los nombres propios y los términos técnicos del cliente casi siempre salen mal. Para el audio, uso reducción de ruido por IA en tomas grabadas en planta o en exteriores con viento; es más rápido y más limpio que un filtro manual de ecualización.",
+      },
+      { type: "heading", level: 3, text: "Lo que sigo haciendo a mano" },
+      {
+        type: "paragraph",
+        text: "El orden del montaje, el ritmo de los cortes y qué frase abre el vídeo los decido yo, viendo el material entero al menos una vez. Ninguna herramienta conoce el contexto del cliente, lo que quiere transmitir o qué frase suena forzada aunque esté bien dicha. Ahí no delego, porque es la parte que realmente define si el vídeo funciona.",
+      },
+      {
+        type: "image",
+        src: "/blog/ia-en-posproduccion-video-corporativo/intermedia.webp",
+        alt: "Línea de tiempo de edición de vídeo en pantalla con varias pistas de vídeo y audio",
+        width: 1920,
+        height: 1280,
+        caption: "La transcripción y el subtitulado se automatizan; el orden del montaje no.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Dejar el subtitulado automático sin revisar, con nombres propios y cifras mal transcritas.",
+          "Generar el guion completo con IA sin dar contexto real del cliente ni del objetivo del vídeo.",
+          "Usar plantillas de montaje automático que imponen un ritmo de cortes ajeno a la historia que se cuenta.",
+          "Aplicar reducción de ruido de forma agresiva y perder naturalidad en la voz del entrevistado.",
+          "No revisar el resultado final punto por punto antes de entregar, confiando en que la herramienta acertó.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Se nota si un vídeo corporativo está editado con IA?",
+        answer:
+          "Se nota si la IA decidió el ritmo del montaje o escribió el guion sin criterio humano detrás. No se nota si se usó solo para transcribir, subtitular o limpiar audio, porque esas tareas no cambian la narrativa del vídeo.",
+      },
+      {
+        type: "faq",
+        question: "¿La IA puede sustituir al editor en un vídeo corporativo?",
+        answer:
+          "No para las decisiones que importan: qué contar, en qué orden y con qué ritmo. Puede sustituir tareas mecánicas como la transcripción o una primera pasada de subtítulos, pero la selección editorial sigue siendo trabajo humano.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué herramientas de IA se usan habitualmente en posproducción?",
+        answer:
+          "Transcripción automática, reducción de ruido asistida y generación de subtítulos son las más extendidas. DaVinci Resolve ya integra varias de estas funciones dentro del propio flujo de edición.",
+      },
+      {
+        type: "faq",
+        question: "¿Aumenta el precio de un vídeo corporativo usar estas herramientas?",
+        answer:
+          "No, al contrario: reducen las horas de tareas mecánicas, lo que permite dedicar más tiempo al montaje y mantener el presupuesto sin recortar calidad en la parte que sí requiere criterio.",
+      },
+      {
+        type: "paragraph",
+        text: "Si quieres un vídeo corporativo con un proceso de posproducción cuidado, donde la tecnología acelera lo mecánico pero el criterio sigue siendo humano, escríbeme desde /contacto y hablamos de tu proyecto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
