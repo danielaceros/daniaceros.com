@@ -11892,6 +11892,126 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-sector-publico",
+    title: "Vídeo corporativo para el sector público: qué cambia frente a la empresa privada",
+    description:
+      "Qué cambia cuando el cliente de un vídeo corporativo es una administración pública: cadena de aprobación, tono institucional, plazos y accesibilidad, frente a un proyecto con una empresa privada.",
+    publishedAt: "2026-09-11",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "sector público",
+      "administración pública",
+      "comunicación institucional",
+      "vídeo institucional",
+      "contratación pública",
+    ],
+    keyword: "vídeo corporativo para el sector público",
+    intent: "informacional",
+    excerpt:
+      "Grabar para una administración pública no es lo mismo que grabar para una empresa privada: cambian los tiempos de aprobación, el tono y a quién tienes que rendir cuentas. Cuento qué es distinto y cómo lo organizo.",
+    seoTitle: "Vídeo corporativo sector público | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo para el sector público: qué cambia frente a la empresa privada, cómo se aprueba el guion y qué plazos y accesibilidad hay que prever.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "La primera vez que grabé para un ayuntamiento me di cuenta de que el proceso no se parecía nada al de una empresa privada. No hubo un único interlocutor decidiendo sobre la marcha: hubo un técnico de comunicación, un jefe de prensa y, al final, una firma política que revisó cada frase del guion antes de aprobar el rodaje. Desde entonces trato estos proyectos con un calendario distinto al que uso con una pyme o una marca privada.",
+      },
+      {
+        type: "paragraph",
+        text: "Trabajar con administraciones públicas —ayuntamientos, consejerías, organismos autónomos, universidades públicas— tiene una lógica distinta a la de una empresa. No es peor ni más lento por sistema, pero si tratas el proyecto como un vídeo corporativo estándar, te vas a topar con plazos que no esperabas y aprobaciones que no dependen de una sola persona. También pesa el calendario del ejercicio: si el proyecto se paga con presupuesto del año en curso, hay una fecha límite de cierre que no puedes saltarte.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-publico/hero.webp",
+        alt: "Fachada de un edificio institucional de piedra blanca durante el día",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Cuando hablo de vídeo corporativo para el sector público me refiero a piezas institucionales: presentación de un plan estratégico, memoria de un organismo, campaña de un servicio público, vídeo de bienvenida a nuevos funcionarios o cobertura de un congreso financiado con fondos públicos. El objetivo casi nunca es vender directamente; es informar, dar cuenta de una gestión o explicar un servicio a la ciudadanía.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa entender esto desde el principio porque cambia el criterio editorial. En una empresa privada el vídeo puede ser más comercial, con un tono de marca marcado. En una administración el tono tiene que ser neutro, evitar cualquier lectura partidista y ser accesible para cualquier ciudadano, no solo para el público habitual de la marca.",
+      },
+      {
+        type: "paragraph",
+        text: "También cambia la cadena de aprobación. En una pyme puedo cerrar un guion con el gerente en una llamada. En una administración el guion pasa normalmente por comunicación, por el área técnica que aporta los datos y, en muchos casos, por gabinete o alcaldía. Contar con eso desde el presupuesto evita sorpresas de plazo, y conviene preguntar desde la primera reunión si el proyecto necesita pasar por un procedimiento de contratación pública.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Ajustar el tono institucional" },
+      {
+        type: "paragraph",
+        text: "Evito superlativos y cualquier frase que suene a eslogan de campaña. Un vídeo institucional bien hecho describe hechos y cifras verificables: presupuesto ejecutado, número de personas atendidas, plazos de un proyecto. Si el cliente pide un tono más cercano a publicidad, lo señalo, porque puede generar un problema de imagen si se percibe como propaganda, y eso suele acabar frenando la publicación en el último momento.",
+      },
+      { type: "heading", level: 3, text: "Planificar los tiempos de aprobación" },
+      {
+        type: "paragraph",
+        text: "Añado siempre dos o tres semanas más de margen sobre el calendario que pediría para un cliente privado, específicamente para las rondas de revisión del guion y del primer montaje. Cada nivel de la cadena —técnico, comunicación, dirección política— suele pedir cambios distintos, y hay que dejar hueco para reconciliarlos sin comprimir el rodaje. Evito además programar la entrega final en semanas de cierre de ejercicio o de campaña electoral, porque en esos periodos las aprobaciones se ralentizan todavía más.",
+      },
+      { type: "heading", level: 3, text: "Cuidar la accesibilidad y la transparencia" },
+      {
+        type: "paragraph",
+        text: "Subtítulos en el vídeo final, lenguaje claro sin tecnicismos de la administración y, cuando el organismo lo exige, transcripción completa publicada junto al vídeo. Muchas administraciones tienen obligaciones de accesibilidad que una empresa privada no tiene, y no cumplirlas puede bloquear la publicación en el canal oficial. En comunidades con lengua cooficial, además, suelo preguntar desde el guion si hace falta doblaje o subtitulado en las dos lenguas.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-publico/intermedia.webp",
+        alt: "Público asistiendo a una presentación institucional en una sala de conferencias",
+        width: 1920,
+        height: 1280,
+        caption: "El tono, la aprobación y la accesibilidad cambian más que la propia producción.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Tratar el guion como definitivo tras la primera aprobación técnica, sin contar con la ronda política.",
+          "Usar un tono publicitario que se puede leer como propaganda institucional.",
+          "No dejar margen de tiempo para los procesos de contratación pública si el proyecto requiere concurso.",
+          "Grabar testimonios de cargos electos sin verificar que la comunicación oficial lo autoriza para ese formato.",
+          "Olvidar los requisitos de accesibilidad, como subtítulos o lenguaje claro, antes de la publicación en el canal oficial.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Un vídeo para una administración pública necesita pasar por contratación pública?",
+        answer:
+          "Depende del importe y del organismo. Muchos ayuntamientos y organismos autónomos exigen procedimiento de contratación —menor, abierto o negociado— a partir de ciertos umbrales económicos. Conviene preguntarlo en la primera reunión, porque cambia por completo el plazo de arranque del proyecto.",
+      },
+      {
+        type: "faq",
+        question: "¿Cambia el precio de un vídeo corporativo si el cliente es una administración pública?",
+        answer:
+          "El precio de producción no cambia por ser administración pública, pero sí puede aumentar el tiempo de gestión por las rondas de aprobación adicionales, y eso conviene reflejarlo en el presupuesto si se factura por jornada de trabajo en vez de por proyecto cerrado.",
+      },
+      {
+        type: "faq",
+        question: "¿Quién aprueba el guion final en un vídeo institucional?",
+        answer:
+          "Normalmente el área de comunicación coordina la aprobación, pero el visto bueno final suele pasar por dirección o gabinete político antes del rodaje. Es habitual que haya más de dos rondas de revisión, así que conviene fijar de antemano cuántas rondas están incluidas en el presupuesto.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta un tono distinto al de un vídeo corporativo privado?",
+        answer:
+          "Sí. El tono institucional debe ser neutro, verificable y accesible para cualquier ciudadano, evitando cualquier elemento que se pueda leer como propaganda partidista, especialmente si el vídeo se publica cerca de un proceso electoral.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes que grabar un vídeo institucional para tu organismo o departamento y quieres evitar los plazos que se disparan a última hora, escríbeme desde /contacto y planificamos el proceso completo, desde el guion hasta la entrega accesible.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {

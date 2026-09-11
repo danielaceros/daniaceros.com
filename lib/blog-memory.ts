@@ -752,6 +752,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto (fallback evergreen — todos los 30 temas base cubiertos; tema extra generado fuera de lista, sin candidate SC limpio — token SC de Search Console sigue caducado con invalid_grant persistente desde hace semanas, requiere reautenticación manual). Imágenes Unsplash/Pexels.",
   },
+  {
+    slug: "video-corporativo-sector-publico",
+    keyword: "vídeo corporativo para el sector público",
+    intent: "informacional",
+    createdAt: "2026-09-11",
+    status: "published",
+    notes: "Auto-generado por blog-auto (fallback evergreen — todos los 30 temas base cubiertos; tema extra generado fuera de lista, sin candidate SC limpio — token SC de Search Console sigue caducado con invalid_grant persistente desde hace semanas, requiere reautenticación manual). Imágenes Unsplash.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {
