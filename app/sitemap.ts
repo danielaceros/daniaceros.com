@@ -24,6 +24,7 @@ const staticPaths = [
   "/videografo-madrid",
   "/video-corporativo-madrid",
   "/video-eventos-madrid",
+  "/a0studios",
   "/clientes",
   "/casos-de-exito",
   "/aviso-legal",
