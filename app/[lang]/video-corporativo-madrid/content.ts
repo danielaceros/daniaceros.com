@@ -200,7 +200,7 @@ const es = {
 const en: typeof es = {
   metaTitle: "Corporate Video Production Company & Agency in Madrid",
   metaDescription:
-    "Corporate video production company in Madrid with direct contact and a business focus: proposal, filming, editing, versions and delivery for web, sales, campaigns.",
+    "Corporate video production in Madrid with direct contact and a business focus: proposal, filming, editing, versions and delivery for web, sales and campaigns.",
   keywords: [
     "corporate video production madrid",
     "corporate video production company madrid",
