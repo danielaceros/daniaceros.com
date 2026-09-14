@@ -137,12 +137,18 @@ export const SERVICE_LINKS: Record<ServicePath, Record<Lang, ServiceCopy>> = {
   },
 }
 
-/** Filas del pie: pares cortos (caben en una línea a 360 px) y «Madrid» solo en un anchor. */
-export const FOOTER_SERVICE_ROWS: ServicePath[][] = [
-  ["/servicios/corporativo", "/video-corporativo-madrid"],
-  ["/filmmaker-madrid", "/video-eventos-madrid"],
-  ["/videografo-madrid", "/servicios/institucional"],
-  ["/contenido-mensual", "/marca-personal"],
+/**
+ * Enlaces del pie: solo las 6 landings (las subpáginas de /servicios ya las enlaza /servicios dos veces).
+ * Rejilla 2×3 en móvil y una línea desde lg: anchors ≤ 25 caracteres para que quepan en media columna a 360 px.
+ * «Madrid» solo en un anchor.
+ */
+export const FOOTER_SERVICE_LINKS: ServicePath[] = [
+  "/filmmaker-madrid",
+  "/videografo-madrid",
+  "/video-corporativo-madrid",
+  "/video-eventos-madrid",
+  "/contenido-mensual",
+  "/marca-personal",
 ]
 
 /** Landings que enlaza el bloque «por tipo de proyecto» de /servicios. */

@@ -1,8 +1,8 @@
 import Link from "next/link"
-import { Fragment, type CSSProperties } from "react"
+import type { CSSProperties } from "react"
 import LazyContactForm from "./LazyContactForm"
 import { getDictionary, localizedHref, type Lang } from "@/lib/i18n"
-import { FOOTER_SERVICE_ROWS, SERVICE_LINKS } from "@/lib/service-links"
+import { FOOTER_SERVICE_LINKS, SERVICE_LINKS } from "@/lib/service-links"
 import { CONTACT_EMAIL, whatsappUrl } from "@/lib/contact"
 
 type Props = {
@@ -17,8 +17,9 @@ type Props = {
 }
 
 // Pie: filas de enlaces en línea, 12px y zona táctil de 44px (antes 11px y 17px de alto).
-// Para añadir otra fila (p. ej. enlaces a landings), usar <p className={FOOTER_ROW}> con <Link className={FOOTER_LINK}>
-// separados por <span aria-hidden>·</span>; las filas se apilan sin margen extra porque cada enlace ya mide 44px.
+// Filas cortas (redes, legal): <p className={FOOTER_ROW}> con <Link className={FOOTER_LINK}> separados por
+// <span aria-hidden>·</span>; se apilan sin margen extra porque cada enlace ya mide 44px. No añadir más filas:
+// el pie ya lleva los servicios y debe seguir leyéndose como pie de portfolio.
 const FOOTER_ROW = "flex flex-wrap items-center justify-center gap-x-2 font-inter text-[12px] lowercase text-white/45"
 const FOOTER_LINK =
   "inline-flex min-h-[44px] items-center rounded transition-colors duration-300 hover:text-white/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
@@ -128,21 +129,26 @@ export default function ContactCTA({
           style={{ "--lux-delay": "300ms" } as CSSProperties}
           className="cinematic-reveal cinematic-reveal-delay-3 mt-14 pt-2"
         >
-          {/* Enlaces a las páginas de servicio (anchors por intención; textos en lib/service-links.ts). */}
+          {/* Enlaces a las landings (anchors por intención; textos en lib/service-links.ts). Contenidos para que el
+              pie no parezca un bloque SEO: rejilla 2×3 en móvil, 3×2 desde sm y una sola línea con «·» desde lg
+              (en una fila que se parte, los separadores quedarían colgando). Filete fino antes de redes y legal. */}
           <nav aria-label={t.footer.servicesLabel}>
-            {FOOTER_SERVICE_ROWS.map((row) => (
-              <p key={row.join("|")} className={FOOTER_ROW}>
-                {row.map((path, index) => (
-                  <Fragment key={path}>
-                    {index > 0 ? <span aria-hidden>·</span> : null}
-                    <Link href={localizedHref(lang, path)} prefetch={false} className={FOOTER_LINK}>
-                      {SERVICE_LINKS[path][lang].anchor}
-                    </Link>
-                  </Fragment>
-                ))}
-              </p>
-            ))}
+            <ul className="mx-auto grid max-w-[22rem] grid-cols-2 gap-x-4 font-inter text-[12px] lowercase text-white/45 sm:max-w-xl sm:grid-cols-3 lg:flex lg:max-w-none lg:flex-wrap lg:justify-center lg:gap-x-2">
+              {FOOTER_SERVICE_LINKS.map((path, index) => (
+                <li key={path} className="flex items-center justify-center gap-x-2">
+                  {index > 0 ? (
+                    <span aria-hidden className="hidden lg:inline">
+                      ·
+                    </span>
+                  ) : null}
+                  <Link href={localizedHref(lang, path)} prefetch={false} className={FOOTER_LINK}>
+                    {SERVICE_LINKS[path][lang].anchor}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </nav>
+          <span aria-hidden className="mx-auto my-2 block h-px w-10 bg-white/10" />
           <p className={FOOTER_ROW}>
             <Link
               href="https://www.instagram.com/daniaceros"
