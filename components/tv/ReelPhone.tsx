@@ -2,10 +2,16 @@
 "use client"
 
 import { useEffect, useMemo, useRef, useState } from "react"
+import { preconnect } from "react-dom"
 import type { TVReel } from "@/data/tv-reels"
+import { BLOB_ORIGIN, optimizedPoster } from "@/lib/media"
 import styles from "./ReelPhone.module.css"
 
 const MONO = ["#3a3a3a", "#2a2a2a", "#474747", "#1f1f1f", "#555555"]
+
+// Ventana de tarjetas "vivas" alrededor de la activa: solo estas llevan póster y pueden tener src.
+// Las lejanas sueltan el vídeo (removeAttribute("src") + load()) para no acumular buffers en memoria.
+const LIVE_RADIUS = 2
 
 // Cuántas tarjetas se clonan a cada extremo para simular scroll infinito:
 // al asentarse sobre un clon, saltamos en silencio (sin animar) a la tarjeta
@@ -83,6 +89,7 @@ type Props = {
 }
 
 export default function ReelPhone({ reels, labels }: Props) {
+  preconnect(BLOB_ORIGIN)
   const N = reels.length
   const { order, clones } = useLoopOrder(N)
 
@@ -113,6 +120,10 @@ export default function ReelPhone({ reels, labels }: Props) {
         } else {
           if (!v.paused) v.pause()
           if (!v.muted) v.muted = true
+          if (Math.abs(i - idx) > LIVE_RADIUS && v.hasAttribute("src")) {
+            v.removeAttribute("src")
+            v.load()
+          }
         }
       })
       ;[idx - 1, idx + 1].forEach((n) => {
@@ -195,7 +206,11 @@ export default function ReelPhone({ reels, labels }: Props) {
                       videoRefs.current[displayIdx] = el
                     }}
                     className={styles.video}
-                    poster={reel.poster}
+                    poster={
+                      Math.abs(displayIdx - activeDisplay) <= LIVE_RADIUS
+                        ? optimizedPoster(reel.poster, 1080)
+                        : undefined
+                    }
                     data-src={reel.video}
                     muted
                     loop

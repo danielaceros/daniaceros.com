@@ -48,9 +48,9 @@ export function buildRootMetadata(lang: Lang): Metadata {
     alternates: {
       canonical: localizedHref(lang, "/"),
     },
+    // Favicon: app/favicon.ico (64 px, la misma foto; Next lo enlaza solo). El JPEG de 220 KB del Blob
+    // solo queda como apple-touch-icon, que los navegadores de escritorio/Android no descargan.
     icons: {
-      icon: [{ url: FAVICON_URL, type: "image/jpeg", sizes: "32x32" }],
-      shortcut: [{ url: FAVICON_URL, type: "image/jpeg" }],
       apple: [{ url: FAVICON_URL, type: "image/jpeg", sizes: "180x180" }],
     },
     openGraph: {
@@ -112,8 +112,6 @@ export default function RootDocument({
       {/* Documento raíz real (antes vivía en app/layout.tsx, donde la regla no aplica). */}
       {/* eslint-disable-next-line @next/next/no-head-element */}
       <head>
-        <link rel="icon" href={FAVICON_URL} type="image/jpeg" sizes="32x32" />
-        <link rel="shortcut icon" href={FAVICON_URL} type="image/jpeg" />
         <link rel="apple-touch-icon" href={FAVICON_URL} sizes="180x180" />
 
         <script
