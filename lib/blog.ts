@@ -12012,6 +12012,125 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "aprovechar-rodaje-corporativo-redes-sociales",
+    title: "Cómo aprovechar un rodaje corporativo para generar contenido de redes sociales",
+    description:
+      "Cómo planificar un rodaje corporativo para que, además del vídeo principal, deje material listo para varias semanas de contenido en redes sociales sin montar una sesión aparte.",
+    publishedAt: "2026-09-14",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "redes sociales",
+      "contenido audiovisual",
+      "rodaje corporativo",
+      "marketing de contenidos",
+    ],
+    keyword: "cómo aprovechar un rodaje corporativo para redes sociales",
+    intent: "informacional",
+    excerpt:
+      "Cada rodaje corporativo deja mucho más material del que acaba en el vídeo final. Cuento qué planos pido de más y cómo los organizo para sacar semanas de contenido para redes sin programar un rodaje aparte.",
+    seoTitle: "Rodaje corporativo para redes sociales | Daniel Acero",
+    metaDescription:
+      "Cómo aprovechar un rodaje corporativo para redes sociales: qué planos extra pedir, cómo organizarlos en la ingesta y evitar que el rodaje se alargue.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "En casi todos los rodajes corporativos que hago, el vídeo final usa una fracción de lo que grabamos. El resto se queda sin usar en el disco duro, cuando con algo de planificación previa da para varias semanas de contenido en redes.",
+      },
+      {
+        type: "paragraph",
+        text: "No hace falta montar una sesión aparte para redes sociales. Con pedir unos planos concretos durante la misma jornada, y organizarlos después con un criterio claro desde la ingesta, cualquier rodaje corporativo puede dejar piezas sueltas para LinkedIn, Instagram o el canal que uses.",
+      },
+      {
+        type: "image",
+        src: "/blog/aprovechar-rodaje-corporativo-redes-sociales/hero.webp",
+        alt: "Monitor de cámara durante la grabación de una entrevista corporativa",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Aprovechar un rodaje corporativo para redes sociales consiste en capturar, durante la misma sesión, material adicional pensado para piezas cortas y verticales, distinto del que compone el vídeo principal. No es reciclar los descartes: es planificar de antemano qué planos sirven para ese segundo uso.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque el coste marginal de grabar cinco o diez minutos más es bajísimo comparado con organizar un rodaje nuevo solo para redes. El equipo ya está montado, la luz ya está lista y las personas que salen en cámara ya han perdido la vergüenza inicial.",
+      },
+      {
+        type: "paragraph",
+        text: "También importa para el cliente: en vez de pagar por dos producciones separadas, obtiene el vídeo principal y un banco de piezas para varias semanas de publicación con una sola jornada de trabajo.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Pedir los planos extra antes del rodaje, no durante" },
+      {
+        type: "paragraph",
+        text: "Reviso el guion del vídeo principal y anoto qué momentos se pueden repetir en formato vertical: una frase suelta del CEO, un detalle del proceso, una reacción del equipo. Lo hago antes de llegar a la localización, porque improvisarlo en directo le roba tiempo al rodaje principal y acaba sacrificando calidad en los dos formatos.",
+      },
+      { type: "heading", level: 3, text: "Grabar vertical y horizontal en la misma toma cuando se pueda" },
+      {
+        type: "paragraph",
+        text: "Si el encuadre lo permite, dejo una segunda cámara en vertical apuntando al mismo sujeto mientras la principal graba en 16:9. No siempre funciona —depende del espacio y de la composición—, pero cuando funciona duplica el material sin duplicar el tiempo de rodaje.",
+      },
+      { type: "heading", level: 3, text: "Separar el material en el momento de la ingesta" },
+      {
+        type: "paragraph",
+        text: "Al volcar las tarjetas, etiqueto directamente los clips pensados para redes en una carpeta aparte. Si dejo esa clasificación para la fase de montaje, dos semanas después ya no me acuerdo de qué plano iba para dónde y acabo perdiendo la mitad del material aprovechable.",
+      },
+      {
+        type: "image",
+        src: "/blog/aprovechar-rodaje-corporativo-redes-sociales/intermedia.webp",
+        alt: "Persona revisando contenido de redes sociales en el móvil junto al portátil",
+        width: 1920,
+        height: 1280,
+        caption: "Etiquetar los clips en la ingesta ahorra horas de búsqueda en el montaje.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Grabar todo pensando solo en el vídeo final y descubrir en montaje que no hay ningún plano suelto de menos de 15 segundos.",
+          "Pedir el contenido para redes al terminar el rodaje, cuando el equipo ya está recogiendo y nadie tiene ganas de repetir una toma.",
+          "No avisar a las personas que salen en cámara de que también habrá piezas cortas, lo que genera reticencia cuando se lo comunicas después.",
+          "Mezclar los clips de redes con los del vídeo principal sin etiquetar, alargando la edición varias horas innecesarias.",
+          "Publicar el mismo corte en todas las plataformas sin adaptar proporción ni duración a cada una.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo extra hay que añadir al rodaje para sacar contenido de redes?",
+        answer:
+          "Entre 20 y 40 minutos suele ser suficiente si los planos extra están decididos de antemano. El tiempo se dispara si se improvisa sobre la marcha, así que conviene fijarlo en el guion antes de llegar a la localización.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito un operador de cámara adicional para grabar en vertical a la vez?",
+        answer:
+          "No siempre. Con un trípode y una segunda cámara fija apuntando al mismo sujeto basta en la mayoría de entrevistas; solo hace falta un operador extra en planos de acción o cuando hay movimiento de personas.",
+      },
+      {
+        type: "faq",
+        question: "¿Este material extra sustituye a un rodaje específico para redes sociales?",
+        answer:
+          "No del todo. Sirve para tener un banco de piezas cortas con buena calidad, pero si una marca necesita un formato muy concreto —por ejemplo, un reel con guion propio y localizaciones distintas— conviene planificar una sesión aparte.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué formato de entrega pido para estos clips?",
+        answer:
+          "Pido siempre vertical 9:16 en la resolución nativa de la cámara, sin comprimir, y los subtítulos incrustados aparte, para poder editarlos si cambia el copy de la publicación.",
+      },
+      {
+        type: "paragraph",
+        text: "Si vas a grabar un vídeo corporativo y quieres que esa misma jornada te deje también contenido para redes sociales, dímelo desde /contacto antes del rodaje y lo planificamos juntos.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
