@@ -19,7 +19,7 @@ import {
 } from "@/lib/i18n/config"
 
 const BOT_UA =
-  /bot\b|bot\/|bot;|crawl|spider|slurp|googlebot|google-inspectiontool|googleother|google-extended|adsbot|mediapartners|storebot|apis-google|feedfetcher|bingbot|bingpreview|msnbot|duckduck|baiduspider|yandex|sogou|exabot|facebookexternalhit|facebot|meta-externalagent|twitterbot|linkedinbot|whatsapp|telegrambot|slackbot|discordbot|applebot|pinterest|redditbot|semrush|ahrefs|mj12bot|dotbot|petalbot|seznam|gptbot|chatgpt|oai-searchbot|claudebot|claude-user|claude-searchbot|anthropic|perplexity|ccbot|bytespider|amazonbot|youbot|cohere|diffbot|lighthouse|pagespeed|headlesschrome|vercel|uptime|monitor|preview|scrapy|curl-bot|python-requests|go-http-client|axios|node-fetch/i
+  /bot\b|bot\/|bot;|crawl|spider|slurp|googlebot|google-inspectiontool|googleother|google-extended|adsbot|mediapartners|storebot|apis-google|feedfetcher|bingbot|bingpreview|msnbot|duckduck|baiduspider|yandex|sogou|exabot|facebookexternalhit|facebot|meta-externalagent|twitterbot|linkedinbot|whatsapp|telegrambot|slackbot|discordbot|applebot|pinterest|redditbot|semrush|ahrefs|mj12bot|dotbot|petalbot|seznam|gptbot|chatgpt|oai-searchbot|claudebot|claude-user|claude-searchbot|anthropic|perplexity|ccbot|bytespider|amazonbot|youbot|cohere|diffbot|mistralai|meta-externalfetcher|duckassist|iaskspider|kagi-fetcher|firecrawl|jina|timpibot|ai2bot|lighthouse|pagespeed|headlesschrome|vercel|uptime|monitor|preview|scrapy|curl-bot|python-requests|go-http-client|axios|node-fetch/i
 
 function isBot(userAgent: string | null): boolean {
   if (!userAgent) return true
