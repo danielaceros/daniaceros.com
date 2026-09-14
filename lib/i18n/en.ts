@@ -97,6 +97,12 @@ const en: Dictionary = {
     auto: "Auto",
     fullscreen: "Fullscreen",
     exitFullscreen: "Exit fullscreen",
+    // End screen (repeats the options shown in the video itself, now clickable)
+    endTitle: "got an event or a content project in mind?",
+    endForm: "fill in the form",
+    endWhatsapp: "WhatsApp",
+    endEmail: "email",
+    replay: "Watch again",
   },
   about: {
     title: "About me",
@@ -112,7 +118,7 @@ const en: Dictionary = {
     intro:
       "If you're thinking about creating a video for your company, tell me what you have in mind and I'll tell you within minutes whether it's a fit and how I'd approach it. I reply personally. No strings attached.",
     asideText:
-      "Tell us about your project and we'll get back to you within 24 hours with a tailored proposal.",
+      "Tell me about your project and I'll get back to you within 24 hours with a tailored proposal.",
     mobileAsideText:
       "If you prefer, you can also email me or message me on WhatsApp directly and I'll reply personally.",
     whatsappMessage:

@@ -8,6 +8,8 @@ const es = {
   title: "Gracias",
   text: "He recibido tu mensaje correctamente. En breve te escribo por WhatsApp o email para hablar de tu proyecto y darte una propuesta.",
   backHome: "Volver al inicio",
+  whatsapp: "¿Es urgente? Escríbeme por WhatsApp",
+  whatsappMessage: "Hola Dani! Acabo de enviarte el formulario de la web.",
 }
 
 const en: typeof es = {
@@ -17,6 +19,8 @@ const en: typeof es = {
   title: "Thank you",
   text: "I've received your message. I'll be in touch shortly on WhatsApp or by email to talk about your project and send you a proposal.",
   backHome: "Back to home",
+  whatsapp: "Urgent? Message me on WhatsApp",
+  whatsappMessage: "Hi Dani! I've just sent you the form on your website.",
 }
 
 export const content: Record<Lang, typeof es> = { es, en }

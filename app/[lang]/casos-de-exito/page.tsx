@@ -60,6 +60,7 @@ export default async function CasosDeExitoPage({ params }: LangParams) {
               >
                 <video
                   src={project.video}
+                  poster={project.poster}
                   autoPlay
                   muted
                   loop

@@ -33,7 +33,6 @@ export const TRANSLATED_PATHS: readonly string[] = [
   // E. Productos
   "/contenido-mensual",
   "/marca-personal",
-  "/the-rooftop-content-studio",
   // F. TV
   "/tv",
   // G. Legales (EN con nota "Spanish version prevails")

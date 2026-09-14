@@ -2,8 +2,7 @@ import Link from "next/link"
 import type { CSSProperties } from "react"
 import LazyContactForm from "./LazyContactForm"
 import { getDictionary, localizedHref, type Lang } from "@/lib/i18n"
-
-const CONTACT_EMAIL = "work@daniaceros.com"
+import { CONTACT_EMAIL, whatsappUrl } from "@/lib/contact"
 
 type Props = {
   /** Idioma de los textos, del mensaje de WhatsApp y de los enlaces. Por defecto "es". */
@@ -22,7 +21,7 @@ export default function ContactCTA({
   hideMobileContactInfo = false,
 }: Props) {
   const t = getDictionary(lang).contact
-  const WHATSAPP_URL = `https://wa.me/34711255496?text=${encodeURIComponent(t.whatsappMessage)}`
+  const WHATSAPP_URL = whatsappUrl(t.whatsappMessage)
 
   return (
     <section
