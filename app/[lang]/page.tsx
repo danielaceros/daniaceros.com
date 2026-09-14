@@ -36,8 +36,10 @@ export default async function Home({ params }: LangParams) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
       />
-      <Hero lang={lang} />
-      {VSL[lang] ? <VslSection lang={lang} /> : null}
+      {/* El VSL es lo primero que se ve: título compacto encima, sin foto de fondo */}
+      <Hero lang={lang} variant="video">
+        {VSL[lang] ? <VslSection lang={lang} hideTitle inline /> : null}
+      </Hero>
       <Portfolio lang={lang} />
       <About lang={lang} />
       <div id="contacto">
