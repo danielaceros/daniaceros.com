@@ -13,6 +13,13 @@ type Props = {
   hideMobileContactInfo?: boolean
 }
 
+// Pie: filas de enlaces en línea, 12px y zona táctil de 44px (antes 11px y 17px de alto).
+// Para añadir otra fila (p. ej. enlaces a landings), usar <p className={FOOTER_ROW}> con <Link className={FOOTER_LINK}>
+// separados por <span aria-hidden>·</span>; las filas se apilan sin margen extra porque cada enlace ya mide 44px.
+const FOOTER_ROW = "flex flex-wrap items-center justify-center gap-x-2 font-inter text-[12px] lowercase text-white/45"
+const FOOTER_LINK =
+  "inline-flex min-h-[44px] items-center rounded transition-colors duration-300 hover:text-white/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+
 export default function ContactCTA({
   lang = "es",
   sectionClassName,
@@ -58,10 +65,10 @@ export default function ContactCTA({
             <p className="max-w-[32ch] font-inter text-[14px] leading-[1.8] text-white/66">
               {t.asideText}
             </p>
-            <div className="mt-9 space-y-5">
+            <div className="mt-8 space-y-1">
               <a
                 href={`mailto:${CONTACT_EMAIL}`}
-                className="group flex items-center gap-3 rounded text-[17px] text-white/86 transition-colors duration-300 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+                className="group flex min-h-[44px] items-center gap-3 rounded text-[17px] text-white/86 transition-colors duration-300 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
               >
                 <span className="h-px w-5 bg-white/85 transition-all duration-300 group-hover:w-7" />
                 <span className="font-inter text-[17px]">{CONTACT_EMAIL}</span>
@@ -70,7 +77,7 @@ export default function ContactCTA({
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center gap-3 rounded text-[17px] text-white/86 transition-colors duration-300 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+                className="group flex min-h-[44px] items-center gap-3 rounded text-[17px] text-white/86 transition-colors duration-300 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
               >
                 <span className="h-px w-5 bg-white/85 transition-all duration-300 group-hover:w-7" />
                 <span className="font-inter text-[17px]">+34 711 25 54 96</span>
@@ -87,10 +94,10 @@ export default function ContactCTA({
               <p className="max-w-[36ch] font-inter text-[13px] leading-[1.75] text-white/66">
                 {t.mobileAsideText}
               </p>
-              <div className="mt-7 space-y-4">
+              <div className="mt-6 space-y-1">
                 <a
                   href={`mailto:${CONTACT_EMAIL}`}
-                  className="group flex items-center gap-3 rounded text-[16px] text-white/86 transition-colors duration-300 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+                  className="group flex min-h-[44px] items-center gap-3 rounded text-[16px] text-white/86 transition-colors duration-300 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
                 >
                   <span className="h-px w-5 bg-white/85 transition-all duration-300 group-hover:w-7" />
                   <span className="font-inter text-[16px]">{CONTACT_EMAIL}</span>
@@ -99,7 +106,7 @@ export default function ContactCTA({
                   href={WHATSAPP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex items-center gap-3 rounded text-[16px] text-white/86 transition-colors duration-300 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+                  className="group flex min-h-[44px] items-center gap-3 rounded text-[16px] text-white/86 transition-colors duration-300 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
                 >
                   <span className="h-px w-5 bg-white/85 transition-all duration-300 group-hover:w-7" />
                   <span className="font-inter text-[16px]">+34 711 25 54 96</span>
@@ -116,12 +123,12 @@ export default function ContactCTA({
           style={{ "--lux-delay": "300ms" } as CSSProperties}
           className="cinematic-reveal cinematic-reveal-delay-3 mt-14 pt-2"
         >
-          <p className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 font-inter text-[11px] lowercase text-white/45">
+          <p className={FOOTER_ROW}>
             <Link
               href="https://www.instagram.com/daniaceros"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-white/90 transition-colors duration-300 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+              className={FOOTER_LINK}
             >
               @danielaceros
             </Link>
@@ -130,7 +137,7 @@ export default function ContactCTA({
               href="https://es.linkedin.com/in/daniaceros"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-white/90 transition-colors duration-300 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+              className={FOOTER_LINK}
             >
               linkedin
             </Link>
@@ -139,28 +146,28 @@ export default function ContactCTA({
               href="https://www.youtube.com/@daniacerxs/videos"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-white/90 transition-colors duration-300 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+              className={FOOTER_LINK}
             >
               youtube
             </Link>
             <span aria-hidden>·</span>
             <Link
               href={localizedHref(lang, "/a0studios")}
-              className="hover:text-white/90 transition-colors duration-300 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+              className={FOOTER_LINK}
             >
               a0studios
             </Link>
           </p>
-          <p className="mt-3 flex flex-wrap items-center justify-center gap-x-2 gap-y-1 font-inter text-[11px] lowercase text-white/45">
-            <Link href={localizedHref(lang, "/aviso-legal")} className="hover:text-white/90 transition-colors duration-300 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black">
+          <p className={FOOTER_ROW}>
+            <Link href={localizedHref(lang, "/aviso-legal")} className={FOOTER_LINK}>
               {t.footer.legalNotice}
             </Link>
             <span aria-hidden>·</span>
-            <Link href={localizedHref(lang, "/politica-de-cookies")} className="hover:text-white/90 transition-colors duration-300 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black">
+            <Link href={localizedHref(lang, "/politica-de-cookies")} className={FOOTER_LINK}>
               {t.footer.cookies}
             </Link>
             <span aria-hidden>·</span>
-            <Link href={localizedHref(lang, "/politica-de-privacidad")} className="hover:text-white/90 transition-colors duration-300 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black">
+            <Link href={localizedHref(lang, "/politica-de-privacidad")} className={FOOTER_LINK}>
               {t.footer.privacy}
             </Link>
           </p>

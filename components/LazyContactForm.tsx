@@ -50,7 +50,9 @@ export default function LazyContactForm({ lang = "es" }: { lang?: Lang }) {
         <>
           <iframe
             src="https://api.fitnesslaunch.es/widget/form/xIIdaDunDkxA4Mcwehu0"
-            className="block h-[640px] w-[calc(100%+24px)] -ml-3 md:h-[680px] md:w-[calc(100%+32px)] md:-ml-4 lg:h-[640px]"
+            // Altura inicial ≈ la que acaba fijando form_embed.js (móvil ~785px, desktop ~750px): sin ella,
+            // en desktop quedaba scroll interno y ENVIAR recortado hasta que el script reajustaba.
+            className="block h-[790px] w-[calc(100%+24px)] -ml-3 md:h-[760px] md:w-[calc(100%+32px)] md:-ml-4"
             style={{ border: "none", borderRadius: "0px" }}
             id="inline-xIIdaDunDkxA4Mcwehu0"
             data-layout="{'id':'INLINE'}"
@@ -72,7 +74,7 @@ export default function LazyContactForm({ lang = "es" }: { lang?: Lang }) {
         <button
           type="button"
           onClick={() => setShouldLoad(true)}
-          className="flex h-[640px] w-full flex-col items-center justify-center gap-3 text-white/50 transition-colors duration-300 hover:text-white/70 md:h-[680px] lg:h-[640px]"
+          className="flex h-[790px] w-full flex-col items-center justify-center gap-3 text-white/50 transition-colors duration-300 hover:text-white/70 md:h-[760px]"
           aria-label={t.loadAria}
         >
           <span className="h-6 w-6 animate-pulse rounded-full border border-white/20" aria-hidden="true" />
