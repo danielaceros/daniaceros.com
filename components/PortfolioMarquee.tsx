@@ -3,7 +3,9 @@
 import Link from "next/link"
 import { useEffect, useRef, useState } from "react"
 import { createPortal } from "react-dom"
+import AutoplayVideo from "@/components/AutoplayVideo"
 import { format, getDictionary, type Lang } from "@/lib/i18n"
+import { optimizedPoster } from "@/lib/media"
 
 export type MarqueeItem = {
   slug: string
@@ -335,14 +337,10 @@ function MarqueeCard({
 
   const inner = (
     <>
-      <video
+      {/* Solo descarga/reproduce mientras se ve; los clones del marquee animado también tienen el suyo. */}
+      <AutoplayVideo
         src={video}
-        poster={poster}
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="metadata"
+        poster={optimizedPoster(poster, 640)}
         className="pointer-events-none absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.04]"
       />
       <div className="pointer-events-none absolute inset-0 bg-black/30" />

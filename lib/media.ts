@@ -4,6 +4,19 @@ export const VIDEO_POSTER_URL =
   "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/hero/daniel-acero-hero-v2-llWDLWKhpBLHLD1VcbHNvWsLL7DeYZ.jpg"
 
 const BLOB = "https://kgtz1gujr7extokb.public.blob.vercel-storage.com"
+export const BLOB_ORIGIN = BLOB
+
+/**
+ * Póster de <video> servido por el optimizador de Next (/_next/image: WebP y ancho acotado) en vez del
+ * JPEG 1080×1920 original del Blob. `<video poster>` no pasa por next/image, así que la URL se construye
+ * a mano. Solo para imágenes del Blob (las externas se devuelven tal cual) y con dos anchos fijos para no
+ * multiplicar transformaciones en la cuota de Image Optimization: 640 (tarjetas) y 1080 (grande).
+ * La calidad debe estar en images.qualities (Next 16: por defecto solo 75).
+ */
+export function optimizedPoster(url: string | undefined, width: 640 | 1080 | 1920 = 640): string | undefined {
+  if (!url || !url.startsWith(`${BLOB}/`)) return url
+  return `/_next/image?url=${encodeURIComponent(url)}&w=${width}&q=75`
+}
 
 /**
  * VSL de la home (components/VslSection.tsx), uno por idioma.

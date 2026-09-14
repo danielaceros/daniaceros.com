@@ -1,9 +1,12 @@
 import Link from "next/link"
+import { preload } from "react-dom"
+import AutoplayVideo from "@/components/AutoplayVideo"
 import ContactCTA from "@/components/ContactCTA"
 import ViewMoreOnTV from "@/components/ViewMoreOnTV"
 import { getProjects } from "@/data/projects"
 import { buildBreadcrumbSchema, localizedMetadata, type LangParams } from "@/lib/seo"
 import { format, getDictionary, localizedHref, toLang } from "@/lib/i18n"
+import { optimizedPoster } from "@/lib/media"
 import { CASE_SLUGS, content } from "./content"
 
 export const generateMetadata = localizedMetadata((lang) => ({
@@ -29,6 +32,10 @@ export default async function CasosDeExitoPage({ params }: LangParams) {
     category: t.categories[slug] ?? "",
     project: projects.find((p) => p.slug === slug),
   })).filter((c): c is typeof c & { project: NonNullable<typeof c.project> } => !!c.project)
+
+  // El póster del primer caso es el LCP: se precarga con prioridad alta (el resto, al entrar en pantalla).
+  const firstPoster = optimizedPoster(casesWithProject[0]?.project.poster, 1080)
+  if (firstPoster) preload(firstPoster, { as: "image", fetchPriority: "high" })
 
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-white">
@@ -58,14 +65,9 @@ export default async function CasosDeExitoPage({ params }: LangParams) {
                 className="group relative block aspect-video w-full overflow-hidden rounded-xl border border-white/10 bg-[#0a0a0a]"
                 aria-label={format(t.caseAria, { title: project.title })}
               >
-                <video
+                <AutoplayVideo
                   src={project.video}
-                  poster={project.poster}
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  preload={index < 2 ? "auto" : "metadata"}
+                  poster={optimizedPoster(project.poster, 1080)}
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
                 />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />

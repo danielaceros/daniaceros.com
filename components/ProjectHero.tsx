@@ -1,10 +1,11 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { createPortal } from "react-dom"
+import { createPortal, preconnect, preload } from "react-dom"
 import { motion } from "framer-motion"
 import { ease } from "@/lib/motion"
 import { format, getDictionary, type Lang } from "@/lib/i18n"
+import { BLOB_ORIGIN, optimizedPoster } from "@/lib/media"
 
 type Props = {
   title: string
@@ -16,6 +17,10 @@ type Props = {
 
 export default function ProjectHero({ title, video, poster, videoBlurClass = "blur-[0.5px]", lang = "es" }: Props) {
   const t = getDictionary(lang).portfolio
+  // El vídeo del hero es el LCP de la ficha: póster optimizado precargado con prioridad alta.
+  const heroPoster = optimizedPoster(poster, 1080)
+  preconnect(BLOB_ORIGIN)
+  if (heroPoster) preload(heroPoster, { as: "image", fetchPriority: "high" })
   const [isOpen, setIsOpen] = useState(false)
   const [isHeroReady, setIsHeroReady] = useState(false)
   const [isModalReady, setIsModalReady] = useState(false)
@@ -61,7 +66,7 @@ export default function ProjectHero({ title, video, poster, videoBlurClass = "bl
         >
           <video
             src={video}
-            poster={poster}
+            poster={heroPoster}
             autoPlay
             muted
             loop
@@ -123,7 +128,7 @@ export default function ProjectHero({ title, video, poster, videoBlurClass = "bl
                 </button>
                 <video
                   src={video}
-                  poster={poster}
+                  poster={heroPoster}
                   controls
                   autoPlay
                   playsInline
