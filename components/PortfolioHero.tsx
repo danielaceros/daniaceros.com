@@ -2,8 +2,11 @@
 
 import { motion } from "framer-motion"
 import { ease, stagger, viewport } from "@/lib/motion"
+import { getDictionary, type Lang } from "@/lib/i18n"
 
-export default function PortfolioHero() {
+export default function PortfolioHero({ lang = "es" }: { lang?: Lang }) {
+  const t = getDictionary(lang).portfolio.hero
+
   return (
     <motion.section
       data-lux
@@ -25,7 +28,7 @@ export default function PortfolioHero() {
         }}
         className="mb-8 sm:mb-10 font-inter font-semibold uppercase  text-[28px] leading-[1.05] sm:text-[48px] lg:text-[64px]"
       >
-        Historias visuales que conectan con empresas, instituciones y marcas
+        {t.title}
       </motion.h1>
 
       <div className="max-w-3xl space-y-5 text-white/78">
@@ -36,7 +39,7 @@ export default function PortfolioHero() {
           }}
           className="font-inter text-[13px] sm:text-[14px] leading-[1.6]"
         >
-          Mi trabajo consiste en transformar eventos, ideas y experiencias corporativas en piezas audiovisuales con narrativa y estética cinematográfica. A continuación encontrarás una selección de proyectos realizados en diferentes sectores: empresas, instituciones, deporte, formación, activaciones y eventos profesionales.
+          {t.paragraphs[0]}
         </motion.p>
         <motion.p
           variants={{
@@ -45,7 +48,7 @@ export default function PortfolioHero() {
           }}
           className="font-inter text-[13px] sm:text-[14px] leading-[1.6]"
         >
-          Cada proyecto tiene su propia historia, su propio objetivo y su propio enfoque visual. Aquí puedes descubrir cómo trabajo y qué resultados genero para mis clientes.
+          {t.paragraphs[1]}
         </motion.p>
       </div>
     </motion.section>

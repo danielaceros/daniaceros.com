@@ -1,14 +1,13 @@
 import Link from "next/link"
 import type { CSSProperties } from "react"
 import LazyContactForm from "./LazyContactForm"
+import { getDictionary, localizedHref, type Lang } from "@/lib/i18n"
 
-const WHATSAPP_MESSAGE = encodeURIComponent(
-  "Hola Dani! Estamos valorando crear vídeo para la empresa y quería saber cómo trabajáis y si encaja para nuestro caso."
-)
-const WHATSAPP_URL = `https://wa.me/34711255496?text=${WHATSAPP_MESSAGE}`
 const CONTACT_EMAIL = "work@daniaceros.com"
 
 type Props = {
+  /** Idioma de los textos, del mensaje de WhatsApp y de los enlaces. Por defecto "es". */
+  lang?: Lang
   sectionClassName?: string
   mobileFormFirst?: boolean
   hideFooter?: boolean
@@ -16,11 +15,15 @@ type Props = {
 }
 
 export default function ContactCTA({
+  lang = "es",
   sectionClassName,
   mobileFormFirst = false,
   hideFooter = false,
   hideMobileContactInfo = false,
 }: Props) {
+  const t = getDictionary(lang).contact
+  const WHATSAPP_URL = `https://wa.me/34711255496?text=${encodeURIComponent(t.whatsappMessage)}`
+
   return (
     <section
       data-lux
@@ -31,7 +34,7 @@ export default function ContactCTA({
         style={{ "--lux-delay": "90ms" } as CSSProperties}
         className="cinematic-reveal-delay-1 mb-4 font-display text-[30px] font-semibold uppercase leading-[1.02] sm:mb-5 sm:text-[40px] lg:text-[48px]"
       >
-        ¿Hablamos de tu proyecto?
+        {t.title}
       </h2>
 
       <p
@@ -39,8 +42,7 @@ export default function ContactCTA({
         style={{ "--lux-delay": "160ms" } as CSSProperties}
         className="cinematic-reveal cinematic-reveal-delay-2 mx-auto mb-12 max-w-2xl font-inter text-[13px] leading-[1.75] text-white/68 sm:text-[14px]"
       >
-        Si estás valorando crear un vídeo para tu empresa, cuéntame qué tienes en mente
-        y te digo en minutos si encaja y cómo lo haría. Te respondo personalmente. Sin compromiso.
+        {t.intro}
       </p>
 
       <div
@@ -55,8 +57,7 @@ export default function ContactCTA({
             }`}
           >
             <p className="max-w-[32ch] font-inter text-[14px] leading-[1.8] text-white/66">
-              Cuéntanos sobre tu proyecto y te responderemos en menos de 24 horas con una propuesta
-              personalizada.
+              {t.asideText}
             </p>
             <div className="mt-9 space-y-5">
               <a
@@ -79,14 +80,13 @@ export default function ContactCTA({
           </aside>
 
           <div className={`relative overflow-hidden ${mobileFormFirst ? "order-1" : ""}`}>
-            <LazyContactForm />
+            <LazyContactForm lang={lang} />
           </div>
 
           {mobileFormFirst && !hideMobileContactInfo ? (
             <aside className="order-2 px-6 pb-7 pt-7 text-left lg:hidden">
               <p className="max-w-[36ch] font-inter text-[13px] leading-[1.75] text-white/66">
-                Si prefieres, también puedes escribirme directamente por email o WhatsApp y te
-                respondo personalmente.
+                {t.mobileAsideText}
               </p>
               <div className="mt-7 space-y-4">
                 <a
@@ -146,16 +146,16 @@ export default function ContactCTA({
             </Link>
           </p>
           <p className="mt-3 flex flex-wrap items-center justify-center gap-x-2 gap-y-1 font-inter text-[11px] lowercase text-white/45">
-            <Link href="/aviso-legal" className="hover:text-white/90 transition-colors duration-300 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black">
-              aviso legal
+            <Link href={localizedHref(lang, "/aviso-legal")} className="hover:text-white/90 transition-colors duration-300 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black">
+              {t.footer.legalNotice}
             </Link>
             <span aria-hidden>·</span>
-            <Link href="/politica-de-cookies" className="hover:text-white/90 transition-colors duration-300 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black">
-              política de cookies
+            <Link href={localizedHref(lang, "/politica-de-cookies")} className="hover:text-white/90 transition-colors duration-300 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black">
+              {t.footer.cookies}
             </Link>
             <span aria-hidden>·</span>
-            <Link href="/politica-de-privacidad" className="hover:text-white/90 transition-colors duration-300 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black">
-              política de privacidad
+            <Link href={localizedHref(lang, "/politica-de-privacidad")} className="hover:text-white/90 transition-colors duration-300 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black">
+              {t.footer.privacy}
             </Link>
           </p>
         </footer>

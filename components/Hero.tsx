@@ -4,8 +4,11 @@ import Image from "next/image"
 import Link from "next/link"
 import type { CSSProperties } from "react"
 import { VIDEO_POSTER_URL } from "@/lib/media"
+import { getDictionary, type Lang } from "@/lib/i18n"
 
 type Props = {
+  /** Idioma: rellena los textos por defecto desde el diccionario. Por defecto "es". */
+  lang?: Lang
   title?: string
   tagline?: string
   description?: string
@@ -15,15 +18,16 @@ type Props = {
   trustedLogosImageAlt?: string
 }
 
-export default function Hero({
-  title = "DANIEL ACERO",
-  tagline = "Filmmaker corporativo y videógrafo de eventos en Madrid",
-  description = "Transformo eventos empresariales, congresos y conferencias en piezas audiovisuales profesionales para marcas y empresas en Madrid.",
-  ctaLabel = "Pide presupuesto",
-  compactTitle = false,
-  trustedLogosImageSrc,
-  trustedLogosImageAlt = "Logos de clientes",
-}: Props) {
+export default function Hero(props: Props) {
+  const { lang = "es", compactTitle = false, trustedLogosImageSrc } = props
+  const t = getDictionary(lang).hero
+  // `??` (no `||`): un "" explícito (p. ej. tagline="" en /hablemos) oculta el bloque.
+  const title = props.title ?? t.title
+  const tagline = props.tagline ?? t.tagline
+  const description = props.description ?? t.description
+  const ctaLabel = props.ctaLabel ?? t.ctaLabel
+  const trustedLogosImageAlt = props.trustedLogosImageAlt ?? t.trustedLogosAlt
+
   const handleContactClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault()
     const contactSection = document.getElementById("contacto")
@@ -106,7 +110,7 @@ export default function Hero({
               className="hero-fade-up hero-fade-up-delay-3 mt-5 w-full max-w-2xl sm:mt-6"
             >
               <p className="mb-2 text-center font-inter text-[10px] uppercase tracking-[0.18em] text-white/58 sm:mb-3 sm:text-[11px]">
-                Algunas de las empresas que han confiado en mí:
+                {t.trustedLogosLabel}
               </p>
               <div className="hero-trusted-loop mx-auto w-full overflow-hidden rounded-xl">
                 <div className="hero-trusted-track">

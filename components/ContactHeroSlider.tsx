@@ -1,11 +1,12 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { projects } from "@/data/projects"
+import { getProjects } from "@/data/projects"
+import type { Lang } from "@/lib/i18n"
 
-const slides = projects.map((p) => ({ title: p.title, video: p.video, poster: p.poster }))
+export default function ContactHeroSlider({ lang = "es" }: { lang?: Lang }) {
+  const slides = getProjects(lang).map((p) => ({ title: p.title, video: p.video, poster: p.poster }))
 
-export default function ContactHeroSlider() {
   const [index, setIndex] = useState(0)
 
   useEffect(() => {
@@ -13,7 +14,7 @@ export default function ContactHeroSlider() {
       setIndex((i) => (i + 1) % slides.length)
     }, 3500)
     return () => clearInterval(id)
-  }, [])
+  }, [slides.length])
 
   return (
     <section className="relative mx-auto mt-10 w-full max-w-7xl overflow-hidden rounded-3xl">

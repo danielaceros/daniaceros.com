@@ -32,6 +32,11 @@ const CSP = [
 
 const nextConfig: NextConfig = {
   productionBrowserSourceMaps: true,
+  experimental: {
+    // app/global-not-found.tsx: 404 con el documento completo (Header,
+    // metadata) ahora que el layout raíz vive en app/[lang].
+    globalNotFound: true,
+  },
   images: {
     remotePatterns: [
       {

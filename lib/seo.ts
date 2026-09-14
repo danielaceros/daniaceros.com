@@ -1,4 +1,13 @@
 import type { Metadata } from "next"
+import {
+  DEFAULT_LOCALE,
+  HREFLANG,
+  OG_LOCALE,
+  isTranslatedPath,
+  localizedHref,
+  toLang,
+  type Lang,
+} from "@/lib/i18n"
 
 export const SITE_URL = "https://www.daniaceros.com"
 // Antes apuntaba a un asset de Firebase Storage que devuelve 402 Payment
@@ -29,12 +38,41 @@ export function buildBreadcrumbSchema(items: BreadcrumbEntry[]) {
   }
 }
 
+/**
+ * hreflang de una ruta traducida. `path` = ruta española sin prefijo.
+ * { "es-ES": "/servicios", en: "/en/servicios", "x-default": "/servicios" }
+ */
+export function buildLanguageAlternates(path: string): Record<string, string> {
+  return {
+    [HREFLANG.es]: localizedHref("es", path),
+    [HREFLANG.en]: localizedHref("en", path),
+    "x-default": localizedHref(DEFAULT_LOCALE, path),
+  }
+}
+
+/**
+ * true si la versión `lang` de la ruta es una traducción pendiente
+ * (se sirve con el contenido ES y debe ir con noindex y fuera del sitemap).
+ */
+export function isPendingTranslation(lang: Lang, translated: boolean): boolean {
+  return lang !== DEFAULT_LOCALE && !translated
+}
+
 type BuildMetadataArgs = {
   title: string
   description: string
+  /** Ruta ESPAÑOLA sin prefijo ("/servicios"). El prefijo /en lo añade buildMetadata. */
   path: string
   keywords?: string[]
   noIndex?: boolean
+  /** Idioma de la página. Por defecto "es". */
+  lang?: Lang
+  /**
+   * ¿Existe traducción EN de esta ruta? Por defecto se consulta el registro
+   * lib/i18n/routes.ts. Si es true: hreflang en ambas versiones e index en EN.
+   * Si es false: la versión EN sale con noindex y sin hreflang.
+   */
+  translated?: boolean
 }
 
 export function buildMetadata({
@@ -43,22 +81,30 @@ export function buildMetadata({
   path,
   keywords = [],
   noIndex = false,
+  lang = DEFAULT_LOCALE,
+  translated,
 }: BuildMetadataArgs): Metadata {
-  const url = `${SITE_URL}${path}`
+  const hasTranslation = translated ?? isTranslatedPath(path)
+  const pending = isPendingTranslation(lang, hasTranslation)
+  const localizedPath = localizedHref(lang, path)
+  const url = `${SITE_URL}${localizedPath}`
 
   return {
     title,
     description,
     keywords,
     alternates: {
-      canonical: path,
+      canonical: localizedPath,
+      ...(hasTranslation && !noIndex ? { languages: buildLanguageAlternates(path) } : {}),
     },
     robots: noIndex
       ? { index: false, follow: false, nocache: true }
-      : { index: true, follow: true, googleBot: { index: true, follow: true } },
+      : pending
+        ? { index: false, follow: true }
+        : { index: true, follow: true, googleBot: { index: true, follow: true } },
     openGraph: {
       type: "website",
-      locale: "es_ES",
+      locale: OG_LOCALE[lang],
       url,
       siteName: "Daniel Acero",
       title,
@@ -71,5 +117,29 @@ export function buildMetadata({
       description,
       images: [DEFAULT_OG_IMAGE],
     },
+  }
+}
+
+export type LangParams = { params: Promise<{ lang: string }> }
+
+/**
+ * Atajo para páginas bajo app/[lang]:
+ *
+ *   // Página pendiente de traducir (mismo texto ES; en /en sale noindex):
+ *   export const generateMetadata = localizedMetadata({ title, description, path })
+ *
+ *   // Página traducida (textos por idioma):
+ *   export const generateMetadata = localizedMetadata((lang) => {
+ *     const t = getDictionary(lang).meta.home
+ *     return { title: t.title, description: t.description, path: "/" }
+ *   })
+ */
+export function localizedMetadata(
+  args: Omit<BuildMetadataArgs, "lang"> | ((lang: Lang) => Omit<BuildMetadataArgs, "lang">)
+) {
+  return async function generateMetadata({ params }: LangParams): Promise<Metadata> {
+    const lang = toLang((await params).lang)
+    const resolved = typeof args === "function" ? args(lang) : args
+    return buildMetadata({ ...resolved, lang })
   }
 }

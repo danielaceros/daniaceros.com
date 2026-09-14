@@ -2,10 +2,12 @@ import SectionTitle from "./SectionTitle"
 import PortfolioCard from "./PortfolioCard"
 import PortfolioMarquee from "./PortfolioMarquee"
 import ViewMoreOnTV from "./ViewMoreOnTV"
-import { projects } from "@/data/projects"
+import { getProjects } from "@/data/projects"
 import type { CSSProperties } from "react"
+import { getDictionary, localizedHref, type Lang } from "@/lib/i18n"
 
 type Props = {
+  lang?: Lang
   openVideosInModal?: boolean
   projectSlugs?: string[]
   forceTwoColumns?: boolean
@@ -14,6 +16,7 @@ type Props = {
 }
 
 export default function Portfolio({
+  lang = "es",
   openVideosInModal = false,
   projectSlugs,
   // forceTwoColumns ya no afecta a nada: solo se usaba para el ancho de la
@@ -22,6 +25,8 @@ export default function Portfolio({
   sectionClassName,
   desktopSlideshow = false,
 }: Props) {
+  const projects = getProjects(lang)
+  const t = getDictionary(lang).portfolio
   const selectedProjects = projectSlugs?.length
     ? projectSlugs
         .map((slug) => projects.find((project) => project.slug === slug))
@@ -37,7 +42,7 @@ export default function Portfolio({
           viewport de verdad — ver comentario junto a PortfolioMarquee. */}
       <div className="page-container">
         <div className="cinematic-reveal-delay-1" style={{ "--lux-delay": "80ms" } as CSSProperties}>
-          <SectionTitle>Portfolio</SectionTitle>
+          <SectionTitle>{t.sectionTitle}</SectionTitle>
         </div>
 
         {desktopSlideshow && (
@@ -51,9 +56,10 @@ export default function Portfolio({
                       title={project.title}
                       video={project.video}
                       poster={project.poster}
-                      href={`/portfolio/${project.slug}`}
+                      href={localizedHref(lang, `/portfolio/${project.slug}`)}
                       index={i}
                       openInModal={openVideosInModal}
+                      lang={lang}
                       hideOverlayTitle
                     />
                     <p className="mt-2 px-1 text-left font-display text-[13px] font-semibold uppercase leading-tight text-white/92">
@@ -74,9 +80,10 @@ export default function Portfolio({
                       title={project.title}
                       video={project.video}
                       poster={project.poster}
-                      href={`/portfolio/${project.slug}`}
+                      href={localizedHref(lang, `/portfolio/${project.slug}`)}
                       index={i}
                       openInModal={openVideosInModal}
+                      lang={lang}
                     />
                   </div>
                 ))}
@@ -190,8 +197,9 @@ export default function Portfolio({
             }))}
             size="xl"
             mode={openVideosInModal ? "modal" : "link"}
-            basePath="/portfolio"
+            basePath={localizedHref(lang, "/portfolio")}
             scrollable
+            lang={lang}
           />
         </div>
       )}
@@ -199,7 +207,7 @@ export default function Portfolio({
       <div className="page-container">
         {/* Solo en la grid completa (home) — el slideshow de /hablemos es una
             landing de conversión pura, sin distracciones hacia /tv. */}
-        {!desktopSlideshow && <ViewMoreOnTV className="mt-8 sm:mt-10" />}
+        {!desktopSlideshow && <ViewMoreOnTV className="mt-8 sm:mt-10" lang={lang} />}
       </div>
     </section>
   )

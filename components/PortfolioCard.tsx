@@ -4,6 +4,7 @@ import Link from "next/link"
 import { useEffect, useRef, useState } from "react"
 import type { CSSProperties } from "react"
 import { createPortal } from "react-dom"
+import { format, getDictionary, type Lang } from "@/lib/i18n"
 
 type Props = {
   title: string
@@ -13,6 +14,7 @@ type Props = {
   index?: number
   openInModal?: boolean
   hideOverlayTitle?: boolean
+  lang?: Lang
 }
 
 type NavigatorConnection = {
@@ -30,7 +32,9 @@ export default function PortfolioCard({
   index = 0,
   openInModal = false,
   hideOverlayTitle = false,
+  lang = "es",
 }: Props) {
+  const t = getDictionary(lang).portfolio
   const cardRef = useRef<HTMLDivElement | null>(null)
   const [canAutoplay] = useState(() => {
     if (typeof navigator === "undefined") return true
@@ -82,9 +86,6 @@ export default function PortfolioCard({
     }
   }, [isOpen])
 
-  useEffect(() => {
-    if (isOpen) setIsModalReady(false)
-  }, [isOpen])
 
   const content = (
     <>
@@ -125,9 +126,14 @@ export default function PortfolioCard({
         >
           <button
             type="button"
-            aria-label={`Ver vídeo de ${title}`}
+            aria-label={format(t.viewVideo, { title })}
             className={`${baseClass} w-full cursor-pointer text-left`}
-            onClick={() => setIsOpen(true)}
+            onClick={() => {
+              // Antes se reseteaba en un useEffect (lint react-hooks/set-state-in-effect):
+              // mismo comportamiento, pero en el propio evento de apertura.
+              setIsModalReady(false)
+              setIsOpen(true)
+            }}
           >
             {content}
           </button>
@@ -140,7 +146,7 @@ export default function PortfolioCard({
                 onClick={() => setIsOpen(false)}
                 role="dialog"
                 aria-modal="true"
-                aria-label={`Video de ${title}`}
+                aria-label={format(t.videoDialog, { title })}
               >
                 <div
                   className="relative max-h-[88svh] max-w-[94vw] overflow-hidden rounded-2xl border border-white/15 bg-[#0a0a0a] shadow-[0_28px_70px_-30px_rgba(0,0,0,0.95)]"
@@ -150,9 +156,9 @@ export default function PortfolioCard({
                     type="button"
                     onClick={() => setIsOpen(false)}
                     className="absolute right-3 top-3 z-10 cursor-pointer rounded-full border border-white/20 bg-black/55 px-3 py-1 text-[11px] uppercase text-white/85 transition hover:bg-black/75"
-                    aria-label="Cerrar video"
+                    aria-label={t.closeVideo}
                   >
-                    Cerrar
+                    {t.close}
                   </button>
                   <video
                     src={video}
@@ -194,7 +200,7 @@ export default function PortfolioCard({
         <div>
           <Link
             href={href}
-            aria-label={`Ver proyecto ${title}`}
+            aria-label={format(t.viewProject, { title })}
             className={baseClass}
           >
             {content}
@@ -219,7 +225,7 @@ export default function PortfolioCard({
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label={`Ver vídeo de ${title}`}
+          aria-label={format(t.viewVideo, { title })}
           className={baseClass}
         >
           {content}

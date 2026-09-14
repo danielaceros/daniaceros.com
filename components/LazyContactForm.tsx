@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react"
 import Script from "next/script"
+import { getDictionary, type Lang } from "@/lib/i18n"
 
 // El iframe de GoHighLevel/fitnesslaunch carga internamente Cloudflare
 // Turnstile (~1.9MB en 5 chunks) apenas se monta. Antes se montaba siempre
@@ -9,7 +10,8 @@ import Script from "next/script"
 // ancho de banda con el LCP. Aquí solo se monta (iframe + form_embed.js)
 // cuando el usuario hace scroll hasta el formulario o interactúa con el
 // placeholder, usando IntersectionObserver.
-export default function LazyContactForm() {
+export default function LazyContactForm({ lang = "es" }: { lang?: Lang }) {
+  const t = getDictionary(lang).contactForm
   const containerRef = useRef<HTMLDivElement>(null)
   // Siempre arranca en false, tanto en el servidor (donde IntersectionObserver
   // ni existe) como en el cliente, para que la hidratación coincida y el HTML
@@ -71,10 +73,10 @@ export default function LazyContactForm() {
           type="button"
           onClick={() => setShouldLoad(true)}
           className="flex h-[640px] w-full flex-col items-center justify-center gap-3 text-white/50 transition-colors duration-300 hover:text-white/70 md:h-[680px] lg:h-[640px]"
-          aria-label="Cargar formulario de contacto"
+          aria-label={t.loadAria}
         >
           <span className="h-6 w-6 animate-pulse rounded-full border border-white/20" aria-hidden="true" />
-          <span className="font-inter text-[12px] uppercase tracking-[0.14em]">Cargando formulario…</span>
+          <span className="font-inter text-[12px] uppercase tracking-[0.14em]">{t.loading}</span>
         </button>
       )}
     </div>
