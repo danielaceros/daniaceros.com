@@ -31,19 +31,24 @@ export function optimizedPoster(url: string | undefined, width: 640 | 1080 | 192
  *   generado con /Volumes/Dani/FILMMAKING_ADS/VSL_WEB/make_hls.sh desde el máster 4K.
  * - mp4: 1080p progresivo, solo como último recurso si HLS falla.
  * - poster: imagen previa.
+ * - duration (ISO 8601) y uploadDate: para el VideoObject de la home (medido con ffprobe: ES 54,5 s · EN 46,5 s).
  * `null` = la sección no se renderiza en ese idioma.
  */
-export type VslMedia = { hls: string; mp4: string; poster: string }
+export type VslMedia = { hls: string; mp4: string; poster: string; duration: string; uploadDate: string }
 
 export const VSL: Record<Lang, VslMedia | null> = {
   es: {
     hls: `${BLOB}/vsl/hls/es/master.m3u8`,
     mp4: `${BLOB}/vsl/vsl-es-dani-acero.mp4`,
     poster: `${BLOB}/vsl/vsl-es-dani-acero-poster.jpg`,
+    duration: "PT54S",
+    uploadDate: "2026-09-14",
   },
   en: {
     hls: `${BLOB}/vsl/hls/en/master.m3u8`,
     mp4: `${BLOB}/vsl/vsl-en-dani-acero.mp4`,
     poster: `${BLOB}/vsl/vsl-en-dani-acero-poster.jpg`,
+    duration: "PT46S",
+    uploadDate: "2026-09-14",
   },
 }
