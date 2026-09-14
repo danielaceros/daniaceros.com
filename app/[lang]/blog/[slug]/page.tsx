@@ -54,6 +54,13 @@ export default async function BlogPostPage({ params }: Props) {
   // El mapeo usa el post ORIGINAL (keyword ES), así ES y EN enlazan al mismo servicio.
   const relatedPath = relatedServiceForPost(getPostBySlug(slug) ?? post)
   const related = SERVICE_LINKS[relatedPath][lang]
+  // publishedAt = "AAAA-MM-DD": se formatea en UTC para que no cambie de día según la zona del servidor.
+  const publishedLabel = new Intl.DateTimeFormat(t.dateLocale, {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    timeZone: "UTC",
+  }).format(new Date(`${post.publishedAt}T00:00:00Z`))
 
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-white">
@@ -75,8 +82,18 @@ export default async function BlogPostPage({ params }: Props) {
             {post.title}
           </h1>
           <p className="mt-6 text-[15px] leading-[1.8] text-white/70 max-w-2xl">{post.description}</p>
-          <div className="mt-6 flex flex-wrap gap-3 text-[11px] uppercase tracking-[0.16em] text-white/45 font-inter">
-            <span>{post.publishedAt}</span>
+          <div className="mt-6 flex flex-wrap items-center gap-x-3 text-[11px] uppercase tracking-[0.16em] text-white/45 font-inter">
+            {/* Firma: autor visible enlazado a /sobre-mi (E-E-A-T) y fecha legible con <time> máquina. */}
+            <Link
+              href={localizedHref(lang, "/sobre-mi")}
+              rel="author"
+              prefetch={false}
+              className="inline-flex min-h-[44px] items-center transition-colors hover:text-white/85"
+            >
+              {t.byline}
+            </Link>
+            <span className="h-1 w-1 self-center rounded-full bg-white/20" />
+            <time dateTime={post.publishedAt}>{publishedLabel}</time>
             <span className="h-1 w-1 self-center rounded-full bg-white/20" />
             <span>{post.readingTime}</span>
             <span className="h-1 w-1 self-center rounded-full bg-white/20" />
