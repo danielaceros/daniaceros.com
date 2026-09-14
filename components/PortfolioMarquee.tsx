@@ -82,30 +82,50 @@ export default function PortfolioMarquee({
   // Arrastre con ratón en desktop: el scroll nativo (swipe/trackpad) ya
   // funciona solo con overflow-x-auto, esto añade la afordancia de "coger y
   // tirar" con el ratón que la gente espera en una tira horizontal.
+  // Solo ratón: en táctil manda el scroll nativo (touch-pan-x). La captura del puntero y la
+  // desactivación del snap solo empiezan al superar el umbral, para que un click normal siga
+  // llegando a la tarjeta (con captura desde pointerdown el click acaba en el track).
   const dragRef = useRef({ active: false, startX: 0, startScroll: 0, moved: false })
 
   const onPointerDown = (event: React.PointerEvent<HTMLDivElement>) => {
-    if (!scrollable || !trackRef.current) return
+    if (!scrollable || !trackRef.current || event.pointerType !== "mouse" || event.button !== 0) return
     dragRef.current = {
       active: true,
       startX: event.clientX,
       startScroll: trackRef.current.scrollLeft,
       moved: false,
     }
-    trackRef.current.setPointerCapture(event.pointerId)
   }
 
   const onPointerMove = (event: React.PointerEvent<HTMLDivElement>) => {
-    if (!scrollable || !dragRef.current.active || !trackRef.current) return
+    const track = trackRef.current
+    if (!scrollable || !dragRef.current.active || !track) return
+    // Botón ya soltado fuera del track (sin captura todavía): se cancela el arrastre pendiente.
+    if ((event.buttons & 1) === 0) {
+      dragRef.current.active = false
+      return
+    }
     const delta = event.clientX - dragRef.current.startX
-    if (Math.abs(delta) > 4) dragRef.current.moved = true
-    trackRef.current.scrollLeft = dragRef.current.startScroll - delta
+    if (!dragRef.current.moved) {
+      if (Math.abs(delta) <= 4) return
+      dragRef.current.moved = true
+      track.setPointerCapture(event.pointerId)
+      // Mientras se arrastra: sin snap ni scroll suave, para que cada scrollLeft se aplique tal cual.
+      track.style.scrollSnapType = "none"
+      track.style.scrollBehavior = "auto"
+    }
+    track.scrollLeft = dragRef.current.startScroll - delta
   }
 
   const endDrag = (event: React.PointerEvent<HTMLDivElement>) => {
-    if (!scrollable) return
+    const track = trackRef.current
+    if (!scrollable || !dragRef.current.active) return
     dragRef.current.active = false
-    trackRef.current?.releasePointerCapture(event.pointerId)
+    if (track?.hasPointerCapture(event.pointerId)) track.releasePointerCapture(event.pointerId)
+    if (track) {
+      track.style.scrollSnapType = ""
+      track.style.scrollBehavior = ""
+    }
   }
 
   // Tras un arrastre, evita que el click final en la tarjeta abra el vídeo
@@ -114,6 +134,7 @@ export default function PortfolioMarquee({
     if (scrollable && dragRef.current.moved) {
       event.preventDefault()
       event.stopPropagation()
+      dragRef.current.moved = false
     }
   }
 
@@ -196,9 +217,13 @@ export default function PortfolioMarquee({
             onPointerDown={onPointerDown}
             onPointerMove={onPointerMove}
             onPointerUp={endDrag}
-            onPointerLeave={endDrag}
+            onPointerCancel={endDrag}
+            onLostPointerCapture={endDrag}
+            onDragStart={(event) => event.preventDefault()}
             onClickCapture={onTrackClickCapture}
-            className="cursor-grab touch-pan-x snap-x snap-proximity overflow-x-auto overscroll-x-contain scroll-smooth px-4 active:cursor-grabbing sm:px-6 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+            // Sin scroll-smooth: el snap inicial generaba un scroll suave en la carga y Chrome dejaba de
+            // registrar el LCP de toda la página. scroll-pl alinea el snap con el padding (sin salto inicial).
+            className="cursor-grab touch-pan-x snap-x snap-proximity overflow-x-auto overscroll-x-contain scroll-pl-4 px-4 active:cursor-grabbing sm:scroll-pl-6 sm:px-6 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
             style={{ msOverflowStyle: "none" }}
           >
             <div className={`flex w-max ${GAP_CLASSES[size]}`}>
@@ -331,7 +356,7 @@ function MarqueeCard({
 
   if (href) {
     return (
-      <Link href={href} aria-label={format(t.viewProject, { title })} className={cardClassName}>
+      <Link href={href} aria-label={format(t.viewProject, { title })} className={cardClassName} draggable={false}>
         {inner}
       </Link>
     )
