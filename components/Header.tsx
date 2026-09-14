@@ -220,7 +220,9 @@ export default function Header({ lang, notFound = false }: HeaderProps) {
                 daniel acero©
               </Link>
 
-              <ul className="hidden items-center gap-6 lg:flex xl:gap-8">
+              {/* Desde xl (1280): entre 1024 y 1279 los 11 enlaces + CTA no caben y partían línea.
+                  Se oculta por CSS (los enlaces siguen en el HTML). */}
+              <ul className="hidden items-center gap-6 whitespace-nowrap xl:flex xl:gap-8">
                 {navItems.map((item) => {
                   const isActive = pathname === item.href
                   return (
@@ -269,8 +271,9 @@ export default function Header({ lang, notFound = false }: HeaderProps) {
                 type="button"
                 aria-label={mobileOpen ? t.closeMenu : t.openMenu}
                 aria-expanded={mobileOpen}
+                aria-controls="mobile-menu"
                 onClick={() => setMobileOpen((o) => !o)}
-                className="flex h-11 w-11 flex-col justify-center gap-1.5 rounded-lg text-white/90 transition-colors duration-300 hover:bg-white/5 hover:text-white lg:hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+                className="flex h-11 w-11 flex-col justify-center gap-1.5 rounded-lg text-white/90 transition-colors duration-300 hover:bg-white/5 hover:text-white xl:hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
               >
                 <span
                   className={clsx(
@@ -297,11 +300,21 @@ export default function Header({ lang, notFound = false }: HeaderProps) {
       </header>
 
       {mobileOpen && !isHablemosPage && (
+        // Scroll propio: en móviles bajos (SE, 13, S8) el menú mide ~890px y sin overflow quedaban
+        // fuera Contacto, el CTA y ES|EN. pt deja el primer enlace por debajo de la pill (≈78px + notch).
         <div
-          className="fixed inset-0 z-40 bg-black/95 backdrop-blur-md lg:hidden"
-          aria-hidden="true"
+          id="mobile-menu"
+          role="dialog"
+          aria-modal="true"
+          aria-label={t.openMenu}
+          className="fixed inset-0 z-40 overflow-y-auto overscroll-contain bg-black/[0.97] backdrop-blur-md xl:hidden"
         >
-          <nav className="flex min-h-full flex-col items-center justify-center gap-8 px-6 pb-[max(2rem,env(safe-area-inset-bottom))] pt-[max(5rem,env(safe-area-inset-top)+2.5rem)]">
+          {/* Fundido fijo bajo la pill: al hacer scroll los enlaces se desvanecen en vez de verse a través del cristal. */}
+          <div
+            aria-hidden
+            className="pointer-events-none sticky top-0 z-10 -mb-[calc(env(safe-area-inset-top)+5.5rem)] h-[calc(env(safe-area-inset-top)+5.5rem)] bg-gradient-to-b from-black from-75% to-transparent"
+          />
+          <nav className="flex min-h-full flex-col items-center justify-center gap-2 px-6 pb-[max(2rem,env(safe-area-inset-bottom))] pt-[calc(env(safe-area-inset-top)+6rem)] [@media(min-height:820px)]:gap-4">
               {navItems.map((item, i) => {
                 const isActive = pathname === item.href
                 return (
@@ -314,7 +327,7 @@ export default function Header({ lang, notFound = false }: HeaderProps) {
                       href={localizedHref(lang, item.href)}
                       onClick={() => setMobileOpen(false)}
                       className={clsx(
-                        "py-2 font-inter text-[18px] uppercase transition-colors duration-300 sm:text-[21px]",
+                        "flex min-h-[44px] items-center px-2 font-inter text-[18px] uppercase transition-colors duration-300 sm:text-[21px]",
                         isActive ? "text-white" : "text-white/70 hover:text-white"
                       )}
                     >
@@ -323,7 +336,7 @@ export default function Header({ lang, notFound = false }: HeaderProps) {
                   </div>
                 )
               })}
-              <div>
+              <div className="mt-3">
                 <Link
                   href={localizedHref(lang, "/contacto")}
                   onClick={() => setMobileOpen(false)}
