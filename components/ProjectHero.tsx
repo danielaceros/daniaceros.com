@@ -4,15 +4,18 @@ import { useEffect, useState } from "react"
 import { createPortal } from "react-dom"
 import { motion } from "framer-motion"
 import { ease } from "@/lib/motion"
+import { format, getDictionary, type Lang } from "@/lib/i18n"
 
 type Props = {
   title: string
   video: string
   poster?: string
   videoBlurClass?: string
+  lang?: Lang
 }
 
-export default function ProjectHero({ title, video, poster, videoBlurClass = "blur-[0.5px]" }: Props) {
+export default function ProjectHero({ title, video, poster, videoBlurClass = "blur-[0.5px]", lang = "es" }: Props) {
+  const t = getDictionary(lang).portfolio
   const [isOpen, setIsOpen] = useState(false)
   const [isHeroReady, setIsHeroReady] = useState(false)
   const [isModalReady, setIsModalReady] = useState(false)
@@ -54,7 +57,7 @@ export default function ProjectHero({ title, video, poster, videoBlurClass = "bl
             setIsOpen(true)
           }}
           className="absolute inset-0 block cursor-pointer transition-opacity duration-500 hover:opacity-95"
-          aria-label={`Ver vídeo de ${title}`}
+          aria-label={format(t.viewVideo, { title })}
         >
           <video
             src={video}
@@ -92,7 +95,7 @@ export default function ProjectHero({ title, video, poster, videoBlurClass = "bl
             transition={{ duration: 0.4, delay: 0.35 }}
             className="mt-2 font-inter text-[10px] font-medium uppercase  text-white/66"
           >
-            Haz clic para ver el video completo
+            {t.clickToWatch}
           </motion.p>
         </div>
       </motion.section>
@@ -104,7 +107,7 @@ export default function ProjectHero({ title, video, poster, videoBlurClass = "bl
               onClick={() => setIsOpen(false)}
               role="dialog"
               aria-modal="true"
-              aria-label={`Video de ${title}`}
+              aria-label={format(t.videoDialog, { title })}
             >
               <div
                 className="relative max-h-[88svh] max-w-[94vw] overflow-hidden rounded-2xl border border-white/15 bg-[#0a0a0a] shadow-[0_28px_70px_-30px_rgba(0,0,0,0.95)]"
@@ -114,9 +117,9 @@ export default function ProjectHero({ title, video, poster, videoBlurClass = "bl
                   type="button"
                   onClick={() => setIsOpen(false)}
                   className="absolute right-3 top-3 z-10 cursor-pointer rounded-full border border-white/20 bg-black/55 px-3 py-1 text-[11px] uppercase  text-white/85 transition hover:bg-black/75"
-                  aria-label="Cerrar video"
+                  aria-label={t.closeVideo}
                 >
-                  Cerrar
+                  {t.close}
                 </button>
                 <video
                   src={video}

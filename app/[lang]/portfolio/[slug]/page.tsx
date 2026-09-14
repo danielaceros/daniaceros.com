@@ -1,45 +1,68 @@
-// app/portfolio/[slug]/page.tsx
+// app/[lang]/portfolio/[slug]/page.tsx
 import type { Metadata } from "next"
 import { notFound } from "next/navigation"
-import { projects } from "@/data/projects"
+import { getProject, projects } from "@/data/projects"
 import ProjectHero from "@/components/ProjectHero"
 import ProjectContent from "@/components/ProjectContent"
 import ViewMoreOnTV from "@/components/ViewMoreOnTV"
 import ContactCTA from "@/components/ContactCTA"
-import { DEFAULT_OG_IMAGE, SITE_URL, buildBreadcrumbSchema } from "@/lib/seo"
+import {
+  DEFAULT_OG_IMAGE,
+  SITE_URL,
+  buildBreadcrumbSchema,
+  buildLanguageAlternates,
+} from "@/lib/seo"
+import {
+  OG_LOCALE,
+  SCHEMA_LANGUAGE,
+  getDictionary,
+  isTranslatedPath,
+  localizedHref,
+  toLang,
+} from "@/lib/i18n"
 
 type Props = {
-  params: Promise<{ slug: string }>
+  params: Promise<{ lang: string; slug: string }>
+}
+
+// El layout [lang] fija dynamicParams=false (solo es/en). Aquí se reactiva para
+// que un slug inexistente llegue a notFound() DENTRO del layout (con Header),
+// como antes del i18n, en vez del 404 global sin layout.
+export const dynamicParams = true
+
+export function generateStaticParams() {
+  return projects.map((project) => ({ slug: project.slug }))
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await params
-  const project = projects.find((p) => p.slug === slug)
+  const { slug, lang: rawLang } = await params
+  const lang = toLang(rawLang)
+  const dict = getDictionary(lang)
+  const project = getProject(slug, lang)
 
   if (!project) {
     return {
-      title: "Proyecto no encontrado",
+      title: dict.meta.project.notFoundTitle,
       robots: { index: false, follow: false },
     }
   }
 
   const cleanTitle = project.title.replace(/\s*—\s*.*/, "").trim()
   const description =
-    project.sections?.[0]?.items?.[0] ??
-    "Proyecto audiovisual corporativo de Daniel Acero."
-  const path = `/portfolio/${project.slug}`
+    project.sections?.[0]?.items?.[0] ?? dict.meta.project.fallbackDescription
+  const basePath = `/portfolio/${project.slug}`
+  const path = localizedHref(lang, basePath)
   const url = `${SITE_URL}${path}`
+  const translated = isTranslatedPath(basePath)
 
   return {
     title: cleanTitle,
     description,
-    alternates: { canonical: path },
-    keywords: [
-      "video corporativo",
-      "produccion audiovisual",
-      "filmmaker madrid",
-      cleanTitle.toLowerCase(),
-    ],
+    alternates: {
+      canonical: path,
+      ...(translated ? { languages: buildLanguageAlternates(basePath) } : {}),
+    },
+    keywords: [...dict.meta.project.keywords, cleanTitle.toLowerCase()],
     robots: {
       index: true,
       follow: true,
@@ -53,7 +76,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     openGraph: {
       type: "article",
-      locale: "es_ES",
+      locale: OG_LOCALE[lang],
       url,
       siteName: "Daniel Acero",
       title: cleanTitle,
@@ -70,19 +93,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function ProjectPage({ params }: Props) {
-  const { slug } = await params
+  const { slug, lang: rawLang } = await params
+  const lang = toLang(rawLang)
+  const dict = getDictionary(lang)
 
-  const project = projects.find((p) => p.slug === slug)
+  const project = getProject(slug, lang)
 
   if (!project) return notFound()
 
   const cleanTitle = project.title.replace(/\s*—\s*.*/, "").trim()
   const description =
-    project.sections?.[0]?.items?.[0] ?? "Proyecto audiovisual corporativo de Daniel Acero."
+    project.sections?.[0]?.items?.[0] ?? dict.meta.project.fallbackDescription
 
   // Solo incluimos los campos que existen realmente en data/projects.ts
   // (nombre, descripción, vídeo y thumbnail) — sin inventar duración ni
-  // fecha de publicación, que no se guardan ahí.
+  // fecha de publicación, que no se guardan ahí. inLanguage solo en idiomas
+  // distintos del ES (el JSON-LD español se mantiene idéntico al original).
   const videoSchema = {
     "@context": "https://schema.org",
     "@type": "VideoObject",
@@ -90,12 +116,13 @@ export default async function ProjectPage({ params }: Props) {
     description,
     thumbnailUrl: [project.poster],
     contentUrl: project.video,
+    ...(lang === "es" ? {} : { inLanguage: SCHEMA_LANGUAGE[lang] }),
   }
 
   const breadcrumbSchema = buildBreadcrumbSchema([
-    { name: "Inicio", path: "/" },
-    { name: "Portfolio", path: "/portfolio" },
-    { name: cleanTitle, path: `/portfolio/${project.slug}` },
+    { name: dict.breadcrumbs.home, path: localizedHref(lang, "/") },
+    { name: dict.portfolio.sectionTitle, path: localizedHref(lang, "/portfolio") },
+    { name: cleanTitle, path: localizedHref(lang, `/portfolio/${project.slug}`) },
   ])
 
   return (
@@ -114,13 +141,14 @@ export default async function ProjectPage({ params }: Props) {
         video={project.video}
         poster={project.poster}
         videoBlurClass="blur-[3px]"
+        lang={lang}
       />
 
       <ProjectContent sections={project.sections} />
 
-      <ViewMoreOnTV className="px-4 pt-2 sm:pt-4" />
+      <ViewMoreOnTV className="px-4 pt-2 sm:pt-4" lang={lang} />
 
-      <ContactCTA />
+      <ContactCTA lang={lang} />
     </main>
   )
 }

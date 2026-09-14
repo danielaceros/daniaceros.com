@@ -1,4 +1,8 @@
 // data/projects.ts
+// Contenido ORIGINAL en español. Traducciones: data/projects.en.ts (usa getProjects/getProject).
+import type { Lang } from "@/lib/i18n/config"
+import { projectTranslations } from "./projects.en"
+
 export const projects = [
   {
   slug: "brahim-diaz",
@@ -519,3 +523,27 @@ export const projects = [
 }
   // 👉 aquí metes los otros 7 proyectos
 ]
+
+export type Project = (typeof projects)[number]
+
+/** ¿Tiene el proyecto traducción en `lang`? (ES siempre) */
+export function hasProjectTranslation(slug: string, lang: Lang): boolean {
+  return lang === "es" || Boolean(projectTranslations[lang]?.[slug])
+}
+
+/**
+ * Proyectos en el idioma pedido: se sustituyen título y secciones por la
+ * traducción si existe; vídeo, póster y slug son siempre los mismos.
+ * Sin traducción → contenido español.
+ */
+export function getProjects(lang: Lang): Project[] {
+  if (lang === "es") return projects
+  return projects.map((project) => {
+    const translation = projectTranslations[lang]?.[project.slug]
+    return translation ? { ...project, ...translation } : project
+  })
+}
+
+export function getProject(slug: string, lang: Lang): Project | undefined {
+  return getProjects(lang).find((project) => project.slug === slug)
+}

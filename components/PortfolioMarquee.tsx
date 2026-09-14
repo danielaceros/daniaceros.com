@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { useEffect, useRef, useState } from "react"
 import { createPortal } from "react-dom"
+import { format, getDictionary, type Lang } from "@/lib/i18n"
 
 export type MarqueeItem = {
   slug: string
@@ -29,6 +30,8 @@ type Props = {
    *  se desactiva la animación automática y el track pasa a ser un scroll
    *  horizontal real (swipe/trackpad/arrastre con el ratón). */
   scrollable?: boolean
+  /** Idioma de los aria-labels. `basePath` debe venir ya localizado (localizedHref). */
+  lang?: Lang
 }
 
 const SIZE_CLASSES: Record<CardSize, string> = {
@@ -67,7 +70,9 @@ export default function PortfolioMarquee({
   speed = 0.28,
   className,
   scrollable = false,
+  lang = "es",
 }: Props) {
+  const t = getDictionary(lang).portfolio
   const trackRef = useRef<HTMLDivElement>(null)
   const rafRef = useRef<number | null>(null)
   const xRef = useRef(0)
@@ -204,6 +209,7 @@ export default function PortfolioMarquee({
                     video={item.video}
                     poster={item.poster}
                     size={size}
+                    lang={lang}
                     href={mode === "link" ? `${basePath}/${item.slug}` : undefined}
                     onOpen={
                       mode === "modal"
@@ -224,6 +230,7 @@ export default function PortfolioMarquee({
                 video={item.video}
                 poster={item.poster}
                 size={size}
+                lang={lang}
                 href={mode === "link" ? `${basePath}/${item.slug}` : undefined}
                 onOpen={
                   mode === "modal"
@@ -250,7 +257,7 @@ export default function PortfolioMarquee({
               onClick={() => setActiveVideo(null)}
               role="dialog"
               aria-modal="true"
-              aria-label={`Video de ${activeVideo.title}`}
+              aria-label={format(t.videoDialog, { title: activeVideo.title })}
             >
               <div
                 className="relative max-h-[88svh] max-w-[94vw] overflow-hidden rounded-2xl border border-white/15 bg-[#0a0a0a] shadow-[0_28px_70px_-30px_rgba(0,0,0,0.95)]"
@@ -260,9 +267,9 @@ export default function PortfolioMarquee({
                   type="button"
                   onClick={() => setActiveVideo(null)}
                   className="absolute right-3 top-3 z-10 cursor-pointer rounded-full border border-white/20 bg-black/55 px-3 py-1 text-[11px] uppercase text-white/85 transition hover:bg-black/75"
-                  aria-label="Cerrar video"
+                  aria-label={t.closeVideo}
                 >
-                  Cerrar
+                  {t.close}
                 </button>
                 <video
                   src={activeVideo.video}
@@ -288,6 +295,7 @@ function MarqueeCard({
   size,
   href,
   onOpen,
+  lang,
 }: {
   title: string
   video: string
@@ -295,7 +303,9 @@ function MarqueeCard({
   size: CardSize
   href?: string
   onOpen?: () => void
+  lang: Lang
 }) {
+  const t = getDictionary(lang).portfolio
   const cardClassName = `group relative block cursor-pointer overflow-hidden rounded-xl bg-[#0a0a0a] ${SIZE_CLASSES[size]}`
 
   const inner = (
@@ -321,14 +331,14 @@ function MarqueeCard({
 
   if (href) {
     return (
-      <Link href={href} aria-label={`Ver proyecto ${title}`} className={cardClassName}>
+      <Link href={href} aria-label={format(t.viewProject, { title })} className={cardClassName}>
         {inner}
       </Link>
     )
   }
 
   return (
-    <button type="button" onClick={onOpen} className={cardClassName} aria-label={`Abrir video de ${title}`}>
+    <button type="button" onClick={onOpen} className={cardClassName} aria-label={format(t.openVideo, { title })}>
       {inner}
     </button>
   )

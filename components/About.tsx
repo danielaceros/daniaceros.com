@@ -1,19 +1,18 @@
 import Image from "next/image"
 import SectionTitle from "./SectionTitle"
 import type { CSSProperties } from "react"
-
-const paragraphs = [
-  "Soy Daniel Acero, filmmaker con más de seis años de experiencia ayudando a empresas y marcas a transformar sus eventos en historias visuales que perduran.",
-  "He tenido la oportunidad de cubrir congresos, lanzamientos, conferencias y experiencias de marca en toda España, siempre con un objetivo claro: capturar la esencia de cada momento.",
-  "Mi misión es que cada historia siga viva mucho después de que el evento acabe.",
-]
+import { getDictionary, type Lang } from "@/lib/i18n"
 
 type Props = {
+  lang?: Lang
   sectionClassName?: string
   mobileCompactSplit?: boolean
 }
 
-export default function About({ sectionClassName, mobileCompactSplit = false }: Props) {
+export default function About({ lang = "es", sectionClassName, mobileCompactSplit = false }: Props) {
+  const t = getDictionary(lang).about
+  const paragraphs = t.paragraphs
+
   const sectionLayoutClassName = mobileCompactSplit
     ? "grid grid-cols-[1fr_auto] items-start gap-5 sm:grid-cols-1 sm:gap-14 lg:grid-cols-2 lg:gap-20"
     : "grid grid-cols-1 gap-12 sm:gap-14 lg:grid-cols-2 lg:gap-20"
@@ -28,7 +27,7 @@ export default function About({ sectionClassName, mobileCompactSplit = false }: 
         style={{ "--lux-delay": "90ms" } as CSSProperties}
         className={`cinematic-reveal-delay-1 ${mobileCompactSplit ? "pr-0 sm:pr-0 lg:pr-4" : "lg:pr-4"}`}
       >
-        <SectionTitle>Sobre mí</SectionTitle>
+        <SectionTitle>{t.title}</SectionTitle>
         <div className={mobileCompactSplit ? "space-y-4 sm:space-y-6" : "space-y-6"}>
           {mobileCompactSplit ? (
             <>
@@ -75,7 +74,7 @@ export default function About({ sectionClassName, mobileCompactSplit = false }: 
         <div className="hover-lift lux-shine relative">
           <Image
             src="https://kgtz1gujr7extokb.public.blob.vercel-storage.com/sobre-mi/daniel-acero-ceo-awards-bqVq9Ciw7DVt6yXSt5RamnQXn0WOJj.jpeg"
-            alt="Daniel Acero"
+            alt={t.imageAlt}
             width={560}
             height={760}
             sizes="(max-width: 640px) 280px, (max-width: 1024px) 420px, 560px"
