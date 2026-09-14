@@ -1,7 +1,12 @@
-// 404 dentro del layout [lang] (Header, <html lang>, metadata del idioma).
-// Antes del i18n el layout raíz era app/layout.tsx y Next pintaba su 404 por
-// defecto dentro de él; al mover el layout a app/[lang] hace falta este
-// boundary (junto con app/[lang]/[...notFound]/page.tsx) para conservarlo.
-// Reutilizamos exactamente la UI por defecto de Next ("404 | This page could
-// not be found.") para que el resultado sea idéntico al de antes.
-export { default } from "next/dist/client/components/builtin/not-found"
+"use client"
+
+// 404 dentro del layout [lang] (Header, <html lang>, metadata del idioma). not-found no recibe params:
+// el idioma sale del segmento [lang] con useParams. Next añade noindex y responde 404.
+import { useParams } from "next/navigation"
+import NotFoundView from "@/components/NotFoundView"
+import { toLang } from "@/lib/i18n"
+
+export default function NotFound() {
+  const params = useParams<{ lang?: string }>()
+  return <NotFoundView langs={[toLang(params?.lang)]} />
+}
