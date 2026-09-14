@@ -36,6 +36,9 @@ type Props = {
   lang?: Lang
 }
 
+/** Móvil (< 640px) o táctil hasta tablet vertical: un solo vídeo en marcha (la tarjeta centrada). */
+const SINGLE_PLAYER_QUERY = "(max-width: 639px), (pointer: coarse) and (max-width: 1023px)"
+
 const SIZE_CLASSES: Record<CardSize, string> = {
   sm: "aspect-[3/4] h-[140px] w-[105px] sm:h-[180px] sm:w-[135px] lg:h-[220px] lg:w-[165px]",
   lg: "aspect-[3/4] h-[220px] w-[165px] sm:h-[300px] sm:w-[225px] lg:h-[380px] lg:w-[285px]",
@@ -80,6 +83,11 @@ export default function PortfolioMarquee({
   const xRef = useRef(0)
   const runningRef = useRef(false)
   const [activeVideo, setActiveVideo] = useState<{ title: string; video: string } | null>(null)
+  // Móvil y tablet vertical: 4–5 tarjetas entran a la vez en pantalla y reproducirlas todas descargaba
+  // ~65 MB en 10 s y bajaba a 41–45 fps. Ahí solo se mueve la tarjeta más centrada y visible (≥ 75 %);
+  // el resto enseña su póster. En desktop (puntero fino o ≥ 1024px) se reproducen todas las visibles.
+  const [singlePlayer, setSinglePlayer] = useState(false)
+  const [centeredIndex, setCenteredIndex] = useState(-1)
 
   // Arrastre con ratón en desktop: el scroll nativo (swipe/trackpad) ya
   // funciona solo con overflow-x-auto, esto añade la afordancia de "coger y
@@ -190,6 +198,57 @@ export default function PortfolioMarquee({
   }, [speed, scrollable])
 
   useEffect(() => {
+    const mq = window.matchMedia(SINGLE_PLAYER_QUERY)
+    const update = () => setSinglePlayer(mq.matches)
+    update()
+    mq.addEventListener("change", update)
+    return () => mq.removeEventListener("change", update)
+  }, [])
+
+  useEffect(() => {
+    const track = trackRef.current
+    if (!singlePlayer || !track) return
+    let frame = 0
+    const measure = () => {
+      frame = 0
+      const vw = window.innerWidth
+      const vh = window.innerHeight
+      let best = -1
+      let bestDistance = Infinity
+      track.querySelectorAll<HTMLElement>("[data-marquee-card]").forEach((card, index) => {
+        const r = card.getBoundingClientRect()
+        if (!r.width || r.bottom <= 0 || r.top >= vh) return
+        const visible = (Math.min(r.right, vw) - Math.max(r.left, 0)) / r.width
+        if (visible < 0.75) return
+        const distance = Math.abs(r.left + r.width / 2 - vw / 2)
+        if (distance < bestDistance) {
+          bestDistance = distance
+          best = index
+        }
+      })
+      setCenteredIndex(best)
+    }
+    const schedule = () => {
+      if (!frame) frame = requestAnimationFrame(measure)
+    }
+    measure()
+    track.addEventListener("scroll", schedule, { passive: true })
+    window.addEventListener("scroll", schedule, { passive: true })
+    window.addEventListener("resize", schedule)
+    // La tira animada se mueve sin eventos de scroll: se re-mide cada 700 ms.
+    const interval = scrollable ? 0 : window.setInterval(schedule, 700)
+    return () => {
+      if (frame) cancelAnimationFrame(frame)
+      if (interval) window.clearInterval(interval)
+      track.removeEventListener("scroll", schedule)
+      window.removeEventListener("scroll", schedule)
+      window.removeEventListener("resize", schedule)
+    }
+  }, [singlePlayer, scrollable])
+
+  const canPlay = (index: number) => !singlePlayer || index === centeredIndex
+
+  useEffect(() => {
     if (mode !== "modal" || !activeVideo) return
 
     const previousBodyOverflow = document.body.style.overflow
@@ -229,9 +288,10 @@ export default function PortfolioMarquee({
             style={{ msOverflowStyle: "none" }}
           >
             <div className={`flex w-max ${GAP_CLASSES[size]}`}>
-              {items.map((item) => (
+              {items.map((item, i) => (
                 <div key={item.slug} className="snap-start">
                   <MarqueeCard
+                    autoplay={canPlay(i)}
                     title={item.title}
                     video={item.video}
                     poster={item.poster}
@@ -253,6 +313,7 @@ export default function PortfolioMarquee({
             {[...items, ...items].map((item, i) => (
               <MarqueeCard
                 key={`${item.slug}-${i}`}
+                autoplay={canPlay(i)}
                 title={item.title}
                 video={item.video}
                 poster={item.poster}
@@ -316,6 +377,7 @@ export default function PortfolioMarquee({
 }
 
 function MarqueeCard({
+  autoplay = true,
   title,
   video,
   poster,
@@ -324,6 +386,7 @@ function MarqueeCard({
   onOpen,
   lang,
 }: {
+  autoplay?: boolean
   title: string
   video: string
   poster?: string
@@ -340,6 +403,7 @@ function MarqueeCard({
       {/* Solo descarga/reproduce mientras se ve; los clones del marquee animado también tienen el suyo. */}
       <AutoplayVideo
         src={video}
+        autoplay={autoplay}
         poster={optimizedPoster(poster, 640)}
         className="pointer-events-none absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.04]"
       />
@@ -354,14 +418,14 @@ function MarqueeCard({
 
   if (href) {
     return (
-      <Link href={href} aria-label={format(t.viewProject, { title })} className={cardClassName} draggable={false}>
+      <Link href={href} aria-label={format(t.viewProject, { title })} className={cardClassName} draggable={false} data-marquee-card>
         {inner}
       </Link>
     )
   }
 
   return (
-    <button type="button" onClick={onOpen} className={cardClassName} aria-label={format(t.openVideo, { title })}>
+    <button type="button" onClick={onOpen} className={cardClassName} aria-label={format(t.openVideo, { title })} data-marquee-card>
       {inner}
     </button>
   )
