@@ -82,22 +82,26 @@ export default async function BlogPostPage({ params }: Props) {
             {post.title}
           </h1>
           <p className="mt-6 text-[15px] leading-[1.8] text-white/70 max-w-2xl">{post.description}</p>
-          <div className="mt-6 flex flex-wrap items-center gap-x-3 text-[11px] uppercase tracking-[0.16em] text-white/45 font-inter">
-            {/* Firma: autor visible enlazado a /sobre-mi (E-E-A-T) y fecha legible con <time> máquina. */}
-            <Link
-              href={localizedHref(lang, "/sobre-mi")}
-              rel="author"
-              prefetch={false}
-              className="inline-flex min-h-[44px] items-center transition-colors hover:text-white/85"
-            >
-              {t.byline}
-            </Link>
-            <span className="h-1 w-1 self-center rounded-full bg-white/20" />
+          {/* Líneas explícitas para que un punto nunca quede colgando al partir: firma · fecha · lectura y, debajo,
+              la keyword (en móvil la firma va sola en la primera línea). */}
+          <div className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-2 text-[11px] uppercase tracking-[0.16em] text-white/45 font-inter">
+            {/* Firma: autor visible enlazado a /sobre-mi (E-E-A-T) y fecha legible con <time> máquina.
+                Zona táctil de 44px con margen negativo: no agranda la fila. */}
+            <span className="flex basis-full sm:basis-auto">
+              <Link
+                href={localizedHref(lang, "/sobre-mi")}
+                rel="author"
+                prefetch={false}
+                className="-my-3.5 inline-flex min-h-[44px] items-center transition-colors hover:text-white/85"
+              >
+                {t.byline}
+              </Link>
+            </span>
+            <span className="hidden h-1 w-1 self-center rounded-full bg-white/20 sm:block" />
             <time dateTime={post.publishedAt}>{publishedLabel}</time>
             <span className="h-1 w-1 self-center rounded-full bg-white/20" />
             <span>{post.readingTime}</span>
-            <span className="h-1 w-1 self-center rounded-full bg-white/20" />
-            <span>{post.keyword}</span>
+            <span className="basis-full">{post.keyword}</span>
           </div>
         </div>
 
