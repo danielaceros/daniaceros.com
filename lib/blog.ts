@@ -11894,6 +11894,245 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-sector-publico",
+    title: "Vídeo corporativo para el sector público: qué cambia frente a la empresa privada",
+    description:
+      "Qué cambia cuando el cliente de un vídeo corporativo es una administración pública: cadena de aprobación, tono institucional, plazos y accesibilidad, frente a un proyecto con una empresa privada.",
+    publishedAt: "2026-09-11",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "sector público",
+      "administración pública",
+      "comunicación institucional",
+      "vídeo institucional",
+      "contratación pública",
+    ],
+    keyword: "vídeo corporativo para el sector público",
+    intent: "informacional",
+    excerpt:
+      "Grabar para una administración pública no es lo mismo que grabar para una empresa privada: cambian los tiempos de aprobación, el tono y a quién tienes que rendir cuentas. Cuento qué es distinto y cómo lo organizo.",
+    seoTitle: "Vídeo corporativo sector público | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo para el sector público: qué cambia frente a la empresa privada, cómo se aprueba el guion y qué plazos y accesibilidad hay que prever.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "La primera vez que grabé para un ayuntamiento me di cuenta de que el proceso no se parecía nada al de una empresa privada. No hubo un único interlocutor decidiendo sobre la marcha: hubo un técnico de comunicación, un jefe de prensa y, al final, una firma política que revisó cada frase del guion antes de aprobar el rodaje. Desde entonces trato estos proyectos con un calendario distinto al que uso con una pyme o una marca privada.",
+      },
+      {
+        type: "paragraph",
+        text: "Trabajar con administraciones públicas —ayuntamientos, consejerías, organismos autónomos, universidades públicas— tiene una lógica distinta a la de una empresa. No es peor ni más lento por sistema, pero si tratas el proyecto como un vídeo corporativo estándar, te vas a topar con plazos que no esperabas y aprobaciones que no dependen de una sola persona. También pesa el calendario del ejercicio: si el proyecto se paga con presupuesto del año en curso, hay una fecha límite de cierre que no puedes saltarte.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-publico/hero.webp",
+        alt: "Fachada de un edificio institucional de piedra blanca durante el día",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Cuando hablo de vídeo corporativo para el sector público me refiero a piezas institucionales: presentación de un plan estratégico, memoria de un organismo, campaña de un servicio público, vídeo de bienvenida a nuevos funcionarios o cobertura de un congreso financiado con fondos públicos. El objetivo casi nunca es vender directamente; es informar, dar cuenta de una gestión o explicar un servicio a la ciudadanía.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa entender esto desde el principio porque cambia el criterio editorial. En una empresa privada el vídeo puede ser más comercial, con un tono de marca marcado. En una administración el tono tiene que ser neutro, evitar cualquier lectura partidista y ser accesible para cualquier ciudadano, no solo para el público habitual de la marca.",
+      },
+      {
+        type: "paragraph",
+        text: "También cambia la cadena de aprobación. En una pyme puedo cerrar un guion con el gerente en una llamada. En una administración el guion pasa normalmente por comunicación, por el área técnica que aporta los datos y, en muchos casos, por gabinete o alcaldía. Contar con eso desde el presupuesto evita sorpresas de plazo, y conviene preguntar desde la primera reunión si el proyecto necesita pasar por un procedimiento de contratación pública.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Ajustar el tono institucional" },
+      {
+        type: "paragraph",
+        text: "Evito superlativos y cualquier frase que suene a eslogan de campaña. Un vídeo institucional bien hecho describe hechos y cifras verificables: presupuesto ejecutado, número de personas atendidas, plazos de un proyecto. Si el cliente pide un tono más cercano a publicidad, lo señalo, porque puede generar un problema de imagen si se percibe como propaganda, y eso suele acabar frenando la publicación en el último momento.",
+      },
+      { type: "heading", level: 3, text: "Planificar los tiempos de aprobación" },
+      {
+        type: "paragraph",
+        text: "Añado siempre dos o tres semanas más de margen sobre el calendario que pediría para un cliente privado, específicamente para las rondas de revisión del guion y del primer montaje. Cada nivel de la cadena —técnico, comunicación, dirección política— suele pedir cambios distintos, y hay que dejar hueco para reconciliarlos sin comprimir el rodaje. Evito además programar la entrega final en semanas de cierre de ejercicio o de campaña electoral, porque en esos periodos las aprobaciones se ralentizan todavía más.",
+      },
+      { type: "heading", level: 3, text: "Cuidar la accesibilidad y la transparencia" },
+      {
+        type: "paragraph",
+        text: "Subtítulos en el vídeo final, lenguaje claro sin tecnicismos de la administración y, cuando el organismo lo exige, transcripción completa publicada junto al vídeo. Muchas administraciones tienen obligaciones de accesibilidad que una empresa privada no tiene, y no cumplirlas puede bloquear la publicación en el canal oficial. En comunidades con lengua cooficial, además, suelo preguntar desde el guion si hace falta doblaje o subtitulado en las dos lenguas.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-publico/intermedia.webp",
+        alt: "Público asistiendo a una presentación institucional en una sala de conferencias",
+        width: 1920,
+        height: 1280,
+        caption: "El tono, la aprobación y la accesibilidad cambian más que la propia producción.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Tratar el guion como definitivo tras la primera aprobación técnica, sin contar con la ronda política.",
+          "Usar un tono publicitario que se puede leer como propaganda institucional.",
+          "No dejar margen de tiempo para los procesos de contratación pública si el proyecto requiere concurso.",
+          "Grabar testimonios de cargos electos sin verificar que la comunicación oficial lo autoriza para ese formato.",
+          "Olvidar los requisitos de accesibilidad, como subtítulos o lenguaje claro, antes de la publicación en el canal oficial.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Un vídeo para una administración pública necesita pasar por contratación pública?",
+        answer:
+          "Depende del importe y del organismo. Muchos ayuntamientos y organismos autónomos exigen procedimiento de contratación —menor, abierto o negociado— a partir de ciertos umbrales económicos. Conviene preguntarlo en la primera reunión, porque cambia por completo el plazo de arranque del proyecto.",
+      },
+      {
+        type: "faq",
+        question: "¿Cambia el precio de un vídeo corporativo si el cliente es una administración pública?",
+        answer:
+          "El precio de producción no cambia por ser administración pública, pero sí puede aumentar el tiempo de gestión por las rondas de aprobación adicionales, y eso conviene reflejarlo en el presupuesto si se factura por jornada de trabajo en vez de por proyecto cerrado.",
+      },
+      {
+        type: "faq",
+        question: "¿Quién aprueba el guion final en un vídeo institucional?",
+        answer:
+          "Normalmente el área de comunicación coordina la aprobación, pero el visto bueno final suele pasar por dirección o gabinete político antes del rodaje. Es habitual que haya más de dos rondas de revisión, así que conviene fijar de antemano cuántas rondas están incluidas en el presupuesto.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta un tono distinto al de un vídeo corporativo privado?",
+        answer:
+          "Sí. El tono institucional debe ser neutro, verificable y accesible para cualquier ciudadano, evitando cualquier elemento que se pueda leer como propaganda partidista, especialmente si el vídeo se publica cerca de un proceso electoral.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes que grabar un vídeo institucional para tu organismo o departamento y quieres evitar los plazos que se disparan a última hora, escríbeme desde /contacto y planificamos el proceso completo, desde el guion hasta la entrega accesible.",
+      },
+    ],
+  },
+  {
+    slug: "aprovechar-rodaje-corporativo-redes-sociales",
+    title: "Cómo aprovechar un rodaje corporativo para generar contenido de redes sociales",
+    description:
+      "Cómo planificar un rodaje corporativo para que, además del vídeo principal, deje material listo para varias semanas de contenido en redes sociales sin montar una sesión aparte.",
+    publishedAt: "2026-09-14",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "redes sociales",
+      "contenido audiovisual",
+      "rodaje corporativo",
+      "marketing de contenidos",
+    ],
+    keyword: "cómo aprovechar un rodaje corporativo para redes sociales",
+    intent: "informacional",
+    excerpt:
+      "Cada rodaje corporativo deja mucho más material del que acaba en el vídeo final. Cuento qué planos pido de más y cómo los organizo para sacar semanas de contenido para redes sin programar un rodaje aparte.",
+    seoTitle: "Rodaje corporativo para redes sociales | Daniel Acero",
+    metaDescription:
+      "Cómo aprovechar un rodaje corporativo para redes sociales: qué planos extra pedir, cómo organizarlos en la ingesta y evitar que el rodaje se alargue.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "En casi todos los rodajes corporativos que hago, el vídeo final usa una fracción de lo que grabamos. El resto se queda sin usar en el disco duro, cuando con algo de planificación previa da para varias semanas de contenido en redes.",
+      },
+      {
+        type: "paragraph",
+        text: "No hace falta montar una sesión aparte para redes sociales. Con pedir unos planos concretos durante la misma jornada, y organizarlos después con un criterio claro desde la ingesta, cualquier rodaje corporativo puede dejar piezas sueltas para LinkedIn, Instagram o el canal que uses.",
+      },
+      {
+        type: "image",
+        src: "/blog/aprovechar-rodaje-corporativo-redes-sociales/hero.webp",
+        alt: "Monitor de cámara durante la grabación de una entrevista corporativa",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Aprovechar un rodaje corporativo para redes sociales consiste en capturar, durante la misma sesión, material adicional pensado para piezas cortas y verticales, distinto del que compone el vídeo principal. No es reciclar los descartes: es planificar de antemano qué planos sirven para ese segundo uso.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque el coste marginal de grabar cinco o diez minutos más es bajísimo comparado con organizar un rodaje nuevo solo para redes. El equipo ya está montado, la luz ya está lista y las personas que salen en cámara ya han perdido la vergüenza inicial.",
+      },
+      {
+        type: "paragraph",
+        text: "También importa para el cliente: en vez de pagar por dos producciones separadas, obtiene el vídeo principal y un banco de piezas para varias semanas de publicación con una sola jornada de trabajo.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Pedir los planos extra antes del rodaje, no durante" },
+      {
+        type: "paragraph",
+        text: "Reviso el guion del vídeo principal y anoto qué momentos se pueden repetir en formato vertical: una frase suelta del CEO, un detalle del proceso, una reacción del equipo. Lo hago antes de llegar a la localización, porque improvisarlo en directo le roba tiempo al rodaje principal y acaba sacrificando calidad en los dos formatos.",
+      },
+      { type: "heading", level: 3, text: "Grabar vertical y horizontal en la misma toma cuando se pueda" },
+      {
+        type: "paragraph",
+        text: "Si el encuadre lo permite, dejo una segunda cámara en vertical apuntando al mismo sujeto mientras la principal graba en 16:9. No siempre funciona —depende del espacio y de la composición—, pero cuando funciona duplica el material sin duplicar el tiempo de rodaje.",
+      },
+      { type: "heading", level: 3, text: "Separar el material en el momento de la ingesta" },
+      {
+        type: "paragraph",
+        text: "Al volcar las tarjetas, etiqueto directamente los clips pensados para redes en una carpeta aparte. Si dejo esa clasificación para la fase de montaje, dos semanas después ya no me acuerdo de qué plano iba para dónde y acabo perdiendo la mitad del material aprovechable.",
+      },
+      {
+        type: "image",
+        src: "/blog/aprovechar-rodaje-corporativo-redes-sociales/intermedia.webp",
+        alt: "Persona revisando contenido de redes sociales en el móvil junto al portátil",
+        width: 1920,
+        height: 1280,
+        caption: "Etiquetar los clips en la ingesta ahorra horas de búsqueda en el montaje.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Grabar todo pensando solo en el vídeo final y descubrir en montaje que no hay ningún plano suelto de menos de 15 segundos.",
+          "Pedir el contenido para redes al terminar el rodaje, cuando el equipo ya está recogiendo y nadie tiene ganas de repetir una toma.",
+          "No avisar a las personas que salen en cámara de que también habrá piezas cortas, lo que genera reticencia cuando se lo comunicas después.",
+          "Mezclar los clips de redes con los del vídeo principal sin etiquetar, alargando la edición varias horas innecesarias.",
+          "Publicar el mismo corte en todas las plataformas sin adaptar proporción ni duración a cada una.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo extra hay que añadir al rodaje para sacar contenido de redes?",
+        answer:
+          "Entre 20 y 40 minutos suele ser suficiente si los planos extra están decididos de antemano. El tiempo se dispara si se improvisa sobre la marcha, así que conviene fijarlo en el guion antes de llegar a la localización.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito un operador de cámara adicional para grabar en vertical a la vez?",
+        answer:
+          "No siempre. Con un trípode y una segunda cámara fija apuntando al mismo sujeto basta en la mayoría de entrevistas; solo hace falta un operador extra en planos de acción o cuando hay movimiento de personas.",
+      },
+      {
+        type: "faq",
+        question: "¿Este material extra sustituye a un rodaje específico para redes sociales?",
+        answer:
+          "No del todo. Sirve para tener un banco de piezas cortas con buena calidad, pero si una marca necesita un formato muy concreto —por ejemplo, un reel con guion propio y localizaciones distintas— conviene planificar una sesión aparte.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué formato de entrega pido para estos clips?",
+        answer:
+          "Pido siempre vertical 9:16 en la resolución nativa de la cámara, sin comprimir, y los subtítulos incrustados aparte, para poder editarlos si cambia el copy de la publicación.",
+      },
+      {
+        type: "paragraph",
+        text: "Si vas a grabar un vídeo corporativo y quieres que esa misma jornada te deje también contenido para redes sociales, dímelo desde /contacto antes del rodaje y lo planificamos juntos.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
