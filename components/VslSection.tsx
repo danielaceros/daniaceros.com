@@ -514,11 +514,13 @@ export default function VslSection({
   const currentQualityText =
     selectedLevel === -1 ? autoLabel : qualityLabel(levels.find((l) => l.index === selectedLevel)?.height ?? 0)
 
+  // Táctil: 44px en móvil (antes 36px); desde sm vuelve a 40px.
   const iconButton =
-    "flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-white/85 transition-colors duration-300 hover:bg-white/10 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 sm:h-10 sm:w-10"
+    "flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-white/85 transition-colors duration-300 hover:bg-white/10 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 sm:h-10 sm:w-10"
+  // Pantalla final en móvil: pills de 44px en una sola fila (sin iconos por debajo de sm para que quepan).
   const endPill =
-    "inline-flex h-9 items-center gap-2 rounded-full px-4 font-inter text-[12px] font-semibold transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-[1px] focus:outline-none focus-visible:ring-2 focus-visible:ring-white sm:h-11 sm:px-5 sm:text-[14px]"
-  const endIcon = "h-3.5 w-3.5 fill-none stroke-current sm:h-4 sm:w-4"
+    "inline-flex h-11 items-center gap-2 rounded-full px-3.5 font-inter text-[12px] font-semibold transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-[1px] focus:outline-none focus-visible:ring-2 focus-visible:ring-white sm:px-5 sm:text-[14px]"
+  const endIcon = "hidden h-3.5 w-3.5 fill-none stroke-current sm:block sm:h-4 sm:w-4"
 
   return (
     <section
@@ -588,7 +590,8 @@ export default function VslSection({
             <button
               type="button"
               onClick={unmute}
-              className="absolute right-2.5 top-2.5 flex items-center gap-1.5 whitespace-nowrap rounded-full border border-white/25 bg-black/45 px-2.5 py-1.5 font-inter text-[9px] font-semibold uppercase tracking-[0.12em] text-white shadow-[0_18px_48px_-18px_rgba(0,0,0,0.9)] backdrop-blur-md transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:scale-[1.04] hover:border-white/50 hover:bg-black/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-white sm:right-4 sm:top-4 sm:gap-2.5 sm:px-4 sm:py-2.5 sm:text-[11px] sm:tracking-[0.16em]"
+              // before: amplía la zona táctil a 44px sin agrandar la pill (no tapa más vídeo).
+              className="absolute right-2.5 top-2.5 flex items-center gap-1.5 whitespace-nowrap rounded-full border border-white/25 bg-black/45 px-3 py-2 font-inter text-[11px] font-semibold uppercase tracking-[0.06em] text-white before:absolute before:-inset-1.5 before:content-[''] shadow-[0_18px_48px_-18px_rgba(0,0,0,0.9)] backdrop-blur-md transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:scale-[1.04] hover:border-white/50 hover:bg-black/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-white sm:right-4 sm:top-4 sm:gap-2.5 sm:px-4 sm:py-2.5 sm:text-[11px] sm:tracking-[0.16em]"
             >
               <span className="relative flex h-2 w-2 sm:h-2.5 sm:w-2.5">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white/60" />
@@ -604,9 +607,9 @@ export default function VslSection({
 
           {/* Pantalla final: las opciones de contacto que enseña el vídeo, pulsables */}
           {ended ? (
-            <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-black/60 px-4 text-center backdrop-blur-[3px] sm:gap-5">
+            <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-black/60 px-3 text-center backdrop-blur-[3px] sm:gap-5 sm:px-4">
               <p className="font-inter text-[13px] italic text-white/85 sm:text-[17px]">{t.endTitle}</p>
-              <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+              <div className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-3">
                 <a
                   href={formHref}
                   onClick={(event) => onEndCta("form", event)}
@@ -645,7 +648,7 @@ export default function VslSection({
               <button
                 type="button"
                 onClick={replay}
-                className="inline-flex items-center gap-2 rounded-full px-3 py-1.5 font-inter text-[10px] uppercase tracking-[0.18em] text-white/60 transition-colors duration-300 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 sm:text-[11px]"
+                className="inline-flex min-h-[44px] items-center gap-2 rounded-full px-3 font-inter text-[11px] uppercase tracking-[0.16em] text-white/60 transition-colors duration-300 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 sm:tracking-[0.18em]"
               >
                 <svg aria-hidden viewBox="0 0 24 24" className="h-3.5 w-3.5 fill-none stroke-current" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
                   <path d="M3 12a9 9 0 1 0 3-6.7" />
