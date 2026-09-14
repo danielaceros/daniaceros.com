@@ -20,15 +20,18 @@ const CSP = [
   "base-uri 'self'",
   "object-src 'none'",
   "frame-ancestors 'self'",
-  "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://connect.facebook.net https://www.clarity.ms https://api.fitnesslaunch.es",
+  // Google tag (GA4 + Google Ads), Meta Pixel, Microsoft Clarity (carga el script real desde scripts.clarity.ms) y GHL.
+  "script-src 'self' 'unsafe-inline' https://*.googletagmanager.com https://www.googleadservices.com https://*.doubleclick.net https://www.google.com https://connect.facebook.net https://www.clarity.ms https://*.clarity.ms https://api.fitnesslaunch.es",
   "style-src 'self' 'unsafe-inline'",
-  "img-src 'self' data: https://firebasestorage.googleapis.com https://kgtz1gujr7extokb.public.blob.vercel-storage.com https://icons.duckduckgo.com https://t3.gstatic.com https://storage.googleapis.com https://www.facebook.com https://www.google.com https://lavueltaalmundosinunduro.com",
+  "img-src 'self' data: blob: https://firebasestorage.googleapis.com https://kgtz1gujr7extokb.public.blob.vercel-storage.com https://icons.duckduckgo.com https://t3.gstatic.com https://storage.googleapis.com https://www.facebook.com https://*.google-analytics.com https://*.googletagmanager.com https://www.googleadservices.com https://*.doubleclick.net https://www.google.com https://www.google.es https://*.clarity.ms https://c.bing.com https://lavueltaalmundosinunduro.com",
   "media-src 'self' blob: https://kgtz1gujr7extokb.public.blob.vercel-storage.com https://firebasestorage.googleapis.com https://lavueltaalmundosinunduro.com",
   // hls.js (VSL adaptativo): MediaSource usa URLs blob: y su worker se crea desde un blob:
   "worker-src 'self' blob:",
   "font-src 'self' data:",
-  "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com https://connect.facebook.net https://www.facebook.com https://www.clarity.ms https://api.fitnesslaunch.es https://firebasestorage.googleapis.com https://kgtz1gujr7extokb.public.blob.vercel-storage.com",
-  "frame-src 'self' https://api.fitnesslaunch.es https://www.googletagmanager.com",
+  // GA4 envía a region1.google-analytics.com (y otros *.google-analytics.com / *.analytics.google.com);
+  // Google Ads a www.google.com/ccm y *.doubleclick.net (ad./googleads./stats.); Clarity a *.clarity.ms.
+  "connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://www.google.com https://www.google.es https://*.doubleclick.net https://www.googleadservices.com https://connect.facebook.net https://www.facebook.com https://*.clarity.ms https://api.fitnesslaunch.es https://firebasestorage.googleapis.com https://kgtz1gujr7extokb.public.blob.vercel-storage.com",
+  "frame-src 'self' https://api.fitnesslaunch.es https://www.googletagmanager.com https://*.doubleclick.net https://www.facebook.com",
   "form-action 'self' https://api.fitnesslaunch.es",
 ].join("; ");
 
