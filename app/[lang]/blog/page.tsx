@@ -1,17 +1,21 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { getAllPosts, getBlogMetadata } from "@/lib/blog"
-import { buildBreadcrumbSchema } from "@/lib/seo"
+import { buildBreadcrumbSchema, type LangParams } from "@/lib/seo"
+import { getDictionary, localizedHref, toLang } from "@/lib/i18n"
 
-export const metadata: Metadata = getBlogMetadata()
+// Índice del blog: PENDIENTE de traducir (en /en/blog sale el ES con noindex).
+export async function generateMetadata({ params }: LangParams): Promise<Metadata> {
+  return getBlogMetadata(toLang((await params).lang))
+}
 
-const breadcrumbSchema = buildBreadcrumbSchema([
-  { name: "Inicio", path: "/" },
-  { name: "Blog", path: "/blog" },
-])
-
-export default function BlogPage() {
+export default async function BlogPage({ params }: LangParams) {
+  const lang = toLang((await params).lang)
   const posts = getAllPosts()
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: getDictionary(lang).breadcrumbs.home, path: localizedHref(lang, "/") },
+    { name: "Blog", path: localizedHref(lang, "/blog") },
+  ])
 
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-white">
@@ -45,7 +49,7 @@ export default function BlogPage() {
                 <span>{post.readingTime}</span>
               </div>
               <h2 className="mt-5 text-[26px] leading-[1.08] sm:text-[32px] font-inter uppercase text-white max-w-[16ch]">
-                <Link href={`/blog/${post.slug}`} className="focus:outline-none focus-visible:ring-2 focus-visible:ring-white rounded-sm">
+                <Link href={localizedHref(lang, `/blog/${post.slug}`)} className="focus:outline-none focus-visible:ring-2 focus-visible:ring-white rounded-sm">
                   {post.title}
                 </Link>
               </h2>
@@ -61,7 +65,7 @@ export default function BlogPage() {
               </div>
               <div className="mt-8">
                 <Link
-                  href={`/blog/${post.slug}`}
+                  href={localizedHref(lang, `/blog/${post.slug}`)}
                   className="inline-flex min-h-[44px] items-center rounded-full border border-white/14 px-4 py-2 text-[11px] uppercase tracking-[0.16em] text-white/88 hover:border-white/28 hover:bg-white/[0.05] transition-all duration-300"
                 >
                   Leer artículo

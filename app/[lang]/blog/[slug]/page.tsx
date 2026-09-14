@@ -1,29 +1,50 @@
 import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 import Image from "next/image"
-import { getAllPosts, getPostArticleSchema, getPostBreadcrumbSchema, getPostBySlug, getPostMetadata } from "@/lib/blog"
+import {
+  getAllPosts,
+  getLocalizedPost,
+  getPostArticleSchema,
+  getPostBreadcrumbSchema,
+  getPostMetadata,
+  hasPostTranslation,
+} from "@/lib/blog"
 import ContactCTA from "@/components/ContactCTA"
+import { toLang } from "@/lib/i18n"
+
+type Props = { params: Promise<{ lang: string; slug: string }> }
+
+// El layout [lang] fija dynamicParams=false (solo es/en). Aquí se reactiva para
+// que un slug inexistente muestre blog/not-found.tsx dentro del layout, como antes.
+export const dynamicParams = true
 
 export async function generateStaticParams() {
   return getAllPosts().map((post) => ({ slug: post.slug }))
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
-  const { slug } = await params
-  const post = getPostBySlug(slug)
-  if (!post) return {}
-  return getPostMetadata(post)
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug, lang: rawLang } = await params
+  const lang = toLang(rawLang)
+  const localized = getLocalizedPost(slug, lang)
+  if (!localized) return {}
+  return getPostMetadata(localized.post, lang, hasPostTranslation(slug, "en"))
 }
 
-export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params
-  const post = getPostBySlug(slug)
+// Artículos: el contenido sale de getLocalizedPost (ES original o traducción
+// de lib/blog-translations.ts). Sin traducción, /en/blog/<slug> muestra el ES
+// con noindex. Los textos fijos de esta plantilla siguen en español hasta la
+// fase de traducción del blog.
+export default async function BlogPostPage({ params }: Props) {
+  const { slug, lang: rawLang } = await params
+  const lang = toLang(rawLang)
+  const localized = getLocalizedPost(slug, lang)
 
-  if (!post) notFound()
+  if (!localized) notFound()
 
+  const { post, translated } = localized
   const faqs = post.body.filter((block) => block.type === "faq")
-  const articleSchema = getPostArticleSchema(post)
-  const breadcrumbSchema = getPostBreadcrumbSchema(post)
+  const articleSchema = getPostArticleSchema(post, lang, translated)
+  const breadcrumbSchema = getPostBreadcrumbSchema(post, lang)
 
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-white">
@@ -174,7 +195,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
       </article>
 
-      <ContactCTA hideFooter />
+      <ContactCTA hideFooter lang={lang} />
 
       {faqs.length > 0 ? (
         <script

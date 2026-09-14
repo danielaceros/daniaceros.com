@@ -1,5 +1,7 @@
 import type { Metadata } from "next"
 import { PERSON_ID, buildBreadcrumbSchema, buildMetadata, DEFAULT_OG_IMAGE, SITE_URL } from "@/lib/seo"
+import { DEFAULT_LOCALE, OG_LOCALE, SCHEMA_LANGUAGE, getDictionary, localizedHref, type Lang } from "@/lib/i18n"
+import { blogTranslations } from "@/lib/blog-translations"
 
 export type BlogPost = {
   slug: string
@@ -11904,8 +11906,30 @@ export function getPostBySlug(slug: string) {
   return blogPosts.find((post) => post.slug === slug)
 }
 
-export function getBlogMetadata(): Metadata {
+/** ¿Tiene el artículo versión en `lang`? (ES siempre; resto según lib/blog-translations.ts) */
+export function hasPostTranslation(slug: string, lang: Lang): boolean {
+  if (lang === DEFAULT_LOCALE) return true
+  return Boolean(blogTranslations[lang]?.[slug])
+}
+
+/**
+ * Artículo en el idioma pedido. Si no hay traducción devuelve el original ES
+ * con `translated: false` (la página EN se sirve en español con noindex).
+ */
+export function getLocalizedPost(
+  slug: string,
+  lang: Lang
+): { post: BlogPost; translated: boolean } | undefined {
+  const post = getPostBySlug(slug)
+  if (!post) return undefined
+  if (lang === DEFAULT_LOCALE) return { post, translated: true }
+  const translation = blogTranslations[lang]?.[slug]
+  return translation ? { post: { ...post, ...translation }, translated: true } : { post, translated: false }
+}
+
+export function getBlogMetadata(lang: Lang = DEFAULT_LOCALE): Metadata {
   return buildMetadata({
+    lang,
     title: "Blog de vídeo corporativo, eventos y producción audiovisual en Madrid",
     description:
       "Artículos sobre vídeo corporativo, grabación de eventos, aftermovies y estrategia audiovisual para empresas y marcas en Madrid.",
@@ -11919,7 +11943,15 @@ export function getBlogMetadata(): Metadata {
   })
 }
 
-export function getPostMetadata(post: BlogPost): Metadata {
+/**
+ * `lang` = idioma de la página; `translated` = ¿existe versión EN del artículo?
+ * (hasPostTranslation(slug, "en")). Si lang="en" y no hay traducción → noindex.
+ */
+export function getPostMetadata(
+  post: BlogPost,
+  lang: Lang = DEFAULT_LOCALE,
+  translated: boolean = hasPostTranslation(post.slug, "en")
+): Metadata {
   // post.seoTitle ya termina en "| Daniel Acero" y el <title> pasa por el
   // template "%s | Daniel Acero" del layout raíz, así que sin recortar el
   // sufijo aquí el <title> queda duplicado ("... | Daniel Acero | Daniel
@@ -11932,14 +11964,16 @@ export function getPostMetadata(post: BlogPost): Metadata {
       description: post.metaDescription,
       path: `/blog/${post.slug}`,
       keywords: [post.keyword, ...post.tags],
+      lang,
+      translated,
     }),
     openGraph: {
       type: "article",
-      url: `${SITE_URL}/blog/${post.slug}`,
+      url: `${SITE_URL}${localizedHref(lang, `/blog/${post.slug}`)}`,
       siteName: "Daniel Acero",
       title: post.seoTitle,
       description: post.metaDescription,
-      locale: "es_ES",
+      locale: OG_LOCALE[lang],
       publishedTime: post.publishedAt,
       modifiedTime: post.updatedAt ?? post.publishedAt,
     },
@@ -11953,13 +11987,15 @@ export function getPostMetadata(post: BlogPost): Metadata {
 }
 
 /** BlogPosting JSON-LD con las fechas reales del post (article:published_time ya vive en el <meta>, pero le faltaba el JSON-LD). */
-export function getPostArticleSchema(post: BlogPost) {
+export function getPostArticleSchema(post: BlogPost, lang: Lang = DEFAULT_LOCALE, translated = true) {
   return {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: post.title,
     description: post.description,
-    url: `${SITE_URL}/blog/${post.slug}`,
+    url: `${SITE_URL}${localizedHref(lang, `/blog/${post.slug}`)}`,
+    // inLanguage solo fuera del ES (el JSON-LD español queda idéntico al original).
+    ...(lang === DEFAULT_LOCALE ? {} : { inLanguage: SCHEMA_LANGUAGE[translated ? lang : DEFAULT_LOCALE] }),
     datePublished: post.publishedAt,
     dateModified: post.updatedAt ?? post.publishedAt,
     author: { "@id": PERSON_ID },
@@ -11967,10 +12003,10 @@ export function getPostArticleSchema(post: BlogPost) {
   }
 }
 
-export function getPostBreadcrumbSchema(post: BlogPost) {
+export function getPostBreadcrumbSchema(post: BlogPost, lang: Lang = DEFAULT_LOCALE) {
   return buildBreadcrumbSchema([
-    { name: "Inicio", path: "/" },
-    { name: "Blog", path: "/blog" },
-    { name: post.title, path: `/blog/${post.slug}` },
+    { name: getDictionary(lang).breadcrumbs.home, path: localizedHref(lang, "/") },
+    { name: "Blog", path: localizedHref(lang, "/blog") },
+    { name: post.title, path: localizedHref(lang, `/blog/${post.slug}`) },
   ])
 }
