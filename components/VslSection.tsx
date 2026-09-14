@@ -1,33 +1,22 @@
 "use client"
 
-// VSL de la home: vídeo 16:9 con póster y botón de play grande. No descarga
-// nada hasta que se pulsa play (sin `src` inicial + preload="none"). Al pulsar
-// elige calidad en cliente:
-//   - 4K por defecto.
-//   - 1080p si hay ahorro de datos, red 2g/3g o pantalla pequeña
-//     (ancho CSS × devicePixelRatio < 1600).
-//   - Si el 4K falla al cargar, cae automáticamente al 1080p.
+// VSL de la home con reproductor propio (estilo de la web: cristal oscuro, Manrope, blanco translúcido).
+//
+// Reproducción:
+//   - Autoplay al entrar en pantalla (IntersectionObserver). Primero intenta CON sonido; si el navegador
+//     lo bloquea (política de autoplay: sin interacción previa no se permite sonido), arranca en silencio y
+//     muestra "Activar sonido". Se pausa al salir de pantalla y se reanuda al volver (salvo pausa manual).
+//   - HLS adaptativo (2160p/1440p/1080p/720p/480p) con hls.js cargado bajo demanda: mide el ancho de banda y
+//     cambia de calidad sin cortes, apuntando a la máxima sostenible. HLS nativo si no hay MSE. MP4 1080p
+//     como último recurso.
+//   - Nada se descarga hasta que el vídeo entra en pantalla (preload="none", sin src inicial).
 // Las URLs salen de lib/media.ts (VSL[lang]); si es null la sección no existe.
 
-import { useRef, useState } from "react"
-import type { CSSProperties } from "react"
+import { useCallback, useEffect, useRef, useState } from "react"
+import type { CSSProperties, KeyboardEvent as ReactKeyboardEvent, PointerEvent as ReactPointerEvent } from "react"
+import type Hls from "hls.js"
 import { getDictionary, type Lang } from "@/lib/i18n"
 import { VSL } from "@/lib/media"
-
-type NavigatorConnection = { saveData?: boolean; effectiveType?: string }
-type Quality = "4k" | "1080p"
-
-function pickQuality(): Quality {
-  if (typeof window === "undefined") return "4k"
-  const connection = (navigator as Navigator & { connection?: NavigatorConnection }).connection
-  if (connection?.saveData) return "1080p"
-  if (connection?.effectiveType && ["slow-2g", "2g", "3g"].includes(connection.effectiveType)) {
-    return "1080p"
-  }
-  const physicalWidth = (window.screen?.width ?? window.innerWidth) * (window.devicePixelRatio || 1)
-  if (physicalWidth < 1600) return "1080p"
-  return "4k"
-}
 
 type Props = {
   lang: Lang
@@ -36,43 +25,338 @@ type Props = {
   className?: string
 }
 
+type LevelOption = { index: number; height: number }
+type WebkitVideo = HTMLVideoElement & { webkitEnterFullscreen?: () => void }
+
+const HIDE_CONTROLS_MS = 2600
+
+function formatTime(seconds: number) {
+  if (!Number.isFinite(seconds) || seconds < 0) return "0:00"
+  const m = Math.floor(seconds / 60)
+  const s = Math.floor(seconds % 60)
+  return `${m}:${s.toString().padStart(2, "0")}`
+}
+
+function qualityLabel(height: number) {
+  if (height >= 2000) return "4K"
+  return `${height}p`
+}
+
 export default function VslSection({ lang, hideTitle = false, className }: Props) {
   const media = VSL[lang]
   const t = getDictionary(lang).vsl
+
+  const containerRef = useRef<HTMLDivElement>(null)
   const videoRef = useRef<HTMLVideoElement>(null)
-  const qualityRef = useRef<Quality | null>(null)
+  const hlsRef = useRef<Hls | null>(null)
+  const loadPromiseRef = useRef<Promise<void> | null>(null)
+  const fellBackRef = useRef(false)
+  const userPausedRef = useRef(false)
+  const soundTriedRef = useRef(false)
+  const hideTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const scrubbingRef = useRef(false)
+
+  const [playing, setPlaying] = useState(false)
   const [started, setStarted] = useState(false)
+  const [muted, setMuted] = useState(false)
+  const [needsSound, setNeedsSound] = useState(false)
+  const [volume, setVolume] = useState(1)
+  const [currentTime, setCurrentTime] = useState(0)
+  const [duration, setDuration] = useState(0)
+  const [bufferedEnd, setBufferedEnd] = useState(0)
+  const [controlsVisible, setControlsVisible] = useState(true)
+  const [qualityOpen, setQualityOpen] = useState(false)
+  const [levels, setLevels] = useState<LevelOption[]>([])
+  const [selectedLevel, setSelectedLevel] = useState(-1)
+  const [activeHeight, setActiveHeight] = useState(0)
+  const [fullscreen, setFullscreen] = useState(false)
+
+  // ---------- Fuente (HLS / nativo / MP4) ----------
+  const fallbackToMp4 = useCallback((video: HTMLVideoElement) => {
+    if (!media || fellBackRef.current) return
+    fellBackRef.current = true
+    hlsRef.current?.destroy()
+    hlsRef.current = null
+    setLevels([])
+    video.src = media.mp4
+    video.dataset.quality = "mp4-1080p"
+    video.load()
+  }, [media])
+
+  const ensureSource = useCallback((): Promise<void> => {
+    const video = videoRef.current
+    if (!video || !media) return Promise.resolve()
+    if (loadPromiseRef.current) return loadPromiseRef.current
+    loadPromiseRef.current = (async () => {
+      try {
+        const { default: HlsLib } = await import("hls.js")
+        if (HlsLib.isSupported()) {
+          const hls = new HlsLib({
+            capLevelToPlayerSize: false,
+            startLevel: -1,
+            abrEwmaDefaultEstimate: 6_000_000,
+            abrBandWidthUpFactor: 0.8,
+            abrBandWidthFactor: 0.9,
+            maxBufferLength: 30,
+            maxMaxBufferLength: 60,
+            backBufferLength: 30,
+          })
+          hlsRef.current = hls
+          await new Promise<void>((resolve) => {
+            hls.once(HlsLib.Events.MANIFEST_PARSED, () => {
+              setLevels(
+                hls.levels
+                  .map((level, index) => ({ index, height: level.height }))
+                  .sort((a, b) => b.height - a.height),
+              )
+              resolve()
+            })
+            hls.on(HlsLib.Events.LEVEL_SWITCHED, (_event, data) => {
+              const height = hls.levels[data.level]?.height ?? 0
+              setActiveHeight(height)
+              video.dataset.quality = `${height}p`
+            })
+            hls.on(HlsLib.Events.ERROR, (_event, data) => {
+              if (!data.fatal) return
+              if (data.type === HlsLib.ErrorTypes.NETWORK_ERROR) hls.startLoad()
+              else if (data.type === HlsLib.ErrorTypes.MEDIA_ERROR) hls.recoverMediaError()
+              else {
+                fallbackToMp4(video)
+                resolve()
+              }
+            })
+            hls.loadSource(media.hls)
+            hls.attachMedia(video)
+          })
+          return
+        }
+        if (video.canPlayType("application/vnd.apple.mpegurl")) {
+          video.src = media.hls
+          video.dataset.quality = "hls-native"
+          return
+        }
+        fallbackToMp4(video)
+      } catch {
+        fallbackToMp4(video)
+      }
+    })()
+    return loadPromiseRef.current
+  }, [media, fallbackToMp4])
+
+  // ---------- Reproducción ----------
+  const startPlayback = useCallback(async () => {
+    const video = videoRef.current
+    if (!video) return
+    await ensureSource()
+    setStarted(true)
+    if (!soundTriedRef.current) {
+      soundTriedRef.current = true
+      video.muted = false
+      try {
+        await video.play()
+        setNeedsSound(false)
+        return
+      } catch {
+        // Autoplay con sonido bloqueado por el navegador: arrancamos en silencio.
+        video.muted = true
+        setNeedsSound(true)
+      }
+    }
+    try {
+      await video.play()
+    } catch {
+      // Sin permiso ni en silencio (modo ahorro de energía, etc.): queda el botón de play.
+    }
+  }, [ensureSource])
+
+  const unmute = useCallback(() => {
+    const video = videoRef.current
+    if (!video) return
+    video.muted = false
+    if (video.volume === 0) video.volume = 1
+    setNeedsSound(false)
+    if (video.paused) {
+      userPausedRef.current = false
+      void video.play().catch(() => {})
+    }
+  }, [])
+
+  const togglePlay = useCallback(() => {
+    const video = videoRef.current
+    if (!video) return
+    if (needsSound && !video.paused) {
+      unmute()
+      return
+    }
+    if (video.paused) {
+      userPausedRef.current = false
+      if (!started) void startPlayback()
+      else void video.play().catch(() => {})
+    } else {
+      userPausedRef.current = true
+      video.pause()
+    }
+  }, [needsSound, started, startPlayback, unmute])
+
+  const toggleMute = useCallback(() => {
+    const video = videoRef.current
+    if (!video) return
+    if (video.muted || video.volume === 0) unmute()
+    else video.muted = true
+  }, [unmute])
+
+  const toggleFullscreen = useCallback(() => {
+    const container = containerRef.current
+    const video = videoRef.current as WebkitVideo | null
+    if (!container || !video) return
+    if (document.fullscreenElement) {
+      void document.exitFullscreen()
+    } else if (container.requestFullscreen) {
+      void container.requestFullscreen().catch(() => video.webkitEnterFullscreen?.())
+    } else {
+      video.webkitEnterFullscreen?.()
+    }
+  }, [])
+
+  const chooseLevel = useCallback((index: number) => {
+    const hls = hlsRef.current
+    if (hls) hls.currentLevel = index
+    setSelectedLevel(index)
+    setQualityOpen(false)
+  }, [])
+
+  // ---------- Controles visibles / auto-ocultar ----------
+  const revealControls = useCallback(() => {
+    setControlsVisible(true)
+    if (hideTimerRef.current) clearTimeout(hideTimerRef.current)
+    hideTimerRef.current = setTimeout(() => {
+      const video = videoRef.current
+      if (video && !video.paused && !scrubbingRef.current) setControlsVisible(false)
+    }, HIDE_CONTROLS_MS)
+  }, [])
+
+  // ---------- Barra de progreso ----------
+  const seekFromPointer = (event: ReactPointerEvent<HTMLDivElement>) => {
+    const video = videoRef.current
+    if (!video || !duration) return
+    const rect = event.currentTarget.getBoundingClientRect()
+    const ratio = Math.min(1, Math.max(0, (event.clientX - rect.left) / rect.width))
+    video.currentTime = ratio * duration
+    setCurrentTime(video.currentTime)
+  }
+
+  const onProgressKey = (event: ReactKeyboardEvent<HTMLDivElement>) => {
+    const video = videoRef.current
+    if (!video) return
+    if (event.key === "ArrowRight") video.currentTime = Math.min(duration, video.currentTime + 5)
+    else if (event.key === "ArrowLeft") video.currentTime = Math.max(0, video.currentTime - 5)
+    else return
+    event.preventDefault()
+  }
+
+  const onContainerKey = (event: ReactKeyboardEvent<HTMLDivElement>) => {
+    if ((event.target as HTMLElement).closest("[role='slider'],button,input")) return
+    if (event.key === " " || event.key === "k") {
+      event.preventDefault()
+      togglePlay()
+    } else if (event.key === "m") toggleMute()
+    else if (event.key === "f") toggleFullscreen()
+  }
+
+  // ---------- Efectos ----------
+  // Eventos del <video>
+  useEffect(() => {
+    const video = videoRef.current
+    if (!video) return
+    const onPlay = () => setPlaying(true)
+    const onPause = () => {
+      setPlaying(false)
+      setControlsVisible(true)
+    }
+    const onTime = () => {
+      if (!scrubbingRef.current) setCurrentTime(video.currentTime)
+    }
+    const onDuration = () => setDuration(Number.isFinite(video.duration) ? video.duration : 0)
+    const onProgress = () => {
+      const { buffered } = video
+      setBufferedEnd(buffered.length ? buffered.end(buffered.length - 1) : 0)
+    }
+    const onVolume = () => {
+      setMuted(video.muted || video.volume === 0)
+      setVolume(video.volume)
+      if (!video.muted && video.volume > 0) setNeedsSound(false)
+    }
+    const onError = () => {
+      if (!hlsRef.current) fallbackToMp4(video)
+    }
+    video.addEventListener("play", onPlay)
+    video.addEventListener("pause", onPause)
+    video.addEventListener("timeupdate", onTime)
+    video.addEventListener("durationchange", onDuration)
+    video.addEventListener("loadedmetadata", onDuration)
+    video.addEventListener("progress", onProgress)
+    video.addEventListener("volumechange", onVolume)
+    video.addEventListener("error", onError)
+    return () => {
+      video.removeEventListener("play", onPlay)
+      video.removeEventListener("pause", onPause)
+      video.removeEventListener("timeupdate", onTime)
+      video.removeEventListener("durationchange", onDuration)
+      video.removeEventListener("loadedmetadata", onDuration)
+      video.removeEventListener("progress", onProgress)
+      video.removeEventListener("volumechange", onVolume)
+      video.removeEventListener("error", onError)
+    }
+  }, [fallbackToMp4])
+
+  // Autoplay al entrar en pantalla, pausa al salir
+  useEffect(() => {
+    const container = containerRef.current
+    if (!container || !media) return
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        const video = videoRef.current
+        if (!video) return
+        if (entry.intersectionRatio >= 0.45) {
+          if (!userPausedRef.current && video.paused) void startPlayback()
+        } else if (entry.intersectionRatio < 0.15 && !video.paused && !document.fullscreenElement) {
+          video.pause()
+        }
+      },
+      { threshold: [0, 0.15, 0.45, 0.75] },
+    )
+    observer.observe(container)
+    return () => observer.disconnect()
+  }, [media, startPlayback])
+
+  // Pantalla completa
+  useEffect(() => {
+    const onChange = () => setFullscreen(Boolean(document.fullscreenElement))
+    document.addEventListener("fullscreenchange", onChange)
+    return () => document.removeEventListener("fullscreenchange", onChange)
+  }, [])
+
+  // Limpieza
+  useEffect(
+    () => () => {
+      if (hideTimerRef.current) clearTimeout(hideTimerRef.current)
+      hlsRef.current?.destroy()
+      hlsRef.current = null
+    },
+    [],
+  )
 
   if (!media) return null
 
-  const playVideo = (video: HTMLVideoElement) => {
-    video.play().catch(() => {
-      // Si el navegador bloquea play(), dejamos los controles nativos visibles
-      // para que el usuario pueda iniciarlo a mano.
-    })
-  }
+  const progress = duration ? (currentTime / duration) * 100 : 0
+  const buffered = duration ? Math.min(100, (bufferedEnd / duration) * 100) : 0
+  const showUi = controlsVisible || !playing || qualityOpen
+  const autoLabel = activeHeight ? `${t.auto} · ${qualityLabel(activeHeight)}` : t.auto
+  const currentQualityText =
+    selectedLevel === -1 ? autoLabel : qualityLabel(levels.find((l) => l.index === selectedLevel)?.height ?? 0)
 
-  const handlePlay = () => {
-    const video = videoRef.current
-    if (!video) return
-    if (!qualityRef.current) {
-      qualityRef.current = pickQuality()
-      video.src = qualityRef.current === "4k" ? media.video4k : media.video
-      video.dataset.quality = qualityRef.current
-    }
-    setStarted(true)
-    playVideo(video)
-  }
-
-  const handleError = () => {
-    const video = videoRef.current
-    if (!video || qualityRef.current !== "4k") return
-    qualityRef.current = "1080p"
-    video.src = media.video
-    video.dataset.quality = "1080p"
-    video.load()
-    playVideo(video)
-  }
+  const iconButton =
+    "flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-white/85 transition-colors duration-300 hover:bg-white/10 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 sm:h-10 sm:w-10"
 
   return (
     <section
@@ -93,40 +377,214 @@ export default function VslSection({ lang, hideTitle = false, className }: Props
           </p>
         )}
 
-        <div className="relative aspect-video w-full max-w-full overflow-hidden rounded-2xl border border-white/10 bg-black shadow-[0_28px_70px_-36px_rgba(0,0,0,0.95)]">
+        <div
+          ref={containerRef}
+          tabIndex={0}
+          onKeyDown={onContainerKey}
+          onPointerMove={revealControls}
+          onPointerDown={revealControls}
+          onMouseLeave={() => playing && setControlsVisible(false)}
+          className={`group/vsl relative aspect-video w-full max-w-full overflow-hidden bg-black focus:outline-none ${
+            fullscreen ? "" : "rounded-2xl border border-white/10 shadow-[0_28px_70px_-36px_rgba(0,0,0,0.95)]"
+          } ${showUi ? "cursor-default" : "cursor-none"}`}
+        >
           <video
             ref={videoRef}
             poster={media.poster}
             preload="none"
             playsInline
-            controls={started}
-            onError={handleError}
             aria-label={t.videoLabel}
-            className="absolute inset-0 h-full w-full bg-black object-cover"
+            className="absolute inset-0 h-full w-full bg-black object-contain"
           />
 
-          {started ? null : (
-            <button
-              type="button"
-              onClick={handlePlay}
-              aria-label={t.play}
-              className="group absolute inset-0 flex cursor-pointer items-center justify-center focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-white"
-            >
-              <span
-                aria-hidden
-                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/60 via-black/15 to-black/25 transition-opacity duration-500 group-hover:opacity-80"
-              />
-              <span className="relative flex h-[72px] w-[72px] items-center justify-center rounded-full border border-white/30 bg-white/10 shadow-[0_18px_48px_-18px_rgba(0,0,0,0.9)] backdrop-blur-md transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.06] group-hover:border-white/55 group-hover:bg-white/20 sm:h-[96px] sm:w-[96px]">
-                <svg
-                  aria-hidden
-                  viewBox="0 0 24 24"
-                  className="ml-1 h-7 w-7 fill-white sm:h-9 sm:w-9"
-                >
+          {/* Superficie clicable: play/pausa (o activar sonido si está en silencio por autoplay) */}
+          <button
+            type="button"
+            onClick={togglePlay}
+            aria-label={needsSound ? t.unmute : playing ? t.pause : t.play}
+            className="absolute inset-0 h-full w-full cursor-inherit focus:outline-none"
+          />
+
+          {/* Play grande (antes de arrancar o en pausa) */}
+          {!playing ? (
+            <div aria-hidden className="pointer-events-none absolute inset-0 flex items-center justify-center">
+              <span className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-black/25" />
+              <span className="relative flex h-[72px] w-[72px] items-center justify-center rounded-full border border-white/30 bg-white/10 shadow-[0_18px_48px_-18px_rgba(0,0,0,0.9)] backdrop-blur-md transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover/vsl:scale-[1.06] sm:h-[96px] sm:w-[96px]">
+                <svg viewBox="0 0 24 24" className="ml-1 h-7 w-7 fill-white sm:h-9 sm:w-9">
                   <path d="M8 5.14v13.72a1 1 0 0 0 1.5.86l11.24-6.86a1 1 0 0 0 0-1.72L9.5 4.28A1 1 0 0 0 8 5.14Z" />
                 </svg>
               </span>
+            </div>
+          ) : null}
+
+          {/* Activar sonido (autoplay silenciado) */}
+          {needsSound && playing ? (
+            <button
+              type="button"
+              onClick={unmute}
+              className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center gap-3 rounded-full border border-white/25 bg-black/45 px-5 py-3 font-inter text-[11px] font-semibold uppercase tracking-[0.18em] text-white shadow-[0_18px_48px_-18px_rgba(0,0,0,0.9)] backdrop-blur-md transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:scale-[1.04] hover:border-white/50 hover:bg-black/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-white sm:px-6 sm:py-3.5 sm:text-[12px]"
+            >
+              <span className="relative flex h-2.5 w-2.5">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white/60" />
+                <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-white" />
+              </span>
+              <svg aria-hidden viewBox="0 0 24 24" className="h-4 w-4 fill-none stroke-white" strokeWidth={1.8}>
+                <path d="M11 5 6 9H3v6h3l5 4V5Z" strokeLinejoin="round" />
+                <path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13" strokeLinecap="round" />
+              </svg>
+              {t.unmute}
             </button>
-          )}
+          ) : null}
+
+          {/* Barra de controles */}
+          {started ? (
+            <div
+              className={`absolute inset-x-0 bottom-0 transition-opacity duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+                showUi ? "opacity-100" : "pointer-events-none opacity-0"
+              }`}
+            >
+              <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-black/80 via-black/35 to-transparent" />
+              <div className="relative px-3 pb-2.5 sm:px-5 sm:pb-4">
+                {/* Progreso */}
+                <div
+                  role="slider"
+                  tabIndex={0}
+                  aria-label={t.progress}
+                  aria-valuemin={0}
+                  aria-valuemax={Math.round(duration)}
+                  aria-valuenow={Math.round(currentTime)}
+                  aria-valuetext={`${formatTime(currentTime)} / ${formatTime(duration)}`}
+                  onKeyDown={onProgressKey}
+                  onPointerDown={(event) => {
+                    scrubbingRef.current = true
+                    event.currentTarget.setPointerCapture(event.pointerId)
+                    seekFromPointer(event)
+                  }}
+                  onPointerMove={(event) => scrubbingRef.current && seekFromPointer(event)}
+                  onPointerUp={(event) => {
+                    scrubbingRef.current = false
+                    event.currentTarget.releasePointerCapture(event.pointerId)
+                  }}
+                  className="group/progress relative flex h-5 cursor-pointer touch-none items-center focus:outline-none"
+                >
+                  <div className="relative h-[3px] w-full overflow-hidden rounded-full bg-white/15 transition-[height] duration-300 group-hover/progress:h-[5px]">
+                    <div className="absolute inset-y-0 left-0 bg-white/25" style={{ width: `${buffered}%` }} />
+                    <div className="absolute inset-y-0 left-0 bg-white" style={{ width: `${progress}%` }} />
+                  </div>
+                  <div
+                    aria-hidden
+                    className="absolute top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 scale-0 rounded-full bg-white shadow-[0_0_0_4px_rgba(255,255,255,0.15)] transition-transform duration-300 group-hover/progress:scale-100 group-focus-visible/progress:scale-100"
+                    style={{ left: `${progress}%` }}
+                  />
+                </div>
+
+                <div className="mt-1 flex items-center gap-1 sm:gap-2">
+                  <button type="button" onClick={togglePlay} aria-label={playing ? t.pause : t.play} className={iconButton}>
+                    {playing ? (
+                      <svg aria-hidden viewBox="0 0 24 24" className="h-4 w-4 fill-current sm:h-[18px] sm:w-[18px]">
+                        <rect x="6" y="5" width="4" height="14" rx="1.2" />
+                        <rect x="14" y="5" width="4" height="14" rx="1.2" />
+                      </svg>
+                    ) : (
+                      <svg aria-hidden viewBox="0 0 24 24" className="ml-0.5 h-4 w-4 fill-current sm:h-[18px] sm:w-[18px]">
+                        <path d="M8 5.14v13.72a1 1 0 0 0 1.5.86l11.24-6.86a1 1 0 0 0 0-1.72L9.5 4.28A1 1 0 0 0 8 5.14Z" />
+                      </svg>
+                    )}
+                  </button>
+
+                  <div className="group/volume flex items-center">
+                    <button type="button" onClick={toggleMute} aria-label={muted ? t.unmute : t.mute} className={iconButton}>
+                      <svg aria-hidden viewBox="0 0 24 24" className="h-[18px] w-[18px] fill-none stroke-current" strokeWidth={1.8}>
+                        <path d="M11 5 6 9H3v6h3l5 4V5Z" strokeLinejoin="round" />
+                        {muted ? (
+                          <path d="m16 9.5 5 5m0-5-5 5" strokeLinecap="round" />
+                        ) : (
+                          <path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13" strokeLinecap="round" />
+                        )}
+                      </svg>
+                    </button>
+                    <input
+                      type="range"
+                      min={0}
+                      max={1}
+                      step={0.05}
+                      value={muted ? 0 : volume}
+                      aria-label={t.volume}
+                      onChange={(event) => {
+                        const video = videoRef.current
+                        if (!video) return
+                        const value = Number(event.target.value)
+                        video.volume = value
+                        video.muted = value === 0
+                      }}
+                      className="hidden h-[3px] w-0 cursor-pointer appearance-none rounded-full bg-white/25 accent-white opacity-0 transition-all duration-300 group-hover/volume:w-20 group-hover/volume:opacity-100 focus:w-20 focus:opacity-100 sm:block"
+                    />
+                  </div>
+
+                  <span className="ml-1 font-inter text-[11px] tabular-nums tracking-[0.04em] text-white/75 sm:text-[12px]">
+                    {formatTime(currentTime)} <span className="text-white/35">/</span> {formatTime(duration)}
+                  </span>
+
+                  <div className="ml-auto flex items-center gap-1 sm:gap-2">
+                    {levels.length > 1 ? (
+                      <div className="relative">
+                        <button
+                          type="button"
+                          onClick={() => setQualityOpen((open) => !open)}
+                          aria-haspopup="menu"
+                          aria-expanded={qualityOpen}
+                          aria-label={`${t.quality}: ${currentQualityText}`}
+                          className="flex h-8 items-center rounded-full border border-white/15 bg-white/[0.06] px-3 font-inter text-[10px] font-semibold uppercase tracking-[0.12em] text-white/85 backdrop-blur-md transition-colors duration-300 hover:border-white/35 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 sm:h-9 sm:text-[11px]"
+                        >
+                          {currentQualityText}
+                        </button>
+                        {qualityOpen ? (
+                          <div
+                            role="menu"
+                            className="absolute bottom-full right-0 mb-2 min-w-[150px] overflow-hidden rounded-xl border border-white/15 bg-black/70 py-1.5 shadow-[0_24px_60px_-24px_rgba(0,0,0,0.95)] backdrop-blur-xl"
+                          >
+                            {[{ index: -1, height: 0 }, ...levels].map((option) => {
+                              const active = option.index === selectedLevel
+                              return (
+                                <button
+                                  key={option.index}
+                                  type="button"
+                                  role="menuitemradio"
+                                  aria-checked={active}
+                                  onClick={() => chooseLevel(option.index)}
+                                  className={`flex w-full items-center justify-between gap-4 px-4 py-2 text-left font-inter text-[12px] tracking-[0.04em] transition-colors duration-200 hover:bg-white/10 ${
+                                    active ? "text-white" : "text-white/65"
+                                  }`}
+                                >
+                                  {option.index === -1 ? autoLabel : qualityLabel(option.height)}
+                                  {active ? <span aria-hidden className="h-1.5 w-1.5 rounded-full bg-white" /> : null}
+                                </button>
+                              )
+                            })}
+                          </div>
+                        ) : null}
+                      </div>
+                    ) : null}
+
+                    <button
+                      type="button"
+                      onClick={toggleFullscreen}
+                      aria-label={fullscreen ? t.exitFullscreen : t.fullscreen}
+                      className={iconButton}
+                    >
+                      <svg aria-hidden viewBox="0 0 24 24" className="h-[18px] w-[18px] fill-none stroke-current" strokeWidth={1.8} strokeLinecap="round">
+                        {fullscreen ? (
+                          <path d="M9 4v5H4M15 4v5h5M9 20v-5H4M15 20v-5h5" />
+                        ) : (
+                          <path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" />
+                        )}
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ) : null}
         </div>
       </div>
     </section>

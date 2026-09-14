@@ -87,7 +87,16 @@ const en: Dictionary = {
   vsl: {
     title: "Watch this first",
     play: "Play video",
+    pause: "Pause video",
     videoLabel: "Introduction video by Daniel Acero",
+    unmute: "Tap for sound",
+    mute: "Mute",
+    volume: "Volume",
+    progress: "Video progress",
+    quality: "Quality",
+    auto: "Auto",
+    fullscreen: "Fullscreen",
+    exitFullscreen: "Exit fullscreen",
   },
   about: {
     title: "About me",
