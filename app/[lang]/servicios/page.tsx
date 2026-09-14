@@ -1,23 +1,26 @@
 import Link from "next/link"
 import Image from "next/image"
 import ContactCTA from "@/components/ContactCTA"
-import { buildBreadcrumbSchema, localizedMetadata } from "@/lib/seo"
+import { buildBreadcrumbSchema, localizedMetadata, type LangParams } from "@/lib/seo"
+import { getDictionary, localizedHref, toLang } from "@/lib/i18n"
+import { content } from "./content"
 
-// Pendiente de traducir: en /en sale el contenido ES con noindex (ver I18N_GUIDE.md).
-export const generateMetadata = localizedMetadata({
-  title: "Servicios de vídeo para empresas y marcas",
-  description:
-    "Servicios de vídeo corporativo e institucional en Madrid: grabación, edición y piezas para web, redes y comunicación empresarial.",
+export const generateMetadata = localizedMetadata((lang) => ({
+  title: content[lang].metaTitle,
+  description: content[lang].metaDescription,
   path: "/servicios",
-  keywords: ["servicios de video madrid", "video corporativo", "video institucional"],
-})
+  keywords: content[lang].keywords,
+}))
 
-const breadcrumbSchema = buildBreadcrumbSchema([
-  { name: "Inicio", path: "/" },
-  { name: "Servicios", path: "/servicios" },
-])
+export default async function ServicesPage({ params }: LangParams) {
+  const lang = toLang((await params).lang)
+  const t = content[lang]
 
-export default function ServicesPage() {
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: getDictionary(lang).breadcrumbs.home, path: localizedHref(lang, "/") },
+    { name: t.breadcrumb, path: localizedHref(lang, "/servicios") },
+  ])
+
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-white">
       <script
@@ -27,58 +30,47 @@ export default function ServicesPage() {
       <section className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pt-20 sm:pt-28 pb-16 sm:pb-20 space-y-10">
         <header className="space-y-6">
           <p className="font-inter text-[11px] uppercase text-white/40">
-            servicios
+            {t.kicker}
           </p>
           <h1 className="font-inter font-semibold uppercase  text-[30px] leading-[1.05] sm:text-[40px] lg:text-[56px]">
-            Servicios de vídeo para empresas, eventos y marcas en Madrid
+            {t.title}
           </h1>
         </header>
 
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
           {/* Intro + bullets */}
           <div className="space-y-6 text-white/78">
-            <p className="font-inter text-[14px] sm:text-[15px] leading-[1.7]">
-              Soy Daniel Acero, filmmaker y videógrafo especializado en convertir eventos corporativos,
-              congresos y experiencias de marca en piezas audiovisuales que comunican con impacto.
-            </p>
-            <p className="font-inter text-[14px] sm:text-[15px] leading-[1.7]">
-              Trabajo con empresas y marcas que buscan contenido audiovisual profesional, emocional
-              y alineado con su identidad.
-            </p>
+            {t.intro.map((paragraph) => (
+              <p key={paragraph} className="font-inter text-[14px] sm:text-[15px] leading-[1.7]">
+                {paragraph}
+              </p>
+            ))}
 
             <div className="space-y-3">
               <p className="font-inter text-[12px] font-semibold uppercase text-white/60">
-                especialidades
+                {t.specialtiesLabel}
               </p>
               <ul className="space-y-2 font-inter text-[14px] sm:text-[15px] leading-[1.6]">
-                <li className="list-disc list-inside">
-                  <Link
-                    href="/servicios/corporativo"
-                    className="font-semibold hover:text-white transition-colors"
-                  >
-                    Vídeo corporativo
-                  </Link>{" "}
-                  — piezas para empresas, marcas y lanzamientos.
-                </li>
-                <li className="list-disc list-inside">
-                  <Link
-                    href="/servicios/institucional"
-                    className="font-semibold hover:text-white transition-colors"
-                  >
-                    Vídeo institucional
-                  </Link>{" "}
-                  — contenido para organizaciones, instituciones y entidades.
-                </li>
+                {t.specialties.map((item) => (
+                  <li key={item.href} className="list-disc list-inside">
+                    <Link
+                      href={localizedHref(lang, item.href)}
+                      className="font-semibold hover:text-white transition-colors"
+                    >
+                      {item.label}
+                    </Link>{" "}
+                    {item.description}
+                  </li>
+                ))}
               </ul>
             </div>
 
             <div className="space-y-3">
               <h2 className="font-inter text-[14px] sm:text-[15px] font-semibold uppercase ">
-                Trabajo en Madrid y en toda España
+                {t.locationTitle}
               </h2>
               <p className="font-inter text-[13px] sm:text-[14px] leading-[1.7] text-white/72">
-                Aunque estoy basado en Madrid, viajo para cubrir proyectos en toda España.
-                He trabajado con compañías y proyectos para marcas nacionales e internacionales.
+                {t.locationText}
               </p>
             </div>
           </div>
@@ -88,7 +80,7 @@ export default function ServicesPage() {
             <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl border border-white/10">
               <Image
                 src="https://kgtz1gujr7extokb.public.blob.vercel-storage.com/hero/daniel-acero-hero-v2-llWDLWKhpBLHLD1VcbHNvWsLL7DeYZ.jpg"
-                alt="Rodaje de vídeo para empresa"
+                alt={t.imageAlt}
                 fill
                 priority
                 sizes="(max-width: 1024px) 100vw, 60vw"
@@ -100,20 +92,18 @@ export default function ServicesPage() {
             <div className="grid gap-4 text-sm text-white/70 sm:grid-cols-2">
               <div className="border border-white/10 rounded-xl p-4">
                 <p className="font-inter text-[11px] uppercase text-white/40">
-                  para quién trabajo
+                  {t.forWhomLabel}
                 </p>
                 <p className="mt-2 font-inter text-[13px] leading-[1.6]">
-                  Empresas, agencias, instituciones, productoras y marcas que quieren comunicar con
-                  un lenguaje visual cuidado y contemporáneo.
+                  {t.forWhomText}
                 </p>
               </div>
               <div className="border border-white/10 rounded-xl p-4">
                 <p className="font-inter text-[11px] uppercase text-white/40">
-                  formato
+                  {t.formatLabel}
                 </p>
                 <p className="mt-2 font-inter text-[13px] leading-[1.6]">
-                  Piezas para web, redes sociales, campañas de pago, presentaciones internas y
-                  documentación de eventos corporativos.
+                  {t.formatText}
                 </p>
               </div>
             </div>
@@ -122,33 +112,27 @@ export default function ServicesPage() {
 
         <section className="space-y-8 border-t border-white/10 pt-10 mt-4">
           <h2 className="font-inter font-semibold uppercase text-[18px] sm:text-[20px]">
-            ¿Hablamos de tu proyecto?
+            {t.ctaTitle}
           </h2>
           <p className="max-w-3xl font-inter text-[13px] sm:text-[14px] leading-[1.7] text-white/72">
-            Cuéntame qué tipo de vídeo estás pensando (corporativo, institucional o evento) y qué
-            objetivo te gustaría conseguir. Te propongo una forma de abordarlo y un plan claro de
-            producción y entrega.
+            {t.ctaText}
           </p>
 
           <div className="flex flex-wrap gap-3 text-[13px] text-white/70">
-            <Link
-              href="/servicios/corporativo"
-              className="rounded-full border border-white/20 px-4 py-2 font-inter uppercase hover:border-white/60 hover:text-white transition-colors"
-            >
-              Servicios de vídeo corporativo
-            </Link>
-            <Link
-              href="/servicios/institucional"
-              className="rounded-full border border-white/20 px-4 py-2 font-inter uppercase hover:border-white/60 hover:text-white transition-colors"
-            >
-              Servicios de vídeo institucional
-            </Link>
+            {t.ctaLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={localizedHref(lang, link.href)}
+                className="rounded-full border border-white/20 px-4 py-2 font-inter uppercase hover:border-white/60 hover:text-white transition-colors"
+              >
+                {link.label}
+              </Link>
+            ))}
           </div>
         </section>
       </section>
 
-      <ContactCTA />
+      <ContactCTA lang={lang} />
     </main>
   )
 }
-

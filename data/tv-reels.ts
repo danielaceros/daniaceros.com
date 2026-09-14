@@ -2,7 +2,9 @@
 // Datos para /tv: el portfolio (data/projects.ts) + las colaboraciones del
 // viaje "La Vuelta al Mundo sin un Duro" (lavueltaalmundosinunduro.com),
 // unificados en el mismo formato "reel de Instagram" que consume ReelPhone.
+import type { Lang } from "@/lib/i18n/config"
 import { projects } from "./projects"
+import { tvReelTranslations } from "./tv-reels.en"
 
 export type TVReel = {
   id: string
@@ -153,3 +155,16 @@ const VANLIFE_REELS: TVReel[] = VANLIFE_ENTRIES.map((e) => ({
 // Portfolio propio primero, colaboraciones del viaje después. Orden fijo (sin
 // aleatoriedad) para que el scroll infinito sea el mismo en cada visita.
 export const TV_REELS: TVReel[] = [...PORTFOLIO_REELS, ...VANLIFE_REELS]
+
+/**
+ * Reels en el idioma pedido: se sustituyen caption y categoría por la
+ * traducción de data/tv-reels.en.ts si existe. Sin traducción → copy español.
+ */
+export function getTVReels(lang: Lang): TVReel[] {
+  const translations = tvReelTranslations[lang]
+  if (lang === "es" || !translations) return TV_REELS
+  return TV_REELS.map((reel) => {
+    const translation = translations[reel.id]
+    return translation ? { ...reel, ...translation } : reel
+  })
+}

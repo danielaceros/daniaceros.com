@@ -1,21 +1,23 @@
 import ContactPortfolioMarquee from "@/components/ContactPortfolioMarquee"
 import ContactCTA from "@/components/ContactCTA"
-import { localizedMetadata } from "@/lib/seo"
+import { localizedMetadata, type LangParams } from "@/lib/seo"
+import { toLang } from "@/lib/i18n"
+import { content } from "./content"
 
-// Pendiente de traducir: en /en sale el contenido ES con noindex (ver I18N_GUIDE.md).
-export const generateMetadata = localizedMetadata({
-  title: "Contacto",
-  description:
-    "Contacta con Daniel Acero para vídeo corporativo, institucional o cobertura de eventos en Madrid y toda España.",
+export const generateMetadata = localizedMetadata((lang) => ({
+  title: content[lang].metaTitle,
+  description: content[lang].metaDescription,
   path: "/contacto",
-  keywords: ["contacto filmmaker madrid", "presupuesto video corporativo", "videografo madrid"],
-})
+  keywords: content[lang].keywords,
+}))
 
-export default function ContactPage() {
+export default async function ContactPage({ params }: LangParams) {
+  const lang = toLang((await params).lang)
+
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-white">
-      <ContactPortfolioMarquee />
-      <ContactCTA />
+      <ContactPortfolioMarquee lang={lang} />
+      <ContactCTA lang={lang} />
     </main>
   )
 }

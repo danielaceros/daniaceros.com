@@ -1,18 +1,21 @@
 // app/tv/page.tsx
 import ReelPhone from "@/components/tv/ReelPhone"
-import { TV_REELS } from "@/data/tv-reels"
-import { localizedMetadata } from "@/lib/seo"
+import { getTVReels } from "@/data/tv-reels"
+import { localizedMetadata, type LangParams } from "@/lib/seo"
+import { toLang } from "@/lib/i18n"
+import { content } from "./content"
 
-// Pendiente de traducir: en /en sale el contenido ES con noindex (ver I18N_GUIDE.md).
-export const generateMetadata = localizedMetadata({
-  title: "TV — el portfolio en formato Reels",
-  description:
-    "El portfolio de Daniel Acero, en formato Reels: desliza como en Instagram y ve cada pieza tal y como se publicó.",
+export const generateMetadata = localizedMetadata((lang) => ({
+  title: content[lang].meta.title,
+  description: content[lang].meta.description,
   path: "/tv",
-  keywords: ["daniel acero reels", "portfolio video vertical", "showreel instagram madrid"],
-})
+  keywords: content[lang].meta.keywords,
+}))
 
-export default function TVPage() {
+export default async function TVPage({ params }: LangParams) {
+  const lang = toLang((await params).lang)
+  const t = content[lang]
+
   return (
     <main className="relative flex h-dvh w-full flex-col items-center overflow-hidden bg-[#0a0a0a] text-white sm:px-4 sm:py-5">
       <div
@@ -30,10 +33,10 @@ export default function TVPage() {
           donde sí hay sitio para el marco de iPhone + contexto alrededor. */}
       <div className="relative z-10 hidden flex-none text-center sm:block [@media(max-height:480px)]:hidden">
         <p className="font-inter text-[10px] uppercase tracking-[0.16em] text-white/50 sm:text-[11px]">
-          daniel acero · tv
+          {t.kicker}
         </p>
         <h1 className="mt-1.5 font-display text-[18px] font-semibold uppercase leading-[1.05] sm:text-[24px]">
-          El portfolio, como en Instagram
+          {t.title}
         </h1>
       </div>
 
@@ -44,13 +47,12 @@ export default function TVPage() {
           completo, así que el feed ocupa el 100% de la pantalla. */}
       <div className="relative z-10 my-0 min-h-0 w-full flex-1 [container-type:size] sm:my-2">
         <div className="flex h-full w-full items-center justify-center">
-          <ReelPhone reels={TV_REELS} />
+          <ReelPhone reels={getTVReels(lang)} labels={t.reelPhone} />
         </div>
       </div>
 
       <p className="relative z-10 hidden max-w-xs flex-none text-center font-inter text-[10.5px] text-white/45 sm:block sm:text-[11px] [@media(max-height:480px)]:hidden">
-        Silenciado por defecto — toca el icono para activar el sonido. Desliza hacia arriba para
-        ver la siguiente pieza.
+        {t.hint}
       </p>
     </main>
   )

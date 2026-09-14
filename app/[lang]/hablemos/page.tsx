@@ -3,27 +3,24 @@ import Hero from "@/components/Hero"
 import Portfolio from "@/components/Portfolio"
 import About from "@/components/About"
 import ContactCTA from "@/components/ContactCTA"
-import { localizedMetadata } from "@/lib/seo"
+import { localizedMetadata, type LangParams } from "@/lib/seo"
+import { getDictionary, localizedHref, toLang } from "@/lib/i18n"
+import { content } from "./content"
+import LanguageLinks from "./LanguageLinks"
 
-const WHATSAPP_MESSAGE = encodeURIComponent(
-  "Hola Dani! Estamos valorando crear vídeo para la empresa y quería saber cómo trabajáis y si encaja para nuestro caso."
-)
-const WHATSAPP_URL = `https://wa.me/34711255496?text=${WHATSAPP_MESSAGE}`
-
-// Pendiente de traducir: en /en sale el contenido ES con noindex (ver I18N_GUIDE.md).
-export const generateMetadata = localizedMetadata({
-  title: "Hablemos",
-  description:
-    "Producción audiovisual para empresas, marcas y eventos en Madrid. Vídeo corporativo con enfoque cinematográfico y ejecución profesional.",
+export const generateMetadata = localizedMetadata((lang) => ({
+  title: content[lang].metaTitle,
+  description: content[lang].metaDescription,
   path: "/hablemos",
-  keywords: [
-    "hablemos",
-    "filmmaker corporativo madrid",
-    "videografo eventos madrid",
-  ],
-})
+  keywords: content[lang].keywords,
+}))
 
-export default function HablemosPage() {
+export default async function HablemosPage({ params }: LangParams) {
+  const lang = toLang((await params).lang)
+  const t = content[lang]
+  const dict = getDictionary(lang)
+  const WHATSAPP_URL = `https://wa.me/34711255496?text=${encodeURIComponent(dict.contact.whatsappMessage)}`
+
   return (
     <main className="text-white">
       {/* TODO: Dani debe subir un reemplazo real a Vercel Blob para este asset
@@ -31,13 +28,15 @@ export default function HablemosPage() {
           Hero oculta el bloque de logos de confianza automáticamente cuando
           no se le pasa trustedLogosImageSrc. */}
       <Hero
-        title="¿Hablamos de tu proyecto?"
+        lang={lang}
+        title={t.heroTitle}
         tagline=""
-        description="Te digo presupuesto y disponibilidad en 2 minutos por WhatsApp."
-        ctaLabel="Pedir presupuesto ahora"
+        description={t.heroDescription}
+        ctaLabel={t.heroCtaLabel}
         compactTitle
       />
       <Portfolio
+        lang={lang}
         openVideosInModal
         forceTwoColumns
         desktopSlideshow
@@ -45,17 +44,17 @@ export default function HablemosPage() {
       />
       <div id="contacto">
         <ContactCTA
+          lang={lang}
           mobileFormFirst
           hideMobileContactInfo
           hideFooter
           sectionClassName="mt-1 pb-6 sm:mt-2 sm:pb-8"
         />
       </div>
-      <About mobileCompactSplit sectionClassName="pt-0 pb-2 sm:pt-1 sm:pb-3" />
+      <About lang={lang} mobileCompactSplit sectionClassName="pt-0 pb-2 sm:pt-1 sm:pb-3" />
       <section className="mx-auto w-full max-w-6xl px-4 pb-4 text-right sm:hidden">
         <p className="ml-auto max-w-[36ch] font-inter text-[13px] leading-[1.75] text-white/66">
-          Si prefieres, también puedes escribirme directamente por email o WhatsApp y te respondo
-          personalmente.
+          {dict.contact.mobileAsideText}
         </p>
         <div className="mt-7 space-y-4">
           <a
@@ -106,17 +105,20 @@ export default function HablemosPage() {
           </Link>
         </p>
         <p className="mt-3 flex flex-wrap items-center justify-center gap-x-2 gap-y-1 font-inter text-[11px] lowercase text-white/45">
-          <Link href="/aviso-legal" className="hover:text-white/90 transition-colors duration-300 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black">
-            aviso legal
+          <Link href={localizedHref(lang, "/aviso-legal")} className="hover:text-white/90 transition-colors duration-300 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black">
+            {dict.contact.footer.legalNotice}
           </Link>
           <span aria-hidden>·</span>
-          <Link href="/politica-de-cookies" className="hover:text-white/90 transition-colors duration-300 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black">
-            política de cookies
+          <Link href={localizedHref(lang, "/politica-de-cookies")} className="hover:text-white/90 transition-colors duration-300 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black">
+            {dict.contact.footer.cookies}
           </Link>
           <span aria-hidden>·</span>
-          <Link href="/politica-de-privacidad" className="hover:text-white/90 transition-colors duration-300 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black">
-            política de privacidad
+          <Link href={localizedHref(lang, "/politica-de-privacidad")} className="hover:text-white/90 transition-colors duration-300 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black">
+            {dict.contact.footer.privacy}
           </Link>
+          {/* Selector de idioma discreto: la cabecera especial de /hablemos no lo lleva. */}
+          <span aria-hidden>·</span>
+          <LanguageLinks lang={lang} path="/hablemos" label={dict.header.languageSwitcherLabel} />
         </p>
       </footer>
     </main>

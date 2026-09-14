@@ -1,121 +1,100 @@
 import ContactCTA from "@/components/ContactCTA"
-import { localizedMetadata } from "@/lib/seo"
+import { localizedMetadata, type LangParams } from "@/lib/seo"
+import { toLang } from "@/lib/i18n"
+import { CONTROLLER, content } from "./content"
 
-// Pendiente de traducir: en /en sale el contenido ES con noindex (ver I18N_GUIDE.md).
-export const generateMetadata = localizedMetadata({
-  title: "Política de privacidad",
-  description: "Política de privacidad del sitio web de Daniel Acero.",
+export const generateMetadata = localizedMetadata((lang) => ({
+  title: content[lang].metaTitle,
+  description: content[lang].metaDescription,
   path: "/politica-de-privacidad",
-})
+}))
 
-export default function PrivacyPage() {
+const h2ClassName = "mt-10 mb-3 font-inter font-semibold uppercase text-[14px] sm:text-[15px] text-white"
+const linkClassName = "underline underline-offset-4 hover:text-white transition"
+
+export default async function PrivacyPage({ params }: LangParams) {
+  const lang = toLang((await params).lang)
+  const t = content[lang]
+
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-white">
       <article className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
+        {t.notice ? (
+          <p className="mb-8 border-l border-white/20 pl-4 text-[13px] leading-[1.7] text-white/55 italic">
+            {t.notice}
+          </p>
+        ) : null}
+
         <h1 className="mb-12 font-inter font-semibold uppercase  text-[32px] sm:text-[42px] lg:text-[56px]">
-          Política de privacidad
+          {t.title}
         </h1>
 
         <div className="space-y-10 text-[14px] leading-[1.7] text-white/80 sm:text-[15px]">
-          <p>
-            En cumplimiento de lo dispuesto en el Reglamento (UE) 2016/679 (RGPD) y la Ley Orgánica 3/2018 de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD), se informa a los usuarios de este sitio web de los siguientes aspectos relacionados con el tratamiento de sus datos personales.
-          </p>
+          <p>{t.intro}</p>
 
-          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase text-[14px] sm:text-[15px] text-white">
-            1. Responsable del tratamiento
-          </h2>
+          <h2 className={h2ClassName}>{t.controller.title}</h2>
           <ul className="space-y-1">
-            <li>Responsable: Daniel Acero Sagredo</li>
-            <li>Nombre comercial: KLIP</li>
-            <li>DNI/NIF: 06590329R</li>
-            <li>Domicilio: Calle de Mercedes Arteaga 24, España</li>
+            <li>{`${t.controller.holderLabel} ${CONTROLLER.holder}`}</li>
+            <li>{`${t.controller.tradeNameLabel} ${CONTROLLER.tradeName}`}</li>
+            <li>{`${t.controller.taxIdLabel} ${CONTROLLER.taxId}`}</li>
+            <li>{`${t.controller.addressLabel} ${CONTROLLER.address}`}</li>
             <li>
-              Correo electrónico de contacto:{" "}
-              <a
-                href="mailto:hello@daniaceros.com"
-                className="underline underline-offset-4 hover:text-white transition"
-              >
-                hello@daniaceros.com
+              {t.controller.emailLabel}{" "}
+              <a href={`mailto:${CONTROLLER.contactEmail}`} className={linkClassName}>
+                {CONTROLLER.contactEmail}
               </a>
             </li>
           </ul>
 
-          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase text-[14px] sm:text-[15px] text-white">
-            2. Datos personales que se recogen
-          </h2>
-          <p>
-            A través de este sitio web se pueden recoger los siguientes datos personales:
-          </p>
+          <h2 className={h2ClassName}>{t.data.title}</h2>
+          <p>{t.data.intro}</p>
           <ul className="list-disc pl-4 space-y-1">
-            <li>Nombre y apellidos</li>
-            <li>Dirección de correo electrónico</li>
-            <li>Información incluida en los mensajes enviados a través de formularios o WhatsApp</li>
+            {t.data.items.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
           </ul>
 
-          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase text-[14px] sm:text-[15px] text-white">
-            3. Finalidad del tratamiento de los datos
-          </h2>
+          <h2 className={h2ClassName}>{t.purpose.title}</h2>
           <ul className="list-disc pl-4 space-y-1">
-            <li>Atender solicitudes de información o presupuestos.</li>
-            <li>Gestionar la relación comercial o contractual.</li>
-            <li>Responder consultas enviadas a través de los canales de contacto.</li>
+            {t.purpose.items.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
           </ul>
 
-          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase text-[14px] sm:text-[15px] text-white">
-            4. Legitimación para el tratamiento
-          </h2>
+          <h2 className={h2ClassName}>{t.legalBasis.title}</h2>
           <ul className="list-disc pl-4 space-y-1">
-            <li>El consentimiento del usuario al enviar sus datos.</li>
-            <li>La ejecución de un contrato o precontrato.</li>
+            {t.legalBasis.items.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
           </ul>
 
-          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase text-[14px] sm:text-[15px] text-white">
-            5. Conservación de los datos
-          </h2>
-          <p>
-            Los datos personales se conservarán durante el tiempo necesario para cumplir con la finalidad para la que fueron recabados y para determinar posibles responsabilidades derivadas del tratamiento.
-          </p>
+          <h2 className={h2ClassName}>{t.retention.title}</h2>
+          <p>{t.retention.text}</p>
 
-          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase text-[14px] sm:text-[15px] text-white">
-            6. Derechos de los usuarios
-          </h2>
+          <h2 className={h2ClassName}>{t.rights.title}</h2>
           <ul className="list-disc pl-4 space-y-1">
-            <li>Acceder a sus datos personales</li>
-            <li>Solicitar la rectificación de los datos inexactos</li>
-            <li>Solicitar su supresión</li>
-            <li>Solicitar la limitación del tratamiento</li>
-            <li>Oponerse al tratamiento</li>
-            <li>Solicitar la portabilidad de los datos</li>
+            {t.rights.items.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
           </ul>
 
           <p>
-            Para ejercer estos derechos, el usuario puede enviar una solicitud al correo{" "}
-            <a
-              href="mailto:work@daniaceros.com"
-              className="underline underline-offset-4 hover:text-white transition"
-            >
-              work@daniaceros.com
+            {t.rights.exercise}{" "}
+            <a href={`mailto:${CONTROLLER.rightsEmail}`} className={linkClassName}>
+              {CONTROLLER.rightsEmail}
             </a>
           </p>
 
-          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase text-[14px] sm:text-[15px] text-white">
-            7. Medidas de seguridad
-          </h2>
-          <p>
-            El responsable ha adoptado las medidas técnicas y organizativas necesarias para garantizar la seguridad de los datos personales y evitar su alteración, pérdida, tratamiento o acceso no autorizado.
-          </p>
+          <h2 className={h2ClassName}>{t.security.title}</h2>
+          <p>{t.security.text}</p>
 
-          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase text-[14px] sm:text-[15px] text-white">
-            8. Cambios en la política de privacidad
-          </h2>
-          <p>
-            El titular se reserva el derecho a modificar la presente política de privacidad para adaptarla a novedades legislativas o jurisprudenciales. Se recomienda al usuario revisar periódicamente esta política.
-          </p>
+          <h2 className={h2ClassName}>{t.changes.title}</h2>
+          <p>{t.changes.text}</p>
         </div>
       </article>
 
       <div className="mt-24">
-        <ContactCTA />
+        <ContactCTA lang={lang} />
       </div>
     </main>
   )

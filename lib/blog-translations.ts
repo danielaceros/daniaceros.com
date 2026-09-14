@@ -12,6 +12,7 @@
 // El slug EN es el mismo que el ES por ahora (/en/blog/<slug-es>).
 import type { BlogPost } from "@/lib/blog"
 import type { Lang } from "@/lib/i18n/config"
+import { enPart1 } from "@/lib/blog-translations/en-1"
 
 export type BlogPostTranslation = Pick<
   BlogPost,
@@ -29,5 +30,5 @@ export type BlogPostTranslation = Pick<
 >
 
 export const blogTranslations: Partial<Record<Lang, Record<string, BlogPostTranslation>>> = {
-  en: {},
+  en: { ...enPart1 },
 }

@@ -1,22 +1,16 @@
-import { localizedMetadata } from "@/lib/seo"
+import { localizedMetadata, type LangParams } from "@/lib/seo"
+import { toLang } from "@/lib/i18n"
 import VideoCorporativoMadridClient from "./VideoCorporativoMadridClient"
+import { content } from "./content"
 
-// Pendiente de traducir: en /en sale el contenido ES con noindex (ver I18N_GUIDE.md).
-export const generateMetadata = localizedMetadata({
-  title: "Productora y agencia de vídeo corporativo en Madrid",
-  description:
-    "Productora de vídeos corporativos en Madrid con trato directo y enfoque comercial. Yo y mi equipo llevamos propuesta, rodaje, edición, versiones y entrega para web, ventas y campañas.",
+export const generateMetadata = localizedMetadata((lang) => ({
+  title: content[lang].metaTitle,
+  description: content[lang].metaDescription,
   path: "/video-corporativo-madrid",
-  keywords: [
-    "productora de vídeos corporativos en madrid",
-    "agencia de vídeo corporativo en madrid",
-    "video corporativo madrid",
-    "video profesional para empresas madrid",
-    "grabacion video corporativo madrid",
-    "filmmaker corporativo",
-  ],
-})
+  keywords: content[lang].keywords,
+}))
 
-export default function Page() {
-  return <VideoCorporativoMadridClient />
+export default async function Page({ params }: LangParams) {
+  const lang = toLang((await params).lang)
+  return <VideoCorporativoMadridClient lang={lang} />
 }

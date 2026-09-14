@@ -7,54 +7,18 @@ import ContactPortfolioMarquee from "@/components/ContactPortfolioMarquee"
 import ViewMoreOnTV from "@/components/ViewMoreOnTV"
 import ContactCTA from "@/components/ContactCTA"
 import { ease } from "@/lib/motion"
+import type { Lang } from "@/lib/i18n/config"
+import { content } from "./content"
 
-const servicios = [
-  "Video de Eventos Corporativos",
-  "Video para redes sociales",
-  "Video corporativo",
-  "Video formación",
-  "Entrevistas",
-  "Video animado",
-  "Spots Publicitarios",
-  "Documentales",
-]
-
-const porQueContratar = [
-  "Experiencia y profesionalidad",
-  "Equipo técnico de vanguardia",
-  "Creatividad y narrativa visual",
-  "Optimización para plataformas digitales",
-  "Entrega puntual y eficiente",
-]
-
-const comoTrabajo = [
-  "Contacto inicial",
-  "Propuesta personalizada",
-  "Producción y grabación",
-  "Edición y postproducción",
-  "Entrega final",
-]
-
-const faqItems = [
-  { q: "¿Dónde trabajas?", a: "Estoy basado en Madrid y me desplazo por toda España para rodajes y cobertura de eventos cuando el proyecto lo requiere." },
-  { q: "¿Necesito un filmmaker en Madrid para tu evento o proyecto?", a: "No es obligatorio estar en Madrid. Trabajo en Madrid, en otras ciudades y en ubicaciones que tú indiques. Lo importante es encajar en fechas y alcance del proyecto." },
-  { q: "Vídeo de eventos corporativos en Madrid", a: "Ofrezco cobertura de eventos corporativos en Madrid y alrededores: congresos, lanzamientos, convenciones, team buildings y experiencias. Incluyo grabación, edición y entregas en los formatos que necesites." },
-  { q: "Qué incluyo en la cobertura de tu evento", a: "Grabación en multicámara cuando hace falta, sonido directo, edición del vídeo principal y, si se acuerda, versiones para redes sociales. Todo se detalla en la propuesta según el tipo de evento." },
-  { q: "Tipos de eventos que cubro", a: "Congresos y jornadas, lanzamientos de producto, convenciones comerciales, eventos de equipo, presentaciones institucionales, inauguraciones y experiencias de marca." },
-  { q: "Por qué un vídeo profesional marca la diferencia?", a: "Un vídeo profesional transmite seriedad y calidad, mejora el recuerdo de tu mensaje y te da material reutilizable para web, redes y campañas. Invertir en buen contenido suele rentabilizarse en imagen y alcance." },
-  { q: "Métricas de grabación", a: "Trabajo en 4K cuando el proyecto lo pide y en Full HD como estándar. Formatos y duraciones se acuerdan en la propuesta según el uso final (web, redes, sala, etc.)." },
-  { q: "Clientes para los que trabajo", a: "Empresas de todos los tamaños, instituciones públicas, ONGs, agencias, productoras y marcas que necesitan vídeo corporativo, de eventos o para redes. Si tienes un proyecto en mente, cuéntamelo." },
-  { q: "Entregables y material", a: "Entrego los vídeos acordados (normalmente MP4 listo para web y redes), versiones cortas si se ha pactado, y el material en bruto solo si se incluye en el presupuesto." },
-]
-
-export default function VideografoMadridPage() {
+export default function VideografoMadridPage({ lang }: { lang: Lang }) {
   const [openFaq, setOpenFaq] = useState<number | null>(null)
+  const t = content[lang]
 
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-white">
       <section className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pt-20 sm:pt-28 pb-6">
         <h1 className="font-inter font-semibold uppercase  text-[28px] leading-[1.1] sm:text-[36px] lg:text-[44px]">
-          Grabación profesional de eventos, empresas y contenido corporativo
+          {t.title}
         </h1>
       </section>
 
@@ -62,7 +26,7 @@ export default function VideografoMadridPage() {
         <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl border border-white/10">
           <Image
             src="https://kgtz1gujr7extokb.public.blob.vercel-storage.com/hero/daniel-acero-hero-v2-llWDLWKhpBLHLD1VcbHNvWsLL7DeYZ.jpg"
-            alt="Grabación profesional de vídeo para eventos y empresas"
+            alt={t.imageAlt}
             fill
             priority
             sizes="(max-width: 1024px) 100vw, 70vw"
@@ -70,24 +34,24 @@ export default function VideografoMadridPage() {
           />
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
           <p className="pointer-events-none absolute bottom-0 left-0 right-0 p-6 font-inter text-[18px] font-semibold uppercase  text-white sm:text-[22px] lg:text-[26px]">
-            Grabación profesional de eventos, empresas y contenido corporativo
+            {t.imageCaption}
           </p>
         </div>
         <p className="mt-6 text-[13px] sm:text-[14px] leading-[1.75] text-white/85 font-inter">
-          Si estás buscando un videógrafo profesional en Madrid para tu evento, tu empresa o tu contenido corporativo, puedo ayudarte. Trabajo con empresas e instituciones en la grabación y edición de vídeos que comunican con impacto: eventos, piezas para redes, vídeo corporativo, entrevistas y documentales.
+          {t.intro}
         </p>
       </section>
 
-      <ContactPortfolioMarquee />
+      <ContactPortfolioMarquee lang={lang} />
 
       <section className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pt-8 sm:pt-10 pb-16 sm:pb-20">
         <div className="space-y-14 font-inter">
           <section className="space-y-4">
             <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
-              Servicios como videógrafo en Madrid
+              {t.servicesTitle}
             </h2>
             <ul className="grid gap-2 sm:grid-cols-2">
-              {servicios.map((item) => (
+              {t.services.map((item) => (
                 <li
                   key={item}
                   className="flex items-center gap-2 text-[13px] sm:text-[14px] leading-[1.6] text-white/85"
@@ -101,10 +65,10 @@ export default function VideografoMadridPage() {
 
           <section className="space-y-4">
             <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
-              Por qué contratar un videógrafo en Madrid profesional
+              {t.whyTitle}
             </h2>
             <ul className="space-y-2">
-              {porQueContratar.map((item) => (
+              {t.why.map((item) => (
                 <li
                   key={item}
                   className="flex items-center gap-2 text-[13px] sm:text-[14px] leading-[1.6] text-white/85"
@@ -118,10 +82,10 @@ export default function VideografoMadridPage() {
 
           <section className="space-y-4">
             <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
-              Cómo trabajo
+              {t.howTitle}
             </h2>
             <ol className="space-y-3">
-              {comoTrabajo.map((item, i) => (
+              {t.how.map((item, i) => (
                 <li
                   key={item}
                   className="flex items-baseline gap-2 text-[13px] sm:text-[14px] leading-[1.65] text-white/85"
@@ -135,10 +99,10 @@ export default function VideografoMadridPage() {
 
           <section className="space-y-4">
             <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase  text-white/90">
-              Preguntas frecuentes
+              {t.faqTitle}
             </h2>
             <ul className="space-y-2 border-t border-white/10 pt-4">
-              {faqItems.map((item, i) => (
+              {t.faq.map((item, i) => (
                 <li key={item.q} className="border-b border-white/10">
                   <button
                     type="button"
@@ -173,9 +137,9 @@ export default function VideografoMadridPage() {
         </div>
       </section>
 
-      <ViewMoreOnTV className="px-4 pb-2" />
+      <ViewMoreOnTV className="px-4 pb-2" lang={lang} />
 
-      <ContactCTA />
+      <ContactCTA lang={lang} />
     </main>
   )
 }

@@ -1,15 +1,16 @@
-import { localizedMetadata } from "@/lib/seo"
+import { localizedMetadata, type LangParams } from "@/lib/seo"
+import { toLang } from "@/lib/i18n"
 import FilmmakerMadridClient from "./FilmmakerMadridClient"
+import { content } from "./content"
 
-// Pendiente de traducir: en /en sale el contenido ES con noindex (ver I18N_GUIDE.md).
-export const generateMetadata = localizedMetadata({
-  title: "Filmmaker en Madrid | Vídeo profesional para empresas",
-  description:
-    "Servicio de filmmaker en Madrid para eventos, marcas y empresas. Producción, grabación y edición audiovisual profesional.",
+export const generateMetadata = localizedMetadata((lang) => ({
+  title: content[lang].metaTitle,
+  description: content[lang].metaDescription,
   path: "/filmmaker-madrid",
-  keywords: ["filmmaker madrid", "video profesional madrid", "produccion audiovisual empresas"],
-})
+  keywords: content[lang].keywords,
+}))
 
-export default function Page() {
-  return <FilmmakerMadridClient />
+export default async function Page({ params }: LangParams) {
+  const lang = toLang((await params).lang)
+  return <FilmmakerMadridClient lang={lang} />
 }

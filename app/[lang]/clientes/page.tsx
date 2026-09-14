@@ -1,15 +1,16 @@
-import { localizedMetadata } from "@/lib/seo"
+import { localizedMetadata, type LangParams } from "@/lib/seo"
+import { toLang } from "@/lib/i18n"
 import ClientesClient from "./ClientesClient"
+import { content } from "./content"
 
-// Pendiente de traducir: en /en sale el contenido ES con noindex (ver I18N_GUIDE.md).
-export const generateMetadata = localizedMetadata({
-  title: "Clientes",
-  description:
-    "Clientes y proyectos audiovisuales para empresas, instituciones, agencias y marcas en Madrid y toda España.",
+export const generateMetadata = localizedMetadata((lang) => ({
+  title: content[lang].metaTitle,
+  description: content[lang].metaDescription,
   path: "/clientes",
-  keywords: ["clientes filmmaker", "video corporativo clientes", "casos audiovisuales"],
-})
+  keywords: content[lang].keywords,
+}))
 
-export default function Page() {
-  return <ClientesClient />
+export default async function Page({ params }: LangParams) {
+  const lang = toLang((await params).lang)
+  return <ClientesClient lang={lang} />
 }

@@ -2,54 +2,23 @@ import type { CSSProperties } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import ContactCTA from "@/components/ContactCTA"
-import { localizedMetadata } from "@/lib/seo"
+import { localizedMetadata, type LangParams } from "@/lib/seo"
+import { format, localizedHref, toLang } from "@/lib/i18n"
+import { content } from "./content"
 
-// Pendiente de traducir: en /en sale el contenido ES con noindex (ver I18N_GUIDE.md).
-export const generateMetadata = localizedMetadata({
-  title: "Pack mensual de contenido para marcas personales",
-  description:
-    "Una sesión al mes en el estudio. Te llevas los reels del mes editados. Sin espacio propio. Sin improvisar. Solo apareces y lees. Desde 620€/mes.",
+export const generateMetadata = localizedMetadata((lang) => ({
+  title: content[lang].meta.title,
+  description: content[lang].meta.description,
   path: "/marca-personal",
-  keywords: [
-    "pack mensual contenido marca personal",
-    "reels mensuales marca personal madrid",
-    "estudio grabación marca personal madrid",
-    "contenido redes sociales coach consultor",
-    "filmmaker marca personal madrid",
-    "reel mensual teleprompter madrid",
-  ],
-})
+  keywords: content[lang].meta.keywords,
+}))
 
 const ALEJANDRO_AVATAR = "/alejandro.jpg"
 
-const PLANS = [
-  { name: "Starter", price: "620", reels: "8", pubs: "2", session: "2h", extra: null, highlight: false },
-  { name: "Standard", price: "780", reels: "12", pubs: "3", session: "2h", extra: null, highlight: true, badge: "El más demandado" },
-  { name: "Pro", price: "990", reels: "16", pubs: "4", session: "3h", extra: "+1 reel destacado", highlight: false },
-  { name: "Premium", price: "1.200", reels: "20", pubs: "5", session: "4h", extra: "+2 destacados · thumbnails", highlight: false },
-]
+export default async function MarcaPersonalPage({ params }: LangParams) {
+  const lang = toLang((await params).lang)
+  const t = content[lang]
 
-const ADD_ONS = [
-  { name: "Guionización", price: "+100€/mes" },
-  { name: "Publicación", price: "+100€/mes" },
-  { name: "Paid Media", price: "A consultar" },
-]
-
-const CLARIFICATIONS = [
-  ["Permanencia", "Sin compromiso. Mensual cancelable. Tu contenido cada mes, mientras te encaje."],
-  ["Cancelación", "Preaviso antes del siguiente ciclo. El ciclo en curso no se reembolsa."],
-  ["Modificaciones", "1 ronda consolidada de cambios, hasta 72h tras la entrega."],
-  ["Ubicación", "Estudio en Ronda de Atocha 16, Madrid. Metro Atocha y parking cercano. Horarios flexibles."],
-]
-
-const FIRST_MONTH = [
-  ["01", "Llamada inicial"],
-  ["07", "Guiones revisados"],
-  ["14", "Sesión en el estudio"],
-  ["28", "Primer reel publicado"],
-]
-
-export default function MarcaPersonalPage() {
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-white">
       {/* HERO */}
@@ -63,7 +32,7 @@ export default function MarcaPersonalPage() {
                 style={{ "--lux-delay": "60ms" } as CSSProperties}
                 className="hero-fade-up font-inter text-[11px] uppercase tracking-[0.18em] text-white/50"
               >
-                Servicios · Pack mensual · Marca personal
+                {t.hero.kicker}
               </p>
 
               <h1
@@ -71,9 +40,9 @@ export default function MarcaPersonalPage() {
                 style={{ "--lux-delay": "120ms" } as CSSProperties}
                 className="hero-fade-up hero-fade-up-delay-1 mt-5 font-display font-semibold uppercase leading-[0.95] text-[clamp(2.2rem,7vw,5rem)]"
               >
-                Tu marca personal.<br />
-                Una sesión al mes.<br />
-                <span className="text-white/55">Reels listos.</span>
+                {t.hero.titleLine1}<br />
+                {t.hero.titleLine2}<br />
+                <span className="text-white/55">{t.hero.titleLine3}</span>
               </h1>
 
               <p
@@ -81,8 +50,7 @@ export default function MarcaPersonalPage() {
                 style={{ "--lux-delay": "200ms" } as CSSProperties}
                 className="hero-fade-up hero-fade-up-delay-2 mt-6 max-w-xl font-inter text-[15px] sm:text-[16px] leading-[1.65] text-white/72"
               >
-                Vienes a mi estudio una vez al mes. Grabamos todo en una sola sesión con teleprompter.
-                Tú apareces y lees. Los guiones, la edición, los subtítulos y el formato los hago yo.
+                {t.hero.intro}
               </p>
 
               <div
@@ -91,10 +59,10 @@ export default function MarcaPersonalPage() {
                 className="hero-fade-up hero-fade-up-delay-3 mt-8 flex flex-col sm:flex-row gap-3"
               >
                 <Link
-                  href="/contacto"
+                  href={localizedHref(lang, "/contacto")}
                   className="inline-flex min-h-[56px] items-center justify-center rounded-2xl bg-white px-7 py-4 font-inter text-[13px] font-semibold uppercase tracking-[0.06em] text-black hover:bg-white/90 transition-colors"
                 >
-                  Empezar este mes
+                  {t.hero.ctaLabel}
                 </Link>
                 <Link
                   href="https://drive.google.com/file/d/1-G9l9oeoMz9OrXiUZgj8bAzlbzOPqvj6/view?usp=sharing"
@@ -102,7 +70,7 @@ export default function MarcaPersonalPage() {
                   rel="noopener noreferrer"
                   className="inline-flex min-h-[56px] items-center justify-center rounded-2xl border border-white/25 bg-white/[0.03] px-7 py-4 font-inter text-[13px] font-semibold uppercase tracking-[0.06em] text-white hover:bg-white/[0.07] transition-colors"
                 >
-                  Ver dossier
+                  {t.hero.dossierLabel}
                 </Link>
               </div>
 
@@ -111,11 +79,7 @@ export default function MarcaPersonalPage() {
                 style={{ "--lux-delay": "360ms" } as CSSProperties}
                 className="hero-fade-up mt-12 grid grid-cols-3 gap-4 sm:gap-6 max-w-md"
               >
-                {[
-                  ["1", "sesión al mes"],
-                  ["0", "improvisación"],
-                  ["+50", "proyectos"],
-                ].map(([n, label]) => (
+                {t.hero.stats.map(([n, label]) => (
                   <div key={label} className="border-l border-white/15 pl-3 sm:pl-4">
                     <p className="font-display text-[clamp(1.6rem,4vw,2.6rem)] font-semibold leading-none">{n}</p>
                     <p className="mt-1.5 font-inter text-[10px] sm:text-[11px] uppercase tracking-[0.08em] text-white/45">{label}</p>
@@ -139,19 +103,15 @@ export default function MarcaPersonalPage() {
       <section className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
         <div className="max-w-3xl">
           <p className="font-inter text-[11px] uppercase tracking-[0.18em] text-white/40 mb-5">
-            Cómo funciona
+            {t.how.kicker}
           </p>
           <h2 className="font-display font-semibold uppercase leading-[1.05] text-[clamp(1.8rem,4.5vw,3rem)]">
-            Tres pasos. <span className="text-white/55">Cero fricción.</span>
+            {t.how.title} <span className="text-white/55">{t.how.titleAccent}</span>
           </h2>
         </div>
 
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-px bg-white/10 rounded-2xl overflow-hidden">
-          {[
-            ["01", "Vienes al estudio", "Ronda de Atocha 16. Cámara, luz, teleprompter y sonido ya montados antes de que llegues."],
-            ["02", "Grabamos en una sesión", "Los guiones pasan por el teleprompter. Solo tienes que leer. Sin memorizar, sin improvisar nada."],
-            ["03", "Te entrego los reels", "Editados, con subtítulos, en vertical. Listos para publicar en Instagram, TikTok o LinkedIn."],
-          ].map(([n, title, desc]) => (
+          {t.how.steps.map(([n, title, desc]) => (
             <div key={n} className="bg-[#0a0a0a] p-7 sm:p-9">
               <p className="font-display text-[clamp(2.5rem,5vw,4rem)] font-semibold text-white/15 leading-none">{n}</p>
               <h3 className="mt-5 font-inter text-[15px] sm:text-[16px] font-semibold uppercase tracking-[0.04em]">{title}</h3>
@@ -167,22 +127,17 @@ export default function MarcaPersonalPage() {
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.05fr] gap-10 lg:gap-14 items-center">
             <div className="order-2 lg:order-1">
               <p className="font-inter text-[11px] uppercase tracking-[0.18em] text-white/40 mb-5">
-                Cliente activo · Validación real
+                {t.caseStudy.kicker}
               </p>
               <h2 className="font-display font-semibold uppercase leading-[1.05] text-[clamp(1.8rem,4.5vw,2.8rem)]">
-                Alejandro Pingarrón lleva<br className="hidden sm:block" /> meses construyendo su marca.
+                {t.caseStudy.titleLine1}<br className="hidden sm:block" /> {t.caseStudy.titleLine2}
               </h2>
               <p className="mt-5 font-inter text-[14px] sm:text-[15px] leading-[1.7] text-white/72 max-w-lg">
-                Viene al estudio una vez al mes. Grabamos todos los reels en una sola sesión con teleprompter.
-                Se lleva el contenido del mes listo para publicar. Solo aparece y lee.
+                {t.caseStudy.body}
               </p>
 
               <div className="mt-7 grid grid-cols-3 gap-3 max-w-md">
-                {[
-                  ["73,9K", "seguidores"],
-                  ["1", "sesión / mes"],
-                  ["0", "preocupaciones"],
-                ].map(([n, label]) => (
+                {t.caseStudy.stats.map(([n, label]) => (
                   <div key={label} className="border-l border-white/15 pl-3">
                     <p className="font-display text-[clamp(1.4rem,3.5vw,2.2rem)] font-semibold leading-none">{n}</p>
                     <p className="mt-1.5 font-inter text-[10px] uppercase tracking-[0.06em] text-white/50">{label}</p>
@@ -213,7 +168,7 @@ export default function MarcaPersonalPage() {
                         <path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z" />
                       </svg>
                     </div>
-                    <span className="font-inter text-[12px] text-white/55 block">Coach Personal · Madrid</span>
+                    <span className="font-inter text-[12px] text-white/55 block">{t.caseStudy.cardMeta}</span>
                   </div>
                   <Link
                     href="https://www.instagram.com/alejandro_estucoach/"
@@ -221,7 +176,7 @@ export default function MarcaPersonalPage() {
                     rel="noopener noreferrer"
                     className="shrink-0 inline-flex items-center justify-center rounded-lg bg-[#0095F6] hover:bg-[#1877F2] transition-colors px-4 py-1.5 font-inter text-[12px] font-semibold text-white"
                   >
-                    Seguir
+                    {t.caseStudy.follow}
                   </Link>
                 </div>
 
@@ -229,7 +184,7 @@ export default function MarcaPersonalPage() {
                 <div className="relative aspect-[9/16] bg-black">
                   <Image
                     src={ALEJANDRO_AVATAR}
-                    alt="Alejandro Pingarrón · Coach Personal"
+                    alt={t.caseStudy.photoAlt}
                     fill
                     unoptimized
                     sizes="400px"
@@ -254,7 +209,7 @@ export default function MarcaPersonalPage() {
                 rel="noopener noreferrer"
                 className="mt-4 inline-flex items-center justify-center gap-2 w-full rounded-xl border border-white/15 bg-white/[0.03] px-4 py-3 font-inter text-[12px] font-semibold uppercase tracking-[0.06em] text-white/85 hover:bg-white/[0.07] transition-colors"
               >
-                Ver feed completo en Instagram <span aria-hidden>↗</span>
+                {t.caseStudy.viewFeed} <span aria-hidden>↗</span>
               </Link>
             </div>
           </div>
@@ -266,19 +221,19 @@ export default function MarcaPersonalPage() {
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
           <div>
             <p className="font-inter text-[11px] uppercase tracking-[0.18em] text-white/40 mb-5">
-              Planes mensuales
+              {t.plans.kicker}
             </p>
             <h2 className="font-display font-semibold uppercase leading-[1.05] text-[clamp(1.8rem,4.5vw,3rem)]">
-              Elige tu volumen.<br /><span className="text-white/55">Empieza este mes.</span>
+              {t.plans.titleLine1}<br /><span className="text-white/55">{t.plans.titleLine2}</span>
             </h2>
           </div>
           <p className="font-inter text-[12px] leading-[1.6] text-white/50 max-w-xs">
-            Mensual cancelable · Sin permanencia · IVA no incluido
+            {t.plans.note}
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          {PLANS.map((plan) => (
+          {t.plans.items.map((plan) => (
             <div
               key={plan.name}
               className={
@@ -298,26 +253,26 @@ export default function MarcaPersonalPage() {
               </p>
 
               <div className="mt-4 flex items-baseline gap-1">
-                <span className="font-display text-[42px] sm:text-[50px] font-semibold leading-none">{plan.price}€</span>
-                <span className={`font-inter text-[12px] ${plan.highlight ? "text-[#0a0a0a]/55" : "text-white/45"}`}>/mes</span>
+                <span className="font-display text-[42px] sm:text-[50px] font-semibold leading-none">{plan.price}</span>
+                <span className={`font-inter text-[12px] ${plan.highlight ? "text-[#0a0a0a]/55" : "text-white/45"}`}>{t.plans.perMonth}</span>
               </div>
 
               <ul className={`mt-6 space-y-2 font-inter text-[13px] leading-[1.5] ${plan.highlight ? "text-[#0a0a0a]/85" : "text-white/75"}`}>
-                <li className="flex gap-2"><span className={plan.highlight ? "text-[#0a0a0a]/40" : "text-white/35"}>·</span> {plan.reels} reels editados</li>
-                <li className="flex gap-2"><span className={plan.highlight ? "text-[#0a0a0a]/40" : "text-white/35"}>·</span> {plan.pubs} pub / semana</li>
-                <li className="flex gap-2"><span className={plan.highlight ? "text-[#0a0a0a]/40" : "text-white/35"}>·</span> Sesión de {plan.session}</li>
+                <li className="flex gap-2"><span className={plan.highlight ? "text-[#0a0a0a]/40" : "text-white/35"}>·</span> {format(t.plans.reels, { n: plan.reels })}</li>
+                <li className="flex gap-2"><span className={plan.highlight ? "text-[#0a0a0a]/40" : "text-white/35"}>·</span> {format(t.plans.pubs, { n: plan.pubs })}</li>
+                <li className="flex gap-2"><span className={plan.highlight ? "text-[#0a0a0a]/40" : "text-white/35"}>·</span> {format(t.plans.session, { session: plan.session })}</li>
                 {plan.extra && <li className="flex gap-2"><span className={plan.highlight ? "text-[#0a0a0a]/40" : "text-white/35"}>·</span> {plan.extra}</li>}
               </ul>
 
               <Link
-                href="/contacto"
+                href={localizedHref(lang, "/contacto")}
                 className={
                   plan.highlight
                     ? "mt-7 inline-flex justify-center rounded-xl bg-[#0a0a0a] text-white px-5 py-3 font-inter text-[13px] font-semibold uppercase tracking-[0.06em] hover:bg-[#1c1917] transition-colors"
                     : "mt-7 inline-flex justify-center rounded-xl border border-white/25 bg-white/[0.03] px-5 py-3 font-inter text-[13px] font-semibold uppercase tracking-[0.06em] text-white hover:bg-white/[0.07] transition-colors"
                 }
               >
-                Empezar
+                {t.plans.cta}
               </Link>
             </div>
           ))}
@@ -326,26 +281,26 @@ export default function MarcaPersonalPage() {
         {/* VOLUMEN */}
         <div className="mt-5 rounded-3xl border border-white/12 bg-white/[0.02] p-6 sm:p-7 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div>
-            <p className="font-inter text-[11px] uppercase tracking-[0.14em] text-white/45">Volumen · A medida</p>
+            <p className="font-inter text-[11px] uppercase tracking-[0.14em] text-white/45">{t.plans.volumeKicker}</p>
             <h3 className="mt-1.5 font-display text-[20px] sm:text-[24px] font-semibold uppercase leading-tight">
-              20+ reels al mes, contenido escalado, lanzamientos.
+              {t.plans.volumeTitle}
             </h3>
           </div>
           <Link
-            href="/contacto"
+            href={localizedHref(lang, "/contacto")}
             className="shrink-0 inline-flex justify-center rounded-xl border border-white/30 bg-white/[0.04] px-6 py-3 font-inter text-[13px] font-semibold uppercase tracking-[0.06em] hover:bg-white/[0.08] transition-colors"
           >
-            Hablemos
+            {t.plans.volumeCta}
           </Link>
         </div>
 
         {/* ADD-ONS */}
         <div className="mt-10">
           <p className="font-inter text-[11px] uppercase tracking-[0.18em] text-white/40 mb-4">
-            Add-ons opcionales
+            {t.plans.addOnsKicker}
           </p>
           <div className="flex flex-wrap gap-2.5">
-            {ADD_ONS.map((a) => (
+            {t.plans.addOns.map((a) => (
               <div
                 key={a.name}
                 className="rounded-full border border-white/15 bg-white/[0.03] px-4 py-2.5 font-inter text-[12px] flex items-center gap-2.5"
@@ -364,14 +319,14 @@ export default function MarcaPersonalPage() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24 grid grid-cols-1 lg:grid-cols-2 gap-14">
           <div>
             <p className="font-inter text-[11px] uppercase tracking-[0.18em] text-white/40 mb-5">
-              Tu primer mes
+              {t.firstMonth.kicker}
             </p>
             <h2 className="font-display font-semibold uppercase leading-[1.05] text-[clamp(1.6rem,3.6vw,2.2rem)]">
-              De la llamada al primer reel<br /> en 28 días.
+              {t.firstMonth.titleLine1}<br /> {t.firstMonth.titleLine2}
             </h2>
 
             <div className="mt-9 space-y-5">
-              {FIRST_MONTH.map(([day, title]) => (
+              {t.firstMonth.items.map(([day, title]) => (
                 <div key={day} className="flex items-center gap-5 border-b border-white/8 pb-4">
                   <span className="font-display text-[28px] sm:text-[32px] font-semibold text-white/30 w-12 shrink-0">
                     {day}
@@ -386,14 +341,14 @@ export default function MarcaPersonalPage() {
 
           <div>
             <p className="font-inter text-[11px] uppercase tracking-[0.18em] text-white/40 mb-5">
-              Aclaraciones
+              {t.clarifications.kicker}
             </p>
             <h2 className="font-display font-semibold uppercase leading-[1.05] text-[clamp(1.6rem,3.6vw,2.2rem)]">
-              Letra pequeña, <span className="text-white/55">sin trampas.</span>
+              {t.clarifications.title} <span className="text-white/55">{t.clarifications.titleAccent}</span>
             </h2>
 
             <div className="mt-9 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6">
-              {CLARIFICATIONS.map(([title, body]) => (
+              {t.clarifications.items.map(([title, body]) => (
                 <div key={title}>
                   <h3 className="font-inter text-[13px] font-semibold uppercase tracking-[0.04em]">{title}</h3>
                   <p className="mt-1.5 font-inter text-[12.5px] leading-[1.6] text-white/55">{body}</p>
@@ -404,7 +359,7 @@ export default function MarcaPersonalPage() {
         </div>
       </section>
 
-      <ContactCTA />
+      <ContactCTA lang={lang} />
     </main>
   )
 }

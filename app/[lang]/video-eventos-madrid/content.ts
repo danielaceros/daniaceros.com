@@ -1,0 +1,115 @@
+// Textos de /video-eventos-madrid por idioma. El ES es copia literal de la página original (no tocar).
+// Sin imports de servidor: lo usan page.tsx (metadata) y VideoEventosMadridClient.tsx.
+import type { Lang } from "@/lib/i18n/config"
+
+const es = {
+  metaTitle: "Vídeo de eventos en Madrid",
+  metaDescription:
+    "Servicio de vídeo de eventos en Madrid para congresos, conferencias, ferias y eventos corporativos con enfoque profesional.",
+  keywords: ["video eventos madrid", "videografo eventos corporativos", "grabacion congresos madrid"],
+  title: "Vídeo de eventos en Madrid",
+  imageAlt: "Grabación de vídeo de eventos en Madrid",
+  intro: "Grabamos y editamos recuerdos audiovisuales para compartir con el mundo.",
+  eventTypesTitle: "Qué tipo de eventos cubro",
+  eventTypes: [
+    "Eventos corporativos",
+    "Presentaciones, ponencias, reuniones, mesas redondas, convenciones",
+    "Conferencias y simposios",
+    "Ferias y exhibiciones",
+    "Aperturas y lanzamientos de productos",
+    "Ceremonias de premios",
+    "Eventos deportivos",
+    "Festivales y conciertos",
+    "Otros eventos especiales",
+  ],
+  styleTitle: "Mi estilo de grabación de eventos",
+  style: [
+    "Historia emocional",
+    "Planificación detallada",
+    "Equipo de trabajo experto",
+    "Equipo técnico de vanguardia",
+    "Edición profesional",
+    "Entrega rápida y sencilla",
+    "Cobertura flexible",
+    "Postproducción personalizada",
+  ],
+  clientsTitle: "Ejemplos de clientes",
+  clients: [
+    "PSA",
+    "Fundación Española de la Energía",
+    "Consejo de la Juventud",
+    "Ayuntamiento de Madrid",
+    "Dirección General de Bilingüismo",
+    "Organizaciones sin ánimo de lucro",
+  ],
+  howTitle: "Cómo trabajo",
+  how: [
+    "Sesión previa para entender tu proyecto y objetivos",
+    "Creación del guion con un equipo de profesionales",
+    "Grabación del evento en Madrid",
+    "Edición de vídeo profesional",
+    "Entrega rápida y sencilla para que puedas compartirlo",
+  ],
+  whereTitle: "¿Dónde trabajo?",
+  whereText: "Con base en Madrid, pero me desplazo por toda España.",
+}
+
+const en: typeof es = {
+  metaTitle: "Event Videographer in Madrid | Event Video Production",
+  metaDescription:
+    "Event video production in Madrid for congresses, conferences, trade fairs and corporate events. A professional event videographer for companies and agencies.",
+  keywords: [
+    "event videographer madrid",
+    "event video madrid",
+    "event video production madrid",
+    "corporate event videographer",
+    "conference filming madrid",
+  ],
+  title: "Event video production in Madrid",
+  imageAlt: "Event video filming in Madrid",
+  intro: "We film and edit audiovisual memories to share with the world.",
+  eventTypesTitle: "Types of events I cover",
+  eventTypes: [
+    "Corporate events",
+    "Presentations, talks, meetings, panel discussions, conventions",
+    "Conferences and symposiums",
+    "Trade fairs and exhibitions",
+    "Openings and product launches",
+    "Award ceremonies",
+    "Sports events",
+    "Festivals and concerts",
+    "Other special events",
+  ],
+  styleTitle: "My event filming style",
+  style: [
+    "Emotional storytelling",
+    "Detailed planning",
+    "Expert crew",
+    "State-of-the-art equipment",
+    "Professional editing",
+    "Fast, hassle-free delivery",
+    "Flexible coverage",
+    "Tailored post-production",
+  ],
+  clientsTitle: "Selected clients",
+  clients: [
+    "PSA",
+    "Fundación Española de la Energía",
+    "Consejo de la Juventud",
+    "Ayuntamiento de Madrid",
+    "Dirección General de Bilingüismo",
+    "Non-profit organizations",
+  ],
+  howTitle: "How I work",
+  how: [
+    "A preliminary session to understand your project and goals",
+    "Script development with a team of professionals",
+    "Filming your event in Madrid",
+    "Professional video editing",
+    "Fast, hassle-free delivery so you can share it",
+  ],
+  whereTitle: "Where I work",
+  whereText: "Based in Madrid, but I travel all over Spain.",
+}
+
+export const content: Record<Lang, typeof es> = { es, en }

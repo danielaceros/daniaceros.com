@@ -1,15 +1,16 @@
-import { localizedMetadata } from "@/lib/seo"
+import { localizedMetadata, type LangParams } from "@/lib/seo"
+import { toLang } from "@/lib/i18n"
 import VideoEventosMadridClient from "./VideoEventosMadridClient"
+import { content } from "./content"
 
-// Pendiente de traducir: en /en sale el contenido ES con noindex (ver I18N_GUIDE.md).
-export const generateMetadata = localizedMetadata({
-  title: "Vídeo de eventos en Madrid",
-  description:
-    "Servicio de vídeo de eventos en Madrid para congresos, conferencias, ferias y eventos corporativos con enfoque profesional.",
+export const generateMetadata = localizedMetadata((lang) => ({
+  title: content[lang].metaTitle,
+  description: content[lang].metaDescription,
   path: "/video-eventos-madrid",
-  keywords: ["video eventos madrid", "videografo eventos corporativos", "grabacion congresos madrid"],
-})
+  keywords: content[lang].keywords,
+}))
 
-export default function Page() {
-  return <VideoEventosMadridClient />
+export default async function Page({ params }: LangParams) {
+  const lang = toLang((await params).lang)
+  return <VideoEventosMadridClient lang={lang} />
 }

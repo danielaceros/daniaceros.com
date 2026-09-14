@@ -10,7 +10,8 @@ import {
   hasPostTranslation,
 } from "@/lib/blog"
 import ContactCTA from "@/components/ContactCTA"
-import { toLang } from "@/lib/i18n"
+import { DEFAULT_LOCALE, toLang } from "@/lib/i18n"
+import { content } from "../content"
 
 type Props = { params: Promise<{ lang: string; slug: string }> }
 
@@ -31,9 +32,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 // Artículos: el contenido sale de getLocalizedPost (ES original o traducción
-// de lib/blog-translations.ts). Sin traducción, /en/blog/<slug> muestra el ES
-// con noindex. Los textos fijos de esta plantilla siguen en español hasta la
-// fase de traducción del blog.
+// de lib/blog-translations). Sin traducción, /en/blog/<slug> muestra el ES
+// con noindex (y lang="es" en el <article>). Los textos fijos de la plantilla
+// están en ../content.ts.
 export default async function BlogPostPage({ params }: Props) {
   const { slug, lang: rawLang } = await params
   const lang = toLang(rawLang)
@@ -42,6 +43,8 @@ export default async function BlogPostPage({ params }: Props) {
   if (!localized) notFound()
 
   const { post, translated } = localized
+  const t = content[lang]
+  const untranslated = lang !== DEFAULT_LOCALE && !translated
   const faqs = post.body.filter((block) => block.type === "faq")
   const articleSchema = getPostArticleSchema(post, lang, translated)
   const breadcrumbSchema = getPostBreadcrumbSchema(post, lang)
@@ -56,7 +59,10 @@ export default async function BlogPostPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      <article className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pt-24 sm:pt-32 pb-16 sm:pb-24">
+      <article
+        {...(untranslated ? { lang: DEFAULT_LOCALE } : {})}
+        className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pt-24 sm:pt-32 pb-16 sm:pb-24"
+      >
         <div className="max-w-3xl border-b border-white/10 pb-10 sm:pb-12">
           <p className="font-inter text-[11px] uppercase tracking-[0.22em] text-white/45">{post.heroKicker}</p>
           <h1 className="mt-4 font-inter text-[34px] leading-[1.04] sm:text-[48px] lg:text-[58px] uppercase text-white">
@@ -158,7 +164,7 @@ export default async function BlogPostPage({ params }: Props) {
                     ) : null}
                   </div>
                   <span className="flex-shrink-0 text-[11px] uppercase tracking-[0.16em] text-white/55 group-hover:text-white/85 transition-colors">
-                    {block.cta ?? "Ver perfil"} →
+                    {block.cta ?? t.viewProfile} →
                   </span>
                 </a>
               )

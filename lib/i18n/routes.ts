@@ -10,6 +10,36 @@
 export const TRANSLATED_PATHS: readonly string[] = [
   "/",
   "/portfolio",
+  // A. Servicios
+  "/servicios",
+  "/servicios/corporativo",
+  "/servicios/institucional",
+  // B. Landings SEO Madrid
+  "/filmmaker-madrid",
+  "/videografo-madrid",
+  "/video-corporativo-madrid",
+  "/video-eventos-madrid",
+  // C. Conversión (/gracias es noindex en ambos idiomas)
+  "/contacto",
+  "/hablemos",
+  "/precios",
+  "/proceso",
+  "/contratar",
+  "/faq",
+  // D. Marca / prueba social
+  "/sobre-mi",
+  "/clientes",
+  "/casos-de-exito",
+  // E. Productos
+  "/contenido-mensual",
+  "/marca-personal",
+  "/the-rooftop-content-studio",
+  // F. TV
+  "/tv",
+  // G. Legales (EN con nota "Spanish version prevails")
+  "/aviso-legal",
+  "/politica-de-privacidad",
+  "/politica-de-cookies",
 ]
 
 /** Prefijos traducidos (todas las rutas hijas): p. ej. fichas de portfolio. */

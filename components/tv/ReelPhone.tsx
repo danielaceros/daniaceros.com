@@ -76,9 +76,13 @@ const Icon = {
   ),
 }
 
-type Props = { reels: TVReel[] }
+type Props = {
+  reels: TVReel[]
+  /** Textos de UI por idioma (app/[lang]/tv/content.ts → reelPhone). */
+  labels: { unmute: string; mute: string; follow: string }
+}
 
-export default function ReelPhone({ reels }: Props) {
+export default function ReelPhone({ reels, labels }: Props) {
   const N = reels.length
   const { order, clones } = useLoopOrder(N)
 
@@ -203,7 +207,7 @@ export default function ReelPhone({ reels }: Props) {
                     type="button"
                     className={styles.muteBtn}
                     onClick={() => toggleMute(displayIdx)}
-                    aria-label={muted ? "Activar sonido" : "Silenciar"}
+                    aria-label={muted ? labels.unmute : labels.mute}
                   >
                     {muted ? Icon.muteOn : Icon.muteOff}
                   </button>
@@ -246,7 +250,7 @@ export default function ReelPhone({ reels }: Props) {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        Síguenos
+                        {labels.follow}
                       </a>
                     </div>
                     <p className={styles.caption}>{reel.caption}</p>

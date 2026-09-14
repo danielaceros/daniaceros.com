@@ -1,42 +1,34 @@
 import Link from "next/link"
 import ContactCTA from "@/components/ContactCTA"
 import ViewMoreOnTV from "@/components/ViewMoreOnTV"
-import { projects } from "@/data/projects"
-import { buildBreadcrumbSchema, localizedMetadata } from "@/lib/seo"
+import { getProjects } from "@/data/projects"
+import { buildBreadcrumbSchema, localizedMetadata, type LangParams } from "@/lib/seo"
+import { format, getDictionary, localizedHref, toLang } from "@/lib/i18n"
+import { CASE_SLUGS, content } from "./content"
 
-// Casos de éxito: slug debe existir en data/projects; category es la etiqueta del diseño
-const casosDeExito = [
-  { slug: "camara-de-comercio", category: "Evento subvencional" },
-  { slug: "real-madrid-riquelme", category: "Campaña electoral · Real Madrid" },
-  { slug: "ifema", category: "Vídeo institucional" },
-  { slug: "rimmel-london", category: "Campaña de marca · Rimmel London" },
-  { slug: "cinesa", category: "Experiencia de marca" },
-  { slug: "omar-montes", category: "Concierto" },
-  { slug: "brahim-diaz", category: "Proyecto promocional Sony Pictures" },
-]
-
-// Pendiente de traducir: en /en sale el contenido ES con noindex (ver I18N_GUIDE.md).
-export const generateMetadata = localizedMetadata({
-  title: "Casos de éxito",
-  description:
-    "Casos de éxito audiovisuales para empresas, marcas e instituciones. Proyectos reales con resultados medibles.",
+export const generateMetadata = localizedMetadata((lang) => ({
+  title: content[lang].metaTitle,
+  description: content[lang].metaDescription,
   path: "/casos-de-exito",
-  keywords: ["casos de exito video", "portfolio corporativo", "proyectos audiovisuales madrid"],
-})
+  keywords: content[lang].keywords,
+}))
 
-const breadcrumbSchema = buildBreadcrumbSchema([
-  { name: "Inicio", path: "/" },
-  { name: "Casos de éxito", path: "/casos-de-exito" },
-])
+export default async function CasosDeExitoPage({ params }: LangParams) {
+  const lang = toLang((await params).lang)
+  const t = content[lang]
+  const projects = getProjects(lang)
 
-function getProjectBySlug(slug: string) {
-  return projects.find((p) => p.slug === slug)
-}
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: getDictionary(lang).breadcrumbs.home, path: localizedHref(lang, "/") },
+    { name: t.title, path: localizedHref(lang, "/casos-de-exito") },
+  ])
 
-export default function CasosDeExitoPage() {
-  const casesWithProject = casosDeExito
-    .map((c) => ({ ...c, project: getProjectBySlug(c.slug) }))
-    .filter((c): c is typeof c & { project: NonNullable<typeof c.project> } => !!c.project)
+  // Casos de éxito: slug debe existir en data/projects; category es la etiqueta del diseño
+  const casesWithProject = CASE_SLUGS.map((slug) => ({
+    slug,
+    category: t.categories[slug] ?? "",
+    project: projects.find((p) => p.slug === slug),
+  })).filter((c): c is typeof c & { project: NonNullable<typeof c.project> } => !!c.project)
 
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-white">
@@ -47,7 +39,7 @@ export default function CasosDeExitoPage() {
       <section className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pt-20 sm:pt-28 pb-16 sm:pb-20">
         <header className="mb-14">
           <h1 className="font-inter font-semibold uppercase text-[28px] leading-[1.05] sm:text-[36px] lg:text-[48px]">
-            Casos de éxito
+            {t.title}
           </h1>
         </header>
 
@@ -55,12 +47,16 @@ export default function CasosDeExitoPage() {
           {casesWithProject.map(({ slug, category, project }, index) => (
             <article key={slug} className="space-y-4">
               <h2 className="font-inter text-[15px] sm:text-[17px] font-bold uppercase text-white/95">
-                Caso de éxito {index + 1}: {project.title.split("—")[0].trim()} ({category.toUpperCase()})
+                {format(t.caseHeading, {
+                  n: String(index + 1),
+                  title: project.title.split("—")[0].trim(),
+                  category: category.toUpperCase(),
+                })}
               </h2>
               <Link
-                href={`/portfolio/${slug}`}
+                href={localizedHref(lang, `/portfolio/${slug}`)}
                 className="group relative block aspect-video w-full overflow-hidden rounded-xl border border-white/10 bg-[#0a0a0a]"
-                aria-label={`Ver caso de éxito: ${project.title}`}
+                aria-label={format(t.caseAria, { title: project.title })}
               >
                 <video
                   src={project.video}
@@ -84,18 +80,18 @@ export default function CasosDeExitoPage() {
 
           <section className="space-y-4 border-t border-white/10 pt-12">
             <h2 className="font-inter text-[13px] sm:text-[14px] font-semibold uppercase text-white/90">
-              ¿Por qué funcionan estos proyectos?
+              {t.whyTitle}
             </h2>
             <p className="text-[13px] sm:text-[14px] leading-[1.75] text-white/85">
-              En cada caso hay un objetivo claro, un mensaje que transmitir y un resultado medible: refuerzo de marca, contenido para redes, documentación del evento o impacto emocional. Trabajamos desde el briefing hasta la entrega con un enfoque narrativo y una estética coherente con la identidad del cliente, lo que hace que el vídeo no sea solo un recuerdo, sino una pieza de comunicación que suma.
+              {t.whyText}
             </p>
           </section>
 
-          <ViewMoreOnTV className="pt-2" />
+          <ViewMoreOnTV className="pt-2" lang={lang} />
         </div>
       </section>
 
-      <ContactCTA />
+      <ContactCTA lang={lang} />
     </main>
   )
 }

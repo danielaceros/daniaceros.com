@@ -1,135 +1,84 @@
 import ContactCTA from "@/components/ContactCTA"
-import { localizedMetadata } from "@/lib/seo"
+import { localizedMetadata, type LangParams } from "@/lib/seo"
+import { toLang } from "@/lib/i18n"
+import { content } from "./content"
 
-// Pendiente de traducir: en /en sale el contenido ES con noindex (ver I18N_GUIDE.md).
-export const generateMetadata = localizedMetadata({
-  title: "Política de cookies",
-  description: "Política de cookies del sitio web de Daniel Acero.",
+export const generateMetadata = localizedMetadata((lang) => ({
+  title: content[lang].metaTitle,
+  description: content[lang].metaDescription,
   path: "/politica-de-cookies",
-})
+}))
 
-export default function CookiesPage() {
+const h2ClassName = "mt-10 mb-3 font-inter font-semibold uppercase text-[14px] sm:text-[15px] text-white"
+
+export default async function CookiesPage({ params }: LangParams) {
+  const lang = toLang((await params).lang)
+  const t = content[lang]
+
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-white">
       <article className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
+        {t.notice ? (
+          <p className="mb-8 border-l border-white/20 pl-4 text-[13px] leading-[1.7] text-white/55 italic">
+            {t.notice}
+          </p>
+        ) : null}
+
         <h1 className="mb-12 font-inter font-semibold uppercase  text-[32px] sm:text-[42px] lg:text-[56px]">
-          Política de cookies
+          {t.title}
         </h1>
 
         <div className="space-y-10 text-[14px] leading-[1.7] text-white/80 sm:text-[15px]">
-          <p>
-            Esta web, titularidad de Daniel Acero Sagredo (KLIP), utiliza cookies propias y de terceros para mejorar la experiencia de navegación, analizar el uso del sitio y ofrecer contenidos adaptados a los intereses del usuario.
-          </p>
+          <p>{t.intro}</p>
 
-          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase text-[14px] sm:text-[15px] text-white">
-            1. ¿Qué son las cookies?
-          </h2>
-          <p>
-            Las cookies son pequeños archivos de texto que se almacenan en el dispositivo del usuario cuando visita una página web. Permiten recordar información sobre su visita, como el idioma preferido u otras opciones de configuración.
-          </p>
+          <h2 className={h2ClassName}>{t.what.title}</h2>
+          <p>{t.what.text}</p>
 
-          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase text-[14px] sm:text-[15px] text-white">
-            2. Tipos de cookies utilizadas
-          </h2>
+          <h2 className={h2ClassName}>{t.types.title}</h2>
           <ul className="list-disc pl-4 space-y-2">
-            <li>
-              <strong>Cookies técnicas:</strong> necesarias para el funcionamiento del sitio web y la prestación de los servicios ofrecidos.
-            </li>
-            <li>
-              <strong>Cookies de análisis:</strong> permiten analizar el comportamiento de los usuarios para mejorar la web (por ejemplo, Google Analytics).
-            </li>
-            <li>
-              <strong>Cookies publicitarias:</strong> gestionan los espacios publicitarios en base a criterios como el contenido editado o la frecuencia con la que se muestran los anuncios.
-            </li>
-            <li>
-              <strong>Cookies de redes sociales:</strong> permiten interactuar con plataformas como Instagram, Facebook o TikTok.
-            </li>
+            {t.types.items.map((item) => (
+              <li key={item.label}>
+                <strong>{item.label}</strong>{` ${item.text}`}
+              </li>
+            ))}
           </ul>
 
-          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase text-[14px] sm:text-[15px] text-white">
-            3. Cookies de terceros
-          </h2>
-          <p>
-            Este sitio web puede utilizar servicios de terceros que recopilan información con fines estadísticos, de uso del sitio web y para la prestación de otros servicios relacionados con la actividad del sitio web.
-          </p>
+          <h2 className={h2ClassName}>{t.thirdParty.title}</h2>
+          <p>{t.thirdParty.text}</p>
           <ul className="list-disc pl-4 space-y-2">
-            <li>Google Analytics</li>
-            <li>Google Ads</li>
-            <li>Meta (Facebook Pixel)</li>
-            <li>Microsoft Clarity</li>
+            {t.thirdParty.items.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
           </ul>
 
-          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase text-[14px] sm:text-[15px] text-white">
-            4. Gestión y configuración de cookies
-          </h2>
-          <p>
-            El usuario puede permitir, bloquear o eliminar las cookies instaladas en su equipo mediante la configuración de las opciones del navegador instalado en su dispositivo:
-          </p>
+          <h2 className={h2ClassName}>{t.management.title}</h2>
+          <p>{t.management.text}</p>
           <ul className="list-disc pl-4 space-y-2">
-            <li>
-              Chrome:{" "}
-              <a
-                href="https://support.google.com/chrome/answer/95647?hl=es"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline underline-offset-4 hover:text-white transition"
-              >
-                https://support.google.com/chrome/answer/95647
-              </a>
-            </li>
-            <li>
-              Safari:{" "}
-              <a
-                href="https://support.apple.com/es-es/HT201265"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline underline-offset-4 hover:text-white transition"
-              >
-                https://support.apple.com/es-es/HT201265
-              </a>
-            </li>
-            <li>
-              Firefox:{" "}
-              <a
-                href="https://support.mozilla.org/es/kb/impedir-que-los-sitios-web-guarden-cookies"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline underline-offset-4 hover:text-white transition"
-              >
-                https://support.mozilla.org/es/kb/impedir-que-los-sitios-web-guarden-cookies
-              </a>
-            </li>
-            <li>
-              Edge:{" "}
-              <a
-                href="https://support.microsoft.com/es-es/help/4027947"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline underline-offset-4 hover:text-white transition"
-              >
-                https://support.microsoft.com/es-es/help/4027947
-              </a>
-            </li>
+            {t.management.browsers.map((browser) => (
+              <li key={browser.name}>
+                {`${browser.name}:`}{" "}
+                <a
+                  href={browser.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline underline-offset-4 hover:text-white transition"
+                >
+                  {browser.label}
+                </a>
+              </li>
+            ))}
           </ul>
 
-          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase text-[14px] sm:text-[15px] text-white">
-            5. Consentimiento
-          </h2>
-          <p>
-            Al acceder a este sitio web por primera vez, el usuario verá un aviso sobre el uso de cookies. Si continúa navegando, se considerará que acepta su uso conforme a lo descrito en la presente política.
-          </p>
+          <h2 className={h2ClassName}>{t.consent.title}</h2>
+          <p>{t.consent.text}</p>
 
-          <h2 className="mt-10 mb-3 font-inter font-semibold uppercase text-[14px] sm:text-[15px] text-white">
-            6. Actualización de la política de cookies
-          </h2>
-          <p>
-            El titular de este sitio web se reserva el derecho a modificar la presente política de cookies en función de exigencias legales o técnicas. Se recomienda al usuario revisar periódicamente esta política.
-          </p>
+          <h2 className={h2ClassName}>{t.updates.title}</h2>
+          <p>{t.updates.text}</p>
         </div>
       </article>
 
       <div className="mt-24">
-        <ContactCTA />
+        <ContactCTA lang={lang} />
       </div>
     </main>
   )
