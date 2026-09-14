@@ -224,7 +224,8 @@ export default function Header({ lang, notFound = false }: HeaderProps) {
                 {navItems.map((item) => {
                   const isActive = pathname === item.href
                   return (
-                    <li key={item.href}>
+                    // flex: sin él, el <a> inline se asienta en la línea base del <li> (16px) y queda ~3px más bajo que el logo y el CTA.
+                    <li key={item.href} className="flex">
                       <Link
                         href={localizedHref(lang, item.href)}
                         className={clsx(
@@ -243,7 +244,7 @@ export default function Header({ lang, notFound = false }: HeaderProps) {
                     </li>
                   )
                 })}
-                <li>
+                <li className="flex">
                   <Link
                     href={localizedHref(lang, "/contacto")}
                     className="group relative rounded border border-white/14 bg-white/[0.03] px-3 py-2 font-inter text-[10px] uppercase text-white/92 transition-all duration-300 hover:border-white/25 hover:bg-white/[0.06] hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black xl:text-[11px]"
