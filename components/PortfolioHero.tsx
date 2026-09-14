@@ -23,8 +23,8 @@ export default function PortfolioHero({ lang = "es" }: { lang?: Lang }) {
     >
       <motion.h1
         variants={{
-          hidden: { opacity: 0, y: 24 },
-          visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: ease.expo } },
+          hidden: { y: 18 },
+          visible: { y: 0, transition: { duration: 0.6, ease: ease.expo } },
         }}
         className="mb-8 sm:mb-10 font-inter font-semibold uppercase  text-[28px] leading-[1.05] sm:text-[48px] lg:text-[64px]"
       >
@@ -34,8 +34,8 @@ export default function PortfolioHero({ lang = "es" }: { lang?: Lang }) {
       <div className="max-w-3xl space-y-5 text-white/78">
         <motion.p
           variants={{
-            hidden: { opacity: 0, y: 16 },
-            visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: ease.expo } },
+            hidden: { y: 18 },
+            visible: { y: 0, transition: { duration: 0.5, ease: ease.expo } },
           }}
           className="font-inter text-[13px] sm:text-[14px] leading-[1.6]"
         >
@@ -43,8 +43,8 @@ export default function PortfolioHero({ lang = "es" }: { lang?: Lang }) {
         </motion.p>
         <motion.p
           variants={{
-            hidden: { opacity: 0, y: 16 },
-            visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: ease.expo } },
+            hidden: { y: 18 },
+            visible: { y: 0, transition: { duration: 0.5, ease: ease.expo } },
           }}
           className="font-inter text-[13px] sm:text-[14px] leading-[1.6]"
         >
