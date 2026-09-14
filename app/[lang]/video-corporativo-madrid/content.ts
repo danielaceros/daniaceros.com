@@ -12,7 +12,7 @@ const link = (href: string, label: string): InlineLink => ({ href, label })
 const es = {
   metaTitle: "Productora y agencia de vídeo corporativo en Madrid",
   metaDescription:
-    "Productora de vídeos corporativos en Madrid con trato directo y enfoque comercial. Yo y mi equipo llevamos propuesta, rodaje, edición, versiones y entrega para web, ventas y campañas.",
+    "Productora de vídeos corporativos en Madrid con trato directo y enfoque comercial: propuesta, rodaje, edición, versiones y entrega para web, ventas y campañas.",
   keywords: [
     "productora de vídeos corporativos en madrid",
     "agencia de vídeo corporativo en madrid",
@@ -200,7 +200,7 @@ const es = {
 const en: typeof es = {
   metaTitle: "Corporate Video Production Company & Agency in Madrid",
   metaDescription:
-    "Corporate video production company in Madrid with direct contact and a business-driven approach. My team and I handle the proposal, filming, editing, versions and delivery for web, sales and campaigns.",
+    "Corporate video production company in Madrid with direct contact and a business focus: proposal, filming, editing, versions and delivery for web, sales, campaigns.",
   keywords: [
     "corporate video production madrid",
     "corporate video production company madrid",

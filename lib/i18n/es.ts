@@ -43,6 +43,8 @@ const es = {
     },
     project: {
       notFoundTitle: "Proyecto no encontrado",
+      /** <title> de las fichas de portfolio (el layout añade " | Daniel Acero"). */
+      titleTemplate: "{title}: proyecto audiovisual",
       fallbackDescription: "Proyecto audiovisual corporativo de Daniel Acero.",
       keywords: ["video corporativo", "produccion audiovisual", "filmmaker madrid"],
     },

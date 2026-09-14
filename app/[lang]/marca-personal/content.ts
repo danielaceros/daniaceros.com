@@ -112,7 +112,7 @@ const en: typeof es = {
   meta: {
     title: "Monthly content package for personal brands",
     description:
-      "One session a month at the studio. You walk away with the month's reels, fully edited. No space of your own needed. No improvising. Just show up and read. From €620/month.",
+      "One session a month at the studio and you leave with the month's reels, edited. No space of your own, no improvising: just show up and read. From €620/month.",
     keywords: [
       "monthly personal brand content package",
       "monthly reels personal brand madrid",

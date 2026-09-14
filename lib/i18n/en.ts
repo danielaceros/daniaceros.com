@@ -41,6 +41,7 @@ const en: Dictionary = {
     },
     project: {
       notFoundTitle: "Project not found",
+      titleTemplate: "{title}: video project",
       fallbackDescription: "Corporate video project by Daniel Acero.",
       keywords: ["corporate video", "video production", "filmmaker madrid"],
     },

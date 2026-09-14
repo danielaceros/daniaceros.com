@@ -50,7 +50,7 @@ const es = {
 const en: typeof es = {
   metaTitle: "Video Production Services for Companies and Brands in Madrid",
   metaDescription:
-    "Corporate video production services in Madrid for companies and institutions: filming, editing and content for websites, social media and business communications.",
+    "Corporate video services in Madrid for companies and institutions: filming, editing and content for websites, social media and business communications.",
   keywords: [
     "video production services madrid",
     "corporate video production madrid",

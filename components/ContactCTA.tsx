@@ -12,6 +12,8 @@ type Props = {
   mobileFormFirst?: boolean
   hideFooter?: boolean
   hideMobileContactInfo?: boolean
+  /** Etiqueta del título. "h1" solo en /contacto (única cabecera de la página); el aspecto no cambia. */
+  headingAs?: "h1" | "h2"
 }
 
 // Pie: filas de enlaces en línea, 12px y zona táctil de 44px (antes 11px y 17px de alto).
@@ -27,22 +29,24 @@ export default function ContactCTA({
   mobileFormFirst = false,
   hideFooter = false,
   hideMobileContactInfo = false,
+  headingAs = "h2",
 }: Props) {
   const t = getDictionary(lang).contact
   const WHATSAPP_URL = whatsappUrl(t.whatsappMessage)
+  const Heading = headingAs
 
   return (
     <section
       data-lux
       className={`cinematic-reveal mx-auto mt-20 max-w-5xl px-4 pb-24 text-center sm:mt-24 sm:px-6 sm:pb-32 ${sectionClassName ?? ""}`}
     >
-      <h2
+      <Heading
         data-lux
         style={{ "--lux-delay": "90ms" } as CSSProperties}
         className="cinematic-reveal-delay-1 mb-4 font-display text-[30px] font-semibold uppercase leading-[1.02] sm:mb-5 sm:text-[40px] lg:text-[48px]"
       >
         {t.title}
-      </h2>
+      </Heading>
 
       <p
         data-lux

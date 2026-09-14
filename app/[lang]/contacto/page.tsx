@@ -17,7 +17,8 @@ export default async function ContactPage({ params }: LangParams) {
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-white">
       <ContactPortfolioMarquee lang={lang} />
-      <ContactCTA lang={lang} />
+      {/* La página no tenía H1: el título del bloque de contacto pasa a ser la cabecera principal. */}
+      <ContactCTA lang={lang} headingAs="h1" />
     </main>
   )
 }

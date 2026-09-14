@@ -39,6 +39,20 @@ export function buildBreadcrumbSchema(items: BreadcrumbEntry[]) {
 }
 
 /**
+ * Recorta un texto a meta description (≤ max caracteres) sin cambiar su sentido: primero intenta
+ * cortar en el último final de frase; si la frase queda demasiado corta, corta en la última palabra y añade "…".
+ */
+export function toMetaDescription(text: string, max = 158): string {
+  const clean = text.replace(/\s+/g, " ").trim()
+  if (clean.length <= max) return clean
+  const slice = clean.slice(0, max)
+  const sentenceEnd = Math.max(slice.lastIndexOf(". "), slice.lastIndexOf(": "))
+  if (sentenceEnd >= 80) return slice.slice(0, sentenceEnd + 1).replace(/:$/, ".")
+  const lastSpace = slice.slice(0, max - 1).lastIndexOf(" ")
+  return `${slice.slice(0, lastSpace).replace(/[,;:.\s]+$/, "")}…`
+}
+
+/**
  * Service JSON-LD de una landing de servicio. `path` = ruta ESPAÑOLA sin prefijo.
  * provider = el ProfessionalService global (BUSINESS_ID, definido en RootDocument).
  */

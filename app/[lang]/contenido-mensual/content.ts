@@ -7,7 +7,7 @@ const es = {
   meta: {
     title: "Pack mensual de contenido para clínicas",
     description:
-      "Tus pacientes te buscan en Instagram antes de pedir cita. En 2 horas grabamos los 12 reels de tu mes. Editados, con subtítulos, listos para publicar. Sin permanencia. Desde 590€/mes.",
+      "Tus pacientes te buscan en Instagram antes de pedir cita. En 2 horas grabamos tus 12 reels del mes, editados y con subtítulos. Sin permanencia. Desde 590€/mes.",
     keywords: [
       "contenido para clínicas",
       "marketing para clínicas madrid",
@@ -169,7 +169,7 @@ const en: typeof es = {
   meta: {
     title: "Monthly content package for clinics",
     description:
-      "Your patients look you up on Instagram before booking an appointment. In 2 hours we film your 12 reels for the month. Edited, subtitled and ready to post. No long-term contract. From €590/month.",
+      "Patients look you up on Instagram before booking. In 2 hours we film your 12 reels for the month, edited and subtitled. No long-term contract. From €590/month.",
     keywords: [
       "content for clinics",
       "clinic marketing madrid",
