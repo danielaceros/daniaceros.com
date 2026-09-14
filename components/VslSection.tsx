@@ -17,10 +17,16 @@
 // Las URLs salen de lib/media.ts (VSL[lang]); si es null la sección no existe.
 
 import { useCallback, useEffect, useRef, useState } from "react"
-import type { CSSProperties, KeyboardEvent as ReactKeyboardEvent, PointerEvent as ReactPointerEvent } from "react"
+import type {
+  CSSProperties,
+  KeyboardEvent as ReactKeyboardEvent,
+  MouseEvent as ReactMouseEvent,
+  PointerEvent as ReactPointerEvent,
+} from "react"
+import { preconnect, preload } from "react-dom"
 import type Hls from "hls.js"
 import { getDictionary, type Lang } from "@/lib/i18n"
-import { VSL } from "@/lib/media"
+import { BLOB_ORIGIN, VSL, optimizedPoster } from "@/lib/media"
 import { CONTACT_EMAIL, whatsappUrl } from "@/lib/contact"
 import { trackEvent } from "@/lib/analytics"
 
@@ -114,17 +120,22 @@ export default function VslSection({
     if (loadPromiseRef.current) return loadPromiseRef.current
     loadPromiseRef.current = (async () => {
       try {
-        const { default: HlsLib } = await import("hls.js")
+        // Build "light" (sin subtítulos, pistas de audio alternativas ni DRM, que el VSL no usa): ~40 % menos JS.
+        const { default: HlsLib } = await import("hls.js/light")
         if (HlsLib.isSupported()) {
           const hls = new HlsLib({
-            capLevelToPlayerSize: false,
+            // Tope de calidad según el tamaño real del reproductor × devicePixelRatio (ResizeObserver): en
+            // una caja de 378 px no se baja el 4K; en pantalla completa vuelve a subir. Se desactiva
+            // mientras haya una calidad elegida a mano (chooseLevel).
+            capLevelToPlayerSize: true,
             startLevel: -1,
             abrEwmaDefaultEstimate: 6_000_000,
             abrBandWidthUpFactor: 0.8,
             abrBandWidthFactor: 0.9,
-            maxBufferLength: 30,
-            maxMaxBufferLength: 60,
-            backBufferLength: 30,
+            // Buffer corto: menos MB por delante si la persona se va a mitad de vídeo y menos memoria.
+            maxBufferLength: 12,
+            maxMaxBufferLength: 30,
+            backBufferLength: 15,
           })
           hlsRef.current = hls
           await new Promise<void>((resolve) => {
@@ -236,9 +247,41 @@ export default function VslSection({
     void video.play().catch(() => {})
   }, [lang])
 
-  const onEndCta = (method: "form" | "whatsapp" | "email") => {
+  const onEndCta = (method: "form" | "whatsapp" | "email", event?: ReactMouseEvent<HTMLAnchorElement>) => {
     trackEvent("vsl_cta_click", { vsl_lang: lang, method })
-    if (method === "form" && document.fullscreenElement) void document.exitFullscreen()
+    if (method !== "form") return
+    const exiting = document.fullscreenElement ? document.exitFullscreen().catch(() => {}) : Promise.resolve()
+    // Ancla en la misma página: scroll explícito (como Hero.tsx). En WebKit el salto por ancla + scroll
+    // suave + el montaje del iframe del formulario dejaba la página sin llegar a #contacto.
+    const target = formHref.startsWith("#") ? document.getElementById(formHref.slice(1)) : null
+    if (!target || !event) return
+    event.preventDefault()
+    void exiting.then(() => {
+      target.scrollIntoView({ behavior: "smooth", block: "start" })
+      window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}${formHref}`)
+      // Al montarse/cargar el iframe (LazyContactForm) la posición puede moverse: se vuelve a alinear
+      // si la persona sigue en la zona del formulario.
+      const realign = () => {
+        const top = target.getBoundingClientRect().top
+        if (Math.abs(top) > 4 && Math.abs(top) < window.innerHeight) {
+          target.scrollIntoView({ behavior: "smooth", block: "start" })
+        }
+      }
+      const watchIframe = (iframe: HTMLIFrameElement) => iframe.addEventListener("load", realign, { once: true })
+      const existing = target.querySelector("iframe")
+      if (existing) {
+        watchIframe(existing)
+        return
+      }
+      const observer = new MutationObserver(() => {
+        const iframe = target.querySelector("iframe")
+        if (!iframe) return
+        observer.disconnect()
+        watchIframe(iframe)
+      })
+      observer.observe(target, { childList: true, subtree: true })
+      window.setTimeout(() => observer.disconnect(), 10_000)
+    })
   }
 
   const toggleMute = useCallback(() => {
@@ -263,7 +306,11 @@ export default function VslSection({
 
   const chooseLevel = useCallback((index: number) => {
     const hls = hlsRef.current
-    if (hls) hls.currentLevel = index
+    if (hls) {
+      // Elección manual (p. ej. 4K): sin tope por tamaño. "Auto" (-1) vuelve a limitar al reproductor.
+      hls.capLevelToPlayerSize = index === -1
+      hls.currentLevel = index
+    }
     setSelectedLevel(index)
     setQualityOpen(false)
   }, [])
@@ -420,6 +467,13 @@ export default function VslSection({
 
   if (!media) return null
 
+  // Home (inline): el póster del VSL es el LCP → optimizado y precargado con prioridad alta.
+  // preconnect al Blob sin y con CORS (el <video> usa la conexión con credenciales; hls.js, fetch anónimo).
+  const posterUrl = optimizedPoster(media.poster, 1080) ?? media.poster
+  preconnect(BLOB_ORIGIN)
+  preconnect(BLOB_ORIGIN, { crossOrigin: "anonymous" })
+  if (inline) preload(posterUrl, { as: "image", fetchPriority: "high" })
+
   const progress = duration ? (currentTime / duration) * 100 : 0
   const buffered = duration ? Math.min(100, (bufferedEnd / duration) * 100) : 0
   const showUi = controlsVisible || !playing || qualityOpen
@@ -468,7 +522,7 @@ export default function VslSection({
         >
           <video
             ref={videoRef}
-            poster={media.poster}
+            poster={posterUrl}
             preload="none"
             playsInline
             aria-label={t.videoLabel}
@@ -521,7 +575,7 @@ export default function VslSection({
               <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
                 <a
                   href={formHref}
-                  onClick={() => onEndCta("form")}
+                  onClick={(event) => onEndCta("form", event)}
                   className={`${endPill} bg-white text-[#0a0a0a] shadow-[0_14px_36px_-16px_rgba(255,255,255,0.45)]`}
                 >
                   <svg aria-hidden viewBox="0 0 24 24" className={endIcon} strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
