@@ -259,15 +259,40 @@ export default function VslSection({
     void exiting.then(() => {
       target.scrollIntoView({ behavior: "smooth", block: "start" })
       window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}${formHref}`)
-      // Al montarse/cargar el iframe (LazyContactForm) la posición puede moverse: se vuelve a alinear
-      // si la persona sigue en la zona del formulario.
+      // Mientras dura el scroll suave pueden cambiar alturas por encima (imágenes diferidas, montaje del
+      // iframe del formulario). Chrome lo compensa con scroll anchoring; WebKit no, y se quedaba corto.
+      // Cada vez que el scroll se detiene, si #contacto no está arriba, se vuelve a alinear (máx. 4 s y
+      // 4 correcciones). Se abandona en cuanto la persona toca la rueda, la pantalla o el teclado.
+      let stopped = false
+      let corrections = 0
+      let lastY = window.scrollY
+      const stop = () => {
+        stopped = true
+        window.clearInterval(timer)
+        window.removeEventListener("wheel", stop)
+        window.removeEventListener("touchstart", stop)
+        window.removeEventListener("keydown", stop)
+      }
       const realign = () => {
+        if (stopped) return
         const top = target.getBoundingClientRect().top
-        if (Math.abs(top) > 4 && Math.abs(top) < window.innerHeight) {
+        if (Math.abs(top) > 4 && Math.abs(top) < window.innerHeight && corrections < 4) {
+          corrections += 1
           target.scrollIntoView({ behavior: "smooth", block: "start" })
         }
       }
-      const watchIframe = (iframe: HTMLIFrameElement) => iframe.addEventListener("load", realign, { once: true })
+      const timer = window.setInterval(() => {
+        const y = window.scrollY
+        if (y === lastY) realign()
+        lastY = y
+      }, 250)
+      window.setTimeout(stop, 4000)
+      window.addEventListener("wheel", stop, { passive: true, once: true })
+      window.addEventListener("touchstart", stop, { passive: true, once: true })
+      window.addEventListener("keydown", stop, { once: true })
+      // Si el iframe termina de cargar después, una última alineación.
+      const watchIframe = (iframe: HTMLIFrameElement) =>
+        iframe.addEventListener("load", () => { if (!stopped) realign() }, { once: true })
       const existing = target.querySelector("iframe")
       if (existing) {
         watchIframe(existing)
