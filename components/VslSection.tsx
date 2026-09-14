@@ -125,8 +125,9 @@ export default function VslSection({
         if (HlsLib.isSupported()) {
           const hls = new HlsLib({
             // Tope de calidad según el tamaño real del reproductor × devicePixelRatio (ResizeObserver): en
-            // una caja de 378 px no se baja el 4K; en pantalla completa vuelve a subir. Se desactiva
-            // mientras haya una calidad elegida a mano (chooseLevel).
+            // una caja de 378 px no se baja el 4K; en pantalla completa vuelve a subir. Solo limita el modo
+            // automático: una calidad elegida a mano (p. ej. 4K) se aplica igual (hls.js usa el nivel manual
+            // sin pasar por autoLevelCapping), así que el tope nunca se desactiva y "Auto" vuelve ya limitado.
             capLevelToPlayerSize: true,
             startLevel: -1,
             abrEwmaDefaultEstimate: 6_000_000,
@@ -261,8 +262,9 @@ export default function VslSection({
       window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}${formHref}`)
       // Mientras dura el scroll suave pueden cambiar alturas por encima (imágenes diferidas, montaje del
       // iframe del formulario). Chrome lo compensa con scroll anchoring; WebKit no, y se quedaba corto.
-      // Cada vez que el scroll se detiene, si #contacto no está arriba, se vuelve a alinear (máx. 4 s y
-      // 4 correcciones). Se abandona en cuanto la persona toca la rueda, la pantalla o el teclado.
+      // Cada vez que el scroll se detiene, si #contacto no está arriba, se vuelve a alinear (máx. 6 s y
+      // 4 correcciones). Si la página aún es demasiado corta para llegar (el formulario no ha crecido),
+      // se espera sin gastar corrección. Se abandona si la persona usa rueda, pantalla o teclado.
       let stopped = false
       let corrections = 0
       let lastY = window.scrollY
@@ -276,17 +278,18 @@ export default function VslSection({
       const realign = () => {
         if (stopped) return
         const top = target.getBoundingClientRect().top
-        if (Math.abs(top) > 4 && Math.abs(top) < window.innerHeight && corrections < 4) {
-          corrections += 1
-          target.scrollIntoView({ behavior: "smooth", block: "start" })
-        }
+        if (Math.abs(top) <= 4 || Math.abs(top) >= window.innerHeight || corrections >= 4) return
+        const maxY = document.documentElement.scrollHeight - window.innerHeight
+        if (top > 0 && window.scrollY >= maxY - 1) return
+        corrections += 1
+        target.scrollIntoView({ behavior: "smooth", block: "start" })
       }
       const timer = window.setInterval(() => {
         const y = window.scrollY
         if (y === lastY) realign()
         lastY = y
       }, 250)
-      window.setTimeout(stop, 4000)
+      window.setTimeout(stop, 6000)
       window.addEventListener("wheel", stop, { passive: true, once: true })
       window.addEventListener("touchstart", stop, { passive: true, once: true })
       window.addEventListener("keydown", stop, { once: true })
@@ -331,11 +334,7 @@ export default function VslSection({
 
   const chooseLevel = useCallback((index: number) => {
     const hls = hlsRef.current
-    if (hls) {
-      // Elección manual (p. ej. 4K): sin tope por tamaño. "Auto" (-1) vuelve a limitar al reproductor.
-      hls.capLevelToPlayerSize = index === -1
-      hls.currentLevel = index
-    }
+    if (hls) hls.currentLevel = index
     setSelectedLevel(index)
     setQualityOpen(false)
   }, [])
