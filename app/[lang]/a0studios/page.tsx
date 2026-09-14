@@ -29,8 +29,11 @@ export default async function A0StudiosPage({ params }: LangParams) {
     inLanguage: SCHEMA_LANGUAGE[lang],
     about: {
       "@type": "Organization",
+      // Mismo @id que el negocio declarado en a0studios.es, para que buscadores/IA lo unan en una entidad.
+      "@id": "https://www.a0studios.es/#business",
       name: "A0Studios",
-      alternateName: "Acero Studios",
+      // "Rooftop Content Studio" = nombre anterior del estudio (rooftopcontentstudio.es → a0studios.es).
+      alternateName: ["Acero Studios", "Rooftop Content Studio"],
       url: A0_URL,
       founder: { "@id": PERSON_ID },
       address: {

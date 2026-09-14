@@ -130,7 +130,7 @@ export default function ContactCTA({
               rel="noopener noreferrer"
               className={FOOTER_LINK}
             >
-              @danielaceros
+              @daniaceros
             </Link>
             <span aria-hidden>·</span>
             <Link
