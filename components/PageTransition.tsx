@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation"
 import clsx from "clsx"
+import { stripLocale } from "@/lib/i18n"
 
 const flushTopRoutes = new Set([
   "/aviso-legal",
@@ -13,7 +14,7 @@ const flushTopRoutes = new Set([
 
 export default function PageTransition({ children }: { children: React.ReactNode }) {
   const pathname = usePathname()
-  const isFlushTopRoute = flushTopRoutes.has(pathname)
+  const isFlushTopRoute = flushTopRoutes.has(stripLocale(pathname).path)
 
   return (
     <div className={clsx(!isFlushTopRoute && "pt-[5.25rem] sm:pt-[5.5rem] lg:pt-24")}>

@@ -3,21 +3,34 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { useEffect, useRef, useState } from "react"
+import { Fragment, useEffect, useRef, useState } from "react"
 import clsx from "clsx"
+import {
+  HREFLANG,
+  LANGUAGE_NAMES,
+  LOCALES,
+  getDictionary,
+  localizedHref,
+  stripLocale,
+  switchLocalePath,
+  type Dictionary,
+  type Lang,
+} from "@/lib/i18n"
+import { persistLocale } from "@/lib/i18n/client"
 
-const navItems = [
-  { label: "Portfolio", href: "/portfolio" },
-  { label: "Sobre mí", href: "/sobre-mi" },
-  { label: "Clientes", href: "/clientes" },
-  { label: "Casos de éxito", href: "/casos-de-exito" },
-  { label: "Servicios", href: "/servicios" },
-  { label: "Precios", href: "/precios" },
-  { label: "Proceso", href: "/proceso" },
-  { label: "Contratar", href: "/contratar" },
-  { label: "FAQ", href: "/faq" },
-  { label: "Blog", href: "/blog" },
-  { label: "Contacto", href: "/contacto" },
+// `href` = ruta española sin prefijo; se localiza con localizedHref(lang, href).
+const navItems: { key: keyof Dictionary["header"]["nav"]; href: string }[] = [
+  { key: "portfolio", href: "/portfolio" },
+  { key: "about", href: "/sobre-mi" },
+  { key: "clients", href: "/clientes" },
+  { key: "caseStudies", href: "/casos-de-exito" },
+  { key: "services", href: "/servicios" },
+  { key: "pricing", href: "/precios" },
+  { key: "process", href: "/proceso" },
+  { key: "hire", href: "/contratar" },
+  { key: "faq", href: "/faq" },
+  { key: "blog", href: "/blog" },
+  { key: "contact", href: "/contacto" },
 ]
 
 const headerHiddenRoutes = new Set([
@@ -28,8 +41,70 @@ const headerHiddenRoutes = new Set([
   "/tv",
 ])
 
-export default function Header() {
-  const pathname = usePathname()
+type LanguageSwitcherProps = {
+  lang: Lang
+  pathname: string
+  label: string
+  variant: "desktop" | "mobile"
+}
+
+// Selector ES | EN. Enlace normal (<a>, recarga completa) para que <html lang>
+// y todo el árbol cambien de idioma; antes de navegar fija la cookie
+// NEXT_LOCALE, que el proxy respeta siempre.
+function LanguageSwitcher({ lang, pathname, label, variant }: LanguageSwitcherProps) {
+  return (
+    <div
+      role="group"
+      aria-label={label}
+      className={clsx(
+        "flex items-center font-inter uppercase",
+        variant === "desktop" ? "gap-1 text-[10px] xl:text-[11px]" : "gap-3 text-[14px] sm:text-[15px]"
+      )}
+    >
+      {LOCALES.map((locale, index) => {
+        const isCurrent = locale === lang
+        return (
+          <Fragment key={locale}>
+            {index > 0 ? (
+              <span aria-hidden className="text-white/25">
+                |
+              </span>
+            ) : null}
+            <a
+              href={switchLocalePath(pathname, locale)}
+              hrefLang={HREFLANG[locale]}
+              lang={locale}
+              aria-label={LANGUAGE_NAMES[locale]}
+              aria-current={isCurrent ? "true" : undefined}
+              onClick={() => persistLocale(locale)}
+              className={clsx(
+                "rounded transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black",
+                variant === "desktop" ? "py-1" : "flex min-h-[44px] min-w-[44px] items-center justify-center px-1",
+                isCurrent ? "text-white" : "text-white/45 hover:text-white/90"
+              )}
+            >
+              {locale}
+            </a>
+          </Fragment>
+        )
+      })}
+    </div>
+  )
+}
+
+type HeaderProps = {
+  lang: Lang
+  /** 404 global: el pathname no es fiable (/_not-found al prerenderizar), así que el selector lleva a la home de cada idioma. */
+  notFound?: boolean
+}
+
+export default function Header({ lang, notFound = false }: HeaderProps) {
+  const rawPathname = usePathname()
+  // En el HTML prerenderizado el pathname llega como /es/... (ruta interna
+  // reescrita por el proxy) y en el cliente como /...: se normaliza siempre.
+  const pathname = stripLocale(rawPathname).path
+  const switcherPath = notFound ? "/" : pathname
+  const t = getDictionary(lang).header
   const hideHeader = headerHiddenRoutes.has(pathname)
   const isHablemosPage = pathname === "/hablemos"
   const [hidden, setHidden] = useState(false)
@@ -93,13 +168,15 @@ export default function Header() {
     return () => window.removeEventListener("keydown", onKeyDown)
   }, [])
 
+  const hablemosHref = localizedHref(lang, "/hablemos")
+
   const handleHablemosContactClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
     if (!isHablemosPage) return
     event.preventDefault()
     const contactSection = document.getElementById("contacto")
     if (!contactSection) return
     contactSection.scrollIntoView({ behavior: "smooth", block: "start" })
-    window.history.replaceState(null, "", "/hablemos#contacto")
+    window.history.replaceState(null, "", `${hablemosHref}#contacto`)
   }
 
   if (hideHeader) return null
@@ -121,23 +198,23 @@ export default function Header() {
           {isHablemosPage ? (
             <>
               <Link
-                href="/hablemos"
+                href={hablemosHref}
                 className="flex min-h-[44px] min-w-[44px] items-center rounded font-inter text-[10px] font-medium uppercase text-white/88 transition-colors duration-300 hover:text-white sm:text-[11px] focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
               >
                 daniel acero©
               </Link>
               <Link
-                href="/hablemos#contacto"
+                href={`${hablemosHref}#contacto`}
                 onClick={handleHablemosContactClick}
                 className="group relative flex min-h-[44px] items-center rounded border border-white/14 bg-white/[0.03] px-3 py-2 font-inter text-[10px] uppercase text-white/92 transition-all duration-300 hover:border-white/25 hover:bg-white/[0.06] hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black xl:text-[11px]"
               >
-                Cuéntame tu proyecto
+                {t.cta}
               </Link>
             </>
           ) : (
             <>
               <Link
-                href="/"
+                href={localizedHref(lang, "/")}
                 className="flex min-h-[44px] min-w-[44px] items-center rounded font-inter text-[10px] font-medium uppercase text-white/88 transition-colors duration-300 hover:text-white sm:text-[11px] focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
               >
                 daniel acero©
@@ -149,13 +226,13 @@ export default function Header() {
                   return (
                     <li key={item.href}>
                       <Link
-                        href={item.href}
+                        href={localizedHref(lang, item.href)}
                         className={clsx(
                           "group relative rounded py-1 font-inter text-[10px] uppercase text-white/72 transition-colors duration-300 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black xl:text-[11px]",
                           isActive && "text-white"
                         )}
                       >
-                        {item.label}
+                        {t.nav[item.key]}
                         <span
                           className={clsx(
                             "absolute bottom-0 left-0 h-px bg-white transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)]",
@@ -168,17 +245,28 @@ export default function Header() {
                 })}
                 <li>
                   <Link
-                    href="/contacto"
+                    href={localizedHref(lang, "/contacto")}
                     className="group relative rounded border border-white/14 bg-white/[0.03] px-3 py-2 font-inter text-[10px] uppercase text-white/92 transition-all duration-300 hover:border-white/25 hover:bg-white/[0.06] hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black xl:text-[11px]"
                   >
-                    Cuéntame tu proyecto
+                    {t.cta}
                   </Link>
+                </li>
+                {/* Margen negativo: el selector va pegado al CTA para no quitar
+                    ancho al resto del menú (en ES a 1280px iba justo y hacía
+                    saltar de línea "Sobre mí" / "Casos de éxito"). */}
+                <li className="-ml-3 xl:-ml-5">
+                  <LanguageSwitcher
+                    lang={lang}
+                    pathname={switcherPath}
+                    label={t.languageSwitcherLabel}
+                    variant="desktop"
+                  />
                 </li>
               </ul>
 
               <button
                 type="button"
-                aria-label={mobileOpen ? "Cerrar menú" : "Abrir menú"}
+                aria-label={mobileOpen ? t.closeMenu : t.openMenu}
                 aria-expanded={mobileOpen}
                 onClick={() => setMobileOpen((o) => !o)}
                 className="flex h-11 w-11 flex-col justify-center gap-1.5 rounded-lg text-white/90 transition-colors duration-300 hover:bg-white/5 hover:text-white lg:hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
@@ -222,27 +310,33 @@ export default function Header() {
                     className="translate-y-0 opacity-100 transition-all duration-300"
                   >
                     <Link
-                      href={item.href}
+                      href={localizedHref(lang, item.href)}
                       onClick={() => setMobileOpen(false)}
                       className={clsx(
                         "py-2 font-inter text-[18px] uppercase transition-colors duration-300 sm:text-[21px]",
                         isActive ? "text-white" : "text-white/70 hover:text-white"
                       )}
                     >
-                      {item.label}
+                      {t.nav[item.key]}
                     </Link>
                   </div>
                 )
               })}
               <div>
                 <Link
-                  href="/contacto"
+                  href={localizedHref(lang, "/contacto")}
                   onClick={() => setMobileOpen(false)}
                   className="flex min-h-[44px] items-center rounded border border-white/15 bg-white/[0.03] px-5 py-3 font-inter text-[16px] uppercase text-white transition-all duration-300 hover:border-white/30 hover:bg-white/[0.06] hover:opacity-95 sm:text-[18px]"
                 >
-                  Cuéntame tu proyecto
+                  {t.cta}
                 </Link>
               </div>
+              <LanguageSwitcher
+                lang={lang}
+                pathname={switcherPath}
+                label={t.languageSwitcherLabel}
+                variant="mobile"
+              />
           </nav>
         </div>
       )}
