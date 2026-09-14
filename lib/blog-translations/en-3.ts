@@ -3406,4 +3406,237 @@ export const enPart3: Record<string, BlogPostTranslation> = {
       },
     ],
   },
+  "video-corporativo-sector-publico": {
+    title: "Corporate video for the public sector: what changes compared with private companies",
+    description:
+      "What changes when the client for a corporate video is a public administration: the approval chain, institutional tone, timelines and accessibility, compared with a project for a private company.",
+    readingTime: "4 min read",
+    category: "Guide",
+    tags: [
+      "corporate video",
+      "public sector",
+      "public administration",
+      "public sector communications",
+      "government video",
+      "public procurement",
+    ],
+    keyword: "public sector corporate video",
+    excerpt:
+      "Filming for a public administration isn't the same as filming for a private company: approval times, tone and who you're accountable to all change. Here's what's different and how I organize it.",
+    seoTitle: "Public Sector Corporate Video | Daniel Acero",
+    metaDescription:
+      "Corporate video for the public sector: what changes compared with private companies, how the script gets approved and which timelines and accessibility requirements to plan for.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "The first time I filmed for a city council, I realized the process was nothing like working with a private company. There wasn't a single point of contact making decisions on the fly: there was a communications officer, a press chief and, finally, a political sign-off that reviewed every line of the script before the shoot was approved. Since then I handle these projects on a different schedule from the one I use with a small business or a private brand.",
+      },
+      {
+        type: "paragraph",
+        text: "Working with public administrations (city councils, regional government departments, autonomous agencies, public universities) follows a different logic from working with a company. It isn't inherently worse or slower, but if you treat the project like a standard corporate video, you'll run into timelines you didn't expect and approvals that don't depend on a single person. The fiscal calendar matters too: if the project is paid for out of the current year's budget, there's a hard closing deadline you can't miss.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-publico/hero.webp",
+        alt: "Facade of a white stone government building during the day",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "What it is and why it matters" },
+      {
+        type: "paragraph",
+        text: "When I talk about corporate video for the public sector, I mean institutional pieces: presenting a strategic plan, an agency's annual report, a campaign for a public service, a welcome video for new civil servants or coverage of a publicly funded conference. The goal is almost never to sell directly; it's to inform, report on how public resources have been managed or explain a service to citizens.",
+      },
+      {
+        type: "paragraph",
+        text: "It's important to understand this from the start because it changes the editorial criteria. For a private company the video can be more commercial, with a strong brand voice. For a public administration the tone has to be neutral, avoid any partisan reading and be accessible to every citizen, not just the brand's usual audience.",
+      },
+      {
+        type: "paragraph",
+        text: "The approval chain changes too. With a small business I can sign off a script with the manager on a single call. In a public administration the script usually goes through communications, through the technical department supplying the data and, in many cases, through the minister's or mayor's office. Building that into the quote avoids timeline surprises, and it's worth asking at the first meeting whether the project needs to go through a public procurement process.",
+      },
+      { type: "heading", level: 2, text: "How to do it well" },
+      { type: "heading", level: 3, text: "Get the institutional tone right" },
+      {
+        type: "paragraph",
+        text: "I avoid superlatives and anything that sounds like a campaign slogan. A well-made public sector video describes verifiable facts and figures: budget spent, number of people served, project timelines. If the client asks for a tone closer to advertising, I flag it, because it can create an image problem if it's perceived as propaganda, and that often ends up holding up publication at the last minute.",
+      },
+      { type: "heading", level: 3, text: "Plan for approval times" },
+      {
+        type: "paragraph",
+        text: "I always add two or three extra weeks on top of the schedule I'd ask for with a private client, specifically for the review rounds on the script and the first cut. Each level of the chain (technical staff, communications, political leadership) tends to request different changes, and you need room to reconcile them without squeezing the shoot. I also avoid scheduling final delivery during fiscal year-end or election campaign weeks, because approvals slow down even further during those periods.",
+      },
+      { type: "heading", level: 3, text: "Take care of accessibility and transparency" },
+      {
+        type: "paragraph",
+        text: "Subtitles in the final video, plain language free of administrative jargon and, when the agency requires it, a full transcript published alongside the video. Many public administrations have accessibility obligations that private companies don't, and failing to meet them can block publication on the official channel. In Spanish regions with a co-official language, I also ask at the script stage whether dubbing or subtitles are needed in both languages.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-publico/intermedia.webp",
+        alt: "Audience attending an institutional presentation in a conference room",
+        width: 1920,
+        height: 1280,
+        caption: "Tone, approvals and accessibility change more than the production itself.",
+      },
+      { type: "heading", level: 2, text: "Common mistakes" },
+      {
+        type: "list",
+        items: [
+          "Treating the script as final after the first technical approval, without allowing for the political review round.",
+          "Using an advertising tone that can be read as government propaganda.",
+          "Not leaving time for public procurement procedures if the project requires a tender.",
+          "Filming testimonials from elected officials without checking that official communications has authorized it for that format.",
+          "Forgetting accessibility requirements, such as subtitles or plain language, before publishing on the official channel.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "Does a video for a public administration need to go through public procurement?",
+        answer:
+          "It depends on the amount and the agency. Many city councils and autonomous agencies require a procurement procedure (a minor contract, an open procedure or a negotiated procedure) above certain financial thresholds. It's worth asking at the first meeting, because it completely changes how long it takes to get the project started.",
+      },
+      {
+        type: "faq",
+        question: "Does the price of a corporate video change if the client is a public administration?",
+        answer:
+          "The production price doesn't change because the client is a public administration, but management time can increase because of the additional approval rounds, and that should be reflected in the quote if you bill by the day rather than a fixed project fee.",
+      },
+      {
+        type: "faq",
+        question: "Who approves the final script for a public sector video?",
+        answer:
+          "Communications usually coordinates the approval, but the final sign-off typically goes through senior management or the political office before the shoot. It's common to have more than two review rounds, so it's wise to agree in advance how many rounds are included in the quote.",
+      },
+      {
+        type: "faq",
+        question: "Does it need a different tone from a private corporate video?",
+        answer:
+          "Yes. The institutional tone should be neutral, verifiable and accessible to every citizen, avoiding anything that could be read as partisan propaganda, especially if the video is published close to an election.",
+      },
+      {
+        type: "paragraph",
+        text: "If you need to film a corporate video for your agency or department and want to avoid timelines spiraling at the last minute, get in touch via /en/contacto and we'll plan the whole process, from script to accessible delivery.",
+      },
+    ],
+  },
+  "aprovechar-rodaje-corporativo-redes-sociales": {
+    title: "How to repurpose a corporate video shoot into social media content",
+    description:
+      "How to plan a corporate video shoot so that, on top of the main video, it leaves you with footage ready for several weeks of social media content without setting up a separate session.",
+    readingTime: "4 min read",
+    category: "Guide",
+    tags: [
+      "corporate video",
+      "social media",
+      "video content",
+      "corporate video shoot",
+      "content marketing",
+    ],
+    keyword: "repurpose corporate video for social media",
+    excerpt:
+      "Every corporate shoot produces far more footage than ends up in the final video. Here's which extra shots I ask for and how I organize them to get weeks of social media content without scheduling a separate shoot.",
+    seoTitle: "Corporate Video Shoot for Social Media | Daniel Acero",
+    metaDescription:
+      "How to get social media content out of a corporate video shoot: which extra shots to ask for, how to organize them at ingest and how to keep the shoot from running long.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "In almost every corporate shoot I do, the final video uses a fraction of what we film. The rest sits unused on a hard drive, when with a bit of advance planning it could fuel several weeks of social media content.",
+      },
+      {
+        type: "paragraph",
+        text: "You don't need to set up a separate session for social media. By asking for a few specific shots on the same day, and then organizing them with clear criteria from ingest onward, any corporate shoot can leave you with standalone pieces for LinkedIn, Instagram or whatever channel you use.",
+      },
+      {
+        type: "image",
+        src: "/blog/aprovechar-rodaje-corporativo-redes-sociales/hero.webp",
+        alt: "Camera monitor while filming a corporate interview",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "What it is and why it matters" },
+      {
+        type: "paragraph",
+        text: "Repurposing a corporate shoot for social media means capturing, during the same session, additional footage designed for short vertical pieces, separate from what makes up the main video. It isn't recycling the outtakes: it's planning in advance which shots will serve that second use.",
+      },
+      {
+        type: "paragraph",
+        text: "It matters because the marginal cost of filming five or ten extra minutes is tiny compared with organizing a new shoot just for social media. The gear is already set up, the lighting is ready and the people on camera have already gotten past their initial nerves.",
+      },
+      {
+        type: "paragraph",
+        text: "It also matters for the client: instead of paying for two separate productions, they get the main video plus a bank of pieces for several weeks of posting from a single day of work.",
+      },
+      { type: "heading", level: 2, text: "How to do it well" },
+      { type: "heading", level: 3, text: "Ask for the extra shots before the shoot, not during it" },
+      {
+        type: "paragraph",
+        text: "I go through the main video's script and note which moments can be repeated in vertical format: a standalone line from the CEO, a detail of the process, a reaction from the team. I do this before arriving at the location, because improvising it live eats into the main shoot and ends up sacrificing quality in both formats.",
+      },
+      { type: "heading", level: 3, text: "Shoot vertical and horizontal in the same take when possible" },
+      {
+        type: "paragraph",
+        text: "If the framing allows, I set up a second camera in vertical pointing at the same subject while the main camera shoots in 16:9. It doesn't always work (it depends on the space and the composition), but when it does, it doubles the footage without doubling the shooting time.",
+      },
+      { type: "heading", level: 3, text: "Separate the footage at ingest" },
+      {
+        type: "paragraph",
+        text: "When offloading the cards, I tag the clips meant for social media straight into a separate folder. If I leave that sorting until the editing stage, two weeks later I can no longer remember which shot was meant for what, and I end up losing half the usable footage.",
+      },
+      {
+        type: "image",
+        src: "/blog/aprovechar-rodaje-corporativo-redes-sociales/intermedia.webp",
+        alt: "Person checking social media content on a phone next to a laptop",
+        width: 1920,
+        height: 1280,
+        caption: "Tagging clips at ingest saves hours of searching during the edit.",
+      },
+      { type: "heading", level: 2, text: "Common mistakes" },
+      {
+        type: "list",
+        items: [
+          "Filming everything with only the final video in mind and discovering in the edit that there isn't a single standalone shot under 15 seconds.",
+          "Asking for social media content at the end of the shoot, when the crew is already packing up and nobody wants to repeat a take.",
+          "Not telling the people on camera that there will also be short pieces, which creates reluctance when you mention it afterwards.",
+          "Mixing social media clips with main video clips without tagging them, adding several unnecessary hours to the edit.",
+          "Posting the same cut on every platform without adapting aspect ratio or length to each one.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "How much extra time should you add to the shoot to get social media content?",
+        answer:
+          "Between 20 and 40 minutes is usually enough if the extra shots are decided in advance. The time balloons if you improvise on the fly, so it's best to lock them into the script before arriving at the location.",
+      },
+      {
+        type: "faq",
+        question: "Do I need an additional camera operator to shoot vertical at the same time?",
+        answer:
+          "Not always. A tripod and a second locked-off camera pointing at the same subject is enough for most interviews; you only need an extra operator for action shots or when people are moving around.",
+      },
+      {
+        type: "faq",
+        question: "Does this extra footage replace a dedicated social media shoot?",
+        answer:
+          "Not entirely. It gives you a bank of high-quality short pieces, but if a brand needs a very specific format (for example, a reel with its own script and different locations), it's best to plan a separate session.",
+      },
+      {
+        type: "faq",
+        question: "What delivery format should I ask for with these clips?",
+        answer:
+          "I always ask for vertical 9:16 at the camera's native resolution, uncompressed, with burned-in subtitles supplied separately so they can be edited if the post copy changes.",
+      },
+      {
+        type: "paragraph",
+        text: "If you're going to film a corporate video and want that same day to also give you social media content, let me know via /en/contacto before the shoot and we'll plan it together.",
+      },
+    ],
+  },
 }

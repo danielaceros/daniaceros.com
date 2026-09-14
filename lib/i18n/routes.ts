@@ -40,6 +40,8 @@ export const TRANSLATED_PATHS: readonly string[] = [
   "/aviso-legal",
   "/politica-de-privacidad",
   "/politica-de-cookies",
+  // H. Blog (índice; artículos vía lib/blog-translations)
+  "/blog",
 ]
 
 /** Prefijos traducidos (todas las rutas hijas): p. ej. fichas de portfolio. */
