@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { localizedMetadata, type LangParams } from "@/lib/seo"
 import { localizedHref, toLang } from "@/lib/i18n"
+import { whatsappUrl } from "@/lib/contact"
 import { content } from "./content"
 
 export const generateMetadata = localizedMetadata((lang) => ({
@@ -31,6 +32,14 @@ export default async function GraciasPage({ params }: LangParams) {
           >
             {t.backHome}
           </Link>
+          <a
+            href={whatsappUrl(t.whatsappMessage)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-5 block font-inter text-[13px] text-white/60 underline-offset-4 transition-colors duration-300 hover:text-white hover:underline"
+          >
+            {t.whatsapp}
+          </a>
         </div>
       </section>
     </main>

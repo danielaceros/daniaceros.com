@@ -11,6 +11,7 @@ import Script from "next/script"
 import Header from "@/components/Header"
 import PageTransition from "@/components/PageTransition"
 import LuxuryMotionProvider from "@/components/LuxuryMotionProvider"
+import ContactClickTracking from "@/components/ContactClickTracking"
 import { BUSINESS_ID, DEFAULT_OG_IMAGE, PERSON_ID, SITE_URL } from "@/lib/seo"
 import { OG_LOCALE, getDictionary, localizedHref, type Lang } from "@/lib/i18n"
 
@@ -250,6 +251,8 @@ export default function RootDocument({
             </noscript>
           </>
         )}
+
+        {enableTracking && <ContactClickTracking />}
 
         <Header lang={lang} notFound={notFound} />
 

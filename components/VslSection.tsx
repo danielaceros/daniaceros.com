@@ -10,6 +10,10 @@
 //     cambia de calidad sin cortes, apuntando a la máxima sostenible. HLS nativo si no hay MSE. MP4 1080p
 //     como último recurso.
 //   - Nada se descarga hasta que el vídeo entra en pantalla (preload="none", sin src inicial).
+//   - Al terminar: pantalla final con las mismas opciones que enseña el vídeo (formulario, WhatsApp, email),
+//     ahora pulsables, y "Volver a ver". No se relanza solo al volver a entrar en pantalla.
+// Medición (GA4 + Clarity, lib/analytics.ts): vsl_start, vsl_progress (25/50/75), vsl_complete, vsl_unmute,
+// vsl_replay y vsl_cta_click { method }.
 // Las URLs salen de lib/media.ts (VSL[lang]); si es null la sección no existe.
 
 import { useCallback, useEffect, useRef, useState } from "react"
@@ -17,11 +21,15 @@ import type { CSSProperties, KeyboardEvent as ReactKeyboardEvent, PointerEvent a
 import type Hls from "hls.js"
 import { getDictionary, type Lang } from "@/lib/i18n"
 import { VSL } from "@/lib/media"
+import { CONTACT_EMAIL, whatsappUrl } from "@/lib/contact"
+import { trackEvent } from "@/lib/analytics"
 
 type Props = {
   lang: Lang
   /** Oculta el título corto encima del vídeo. */
   hideTitle?: boolean
+  /** Destino de "rellena el formulario" en la pantalla final (por defecto el bloque #contacto de la home). */
+  formHref?: string
   className?: string
 }
 
@@ -29,6 +37,7 @@ type LevelOption = { index: number; height: number }
 type WebkitVideo = HTMLVideoElement & { webkitEnterFullscreen?: () => void }
 
 const HIDE_CONTROLS_MS = 2600
+const PROGRESS_MILESTONES = [25, 50, 75]
 
 function formatTime(seconds: number) {
   if (!Number.isFinite(seconds) || seconds < 0) return "0:00"
@@ -42,9 +51,11 @@ function qualityLabel(height: number) {
   return `${height}p`
 }
 
-export default function VslSection({ lang, hideTitle = false, className }: Props) {
+export default function VslSection({ lang, hideTitle = false, formHref = "#contacto", className }: Props) {
   const media = VSL[lang]
-  const t = getDictionary(lang).vsl
+  const dict = getDictionary(lang)
+  const t = dict.vsl
+  const waUrl = whatsappUrl(dict.contact.whatsappMessage)
 
   const containerRef = useRef<HTMLDivElement>(null)
   const videoRef = useRef<HTMLVideoElement>(null)
@@ -55,9 +66,12 @@ export default function VslSection({ lang, hideTitle = false, className }: Props
   const soundTriedRef = useRef(false)
   const hideTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
   const scrubbingRef = useRef(false)
+  const startTrackedRef = useRef(false)
+  const milestonesRef = useRef(new Set<number>())
 
   const [playing, setPlaying] = useState(false)
   const [started, setStarted] = useState(false)
+  const [ended, setEnded] = useState(false)
   const [muted, setMuted] = useState(false)
   const [needsSound, setNeedsSound] = useState(false)
   const [volume, setVolume] = useState(1)
@@ -172,6 +186,9 @@ export default function VslSection({ lang, hideTitle = false, className }: Props
   const unmute = useCallback(() => {
     const video = videoRef.current
     if (!video) return
+    if (video.muted || video.volume === 0) {
+      trackEvent("vsl_unmute", { vsl_lang: lang, at_second: Math.round(video.currentTime) })
+    }
     video.muted = false
     if (video.volume === 0) video.volume = 1
     setNeedsSound(false)
@@ -179,7 +196,7 @@ export default function VslSection({ lang, hideTitle = false, className }: Props
       userPausedRef.current = false
       void video.play().catch(() => {})
     }
-  }, [])
+  }, [lang])
 
   const togglePlay = useCallback(() => {
     const video = videoRef.current
@@ -197,6 +214,21 @@ export default function VslSection({ lang, hideTitle = false, className }: Props
       video.pause()
     }
   }, [needsSound, started, startPlayback, unmute])
+
+  const replay = useCallback(() => {
+    const video = videoRef.current
+    if (!video) return
+    trackEvent("vsl_replay", { vsl_lang: lang })
+    userPausedRef.current = false
+    setEnded(false)
+    video.currentTime = 0
+    void video.play().catch(() => {})
+  }, [lang])
+
+  const onEndCta = (method: "form" | "whatsapp" | "email") => {
+    trackEvent("vsl_cta_click", { vsl_lang: lang, method })
+    if (method === "form" && document.fullscreenElement) void document.exitFullscreen()
+  }
 
   const toggleMute = useCallback(() => {
     const video = videoRef.current
@@ -255,7 +287,7 @@ export default function VslSection({ lang, hideTitle = false, className }: Props
   }
 
   const onContainerKey = (event: ReactKeyboardEvent<HTMLDivElement>) => {
-    if ((event.target as HTMLElement).closest("[role='slider'],button,input")) return
+    if ((event.target as HTMLElement).closest("[role='slider'],button,input,a")) return
     if (event.key === " " || event.key === "k") {
       event.preventDefault()
       togglePlay()
@@ -268,13 +300,40 @@ export default function VslSection({ lang, hideTitle = false, className }: Props
   useEffect(() => {
     const video = videoRef.current
     if (!video) return
-    const onPlay = () => setPlaying(true)
+    const onPlay = () => {
+      setPlaying(true)
+      setEnded(false)
+      if (!startTrackedRef.current) {
+        startTrackedRef.current = true
+        trackEvent("vsl_start", { vsl_lang: lang, muted: video.muted })
+      }
+    }
     const onPause = () => {
       setPlaying(false)
       setControlsVisible(true)
     }
+    const onEnded = () => {
+      // No relanzar solo al volver a entrar en pantalla: queda la pantalla final.
+      userPausedRef.current = true
+      setEnded(true)
+      setPlaying(false)
+      setControlsVisible(true)
+      if (!milestonesRef.current.has(100)) {
+        milestonesRef.current.add(100)
+        trackEvent("vsl_complete", { vsl_lang: lang, muted: video.muted })
+      }
+    }
     const onTime = () => {
       if (!scrubbingRef.current) setCurrentTime(video.currentTime)
+      if (video.duration > 0) {
+        const percent = (video.currentTime / video.duration) * 100
+        for (const milestone of PROGRESS_MILESTONES) {
+          if (percent >= milestone && !milestonesRef.current.has(milestone)) {
+            milestonesRef.current.add(milestone)
+            trackEvent("vsl_progress", { vsl_lang: lang, percent: milestone, muted: video.muted })
+          }
+        }
+      }
     }
     const onDuration = () => setDuration(Number.isFinite(video.duration) ? video.duration : 0)
     const onProgress = () => {
@@ -291,6 +350,7 @@ export default function VslSection({ lang, hideTitle = false, className }: Props
     }
     video.addEventListener("play", onPlay)
     video.addEventListener("pause", onPause)
+    video.addEventListener("ended", onEnded)
     video.addEventListener("timeupdate", onTime)
     video.addEventListener("durationchange", onDuration)
     video.addEventListener("loadedmetadata", onDuration)
@@ -300,6 +360,7 @@ export default function VslSection({ lang, hideTitle = false, className }: Props
     return () => {
       video.removeEventListener("play", onPlay)
       video.removeEventListener("pause", onPause)
+      video.removeEventListener("ended", onEnded)
       video.removeEventListener("timeupdate", onTime)
       video.removeEventListener("durationchange", onDuration)
       video.removeEventListener("loadedmetadata", onDuration)
@@ -307,7 +368,7 @@ export default function VslSection({ lang, hideTitle = false, className }: Props
       video.removeEventListener("volumechange", onVolume)
       video.removeEventListener("error", onError)
     }
-  }, [fallbackToMp4])
+  }, [fallbackToMp4, lang])
 
   // Autoplay al entrar en pantalla, pausa al salir
   useEffect(() => {
@@ -357,6 +418,9 @@ export default function VslSection({ lang, hideTitle = false, className }: Props
 
   const iconButton =
     "flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-white/85 transition-colors duration-300 hover:bg-white/10 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 sm:h-10 sm:w-10"
+  const endPill =
+    "inline-flex h-9 items-center gap-2 rounded-full px-4 font-inter text-[12px] font-semibold transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-[1px] focus:outline-none focus-visible:ring-2 focus-visible:ring-white sm:h-11 sm:px-5 sm:text-[14px]"
+  const endIcon = "h-3.5 w-3.5 fill-none stroke-current sm:h-4 sm:w-4"
 
   return (
     <section
@@ -406,7 +470,7 @@ export default function VslSection({ lang, hideTitle = false, className }: Props
           />
 
           {/* Play grande (antes de arrancar o en pausa) */}
-          {!playing ? (
+          {!playing && !ended ? (
             <div aria-hidden className="pointer-events-none absolute inset-0 flex items-center justify-center">
               <span className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-black/25" />
               <span className="relative flex h-[72px] w-[72px] items-center justify-center rounded-full border border-white/30 bg-white/10 shadow-[0_18px_48px_-18px_rgba(0,0,0,0.9)] backdrop-blur-md transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover/vsl:scale-[1.06] sm:h-[96px] sm:w-[96px]">
@@ -417,18 +481,18 @@ export default function VslSection({ lang, hideTitle = false, className }: Props
             </div>
           ) : null}
 
-          {/* Activar sonido (autoplay silenciado) */}
+          {/* Activar sonido (autoplay silenciado). En móvil va a la esquina para no tapar la cara. */}
           {needsSound && playing ? (
             <button
               type="button"
               onClick={unmute}
-              className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center gap-3 rounded-full border border-white/25 bg-black/45 px-5 py-3 font-inter text-[11px] font-semibold uppercase tracking-[0.18em] text-white shadow-[0_18px_48px_-18px_rgba(0,0,0,0.9)] backdrop-blur-md transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:scale-[1.04] hover:border-white/50 hover:bg-black/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-white sm:px-6 sm:py-3.5 sm:text-[12px]"
+              className="absolute right-2.5 top-2.5 flex items-center gap-1.5 whitespace-nowrap rounded-full border border-white/25 bg-black/45 px-2.5 py-1.5 font-inter text-[9px] font-semibold uppercase tracking-[0.12em] text-white shadow-[0_18px_48px_-18px_rgba(0,0,0,0.9)] backdrop-blur-md transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:scale-[1.04] hover:border-white/50 hover:bg-black/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-white sm:left-1/2 sm:right-auto sm:top-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2 sm:gap-3 sm:px-6 sm:py-3.5 sm:text-[12px] sm:tracking-[0.18em]"
             >
-              <span className="relative flex h-2.5 w-2.5">
+              <span className="relative flex h-2 w-2 sm:h-2.5 sm:w-2.5">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white/60" />
-                <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-white" />
+                <span className="relative inline-flex h-full w-full rounded-full bg-white" />
               </span>
-              <svg aria-hidden viewBox="0 0 24 24" className="h-4 w-4 fill-none stroke-white" strokeWidth={1.8}>
+              <svg aria-hidden viewBox="0 0 24 24" className="h-3.5 w-3.5 fill-none stroke-white sm:h-4 sm:w-4" strokeWidth={1.8}>
                 <path d="M11 5 6 9H3v6h3l5 4V5Z" strokeLinejoin="round" />
                 <path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13" strokeLinecap="round" />
               </svg>
@@ -436,8 +500,62 @@ export default function VslSection({ lang, hideTitle = false, className }: Props
             </button>
           ) : null}
 
+          {/* Pantalla final: las opciones de contacto que enseña el vídeo, pulsables */}
+          {ended ? (
+            <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-black/60 px-4 text-center backdrop-blur-[3px] sm:gap-5">
+              <p className="font-inter text-[13px] italic text-white/85 sm:text-[17px]">{t.endTitle}</p>
+              <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+                <a
+                  href={formHref}
+                  onClick={() => onEndCta("form")}
+                  className={`${endPill} bg-white text-[#0a0a0a] shadow-[0_14px_36px_-16px_rgba(255,255,255,0.45)]`}
+                >
+                  <svg aria-hidden viewBox="0 0 24 24" className={endIcon} strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M7 3h7l5 5v13H7z" />
+                    <path d="M14 3v5h5M10 13h6M10 17h6" />
+                  </svg>
+                  {t.endForm}
+                </a>
+                <a
+                  href={waUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => onEndCta("whatsapp")}
+                  className={`${endPill} border border-white/25 bg-white/10 text-white backdrop-blur-md hover:border-white/50`}
+                >
+                  <svg aria-hidden viewBox="0 0 24 24" className={endIcon} strokeWidth={1.8} strokeLinejoin="round">
+                    <path d="M20.5 11.6a8.5 8.5 0 0 1-12.6 7.4L3.5 20.5l1.5-4.3a8.5 8.5 0 1 1 15.5-4.6Z" />
+                  </svg>
+                  {t.endWhatsapp}
+                </a>
+                <a
+                  href={`mailto:${CONTACT_EMAIL}`}
+                  onClick={() => onEndCta("email")}
+                  className={`${endPill} border border-white/25 bg-white/10 text-white backdrop-blur-md hover:border-white/50`}
+                >
+                  <svg aria-hidden viewBox="0 0 24 24" className={endIcon} strokeWidth={1.8} strokeLinejoin="round">
+                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                    <path d="m3.5 6.5 8.5 6 8.5-6" />
+                  </svg>
+                  {t.endEmail}
+                </a>
+              </div>
+              <button
+                type="button"
+                onClick={replay}
+                className="inline-flex items-center gap-2 rounded-full px-3 py-1.5 font-inter text-[10px] uppercase tracking-[0.18em] text-white/60 transition-colors duration-300 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 sm:text-[11px]"
+              >
+                <svg aria-hidden viewBox="0 0 24 24" className="h-3.5 w-3.5 fill-none stroke-current" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M3 12a9 9 0 1 0 3-6.7" />
+                  <path d="M3 4v5h5" />
+                </svg>
+                {t.replay}
+              </button>
+            </div>
+          ) : null}
+
           {/* Barra de controles */}
-          {started ? (
+          {started && !ended ? (
             <div
               className={`absolute inset-x-0 bottom-0 transition-opacity duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
                 showUi ? "opacity-100" : "pointer-events-none opacity-0"
@@ -526,8 +644,9 @@ export default function VslSection({ lang, hideTitle = false, className }: Props
                   </span>
 
                   <div className="ml-auto flex items-center gap-1 sm:gap-2">
+                    {/* Selector de calidad solo en pantallas grandes; en móvil manda el modo automático */}
                     {levels.length > 1 ? (
-                      <div className="relative">
+                      <div className="relative hidden sm:block">
                         <button
                           type="button"
                           onClick={() => setQualityOpen((open) => !open)}

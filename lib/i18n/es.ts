@@ -99,6 +99,12 @@ const es = {
     auto: "Auto",
     fullscreen: "Pantalla completa",
     exitFullscreen: "Salir de pantalla completa",
+    // Pantalla final (repite las opciones que enseña el propio vídeo, ahora pulsables)
+    endTitle: "¿tienes un evento o un proyecto en mente?",
+    endForm: "rellena el formulario",
+    endWhatsapp: "WhatsApp",
+    endEmail: "email",
+    replay: "Volver a ver",
   },
   about: {
     title: "Sobre mí",
@@ -114,11 +120,11 @@ const es = {
     intro:
       "Si estás valorando crear un vídeo para tu empresa, cuéntame qué tienes en mente y te digo en minutos si encaja y cómo lo haría. Te respondo personalmente. Sin compromiso.",
     asideText:
-      "Cuéntanos sobre tu proyecto y te responderemos en menos de 24 horas con una propuesta personalizada.",
+      "Cuéntame tu proyecto y te respondo en menos de 24 horas con una propuesta personalizada.",
     mobileAsideText:
       "Si prefieres, también puedes escribirme directamente por email o WhatsApp y te respondo personalmente.",
     whatsappMessage:
-      "Hola Dani! Estamos valorando crear vídeo para la empresa y quería saber cómo trabajáis y si encaja para nuestro caso.",
+      "Hola Dani! Estamos valorando crear vídeo para la empresa y quería saber cómo trabajas y si encaja para nuestro caso.",
     footer: {
       legalNotice: "aviso legal",
       cookies: "política de cookies",

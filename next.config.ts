@@ -29,10 +29,13 @@ const CSP = [
   "worker-src 'self' blob:",
   "font-src 'self' data:",
   // GA4 envía a region1.google-analytics.com (y otros *.google-analytics.com / *.analytics.google.com);
-  // Google Ads a www.google.com/ccm y *.doubleclick.net (ad./googleads./stats.); Clarity a *.clarity.ms.
-  "connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://www.google.com https://www.google.es https://*.doubleclick.net https://www.googleadservices.com https://connect.facebook.net https://www.facebook.com https://*.clarity.ms https://api.fitnesslaunch.es https://firebasestorage.googleapis.com https://kgtz1gujr7extokb.public.blob.vercel-storage.com",
+  // Google Ads a www.google.com/ccm, google.com/ccm/form-data (sin www) y *.doubleclick.net (ad./googleads./stats.);
+  // Clarity a *.clarity.ms. Meta Pixel: además de facebook.com, la config del píxel (connect.facebook.net/signals/config)
+  // declara dos endpoints de servidor propios (…a.run.app y …on.aws); si Meta los cambia, aparecerán como violación de CSP.
+  "connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://www.google.com https://google.com https://www.google.es https://*.doubleclick.net https://www.googleadservices.com https://connect.facebook.net https://www.facebook.com https://mpc2-prod-26-is5qnl632q-uc.a.run.app https://5z-2b6b7616f94640c2840d1841e1ac24c3.ecs.us-east-1.on.aws https://*.clarity.ms https://api.fitnesslaunch.es https://firebasestorage.googleapis.com https://kgtz1gujr7extokb.public.blob.vercel-storage.com",
   "frame-src 'self' https://api.fitnesslaunch.es https://www.googletagmanager.com https://*.doubleclick.net https://www.facebook.com",
-  "form-action 'self' https://api.fitnesslaunch.es",
+  // Meta Pixel envía algunos eventos con un <form> POST a www.facebook.com/tr.
+  "form-action 'self' https://api.fitnesslaunch.es https://www.facebook.com",
 ].join("; ");
 
 const nextConfig: NextConfig = {
@@ -55,6 +58,13 @@ const nextConfig: NextConfig = {
         pathname: "/**",
       },
     ],
+  },
+  async redirects() {
+    return [
+      // Rooftop Content Studio ya no existe: ahora es A0Studios (web propia). 301 para pasar el SEO.
+      { source: "/the-rooftop-content-studio", destination: "https://www.a0studios.es/", permanent: true },
+      { source: "/:lang(en|es)/the-rooftop-content-studio", destination: "https://www.a0studios.es/", permanent: true },
+    ];
   },
   async headers() {
     return [

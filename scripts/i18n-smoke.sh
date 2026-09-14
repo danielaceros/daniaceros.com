@@ -7,7 +7,7 @@ fail=0
 check() { # desc, condition-result
   if [ "$2" = "ok" ]; then printf "  ✓ %s\n" "$1"; else printf "  ✗ %s  (%s)\n" "$1" "$2"; fail=1; fi
 }
-PAGES=(/ /portfolio /servicios /servicios/corporativo /servicios/institucional /filmmaker-madrid /videografo-madrid /video-corporativo-madrid /video-eventos-madrid /contacto /hablemos /precios /proceso /contratar /faq /sobre-mi /clientes /casos-de-exito /contenido-mensual /marca-personal /the-rooftop-content-studio /tv /aviso-legal /politica-de-privacidad /politica-de-cookies /blog)
+PAGES=(/ /portfolio /servicios /servicios/corporativo /servicios/institucional /filmmaker-madrid /videografo-madrid /video-corporativo-madrid /video-eventos-madrid /contacto /hablemos /precios /proceso /contratar /faq /sobre-mi /clientes /casos-de-exito /contenido-mensual /marca-personal /tv /aviso-legal /politica-de-privacidad /politica-de-cookies /blog)
 echo "== Páginas ES y EN"
 for p in $PAGES; do
   es=$(curl -s -A "$UA" -H 'Accept-Language: es-ES' -o /tmp/i18n_es.html -w '%{http_code}' "$B$p")

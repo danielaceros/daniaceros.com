@@ -24,7 +24,6 @@ const staticPaths = [
   "/videografo-madrid",
   "/video-corporativo-madrid",
   "/video-eventos-madrid",
-  "/the-rooftop-content-studio",
   "/clientes",
   "/casos-de-exito",
   "/aviso-legal",
