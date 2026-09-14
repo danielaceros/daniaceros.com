@@ -89,7 +89,16 @@ const es = {
   vsl: {
     title: "Mira esto primero",
     play: "Reproducir vídeo",
+    pause: "Pausar vídeo",
     videoLabel: "Vídeo de presentación de Daniel Acero",
+    unmute: "Activar sonido",
+    mute: "Silenciar",
+    volume: "Volumen",
+    progress: "Progreso del vídeo",
+    quality: "Calidad",
+    auto: "Auto",
+    fullscreen: "Pantalla completa",
+    exitFullscreen: "Salir de pantalla completa",
   },
   about: {
     title: "Sobre mí",

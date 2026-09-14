@@ -31,7 +31,11 @@ echo "== Sitemap"
 n_es=$(curl -s "$B/sitemap.xml" | grep -o '<loc>[^<]*</loc>' | grep -vc '/en')
 n_en=$(curl -s "$B/sitemap.xml" | grep -o '<loc>[^<]*</loc>' | grep -c '/en')
 echo "  URLs ES: $n_es · URLs EN: $n_en"
-echo "== VSL"
-curl -s -A "$UA" "$B/en" | grep -q 'vsl-en-dani-acero' && check "VSL EN presente en /en" ok || check "VSL EN en /en" "no"
-curl -s -A "$UA" -H 'Accept-Language: es-ES' "$B/" | grep -q 'vsl-en-dani-acero' && check "VSL ausente en /" "aparece" || check "VSL ausente en /" ok
+echo "== VSL (HLS adaptativo)"
+curl -s -A "$UA" "$B/en" | grep -q 'vsl-en-dani-acero-poster' && check "VSL EN presente en /en" ok || check "VSL EN en /en" "no"
+curl -s -A "$UA" -H 'Accept-Language: es-ES' "$B/" | grep -q 'vsl-es-dani-acero-poster' && check "VSL ES presente en /" ok || check "VSL ES en /" "no"
+for L in es en; do
+  m=$(curl -s "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/vsl/hls/$L/master.m3u8")
+  echo "$m" | grep -q '2160p\|3840x2160' && check "master HLS $L con 4K" ok || check "master HLS $L" "sin 4K o no accesible"
+done
 exit $fail
