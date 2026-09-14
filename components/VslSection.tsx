@@ -30,6 +30,11 @@ type Props = {
   hideTitle?: boolean
   /** Destino de "rellena el formulario" en la pantalla final (por defecto el bloque #contacto de la home). */
   formHref?: string
+  /**
+   * Dentro del hero (home): sin márgenes de sección propios y con el ancho limitado por el alto de la
+   * ventana, para que el vídeo entero quepa en la primera pantalla junto al título.
+   */
+  inline?: boolean
   className?: string
 }
 
@@ -51,7 +56,13 @@ function qualityLabel(height: number) {
   return `${height}p`
 }
 
-export default function VslSection({ lang, hideTitle = false, formHref = "#contacto", className }: Props) {
+export default function VslSection({
+  lang,
+  hideTitle = false,
+  formHref = "#contacto",
+  inline = false,
+  className,
+}: Props) {
   const media = VSL[lang]
   const dict = getDictionary(lang)
   const t = dict.vsl
@@ -426,9 +437,12 @@ export default function VslSection({ lang, hideTitle = false, formHref = "#conta
     <section
       data-lux
       aria-label={t.videoLabel}
-      className={`cinematic-reveal page-container pb-4 pt-12 sm:pb-6 sm:pt-16 lg:pt-20 ${className ?? ""}`}
+      className={`cinematic-reveal ${inline ? "w-full" : "page-container pb-4 pt-12 sm:pb-6 sm:pt-16 lg:pt-20"} ${className ?? ""}`}
     >
-      <div className="mx-auto w-full max-w-5xl">
+      <div
+        className="mx-auto w-full max-w-5xl"
+        style={inline ? { maxWidth: "min(64rem, max(22rem, calc((100svh - 23rem) * 16 / 9)))" } : undefined}
+      >
         {hideTitle ? null : (
           <p
             data-lux
@@ -481,12 +495,12 @@ export default function VslSection({ lang, hideTitle = false, formHref = "#conta
             </div>
           ) : null}
 
-          {/* Activar sonido (autoplay silenciado). En móvil va a la esquina para no tapar la cara. */}
+          {/* Activar sonido (autoplay silenciado): en la esquina para no tapar la cara ni los rótulos del vídeo. */}
           {needsSound && playing ? (
             <button
               type="button"
               onClick={unmute}
-              className="absolute right-2.5 top-2.5 flex items-center gap-1.5 whitespace-nowrap rounded-full border border-white/25 bg-black/45 px-2.5 py-1.5 font-inter text-[9px] font-semibold uppercase tracking-[0.12em] text-white shadow-[0_18px_48px_-18px_rgba(0,0,0,0.9)] backdrop-blur-md transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:scale-[1.04] hover:border-white/50 hover:bg-black/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-white sm:left-1/2 sm:right-auto sm:top-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2 sm:gap-3 sm:px-6 sm:py-3.5 sm:text-[12px] sm:tracking-[0.18em]"
+              className="absolute right-2.5 top-2.5 flex items-center gap-1.5 whitespace-nowrap rounded-full border border-white/25 bg-black/45 px-2.5 py-1.5 font-inter text-[9px] font-semibold uppercase tracking-[0.12em] text-white shadow-[0_18px_48px_-18px_rgba(0,0,0,0.9)] backdrop-blur-md transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:scale-[1.04] hover:border-white/50 hover:bg-black/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-white sm:right-4 sm:top-4 sm:gap-2.5 sm:px-4 sm:py-2.5 sm:text-[11px] sm:tracking-[0.16em]"
             >
               <span className="relative flex h-2 w-2 sm:h-2.5 sm:w-2.5">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white/60" />

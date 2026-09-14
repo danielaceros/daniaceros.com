@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import type { CSSProperties } from "react"
+import type { CSSProperties, ReactNode } from "react"
 import { VIDEO_POSTER_URL } from "@/lib/media"
 import { getDictionary, type Lang } from "@/lib/i18n"
 
@@ -16,10 +16,18 @@ type Props = {
   compactTitle?: boolean
   trustedLogosImageSrc?: string
   trustedLogosImageAlt?: string
+  /**
+   * "background" (por defecto): foto de fondo a pantalla completa con el texto encima.
+   * "video": sin foto; título compacto, `children` (el VSL) justo debajo y el CTA tras el vídeo,
+   * para que el vídeo sea lo primero que se vea (home).
+   */
+  variant?: "background" | "video"
+  children?: ReactNode
 }
 
 export default function Hero(props: Props) {
-  const { lang = "es", compactTitle = false, trustedLogosImageSrc } = props
+  const { lang = "es", compactTitle = false, trustedLogosImageSrc, children } = props
+  const isVideo = props.variant === "video"
   const t = getDictionary(lang).hero
   // `??` (no `||`): un "" explícito (p. ej. tagline="" en /hablemos) oculta el bloque.
   const title = props.title ?? t.title
@@ -36,31 +44,53 @@ export default function Hero(props: Props) {
     window.history.replaceState(null, "", `${window.location.pathname}#contacto`)
   }
 
+  const cta = (
+    <Link
+      data-lux
+      style={{ "--lux-delay": "320ms" } as CSSProperties}
+      href="#contacto"
+      onClick={handleContactClick}
+      className={`hero-cta hero-fade-up hero-fade-up-delay-3 inline-flex items-center justify-center rounded-2xl border border-white/25 bg-white text-center font-inter font-semibold uppercase tracking-[0.06em] text-black focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black ${
+        isVideo
+          ? "mt-7 min-h-[52px] px-8 py-3 text-[12px] sm:mt-9 sm:min-h-[56px] sm:px-10 sm:text-[13px]"
+          : "mt-7 min-h-[58px] px-8 py-4 text-[13px] sm:min-h-[64px] sm:px-11 sm:text-[14px]"
+      }`}
+    >
+      <span className="hero-cta-label">{ctaLabel}</span>
+    </Link>
+  )
+
   return (
     <section
       className={`relative w-full overflow-hidden ${
-        compactTitle ? "min-h-0 sm:min-h-[86svh]" : "h-[100svh]"
+        isVideo
+          ? "pb-12 pt-8 sm:pb-16 sm:pt-10"
+          : compactTitle
+            ? "min-h-0 sm:min-h-[86svh]"
+            : "h-[100svh]"
       }`}
     >
-      <div className="absolute inset-0">
-        <div className="hero-bg-ambient absolute inset-0 h-full w-full">
-          <Image
-            src={VIDEO_POSTER_URL}
-            alt=""
-            fill
-            priority
-            quality={72}
-            sizes="100vw"
-            style={{ objectPosition: "center 22%" }}
-            className="h-full w-full scale-105 object-cover blur-[1.5px] opacity-90"
-          />
+      {isVideo ? null : (
+        <div className="absolute inset-0">
+          <div className="hero-bg-ambient absolute inset-0 h-full w-full">
+            <Image
+              src={VIDEO_POSTER_URL}
+              alt=""
+              fill
+              priority
+              quality={72}
+              sizes="100vw"
+              style={{ objectPosition: "center 22%" }}
+              className="h-full w-full scale-105 object-cover blur-[1.5px] opacity-90"
+            />
+          </div>
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/85 via-black/45 to-black/80" />
         </div>
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/85 via-black/45 to-black/80" />
-      </div>
+      )}
 
       <div
-        className={`relative z-10 flex h-full flex-col items-center justify-center px-4 text-center sm:px-6 ${
-          compactTitle ? "pb-10 pt-10 sm:pb-4 sm:pt-24" : ""
+        className={`relative z-10 flex flex-col items-center px-4 text-center sm:px-6 ${
+          isVideo ? "" : `h-full justify-center ${compactTitle ? "pb-10 pt-10 sm:pb-4 sm:pt-24" : ""}`
         }`}
       >
         <div className="flex w-full max-w-4xl flex-col items-center">
@@ -68,9 +98,11 @@ export default function Hero(props: Props) {
             data-lux
             style={{ "--lux-delay": "90ms" } as CSSProperties}
             className={`hero-fade-up font-display font-semibold uppercase ${
-              compactTitle
-                ? "leading-[1.02] text-[clamp(2rem,8.5vw,4.7rem)]"
-                : "leading-[0.9] text-[clamp(2.8rem,11.8vw,9.2rem)]"
+              isVideo
+                ? "leading-[0.95] text-[clamp(2.5rem,9.5vw,4.6rem)]"
+                : compactTitle
+                  ? "leading-[1.02] text-[clamp(2rem,8.5vw,4.7rem)]"
+                  : "leading-[0.9] text-[clamp(2.8rem,11.8vw,9.2rem)]"
             }`}
           >
             {title}
@@ -79,7 +111,11 @@ export default function Hero(props: Props) {
             <p
               data-lux
               style={{ "--lux-delay": "180ms" } as CSSProperties}
-              className="hero-fade-up hero-fade-up-delay-1 mt-4 font-inter text-[clamp(0.94rem,2.8vw,1.3rem)] font-medium uppercase text-white/86 sm:mt-5"
+              className={`hero-fade-up hero-fade-up-delay-1 font-inter font-medium uppercase text-white/86 ${
+                isVideo
+                  ? "mt-3 text-[clamp(0.9rem,2.6vw,1.15rem)] sm:mt-4"
+                  : "mt-4 text-[clamp(0.94rem,2.8vw,1.3rem)] sm:mt-5"
+              }`}
             >
               {tagline}
             </p>
@@ -88,20 +124,12 @@ export default function Hero(props: Props) {
             data-lux
             style={{ "--lux-delay": "260ms" } as CSSProperties}
             className={`hero-fade-up hero-fade-up-delay-2 max-w-3xl px-1 font-inter text-[13px] font-normal leading-[1.72] text-white/72 sm:text-[15px] ${
-              compactTitle ? "mt-6 sm:mt-7" : "mt-4 sm:mt-5"
+              isVideo ? "mt-3 sm:mt-4" : compactTitle ? "mt-6 sm:mt-7" : "mt-4 sm:mt-5"
             }`}
           >
             {description}
           </p>
-          <Link
-            data-lux
-            style={{ "--lux-delay": "320ms" } as CSSProperties}
-            href="#contacto"
-            onClick={handleContactClick}
-            className="hero-cta hero-fade-up hero-fade-up-delay-3 mt-7 inline-flex min-h-[58px] items-center justify-center rounded-2xl border border-white/25 bg-white px-8 py-4 text-center font-inter text-[13px] font-semibold uppercase tracking-[0.06em] text-black focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black sm:min-h-[64px] sm:px-11 sm:text-[14px]"
-          >
-            <span className="hero-cta-label">{ctaLabel}</span>
-          </Link>
+          {isVideo ? null : cta}
 
           {trustedLogosImageSrc ? (
             <div
@@ -131,6 +159,12 @@ export default function Hero(props: Props) {
           ) : null}
         </div>
 
+        {isVideo ? (
+          <>
+            {children ? <div className="mt-7 w-full sm:mt-9">{children}</div> : null}
+            {cta}
+          </>
+        ) : null}
       </div>
 
       <style>{`
