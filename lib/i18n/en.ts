@@ -52,6 +52,14 @@ const en: Dictionary = {
       "Event video",
       "Video production",
     ],
+    knowsAbout: [
+      "Corporate video",
+      "Event video",
+      "Institutional video",
+      "Filmmaking",
+      "Video production",
+      "Social media content",
+    ],
   },
   breadcrumbs: {
     home: "Home",

@@ -54,6 +54,15 @@ const es = {
       "Video de eventos",
       "Produccion audiovisual",
     ],
+    /** knowsAbout del ProfessionalService y la Person (JSON-LD). */
+    knowsAbout: [
+      "Vídeo corporativo",
+      "Vídeo de eventos",
+      "Vídeo institucional",
+      "Filmmaking",
+      "Producción audiovisual",
+      "Contenido para redes sociales",
+    ],
   },
   breadcrumbs: {
     home: "Inicio",

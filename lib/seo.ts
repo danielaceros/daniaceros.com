@@ -39,6 +39,54 @@ export function buildBreadcrumbSchema(items: BreadcrumbEntry[]) {
 }
 
 /**
+ * Service JSON-LD de una landing de servicio. `path` = ruta ESPAÑOLA sin prefijo.
+ * provider = el ProfessionalService global (BUSINESS_ID, definido en RootDocument).
+ */
+export function buildServiceSchema({
+  name,
+  description,
+  path,
+  lang,
+}: {
+  name: string
+  description: string
+  path: string
+  lang: Lang
+}) {
+  const url = `${SITE_URL}${localizedHref(lang, path)}`
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${url}#service`,
+    name,
+    description,
+    url,
+    provider: { "@id": BUSINESS_ID },
+    areaServed: [
+      { "@type": "City", name: "Madrid" },
+      { "@type": "Country", name: lang === "es" ? "España" : "Spain" },
+    ],
+  }
+}
+
+/**
+ * FAQPage JSON-LD. Usar SOLO con el mismo array que pinta el FAQ visible de la página,
+ * para que preguntas y respuestas coincidan literalmente.
+ */
+export function buildFaqSchema(items: ReadonlyArray<{ q: string; a: string }>, path: string, lang: Lang) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": `${SITE_URL}${localizedHref(lang, path)}#faq`,
+    mainEntity: items.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: { "@type": "Answer", text: item.a },
+    })),
+  }
+}
+
+/**
  * hreflang de una ruta traducida. `path` = ruta española sin prefijo.
  * { "es-ES": "/servicios", en: "/en/servicios", "x-default": "/servicios" }
  */
