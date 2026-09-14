@@ -3,7 +3,7 @@ import { localizedMetadata, type LangParams } from "@/lib/seo"
 import { toLang } from "@/lib/i18n"
 import { content } from "./content"
 
-// /servicios/instituciones re-exporta esta página (mismo canonical: /servicios/institucional).
+// El antiguo alias /servicios/instituciones redirige aquí con 308 (next.config.ts).
 export const generateMetadata = localizedMetadata((lang) => ({
   title: content[lang].metaTitle,
   description: content[lang].metaDescription,

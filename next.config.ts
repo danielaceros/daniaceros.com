@@ -64,6 +64,11 @@ const nextConfig: NextConfig = {
       // Rooftop Content Studio ya no existe: ahora es A0Studios (web propia). 301 para pasar el SEO.
       { source: "/the-rooftop-content-studio", destination: "https://www.a0studios.es/", permanent: true },
       { source: "/:lang(en|es)/the-rooftop-content-studio", destination: "https://www.a0studios.es/", permanent: true },
+      // /servicios/instituciones era un duplicado de /servicios/institucional (200 con canonical): ahora 308.
+      { source: "/servicios/instituciones", destination: "/servicios/institucional", permanent: true },
+      { source: "/en/servicios/instituciones", destination: "/en/servicios/institucional", permanent: true },
+      // URL de la web antigua que sigue indexada (daba 404): 301 al artículo equivalente.
+      { source: "/video-promocional-madrid", destination: "/blog/produccion-video-promocional-empresas-madrid", statusCode: 301 },
     ];
   },
   async headers() {
