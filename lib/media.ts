@@ -7,6 +7,13 @@ const BLOB = "https://kgtz1gujr7extokb.public.blob.vercel-storage.com"
 export const BLOB_ORIGIN = BLOB
 
 /**
+ * Prioridad del VSL: VslSection emite este evento (y marca window.__vslStarted) cuando el vídeo empieza
+ * a reproducirse de verdad. Los vídeos decorativos que comparten pantalla con él (AutoplayVideo) esperan
+ * a esa señal para no quitarle ancho de banda en el arranque.
+ */
+export const VSL_STARTED_EVENT = "vsl:started"
+
+/**
  * Póster de <video> servido por el optimizador de Next (/_next/image: WebP y ancho acotado) en vez del
  * JPEG 1080×1920 original del Blob. `<video poster>` no pasa por next/image, así que la URL se construye
  * a mano. Solo para imágenes del Blob (las externas se devuelven tal cual) y con dos anchos fijos para no

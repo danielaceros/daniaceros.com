@@ -26,7 +26,7 @@ import type {
 import { preconnect, preload } from "react-dom"
 import type Hls from "hls.js"
 import { getDictionary, type Lang } from "@/lib/i18n"
-import { BLOB_ORIGIN, VSL, optimizedPoster } from "@/lib/media"
+import { BLOB_ORIGIN, VSL, VSL_STARTED_EVENT, optimizedPoster } from "@/lib/media"
 import { CONTACT_EMAIL, whatsappUrl } from "@/lib/contact"
 import { trackEvent } from "@/lib/analytics"
 
@@ -358,6 +358,13 @@ export default function VslSection({
   useEffect(() => {
     const video = videoRef.current
     if (!video) return
+    // Primer frame reproduciéndose: libera los vídeos decorativos que esperaban (AutoplayVideo).
+    const onPlaying = () => {
+      const w = window as Window & { __vslStarted?: boolean }
+      if (w.__vslStarted) return
+      w.__vslStarted = true
+      window.dispatchEvent(new Event(VSL_STARTED_EVENT))
+    }
     const onPlay = () => {
       setPlaying(true)
       setEnded(false)
@@ -407,6 +414,7 @@ export default function VslSection({
       if (!hlsRef.current) fallbackToMp4(video)
     }
     video.addEventListener("play", onPlay)
+    video.addEventListener("playing", onPlaying)
     video.addEventListener("pause", onPause)
     video.addEventListener("ended", onEnded)
     video.addEventListener("timeupdate", onTime)
@@ -417,6 +425,7 @@ export default function VslSection({
     video.addEventListener("error", onError)
     return () => {
       video.removeEventListener("play", onPlay)
+      video.removeEventListener("playing", onPlaying)
       video.removeEventListener("pause", onPause)
       video.removeEventListener("ended", onEnded)
       video.removeEventListener("timeupdate", onTime)
@@ -511,6 +520,7 @@ export default function VslSection({
 
         <div
           ref={containerRef}
+          data-vsl-player
           tabIndex={0}
           onKeyDown={onContainerKey}
           onPointerMove={revealControls}
