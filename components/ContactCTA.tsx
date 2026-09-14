@@ -143,6 +143,13 @@ export default function ContactCTA({
             >
               youtube
             </Link>
+            <span aria-hidden>·</span>
+            <Link
+              href={localizedHref(lang, "/a0studios")}
+              className="hover:text-white/90 transition-colors duration-300 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+            >
+              a0studios
+            </Link>
           </p>
           <p className="mt-3 flex flex-wrap items-center justify-center gap-x-2 gap-y-1 font-inter text-[11px] lowercase text-white/45">
             <Link href={localizedHref(lang, "/aviso-legal")} className="hover:text-white/90 transition-colors duration-300 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black">
