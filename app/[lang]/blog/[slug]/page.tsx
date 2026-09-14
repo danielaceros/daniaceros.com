@@ -1,16 +1,19 @@
 import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 import Image from "next/image"
+import Link from "next/link"
 import {
   getAllPosts,
   getLocalizedPost,
   getPostArticleSchema,
   getPostBreadcrumbSchema,
+  getPostBySlug,
   getPostMetadata,
   hasPostTranslation,
 } from "@/lib/blog"
 import ContactCTA from "@/components/ContactCTA"
-import { DEFAULT_LOCALE, toLang } from "@/lib/i18n"
+import { DEFAULT_LOCALE, localizedHref, toLang } from "@/lib/i18n"
+import { SERVICE_LINKS, relatedServiceForPost } from "@/lib/service-links"
 import { content } from "../content"
 
 type Props = { params: Promise<{ lang: string; slug: string }> }
@@ -48,6 +51,9 @@ export default async function BlogPostPage({ params }: Props) {
   const faqs = post.body.filter((block) => block.type === "faq")
   const articleSchema = getPostArticleSchema(post, lang, translated)
   const breadcrumbSchema = getPostBreadcrumbSchema(post, lang)
+  // El mapeo usa el post ORIGINAL (keyword ES), así ES y EN enlazan al mismo servicio.
+  const relatedPath = relatedServiceForPost(getPostBySlug(slug) ?? post)
+  const related = SERVICE_LINKS[relatedPath][lang]
 
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-white">
@@ -199,6 +205,23 @@ export default async function BlogPostPage({ params }: Props) {
           })}
         </div>
 
+        {/* Servicio relacionado: enlace interno contextual a la landing del tema (mapeo en lib/service-links.ts). */}
+        <aside className="mt-12 sm:mt-16">
+          <p className="font-inter text-[11px] uppercase tracking-[0.22em] text-white/45">{t.relatedService}</p>
+          <Link
+            href={localizedHref(lang, relatedPath)}
+            prefetch={false}
+            className="group mt-4 flex items-center gap-4 rounded-[20px] border border-white/10 bg-white/[0.03] p-4 sm:gap-5 sm:p-5 hover:border-white/25 hover:bg-white/[0.05] transition-all duration-300"
+          >
+            <span className="min-w-0 flex-1">
+              <span className="block text-[15px] sm:text-[16px] font-inter text-white">{related.title}</span>
+              <span className="mt-0.5 block text-[13px] sm:text-[14px] text-white/60">{related.description}</span>
+            </span>
+            <span className="flex-shrink-0 text-[11px] uppercase tracking-[0.16em] text-white/55 group-hover:text-white/85 transition-colors">
+              {t.viewService} →
+            </span>
+          </Link>
+        </aside>
       </article>
 
       <ContactCTA hideFooter lang={lang} />

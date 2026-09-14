@@ -26,6 +26,8 @@ const es = {
       description: "— contenido para organizaciones, instituciones y entidades.",
     },
   ],
+  /** Rótulo del bloque de enlaces a las landings (lib/service-links.ts). */
+  landingsLabel: "por tipo de proyecto",
   locationTitle: "Trabajo en Madrid y en toda España",
   locationText:
     "Aunque estoy basado en Madrid, viajo para cubrir proyectos en toda España. He trabajado con compañías y proyectos para marcas nacionales e internacionales.",
@@ -75,6 +77,7 @@ const en: typeof es = {
       description: "— content for organizations, institutions and public bodies.",
     },
   ],
+  landingsLabel: "by project type",
   locationTitle: "Based in Madrid, working across Spain",
   locationText:
     "Although I'm based in Madrid, I travel to cover projects all over Spain. I've worked with companies and on projects for Spanish and international brands.",

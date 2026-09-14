@@ -135,6 +135,8 @@ const es = {
     whatsappMessage:
       "Hola Dani! Estamos valorando crear vídeo para la empresa y quería saber cómo trabajas y si encaja para nuestro caso.",
     footer: {
+      /** aria-label del bloque de enlaces a servicios del pie. */
+      servicesLabel: "Servicios",
       legalNotice: "aviso legal",
       cookies: "política de cookies",
       privacy: "política de privacidad",

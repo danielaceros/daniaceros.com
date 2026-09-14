@@ -1,7 +1,8 @@
 import Link from "next/link"
-import type { CSSProperties } from "react"
+import { Fragment, type CSSProperties } from "react"
 import LazyContactForm from "./LazyContactForm"
 import { getDictionary, localizedHref, type Lang } from "@/lib/i18n"
+import { FOOTER_SERVICE_ROWS, SERVICE_LINKS } from "@/lib/service-links"
 import { CONTACT_EMAIL, whatsappUrl } from "@/lib/contact"
 
 type Props = {
@@ -123,6 +124,21 @@ export default function ContactCTA({
           style={{ "--lux-delay": "300ms" } as CSSProperties}
           className="cinematic-reveal cinematic-reveal-delay-3 mt-14 pt-2"
         >
+          {/* Enlaces a las páginas de servicio (anchors por intención; textos en lib/service-links.ts). */}
+          <nav aria-label={t.footer.servicesLabel}>
+            {FOOTER_SERVICE_ROWS.map((row) => (
+              <p key={row.join("|")} className={FOOTER_ROW}>
+                {row.map((path, index) => (
+                  <Fragment key={path}>
+                    {index > 0 ? <span aria-hidden>·</span> : null}
+                    <Link href={localizedHref(lang, path)} prefetch={false} className={FOOTER_LINK}>
+                      {SERVICE_LINKS[path][lang].anchor}
+                    </Link>
+                  </Fragment>
+                ))}
+              </p>
+            ))}
+          </nav>
           <p className={FOOTER_ROW}>
             <Link
               href="https://www.instagram.com/daniaceros"

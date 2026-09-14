@@ -132,6 +132,7 @@ const en: Dictionary = {
     whatsappMessage:
       "Hi Dani! We're thinking about creating a video for our company and I'd like to know how you work and whether it would be a good fit for us.",
     footer: {
+      servicesLabel: "Services",
       legalNotice: "legal notice",
       cookies: "cookie policy",
       privacy: "privacy policy",

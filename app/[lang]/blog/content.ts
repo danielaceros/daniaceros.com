@@ -23,6 +23,9 @@ const es = {
   untranslatedLabel: "Español",
   /** CTA por defecto de las link-cards de un artículo. */
   viewProfile: "Ver perfil",
+  /** Bloque «servicio relacionado» al final del artículo (lib/service-links.ts). */
+  relatedService: "Servicio relacionado",
+  viewService: "Ver servicio",
   notFound: {
     title: "Artículo no encontrado",
     text: "Este post no existe o todavía no está publicado. Vuelve al índice del blog y seguimos.",
@@ -47,6 +50,8 @@ const en: typeof es = {
   readArticle: "Read article",
   untranslatedLabel: "Spanish",
   viewProfile: "View profile",
+  relatedService: "Related service",
+  viewService: "View service",
   notFound: {
     title: "Article not found",
     text: "This post doesn't exist or hasn't been published yet. Head back to the blog index and carry on from there.",
