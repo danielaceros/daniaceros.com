@@ -86,7 +86,7 @@ export default async function LandingPage({ params }: Props) {
           </div>
           {VSL[lang] ? (
             <div className="mt-7 w-full sm:mt-9">
-              <VslSection lang={lang} hideTitle inline formHref="#contacto" />
+              <VslSection lang={lang} hideTitle inline formOnly formHref="#contacto" />
             </div>
           ) : null}
           <LandingCta lpId={landing.id} position="hero" label={landing.ctaLabel} className="mt-7 sm:mt-9" />
@@ -137,30 +137,33 @@ export default async function LandingPage({ params }: Props) {
         </div>
       </section>
 
-      {/* 6. Formulario GHL (redirige a /gracias, donde LeadAttribution atribuye el lead a esta landing) */}
+      {/* 6. Formulario GHL: único final del camino. Sin email ni WhatsApp (Dani los enseña en /gracias, tras el
+          lead). Redirige a /gracias, donde LeadAttribution atribuye el lead a esta landing. */}
       <div id="contacto">
         <ContactCTA
           lang={lang}
           mobileFormFirst
+          hideMobileContactInfo
+          formOnly
           hideFooter
-          forwardQueryParams
           // Empieza a cargar ~una pantalla y media antes: al llegar (o al pulsar un CTA) ya está listo.
           formPreloadMargin="1000px"
           sectionClassName="mt-10 pb-8 sm:mt-14 sm:pb-10"
         />
       </div>
 
+      {/* Legales obligatorios, en pestaña nueva: no sacan de la landing. */}
       <footer className="mx-auto w-full max-w-6xl px-4 pb-6 text-center sm:px-6">
         <p className="flex flex-wrap items-center justify-center gap-x-2 font-inter text-[12px] lowercase text-white/45">
-          <Link href={localizedHref(lang, "/aviso-legal")} prefetch={false} className={LEGAL_LINK}>
+          <Link href={localizedHref(lang, "/aviso-legal")} prefetch={false} target="_blank" rel="noopener" className={LEGAL_LINK}>
             {footer.legalNotice}
           </Link>
           <span aria-hidden>·</span>
-          <Link href={localizedHref(lang, "/politica-de-cookies")} prefetch={false} className={LEGAL_LINK}>
+          <Link href={localizedHref(lang, "/politica-de-cookies")} prefetch={false} target="_blank" rel="noopener" className={LEGAL_LINK}>
             {footer.cookies}
           </Link>
           <span aria-hidden>·</span>
-          <Link href={localizedHref(lang, "/politica-de-privacidad")} prefetch={false} className={LEGAL_LINK}>
+          <Link href={localizedHref(lang, "/politica-de-privacidad")} prefetch={false} target="_blank" rel="noopener" className={LEGAL_LINK}>
             {footer.privacy}
           </Link>
         </p>

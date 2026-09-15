@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { localizedMetadata, type LangParams } from "@/lib/seo"
 import { localizedHref, toLang } from "@/lib/i18n"
-import { whatsappUrl } from "@/lib/contact"
+import { CONTACT_EMAIL, whatsappUrl } from "@/lib/contact"
 import LeadAttribution from "@/components/landing/LeadAttribution"
 import { content } from "./content"
 
@@ -27,6 +27,28 @@ export default async function GraciasPage({ params }: LangParams) {
         <p className="mx-auto mt-5 max-w-2xl font-inter text-[14px] leading-[1.7] text-white/72 sm:text-[16px]">
           {t.text}
         </p>
+        {/* Contacto directo: solo después del lead (las landings /lp no lo enseñan). */}
+        <div className="mx-auto mt-10 w-fit max-w-md text-left">
+          <p className="font-inter text-[14px] leading-[1.8] text-white/66 sm:text-[15px]">{t.directText}</p>
+          <div className="mt-6 space-y-1">
+            <a
+              href={`mailto:${CONTACT_EMAIL}`}
+              className="group flex min-h-[44px] items-center gap-3 rounded text-white/86 transition-colors duration-300 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+            >
+              <span aria-hidden className="h-px w-5 bg-white/85 transition-all duration-300 group-hover:w-7" />
+              <span className="font-inter text-[17px]">{CONTACT_EMAIL}</span>
+            </a>
+            <a
+              href={whatsappUrl(t.whatsappMessage)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex min-h-[44px] items-center gap-3 rounded text-white/86 transition-colors duration-300 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+            >
+              <span aria-hidden className="h-px w-5 bg-white/85 transition-all duration-300 group-hover:w-7" />
+              <span className="font-inter text-[17px]">+34 711 25 54 96</span>
+            </a>
+          </div>
+        </div>
         <div className="mt-10">
           <Link
             href={localizedHref(lang, "/")}
@@ -34,14 +56,6 @@ export default async function GraciasPage({ params }: LangParams) {
           >
             {t.backHome}
           </Link>
-          <a
-            href={whatsappUrl(t.whatsappMessage)}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-5 block font-inter text-[13px] text-white/60 underline-offset-4 transition-colors duration-300 hover:text-white hover:underline"
-          >
-            {t.whatsapp}
-          </a>
         </div>
       </section>
     </main>

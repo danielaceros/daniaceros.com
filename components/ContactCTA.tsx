@@ -14,10 +14,10 @@ type Props = {
   hideMobileContactInfo?: boolean
   /** Etiqueta del título. "h1" solo en /contacto (única cabecera de la página); el aspecto no cambia. */
   headingAs?: "h1" | "h2"
-  /** Landings de anuncios (/lp): el formulario GHL recibe la query de la página (UTM). */
-  forwardQueryParams?: boolean
   /** Margen de precarga del formulario (por defecto 200px). */
   formPreloadMargin?: string
+  /** Landings de anuncios: solo el formulario, sin email ni WhatsApp (se enseñan en /gracias). */
+  formOnly?: boolean
 }
 
 // Pie: filas de enlaces en línea, 12px y zona táctil de 44px (antes 11px y 17px de alto).
@@ -35,8 +35,8 @@ export default function ContactCTA({
   hideFooter = false,
   hideMobileContactInfo = false,
   headingAs = "h2",
-  forwardQueryParams = false,
   formPreloadMargin,
+  formOnly = false,
 }: Props) {
   const t = getDictionary(lang).contact
   const WHATSAPP_URL = whatsappUrl(t.whatsappMessage)
@@ -68,7 +68,12 @@ export default function ContactCTA({
         style={{ "--lux-delay": "230ms" } as CSSProperties}
         className="cinematic-reveal cinematic-reveal-delay-3 mx-auto w-full max-w-5xl"
       >
-        <div className="grid overflow-hidden rounded-xl bg-[#0a0a0a] lg:grid-cols-[0.82fr_1.18fr]">
+        <div
+          className={`grid overflow-hidden rounded-xl bg-[#0a0a0a] ${
+            formOnly ? "mx-auto max-w-2xl" : "lg:grid-cols-[0.82fr_1.18fr]"
+          }`}
+        >
+          {formOnly ? null : (
           <aside
             className={`border-white/10 px-6 pb-7 pt-8 text-left lg:border-r lg:px-10 lg:py-11 ${
               mobileFormFirst ? "hidden lg:block" : ""
@@ -96,16 +101,16 @@ export default function ContactCTA({
               </a>
             </div>
           </aside>
+          )}
 
           <div className={`relative overflow-hidden ${mobileFormFirst ? "order-1" : ""}`}>
             <LazyContactForm
               lang={lang}
-              forwardQueryParams={forwardQueryParams}
               preloadMargin={formPreloadMargin}
             />
           </div>
 
-          {mobileFormFirst && !hideMobileContactInfo ? (
+          {mobileFormFirst && !hideMobileContactInfo && !formOnly ? (
             <aside className="order-2 px-6 pb-7 pt-7 text-left lg:hidden">
               <p className="max-w-[36ch] font-inter text-[13px] leading-[1.75] text-white/66">
                 {t.mobileAsideText}

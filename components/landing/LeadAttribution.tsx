@@ -1,29 +1,40 @@
 "use client"
 
-// /gracias: si el lead viene de una landing /lp (sessionStorage de LandingTracking), lanza `lp_lead` en GA4
-// con su lp_id y UTM, y `LandingLead` en Meta. Se borra al leerlo para no contar dos veces si se recarga.
+// /gracias: atribuye el lead al formulario del que sale. LazyContactForm guarda en sessionStorage su origen al
+// montarse (landing /lp con su lp_id, o web con la ruta de la página). Aquí se lanza `form_lead` en GA4 con
+// origin, lp_id, form_page y UTM, y `FormLead` en Meta. Se borra al leerlo para no contar dos veces al recargar.
 
 import { useEffect } from "react"
-import { LP_ATTRIBUTION_KEY, trackEvent, whenAnalyticsReady } from "@/lib/analytics"
+import {
+  FORM_ORIGIN_KEY,
+  LP_ATTRIBUTION_KEY,
+  trackEvent,
+  whenAnalyticsReady,
+  type FormOrigin,
+} from "@/lib/analytics"
 
 export default function LeadAttribution() {
   useEffect(() => {
-    let data: Record<string, string> | null = null
+    let origin: FormOrigin | null = null
     try {
-      const raw = sessionStorage.getItem(LP_ATTRIBUTION_KEY)
-      if (!raw) return
+      const raw = sessionStorage.getItem(FORM_ORIGIN_KEY)
+      sessionStorage.removeItem(FORM_ORIGIN_KEY)
       sessionStorage.removeItem(LP_ATTRIBUTION_KEY)
-      data = JSON.parse(raw)
+      origin = raw ? JSON.parse(raw) : null
     } catch {
       return
     }
-    if (!data?.lp_id) return
-    const attribution = data
+    if (!origin?.origin) return
+    const lead = origin
 
     return whenAnalyticsReady(() => {
-      trackEvent("lp_lead", attribution)
+      trackEvent("form_lead", lead)
       try {
-        window.fbq?.("trackCustom", "LandingLead", { lp_id: attribution.lp_id })
+        window.fbq?.("trackCustom", "FormLead", {
+          origin: lead.origin,
+          lp_id: lead.lp_id ?? "",
+          form_page: lead.form_page,
+        })
       } catch {
         // La medición nunca debe romper la página.
       }

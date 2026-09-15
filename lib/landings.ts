@@ -73,8 +73,8 @@ export const LANDINGS: Landing[] = [
     reel: "EV03",
     slug: "no-lo-grabes-con-el-movil",
     metaTitle: "No grabes tu evento con el móvil | Dani Acero",
-    title: "«Ya lo grabamos nosotros con el móvil»: la frase que más arrepentimiento genera después de un evento",
-    subtitle: "Cubro tu evento de manera profesional y te entrego el material completamente editado en menos de 48 horas.",
+    title: "«Ya lo grabamos nosotros con el móvil»",
+    subtitle: "Es la frase que más arrepentimiento genera después de un evento. Cubro tu evento de manera profesional y te entrego el material completamente editado en menos de 48 horas.",
     pains: [
       "El vídeo sale movido y la luz es mala.",
       "El audio no se entiende.",
@@ -86,7 +86,7 @@ export const LANDINGS: Landing[] = [
       "Brutos el mismo día en Google Drive",
       "Material completamente editado en menos de 48 horas",
     ],
-    ctaLabel: "Quiero contenido profesional para mi evento",
+    ctaLabel: "Quiero contenido profesional",
   },
   {
     id: "ev04",

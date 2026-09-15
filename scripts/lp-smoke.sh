@@ -20,6 +20,7 @@ for s in $SLUGS; do
   vsl=$(grep -c 'vsl-es-dani-acero-poster' /tmp/lp.html)
   form=$(grep -c 'id="contacto"' /tmp/lp.html)
   nav=$(grep -oE 'href="/(portfolio|servicios|sobre-mi|precios|blog|contacto)"' /tmp/lp.html | wc -l | tr -d ' ')
+  exits=$(grep -oE 'href="(mailto:|tel:|https://wa\.me)[^"]*"' /tmp/lp.html | wc -l | tr -d ' ')
   en=$(curl -s -A "$UA" -H 'Accept-Language: en-US,en;q=0.9' -o /dev/null -w '%{http_code}' "$B$p")
   enp=$(curl -s -A "$UA" -o /dev/null -w '%{http_code}' "$B/en$p")
   printf "%-44s %s robots=%-26s vsl=%s form=%s nav=%s en-US=%s /en=%s | %s\n" "$p" "$code" "$robots" "$vsl" "$form" "$nav" "$en" "$enp" "$title"
@@ -30,6 +31,7 @@ for s in $SLUGS; do
   [ "$vsl" -gt 0 ] || ko "$p sin VSL"
   [ "$form" -gt 0 ] || ko "$p sin #contacto"
   [ "$nav" = 0 ] || ko "$p con enlaces de navegación ($nav)"
+  [ "$exits" = 0 ] || ko "$p con enlaces de email/WhatsApp/teléfono ($exits): solo debe haber formulario"
   [ "$en" = 200 ] || ko "$p con Accept-Language en-US no da 200 ($en)"
   [ "$enp" = 404 ] || ko "/en$p debería dar 404 ($enp)"
   echo "$sitemap" | grep -q "/lp/" && ko "sitemap contiene /lp/"
