@@ -10,7 +10,15 @@ import { getDictionary, type Lang } from "@/lib/i18n"
 // ancho de banda con el LCP. Aquí solo se monta (iframe + form_embed.js)
 // cuando el usuario hace scroll hasta el formulario o interactúa con el
 // placeholder, usando IntersectionObserver.
-export default function LazyContactForm({ lang = "es" }: { lang?: Lang }) {
+type Props = {
+  lang?: Lang
+  /** Landings de anuncios: pasa la query de la página (UTM) al iframe de GHL para la atribución del lead. */
+  forwardQueryParams?: boolean
+}
+
+const FORM_URL = "https://api.fitnesslaunch.es/widget/form/xIIdaDunDkxA4Mcwehu0"
+
+export default function LazyContactForm({ lang = "es", forwardQueryParams = false }: Props) {
   const t = getDictionary(lang).contactForm
   const containerRef = useRef<HTMLDivElement>(null)
   // Siempre arranca en false, tanto en el servidor (donde IntersectionObserver
@@ -49,7 +57,8 @@ export default function LazyContactForm({ lang = "es" }: { lang?: Lang }) {
       {shouldLoad ? (
         <>
           <iframe
-            src="https://api.fitnesslaunch.es/widget/form/xIIdaDunDkxA4Mcwehu0"
+            // El iframe solo se monta en cliente (shouldLoad), así que window existe aquí.
+            src={forwardQueryParams ? `${FORM_URL}${window.location.search}` : FORM_URL}
             // Altura inicial ≈ la que acaba fijando form_embed.js (móvil ~785px, desktop ~750px): sin ella,
             // en desktop quedaba scroll interno y ENVIAR recortado hasta que el script reajustaba.
             className="block h-[790px] w-[calc(100%+24px)] -ml-3 md:h-[760px] md:w-[calc(100%+32px)] md:-ml-4"

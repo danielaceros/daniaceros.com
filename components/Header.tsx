@@ -17,6 +17,7 @@ import {
   type Lang,
 } from "@/lib/i18n"
 import { persistLocale } from "@/lib/i18n/client"
+import { trackEvent } from "@/lib/analytics"
 
 // `href` = ruta española sin prefijo; se localiza con localizedHref(lang, href).
 const navItems: { key: keyof Dictionary["header"]["nav"]; href: string }[] = [
@@ -107,6 +108,9 @@ export default function Header({ lang, notFound = false }: HeaderProps) {
   const t = getDictionary(lang).header
   const hideHeader = headerHiddenRoutes.has(pathname)
   const isHablemosPage = pathname === "/hablemos"
+  // Landings de anuncios (/lp/<slug>): la misma cabecera mínima que /hablemos, sin enlaces que saquen del funnel.
+  const isLandingPage = pathname.startsWith("/lp/")
+  const isFunnelPage = isHablemosPage || isLandingPage
   const [hidden, setHidden] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const lastScrollYRef = useRef(0)
@@ -168,15 +172,17 @@ export default function Header({ lang, notFound = false }: HeaderProps) {
     return () => window.removeEventListener("keydown", onKeyDown)
   }, [])
 
-  const hablemosHref = localizedHref(lang, "/hablemos")
+  const funnelHref = localizedHref(lang, isLandingPage ? pathname : "/hablemos")
 
-  const handleHablemosContactClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
-    if (!isHablemosPage) return
+  const handleFunnelContactClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    if (!isFunnelPage) return
     event.preventDefault()
+    if (isLandingPage) trackEvent("lp_cta_click", { position: "header" })
     const contactSection = document.getElementById("contacto")
     if (!contactSection) return
     contactSection.scrollIntoView({ behavior: "smooth", block: "start" })
-    window.history.replaceState(null, "", `${hablemosHref}#contacto`)
+    // Conserva la query (UTM de los anuncios) al fijar el ancla.
+    window.history.replaceState(null, "", `${funnelHref}${window.location.search}#contacto`)
   }
 
   if (hideHeader) return null
@@ -195,17 +201,17 @@ export default function Header({ lang, notFound = false }: HeaderProps) {
             hidden ? "-translate-y-24 opacity-0" : "translate-y-0 opacity-100"
           )}
         >
-          {isHablemosPage ? (
+          {isFunnelPage ? (
             <>
               <Link
-                href={hablemosHref}
+                href={funnelHref}
                 className="flex min-h-[44px] min-w-[44px] items-center rounded font-inter text-[10px] font-medium uppercase text-white/88 transition-colors duration-300 hover:text-white sm:text-[11px] focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
               >
                 daniel acero©
               </Link>
               <Link
-                href={`${hablemosHref}#contacto`}
-                onClick={handleHablemosContactClick}
+                href={`${funnelHref}#contacto`}
+                onClick={handleFunnelContactClick}
                 className="group relative flex min-h-[44px] items-center rounded border border-white/14 bg-white/[0.03] px-3 py-2 font-inter text-[10px] uppercase text-white/92 transition-all duration-300 hover:border-white/25 hover:bg-white/[0.06] hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black xl:text-[11px]"
               >
                 {t.cta}
@@ -299,7 +305,7 @@ export default function Header({ lang, notFound = false }: HeaderProps) {
         </nav>
       </header>
 
-      {mobileOpen && !isHablemosPage && (
+      {mobileOpen && !isFunnelPage && (
         // Scroll propio: en móviles bajos (SE, 13, S8) el menú mide ~890px y sin overflow quedaban
         // fuera Contacto, el CTA y ES|EN. pt deja el primer enlace por debajo de la pill (≈78px + notch).
         <div

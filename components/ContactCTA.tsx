@@ -14,6 +14,8 @@ type Props = {
   hideMobileContactInfo?: boolean
   /** Etiqueta del título. "h1" solo en /contacto (única cabecera de la página); el aspecto no cambia. */
   headingAs?: "h1" | "h2"
+  /** Landings de anuncios (/lp): el formulario GHL recibe la query de la página (UTM). */
+  forwardQueryParams?: boolean
 }
 
 // Pie: filas de enlaces en línea, 12px y zona táctil de 44px (antes 11px y 17px de alto).
@@ -31,6 +33,7 @@ export default function ContactCTA({
   hideFooter = false,
   hideMobileContactInfo = false,
   headingAs = "h2",
+  forwardQueryParams = false,
 }: Props) {
   const t = getDictionary(lang).contact
   const WHATSAPP_URL = whatsappUrl(t.whatsappMessage)
@@ -92,7 +95,7 @@ export default function ContactCTA({
           </aside>
 
           <div className={`relative overflow-hidden ${mobileFormFirst ? "order-1" : ""}`}>
-            <LazyContactForm lang={lang} />
+            <LazyContactForm lang={lang} forwardQueryParams={forwardQueryParams} />
           </div>
 
           {mobileFormFirst && !hideMobileContactInfo ? (
