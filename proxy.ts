@@ -83,8 +83,8 @@ export function proxy(request: NextRequest) {
   const cookieLocale = request.cookies.get(LOCALE_COOKIE)?.value
   if (
     !isLang(cookieLocale) &&
-    // Landings de anuncios (/lp/...): solo existen en ES. Sin detección, un móvil en inglés acabaría en un 404 en /en.
-    !pathname.startsWith("/lp/") &&
+    // Landings de anuncios (/eventos/...): solo existen en ES. Sin detección, un móvil en inglés acabaría en un 404 en /en.
+    !pathname.startsWith("/eventos/") &&
     isDocumentNavigation(request) &&
     !isBot(request.headers.get("user-agent"))
   ) {

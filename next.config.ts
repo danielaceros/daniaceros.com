@@ -71,6 +71,19 @@ const nextConfig: NextConfig = {
       { source: "/en/servicios/instituciones", destination: "/en/servicios/institucional", permanent: true },
       // URL de la web antigua que sigue indexada (daba 404): 301 al artículo equivalente.
       { source: "/video-promocional-madrid", destination: "/blog/produccion-video-promocional-empresas-madrid", statusCode: 301 },
+      // Landings de anuncios: /lp/<slug-largo> (15-sep-2026, unas horas en producción) → /eventos/<slug-corto>.
+      { source: "/lp/evento-corporativo-madrid", destination: "/eventos/corporativos", statusCode: 301 },
+      { source: "/lp/error-mas-caro-de-tu-evento", destination: "/eventos/grabalo-bien", statusCode: 301 },
+      { source: "/lp/no-lo-grabes-con-el-movil", destination: "/eventos/sin-movil", statusCode: 301 },
+      { source: "/lp/sin-segunda-toma", destination: "/eventos/sin-segunda-toma", statusCode: 301 },
+      { source: "/lp/video-del-evento-sin-publicar", destination: "/eventos/video-sin-publicar", statusCode: 301 },
+      { source: "/lp/deja-de-buscar-filmmaker", destination: "/eventos/un-solo-filmmaker", statusCode: 301 },
+      { source: "/lp/filmmaker-sin-intermediarios", destination: "/eventos/sin-intermediarios", statusCode: 301 },
+      { source: "/lp/video-evento-en-48-horas", destination: "/eventos/video-en-48-horas", statusCode: 301 },
+      { source: "/lp/video-resumen-de-tu-evento", destination: "/eventos/llena-el-siguiente", statusCode: 301 },
+      { source: "/lp/video-evento-imagen-de-marca", destination: "/eventos/imagen-de-marca", statusCode: 301 },
+      { source: "/lp/un-problema-menos-en-tu-evento", destination: "/eventos/un-problema-menos", statusCode: 301 },
+      { source: "/lp/testimonios-de-tu-evento", destination: "/eventos/testimonios", statusCode: 301 },
     ];
   },
   async headers() {

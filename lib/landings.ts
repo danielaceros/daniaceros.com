@@ -1,7 +1,7 @@
 // lib/landings.ts
 // Landings de funnel para los anuncios de eventos corporativos EV01–EV12 (Meta Ads, estrategia multilandings).
-// Una ruta por anuncio en /lp/<slug>, solo en ES, con message-match del reel: H1 = su gancho, subtítulo = su
-// promesa, dolores y expertise sacados de lo que Dani dice en ese reel. Plantilla única: app/[lang]/lp/[slug]/page.tsx.
+// Una ruta por anuncio en /eventos/<slug>, solo en ES, con message-match del reel: H1 = su gancho, subtítulo = su
+// promesa, dolores y expertise sacados de lo que Dani dice en ese reel. Plantilla única: app/[lang]/eventos/[slug]/page.tsx.
 // Son funnel, no SEO: noindex, fuera del sitemap, de lib/i18n/routes.ts y de public/llms.txt.
 //
 // Fuente de verdad del copy: ~/Projects/filmmaking-ads/landings/LANDINGS_CONTENT.json (sesión «A0 Studios ads»).
@@ -31,7 +31,7 @@ export const LANDINGS: Landing[] = [
   {
     id: "ev01",
     reel: "EV01",
-    slug: "evento-corporativo-madrid",
+    slug: "corporativos",
     metaTitle: "Filmmaker para eventos corporativos en Madrid | Dani Acero",
     title: "¿Organizas un evento corporativo en Madrid? Esto te interesa",
     subtitle: "Transformo tu evento en contenido que merezca la pena ser visto: los brutos, ese mismo día en Google Drive, y el vídeo editado en 24–48 horas.",
@@ -51,7 +51,7 @@ export const LANDINGS: Landing[] = [
   {
     id: "ev02",
     reel: "EV02",
-    slug: "error-mas-caro-de-tu-evento",
+    slug: "grabalo-bien",
     metaTitle: "El error más caro de tu evento: grabarlo mal | Dani Acero",
     title: "Inviertes 2.000–3.000 € en tu evento y después nadie lo graba bien",
     subtitle: "Por una parte pequeña de tu presupuesto tienes el evento grabado y editado en menos de 48 horas.",
@@ -71,7 +71,7 @@ export const LANDINGS: Landing[] = [
   {
     id: "ev03",
     reel: "EV03",
-    slug: "no-lo-grabes-con-el-movil",
+    slug: "sin-movil",
     metaTitle: "No grabes tu evento con el móvil | Dani Acero",
     title: "«Ya lo grabamos nosotros con el móvil»",
     subtitle: "Es la frase que más arrepentimiento genera después de un evento. Cubro tu evento de manera profesional y te entrego el material completamente editado en menos de 48 horas.",
@@ -110,7 +110,7 @@ export const LANDINGS: Landing[] = [
   {
     id: "ev05",
     reel: "EV05",
-    slug: "video-del-evento-sin-publicar",
+    slug: "video-sin-publicar",
     metaTitle: "¿El vídeo de tu evento sigue sin publicar? | Dani Acero",
     title: "¿Sigues con el vídeo de tu último evento aún sin publicar?",
     subtitle: "Voy a tu evento y en menos de 48 horas te saco todo el contenido editado y listo para publicar.",
@@ -130,7 +130,7 @@ export const LANDINGS: Landing[] = [
   {
     id: "ev06",
     reel: "EV06",
-    slug: "deja-de-buscar-filmmaker",
+    slug: "un-solo-filmmaker",
     metaTitle: "Deja de buscar filmmaker en cada evento | Dani Acero",
     title: "¿Cuántos filmmakers distintos habéis contratado en los últimos años?",
     subtitle: "Trabajar conmigo es súper sencillo: voy a tu evento y en menos de 48 horas saco todo el contenido listo para publicar. Sin más explicaciones.",
@@ -150,7 +150,7 @@ export const LANDINGS: Landing[] = [
   {
     id: "ev07",
     reel: "EV07",
-    slug: "filmmaker-sin-intermediarios",
+    slug: "sin-intermediarios",
     metaTitle: "Filmmaker de eventos sin intermediarios | Dani Acero",
     title: "He grabado eventos para IFEMA, Cinesa o la Cámara de Comercio de Madrid",
     subtitle: "Lo que me diferencia es la velocidad: el mismo día de tu evento te entrego todo lo grabado y en menos de 48 horas, el contenido editado. Sin intermediarios, directamente conmigo.",
@@ -169,7 +169,7 @@ export const LANDINGS: Landing[] = [
   {
     id: "ev08",
     reel: "EV08",
-    slug: "video-evento-en-48-horas",
+    slug: "video-en-48-horas",
     metaTitle: "El vídeo de tu evento en menos de 48 horas | Dani Acero",
     title: "La mayoría de productoras tardan semanas en entregarte el vídeo de tu evento. Yo no",
     subtitle: "Te entrego los brutos el mismo día del evento y el vídeo editado en menos de 48 horas, listo para redes sociales.",
@@ -188,7 +188,7 @@ export const LANDINGS: Landing[] = [
   {
     id: "ev09",
     reel: "EV09",
-    slug: "video-resumen-de-tu-evento",
+    slug: "llena-el-siguiente",
     metaTitle: "Un vídeo resumen que llena tu próximo evento | Dani Acero",
     title: "El vídeo de tu evento no es solo un recuerdo: es el que te permite llenar el siguiente",
     subtitle: "Voy a tu evento, lo convierto en contenido para redes sociales y en menos de 48 horas te lo entrego listo para publicar.",
@@ -207,7 +207,7 @@ export const LANDINGS: Landing[] = [
   {
     id: "ev10",
     reel: "EV10",
-    slug: "video-evento-imagen-de-marca",
+    slug: "imagen-de-marca",
     metaTitle: "El vídeo de tu evento es tu imagen de marca | Dani Acero",
     title: "El vídeo de tu evento es la primera imagen que muchos clientes van a tener de tu empresa",
     subtitle: "Voy a tu evento y lo convierto en contenido que puedas publicar durante los próximos meses en redes sociales. Te lo entrego todo en menos de 48 horas.",
@@ -226,7 +226,7 @@ export const LANDINGS: Landing[] = [
   {
     id: "ev11",
     reel: "EV11",
-    slug: "un-problema-menos-en-tu-evento",
+    slug: "un-problema-menos",
     metaTitle: "El vídeo no debería ser otro problema | Dani Acero",
     title: "El día de tu evento ya tienes 47 problemas. El vídeo no debería ser el 48",
     subtitle: "Llego sabiendo exactamente lo que tengo que grabar y no te interrumpo: tú solo te ocupas del evento y yo me ocupo de que salga un buen vídeo.",
@@ -245,7 +245,7 @@ export const LANDINGS: Landing[] = [
   {
     id: "ev12",
     reel: "EV12",
-    slug: "testimonios-de-tu-evento",
+    slug: "testimonios",
     metaTitle: "Testimonios grabados el mismo día del evento | Dani Acero",
     title: "El mejor testimonio de tu evento no se graba la semana siguiente: se graba el mismo día",
     subtitle: "Antes de que se vayan los asistentes, saco testimonios en caliente: clips de 30 segundos para llenar tu próximo evento con contenido de calidad.",

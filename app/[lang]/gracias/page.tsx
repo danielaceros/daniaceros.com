@@ -27,7 +27,7 @@ export default async function GraciasPage({ params }: LangParams) {
         <p className="mx-auto mt-5 max-w-2xl font-inter text-[14px] leading-[1.7] text-white/72 sm:text-[16px]">
           {t.text}
         </p>
-        {/* Contacto directo: solo después del lead (las landings /lp no lo enseñan). */}
+        {/* Contacto directo: solo después del lead (las landings /eventos no lo enseñan). */}
         <div className="mx-auto mt-10 w-fit max-w-md text-left">
           <p className="font-inter text-[14px] leading-[1.8] text-white/66 sm:text-[15px]">{t.directText}</p>
           <div className="mt-6 space-y-1">

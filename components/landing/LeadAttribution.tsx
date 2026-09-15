@@ -1,7 +1,7 @@
 "use client"
 
 // /gracias: atribuye el lead al formulario del que sale. LazyContactForm guarda en sessionStorage su origen al
-// montarse (landing /lp con su lp_id, o web con la ruta de la página). Aquí se lanza `form_lead` en GA4 con
+// montarse (landing /eventos con su lp_id, o web con la ruta de la página). Aquí se lanza `form_lead` en GA4 con
 // origin, lp_id, form_page y UTM, y `FormLead` en Meta. Se borra al leerlo para no contar dos veces al recargar.
 
 import { useEffect } from "react"

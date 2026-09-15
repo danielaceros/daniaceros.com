@@ -11,7 +11,7 @@ declare global {
   }
 }
 
-// Parámetros que se añaden a todos los eventos mientras estén fijados: en las landings /lp,
+// Parámetros que se añaden a todos los eventos mientras estén fijados: en las landings /eventos,
 // `lp_id` llega así a vsl_*, contact_click y lp_cta_click sin tocar cada componente.
 let eventContext: EventParams = {}
 
@@ -49,7 +49,7 @@ export function whenAnalyticsReady(callback: () => void, timeoutMs = 20000) {
   return () => window.clearInterval(timer)
 }
 
-/** sessionStorage: landing de origen (+ UTM), la fija LandingTracking al entrar en una /lp. */
+/** sessionStorage: landing de origen (+ UTM), la fija LandingTracking al entrar en una /eventos. */
 export const LP_ATTRIBUTION_KEY = "lp_attribution"
 export const UTM_KEYS = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term"] as const
 
@@ -57,7 +57,7 @@ export const UTM_KEYS = ["utm_source", "utm_medium", "utm_campaign", "utm_conten
 export const FORM_ORIGIN_KEY = "form_origin"
 
 export type FormOrigin = {
-  /** "landing" (/lp/<slug>) o "web" (cualquier otra página con formulario). */
+  /** "landing" (/eventos/<slug>) o "web" (cualquier otra página con formulario). */
   origin: "landing" | "web"
   /** Ruta de la página del formulario. */
   form_page: string
@@ -67,7 +67,7 @@ export type FormOrigin = {
 /** Origen del formulario de la página actual: landing con su lp_id o web, más las UTM de la URL. */
 export function currentFormOrigin(): FormOrigin {
   const path = window.location.pathname
-  const result: FormOrigin = { origin: path.startsWith("/lp/") ? "landing" : "web", form_page: path }
+  const result: FormOrigin = { origin: path.startsWith("/eventos/") ? "landing" : "web", form_page: path }
   if (result.origin === "landing") {
     try {
       const landing = JSON.parse(sessionStorage.getItem(LP_ATTRIBUTION_KEY) ?? "null")

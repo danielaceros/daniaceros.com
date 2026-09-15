@@ -108,8 +108,8 @@ export default function Header({ lang, notFound = false }: HeaderProps) {
   const t = getDictionary(lang).header
   const hideHeader = headerHiddenRoutes.has(pathname)
   const isHablemosPage = pathname === "/hablemos"
-  // Landings de anuncios (/lp/<slug>): la misma cabecera mínima que /hablemos, sin enlaces que saquen del funnel.
-  const isLandingPage = pathname.startsWith("/lp/")
+  // Landings de anuncios (/eventos/<slug>): la misma cabecera mínima que /hablemos, sin enlaces que saquen del funnel.
+  const isLandingPage = pathname.startsWith("/eventos/")
   const isFunnelPage = isHablemosPage || isLandingPage
   const [hidden, setHidden] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
