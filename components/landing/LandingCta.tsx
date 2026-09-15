@@ -1,6 +1,6 @@
 "use client"
 
-// Botón de las landings /lp: baja al formulario (#contacto) conservando la query (UTM) y mide `lp_cta_click`.
+// Botón de las landings /eventos: baja al formulario (#contacto) conservando la query (UTM) y mide `lp_cta_click`.
 
 import { trackEvent } from "@/lib/analytics"
 

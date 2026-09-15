@@ -8,7 +8,7 @@ const es = {
   title: "Gracias",
   text: "He recibido tu mensaje correctamente. En breve te escribo por WhatsApp o email para hablar de tu proyecto y darte una propuesta.",
   backHome: "Volver al inicio",
-  // Tras el lead (también desde las landings /lp, que no enseñan contacto directo): email y WhatsApp.
+  // Tras el lead (también desde las landings /eventos, que no enseñan contacto directo): email y WhatsApp.
   directText: "¿Prefieres un contacto más directo? Escríbeme por email o WhatsApp y te respondo personalmente.",
   whatsappMessage: "Hola Dani! Acabo de enviarte el formulario de la web.",
 }

@@ -1,5 +1,5 @@
-// app/[lang]/lp/[slug]/page.tsx
-// Plantilla única de las landings de anuncios (/lp/<slug>, solo ES). Datos por anuncio: lib/landings.ts.
+// app/[lang]/eventos/[slug]/page.tsx
+// Plantilla única de las landings de anuncios (/eventos/<slug>, solo ES). Datos por anuncio: lib/landings.ts.
 // Funnel aparte de la web-portfolio: cabecera mínima (Header.tsx), sin enlaces de navegación, noindex y fuera
 // del sitemap. Orden pensado para móvil: gancho del reel → VSL → expertise → dolor → portfolio → formulario.
 import type { Metadata } from "next"
@@ -19,7 +19,7 @@ import { VSL } from "@/lib/media"
 type Props = { params: Promise<{ lang: string; slug: string }> }
 
 // Solo los slugs de lib/landings.ts; slugs desconocidos → 404. Mismo patrón que portfolio/[slug]: se generan
-// para los dos idiomas y la versión /en/lp/... responde notFound() (solo existen en ES).
+// para los dos idiomas y la versión /en/eventos/... responde notFound() (solo existen en ES).
 export const dynamicParams = false
 
 export function generateStaticParams() {
@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ...buildMetadata({
       title: landing.metaTitle,
       description: landing.subtitle,
-      path: `/lp/${landing.slug}`,
+      path: `/eventos/${landing.slug}`,
       noIndex: true,
       translated: false,
     }),
