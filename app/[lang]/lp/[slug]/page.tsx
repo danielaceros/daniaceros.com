@@ -69,7 +69,15 @@ export default async function LandingPage({ params }: Props) {
       <section className="relative w-full overflow-hidden pb-12 pt-8 sm:pb-16 sm:pt-10">
         <div className="relative z-10 flex flex-col items-center px-4 text-center sm:px-6">
           <div className="flex w-full max-w-4xl flex-col items-center">
-            <h1 className="font-display text-[clamp(1.85rem,7.2vw,3.6rem)] font-semibold uppercase leading-[1] text-balance">
+            {/* Tráfico de Instagram/Facebook en móvil: con ganchos largos (>70 caracteres) el titular baja un
+                punto para que el VSL siga asomando en la primera pantalla. */}
+            <h1
+              className={`font-display font-semibold uppercase leading-[1] text-balance ${
+                landing.title.length > 70
+                  ? "text-[clamp(1.55rem,6.1vw,3rem)]"
+                  : "text-[clamp(1.85rem,7.2vw,3.6rem)]"
+              }`}
+            >
               {landing.title}
             </h1>
             <p className="mt-4 max-w-2xl px-1 font-inter text-[14px] leading-[1.7] text-white/74 text-balance sm:text-[16px]">
@@ -136,6 +144,8 @@ export default async function LandingPage({ params }: Props) {
           mobileFormFirst
           hideFooter
           forwardQueryParams
+          // Empieza a cargar ~una pantalla y media antes: al llegar (o al pulsar un CTA) ya está listo.
+          formPreloadMargin="1000px"
           sectionClassName="mt-10 pb-8 sm:mt-14 sm:pb-10"
         />
       </div>

@@ -14,17 +14,22 @@ type Props = {
   lang?: Lang
   /** Landings de anuncios: pasa la query de la página (UTM) al iframe de GHL para la atribución del lead. */
   forwardQueryParams?: boolean
+  /** Cuánto antes de llegar al formulario empieza a cargarse (rootMargin del IntersectionObserver). */
+  preloadMargin?: string
 }
 
 const FORM_URL = "https://api.fitnesslaunch.es/widget/form/xIIdaDunDkxA4Mcwehu0"
 
-export default function LazyContactForm({ lang = "es", forwardQueryParams = false }: Props) {
+export default function LazyContactForm({ lang = "es", forwardQueryParams = false, preloadMargin = "200px" }: Props) {
   const t = getDictionary(lang).contactForm
   const containerRef = useRef<HTMLDivElement>(null)
   // Siempre arranca en false, tanto en el servidor (donde IntersectionObserver
   // ni existe) como en el cliente, para que la hidratación coincida y el HTML
   // inicial nunca lleve el iframe/Turnstile ya montado.
   const [shouldLoad, setShouldLoad] = useState(false)
+  // El iframe tarda en pintar (Turnstile ~1.9MB): hasta su onLoad se mantiene el indicador de carga
+  // detrás, en vez de un hueco negro de 790px (se nota sobre todo con la red lenta de la app de Instagram).
+  const [frameLoaded, setFrameLoaded] = useState(false)
 
   useEffect(() => {
     if (shouldLoad) return
@@ -46,22 +51,38 @@ export default function LazyContactForm({ lang = "es", forwardQueryParams = fals
           observer.disconnect()
         }
       },
-      { rootMargin: "200px" }
+      { rootMargin: preloadMargin }
     )
     observer.observe(el)
     return () => observer.disconnect()
-  }, [shouldLoad])
+  }, [shouldLoad, preloadMargin])
+
+  const loadingIndicator = (
+    <>
+      <span className="h-6 w-6 animate-pulse rounded-full border border-white/20" aria-hidden="true" />
+      <span className="font-inter text-[12px] uppercase tracking-[0.14em]">{t.loading}</span>
+    </>
+  )
 
   return (
-    <div ref={containerRef}>
+    <div ref={containerRef} className="relative">
       {shouldLoad ? (
         <>
+          {frameLoaded ? null : (
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center gap-3 text-white/50"
+            >
+              {loadingIndicator}
+            </div>
+          )}
           <iframe
             // El iframe solo se monta en cliente (shouldLoad), así que window existe aquí.
             src={forwardQueryParams ? `${FORM_URL}${window.location.search}` : FORM_URL}
             // Altura inicial ≈ la que acaba fijando form_embed.js (móvil ~785px, desktop ~750px): sin ella,
             // en desktop quedaba scroll interno y ENVIAR recortado hasta que el script reajustaba.
-            className="block h-[790px] w-[calc(100%+24px)] -ml-3 md:h-[760px] md:w-[calc(100%+32px)] md:-ml-4"
+            onLoad={() => setFrameLoaded(true)}
+            className="relative block h-[790px] w-[calc(100%+24px)] -ml-3 md:h-[760px] md:w-[calc(100%+32px)] md:-ml-4"
             style={{ border: "none", borderRadius: "0px" }}
             id="inline-xIIdaDunDkxA4Mcwehu0"
             data-layout="{'id':'INLINE'}"
@@ -86,8 +107,7 @@ export default function LazyContactForm({ lang = "es", forwardQueryParams = fals
           className="flex h-[790px] w-full flex-col items-center justify-center gap-3 text-white/50 transition-colors duration-300 hover:text-white/70 md:h-[760px]"
           aria-label={t.loadAria}
         >
-          <span className="h-6 w-6 animate-pulse rounded-full border border-white/20" aria-hidden="true" />
-          <span className="font-inter text-[12px] uppercase tracking-[0.14em]">{t.loading}</span>
+          {loadingIndicator}
         </button>
       )}
     </div>

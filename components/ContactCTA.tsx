@@ -16,6 +16,8 @@ type Props = {
   headingAs?: "h1" | "h2"
   /** Landings de anuncios (/lp): el formulario GHL recibe la query de la página (UTM). */
   forwardQueryParams?: boolean
+  /** Margen de precarga del formulario (por defecto 200px). */
+  formPreloadMargin?: string
 }
 
 // Pie: filas de enlaces en línea, 12px y zona táctil de 44px (antes 11px y 17px de alto).
@@ -34,6 +36,7 @@ export default function ContactCTA({
   hideMobileContactInfo = false,
   headingAs = "h2",
   forwardQueryParams = false,
+  formPreloadMargin,
 }: Props) {
   const t = getDictionary(lang).contact
   const WHATSAPP_URL = whatsappUrl(t.whatsappMessage)
@@ -95,7 +98,11 @@ export default function ContactCTA({
           </aside>
 
           <div className={`relative overflow-hidden ${mobileFormFirst ? "order-1" : ""}`}>
-            <LazyContactForm lang={lang} forwardQueryParams={forwardQueryParams} />
+            <LazyContactForm
+              lang={lang}
+              forwardQueryParams={forwardQueryParams}
+              preloadMargin={formPreloadMargin}
+            />
           </div>
 
           {mobileFormFirst && !hideMobileContactInfo ? (
