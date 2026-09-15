@@ -61,9 +61,11 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
-      // Rooftop Content Studio ya no existe: ahora es A0Studios (web propia). 301 para pasar el SEO.
-      { source: "/the-rooftop-content-studio", destination: "https://www.a0studios.es/", permanent: true },
-      { source: "/:lang(en|es)/the-rooftop-content-studio", destination: "https://www.a0studios.es/", permanent: true },
+      // Rooftop Content Studio ahora es A0Studios: la ficha del proyecto vive en /a0studios
+      // (equivalente uno a uno, en el mismo idioma), que enlaza a a0studios.es.
+      { source: "/the-rooftop-content-studio", destination: "/a0studios", statusCode: 301 },
+      { source: "/es/the-rooftop-content-studio", destination: "/a0studios", statusCode: 301 },
+      { source: "/en/the-rooftop-content-studio", destination: "/en/a0studios", statusCode: 301 },
       // /servicios/instituciones era un duplicado de /servicios/institucional (200 con canonical): ahora 308.
       { source: "/servicios/instituciones", destination: "/servicios/institucional", permanent: true },
       { source: "/en/servicios/instituciones", destination: "/en/servicios/institucional", permanent: true },
