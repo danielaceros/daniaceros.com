@@ -14,10 +14,14 @@ const flushTopRoutes = new Set([
 
 export default function PageTransition({ children }: { children: React.ReactNode }) {
   const pathname = usePathname()
-  const isFlushTopRoute = flushTopRoutes.has(stripLocale(pathname).path)
+  const path = stripLocale(pathname).path
+  const isFlushTopRoute = flushTopRoutes.has(path)
+  // Landings de anuncios (/eventos/...): sin fundido de página. data-lux deja todo a opacidad 0 al hidratar
+  // (html.js-motion) y lo recupera con 760 ms de transición: en móvil retrasaba el LCP (póster del VSL) ~2 s.
+  const skipReveal = path.startsWith("/eventos/")
 
   return (
-    <div data-lux className="relative">
+    <div data-lux={skipReveal ? undefined : ""} className="relative">
       <div className={clsx("relative z-10", !isFlushTopRoute && "pt-[5.25rem] sm:pt-[5.5rem] lg:pt-24")}>
         {children}
       </div>
