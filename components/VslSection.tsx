@@ -41,6 +41,8 @@ type Props = {
    * ventana, para que el vídeo entero quepa en la primera pantalla junto al título.
    */
   inline?: boolean
+  /** Landings de anuncios: la pantalla final solo ofrece el formulario (sin WhatsApp ni email que saquen del funnel). */
+  formOnly?: boolean
   className?: string
 }
 
@@ -67,6 +69,7 @@ export default function VslSection({
   hideTitle = false,
   formHref = "#contacto",
   inline = false,
+  formOnly = false,
   className,
 }: Props) {
   const media = VSL[lang]
@@ -621,29 +624,33 @@ export default function VslSection({
                   </svg>
                   {t.endForm}
                 </a>
-                <a
-                  href={waUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => onEndCta("whatsapp")}
-                  className={`${endPill} border border-white/25 bg-white/10 text-white backdrop-blur-md hover:border-white/50`}
-                >
-                  <svg aria-hidden viewBox="0 0 24 24" className={endIcon} strokeWidth={1.8} strokeLinejoin="round">
-                    <path d="M20.5 11.6a8.5 8.5 0 0 1-12.6 7.4L3.5 20.5l1.5-4.3a8.5 8.5 0 1 1 15.5-4.6Z" />
-                  </svg>
-                  {t.endWhatsapp}
-                </a>
-                <a
-                  href={`mailto:${CONTACT_EMAIL}`}
-                  onClick={() => onEndCta("email")}
-                  className={`${endPill} border border-white/25 bg-white/10 text-white backdrop-blur-md hover:border-white/50`}
-                >
-                  <svg aria-hidden viewBox="0 0 24 24" className={endIcon} strokeWidth={1.8} strokeLinejoin="round">
-                    <rect x="3" y="5" width="18" height="14" rx="2" />
-                    <path d="m3.5 6.5 8.5 6 8.5-6" />
-                  </svg>
-                  {t.endEmail}
-                </a>
+                {formOnly ? null : (
+                  <>
+                  <a
+                    href={waUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => onEndCta("whatsapp")}
+                    className={`${endPill} border border-white/25 bg-white/10 text-white backdrop-blur-md hover:border-white/50`}
+                  >
+                    <svg aria-hidden viewBox="0 0 24 24" className={endIcon} strokeWidth={1.8} strokeLinejoin="round">
+                      <path d="M20.5 11.6a8.5 8.5 0 0 1-12.6 7.4L3.5 20.5l1.5-4.3a8.5 8.5 0 1 1 15.5-4.6Z" />
+                    </svg>
+                    {t.endWhatsapp}
+                  </a>
+                  <a
+                    href={`mailto:${CONTACT_EMAIL}`}
+                    onClick={() => onEndCta("email")}
+                    className={`${endPill} border border-white/25 bg-white/10 text-white backdrop-blur-md hover:border-white/50`}
+                  >
+                    <svg aria-hidden viewBox="0 0 24 24" className={endIcon} strokeWidth={1.8} strokeLinejoin="round">
+                      <rect x="3" y="5" width="18" height="14" rx="2" />
+                      <path d="m3.5 6.5 8.5 6 8.5-6" />
+                    </svg>
+                    {t.endEmail}
+                  </a>
+                  </>
+                )}
               </div>
               <button
                 type="button"
