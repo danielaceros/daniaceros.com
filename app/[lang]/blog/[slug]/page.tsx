@@ -1,16 +1,19 @@
 import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 import Image from "next/image"
+import Link from "next/link"
 import {
   getAllPosts,
   getLocalizedPost,
   getPostArticleSchema,
   getPostBreadcrumbSchema,
+  getPostBySlug,
   getPostMetadata,
   hasPostTranslation,
 } from "@/lib/blog"
 import ContactCTA from "@/components/ContactCTA"
-import { DEFAULT_LOCALE, toLang } from "@/lib/i18n"
+import { DEFAULT_LOCALE, localizedHref, toLang } from "@/lib/i18n"
+import { SERVICE_LINKS, relatedServiceForPost } from "@/lib/service-links"
 import { content } from "../content"
 
 type Props = { params: Promise<{ lang: string; slug: string }> }
@@ -48,6 +51,16 @@ export default async function BlogPostPage({ params }: Props) {
   const faqs = post.body.filter((block) => block.type === "faq")
   const articleSchema = getPostArticleSchema(post, lang, translated)
   const breadcrumbSchema = getPostBreadcrumbSchema(post, lang)
+  // El mapeo usa el post ORIGINAL (keyword ES), así ES y EN enlazan al mismo servicio.
+  const relatedPath = relatedServiceForPost(getPostBySlug(slug) ?? post)
+  const related = SERVICE_LINKS[relatedPath][lang]
+  // publishedAt = "AAAA-MM-DD": se formatea en UTC para que no cambie de día según la zona del servidor.
+  const publishedLabel = new Intl.DateTimeFormat(t.dateLocale, {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    timeZone: "UTC",
+  }).format(new Date(`${post.publishedAt}T00:00:00Z`))
 
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-white">
@@ -69,12 +82,26 @@ export default async function BlogPostPage({ params }: Props) {
             {post.title}
           </h1>
           <p className="mt-6 text-[15px] leading-[1.8] text-white/70 max-w-2xl">{post.description}</p>
-          <div className="mt-6 flex flex-wrap gap-3 text-[11px] uppercase tracking-[0.16em] text-white/45 font-inter">
-            <span>{post.publishedAt}</span>
+          {/* Líneas explícitas para que un punto nunca quede colgando al partir: firma · fecha · lectura y, debajo,
+              la keyword (en móvil la firma va sola en la primera línea). */}
+          <div className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-2 text-[11px] uppercase tracking-[0.16em] text-white/45 font-inter">
+            {/* Firma: autor visible enlazado a /sobre-mi (E-E-A-T) y fecha legible con <time> máquina.
+                Zona táctil de 44px con margen negativo: no agranda la fila. */}
+            <span className="flex basis-full sm:basis-auto">
+              <Link
+                href={localizedHref(lang, "/sobre-mi")}
+                rel="author"
+                prefetch={false}
+                className="-my-3.5 inline-flex min-h-[44px] items-center transition-colors hover:text-white/85"
+              >
+                {t.byline}
+              </Link>
+            </span>
+            <span className="hidden h-1 w-1 self-center rounded-full bg-white/20 sm:block" />
+            <time dateTime={post.publishedAt}>{publishedLabel}</time>
             <span className="h-1 w-1 self-center rounded-full bg-white/20" />
             <span>{post.readingTime}</span>
-            <span className="h-1 w-1 self-center rounded-full bg-white/20" />
-            <span>{post.keyword}</span>
+            <span className="basis-full">{post.keyword}</span>
           </div>
         </div>
 
@@ -199,6 +226,23 @@ export default async function BlogPostPage({ params }: Props) {
           })}
         </div>
 
+        {/* Servicio relacionado: enlace interno contextual a la landing del tema (mapeo en lib/service-links.ts). */}
+        <aside className="mt-12 sm:mt-16">
+          <p className="font-inter text-[11px] uppercase tracking-[0.22em] text-white/45">{t.relatedService}</p>
+          <Link
+            href={localizedHref(lang, relatedPath)}
+            prefetch={false}
+            className="group mt-4 flex items-center gap-4 rounded-[20px] border border-white/10 bg-white/[0.03] p-4 sm:gap-5 sm:p-5 hover:border-white/25 hover:bg-white/[0.05] transition-all duration-300"
+          >
+            <span className="min-w-0 flex-1">
+              <span className="block text-[15px] sm:text-[16px] font-inter text-white">{related.title}</span>
+              <span className="mt-0.5 block text-[13px] sm:text-[14px] text-white/60">{related.description}</span>
+            </span>
+            <span className="flex-shrink-0 text-[11px] uppercase tracking-[0.16em] text-white/55 group-hover:text-white/85 transition-colors">
+              {t.viewService} →
+            </span>
+          </Link>
+        </aside>
       </article>
 
       <ContactCTA hideFooter lang={lang} />

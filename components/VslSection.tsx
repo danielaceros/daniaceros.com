@@ -17,10 +17,16 @@
 // Las URLs salen de lib/media.ts (VSL[lang]); si es null la sección no existe.
 
 import { useCallback, useEffect, useRef, useState } from "react"
-import type { CSSProperties, KeyboardEvent as ReactKeyboardEvent, PointerEvent as ReactPointerEvent } from "react"
+import type {
+  CSSProperties,
+  KeyboardEvent as ReactKeyboardEvent,
+  MouseEvent as ReactMouseEvent,
+  PointerEvent as ReactPointerEvent,
+} from "react"
+import { preconnect, preload } from "react-dom"
 import type Hls from "hls.js"
 import { getDictionary, type Lang } from "@/lib/i18n"
-import { VSL } from "@/lib/media"
+import { BLOB_ORIGIN, VSL, VSL_STARTED_EVENT, optimizedPoster } from "@/lib/media"
 import { CONTACT_EMAIL, whatsappUrl } from "@/lib/contact"
 import { trackEvent } from "@/lib/analytics"
 
@@ -114,17 +120,23 @@ export default function VslSection({
     if (loadPromiseRef.current) return loadPromiseRef.current
     loadPromiseRef.current = (async () => {
       try {
-        const { default: HlsLib } = await import("hls.js")
+        // Build "light" (sin subtítulos, pistas de audio alternativas ni DRM, que el VSL no usa): ~40 % menos JS.
+        const { default: HlsLib } = await import("hls.js/light")
         if (HlsLib.isSupported()) {
           const hls = new HlsLib({
-            capLevelToPlayerSize: false,
+            // Tope de calidad según el tamaño real del reproductor × devicePixelRatio (ResizeObserver): en
+            // una caja de 378 px no se baja el 4K; en pantalla completa vuelve a subir. Solo limita el modo
+            // automático: una calidad elegida a mano (p. ej. 4K) se aplica igual (hls.js usa el nivel manual
+            // sin pasar por autoLevelCapping), así que el tope nunca se desactiva y "Auto" vuelve ya limitado.
+            capLevelToPlayerSize: true,
             startLevel: -1,
             abrEwmaDefaultEstimate: 6_000_000,
             abrBandWidthUpFactor: 0.8,
             abrBandWidthFactor: 0.9,
-            maxBufferLength: 30,
-            maxMaxBufferLength: 60,
-            backBufferLength: 30,
+            // Buffer corto: menos MB por delante si la persona se va a mitad de vídeo y menos memoria.
+            maxBufferLength: 12,
+            maxMaxBufferLength: 30,
+            backBufferLength: 15,
           })
           hlsRef.current = hls
           await new Promise<void>((resolve) => {
@@ -236,9 +248,68 @@ export default function VslSection({
     void video.play().catch(() => {})
   }, [lang])
 
-  const onEndCta = (method: "form" | "whatsapp" | "email") => {
+  const onEndCta = (method: "form" | "whatsapp" | "email", event?: ReactMouseEvent<HTMLAnchorElement>) => {
     trackEvent("vsl_cta_click", { vsl_lang: lang, method })
-    if (method === "form" && document.fullscreenElement) void document.exitFullscreen()
+    if (method !== "form") return
+    const exiting = document.fullscreenElement ? document.exitFullscreen().catch(() => {}) : Promise.resolve()
+    // Ancla en la misma página: scroll explícito (como Hero.tsx). En WebKit el salto por ancla + scroll
+    // suave + el montaje del iframe del formulario dejaba la página sin llegar a #contacto.
+    const target = formHref.startsWith("#") ? document.getElementById(formHref.slice(1)) : null
+    if (!target || !event) return
+    event.preventDefault()
+    void exiting.then(() => {
+      target.scrollIntoView({ behavior: "smooth", block: "start" })
+      window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}${formHref}`)
+      // Mientras dura el scroll suave pueden cambiar alturas por encima (imágenes diferidas, montaje del
+      // iframe del formulario). Chrome lo compensa con scroll anchoring; WebKit no, y se quedaba corto.
+      // Cada vez que el scroll se detiene, si #contacto no está arriba, se vuelve a alinear (máx. 6 s y
+      // 4 correcciones). Si la página aún es demasiado corta para llegar (el formulario no ha crecido),
+      // se espera sin gastar corrección. Se abandona si la persona usa rueda, pantalla o teclado.
+      let stopped = false
+      let corrections = 0
+      let lastY = window.scrollY
+      const stop = () => {
+        stopped = true
+        window.clearInterval(timer)
+        window.removeEventListener("wheel", stop)
+        window.removeEventListener("touchstart", stop)
+        window.removeEventListener("keydown", stop)
+      }
+      const realign = () => {
+        if (stopped) return
+        const top = target.getBoundingClientRect().top
+        if (Math.abs(top) <= 4 || Math.abs(top) >= window.innerHeight || corrections >= 4) return
+        const maxY = document.documentElement.scrollHeight - window.innerHeight
+        if (top > 0 && window.scrollY >= maxY - 1) return
+        corrections += 1
+        target.scrollIntoView({ behavior: "smooth", block: "start" })
+      }
+      const timer = window.setInterval(() => {
+        const y = window.scrollY
+        if (y === lastY) realign()
+        lastY = y
+      }, 250)
+      window.setTimeout(stop, 6000)
+      window.addEventListener("wheel", stop, { passive: true, once: true })
+      window.addEventListener("touchstart", stop, { passive: true, once: true })
+      window.addEventListener("keydown", stop, { once: true })
+      // Si el iframe termina de cargar después, una última alineación.
+      const watchIframe = (iframe: HTMLIFrameElement) =>
+        iframe.addEventListener("load", () => { if (!stopped) realign() }, { once: true })
+      const existing = target.querySelector("iframe")
+      if (existing) {
+        watchIframe(existing)
+        return
+      }
+      const observer = new MutationObserver(() => {
+        const iframe = target.querySelector("iframe")
+        if (!iframe) return
+        observer.disconnect()
+        watchIframe(iframe)
+      })
+      observer.observe(target, { childList: true, subtree: true })
+      window.setTimeout(() => observer.disconnect(), 10_000)
+    })
   }
 
   const toggleMute = useCallback(() => {
@@ -311,6 +382,13 @@ export default function VslSection({
   useEffect(() => {
     const video = videoRef.current
     if (!video) return
+    // Primer frame reproduciéndose: libera los vídeos decorativos que esperaban (AutoplayVideo).
+    const onPlaying = () => {
+      const w = window as Window & { __vslStarted?: boolean }
+      if (w.__vslStarted) return
+      w.__vslStarted = true
+      window.dispatchEvent(new Event(VSL_STARTED_EVENT))
+    }
     const onPlay = () => {
       setPlaying(true)
       setEnded(false)
@@ -360,6 +438,7 @@ export default function VslSection({
       if (!hlsRef.current) fallbackToMp4(video)
     }
     video.addEventListener("play", onPlay)
+    video.addEventListener("playing", onPlaying)
     video.addEventListener("pause", onPause)
     video.addEventListener("ended", onEnded)
     video.addEventListener("timeupdate", onTime)
@@ -370,6 +449,7 @@ export default function VslSection({
     video.addEventListener("error", onError)
     return () => {
       video.removeEventListener("play", onPlay)
+      video.removeEventListener("playing", onPlaying)
       video.removeEventListener("pause", onPause)
       video.removeEventListener("ended", onEnded)
       video.removeEventListener("timeupdate", onTime)
@@ -420,6 +500,13 @@ export default function VslSection({
 
   if (!media) return null
 
+  // Home (inline): el póster del VSL es el LCP → optimizado y precargado con prioridad alta.
+  // preconnect al Blob sin y con CORS (el <video> usa la conexión con credenciales; hls.js, fetch anónimo).
+  const posterUrl = optimizedPoster(media.poster, 1080) ?? media.poster
+  preconnect(BLOB_ORIGIN)
+  preconnect(BLOB_ORIGIN, { crossOrigin: "anonymous" })
+  if (inline) preload(posterUrl, { as: "image", fetchPriority: "high" })
+
   const progress = duration ? (currentTime / duration) * 100 : 0
   const buffered = duration ? Math.min(100, (bufferedEnd / duration) * 100) : 0
   const showUi = controlsVisible || !playing || qualityOpen
@@ -427,11 +514,13 @@ export default function VslSection({
   const currentQualityText =
     selectedLevel === -1 ? autoLabel : qualityLabel(levels.find((l) => l.index === selectedLevel)?.height ?? 0)
 
+  // Táctil: 44px en móvil (antes 36px); desde sm vuelve a 40px.
   const iconButton =
-    "flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-white/85 transition-colors duration-300 hover:bg-white/10 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 sm:h-10 sm:w-10"
+    "flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-white/85 transition-colors duration-300 hover:bg-white/10 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 sm:h-10 sm:w-10"
+  // Pantalla final en móvil: pills de 44px en una sola fila (sin iconos por debajo de sm para que quepan).
   const endPill =
-    "inline-flex h-9 items-center gap-2 rounded-full px-4 font-inter text-[12px] font-semibold transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-[1px] focus:outline-none focus-visible:ring-2 focus-visible:ring-white sm:h-11 sm:px-5 sm:text-[14px]"
-  const endIcon = "h-3.5 w-3.5 fill-none stroke-current sm:h-4 sm:w-4"
+    "inline-flex h-11 items-center gap-2 rounded-full px-3.5 font-inter text-[12px] font-semibold transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-[1px] focus:outline-none focus-visible:ring-2 focus-visible:ring-white sm:px-5 sm:text-[14px]"
+  const endIcon = "hidden h-3.5 w-3.5 fill-none stroke-current sm:block sm:h-4 sm:w-4"
 
   return (
     <section
@@ -457,6 +546,7 @@ export default function VslSection({
 
         <div
           ref={containerRef}
+          data-vsl-player
           tabIndex={0}
           onKeyDown={onContainerKey}
           onPointerMove={revealControls}
@@ -468,7 +558,7 @@ export default function VslSection({
         >
           <video
             ref={videoRef}
-            poster={media.poster}
+            poster={posterUrl}
             preload="none"
             playsInline
             aria-label={t.videoLabel}
@@ -500,7 +590,8 @@ export default function VslSection({
             <button
               type="button"
               onClick={unmute}
-              className="absolute right-2.5 top-2.5 flex items-center gap-1.5 whitespace-nowrap rounded-full border border-white/25 bg-black/45 px-2.5 py-1.5 font-inter text-[9px] font-semibold uppercase tracking-[0.12em] text-white shadow-[0_18px_48px_-18px_rgba(0,0,0,0.9)] backdrop-blur-md transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:scale-[1.04] hover:border-white/50 hover:bg-black/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-white sm:right-4 sm:top-4 sm:gap-2.5 sm:px-4 sm:py-2.5 sm:text-[11px] sm:tracking-[0.16em]"
+              // before: amplía la zona táctil a 44px sin agrandar la pill (no tapa más vídeo).
+              className="absolute right-2.5 top-2.5 flex items-center gap-1.5 whitespace-nowrap rounded-full border border-white/25 bg-black/45 px-3 py-2 font-inter text-[11px] font-semibold uppercase tracking-[0.06em] text-white before:absolute before:-inset-1.5 before:content-[''] shadow-[0_18px_48px_-18px_rgba(0,0,0,0.9)] backdrop-blur-md transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:scale-[1.04] hover:border-white/50 hover:bg-black/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-white sm:right-4 sm:top-4 sm:gap-2.5 sm:px-4 sm:py-2.5 sm:text-[11px] sm:tracking-[0.16em]"
             >
               <span className="relative flex h-2 w-2 sm:h-2.5 sm:w-2.5">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white/60" />
@@ -516,12 +607,12 @@ export default function VslSection({
 
           {/* Pantalla final: las opciones de contacto que enseña el vídeo, pulsables */}
           {ended ? (
-            <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-black/60 px-4 text-center backdrop-blur-[3px] sm:gap-5">
+            <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-black/60 px-3 text-center backdrop-blur-[3px] sm:gap-5 sm:px-4">
               <p className="font-inter text-[13px] italic text-white/85 sm:text-[17px]">{t.endTitle}</p>
-              <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+              <div className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-3">
                 <a
                   href={formHref}
-                  onClick={() => onEndCta("form")}
+                  onClick={(event) => onEndCta("form", event)}
                   className={`${endPill} bg-white text-[#0a0a0a] shadow-[0_14px_36px_-16px_rgba(255,255,255,0.45)]`}
                 >
                   <svg aria-hidden viewBox="0 0 24 24" className={endIcon} strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
@@ -557,7 +648,7 @@ export default function VslSection({
               <button
                 type="button"
                 onClick={replay}
-                className="inline-flex items-center gap-2 rounded-full px-3 py-1.5 font-inter text-[10px] uppercase tracking-[0.18em] text-white/60 transition-colors duration-300 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 sm:text-[11px]"
+                className="inline-flex min-h-[44px] items-center gap-2 rounded-full px-3 font-inter text-[11px] uppercase tracking-[0.16em] text-white/60 transition-colors duration-300 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 sm:tracking-[0.18em]"
               >
                 <svg aria-hidden viewBox="0 0 24 24" className="h-3.5 w-3.5 fill-none stroke-current" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
                   <path d="M3 12a9 9 0 1 0 3-6.7" />

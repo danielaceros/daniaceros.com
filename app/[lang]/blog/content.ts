@@ -23,6 +23,12 @@ const es = {
   untranslatedLabel: "Español",
   /** CTA por defecto de las link-cards de un artículo. */
   viewProfile: "Ver perfil",
+  /** Bloque «servicio relacionado» al final del artículo (lib/service-links.ts). */
+  relatedService: "Servicio relacionado",
+  viewService: "Ver servicio",
+  /** Firma del artículo (enlaza a /sobre-mi) y locale para formatear la fecha. */
+  byline: "Por Dani Acero",
+  dateLocale: "es-ES",
   notFound: {
     title: "Artículo no encontrado",
     text: "Este post no existe o todavía no está publicado. Vuelve al índice del blog y seguimos.",
@@ -47,6 +53,10 @@ const en: typeof es = {
   readArticle: "Read article",
   untranslatedLabel: "Spanish",
   viewProfile: "View profile",
+  relatedService: "Related service",
+  viewService: "View service",
+  byline: "By Dani Acero",
+  dateLocale: "en-GB",
   notFound: {
     title: "Article not found",
     text: "This post doesn't exist or hasn't been published yet. Head back to the blog index and carry on from there.",

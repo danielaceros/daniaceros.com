@@ -3,7 +3,7 @@ import Portfolio from "@/components/Portfolio"
 import About from "@/components/About"
 import ContactCTA from "@/components/ContactCTA"
 import VslSection from "@/components/VslSection"
-import { SITE_URL, localizedMetadata, type LangParams } from "@/lib/seo"
+import { PERSON_ID, SITE_URL, localizedMetadata, type LangParams } from "@/lib/seo"
 import { SCHEMA_LANGUAGE, getDictionary, localizedHref, toLang } from "@/lib/i18n"
 import { VSL } from "@/lib/media"
 
@@ -30,12 +30,36 @@ export default async function Home({ params }: LangParams) {
     inLanguage: SCHEMA_LANGUAGE[lang],
   }
 
+  // VideoObject del VSL (un @id por idioma). contentUrl = mp4 progresivo, no el m3u8 del HLS. Sin transcript
+  // hasta que Dani valide la transcripción.
+  const vsl = VSL[lang]
+  const dict = getDictionary(lang)
+  const homeUrl = lang === "es" ? SITE_URL : `${SITE_URL}${homePath}`
+  const vslSchema = vsl
+    ? {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "@id": `${homeUrl}#vsl`,
+        name: dict.vsl.videoLabel,
+        description: `${dict.hero.tagline}. ${dict.hero.description}`,
+        thumbnailUrl: [vsl.poster],
+        contentUrl: vsl.mp4,
+        uploadDate: vsl.uploadDate,
+        duration: vsl.duration,
+        inLanguage: SCHEMA_LANGUAGE[lang],
+        author: { "@id": PERSON_ID },
+      }
+    : null
+
   return (
     <main className="text-white">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
       />
+      {vslSchema ? (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(vslSchema) }} />
+      ) : null}
       {/* El VSL es lo primero que se ve: título compacto encima, sin foto de fondo */}
       <Hero lang={lang} variant="video">
         {VSL[lang] ? <VslSection lang={lang} hideTitle inline /> : null}

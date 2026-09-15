@@ -1,10 +1,11 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { createPortal } from "react-dom"
+import { createPortal, preconnect, preload } from "react-dom"
 import { motion } from "framer-motion"
 import { ease } from "@/lib/motion"
 import { format, getDictionary, type Lang } from "@/lib/i18n"
+import { BLOB_ORIGIN, optimizedPoster } from "@/lib/media"
 
 type Props = {
   title: string
@@ -16,6 +17,10 @@ type Props = {
 
 export default function ProjectHero({ title, video, poster, videoBlurClass = "blur-[0.5px]", lang = "es" }: Props) {
   const t = getDictionary(lang).portfolio
+  // El vídeo del hero es el LCP de la ficha: póster optimizado precargado con prioridad alta.
+  const heroPoster = optimizedPoster(poster, 1080)
+  preconnect(BLOB_ORIGIN)
+  if (heroPoster) preload(heroPoster, { as: "image", fetchPriority: "high" })
   const [isOpen, setIsOpen] = useState(false)
   const [isHeroReady, setIsHeroReady] = useState(false)
   const [isModalReady, setIsModalReady] = useState(false)
@@ -43,11 +48,9 @@ export default function ProjectHero({ title, video, poster, videoBlurClass = "bl
 
   return (
     <>
+      {/* Sin opacity:0 inicial: el vídeo del hero es el LCP y no debe llegar invisible en el HTML. */}
       <motion.section
         data-lux
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.6, ease: ease.expo }}
         className="lux-shine relative h-[30svh] min-h-[220px] w-full overflow-hidden bg-[#0a0a0a] sm:h-[34svh] sm:min-h-[260px] lg:h-[40svh]"
       >
         <button
@@ -61,7 +64,7 @@ export default function ProjectHero({ title, video, poster, videoBlurClass = "bl
         >
           <video
             src={video}
-            poster={poster}
+            poster={heroPoster}
             autoPlay
             muted
             loop
@@ -82,17 +85,17 @@ export default function ProjectHero({ title, video, poster, videoBlurClass = "bl
 
         <div className="pointer-events-none absolute bottom-6 left-4 right-4 sm:bottom-8 sm:left-10 sm:right-10">
           <motion.h1
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ y: 18 }}
+            animate={{ y: 0 }}
             transition={{ duration: 0.5, delay: 0.2, ease: ease.expo }}
             className="font-display text-[24px] font-semibold uppercase leading-[1.03] sm:text-[38px] lg:text-[48px]"
           >
             {title}
           </motion.h1>
           <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.4, delay: 0.35 }}
+            initial={{ y: 18 }}
+            animate={{ y: 0 }}
+            transition={{ duration: 0.5, delay: 0.35, ease: ease.expo }}
             className="mt-2 font-inter text-[10px] font-medium uppercase  text-white/66"
           >
             {t.clickToWatch}
@@ -123,7 +126,7 @@ export default function ProjectHero({ title, video, poster, videoBlurClass = "bl
                 </button>
                 <video
                   src={video}
-                  poster={poster}
+                  poster={heroPoster}
                   controls
                   autoPlay
                   playsInline

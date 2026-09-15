@@ -11,10 +11,12 @@ import {
   SITE_URL,
   buildBreadcrumbSchema,
   buildLanguageAlternates,
+  toMetaDescription,
 } from "@/lib/seo"
 import {
   OG_LOCALE,
   SCHEMA_LANGUAGE,
+  format,
   getDictionary,
   isTranslatedPath,
   localizedHref,
@@ -48,15 +50,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const cleanTitle = project.title.replace(/\s*—\s*.*/, "").trim()
-  const description =
+  // <title> más descriptivo que el nombre a secas ("IFEMA | Daniel Acero") y description ≤ 158 caracteres
+  // (antes era el primer párrafo entero: hasta 257).
+  const pageTitle = format(dict.meta.project.titleTemplate, { title: cleanTitle })
+  const description = toMetaDescription(
     project.sections?.[0]?.items?.[0] ?? dict.meta.project.fallbackDescription
+  )
   const basePath = `/portfolio/${project.slug}`
   const path = localizedHref(lang, basePath)
   const url = `${SITE_URL}${path}`
   const translated = isTranslatedPath(basePath)
 
   return {
-    title: cleanTitle,
+    title: pageTitle,
     description,
     alternates: {
       canonical: path,
@@ -79,13 +85,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       locale: OG_LOCALE[lang],
       url,
       siteName: "Daniel Acero",
-      title: cleanTitle,
+      title: pageTitle,
       description,
       images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630, alt: cleanTitle }],
     },
     twitter: {
       card: "summary_large_image",
-      title: cleanTitle,
+      title: pageTitle,
       description,
       images: [DEFAULT_OG_IMAGE],
     },

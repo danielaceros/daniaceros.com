@@ -43,6 +43,8 @@ const es = {
     },
     project: {
       notFoundTitle: "Proyecto no encontrado",
+      /** <title> de las fichas de portfolio (el layout añade " | Daniel Acero"). */
+      titleTemplate: "{title}: proyecto audiovisual",
       fallbackDescription: "Proyecto audiovisual corporativo de Daniel Acero.",
       keywords: ["video corporativo", "produccion audiovisual", "filmmaker madrid"],
     },
@@ -53,6 +55,15 @@ const es = {
       "Video institucional",
       "Video de eventos",
       "Produccion audiovisual",
+    ],
+    /** knowsAbout del ProfessionalService y la Person (JSON-LD). */
+    knowsAbout: [
+      "Vídeo corporativo",
+      "Vídeo de eventos",
+      "Vídeo institucional",
+      "Filmmaking",
+      "Producción audiovisual",
+      "Contenido para redes sociales",
     ],
   },
   breadcrumbs: {
@@ -126,6 +137,8 @@ const es = {
     whatsappMessage:
       "Hola Dani! Estamos valorando crear vídeo para la empresa y quería saber cómo trabajas y si encaja para nuestro caso.",
     footer: {
+      /** aria-label del bloque de enlaces a servicios del pie. */
+      servicesLabel: "Servicios",
       legalNotice: "aviso legal",
       cookies: "política de cookies",
       privacy: "política de privacidad",

@@ -25,7 +25,10 @@ const personSchema = {
   "@type": "Person",
   "@id": PERSON_ID,
   name: "Daniel Acero",
+  // "Dani Acero" es la marca personal (Instagram @daniaceros, a0studios.es): misma persona.
+  alternateName: "Dani Acero",
   jobTitle: content.es.jobTitle,
+  knowsAbout: getDictionary("es").schema.knowsAbout,
   url: `${SITE_URL}/sobre-mi`,
   image: DEFAULT_OG_IMAGE,
   sameAs: [

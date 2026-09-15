@@ -17,8 +17,8 @@ export default function SobreMiPage({ lang = "es" }: { lang?: Lang }) {
     <main className="min-h-screen bg-[#0a0a0a] text-white">
       <section className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pt-20 sm:pt-28 pb-16 sm:pb-20">
         <motion.header
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ y: 18 }}
+          animate={{ y: 0 }}
           transition={{ duration: 0.6, ease: ease.expo }}
           className="mb-14"
         >
@@ -46,8 +46,8 @@ export default function SobreMiPage({ lang = "es" }: { lang?: Lang }) {
           >
             <motion.div
               variants={{
-                hidden: { opacity: 0, y: 20 },
-                visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: ease.expo } },
+                hidden: { y: 18 },
+                visible: { y: 0, transition: { duration: 0.6, ease: ease.expo } },
               }}
               className="space-y-6"
             >
@@ -57,8 +57,8 @@ export default function SobreMiPage({ lang = "es" }: { lang?: Lang }) {
             </motion.div>
             <motion.div
               variants={{
-                hidden: { opacity: 0, scale: 0.98 },
-                visible: { opacity: 1, scale: 1, transition: { duration: 0.6, ease: ease.expo } },
+                hidden: { y: 18 },
+                visible: { y: 0, transition: { duration: 0.6, ease: ease.expo } },
               }}
               className="relative aspect-[3/4] max-h-[480px] w-full overflow-hidden rounded-xl bg-white/5 lg:max-h-none"
             >

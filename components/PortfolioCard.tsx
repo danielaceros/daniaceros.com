@@ -1,10 +1,12 @@
 "use client"
 
 import Link from "next/link"
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useState } from "react"
 import type { CSSProperties } from "react"
 import { createPortal } from "react-dom"
+import AutoplayVideo from "@/components/AutoplayVideo"
 import { format, getDictionary, type Lang } from "@/lib/i18n"
+import { optimizedPoster } from "@/lib/media"
 
 type Props = {
   title: string
@@ -35,7 +37,6 @@ export default function PortfolioCard({
   lang = "es",
 }: Props) {
   const t = getDictionary(lang).portfolio
-  const cardRef = useRef<HTMLDivElement | null>(null)
   const [canAutoplay] = useState(() => {
     if (typeof navigator === "undefined") return true
     const connection = (navigator as Navigator & { connection?: NavigatorConnection }).connection
@@ -46,26 +47,8 @@ export default function PortfolioCard({
       connection?.effectiveType === "3g"
     return !(isDataSaver || isSlowNetwork)
   })
-  const [shouldLoadVideo, setShouldLoadVideo] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
   const [isModalReady, setIsModalReady] = useState(false)
-
-  useEffect(() => {
-    if (shouldLoadVideo || !cardRef.current) return
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry?.isIntersecting) {
-          setShouldLoadVideo(true)
-          observer.disconnect()
-        }
-      },
-      { rootMargin: "120px 0px", threshold: 0.12 }
-    )
-
-    observer.observe(cardRef.current)
-    return () => observer.disconnect()
-  }, [shouldLoadVideo])
 
   useEffect(() => {
     if (!isOpen) return
@@ -89,14 +72,11 @@ export default function PortfolioCard({
 
   const content = (
     <>
-      <video
-        src={shouldLoadVideo ? video : undefined}
-        poster={poster}
-        autoPlay={canAutoplay}
-        muted
-        loop
-        playsInline
-        preload={index < 2 ? "metadata" : "none"}
+      {/* Solo descarga/reproduce mientras se ve (también en los clones del slideshow de /hablemos). */}
+      <AutoplayVideo
+        src={video}
+        poster={optimizedPoster(poster, 640)}
+        autoplay={canAutoplay}
         className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.035]"
       />
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-100" />
@@ -116,7 +96,6 @@ export default function PortfolioCard({
     return (
       <>
         <div
-          ref={cardRef}
           data-lux
           style={{
             transitionDelay: `${index * 25}ms`,
@@ -162,7 +141,7 @@ export default function PortfolioCard({
                   </button>
                   <video
                     src={video}
-                    poster={poster}
+                    poster={optimizedPoster(poster, 1080)}
                     controls
                     autoPlay
                     playsInline
@@ -189,7 +168,6 @@ export default function PortfolioCard({
   if (isInternal(href)) {
     return (
       <div
-        ref={cardRef}
         data-lux
         style={{
           transitionDelay: `${index * 25}ms`,
@@ -212,7 +190,6 @@ export default function PortfolioCard({
 
   return (
     <div
-      ref={cardRef}
       data-lux
       style={{
         transitionDelay: `${index * 25}ms`,

@@ -3,6 +3,7 @@ import Image from "next/image"
 import ContactCTA from "@/components/ContactCTA"
 import { buildBreadcrumbSchema, localizedMetadata, type LangParams } from "@/lib/seo"
 import { getDictionary, localizedHref, toLang } from "@/lib/i18n"
+import { SERVICES_PAGE_LANDINGS, SERVICE_LINKS } from "@/lib/service-links"
 import { content } from "./content"
 
 export const generateMetadata = localizedMetadata((lang) => ({
@@ -60,6 +61,27 @@ export default async function ServicesPage({ params }: LangParams) {
                       {item.label}
                     </Link>{" "}
                     {item.description}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Enlaces a las landings (mismo estilo que «especialidades»): hoy solo las enlazaba el sitemap. */}
+            <div className="space-y-3">
+              <p className="font-inter text-[12px] font-semibold uppercase text-white/60">
+                {t.landingsLabel}
+              </p>
+              <ul className="space-y-2 font-inter text-[14px] sm:text-[15px] leading-[1.6]">
+                {SERVICES_PAGE_LANDINGS.map((path) => (
+                  <li key={path} className="list-disc list-inside">
+                    <Link
+                      href={localizedHref(lang, path)}
+                      prefetch={false}
+                      className="font-semibold hover:text-white transition-colors"
+                    >
+                      {SERVICE_LINKS[path][lang].title}
+                    </Link>{" "}
+                    — {SERVICE_LINKS[path][lang].description}
                   </li>
                 ))}
               </ul>

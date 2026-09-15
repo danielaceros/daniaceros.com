@@ -1,4 +1,4 @@
-// Textos de /servicios/institucional (y su alias /servicios/instituciones) por idioma.
+// Textos de /servicios/institucional por idioma (/servicios/instituciones redirige aquí).
 // El ES es copia literal de la página original (no tocar).
 import type { Lang } from "@/lib/i18n"
 

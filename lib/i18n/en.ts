@@ -41,6 +41,7 @@ const en: Dictionary = {
     },
     project: {
       notFoundTitle: "Project not found",
+      titleTemplate: "{title}: video project",
       fallbackDescription: "Corporate video project by Daniel Acero.",
       keywords: ["corporate video", "video production", "filmmaker madrid"],
     },
@@ -51,6 +52,14 @@ const en: Dictionary = {
       "Institutional video",
       "Event video",
       "Video production",
+    ],
+    knowsAbout: [
+      "Corporate video",
+      "Event video",
+      "Institutional video",
+      "Filmmaking",
+      "Video production",
+      "Social media content",
     ],
   },
   breadcrumbs: {
@@ -124,6 +133,7 @@ const en: Dictionary = {
     whatsappMessage:
       "Hi Dani! We're thinking about creating a video for our company and I'd like to know how you work and whether it would be a good fit for us.",
     footer: {
+      servicesLabel: "Services",
       legalNotice: "legal notice",
       cookies: "cookie policy",
       privacy: "privacy policy",

@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { PERSON_ID, buildBreadcrumbSchema, buildMetadata, DEFAULT_OG_IMAGE, SITE_URL } from "@/lib/seo"
+import { BUSINESS_ID, PERSON_ID, buildBreadcrumbSchema, buildMetadata, DEFAULT_OG_IMAGE, SITE_URL } from "@/lib/seo"
 import { DEFAULT_LOCALE, OG_LOCALE, SCHEMA_LANGUAGE, getDictionary, localizedHref, type Lang } from "@/lib/i18n"
 import { blogTranslations } from "@/lib/blog-translations"
 
@@ -12345,20 +12345,32 @@ export function getPostMetadata(
   }
 }
 
+/** Primera imagen del cuerpo del post como URL absoluta (o undefined si el post no tiene imágenes). */
+export function getPostImage(post: BlogPost): string | undefined {
+  const image = post.body.find((block) => block.type === "image")
+  if (!image || image.type !== "image") return undefined
+  return image.src.startsWith("/") ? `${SITE_URL}${image.src}` : image.src
+}
+
 /** BlogPosting JSON-LD con las fechas reales del post (article:published_time ya vive en el <meta>, pero le faltaba el JSON-LD). */
 export function getPostArticleSchema(post: BlogPost, lang: Lang = DEFAULT_LOCALE, translated = true) {
+  const url = `${SITE_URL}${localizedHref(lang, `/blog/${post.slug}`)}`
   return {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
+    "@id": `${url}#article`,
+    mainEntityOfPage: { "@type": "WebPage", "@id": url },
     headline: post.title,
     description: post.description,
-    url: `${SITE_URL}${localizedHref(lang, `/blog/${post.slug}`)}`,
+    url,
     // inLanguage solo fuera del ES (el JSON-LD español queda idéntico al original).
     ...(lang === DEFAULT_LOCALE ? {} : { inLanguage: SCHEMA_LANGUAGE[translated ? lang : DEFAULT_LOCALE] }),
     datePublished: post.publishedAt,
     dateModified: post.updatedAt ?? post.publishedAt,
     author: { "@id": PERSON_ID },
-    image: DEFAULT_OG_IMAGE,
+    publisher: { "@id": BUSINESS_ID },
+    // Imagen propia del artículo; la genérica de marca solo si el post no tiene ninguna.
+    image: getPostImage(post) ?? DEFAULT_OG_IMAGE,
   }
 }
 
