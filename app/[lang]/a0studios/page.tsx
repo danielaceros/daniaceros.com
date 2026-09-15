@@ -3,10 +3,10 @@ import ContactCTA from "@/components/ContactCTA"
 import { PERSON_ID, SITE_URL, buildBreadcrumbSchema, localizedMetadata, type LangParams } from "@/lib/seo"
 import { SCHEMA_LANGUAGE, getDictionary, localizedHref, toLang } from "@/lib/i18n"
 import { whatsappUrl } from "@/lib/contact"
-import { A0_IMAGES, A0_URL, content } from "./content"
+import { A0_IMAGES, A0_NAP, A0_URL, content } from "./content"
 
 // Página puente: presenta A0Studios dentro del portfolio y manda a su web (a0studios.es).
-// La antigua /the-rooftop-content-studio redirige directamente a a0studios.es (next.config.ts).
+// La antigua /the-rooftop-content-studio redirige con 301 a esta página (next.config.ts).
 
 export const generateMetadata = localizedMetadata((lang) => ({
   title: content[lang].metaTitle,
@@ -31,16 +31,17 @@ export default async function A0StudiosPage({ params }: LangParams) {
       "@type": "Organization",
       // Mismo @id que el negocio declarado en a0studios.es, para que buscadores/IA lo unan en una entidad.
       "@id": "https://www.a0studios.es/#business",
-      name: "A0Studios",
+      name: A0_NAP.name,
       // "Rooftop Content Studio" = nombre anterior del estudio (rooftopcontentstudio.es → a0studios.es).
-      alternateName: ["Acero Studios", "Rooftop Content Studio"],
-      url: A0_URL,
+      alternateName: "Rooftop Content Studio",
+      url: A0_NAP.url,
+      telephone: A0_NAP.phone,
       founder: { "@id": PERSON_ID },
       address: {
         "@type": "PostalAddress",
-        streetAddress: "Ronda de Atocha, 16",
-        postalCode: "28012",
-        addressLocality: "Madrid",
+        streetAddress: A0_NAP.streetAddress,
+        postalCode: A0_NAP.postalCode,
+        addressLocality: A0_NAP.locality,
         addressCountry: "ES",
       },
     },
