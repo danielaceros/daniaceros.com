@@ -86,7 +86,7 @@ export default async function LandingPage({ params }: Props) {
           </div>
           {VSL[lang] ? (
             <div className="mt-7 w-full sm:mt-9">
-              <VslSection lang={lang} hideTitle inline formOnly formHref="#contacto" />
+              <VslSection lang={lang} hideTitle inline formOnly reveal={false} formHref="#contacto" />
             </div>
           ) : null}
           <LandingCta lpId={landing.id} position="hero" label={landing.ctaLabel} className="mt-7 sm:mt-9" />

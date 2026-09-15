@@ -43,6 +43,11 @@ type Props = {
   inline?: boolean
   /** Landings de anuncios: la pantalla final solo ofrece el formulario (sin WhatsApp ni email que saquen del funnel). */
   formOnly?: boolean
+  /**
+   * Animación de entrada (cinematic-reveal + data-lux). Por defecto sí. En las landings va a false: el póster es
+   * el LCP y la animación lo dejaba con opacidad 0 hasta hidratar (hasta ~2 s de render delay en móvil).
+   */
+  reveal?: boolean
   className?: string
 }
 
@@ -70,6 +75,7 @@ export default function VslSection({
   formHref = "#contacto",
   inline = false,
   formOnly = false,
+  reveal = true,
   className,
 }: Props) {
   const media = VSL[lang]
@@ -527,9 +533,9 @@ export default function VslSection({
 
   return (
     <section
-      data-lux
+      data-lux={reveal ? "" : undefined}
       aria-label={t.videoLabel}
-      className={`cinematic-reveal ${inline ? "w-full" : "page-container pb-4 pt-12 sm:pb-6 sm:pt-16 lg:pt-20"} ${className ?? ""}`}
+      className={`${reveal ? "cinematic-reveal " : ""}${inline ? "w-full" : "page-container pb-4 pt-12 sm:pb-6 sm:pt-16 lg:pt-20"} ${className ?? ""}`}
     >
       <div
         className="mx-auto w-full max-w-5xl"
@@ -695,7 +701,8 @@ export default function VslSection({
                     scrubbingRef.current = false
                     event.currentTarget.releasePointerCapture(event.pointerId)
                   }}
-                  className="group/progress relative flex h-5 cursor-pointer touch-none items-center focus:outline-none"
+                  // h-6: zona táctil mínima de 24px (Lighthouse target-size); la barra visible sigue siendo de 3px.
+                  className="group/progress relative flex h-6 cursor-pointer touch-none items-center focus:outline-none"
                 >
                   <div className="relative h-[3px] w-full overflow-hidden rounded-full bg-white/15 transition-[height] duration-300 group-hover/progress:h-[5px]">
                     <div className="absolute inset-y-0 left-0 bg-white/25" style={{ width: `${buffered}%` }} />

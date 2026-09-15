@@ -121,8 +121,8 @@ export default function LazyContactForm({ lang = "es", preloadMargin = "200px" }
         <button
           type="button"
           onClick={() => setFormSrc(prepareFormSrc())}
+          // Sin aria-label: el nombre accesible es el texto visible (Lighthouse: label-content-name-mismatch).
           className="flex h-[790px] w-full flex-col items-center justify-center gap-3 text-white/50 transition-colors duration-300 hover:text-white/70 md:h-[760px]"
-          aria-label={t.loadAria}
         >
           {loadingIndicator}
         </button>

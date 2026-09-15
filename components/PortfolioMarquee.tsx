@@ -88,6 +88,30 @@ export default function PortfolioMarquee({
   // el resto enseña su póster. En desktop (puntero fino o ≥ 1024px) se reproducen todas las visibles.
   const [singlePlayer, setSinglePlayer] = useState(false)
   const [centeredIndex, setCenteredIndex] = useState(-1)
+  // Pósters diferidos: un <video poster> se descarga nada más pintarse aunque esté bajo el pliegue, y los
+  // 7 pósters (~300 KB) competían con el póster del VSL (el LCP) en móvil. Se piden al acercarse la tira.
+  const sectionRef = useRef<HTMLElement>(null)
+  const [postersReady, setPostersReady] = useState(false)
+
+  useEffect(() => {
+    if (postersReady) return
+    const el = sectionRef.current
+    if (!el || typeof IntersectionObserver === "undefined") {
+      const timer = setTimeout(() => setPostersReady(true), 0)
+      return () => clearTimeout(timer)
+    }
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          setPostersReady(true)
+          observer.disconnect()
+        }
+      },
+      { rootMargin: "600px 0px" }
+    )
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [postersReady])
 
   // Arrastre con ratón en desktop: el scroll nativo (swipe/trackpad) ya
   // funciona solo con overflow-x-auto, esto añade la afordancia de "coger y
@@ -271,7 +295,7 @@ export default function PortfolioMarquee({
 
   return (
     <>
-      <section className={`relative w-full py-6 sm:py-8 ${scrollable ? "" : "overflow-hidden"} ${className ?? ""}`}>
+      <section ref={sectionRef} className={`relative w-full py-6 sm:py-8 ${scrollable ? "" : "overflow-hidden"} ${className ?? ""}`}>
         {scrollable ? (
           <div
             ref={trackRef}
@@ -294,7 +318,7 @@ export default function PortfolioMarquee({
                     autoplay={canPlay(i)}
                     title={item.title}
                     video={item.video}
-                    poster={item.poster}
+                    poster={postersReady ? item.poster : undefined}
                     size={size}
                     lang={lang}
                     href={mode === "link" ? `${basePath}/${item.slug}` : undefined}
@@ -316,7 +340,7 @@ export default function PortfolioMarquee({
                 autoplay={canPlay(i)}
                 title={item.title}
                 video={item.video}
-                poster={item.poster}
+                poster={postersReady ? item.poster : undefined}
                 size={size}
                 lang={lang}
                 href={mode === "link" ? `${basePath}/${item.slug}` : undefined}
