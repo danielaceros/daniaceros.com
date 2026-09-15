@@ -12133,6 +12133,126 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "teaser-vs-video-corporativo-completo",
+    title: "Teaser vs vídeo corporativo completo: qué diferencia hay y cuándo usar cada uno",
+    description:
+      "Explico la diferencia real entre un teaser y un vídeo corporativo completo: qué objetivo cumple cada pieza, cómo planifico ambas en el mismo rodaje y cuándo tiene sentido pedir solo una.",
+    publishedAt: "2026-09-15",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "teaser corporativo",
+      "vídeo corporativo",
+      "producción audiovisual",
+      "filmmaker Madrid",
+      "DaVinci Resolve",
+      "montaje de vídeo",
+    ],
+    keyword: "teaser vs vídeo corporativo completo",
+    intent: "informacional",
+    excerpt:
+      "Un teaser y un vídeo corporativo completo no son la misma pieza cortada a distinta duración. Cumplen objetivos distintos y se planifican de forma distinta desde el guion técnico.",
+    seoTitle: "Teaser vs vídeo corporativo completo | Daniel Acero",
+    metaDescription:
+      "Teaser vs vídeo corporativo completo: qué diferencia hay, cuándo usar cada uno y cómo planifico ambas piezas en el mismo rodaje sin duplicar costes.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cada vez que cierro el presupuesto de un vídeo corporativo con un cliente, aparece la misma pregunta: ¿necesitamos también un teaser? La respuesta casi siempre es sí, pero no porque el teaser sea un vídeo corporativo en miniatura. Son dos piezas con objetivos distintos, ritmos distintos y momentos de publicación distintos, aunque compartan el mismo rodaje.",
+      },
+      {
+        type: "paragraph",
+        text: "Llevo años entregando ambos formatos al mismo cliente en la misma jornada de grabación, y sigo viendo la misma confusión: pensar que el teaser es simplemente el vídeo largo cortado a la mitad. Aquí explico la diferencia real, cómo planifico cada pieza desde el guion técnico y cuándo tiene sentido pedir solo una de las dos.",
+      },
+      {
+        type: "image",
+        src: "/blog/teaser-vs-video-corporativo-completo/hero.webp",
+        alt: "Monitor de ordenador mostrando un software de edición de vídeo con línea de tiempo y ventana de previsualización",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es un teaser y qué es un vídeo corporativo completo" },
+      {
+        type: "paragraph",
+        text: "Un teaser es una pieza corta, de entre 15 y 40 segundos, pensada para generar curiosidad antes de que el espectador vea la pieza principal. Se apoya en planos llamativos, ritmo rápido y muy poco texto. No explica nada en detalle: insinúa, y deja una pregunta abierta.",
+      },
+      {
+        type: "paragraph",
+        text: "El vídeo corporativo completo es la pieza que sí responde esa pregunta. Dura entre 2 y 5 minutos, tiene una estructura narrativa completa con planteamiento, desarrollo y cierre, y suele apoyarse en testimonios, datos concretos o una voz en off que guía al espectador de principio a fin.",
+      },
+      {
+        type: "paragraph",
+        text: "La confusión aparece porque ambas piezas salen del mismo rodaje. Pero un teaser no es un resumen del vídeo largo recortado. Es una pieza con guion propio, aunque reutilice parte del material grabado ese día.",
+      },
+      { type: "heading", level: 2, text: "Cómo planifico cada pieza en un mismo rodaje" },
+      { type: "heading", level: 3, text: "Guion y plano de rodaje separados desde el briefing" },
+      {
+        type: "paragraph",
+        text: "Antes de grabar, decido qué planos son solo para el teaser y cuáles alimentan el vídeo completo. Si dejo esa decisión para la sala de montaje, el teaser sale flojo: acaba siendo material sobrante del vídeo largo, cortado más rápido pero sin personalidad propia. Lo resuelvo anotando en el plan de rodaje qué tomas están pensadas para generar impacto visual inmediato, sin necesidad de contexto.",
+      },
+      { type: "heading", level: 3, text: "Ritmo de montaje distinto, no solo duración distinta" },
+      {
+        type: "paragraph",
+        text: "En el teaser trabajo con cortes de menos de un segundo, música con pegada desde el primer fotograma y cero explicación hablada. En el vídeo completo el ritmo baja: dejo respirar los testimonios, controlo las pausas y ajusto el ritmo plano a plano en DaVinci Resolve para que la narración se entienda sin esfuerzo. Son dos lógicas de montaje distintas, no la misma con menos minutos.",
+      },
+      { type: "heading", level: 3, text: "Momento de publicación distinto" },
+      {
+        type: "paragraph",
+        text: "El teaser sale antes: en la semana previa al lanzamiento, o incluso el mismo día como aviso de que hay algo nuevo. El vídeo completo es la pieza que cierra la campaña, la que enlazo desde la web, desde una newsletter o desde el propio anuncio pagado cuando ya se ha generado algo de interés. Publicar las dos piezas el mismo día suele desperdiciar el efecto de expectación que da el teaser.",
+      },
+      {
+        type: "image",
+        src: "/blog/teaser-vs-video-corporativo-completo/intermedia.webp",
+        alt: "Cámara de vídeo montada sobre un trípode lista para grabar",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Usar el teaser como avance literal del vídeo completo, contando ya lo importante y matando la curiosidad que debería generar.",
+          "Cortar el teaser directamente del vídeo largo ya montado, en vez de darle un montaje propio con su propio ritmo.",
+          "Publicar las dos piezas el mismo día, perdiendo el efecto de expectación que justifica tener un teaser.",
+          "No dejar clara la llamada a la acción del teaser: si genera curiosidad pero no dice dónde ver el resto, se pierde el tráfico que genera.",
+          "Meter texto explicativo largo en el teaser, cuando su función es emocional y visual, no informativa.",
+          "Pedir solo un teaser sin presupuesto para el vídeo completo, esperando que una pieza de 20 segundos haga el trabajo de una de cinco minutos.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Necesito grabar dos veces para tener teaser y vídeo completo?",
+        answer:
+          "No. Ambos salen del mismo rodaje si lo planifico bien desde el guion técnico. Lo que cambia es el montaje posterior, no la jornada de grabación.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto debe durar un teaser corporativo?",
+        answer:
+          "Entre 15 y 40 segundos suele funcionar bien en redes sociales. Si se alarga más, deja de comportarse como un teaser y empieza a competir directamente con el vídeo completo.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo publicar solo el teaser sin llegar a sacar el vídeo completo?",
+        answer:
+          "Puedo entregarlo así si el cliente lo pide, pero pierde bastante sentido: el teaser está diseñado para generar una pregunta que el vídeo completo responde. Sin esa segunda pieza, la campaña se queda coja.",
+      },
+      {
+        type: "faq",
+        question: "¿El teaser necesita voz en off?",
+        answer:
+          "Casi nunca. Funciona mejor con música, texto en pantalla mínimo y planos con fuerza visual propia. La voz en off suele reservarse para el vídeo completo, donde sí hay tiempo de desarrollar una explicación.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes un lanzamiento, un evento o una campaña en marcha y no sabes si necesitas una pieza o las dos, cuéntamelo en /contacto y te digo qué tiene sentido para tu caso concreto antes de cerrar presupuesto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
