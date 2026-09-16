@@ -12253,6 +12253,125 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "testimonios-remoto-video-corporativo",
+    title: "Grabación de testimonios en remoto para vídeo corporativo: cómo hacerlo con calidad",
+    description:
+      "Explico cómo preparo y dirijo testimonios grabados en remoto para vídeo corporativo: qué equipo pido al entrevistado, cómo resuelvo luz y sonido a distancia y qué errores evitar para que no se note amateur.",
+    publishedAt: "2026-09-16",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "testimonios",
+      "grabación remota",
+      "entrevistas a distancia",
+      "producción audiovisual",
+    ],
+    keyword: "grabación de testimonios en remoto para vídeo corporativo",
+    intent: "informacional",
+    excerpt:
+      "Cada vez me piden más testimonios grabados sin que yo esté físicamente delante. Explico cómo los preparo para que la calidad no se note amateur al lado del resto del vídeo corporativo.",
+    seoTitle: "Testimonios en remoto para vídeo corporativo | Daniel Acero",
+    metaDescription:
+      "Grabación de testimonios en remoto para vídeo corporativo: equipo, luz y sonido para que la entrevista a distancia no se note amateur.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cada vez me piden más testimonios grabados en remoto: un cliente en otra ciudad, un directivo que no puede desplazarse, un caso de éxito internacional. La pieza final tiene que verse tan cuidada como si hubiera estado yo detrás de la cámara, aunque la persona grabe sola desde su despacho o su salón.",
+      },
+      {
+        type: "paragraph",
+        text: "El problema no es la distancia. Es que la mayoría de gente graba con el portátil en modo videollamada, sin pensar en luz, sonido ni encuadre, y el resultado se nota amateur al lado del resto del vídeo corporativo. Aquí explico cómo monto estas grabaciones para que la diferencia con una entrevista presencial sea mínima.",
+      },
+      {
+        type: "image",
+        src: "/blog/testimonios-remoto-video-corporativo/hero.webp",
+        alt: "Portátil abierto sobre una mesa de madera durante una videollamada de trabajo",
+        width: 1920,
+        height: 1443,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es un testimonio remoto y por qué cada vez lo piden más" },
+      {
+        type: "paragraph",
+        text: "Un testimonio remoto es una entrevista grabada sin que yo esté físicamente con la persona entrevistada. Ella graba desde su ubicación, normalmente con una cámara o el móvil, siguiendo instrucciones que le doy antes y durante la sesión por videollamada.",
+      },
+      {
+        type: "paragraph",
+        text: "Lo piden sobre todo para casos de éxito con clientes fuera de Madrid, testimonios de partners internacionales o directivos con agendas imposibles de cuadrar con un desplazamiento mío. También cuando el presupuesto no cubre un viaje para grabar 90 segundos de testimonio.",
+      },
+      {
+        type: "paragraph",
+        text: "La calidad final depende casi por completo de la preparación previa. En remoto no puedo corregir nada durante la grabación salvo indicaciones verbales, así que todo el trabajo se adelanta al briefing.",
+      },
+      { type: "heading", level: 2, text: "Cómo lo monto para que no se note amateur" },
+      { type: "heading", level: 3, text: "Equipo mínimo en el lado del entrevistado" },
+      {
+        type: "paragraph",
+        text: "Pido tres cosas básicas: un móvil reciente o una cámara en horizontal a la altura de los ojos, apoyado en algo estable (trípode, pila de libros, lo que tenga a mano), y un micrófono de solapa con cable si lo tiene, o en su defecto los auriculares con micrófono del propio móvil, que graban mejor que el micrófono integrado de un portátil. Si no tiene nada de eso, uso la grabación de audio de la propia videollamada como respaldo y lo aviso desde el principio.",
+      },
+      { type: "heading", level: 3, text: "Luz y sonido cuando no controlas la sala" },
+      {
+        type: "paragraph",
+        text: "Le pido que se coloque de cara a una ventana, nunca de espaldas a ella, y que apague luces cenitales que generan sombras duras bajo los ojos. Si tiene un flexo o una lámpara de mesa, la oriento por videollamada hasta conseguir una luz frontal suave. Para el sonido, la prioridad es una sala pequeña con tela (cortinas, sofá, alfombra): una habitación vacía con paredes lisas suena a eco y no hay forma de arreglarlo después en posproducción sin que se note.",
+      },
+      { type: "heading", level: 3, text: "Guion y dirección a distancia" },
+      {
+        type: "paragraph",
+        text: "Preparo antes preguntas cortas, una por una, y las envío con margen para que la persona no improvise en el momento. Durante la grabación superviso por videollamada mientras ella graba en local con una app como Riverside, que sube el archivo en alta calidad después, en vez de depender de la compresión de la propia videollamada. Corto entre pregunta y pregunta para dar indicaciones, igual que haría en un rodaje presencial.",
+      },
+      {
+        type: "image",
+        src: "/blog/testimonios-remoto-video-corporativo/intermedia.webp",
+        alt: "Micrófono sobre una mesa en un pequeño estudio casero preparado para grabar",
+        width: 1920,
+        height: 1296,
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Grabar directamente desde Zoom o Meet sin herramienta de grabación local: la compresión de la videollamada se nota mucho en el resultado final.",
+          "Dejar que la persona se siente con una ventana enorme detrás: la cámara expone para el fondo y la cara queda a contraluz.",
+          "No probar el audio antes de empezar: un micrófono de solapa mal conectado se descubre a mitad de grabación, cuando ya es tarde.",
+          "Pedir respuestas largas e improvisadas sin preguntas cortas de apoyo: en remoto es más difícil cortar y repetir sin que se note el corte.",
+          "No grabar un plano de seguridad con el móvil como backup, por si la app de grabación falla a mitad de sesión.",
+          "Mezclar testimonios remotos con testimonios presenciales sin cuidar que la calidad de imagen se parezca lo suficiente entre ambos.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Se nota la diferencia entre un testimonio grabado en remoto y uno presencial?",
+        answer:
+          "Con buena preparación, muy poco. La luz y el sonido son los factores que más delatan una grabación remota, no la resolución de la cámara. Si esos dos están cuidados, el resultado se integra bien con el resto del vídeo.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué aplicación recomiendas para grabar testimonios en remoto?",
+        answer:
+          "Uso Riverside cuando puedo, porque graba cada pista en local y la sube en alta calidad después, sin depender de la conexión durante la llamada. Si el entrevistado no quiere instalar nada, Zoom con grabación en la nube en calidad alta es el plan B.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito enviarle equipo al entrevistado?",
+        answer:
+          "Casi nunca. Con un móvil de los últimos cuatro o cinco años y un micrófono de solapa de gama de entrada suele bastar. Solo envío equipo si es un cliente muy importante y quiero controlar hasta el último detalle.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto dura una sesión de testimonio remoto?",
+        answer:
+          "Entre 30 y 45 minutos contando pruebas de luz y sonido, aunque el testimonio final use solo 2 o 3 minutos de ese material. Igual que en presencial, la mayor parte del tiempo se va en encontrar las respuestas naturales, no en la grabación en sí.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes un testimonio que grabar con alguien que no puede venir a Madrid, cuéntame el caso en /contacto y te digo cómo montarlo para que encaje con el resto de tu vídeo corporativo.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
