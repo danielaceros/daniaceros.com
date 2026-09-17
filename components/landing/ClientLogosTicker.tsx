@@ -4,6 +4,11 @@
 //
 // Sin JavaScript: la animación es CSS pura, así que no añade nada al bundle de una landing de pago.
 // El track lleva la lista dos veces y se desplaza media anchura, de modo que el bucle no tiene salto.
+//
+// Cada logo ocupa un HUECO proporcional al viewport (45vw en móvil, 25vw en escritorio), no su ancho natural.
+// Con anchos naturales, un pase completo de los cinco logos medía menos que una pantalla ancha y se veían las
+// dos copias a la vez: la misma marca aparecía dos veces en pantalla. Cinco huecos de 25vw son 125vw, así que
+// un pase siempre es más ancho que la pantalla y eso no puede pasar en ninguna resolución.
 // Los logos van al 65% de opacidad: blancos a tope competirían con el CTA, que también lo es, pero por debajo
 // de ahí quedan apagados y dejan de hacer el trabajo de autoridad que justifica ponerlos.
 
@@ -23,20 +28,24 @@ export default function ClientLogosTicker({ className = "" }: { className?: stri
 
   return (
     <div className={`logo-ticker-mask overflow-hidden ${className}`} aria-hidden="true">
-      <div className="logo-ticker-track flex w-max items-center gap-10 sm:gap-14">
+      <div className="logo-ticker-track flex w-max items-center">
         {track.map((logo, index) => (
-          <img
+          <div
             key={`${logo.src}-${index}`}
-            src={logo.src}
-            alt=""
-            width={logo.width}
-            height={logo.height}
-            loading="lazy"
-            decoding="async"
-            // Alto fijo y ancho automático: las dimensiones explícitas del atributo reservan el hueco
-            // desde el primer pintado, así que la tira no mueve nada al cargar (CLS sigue en 0).
-            className={`w-auto shrink-0 opacity-65 ${"className" in logo ? logo.className : "h-[26px] sm:h-[30px]"}`}
-          />
+            className="flex w-[45vw] shrink-0 items-center justify-center sm:w-[25vw]"
+          >
+            <img
+              src={logo.src}
+              alt=""
+              width={logo.width}
+              height={logo.height}
+              loading="lazy"
+              decoding="async"
+              // Alto fijo y ancho automático: las dimensiones explícitas del atributo reservan el hueco
+              // desde el primer pintado, así que la tira no mueve nada al cargar (CLS sigue en 0).
+              className={`max-w-[80%] w-auto opacity-65 ${"className" in logo ? logo.className : "h-[26px] sm:h-[30px]"}`}
+            />
+          </div>
         ))}
       </div>
     </div>
