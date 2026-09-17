@@ -70,6 +70,28 @@ export const UTM_KEYS = ["utm_source", "utm_medium", "utm_campaign", "utm_conten
 /** sessionStorage: de qué formulario sale el lead. Lo guarda LazyContactForm al montarse; lo lee /gracias. */
 export const FORM_ORIGIN_KEY = "form_origin"
 
+/**
+ * sessionStorage: marca de tiempo de un ENVÍO real del formulario. La escribe LazyContactForm cuando el iframe
+ * de GHL avisa de que ha creado el contacto; la lee /gracias. `form_origin` NO sirve para esto: se escribe al
+ * montar el formulario, o sea con solo llegar a verlo, y dejaba que /gracias contara como lead a cualquiera que
+ * bajase hasta el formulario sin enviarlo y luego llegase a /gracias por historial o atrás/adelante.
+ */
+export const FORM_SUBMIT_KEY = "form_submitted_at"
+
+/** Un envío vale como lead solo si /gracias llega poco después; pasado este rato, la marca se considera vieja. */
+export const SUBMIT_MAX_AGE_MS = 15 * 60 * 1000
+
+/** sessionStorage: qué lead se ha contado ya, para no repetirlo al recargar /gracias o volver con atrás/adelante. */
+export const LEAD_FIRED_KEY = "lead_fired"
+
+/**
+ * Origen del formulario de GHL: solo se aceptan mensajes suyos al escuchar el envío. Es el dominio white-label
+ * de Dani, no el api.fitnesslaunch.es genérico: al ser subdominio de daniaceros.com, el iframe deja de ser
+ * third-party y sus cookies sobreviven a las restricciones de Safari, que es donde más se rompía la atribución
+ * en móvil. Si se cambia el host del iframe, hay que cambiar esto o el aviso de envío deja de llegar.
+ */
+export const GHL_FORM_ORIGIN = "https://api.daniaceros.com"
+
 export type FormOrigin = {
   /** "landing" (/eventos/<slug>) o "web" (cualquier otra página con formulario). */
   origin: "landing" | "web"
