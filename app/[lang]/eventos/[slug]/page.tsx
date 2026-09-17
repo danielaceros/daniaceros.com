@@ -6,6 +6,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import VslSection from "@/components/VslSection"
+import ClientLogosTicker from "@/components/landing/ClientLogosTicker"
 import ContactCTA from "@/components/ContactCTA"
 import PortfolioMarquee from "@/components/PortfolioMarquee"
 import LandingCta from "@/components/landing/LandingCta"
@@ -89,6 +90,9 @@ export default async function LandingPage({ params }: Props) {
               <VslSection lang={lang} hideTitle inline formOnly reveal={false} formHref="#contacto" />
             </div>
           ) : null}
+          {/* Autoridad antes del botón: los logos van entre el vídeo y el CTA a propósito. Ponerlos
+              encima del VSL le robaría atención al vídeo, que es lo que vende. */}
+          <ClientLogosTicker className="mt-8 w-full sm:mt-10" />
           <LandingCta lpId={landing.id} position="hero" label={landing.ctaLabel} className="mt-7 sm:mt-9" />
         </div>
       </section>

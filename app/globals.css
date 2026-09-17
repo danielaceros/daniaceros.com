@@ -295,3 +295,25 @@ body::before {
     display: none;
   }
 }
+/* Tira de logos de clientes de las landings de anuncios (/eventos/<slug>).
+   El track lleva la lista dos veces, así que desplazarlo media anchura vuelve
+   exactamente al punto de partida y el bucle no tiene salto.
+   Con prefers-reduced-motion el bloque general de más arriba ya lo deja quieto. */
+@keyframes logo-ticker {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.logo-ticker-track {
+  animation: logo-ticker 32s linear infinite;
+  will-change: transform;
+}
+
+.logo-ticker-mask {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 9%, #000 91%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 9%, #000 91%, transparent);
+}
