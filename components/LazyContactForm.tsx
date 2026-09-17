@@ -5,7 +5,7 @@ import Script from "next/script"
 import { getDictionary, type Lang } from "@/lib/i18n"
 import { FORM_ORIGIN_KEY, FORM_SUBMIT_KEY, GHL_FORM_ORIGIN, currentFormOrigin } from "@/lib/analytics"
 
-// El iframe de GoHighLevel (servido desde api.daniaceros.com, el dominio white-label) carga Cloudflare
+// El iframe de GoHighLevel carga internamente Cloudflare
 // Turnstile (~1.9MB en 5 chunks) apenas se monta. Antes se montaba siempre
 // en el load inicial de cualquier página con <ContactCTA />, compitiendo por
 // ancho de banda con el LCP. Aquí solo se monta (iframe + form_embed.js)
@@ -17,7 +17,7 @@ type Props = {
   preloadMargin?: string
 }
 
-const FORM_URL = "https://api.daniaceros.com/widget/form/xIIdaDunDkxA4Mcwehu0"
+const FORM_URL = "https://api.fitnesslaunch.es/widget/form/xIIdaDunDkxA4Mcwehu0"
 
 /**
  * URL del iframe con el origen del lead: la query de la página (UTM) + `origen` (lp_id de la landing o "web") y
@@ -137,7 +137,7 @@ export default function LazyContactForm({ lang = "es", preloadMargin = "200px" }
             data-form-id="xIIdaDunDkxA4Mcwehu0"
             title="Form - Dani Acero"
           />
-          <Script src="https://api.daniaceros.com/js/form_embed.js" strategy="afterInteractive" />
+          <Script src="https://api.fitnesslaunch.es/js/form_embed.js" strategy="afterInteractive" />
         </>
       ) : (
         <button
