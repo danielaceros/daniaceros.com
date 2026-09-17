@@ -28,6 +28,7 @@ import type Hls from "hls.js"
 import { getDictionary, type Lang } from "@/lib/i18n"
 import { BLOB_ORIGIN, VSL, VSL_STARTED_EVENT, optimizedPoster } from "@/lib/media"
 import { CONTACT_EMAIL, whatsappUrl } from "@/lib/contact"
+import { VSL_INLINE_MAX_WIDTH } from "@/lib/landing-layout"
 import { trackEvent } from "@/lib/analytics"
 
 type Props = {
@@ -539,7 +540,7 @@ export default function VslSection({
     >
       <div
         className="mx-auto w-full max-w-5xl"
-        style={inline ? { maxWidth: "min(64rem, max(22rem, calc((100svh - 23rem) * 16 / 9)))" } : undefined}
+        style={inline ? { maxWidth: VSL_INLINE_MAX_WIDTH } : undefined}
       >
         {hideTitle ? null : (
           <p

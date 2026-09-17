@@ -90,17 +90,12 @@ export default async function LandingPage({ params }: Props) {
               <VslSection lang={lang} hideTitle inline formOnly reveal={false} formHref="#contacto" />
             </div>
           ) : null}
-        </div>
-
-        {/* Autoridad antes del botón: los logos van entre el vídeo y el CTA a propósito. Ponerlos encima del
-            VSL le robaría atención al vídeo, que es lo que vende.
-            Va de borde a borde, y por eso cuelga directamente de la <section> y no del contenedor de arriba,
-            que tiene px-4 y max-w-4xl. Nada de trucos tipo "left-1/2 w-screen -translate-x-1/2": en esta web
-            ya se comprobó que calcula el offset contra el padre y descuadra en pantallas anchas (ver la nota
-            de components/Portfolio.tsx). */}
-        <ClientLogosTicker className="relative z-10 mt-8 sm:mt-10" />
-
-        <div className="relative z-10 flex flex-col items-center px-4 text-center sm:px-6">
+          {/* Autoridad antes del botón: los logos van entre el vídeo y el CTA a propósito. Ponerlos encima
+              del VSL le robaría atención al vídeo, que es lo que vende.
+              Vuelve dentro del contenedor (antes iba a ancho completo): la tira mide lo mismo que el
+              reproductor y queda alineada con él, para que se lea como parte de la misma composición. El ancho
+              lo comparten vía VSL_INLINE_MAX_WIDTH, así que no pueden descuadrarse. */}
+          <ClientLogosTicker className="mt-8 sm:mt-10" />
           <LandingCta lpId={landing.id} position="hero" label={landing.ctaLabel} className="mt-7 sm:mt-9" />
         </div>
       </section>
