@@ -152,6 +152,9 @@ export default async function LandingPage({ params }: Props) {
           hideFooter
           // Empieza a cargar ~una pantalla y media antes: al llegar (o al pulsar un CTA) ya está listo.
           formPreloadMargin="1000px"
+          // Y además se monta en cuanto ha pintado la primera pantalla: aquí un formulario que no está listo
+          // cuando el usuario baja es un lead perdido. El margen de arriba queda como red de seguridad.
+          formMountAfterPaint
           sectionClassName="mt-10 pb-8 sm:mt-14 sm:pb-10"
         />
       </div>
