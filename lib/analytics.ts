@@ -31,22 +31,36 @@ export function trackEvent(name: string, params: EventParams = {}) {
 
 /**
  * Los scripts de medición cargan con lazyOnload: un evento lanzado al montar la página se perdería.
- * Espera a que exista gtag (como mucho `timeoutMs`) y ejecuta `callback` igualmente al agotarse.
+ * Espera a que `isReady()` se cumpla (como mucho `timeoutMs`) y ejecuta `callback` igualmente al agotarse.
  */
-export function whenAnalyticsReady(callback: () => void, timeoutMs = 20000) {
+function whenReady(isReady: () => boolean, callback: () => void, timeoutMs: number) {
   if (typeof window === "undefined") return () => {}
-  if (window.gtag) {
+  if (isReady()) {
     callback()
     return () => {}
   }
   const started = Date.now()
   const timer = window.setInterval(() => {
-    if (window.gtag || Date.now() - started > timeoutMs) {
+    if (isReady() || Date.now() - started > timeoutMs) {
       window.clearInterval(timer)
       callback()
     }
   }, 400)
   return () => window.clearInterval(timer)
+}
+
+/** Espera a gtag: para los eventos de GA4 (diagnóstico). */
+export function whenAnalyticsReady(callback: () => void, timeoutMs = 20000) {
+  return whenReady(() => !!window.gtag, callback, timeoutMs)
+}
+
+/**
+ * Espera al píxel de Meta. `Lead` es el evento por el que optimizan los anuncios, así que no se puede
+ * colgar de gtag: si gtag estuviera listo y fbq todavía no, el evento se perdería. El snippet del píxel
+ * define `window.fbq` de forma síncrona y encola las llamadas, así que basta con que exista.
+ */
+export function whenPixelReady(callback: () => void, timeoutMs = 20000) {
+  return whenReady(() => typeof window.fbq === "function", callback, timeoutMs)
 }
 
 /** sessionStorage: landing de origen (+ UTM), la fija LandingTracking al entrar en una /eventos. */
