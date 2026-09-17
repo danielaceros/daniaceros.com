@@ -5,12 +5,17 @@
 // Sin JavaScript: la animación es CSS pura, así que no añade nada al bundle de una landing de pago.
 // El track lleva la lista dos veces y se desplaza media anchura, de modo que el bucle no tiene salto.
 //
-// Cada logo ocupa un HUECO proporcional al viewport (45vw en móvil, 25vw en escritorio), no su ancho natural.
-// Con anchos naturales, un pase completo de los cinco logos medía menos que una pantalla ancha y se veían las
-// dos copias a la vez: la misma marca aparecía dos veces en pantalla. Cinco huecos de 25vw son 125vw, así que
-// un pase siempre es más ancho que la pantalla y eso no puede pasar en ninguna resolución.
+// La tira mide exactamente lo que mide el vídeo y queda alineada con él (VSL_INLINE_MAX_WIDTH, compartida con
+// VslSection): se lee como parte de la misma composición, no como una banda pegada de borde a borde.
+//
+// Cada logo ocupa un HUECO del 40% del contenedor, no su ancho natural. Con anchos naturales, un pase completo
+// de los cinco logos medía menos que la tira y se veían las dos copias a la vez: la misma marca aparecía dos
+// veces. Cinco huecos del 40% son el 200% del ancho visible, así que un pase siempre es más ancho que la tira y
+// eso no puede pasar. La regla, si se cambia el número: ancho de hueco x 5 > 100%, con margen.
 // Los logos van al 65% de opacidad: blancos a tope competirían con el CTA, que también lo es, pero por debajo
 // de ahí quedan apagados y dejan de hacer el trabajo de autoridad que justifica ponerlos.
+
+import { VSL_INLINE_MAX_WIDTH } from "@/lib/landing-layout"
 
 const LOGOS = [
   { src: "/logos/ifema.png", width: 128, height: 88 },
@@ -27,12 +32,19 @@ export default function ClientLogosTicker({ className = "" }: { className?: stri
   const track = [...LOGOS, ...LOGOS]
 
   return (
-    <div className={`logo-ticker-mask overflow-hidden ${className}`} aria-hidden="true">
-      <div className="logo-ticker-track flex w-max items-center">
+    <div
+      className={`logo-ticker-mask mx-auto w-full overflow-hidden ${className}`}
+      style={{ maxWidth: VSL_INLINE_MAX_WIDTH }}
+      aria-hidden="true"
+    >
+      {/* Los huecos van en %, así que necesitan un ancho de referencia: el track mide 400% del contenedor
+          (10 huecos del 40%) y cada hueco es el 10% del track. Desplazarlo el 50% son 200% del contenedor,
+          que es exactamente un pase de cinco logos: por eso el bucle cierra sin salto. */}
+      <div className="logo-ticker-track flex w-[400%] items-center">
         {track.map((logo, index) => (
           <div
             key={`${logo.src}-${index}`}
-            className="flex w-[45vw] shrink-0 items-center justify-center sm:w-[25vw]"
+            className="flex w-[10%] shrink-0 items-center justify-center"
           >
             <img
               src={logo.src}

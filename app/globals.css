@@ -309,11 +309,15 @@ body::before {
 }
 
 .logo-ticker-track {
-  animation: logo-ticker 32s linear infinite;
+  /* Lento a propósito: la tira tiene que aglutinar, no desfilar. Con el ancho reducido al del vídeo, a la
+     velocidad anterior los logos pasaban volando. */
+  animation: logo-ticker 50s linear infinite;
   will-change: transform;
 }
 
 .logo-ticker-mask {
-  -webkit-mask-image: linear-gradient(to right, transparent, #000 9%, #000 91%, transparent);
-  mask-image: linear-gradient(to right, transparent, #000 9%, #000 91%, transparent);
+  /* Fundidos anchos y hasta transparente del todo en los extremos: ningún logo aparece ni desaparece de
+     golpe, nace y muere en el degradado. Es lo que da la sensación de tira infinita. */
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 15%, #000 85%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, #000 15%, #000 85%, transparent 100%);
 }
