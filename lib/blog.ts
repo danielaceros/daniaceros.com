@@ -12372,6 +12372,126 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-sector-seguros",
+    title: "Vídeo corporativo para el sector seguros: cómo generar confianza sin tecnicismos",
+    description:
+      "Cómo planteo un vídeo corporativo para aseguradoras y mediadores: qué piezas funcionan, cómo explico coberturas sin jerga y qué límites marca la regulación del sector.",
+    publishedAt: "2026-09-17",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "sector seguros",
+      "aseguradoras",
+      "mediadores de seguros",
+      "filmmaker Madrid",
+    ],
+    keyword: "vídeo corporativo para el sector seguros",
+    intent: "informacional",
+    excerpt:
+      "Un seguro es un producto que no se ve hasta que hace falta usarlo. El vídeo tiene que generar esa confianza por adelantado, sin promesas vacías ni jerga que nadie entiende.",
+    seoTitle: "Vídeo corporativo para el sector seguros | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo para el sector seguros: qué piezas funcionan, cómo explicar coberturas sin jerga y qué límites marca la regulación antes de grabar.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Un seguro es de los productos más difíciles de vender en vídeo. No se ve, no se toca, y la mayoría de clientes solo entiende lo que ha comprado el día que tiene que usarlo. Ahí es donde se nota si la aseguradora o el mediador transmitían confianza real o solo condiciones generales bien maquetadas.",
+      },
+      {
+        type: "paragraph",
+        text: "He trabajado con mediadores y correduras en Madrid que quieren vídeo corporativo pero llegan con el mismo miedo: que el resultado suene a anuncio genérico de compañía grande, sin nada que los distinga. Cuento aquí cómo lo planteo para que el vídeo explique bien y, además, se note que hay una persona detrás.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-seguros/hero.webp",
+        alt: "Dos personas revisando documentos de una póliza de seguro en una mesa de oficina",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "En seguros, el vídeo corporativo casi nunca es una única pieza institucional. Funciona mejor dividido en varios formatos: un vídeo de marca que explica quién eres y cómo trabajas, vídeos explicativos cortos por tipo de cobertura, y perfiles de los agentes o mediadores que llevan la relación directa con el cliente.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque la decisión de contratar un seguro rara vez se toma solo por precio. Se toma por confianza en que, cuando pase algo, alguien va a responder. El vídeo es una de las pocas herramientas que puede transmitir esa sensación antes de firmar, cuando todavía no hay ninguna experiencia real que lo demuestre.",
+      },
+      {
+        type: "paragraph",
+        text: "También hay una capa regulatoria que no existe en otros sectores. No se puede prometer resultados de cobertura, ni sugerir que un siniestro se resolverá de una forma concreta, ni mostrar un caso real de un cliente sin su consentimiento explícito y por escrito. Eso condiciona el guion desde el primer borrador, no solo el montaje final.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Explica coberturas sin jerga de póliza" },
+      {
+        type: "paragraph",
+        text: "El error más habitual es reciclar el lenguaje de las condiciones generales para el guion del vídeo. Trabajo al revés: primero identifico la pregunta real que se hace el cliente (¿qué pasa si tengo un accidente en el extranjero?) y construyo la explicación alrededor de esa pregunta, no alrededor de la cláusula que la responde en el contrato.",
+      },
+      { type: "heading", level: 3, text: "Da protagonismo al mediador, no solo a la marca" },
+      {
+        type: "paragraph",
+        text: "En seguros, la relación de confianza suele ser con la persona, no con la compañía. Si el proyecto es de una correduría o un mediador, priorizo que aparezca hablando a cámara con su propio criterio, en vez de esconderlo detrás de una voz en off corporativa. Eso es lo que diferencia a un mediador de otro cuando el producto de fondo es casi idéntico.",
+      },
+      { type: "heading", level: 3, text: "Cuida el tono: cercano, nunca alarmista" },
+      {
+        type: "paragraph",
+        text: "Es tentador apoyar el guion en el miedo (un accidente, un incendio, una baja médica) para justificar la necesidad del seguro. Evito ese recurso siempre que puedo. Prefiero un tono cercano y resolutivo: qué pasa, qué se hace, quién responde. El miedo capta atención un segundo, pero genera rechazo si se nota forzado, y en este sector la confianza pesa más que el impacto inicial.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-seguros/intermedia.webp",
+        alt: "Persona firmando un documento de contrato sobre una mesa de oficina",
+        width: 1920,
+        height: 1281,
+        caption: "Antes de grabar cualquier testimonio de un cliente real, pido consentimiento explícito y por escrito.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Prometer o insinuar resultados de cobertura concretos, algo que la regulación del sector no permite.",
+          "Mostrar un caso o testimonio de un cliente real sin su consentimiento explícito y por escrito.",
+          "Copiar el lenguaje de las condiciones generales en el guion, en vez de traducirlo a la pregunta real del cliente.",
+          "Apoyar todo el mensaje en el miedo, con música e imágenes alarmistas que generan rechazo más que confianza.",
+          "Esconder al agente o mediador detrás de una voz en off genérica cuando es precisamente la persona la que retiene al cliente.",
+          "Usar planos de stock tan genéricos que el vídeo podría ser de cualquier aseguradora del mercado.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Puedo mostrar un caso real de un siniestro resuelto?",
+        answer:
+          "Solo con el consentimiento explícito y por escrito del cliente, y evitando datos que lo identifiquen si no quiere aparecer. Si no hay ese consentimiento, mejor construir un caso genérico que ilustre el proceso sin nombrar a nadie real.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué formato funciona mejor: un vídeo largo o varias piezas cortas?",
+        answer:
+          "Casi siempre varias piezas cortas por tipo de cobertura o pregunta frecuente, de uno a dos minutos. Se pueden compartir por WhatsApp o email en el momento exacto en que el cliente tiene esa duda, en vez de esperar a que vea un vídeo institucional largo.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito guion cerrado para el agente o mediador?",
+        answer:
+          "No, y no conviene. Trabajo con un brief de ideas clave por pregunta, no con un texto para memorizar. Si hace falta apoyo lo doy con teleprompter en tomas cortas, para que suene argumentado y no leído.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tarda la producción de este tipo de vídeo?",
+        answer:
+          "Para una pieza de marca más tres o cuatro explicativos de cobertura, suelo necesitar una jornada de rodaje y entre una y dos semanas de edición, según el número de piezas finales.",
+      },
+      {
+        type: "paragraph",
+        text: "Si eres mediador, corredor o llevas comunicación en una aseguradora en Madrid y quieres un vídeo que explique bien sin sonar a anuncio genérico, escríbeme desde /contacto y lo planteamos según tus coberturas.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
