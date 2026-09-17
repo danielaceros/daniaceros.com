@@ -12,6 +12,7 @@ import Header from "@/components/Header"
 import PageTransition from "@/components/PageTransition"
 import LuxuryMotionProvider from "@/components/LuxuryMotionProvider"
 import ContactClickTracking from "@/components/ContactClickTracking"
+import MetaPixel from "@/components/MetaPixel"
 import { BUSINESS_ID, DEFAULT_OG_IMAGE, PERSON_ID, SITE_URL } from "@/lib/seo"
 import { OG_LOCALE, getDictionary, localizedHref, type Lang } from "@/lib/i18n"
 
@@ -187,23 +188,7 @@ export default function RootDocument({
               `}
             </Script>
 
-            {/* Meta Pixel */}
-            <Script id="meta-pixel" strategy="lazyOnload">
-              {`
-                !function(f,b,e,v,n,t,s)
-                {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-                n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-                if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-                n.queue=[];t=b.createElement(e);t.async=!0;
-                t.src='https://connect.facebook.net/en_US/fbevents.js';
-                s=b.getElementsByTagName(e)[0];
-                s.parentNode.insertBefore(t,s)}(window, document,'script',
-                'https://connect.facebook.net/en_US/fbevents.js');
-
-                fbq('init', '1832152070803112');
-                fbq('track', 'PageView');
-              `}
-            </Script>
+            <MetaPixel />
 
             {/* Microsoft Clarity — no es analítica crítica para negocio (a
                 diferencia de GA4/Ads), así que se difiere a lazyOnload junto
