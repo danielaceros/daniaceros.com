@@ -130,9 +130,11 @@ export default function LazyContactForm({ lang = "es", preloadMargin = "200px", 
       setFormSrc(prepareFormSrc())
     }
 
+    // 400 ms y no 1 s: el objetivo es que el formulario esté listo cuanto antes. Sigue siendo DESPUÉS del
+    // primer pintado, que es lo que protege al vídeo del VSL de competir por ancho de banda con Turnstile.
     const idle = typeof window.requestIdleCallback === "function"
-      ? window.requestIdleCallback(mount, { timeout: 1000 })
-      : window.setTimeout(mount, 1000)
+      ? window.requestIdleCallback(mount, { timeout: 400 })
+      : window.setTimeout(mount, 400)
 
     if (document.readyState === "complete") {
       mount()
@@ -188,7 +190,7 @@ export default function LazyContactForm({ lang = "es", preloadMargin = "200px", 
             // Altura inicial ≈ la que acaba fijando form_embed.js (móvil ~785px, desktop ~750px).
             // El onLoad es solo la red de seguridad: lo que destapa el formulario es `highlevel.setHeight`.
             // Si ese aviso no llegara, se destapa igualmente poco después de cargar, para no esconderlo.
-            onLoad={() => window.setTimeout(() => setFormReady(true), 1200)}
+            onLoad={() => window.setTimeout(() => setFormReady(true), 600)}
             className="relative block h-[790px] w-[calc(100%+24px)] -ml-3 md:h-[760px] md:w-[calc(100%+32px)] md:-ml-4"
             style={{ border: "none", borderRadius: "0px" }}
             id="inline-xIIdaDunDkxA4Mcwehu0"

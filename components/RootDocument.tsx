@@ -118,6 +118,9 @@ export default function RootDocument({
             150-300 ms en móvil, que es tiempo en el que el hueco del formulario está vacío. */}
         <link rel="preconnect" href="https://api.daniaceros.com" />
         <link rel="dns-prefetch" href="https://api.daniaceros.com" />
+        {/* form_embed.js son 46 KB y es quien mide el formulario y lo deja presentable: precargarlo aquí lo
+            baja en paralelo con el resto, en vez de empezar a pedirlo cuando se monta el iframe. */}
+        <link rel="preload" as="script" href="https://api.daniaceros.com/js/form_embed.js" />
 
         <script
           type="application/ld+json"
