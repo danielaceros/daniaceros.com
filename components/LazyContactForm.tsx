@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useRef, useState } from "react"
+import { useCallback, useEffect, useRef, useState } from "react"
 import Script from "next/script"
 import { getDictionary, type Lang } from "@/lib/i18n"
 import { FORM_ORIGIN_KEY, FORM_SUBMIT_KEY, GHL_FORM_ORIGIN, currentFormOrigin } from "@/lib/analytics"
@@ -44,11 +44,18 @@ function prepareFormSrc(): string {
  * `set-sticky-contacts` (lleva ya el contacto y su fingerprint, o sea que solo sale de un envío correcto).
  * Sin esta marca, /gracias tomaba por lead el simple hecho de haber montado el formulario.
  */
-function useFormSubmitBeacon() {
+function useGhlMessages(onFormSized: () => void) {
   useEffect(() => {
     const onMessage = (event: MessageEvent) => {
-      if (event.origin !== GHL_FORM_ORIGIN) return
-      if (!Array.isArray(event.data) || event.data[0] !== "set-sticky-contacts") return
+      if (event.origin !== GHL_FORM_ORIGIN || !Array.isArray(event.data)) return
+
+      // El formulario ya sabe lo que mide: a partir de aquí se puede enseñar sin que se vea a medio montar.
+      if (event.data[0] === "highlevel.setHeight") {
+        onFormSized()
+        return
+      }
+
+      if (event.data[0] !== "set-sticky-contacts") return
       try {
         sessionStorage.setItem(FORM_SUBMIT_KEY, String(Date.now()))
       } catch {
@@ -57,11 +64,10 @@ function useFormSubmitBeacon() {
     }
     window.addEventListener("message", onMessage)
     return () => window.removeEventListener("message", onMessage)
-  }, [])
+  }, [onFormSized])
 }
 
 export default function LazyContactForm({ lang = "es", preloadMargin = "200px", mountAfterPaint = false }: Props) {
-  useFormSubmitBeacon()
   const t = getDictionary(lang).contactForm
   const containerRef = useRef<HTMLDivElement>(null)
   // Siempre arranca en null, tanto en el servidor (donde IntersectionObserver
@@ -69,9 +75,16 @@ export default function LazyContactForm({ lang = "es", preloadMargin = "200px", 
   // inicial nunca lleve el iframe/Turnstile ya montado.
   const [formSrc, setFormSrc] = useState<string | null>(null)
   const shouldLoad = formSrc !== null
-  // El iframe tarda en pintar (Turnstile ~1.9MB): hasta su onLoad se mantiene el indicador de carga
-  // detrás, en vez de un hueco negro de 790px (se nota sobre todo con la red lenta de la app de Instagram).
-  const [frameLoaded, setFrameLoaded] = useState(false)
+  // El iframe tarda en pintar (Turnstile ~1.9MB) y, peor, entre su onLoad y el momento en que form_embed.js
+  // le fija la altura definitiva se ve el formulario a medio montar: con barra de scroll interna y el botón
+  // ENVIAR cortado por abajo. Por eso no basta con esperar al onLoad.
+  //
+  // El iframe avisa al padre con `highlevel.setHeight` justo cuando ya sabe lo que mide: ese es el momento en
+  // que el formulario está presentable. Hasta entonces se mantiene el esqueleto por delante. Si ese aviso no
+  // llegara nunca, el onLoad lo destapa igualmente pasado un margen, para no dejar el formulario escondido.
+  const [formReady, setFormReady] = useState(false)
+  const revealForm = useCallback(() => setFormReady(true), [])
+  useGhlMessages(revealForm)
 
   useEffect(() => {
     if (shouldLoad) return
@@ -162,19 +175,20 @@ export default function LazyContactForm({ lang = "es", preloadMargin = "200px", 
     <div ref={containerRef} className="relative">
       {formSrc ? (
         <>
-          {frameLoaded ? null : (
+          {formReady ? null : (
             <div
               aria-hidden="true"
-              className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center text-white/50"
+              className="pointer-events-none absolute inset-0 z-10 flex flex-col items-center justify-center bg-[#0a0a0a] text-white/50"
             >
               {loadingIndicator}
             </div>
           )}
           <iframe
             src={formSrc}
-            // Altura inicial ≈ la que acaba fijando form_embed.js (móvil ~785px, desktop ~750px): sin ella,
-            // en desktop quedaba scroll interno y ENVIAR recortado hasta que el script reajustaba.
-            onLoad={() => setFrameLoaded(true)}
+            // Altura inicial ≈ la que acaba fijando form_embed.js (móvil ~785px, desktop ~750px).
+            // El onLoad es solo la red de seguridad: lo que destapa el formulario es `highlevel.setHeight`.
+            // Si ese aviso no llegara, se destapa igualmente poco después de cargar, para no esconderlo.
+            onLoad={() => window.setTimeout(() => setFormReady(true), 1200)}
             className="relative block h-[790px] w-[calc(100%+24px)] -ml-3 md:h-[760px] md:w-[calc(100%+32px)] md:-ml-4"
             style={{ border: "none", borderRadius: "0px" }}
             id="inline-xIIdaDunDkxA4Mcwehu0"
@@ -190,6 +204,9 @@ export default function LazyContactForm({ lang = "es", preloadMargin = "200px", 
             data-layout-iframe-id="inline-xIIdaDunDkxA4Mcwehu0"
             data-form-id="xIIdaDunDkxA4Mcwehu0"
             title="Form - Dani Acero"
+            // Sin barra de scroll interna: mientras GHL no ha fijado la altura, el iframe desborda y su barra
+            // asomaba por el borde del panel como una raya blanca vertical. form_embed.js ajusta la altura igual.
+            scrolling="no"
           />
           <Script src="https://api.daniaceros.com/js/form_embed.js" strategy="afterInteractive" />
         </>
