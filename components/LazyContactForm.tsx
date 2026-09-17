@@ -17,7 +17,7 @@ type Props = {
   preloadMargin?: string
 }
 
-const FORM_URL = "https://api.fitnesslaunch.es/widget/form/xIIdaDunDkxA4Mcwehu0"
+const FORM_URL = "https://api.daniaceros.com/widget/form/xIIdaDunDkxA4Mcwehu0"
 
 /**
  * URL del iframe con el origen del lead: la query de la página (UTM) + `origen` (lp_id de la landing o "web") y
@@ -137,7 +137,7 @@ export default function LazyContactForm({ lang = "es", preloadMargin = "200px" }
             data-form-id="xIIdaDunDkxA4Mcwehu0"
             title="Form - Dani Acero"
           />
-          <Script src="https://api.fitnesslaunch.es/js/form_embed.js" strategy="afterInteractive" />
+          <Script src="https://api.daniaceros.com/js/form_embed.js" strategy="afterInteractive" />
         </>
       ) : (
         <button

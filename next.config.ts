@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 // Dominios de terceros que el sitio carga realmente (revisado con grep sobre
 // app/, components/, lib/ y data/): GTM/GA4/Ads (googletagmanager.com),
 // Meta Pixel (facebook.net/facebook.com), Microsoft Clarity (clarity.ms),
-// el formulario embebido de GoHighLevel/fitnesslaunch (incluye Cloudflare
+// el formulario embebido de GoHighLevel (incluye Cloudflare
 // Turnstile dentro de su propio iframe, que no necesita entrar en esta CSP
 // porque corre en el documento del iframe, con su propia CSP), Firebase
 // Storage (algunas imágenes legacy) y Vercel Blob (vídeos/imágenes actuales
@@ -21,7 +21,7 @@ const CSP = [
   "object-src 'none'",
   "frame-ancestors 'self'",
   // Google tag (GA4 + Google Ads), Meta Pixel, Microsoft Clarity (carga el script real desde scripts.clarity.ms) y GHL.
-  "script-src 'self' 'unsafe-inline' https://*.googletagmanager.com https://www.googleadservices.com https://*.doubleclick.net https://www.google.com https://connect.facebook.net https://www.clarity.ms https://*.clarity.ms https://api.fitnesslaunch.es",
+  "script-src 'self' 'unsafe-inline' https://*.googletagmanager.com https://www.googleadservices.com https://*.doubleclick.net https://www.google.com https://connect.facebook.net https://www.clarity.ms https://*.clarity.ms https://api.fitnesslaunch.es https://api.daniaceros.com",
   "style-src 'self' 'unsafe-inline'",
   "img-src 'self' data: blob: https://firebasestorage.googleapis.com https://kgtz1gujr7extokb.public.blob.vercel-storage.com https://icons.duckduckgo.com https://t3.gstatic.com https://storage.googleapis.com https://www.facebook.com https://*.google-analytics.com https://*.googletagmanager.com https://www.googleadservices.com https://*.doubleclick.net https://www.google.com https://www.google.es https://*.clarity.ms https://c.bing.com https://lavueltaalmundosinunduro.com",
   "media-src 'self' blob: https://kgtz1gujr7extokb.public.blob.vercel-storage.com https://firebasestorage.googleapis.com https://lavueltaalmundosinunduro.com",
@@ -32,10 +32,10 @@ const CSP = [
   // Google Ads a www.google.com/ccm, google.com/ccm/form-data (sin www) y *.doubleclick.net (ad./googleads./stats.);
   // Clarity a *.clarity.ms. Meta Pixel: además de facebook.com, la config del píxel (connect.facebook.net/signals/config)
   // declara dos endpoints de servidor propios (…a.run.app y …on.aws); si Meta los cambia, aparecerán como violación de CSP.
-  "connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://www.google.com https://google.com https://www.google.es https://*.doubleclick.net https://www.googleadservices.com https://connect.facebook.net https://www.facebook.com https://mpc2-prod-26-is5qnl632q-uc.a.run.app https://5z-2b6b7616f94640c2840d1841e1ac24c3.ecs.us-east-1.on.aws https://*.clarity.ms https://api.fitnesslaunch.es https://firebasestorage.googleapis.com https://kgtz1gujr7extokb.public.blob.vercel-storage.com",
-  "frame-src 'self' https://api.fitnesslaunch.es https://www.googletagmanager.com https://*.doubleclick.net https://www.facebook.com",
+  "connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://www.google.com https://google.com https://www.google.es https://*.doubleclick.net https://www.googleadservices.com https://connect.facebook.net https://www.facebook.com https://mpc2-prod-26-is5qnl632q-uc.a.run.app https://5z-2b6b7616f94640c2840d1841e1ac24c3.ecs.us-east-1.on.aws https://*.clarity.ms https://api.fitnesslaunch.es https://api.daniaceros.com https://firebasestorage.googleapis.com https://kgtz1gujr7extokb.public.blob.vercel-storage.com",
+  "frame-src 'self' https://api.fitnesslaunch.es https://api.daniaceros.com https://www.googletagmanager.com https://*.doubleclick.net https://www.facebook.com",
   // Meta Pixel envía algunos eventos con un <form> POST a www.facebook.com/tr.
-  "form-action 'self' https://api.fitnesslaunch.es https://www.facebook.com",
+  "form-action 'self' https://api.fitnesslaunch.es https://api.daniaceros.com https://www.facebook.com",
 ].join("; ");
 
 const nextConfig: NextConfig = {
