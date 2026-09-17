@@ -15,6 +15,8 @@ type Props = {
   lang?: Lang
   /** Cuánto antes de llegar al formulario empieza a cargarse (rootMargin del IntersectionObserver). */
   preloadMargin?: string
+  /** Solo landings de anuncios: monta el iframe en cuanto ha pintado la primera pantalla, sin esperar al scroll. */
+  mountAfterPaint?: boolean
 }
 
 const FORM_URL = "https://api.daniaceros.com/widget/form/xIIdaDunDkxA4Mcwehu0"
@@ -58,7 +60,7 @@ function useFormSubmitBeacon() {
   }, [])
 }
 
-export default function LazyContactForm({ lang = "es", preloadMargin = "200px" }: Props) {
+export default function LazyContactForm({ lang = "es", preloadMargin = "200px", mountAfterPaint = false }: Props) {
   useFormSubmitBeacon()
   const t = getDictionary(lang).contactForm
   const containerRef = useRef<HTMLDivElement>(null)
@@ -97,11 +99,63 @@ export default function LazyContactForm({ lang = "es", preloadMargin = "200px" }
     return () => observer.disconnect()
   }, [shouldLoad, preloadMargin])
 
+  // Landings de anuncios: el formulario se monta en cuanto ha pintado la primera pantalla, sin esperar a que
+  // el usuario baje. El razonamiento es de negocio, no de rendimiento: si alguien llega al formulario y no lo
+  // ve, es un lead perdido; unas décimas en la primera pantalla no lo son. Medido en producción, el iframe
+  // tardaba ~1,4 s en mostrar campos con red normal y ~3 s con red lenta, y ese reloj no empezaba hasta que el
+  // usuario bajaba 2.400 px.
+  //
+  // Se espera al pintado a propósito, en vez de montarlo junto al hero: Turnstile se trae ~1,9 MB y competiría
+  // por ancho de banda con el vídeo del VSL, que es el LCP y lo que retiene al visitante.
+  // El IntersectionObserver de arriba se queda como red de seguridad por si el idle no llegara nunca.
+  useEffect(() => {
+    if (!mountAfterPaint || shouldLoad) return
+    let done = false
+    const mount = () => {
+      if (done) return
+      done = true
+      setFormSrc(prepareFormSrc())
+    }
+
+    const idle = typeof window.requestIdleCallback === "function"
+      ? window.requestIdleCallback(mount, { timeout: 1000 })
+      : window.setTimeout(mount, 1000)
+
+    if (document.readyState === "complete") {
+      mount()
+    } else {
+      window.addEventListener("load", mount, { once: true })
+    }
+
+    return () => {
+      done = true
+      window.removeEventListener("load", mount)
+      if (typeof window.cancelIdleCallback === "function" && typeof idle === "number") {
+        window.cancelIdleCallback(idle)
+      } else {
+        window.clearTimeout(idle as number)
+      }
+    }
+  }, [mountAfterPaint, shouldLoad])
+
+  // Esqueleto con la forma real del formulario (cuatro campos y un botón). El iframe tarda ~1,4 s en móvil con
+  // red normal y ~3 s con red lenta: un círculo latiendo en ese hueco parece un error, y una silueta reconocible
+  // dice "aquí va un formulario, espera". Va dentro del mismo alto de siempre, así que no reintroduce CLS.
   const loadingIndicator = (
-    <>
-      <span className="h-6 w-6 animate-pulse rounded-full border border-white/20" aria-hidden="true" />
-      <span className="font-inter text-[12px] uppercase tracking-[0.14em]">{t.loading}</span>
-    </>
+    <div className="flex w-full max-w-[420px] flex-col gap-6 px-6" aria-hidden="true">
+      {[0, 1, 2].map((i) => (
+        <div key={i} className="flex flex-col gap-2">
+          <span className="h-[10px] w-24 animate-pulse rounded-sm bg-white/12" />
+          <span className="h-[38px] w-full rounded-sm border-b border-white/12 bg-white/[0.04]" />
+        </div>
+      ))}
+      <div className="flex flex-col gap-2">
+        <span className="h-[10px] w-40 animate-pulse rounded-sm bg-white/12" />
+        <span className="h-[96px] w-full rounded-sm border-b border-white/12 bg-white/[0.04]" />
+      </div>
+      <span className="mt-2 h-[52px] w-full animate-pulse rounded-full bg-white/10" />
+      <span className="sr-only">{t.loading}</span>
+    </div>
   )
 
   return (
@@ -111,7 +165,7 @@ export default function LazyContactForm({ lang = "es", preloadMargin = "200px" }
           {frameLoaded ? null : (
             <div
               aria-hidden="true"
-              className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center gap-3 text-white/50"
+              className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center text-white/50"
             >
               {loadingIndicator}
             </div>
@@ -144,7 +198,7 @@ export default function LazyContactForm({ lang = "es", preloadMargin = "200px" }
           type="button"
           onClick={() => setFormSrc(prepareFormSrc())}
           // Sin aria-label: el nombre accesible es el texto visible (Lighthouse: label-content-name-mismatch).
-          className="flex h-[790px] w-full flex-col items-center justify-center gap-3 text-white/50 transition-colors duration-300 hover:text-white/70 md:h-[760px]"
+          className="flex h-[790px] w-full flex-col items-center justify-center text-white/50 transition-colors duration-300 hover:text-white/70 md:h-[760px]"
         >
           {loadingIndicator}
         </button>

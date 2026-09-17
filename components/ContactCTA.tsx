@@ -16,6 +16,8 @@ type Props = {
   headingAs?: "h1" | "h2"
   /** Margen de precarga del formulario (por defecto 200px). */
   formPreloadMargin?: string
+  /** Solo landings de anuncios: monta el formulario tras el primer pintado, sin esperar al scroll. */
+  formMountAfterPaint?: boolean
   /** Landings de anuncios: solo el formulario, sin email ni WhatsApp (se enseñan en /gracias). */
   formOnly?: boolean
 }
@@ -36,6 +38,7 @@ export default function ContactCTA({
   hideMobileContactInfo = false,
   headingAs = "h2",
   formPreloadMargin,
+  formMountAfterPaint,
   formOnly = false,
 }: Props) {
   const t = getDictionary(lang).contact
@@ -107,6 +110,7 @@ export default function ContactCTA({
             <LazyContactForm
               lang={lang}
               preloadMargin={formPreloadMargin}
+              mountAfterPaint={formMountAfterPaint}
             />
           </div>
 

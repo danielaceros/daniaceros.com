@@ -12,7 +12,6 @@ import Header from "@/components/Header"
 import PageTransition from "@/components/PageTransition"
 import LuxuryMotionProvider from "@/components/LuxuryMotionProvider"
 import ContactClickTracking from "@/components/ContactClickTracking"
-import MetaPixel from "@/components/MetaPixel"
 import { BUSINESS_ID, DEFAULT_OG_IMAGE, PERSON_ID, SITE_URL } from "@/lib/seo"
 import { OG_LOCALE, getDictionary, localizedHref, type Lang } from "@/lib/i18n"
 
@@ -115,6 +114,11 @@ export default function RootDocument({
       <head>
         <link rel="apple-touch-icon" href={FAVICON_URL} sizes="180x180" />
 
+        {/* El formulario de GoHighLevel vive en un tercer dominio: abrir DNS y TLS por adelantado ahorra
+            150-300 ms en móvil, que es tiempo en el que el hueco del formulario está vacío. */}
+        <link rel="preconnect" href="https://api.daniaceros.com" />
+        <link rel="dns-prefetch" href="https://api.daniaceros.com" />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -188,7 +192,28 @@ export default function RootDocument({
               `}
             </Script>
 
-            <MetaPixel />
+            {/* Meta Pixel. `afterInteractive` (antes lazyOnload) porque con lazyOnload el script espera a que
+                la ventana esté ociosa y quien entra desde la app de Instagram y se va en el primer segundo y
+                medio no llega a disparar PageView: Meta no cuenta esa visita (primer día de anuncios: 9 clics
+                en el enlace, 3 landing_page_view). Tiene que quedarse AQUÍ, en el documento de servidor, para
+                que el snippet viaje en el HTML; sacarlo a un componente de cliente lo retrasaba hasta después
+                de la hidratación, que es justo lo contrario de lo que se buscaba. */}
+            <Script id="meta-pixel" strategy="afterInteractive">
+              {`
+                !function(f,b,e,v,n,t,s)
+                {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+                if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+                n.queue=[];t=b.createElement(e);t.async=!0;
+                t.src='https://connect.facebook.net/en_US/fbevents.js';
+                s=b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t,s)}(window, document,'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+
+                fbq('init', '1832152070803112');
+                fbq('track', 'PageView');
+              `}
+            </Script>
 
             {/* Microsoft Clarity — no es analítica crítica para negocio (a
                 diferencia de GA4/Ads), así que se difiere a lazyOnload junto
