@@ -12492,6 +12492,126 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "backup-gestion-archivos-rodaje-corporativo",
+    title: "Backup y gestión de archivos en un rodaje corporativo: cómo no perder material",
+    description:
+      "Cómo organizo el backup y la gestión de archivos durante un rodaje corporativo: regla de las tres copias, verificación con checksum y nomenclatura de carpetas.",
+    publishedAt: "2026-09-18",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "backup rodaje",
+      "gestión de archivos",
+      "posproducción",
+      "filmmaker Madrid",
+    ],
+    keyword: "backup y gestión de archivos en un rodaje corporativo",
+    intent: "informacional",
+    excerpt:
+      "El material de un rodaje corporativo casi nunca se puede repetir. El backup no es un paso opcional al final del día: es parte del rodaje mismo.",
+    seoTitle: "Backup y gestión de archivos en rodaje | Daniel Acero",
+    metaDescription:
+      "Backup y gestión de archivos en un rodaje corporativo: regla de las tres copias, verificación con checksum y nomenclatura de carpetas antes de formatear tarjetas.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cada rodaje corporativo termina con las tarjetas de memoria llenas de material que no se puede repetir. Si es una entrevista con el CEO de una jornada completa, no hay forma de volver a grabar esa conversación si un disco falla al día siguiente. Por eso el backup no es un paso opcional al final del día: es parte del rodaje mismo.",
+      },
+      {
+        type: "paragraph",
+        text: "Llevo años grabando vídeo corporativo en Madrid y tengo el protocolo de backup tan automatizado como el propio rodaje. No es complicado, pero exige disciplina: hacerlo siempre igual, en el mismo orden, aunque sea tarde y quede poca batería en el portátil.",
+      },
+      {
+        type: "image",
+        src: "/blog/backup-gestion-archivos-rodaje-corporativo/hero.webp",
+        alt: "Pantalla de un editor de vídeo mostrando la forma de onda de audio y la línea de tiempo de montaje",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Backup en rodaje corporativo significa copiar el material grabado desde la tarjeta de memoria a al menos dos ubicaciones distintas antes de formatear esa tarjeta para volver a usarla. Parece obvio, pero es el paso que más se salta cuando hay prisa por recoger el equipo o llegar al siguiente rodaje.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque el coste de perder material no es solo económico. Es el tiempo del cliente, la disponibilidad del CEO o del equipo que aparece en el vídeo, y la reputación de quien lo ha grabado. Un fallo de backup en un rodaje de evento, donde no hay segunda oportunidad, puede significar rehacer meses de planificación.",
+      },
+      {
+        type: "paragraph",
+        text: "Además, en proyectos con varios días de rodaje o varias cámaras, el volumen de archivos crece rápido. Una jornada con dos cámaras en 4K puede generar entre 300 y 500 GB sin esfuerzo. Sin un sistema claro de copiado y nomenclatura, es fácil perder la pista de qué tarjeta está ya copiada y cuál no.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "La regla de las tres copias" },
+      {
+        type: "paragraph",
+        text: "Aplico la regla clásica de backup: al menos tres copias, en dos soportes distintos, y una fuera del lugar de rodaje. En la práctica es la tarjeta original, que no borro hasta llegar a casa, una copia en un disco SSD que llevo en la mochila, y una segunda copia en otro disco o en la nube al llegar al estudio. No formateo ninguna tarjeta hasta tener las tres copias verificadas.",
+      },
+      { type: "heading", level: 3, text: "Verificación con checksum antes de borrar la tarjeta" },
+      {
+        type: "paragraph",
+        text: "Copiar no basta: hay que verificar que la copia es idéntica al original. Uso herramientas como Hedge o ShotPut Cop que comparan checksums, una huella digital del archivo, entre el original y la copia. Si el checksum coincide, la copia es fiable. Solo entonces formateo la tarjeta, nunca antes.",
+      },
+      { type: "heading", level: 3, text: "Organización de carpetas y nomenclatura desde el rodaje" },
+      {
+        type: "paragraph",
+        text: "Nombro las carpetas por fecha y proyecto desde el primer volcado: 2026-09-18_cliente_camara-A. Dentro, subcarpetas por tarjeta o por sonido. Esto evita el caos de tener cuarenta carpetas sin criterio cuando llego a montar en DaVinci Resolve, y hace que cualquier persona del equipo encuentre un archivo sin tener que preguntarme.",
+      },
+      {
+        type: "image",
+        src: "/blog/backup-gestion-archivos-rodaje-corporativo/intermedia.webp",
+        alt: "Persona insertando una tarjeta de memoria SD en una cámara para descargar el material grabado",
+        width: 1920,
+        height: 1281,
+        caption: "No formateo una tarjeta hasta tener tres copias verificadas del material que contiene.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Formatear la tarjeta nada más copiar, sin verificar la copia con checksum.",
+          "Guardar la única copia de seguridad en el mismo disco que uso a diario, sin redundancia real.",
+          "No etiquetar las tarjetas ya copiadas, mezclándolas con las que aún están pendientes.",
+          "Dejar todo el backup para el final del día, cuando hay más cansancio y más prisa por recoger.",
+          "Confiar en que la nube sube sola el material sin comprobar que la subida ha terminado antes de salir de una ubicación con mala cobertura.",
+          "No tener ninguna copia fuera del lugar físico del rodaje o la oficina, lo que no protege ante un robo o un incendio.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuántas copias necesito realmente para un rodaje corporativo?",
+        answer:
+          "Con tres soportes distintos, tarjeta original, disco de campo y disco o nube en el estudio, cubro la mayoría de escenarios. Para proyectos grandes, con presupuesto de por medio, añado una copia adicional en un disco que queda fuera de mi oficina.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué pasa si no me da tiempo a hacer backup en el propio rodaje?",
+        answer:
+          "Si el rodaje es de un solo día y vuelvo directo al estudio, puedo esperar a llegar. Pero en rodajes de varios días o fuera de Madrid, hago backup cada noche. No dejo acumular material sin copiar, porque el riesgo de perder varios días de rodaje es demasiado alto.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito discos duros específicos o vale cualquiera?",
+        answer:
+          "Uso discos SSD para el backup de campo porque son más resistentes a golpes y vibración que los mecánicos. Para el almacenamiento a largo plazo en el estudio, discos mecánicos de mayor capacidad son suficientes y más económicos.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo guardo el material después de entregar el vídeo?",
+        answer:
+          "Depende del contrato, pero suelo mantener el material en bruto entre seis meses y un año tras la entrega final, por si hace falta una revisión o una pieza adicional. Después lo archivo en un disco de almacenamiento a largo plazo y libero espacio de trabajo.",
+      },
+      {
+        type: "paragraph",
+        text: "Si estás organizando un rodaje corporativo y quieres que el material llegue a posproducción sin sustos, escríbeme desde /contacto y te cuento cómo lo planteo para tu proyecto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
