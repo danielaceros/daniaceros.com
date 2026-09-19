@@ -75,16 +75,10 @@ export default function LazyContactForm({ lang = "es", preloadMargin = "200px", 
   // inicial nunca lleve el iframe/Turnstile ya montado.
   const [formSrc, setFormSrc] = useState<string | null>(null)
   const shouldLoad = formSrc !== null
-  // El iframe tarda en pintar (Turnstile ~1.9MB) y, peor, entre su onLoad y el momento en que form_embed.js
-  // le fija la altura definitiva se ve el formulario a medio montar: con barra de scroll interna y el botón
-  // ENVIAR cortado por abajo. Por eso no basta con esperar al onLoad.
-  //
-  // El iframe avisa al padre con `highlevel.setHeight` justo cuando ya sabe lo que mide: ese es el momento en
-  // que el formulario está presentable. Hasta entonces se mantiene el esqueleto por delante. Si ese aviso no
-  // llegara nunca, el onLoad lo destapa igualmente pasado un margen, para no dejar el formulario escondido.
-  const [formReady, setFormReady] = useState(false)
-  const revealForm = useCallback(() => setFormReady(true), [])
-  useGhlMessages(revealForm)
+  // El aviso `highlevel.setHeight` ya no controla cuándo se enseña el formulario (ver el esqueleto de abajo):
+  // solo se escucha por la marca de envío real (`set-sticky-contacts`) que usa /gracias.
+  const noop = useCallback(() => {}, [])
+  useGhlMessages(noop)
 
   useEffect(() => {
     if (shouldLoad) return
@@ -177,22 +171,23 @@ export default function LazyContactForm({ lang = "es", preloadMargin = "200px", 
     <div ref={containerRef} className="relative">
       {formSrc ? (
         <>
-          {formReady ? null : (
-            <div
-              aria-hidden="true"
-              className="pointer-events-none absolute inset-0 z-10 flex flex-col items-center justify-center bg-[#0a0a0a] text-white/50"
-            >
-              {loadingIndicator}
-            </div>
-          )}
+          {/* El esqueleto va DETRÁS del iframe, no delante. form_embed.js de GHL esconde el iframe (opacity 0,
+              visibility hidden, left -9999px) hasta recibir su señal de "listo", que incluye Turnstile: medido en
+              móvil con red lenta, los campos ya estaban pintados a los ~2,5 s y GHL no los enseñaba hasta pasados
+              los 12 s. Mientras, el iframe se salía del flujo, el hueco colapsaba y solo se veía negro.
+              globals.css fuerza el iframe visible y en su sitio (ver .ghl-form-iframe), así que ahora: hasta que el
+              formulario pinta, se ve esta silueta a través del iframe transparente; en cuanto pinta, la tapa. */}
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-0 z-0 flex flex-col items-center justify-start pt-10 text-white/50"
+          >
+            {loadingIndicator}
+          </div>
           <iframe
             src={formSrc}
             // Altura inicial ≈ la que acaba fijando form_embed.js (móvil ~785px, desktop ~750px).
-            // El onLoad es solo la red de seguridad: lo que destapa el formulario es `highlevel.setHeight`.
-            // Si ese aviso no llegara, se destapa igualmente poco después de cargar, para no esconderlo.
-            onLoad={() => window.setTimeout(() => setFormReady(true), 600)}
-            className="relative block h-[790px] w-[calc(100%+24px)] -ml-3 md:h-[760px] md:w-[calc(100%+32px)] md:-ml-4"
-            style={{ border: "none", borderRadius: "0px" }}
+            className="ghl-form-iframe relative z-10 block h-[790px] w-[calc(100%+24px)] -ml-3 md:h-[760px] md:w-[calc(100%+32px)] md:-ml-4"
+            style={{ border: "none", borderRadius: "0px", background: "transparent" }}
             id="inline-xIIdaDunDkxA4Mcwehu0"
             data-layout="{'id':'INLINE'}"
             data-trigger-type="alwaysShow"
