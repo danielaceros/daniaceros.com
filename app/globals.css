@@ -321,3 +321,15 @@ body::before {
   -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 15%, #000 85%, transparent 100%);
   mask-image: linear-gradient(to right, transparent 0%, #000 15%, #000 85%, transparent 100%);
 }
+
+/* Formulario de GHL: form_embed.js esconde el iframe (opacity 0, visibility hidden, position absolute y
+   left -9999px) hasta su señal de "listo", que espera a Turnstile. Con red lenta de móvil eso eran >12 s de
+   hueco negro con el formulario ya pintado dentro. Se anula para que se vea en cuanto pinta; form_embed.js
+   sigue ajustando la altura. Ver LazyContactForm. */
+iframe.ghl-form-iframe {
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: relative !important;
+  left: auto !important;
+  pointer-events: auto !important;
+}
