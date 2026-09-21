@@ -12612,6 +12612,126 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "permisos-grabacion-video-corporativo-madrid",
+    title: "Permisos para grabar un vídeo corporativo en Madrid: qué pedir y cuándo",
+    description:
+      "Qué permisos necesitas para grabar un vídeo corporativo en Madrid: vía pública, espacios privados, drones y edificios de terceros, y con cuánta antelación pedirlos.",
+    publishedAt: "2026-09-21",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "permisos de rodaje",
+      "grabación en Madrid",
+      "preproducción",
+      "filmmaker Madrid",
+    ],
+    keyword: "permisos para grabar un vídeo corporativo en Madrid",
+    intent: "informacional",
+    excerpt:
+      "Grabar en la calle o en un edificio ajeno casi siempre requiere autorización. Pedirla tarde es la forma más fácil de perder una jornada de rodaje.",
+    seoTitle: "Permisos para grabar vídeo corporativo en Madrid | Daniel Acero",
+    metaDescription:
+      "Permisos para grabar un vídeo corporativo en Madrid: vía pública, espacios privados y dron. Qué pedir, a quién y con cuánta antelación para no parar el rodaje.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cuando una empresa me pide grabar un vídeo corporativo, casi nadie pregunta por los permisos. Se da por hecho que si tengo cámara puedo grabar donde quiera. No es así. Una parte de los rodajes que planifico necesita alguna autorización, y conseguirla lleva tiempo.",
+      },
+      {
+        type: "paragraph",
+        text: "Lo que sigue es cómo lo trabajo yo en preproducción. No es asesoramiento jurídico: las normas cambian según el espacio y el momento, y siempre confirmo con el organismo o el propietario antes de citar un plazo.",
+      },
+      {
+        type: "image",
+        src: "/blog/permisos-grabacion-video-corporativo-madrid/hero.webp",
+        alt: "Operador de cámara con una cámara réflex grabando en la calle",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Un permiso de rodaje es la autorización de quien controla un espacio para que grabes en él con un equipo profesional. Ese quien puede ser el Ayuntamiento, el propietario de un local, la comunidad de un edificio o la gestora de un centro comercial.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa por dos motivos. El primero es práctico: si un vigilante o la policía local te para con el equipo montado, el rodaje se detiene y el cliente paga la jornada igual. El segundo es de uso posterior: un vídeo grabado sin autorización puede acabar sin poder publicarse en la web o en campañas.",
+      },
+      {
+        type: "paragraph",
+        text: "La diferencia la marca el equipo. Una persona con el móvil no es lo mismo que un trípode, focos y tres personas de equipo ocupando una acera. Cuanto más equipo y más ocupación del espacio, más probable es que haga falta permiso.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Vía pública y espacios municipales" },
+      {
+        type: "paragraph",
+        text: "Si el rodaje ocupa la calle, corta el paso o usa focos y trípodes de forma continuada, lo tramito con el Ayuntamiento antes del rodaje. Indico ubicación, horario, número de personas y material. Lo hago con margen de semanas, no de días, y llevo la autorización impresa el día de rodaje.",
+      },
+      { type: "heading", level: 3, text: "Espacios privados de acceso público" },
+      {
+        type: "paragraph",
+        text: "Centros comerciales, estaciones, museos o hoteles son privados aunque entres libremente. Aquí el permiso lo da la gestora, normalmente por correo, y suele pedir un seguro de responsabilidad civil y una lista de quién va a entrar. Pido esa autorización por escrito y guardo la respuesta.",
+      },
+      { type: "heading", level: 3, text: "Dron y edificios de terceros" },
+      {
+        type: "paragraph",
+        text: "El dron tiene su propia normativa y en Madrid hay zonas con restricciones por el tráfico aéreo. Si el plan lo incluye, lo compruebo desde el principio con el operador habilitado, porque a veces la respuesta es que ese plano no se puede hacer. Para grabar en un edificio de oficinas ajeno, además de la empresa cliente, hay que hablar con la propiedad o la administración del edificio.",
+      },
+      {
+        type: "image",
+        src: "/blog/permisos-grabacion-video-corporativo-madrid/intermedia.webp",
+        alt: "Equipo de grabación sobre un balcón con vistas a una calle urbana",
+        width: 1920,
+        height: 1440,
+        caption: "Un plano desde un balcón ajeno también necesita permiso de quien lo controla.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Pedir el permiso la semana del rodaje, cuando los plazos ya no llegan.",
+          "Dar por bueno un permiso verbal de un responsable que luego no puede confirmarlo por escrito.",
+          "Olvidar que la comunidad o la propiedad de un edificio decide aparte de la empresa inquilina.",
+          "No llevar copia de la autorización el día de rodaje.",
+          "Grabar a personas reconocibles en un espacio público sin plan para las que no quieran salir.",
+          "No preguntar por el seguro de responsabilidad civil que pide el espacio.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Necesito permiso para grabar en la calle con un equipo pequeño?",
+        answer:
+          "Depende de cuánto ocupes y de cuánto dure. Con cámara en mano y sin cortar el paso suele ser tolerable, pero con trípode, focos o varias personas de equipo conviene tramitarlo. Ante la duda, consulto al organismo antes de rodar.",
+      },
+      {
+        type: "faq",
+        question: "¿Con cuánta antelación debo pedir los permisos?",
+        answer:
+          "Yo lo empiezo en cuanto tengo localizaciones cerradas, unas semanas antes del rodaje. En espacios privados puede resolverse en días, pero en vía pública o con dron prefiero no ir justo.",
+      },
+      {
+        type: "faq",
+        question: "¿Quién gestiona los permisos, el cliente o el filmmaker?",
+        answer:
+          "Lo acordamos en el presupuesto. En sus propias instalaciones lo gestiona el cliente, que es quien conoce a la propiedad. En vía pública o espacios de terceros lo suelo llevar yo, con datos que me da el cliente.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué pasa si no consigo el permiso a tiempo?",
+        answer:
+          "Tengo siempre una localización alternativa pensada en preproducción. Si no hay permiso, cambio de sitio antes que arriesgar el rodaje o la publicación posterior del vídeo.",
+      },
+      {
+        type: "paragraph",
+        text: "Si vas a grabar en Madrid y no sabes qué necesitas para tu localización, escríbeme desde /contacto y lo revisamos antes de cerrar la fecha de rodaje.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
