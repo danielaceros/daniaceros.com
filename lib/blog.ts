@@ -12732,6 +12732,125 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-sector-farmaceutico",
+    title: "Vídeo corporativo para el sector farmacéutico: qué tener en cuenta",
+    description:
+      "Cómo planifico un vídeo corporativo para laboratorios y empresas de dispositivos médicos: guion revisado por compliance, rodaje en planta y entrevistas sin promesas clínicas.",
+    publishedAt: "2026-09-22",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "sector farmacéutico",
+      "filmmaker Madrid",
+      "compliance audiovisual",
+      "vídeo institucional",
+    ],
+    keyword: "vídeo corporativo para el sector farmacéutico",
+    intent: "informacional",
+    excerpt:
+      "En farma cada plano pasa por compliance antes de publicarse. Cuento cómo planifico el guion, el rodaje en planta y las entrevistas para que el vídeo cumpla la normativa sin perder naturalidad.",
+    seoTitle: "Vídeo corporativo sector farmacéutico | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo para el sector farmacéutico: guion revisado por compliance, permisos de planta y entrevistas sin promesas clínicas. Cómo lo planifico.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Grabar en una farmacéutica no es como grabar en una startup de software. Antes de tocar la cámara, el contenido pasa por el departamento de compliance, y las palabras que uso en el guion importan tanto como los planos.",
+      },
+      {
+        type: "paragraph",
+        text: "Esto es lo que aprendí trabajando con laboratorios y empresas de dispositivos médicos en Madrid: cómo planifico el guion, qué pido antes de entrar en planta y cómo grabo entrevistas sin que nadie acabe prometiendo algo que el producto no puede prometer.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-farmaceutico/hero.webp",
+        alt: "Científica usando una pipeta con tubos de ensayo en un laboratorio",
+        width: 1920,
+        height: 1204,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Un vídeo corporativo en farma sirve para comunicar cultura, procesos de fabricación, ensayos o presentar al equipo científico. No es publicidad de producto: eso tiene su propio circuito regulatorio y normalmente no lo toco yo.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque el margen de error es bajo. Una frase que suene a promesa terapéutica, una imagen de un paciente sin consentimiento firmado o un plano dentro de una sala limpia sin la autorización correcta puede tirar meses de trabajo del cliente.",
+      },
+      {
+        type: "paragraph",
+        text: "Por eso el proceso empieza antes del rodaje, no el día de grabación. El guion se revisa con compliance, no solo con marketing, y las localizaciones dentro de planta se confirman con el responsable de calidad, no solo con comunicación.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Guion revisado con compliance" },
+      {
+        type: "paragraph",
+        text: "Envío el guion a compliance antes de cerrar fecha de rodaje. No pido un visto bueno genérico, pido revisión frase por frase: qué se puede decir sobre eficacia, qué términos están prohibidos y qué afirmaciones necesitan una fuente citada en pantalla. Si algo tarda en aprobarse, prefiero saberlo con semanas de margen, no en el plató con el equipo montado.",
+      },
+      { type: "heading", level: 3, text: "Rodaje en planta o laboratorio" },
+      {
+        type: "paragraph",
+        text: "Entrar en una sala blanca o en una línea de producción implica bata, redecilla y a veces un protocolo de descontaminación para el equipo. Pregunto con antelación qué puede entrar la cámara y qué necesita carcasa o limpieza previa. Grabo con el mínimo de personas dentro y valido con el responsable de calidad qué planos están permitidos antes de montar nada.",
+      },
+      { type: "heading", level: 3, text: "Entrevistas sin promesas clínicas" },
+      {
+        type: "paragraph",
+        text: "Con investigadores o personal médico preparo preguntas que hablen de proceso y trayectoria, no de resultados. Si alguien improvisa una frase tipo 'esto cura' o 'es el mejor del mercado', paro la toma y la repito. Es más fácil corregirlo delante de cámara que en la sala de montaje, cuando ya no queda otra toma que usar.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-farmaceutico/intermedia.webp",
+        alt: "Técnico de laboratorio con bata revisando una placa de control ambiental",
+        width: 1920,
+        height: 1280,
+        caption: "Cada plano dentro de planta lo valido antes con el responsable de calidad.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Grabar antes de tener el guion aprobado por compliance.",
+          "Usar testimonios de pacientes sin consentimiento informado específico para uso audiovisual.",
+          "Dejar que alguien afirme eficacia o cure algo delante de cámara sin una fuente citada.",
+          "No preguntar por la normativa de la sala blanca antes de entrar con el equipo.",
+          "Publicar el vídeo sin una última revisión legal del montaje final, no solo del guion inicial.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Puedo grabar dentro de una planta de producción farmacéutica?",
+        answer:
+          "Sí, pero normalmente con restricciones: menos personas dentro, equipo desinfectado o con carcasa, y planos validados por el responsable de calidad. Lo confirmo siempre antes de cerrar la fecha de rodaje.",
+      },
+      {
+        type: "faq",
+        question: "¿Quién revisa el guion antes de grabar?",
+        answer:
+          "El departamento de compliance o el equipo legal del cliente, normalmente distinto de marketing. Prefiero que revisen el guion completo, no un resumen, porque los matices de cada frase importan.",
+      },
+      {
+        type: "faq",
+        question: "¿Se pueden grabar testimonios de pacientes?",
+        answer:
+          "Solo con consentimiento informado específico para uso audiovisual, no el genérico del tratamiento. Si el cliente no lo tiene, lo planteo como requisito antes de programar esa entrevista.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tarda en aprobarse un guion en farma?",
+        answer:
+          "Varía según el laboratorio, pero suelo dejar entre una y tres semanas de margen antes del rodaje para que compliance revise y pida cambios sin presionar el calendario.",
+      },
+      {
+        type: "paragraph",
+        text: "Si trabajas en un laboratorio o una empresa de dispositivos médicos en Madrid y necesitas un vídeo corporativo que pase el filtro de compliance sin perder naturalidad, escríbeme desde /contacto y lo planificamos juntos.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
