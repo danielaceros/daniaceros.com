@@ -12851,6 +12851,125 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-sector-deportivo",
+    title: "Vídeo corporativo para el sector deportivo: cómo lo planifico",
+    description:
+      "Cómo grabo vídeo corporativo para clubes, marcas deportivas y organizadores de eventos: acceso a entrenamientos, entrevistas con deportistas y planificación alrededor del calendario de competición.",
+    publishedAt: "2026-09-23",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "sector deportivo",
+      "filmmaker Madrid",
+      "vídeo para clubes deportivos",
+      "vídeo institucional",
+    ],
+    keyword: "vídeo corporativo para el sector deportivo",
+    intent: "informacional",
+    excerpt:
+      "En deporte el calendario manda: entrenamientos, partidos y patrocinadores marcan cuándo puedo grabar. Cuento cómo planifico el acceso, las entrevistas y el rodaje en directo para un club o una marca deportiva.",
+    seoTitle: "Vídeo corporativo sector deportivo | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo para el sector deportivo: acceso a entrenamientos, entrevistas con deportistas y rodaje en jornada de competición. Cómo lo planifico.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Grabar para un club o una marca deportiva tiene una diferencia clave frente a otros sectores: el calendario no lo pongo yo. Un entrenamiento dura lo que dura, un partido empieza a la hora que marca la competición y un patrocinador quiere su marca visible sin invadir el espacio del equipo técnico.",
+      },
+      {
+        type: "paragraph",
+        text: "Llevo varios proyectos con clubes y marcas deportivas en Madrid y esto es lo que tengo en cuenta antes de aceptar la fecha de rodaje: qué acceso necesito, cómo preparo las entrevistas con deportistas y cómo me organizo para grabar en directo sin molestar al equipo.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-deportivo/hero.webp",
+        alt: "Deportista siendo entrevistado con cámara y micrófono de pértiga en un rodaje",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Un vídeo corporativo en deporte sirve para presentar un club a un patrocinador, documentar una temporada, mostrar las instalaciones o dar voz a un deportista fuera de la rueda de prensa habitual. No es la retransmisión del partido: eso lo cubre otro equipo con otro objetivo.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque el tiempo de los deportistas y del cuerpo técnico es limitado y está protegido. Un entrenador no va a parar una sesión para repetir un plano, y un jugador no tiene diez minutos libres entre el entrenamiento y la siguiente obligación del día.",
+      },
+      {
+        type: "paragraph",
+        text: "Por eso el trabajo empieza por entender el calendario del club o del evento antes que por pensar en planos. Pregunto primero cuándo hay ventanas reales de acceso, no cuándo me vendría bien grabar a mí.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Acceso a entrenamientos" },
+      {
+        type: "paragraph",
+        text: "Pido acceso con antelación a través del club, nunca me presento sin confirmación del cuerpo técnico. Grabo desde una posición fija que no interfiera con los ejercicios, con un equipo reducido y un zoom largo para no tener que acercarme al terreno de juego. Si necesito un plano concreto con un jugador, lo pido para los minutos de calentamiento o al final de la sesión, no en medio del entrenamiento.",
+      },
+      { type: "heading", level: 3, text: "Entrevistas con deportistas" },
+      {
+        type: "paragraph",
+        text: "Preparo las preguntas antes y las comparto con el club si me lo piden, sobre todo si hay cláusulas de patrocinio que limitan qué se puede mencionar. Grabo entrevistas cortas, de 10 a 15 minutos, porque es el margen real que suele haber entre entrenamiento y la siguiente actividad. Si el deportista está cansado, prefiero menos preguntas y mejor respuestas que forzar una sesión larga.",
+      },
+      { type: "heading", level: 3, text: "Rodaje en jornada de competición" },
+      {
+        type: "paragraph",
+        text: "En día de partido o de evento coordino con el club o el organizador qué zonas tengo disponibles y a qué hora debo estar posicionado, porque el acceso se cierra antes del pitido inicial. Llevo baterías y tarjetas de sobra: no hay una segunda oportunidad de grabar ese partido si algo falla a mitad de la primera parte.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-deportivo/intermedia.webp",
+        alt: "Cámara de televisión Panasonic con micrófono de pértiga grabando en un campo de césped",
+        width: 1920,
+        height: 1280,
+        caption: "En jornada de competición, la posición de cámara se confirma antes del pitido inicial.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Pedir acceso a última hora, cuando el club ya ha cerrado la logística del día.",
+          "Interrumpir un entrenamiento para repetir un plano que se podía haber grabado sin molestar.",
+          "No confirmar con el departamento de patrocinio qué marcas deben o no aparecer en cámara.",
+          "Preparar entrevistas largas cuando el deportista solo tiene diez minutos reales disponibles.",
+          "No llevar equipo de repuesto en un rodaje que no se puede repetir, como un partido o una final.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Puedo grabar durante un entrenamiento del equipo?",
+        answer:
+          "Sí, con permiso previo del club y del cuerpo técnico, y desde una posición que no interfiera con la sesión. Suelo usar un zoom largo para no tener que acercarme al terreno de juego.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo necesito para una entrevista con un deportista?",
+        answer:
+          "Entre 10 y 15 minutos reales suele ser lo habitual entre entrenamiento y la siguiente obligación. Preparo las preguntas antes para aprovechar bien ese margen.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar durante un partido oficial?",
+        answer:
+          "Depende del club o del organizador del evento, que marca qué zonas y qué horarios están disponibles para cámara. Lo confirmo siempre antes del día de la competición, no en el momento.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué pasa si hay un patrocinador con cláusulas de marca?",
+        answer:
+          "Pregunto al club o al departamento de patrocinio qué marcas deben aparecer o evitarse en cámara antes de grabar, para no tener que resolver ese problema en montaje.",
+      },
+      {
+        type: "paragraph",
+        text: "Si llevas la comunicación de un club o una marca deportiva en Madrid y necesitas un vídeo corporativo que respete el calendario del equipo, escríbeme desde /contacto y lo planificamos juntos.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
