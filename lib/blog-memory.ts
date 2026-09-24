@@ -824,6 +824,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto (fallback evergreen — los 30 temas base y varios extra ya cubiertos; sector no cubierto todavía, sin candidate SC limpio — token SC de Search Console sigue caducado con invalid_grant persistente, requiere reautenticación manual). Imágenes Unsplash.",
   },
+  {
+    slug: "video-documental-vs-publicitario-empresas",
+    keyword: "vídeo documental vs vídeo publicitario para empresas",
+    intent: "informacional",
+    createdAt: "2026-09-24",
+    status: "published",
+    notes: "Auto-generado por blog-auto (fallback evergreen — los 30 temas base y numerosos extra ya cubiertos; tema nuevo elegido fuera de lista, sin candidate SC limpio — token SC de Search Console sigue caducado con invalid_grant persistente desde hace semanas, requiere reautenticación manual). Imágenes Unsplash.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {

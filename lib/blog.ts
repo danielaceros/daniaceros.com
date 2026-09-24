@@ -12970,6 +12970,125 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-documental-vs-publicitario-empresas",
+    title: "Vídeo documental vs vídeo publicitario para empresas: qué formato elegir",
+    description:
+      "Diferencias reales entre grabar en formato documental y en formato publicitario para una empresa: cómo cambia la planificación, el rodaje y el montaje según el objetivo del vídeo.",
+    publishedAt: "2026-09-24",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo",
+      "vídeo documental",
+      "vídeo publicitario",
+      "formato audiovisual",
+      "storytelling corporativo",
+    ],
+    keyword: "vídeo documental vs vídeo publicitario para empresas",
+    intent: "informacional",
+    excerpt:
+      "Documental y publicitario no son el mismo formato, y elegir el que no toca deja el vídeo a medio camino. Cuento cómo decido entre uno u otro y cuándo tiene sentido mezclarlos.",
+    seoTitle: "Vídeo documental vs publicitario | Daniel Acero",
+    metaDescription:
+      "Vídeo documental vs publicitario para empresas: diferencias reales, cuándo usar cada formato y cómo decido cuál encaja con el objetivo del vídeo.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cuando una empresa me contacta para un vídeo corporativo, la primera pregunta que hago no es de presupuesto ni de fecha de entrega. Es de formato: ¿documental o publicitario? Son dos lenguajes distintos para contar la misma historia, y confundirlos es una de las razones por las que muchos vídeos corporativos no cumplen su función.",
+      },
+      {
+        type: "paragraph",
+        text: "No es una cuestión de estilo visual. Cada formato responde a un objetivo de comunicación distinto, se planifica de forma distinta y se graba de forma distinta. Elegir el que no toca no arruina el vídeo, pero lo deja a medio camino: ni convence como pieza publicitaria ni engancha como relato documental.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-documental-vs-publicitario-empresas/hero.webp",
+        alt: "Grupo de personas alrededor de un equipo de cámara preparando un rodaje",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es cada formato y por qué importa" },
+      {
+        type: "paragraph",
+        text: "El vídeo publicitario parte de un guion cerrado. Sé exactamente qué planos necesito, qué dice cada persona y en qué orden va todo antes de encender la cámara. Es el formato que domina en vídeos de producto, vídeos de marca y piezas de captación comercial: mensaje claro, ritmo alto, llamada a la acción al final.",
+      },
+      {
+        type: "paragraph",
+        text: "El vídeo documental parte de una situación real y deja que la cámara la observe. No hay guion palabra por palabra, hay una estructura narrativa que se construye en el rodaje y se termina de definir en montaje. Es el formato que funciona cuando el contenido es el propio proceso: cómo trabaja un equipo, cómo se fabrica un producto, cómo vive un cliente el servicio.",
+      },
+      {
+        type: "paragraph",
+        text: "La diferencia importa porque condiciona el resto de decisiones: presupuesto, días de rodaje, equipo humano necesario y hasta el tono de la voz en off. Decidirlo antes del rodaje, no en montaje, es lo que separa un vídeo con dirección clara de uno que se resuelve a base de parches en posproducción.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "El vídeo documental: cámara observacional" },
+      {
+        type: "paragraph",
+        text: "Aquí el trabajo se hace en el rodaje, no en el guion previo. Grabo con dos cámaras casi siempre, para no perder reacciones que no se repiten, y dejo tiempo de sobra: una jornada de rodaje documental necesita margen para que la gente se olvide de la cámara. El resultado se construye después, en montaje, buscando el hilo narrativo entre horas de material. No hay diálogos ensayados ni segundas tomas idénticas; hay que capturar lo que pasa una vez.",
+      },
+      { type: "heading", level: 3, text: "El vídeo publicitario: guion cerrado" },
+      {
+        type: "paragraph",
+        text: "Aquí controlo cada plano antes de rodar: storyboard, guion técnico, luz planificada, localizaciones confirmadas. El rodaje suele ser más corto porque no dependo de que algo suceda de forma espontánea, sino de ejecutar lo que ya está decidido. Esto permite trabajar con menos jornadas y más precisión: entre 4 y 6 horas de rodaje bien planificadas dan para un vídeo publicitario de 60-90 segundos con margen de sobra.",
+      },
+      { type: "heading", level: 3, text: "El híbrido: cuándo mezclar ambos lenguajes" },
+      {
+        type: "paragraph",
+        text: "La mayoría de los vídeos corporativos que entrego no son puramente uno u otro. Grabo entrevistas con estructura documental —preguntas abiertas, respuestas reales, sin guion cerrado— y las combino con planos de recurso rodados con precisión publicitaria: producto, oficina, equipo trabajando. El montaje final usa el ritmo publicitario para mantener la atención y el contenido documental para dar credibilidad. Es el equilibrio que mejor funciona en vídeos institucionales y de marca empleadora.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-documental-vs-publicitario-empresas/intermedia.webp",
+        alt: "Estudio de grabación con cámara y foco de luz preparados antes de un rodaje",
+        width: 1920,
+        height: 1080,
+        caption: "El formato publicitario se decide antes del rodaje: luz, plano y guion cerrados de antemano.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Escribir un guion cerrado para una entrevista y pedir a la persona que \"actúe\" su propia respuesta: se nota, y resta credibilidad.",
+          "Rodar en formato documental sin tiempo suficiente: dos horas no bastan para que la cámara deje de intimidar.",
+          "Usar música y ritmo de montaje publicitario sobre contenido documental: el resultado se siente forzado, como un anuncio disfrazado de testimonio.",
+          "No definir el formato antes de cerrar el presupuesto: un documental necesita más días de rodaje pero menos preproducción; un publicitario es al revés.",
+          "Mezclar los dos formatos sin un hilo conductor claro: el espectador nota el cambio de tono y desconecta.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuál es más barato, un documental o un publicitario?",
+        answer:
+          "Depende de dónde se concentre el coste. El publicitario suele necesitar menos días de rodaje pero más preproducción (guion, storyboard, casting si hace falta). El documental necesita menos preproducción pero más horas de cámara grabando. En total el coste suele quedar parecido; lo que cambia es en qué fase se invierte el presupuesto.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo pedir un vídeo documental si no tengo un proceso real que grabar?",
+        answer:
+          "No del todo. El documental necesita algo real que observar: un proceso de trabajo, una jornada, una conversación genuina. Si no hay eso, lo que necesitas es un publicitario bien escrito, no un documental forzado.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué formato funciona mejor para LinkedIn?",
+        answer:
+          "El híbrido suele rendir mejor: entrevistas con estructura documental, editadas con ritmo publicitario y subtítulos, porque en LinkedIn el vídeo compite por atención en los primeros tres segundos.",
+      },
+      {
+        type: "faq",
+        question: "¿El vídeo documental necesita guion?",
+        answer:
+          "Necesita estructura, no guion literal. Antes de rodar defino qué preguntas voy a hacer y qué momentos quiero capturar, pero no escribo las respuestas. El guion se termina de escribir en montaje, con el material real que se ha grabado.",
+      },
+      {
+        type: "paragraph",
+        text: "Si no tienes claro qué formato encaja con tu empresa, es la primera conversación que tengo con cualquier cliente antes de hablar de presupuesto o fechas. Escríbeme desde /contacto y lo vemos juntos.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
