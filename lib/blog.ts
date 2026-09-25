@@ -13089,6 +13089,152 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "rodaje-corporativo-en-el-extranjero",
+    title: "Rodaje corporativo en el extranjero: qué tener en cuenta",
+    description:
+      "Guía práctica sobre qué cambia al grabar un vídeo corporativo fuera de España: permisos, transporte de equipo, seguro y coordinación con equipo local.",
+    publishedAt: "2026-09-25",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: [
+      "rodaje internacional",
+      "vídeo corporativo",
+      "producción audiovisual",
+      "logística de rodaje",
+      "filmmaker Madrid",
+    ],
+    keyword: "rodaje corporativo en el extranjero",
+    intent: "informacional",
+    excerpt:
+      "Grabar fuera de España añade capas de logística que no siempre se ven a primera vista: permisos, transporte de equipo, seguros y coordinación con equipo local. Esto es lo que reviso antes de aceptar un rodaje corporativo en el extranjero.",
+    seoTitle: "Rodaje corporativo en el extranjero | Daniel Acero",
+    metaDescription:
+      "Rodaje corporativo en el extranjero: permisos, seguro de equipo y coordinación con equipo local antes de viajar a grabar fuera de España.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "La primera vez que grabé fuera de España fue para una empresa con oficina en Lisboa. Llevaba la misma lista de equipo que uso en Madrid y a mitad de la mañana me di cuenta de que faltaban tres cosas: un adaptador de corriente, un seguro que cubriera el material fuera del país y un contacto local que supiera abrir la puerta de la sala que habíamos reservado.",
+      },
+      {
+        type: "paragraph",
+        text: "Un rodaje corporativo en el extranjero no es un rodaje normal con más kilómetros. Cambia la logística, el papeleo y el margen de error que puedes permitirte. Esto es lo que reviso antes de aceptar uno.",
+      },
+      {
+        type: "image",
+        src: "/blog/rodaje-corporativo-en-el-extranjero/hero.webp",
+        alt: "Equipo de rodaje corporativo con maletas de material preparado para un vuelo internacional",
+        width: 1920,
+        height: 1272,
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Qué cambia respecto a un rodaje en Madrid",
+      },
+      {
+        type: "paragraph",
+        text: "En Madrid conozco las localizaciones, tengo alquiler de equipo de repuesto a una hora de distancia y puedo resolver un imprevisto en el mismo día. Fuera de España, cualquier fallo de material se convierte en un problema serio: no hay tienda de confianza a la que llamar ni proveedor que te preste un cargador en dos horas.",
+      },
+      {
+        type: "paragraph",
+        text: "También cambia el tiempo de preparación. Un rodaje en Madrid lo puedo montar en una semana. Uno en el extranjero lo empiezo con tres o cuatro semanas de margen, porque hay trámites que no dependen de mí: visados de trabajo, permisos de grabación en espacios públicos o privados, y coordinación de horarios con un cliente en otra zona horaria.",
+      },
+      {
+        type: "paragraph",
+        text: "El presupuesto también se recalcula distinto. No es solo el vuelo y el hotel: hay que sumar exceso de equipaje de material, seguro específico, y normalmente un día extra de margen antes o después del rodaje por si algo se retrasa.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cómo se hace bien",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Papeles y permisos antes de viajar",
+      },
+      {
+        type: "paragraph",
+        text: "Cada país tiene sus propias reglas para grabar en espacios públicos, aeropuertos, oficinas gubernamentales o zonas turísticas. Antes de reservar el vuelo, confirmo con el cliente o con un contacto local qué permiso necesito y cuánto tarda en tramitarse. En algunos países basta con una autorización de la empresa que te recibe; en otros hace falta un permiso oficial que puede tardar semanas.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Transporte y seguro de equipo",
+      },
+      {
+        type: "paragraph",
+        text: "Llevo el material como equipaje de mano siempre que puedo: cámaras, tarjetas y objetivos no salen de mi vista. Lo que no cabe en cabina va facturado en maletas rígidas, con un inventario fotografiado antes de cerrar cada una por si hay que justificar algo en aduana. El seguro de equipo lo reviso caso por caso: mi póliza habitual cubre España y parte de Europa, pero fuera de esa zona contrato una ampliación temporal antes de salir.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Coordinar con equipo local",
+      },
+      {
+        type: "paragraph",
+        text: "Si el rodaje dura más de un día o necesito algo que no puedo llevar en la maleta (luces grandes, un dron, un segundo operador), busco un contacto local antes de viajar. Trabajar con alguien que conoce el terreno reduce el margen de error: sabe qué enchufes hay, qué salas tienen buena luz natural y qué normas de acceso existen en el edificio.",
+      },
+      {
+        type: "image",
+        src: "/blog/rodaje-corporativo-en-el-extranjero/intermedia.webp",
+        alt: "Equipo de producción audiovisual grabando en una localización fuera de su país de origen",
+        width: 1920,
+        height: 1280,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Errores comunes",
+      },
+      {
+        type: "list",
+        items: [
+          "Dar por hecho que el enchufe y el voltaje son los mismos que en España: comprobar el estándar eléctrico del país con antelación evita sorpresas con baterías y cargadores.",
+          "No calcular el exceso de equipaje: algunas aerolíneas cobran más por una maleta de material que por el propio billete si no se declara antes.",
+          "Viajar sin copia del guion, del briefing y de los contactos en un dispositivo offline, por si falla el roaming o el wifi del hotel.",
+          "No confirmar el idioma de trabajo con el equipo local: coordinar en inglés a través de un intérprete el mismo día del rodaje resta horas útiles de grabación.",
+          "Subestimar el cansancio del vuelo al planificar la primera jornada de rodaje: si aterrizas de madrugada, no programes una entrevista importante para las nueve.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito un gestor o contacto local para cualquier rodaje fuera de España?",
+        answer:
+          "No siempre. Para una grabación de un día en una oficina, con permiso previo del cliente, puedo trabajar solo. Para rodajes de varios días, en espacios públicos o con equipo adicional, un contacto local ahorra tiempo y evita errores de permisos que se pagan caro sobre el terreno.",
+      },
+      {
+        type: "faq",
+        question: "¿Cómo facturo el material de vídeo en un vuelo internacional sin que se dañe?",
+        answer:
+          "Uso maletas rígidas con espuma cortada a medida para cada pieza, nunca bolsas blandas. Las cámaras y tarjetas de memoria viajan siempre en cabina. El resto (trípodes, luces, cables) va facturado, asegurado y con inventario fotografiado antes de cerrar la maleta.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué seguro necesito para grabar fuera de España?",
+        answer:
+          "Como mínimo, un seguro de equipo que cubra pérdida, robo y daño fuera del país de origen, y un seguro de responsabilidad civil si vas a grabar en espacios de terceros. Revisa la letra pequeña: algunas pólizas excluyen ciertos países o exigen declarar el viaje con antelación.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto margen de tiempo debo pedir antes de un rodaje corporativo internacional?",
+        answer:
+          "Como mínimo tres semanas si hay permisos de por medio, y una semana más si necesitas visado de trabajo para el país de destino. Ese margen marca la diferencia entre resolver un problema con calma y resolverlo con el vuelo ya comprado.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes un proyecto que implica grabar fuera de España, cuéntame los detalles del país y del espacio desde /contacto. Con esa información puedo decirte qué papeleo necesitas y cuánto margen pedir antes de cerrar fechas.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
