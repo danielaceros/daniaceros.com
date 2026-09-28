@@ -13235,6 +13235,148 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-eventos-hibridos",
+    title: "Vídeo corporativo para eventos híbridos: presencial y streaming a la vez",
+    description:
+      "Cómo planteo la grabación de un evento corporativo híbrido para que funcione bien tanto para el público presencial como para el que sigue el streaming en directo.",
+    publishedAt: "2026-09-28",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: [
+      "eventos híbridos",
+      "streaming corporativo",
+      "vídeo corporativo",
+      "producción de eventos",
+      "filmmaker Madrid",
+    ],
+    keyword: "vídeo corporativo para eventos híbridos",
+    intent: "informacional",
+    excerpt:
+      "Un evento híbrido no es un evento presencial con una cámara puesta al fondo. Es dos experiencias distintas que hay que resolver a la vez. Esto es lo que reviso antes de aceptar cubrir uno.",
+    seoTitle: "Vídeo corporativo para eventos híbridos | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo para eventos híbridos: cámaras, sonido y conexión para que la parte presencial y el streaming funcionen igual de bien.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "El primer evento híbrido que grabé fue la presentación de resultados anuales de una empresa mediana en Madrid. Había cien personas en la sala y otras tantas conectadas por streaming. Hasta ese día había tratado el streaming como un extra: una cámara fija al fondo de la sala grabando lo mismo que veía el público presencial. Cuando revisé la grabación con el cliente, quedó claro que la audiencia remota había visto una charla plana, con mala planificación de sonido y encuadres pensados para gente que estaba físicamente allí, no para gente mirando una pantalla.",
+      },
+      {
+        type: "paragraph",
+        text: "Desde entonces trato un evento híbrido como dos producciones que comparten espacio y horario, no como una con un añadido. Esto es lo que reviso antes de aceptar cubrir uno.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-eventos-hibridos/hero.webp",
+        alt: "Sala de conferencias preparada para un evento corporativo híbrido con pantallas y equipo de grabación",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Qué es un evento híbrido corporativo y por qué se pide cada vez más",
+      },
+      {
+        type: "paragraph",
+        text: "Un evento híbrido junta a un público presencial en una sala con una audiencia que sigue el mismo acto en directo desde casa u oficina, normalmente por streaming privado o en una plataforma como YouTube o Teams. Lo piden empresas con oficinas en varias ciudades, compañías que quieren llegar a clientes que no pueden viajar, o marcas que buscan dejar el evento grabado y disponible después sin depender solo de quien asistió.",
+      },
+      {
+        type: "paragraph",
+        text: "La razón por la que cada vez me lo piden más es simple: el coste de conectar a cien personas más por streaming es una fracción del coste de que esas cien personas viajen. Pero esa ventaja económica solo se cumple si el streaming se ve y se oye bien. Si no, el evento presencial sale bien y la versión online sale mal, y esa segunda mitad de la audiencia se queda con la peor impresión.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cómo lo planteo para que funcione en las dos partes",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Cámaras y encuadres pensados para pantalla, no solo para la sala",
+      },
+      {
+        type: "paragraph",
+        text: "En un evento presencial puro, un plano general del escenario funciona porque el ojo humano compensa la distancia. En pantalla, ese mismo plano se ve pequeño y sin fuerza. Para streaming trabajo con más primeros planos y planos medios, cambio de cámara con más frecuencia que en una grabación solo para archivo, y reservo una cámara fija de seguridad por si falla el corte en directo.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Sonido: la parte que más falla en streaming",
+      },
+      {
+        type: "paragraph",
+        text: "El sonido de sala y el sonido de streaming son cosas distintas. La megafonía de la sala está pensada para llenar el espacio físico, no para captarse limpio por un micrófono de cámara. Uso siempre una salida de audio directa desde la mesa de sonido del evento hacia mi equipo de grabación, en paralelo a los micrófonos de ambiente. Si el ponente lleva petaca o de solapa, mejor: esa señal va limpia sin depender de los altavoces de la sala.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Conexión y redundancia de internet",
+      },
+      {
+        type: "paragraph",
+        text: "Nunca dependo de una sola conexión para el streaming. Llevo un router con datos móviles como respaldo del wifi o cable del local, y hago una prueba de subida real (no solo de velocidad de bajada) media hora antes de empezar. Un corte de tres minutos en mitad de la intervención del director general es el tipo de fallo que el cliente recuerda mucho después de que se le olvide todo lo demás del evento.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-eventos-hibridos/intermedia.webp",
+        alt: "Operador de cámara grabando una intervención en directo durante un evento corporativo",
+        width: 1920,
+        height: 1280,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Errores comunes",
+      },
+      {
+        type: "list",
+        items: [
+          "Usar el micrófono de la cámara como única fuente de audio para el streaming, en vez de una salida directa de la mesa de sonido.",
+          "No probar la conexión de subida con el ancho de banda real del local, y descubrir el problema con el evento ya empezado.",
+          "Tratar al público remoto como secundario: sin moderador que lea sus preguntas ni ventana para verlas, se desconectan a los diez minutos.",
+          "No grabar una copia local en la cámara además de emitir en directo: si falla el streaming, te quedas sin nada que entregar después.",
+          "Olvidar los subtítulos o una transcripción básica para la versión grabada, que es lo que la mayoría del público remoto acaba viendo después y no en directo.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Cuántas personas hacen falta para cubrir un evento híbrido bien?",
+        answer:
+          "Para un evento de un día con un escenario y una sala, mínimo dos personas: una gestionando cámaras y corte en directo, otra pendiente de la señal de streaming y de resolver imprevistos técnicos sin interrumpir la grabación.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué plataforma de streaming es mejor para un evento corporativo?",
+        answer:
+          "Depende del público. Para una convocatoria interna, Teams o Zoom suele bastar. Para una audiencia externa o de prensa, prefiero un enlace privado en YouTube o Vimeo, que da más control sobre calidad de imagen y no depende de que cada asistente tenga cuenta en una plataforma concreta.",
+      },
+      {
+        type: "faq",
+        question: "¿El streaming en directo sustituye al vídeo resumen del evento?",
+        answer:
+          "No. Son entregables distintos. El streaming cubre el directo, con sus imperfecciones y su ritmo real. El vídeo resumen se monta después, con los mejores momentos, cortes limpios y una duración pensada para redes, no para verse entero.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo antes hay que probar el equipo de streaming en la sala?",
+        answer:
+          "Como mínimo el día anterior si el local lo permite, o dos horas antes si solo tienes acceso el mismo día. Esa prueba tiene que incluir la conexión a internet real del espacio, no una simulación desde otro sitio.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes un evento corporativo con parte presencial y parte online, cuéntame el formato y el aforo desde /contacto. Con esos datos te digo qué equipo y qué margen de pruebas necesitas antes de la fecha.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
