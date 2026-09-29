@@ -13377,6 +13377,149 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "filmacion-eventos-espana",
+    title: "Filmación de eventos en España: cómo planteo un rodaje fuera de Madrid",
+    description:
+      "Cómo organizo la filmación de un evento corporativo en cualquier ciudad de España: desplazamientos, equipo, permisos y qué preparar antes de llegar al recinto.",
+    publishedAt: "2026-09-29",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: [
+      "filmación de eventos",
+      "eventos corporativos",
+      "vídeo de eventos España",
+      "producción audiovisual",
+      "filmmaker corporativo",
+    ],
+    keyword: "filmación de eventos en España",
+    intent: "informacional",
+    excerpt:
+      "Grabar un evento en otra ciudad no es lo mismo que grabarlo en Madrid. Cambian la logística, los tiempos de montaje y lo que puedes dar por hecho en el recinto. Esto es lo que preparo antes de viajar.",
+    seoTitle: "Filmación de eventos en España: guía práctica | Daniel Acero",
+    metaDescription:
+      "Filmación de eventos en España: cómo preparo el rodaje fuera de Madrid, con equipo, desplazamientos, permisos y visita previa al recinto.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Muchos eventos corporativos no se hacen en Madrid. Una convención en Valencia, una jornada de partners en Bilbao, una feria en Barcelona o un encuentro de equipo en Málaga. Trabajo desde Madrid, pero me piden cubrir eventos por toda España con bastante frecuencia.",
+      },
+      {
+        type: "paragraph",
+        text: "Cambiar de ciudad cambia el rodaje más de lo que parece. No es solo coger un tren con la mochila. Cambia lo que puedo comprobar antes, lo que puedo dar por hecho en el recinto y el margen que tengo si algo falla. Te cuento cómo lo planteo.",
+      },
+      {
+        type: "image",
+        src: "/blog/filmacion-eventos-espana/hero.webp",
+        alt: "Equipo de grabación cubriendo un evento corporativo en una sala de conferencias",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Qué cambia cuando el evento no es en Madrid",
+      },
+      {
+        type: "paragraph",
+        text: "En Madrid puedo pasar por el recinto un par de días antes, ver la sala con luz real y hablar con el técnico del espacio. Fuera, muchas veces solo llego la víspera o el mismo día. Eso obliga a resolver por adelantado lo que en local resolvería sobre el terreno.",
+      },
+      {
+        type: "paragraph",
+        text: "También cambia el riesgo. Si en Madrid se me rompe un micrófono, en una hora tengo otro. En otra ciudad, no. Por eso viajo con equipo de reserva para lo que no puede fallar: una segunda cámara, dos micrófonos inalámbricos de más y baterías de sobra.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cómo lo preparo para que salga bien",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Visita previa remota del recinto",
+      },
+      {
+        type: "paragraph",
+        text: "Si no puedo ir antes, pido al organizador tres cosas: planos o fotos de la sala desde el fondo y desde el escenario, la hora exacta a la que puedo entrar a montar y el contacto del técnico de sonido e iluminación. Con eso decido dónde pongo las cámaras y cuánto tiempo necesito.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Equipo ligero, pero con redundancia",
+      },
+      {
+        type: "paragraph",
+        text: "Para un evento de un día suelo viajar con dos cámaras, tres ópticas, trípode, un gimbal y sonido. Todo cabe en dos maletas de cabina o una facturada. Si el evento necesita tres o cuatro cámaras, subcontrato operadores locales y yo dirijo la realización. Así no pago desplazamientos que no aportan nada.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Calendario con margen en los desplazamientos",
+      },
+      {
+        type: "paragraph",
+        text: "Nunca planifico llegar a la ciudad el mismo día si el evento empieza por la mañana. Prefiero llegar la tarde anterior, montar con calma y dormir cerca del recinto. Un tren retrasado no debería poner en riesgo un directo con doscientas personas.",
+      },
+      {
+        type: "image",
+        src: "/blog/filmacion-eventos-espana/intermedia.webp",
+        alt: "Público sentado en una sala durante una conferencia corporativa",
+        width: 1920,
+        height: 1280,
+        caption: "La sala manda: la distancia al escenario y la luz de cada recinto condicionan el montaje.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Errores comunes al contratar filmación de eventos fuera de tu ciudad",
+      },
+      {
+        type: "list",
+        items: [
+          "Contratar solo por precio de jornada y descubrir después que los desplazamientos y el alojamiento duplican el presupuesto. Pide siempre el total con viajes incluidos.",
+          "No confirmar con el recinto si se permite grabar, si hay normas de acceso para equipo o si cobran por usar su conexión eléctrica.",
+          "Dar por hecho que el sonido de la sala se puede tomar de la mesa de mezclas. A veces no hay salida disponible y hay que llevar grabadora propia.",
+          "No pensar en la entrega. Si necesitas un resumen para redes al día siguiente, hay que decirlo antes de rodar, porque afecta a cómo se organiza el material.",
+          "Dejar sin cerrar quién autoriza el uso de imagen de los asistentes. Debe resolverlo el organizador, no el equipo de grabación.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Te desplazas a cualquier ciudad de España?",
+        answer:
+          "Sí. Trabajo desde Madrid y cubro eventos en el resto de España. En ciudades con buena conexión de tren o avión llego con facilidad. En destinos más aislados hay que planificar más margen y suele salir más caro por alojamiento.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto se añade al presupuesto por grabar fuera de Madrid?",
+        answer:
+          "Depende del destino y de si hay que pernoctar. Se suman transporte, alojamiento y dietas, que conviene ver desglosados. Lo importante es que la propuesta los incluya desde el principio para evitar sorpresas.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedes usar operadores locales si el evento es grande?",
+        answer:
+          "Sí. Para eventos con varias cámaras contrato operadores de la zona y dirijo yo la realización. Reduce costes de viaje y me asegura equipo local de apoyo por si algo falla.",
+      },
+      {
+        type: "faq",
+        question: "¿Con cuánta antelación debo avisarte?",
+        answer:
+          "Lo ideal son tres o cuatro semanas, sobre todo si el evento cae en temporada alta de ferias y congresos. Con menos tiempo puedo valorarlo, pero depende de mi agenda y de lo que haya que organizar.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes un evento fuera de Madrid, cuéntame ciudad, fecha, aforo y qué necesitas recibir después desde /contacto. Con eso te digo qué equipo llevaría y qué presupuesto real supone con viajes incluidos.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {

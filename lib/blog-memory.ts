@@ -848,6 +848,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto (fallback evergreen — los 30 temas base y numerosos extra ya cubiertos; tema nuevo elegido fuera de lista, sin candidate SC limpio — token SC de Search Console sigue caducado con invalid_grant persistente desde hace semanas, requiere reautenticación manual). Imágenes Unsplash.",
   },
+  {
+    slug: "filmacion-eventos-espana",
+    keyword: "filmación de eventos en España",
+    intent: "informacional",
+    createdAt: "2026-09-29",
+    status: "published",
+    notes: "Auto-generado por blog-auto. Search Console: 4 impresiones (query 'filmacion eventos españa'), posición media 7.8. Imágenes Unsplash.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {
