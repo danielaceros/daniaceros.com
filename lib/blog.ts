@@ -13520,6 +13520,148 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "produccion-audiovisual-y-eventos",
+    title: "Producción audiovisual y eventos: qué incluye un servicio completo para tu empresa",
+    description:
+      "Qué entra en un servicio de producción audiovisual para eventos corporativos: preproducción, cobertura, streaming, edición y entregables, explicado por un filmmaker de Madrid.",
+    publishedAt: "2026-09-30",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: [
+      "producción audiovisual",
+      "eventos corporativos",
+      "vídeo de eventos",
+      "cobertura de eventos",
+      "filmmaker Madrid",
+    ],
+    keyword: "producción audiovisual y eventos",
+    intent: "informacional",
+    excerpt:
+      "Cuando una empresa pide producción audiovisual para un evento, cada parte entiende una cosa distinta. Esto es lo que incluyo yo, en qué orden y qué conviene decidir antes del día del evento.",
+    seoTitle: "Producción audiovisual y eventos: guía | Daniel Acero",
+    metaDescription:
+      "Producción audiovisual y eventos corporativos: qué incluye el servicio, cómo se organiza la cobertura y qué entregables recibes. Guía de un filmmaker de Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cuando una empresa me escribe pidiendo producción audiovisual para un evento, casi nunca está hablando de lo mismo que la anterior. Uno quiere un vídeo resumen de dos minutos. Otro quiere retransmitir la jornada en directo. Otro solo necesita las ponencias grabadas para colgarlas en la intranet.",
+      },
+      {
+        type: "paragraph",
+        text: "Por eso lo primero que hago es aclarar qué se entiende por servicio completo. Te cuento cómo lo estructuro yo cuando cubro un evento corporativo de principio a fin.",
+      },
+      {
+        type: "image",
+        src: "/blog/produccion-audiovisual-y-eventos/hero.webp",
+        alt: "Equipo de producción audiovisual preparando una cámara en un evento corporativo",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Qué significa producción audiovisual en un evento",
+      },
+      {
+        type: "paragraph",
+        text: "Es todo el trabajo de imagen y sonido que rodea al evento, no solo el día en que se celebra. Empieza semanas antes, con la planificación, y termina cuando entrego los archivos finales. Grabar es una parte, y no la más larga.",
+      },
+      {
+        type: "paragraph",
+        text: "Lo habitual es que un evento genere tres tipos de material: un vídeo resumen para comunicar después, las ponencias o sesiones completas y una serie de piezas cortas para redes. Definir cuáles quieres antes del rodaje cambia por completo cómo coloco las cámaras.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cómo lo organizo para que funcione",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Preproducción: lo que se decide antes",
+      },
+      {
+        type: "paragraph",
+        text: "Pido el programa, el plano de la sala y el nombre del técnico del recinto. Con eso decido cuántas cámaras hacen falta, dónde van y cómo me conecto al sonido de la sala. Si hay ponentes clave, pacto con antelación cuándo los entrevisto, porque durante el evento nadie tiene tiempo.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Cobertura: el día del evento",
+      },
+      {
+        type: "paragraph",
+        text: "Llego pronto para montar y probar. En un evento de una jornada suelo trabajar con dos cámaras: una fija para plano general y otra móvil para detalles, público y ponentes. Si hay más de una sala o el aforo es grande, sumo un segundo operador. Grabo el audio directo de la mesa de sonido y además con micrófonos propios, por seguridad.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Posproducción y entrega",
+      },
+      {
+        type: "paragraph",
+        text: "Edito en DaVinci Resolve. El vídeo resumen suele estar entre una semana y diez días después del evento, según la duración y las rondas de revisión. Las piezas cortas para redes salen antes, porque pierden valor si llegan una semana tarde.",
+      },
+      {
+        type: "image",
+        src: "/blog/produccion-audiovisual-y-eventos/intermedia.webp",
+        alt: "Cámara de vídeo sobre trípode grabando un escenario durante un evento",
+        width: 1200,
+        height: 800,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Errores comunes al contratar",
+      },
+      {
+        type: "list",
+        items: [
+          "Pedir cobertura sin decidir qué entregables necesitas después.",
+          "Avisar con pocos días de margen y sin poder visitar el recinto.",
+          "Dar por hecho que el sonido de la sala se puede grabar sin coordinarlo con el técnico.",
+          "Querer retransmisión en directo sin haber comprobado la conexión del recinto.",
+          "No nombrar a una persona de contacto que decida en el momento durante el evento.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Qué diferencia hay entre cobertura de un evento y producción audiovisual?",
+        answer:
+          "La cobertura es grabar lo que ocurre. La producción audiovisual incluye además la preparación, la dirección durante el evento y la edición de las piezas finales. Para un evento corporativo suele interesar lo segundo.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuántas cámaras necesito para un evento de un día?",
+        answer:
+          "Para una sala y una jornada, dos cámaras cubren bien: un plano general fijo y otra cámara móvil. Con varias salas o mucho aforo hace falta un operador adicional.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede retransmitir el evento en directo?",
+        answer:
+          "Sí, pero necesita una conexión estable en el recinto y pruebas previas. Si la conexión no es fiable, es mejor grabar y publicar las ponencias horas después.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuándo recibo el material editado?",
+        answer:
+          "Las piezas cortas para redes, en uno o dos días. El vídeo resumen, entre una semana y diez días, según la duración y las rondas de revisión.",
+      },
+      {
+        type: "paragraph",
+        text: "Si estás preparando un evento y quieres saber qué producción necesita, cuéntame fecha, lugar, aforo y qué quieres tener después desde /contacto. Con eso te propongo un plan de cobertura y un presupuesto concreto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {

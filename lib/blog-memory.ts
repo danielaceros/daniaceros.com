@@ -856,6 +856,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto. Search Console: 4 impresiones (query 'filmacion eventos españa'), posición media 7.8. Imágenes Unsplash.",
   },
+  {
+    slug: "produccion-audiovisual-y-eventos",
+    keyword: "producción audiovisual y eventos",
+    intent: "informacional",
+    createdAt: "2026-09-30",
+    status: "published",
+    notes: "Auto-generado por blog-auto (candidate SC tangencial, sin evergreen libre). Search Console: 2 impresiones, posición media 9.5. Imágenes Unsplash.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {
