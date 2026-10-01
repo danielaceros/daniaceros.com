@@ -864,6 +864,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto (candidate SC tangencial, sin evergreen libre). Search Console: 2 impresiones, posición media 9.5. Imágenes Unsplash.",
   },
+  {
+    slug: "video-corporativo-startups",
+    keyword: "vídeo corporativo para startups",
+    intent: "informacional",
+    createdAt: "2026-10-01",
+    status: "published",
+    notes: "Auto-generado por blog-auto (fallback evergreen — sin candidate SC limpio: todas las queries del pool caen sobre URLs con post, son de marca o ya las cubre el post producción-audiovisual-y-eventos; tema nuevo fuera de lista). Imágenes Unsplash.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {

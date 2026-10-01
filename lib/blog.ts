@@ -13662,6 +13662,166 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-startups",
+    title: "Vídeo corporativo para startups: qué grabar primero y cuánto invertir",
+    description:
+      "Qué vídeo corporativo necesita una startup en cada etapa: demo de producto, vídeo de equipo y pitch. Cómo priorizar con poco presupuesto, explicado por un filmmaker de Madrid.",
+    publishedAt: "2026-10-01",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: [
+      "vídeo corporativo startups",
+      "vídeo de producto",
+      "vídeo de equipo",
+      "pitch inversores",
+      "filmmaker Madrid",
+    ],
+    keyword: "vídeo corporativo para startups",
+    intent: "informacional",
+    excerpt:
+      "Una startup no necesita un vídeo institucional de tres minutos. Necesita pocas piezas bien elegidas. Te cuento cuáles grabo primero, en qué orden y qué se puede dejar para más adelante.",
+    seoTitle: "Vídeo corporativo para startups: guía | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo para startups: qué grabar primero, cómo priorizar según la etapa y cuánto invertir sin tirar el presupuesto. Guía de un filmmaker de Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cuando una startup me escribe pidiendo un vídeo corporativo, lo habitual es que tenga el producto a medias, un equipo de seis personas y un presupuesto ajustado. Y aun así piensa en el vídeo clásico de empresa: dron, entrevistas al CEO y música épica.",
+      },
+      {
+        type: "paragraph",
+        text: "Casi nunca es lo que toca. Una startup necesita piezas pequeñas que trabajen cada una un objetivo concreto. Así lo enfoco yo.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-startups/hero.webp",
+        alt: "Tres personas de un equipo trabajando en una oficina de startup",
+        width: 1920,
+        height: 1440,
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Por qué una startup no necesita lo mismo que una empresa grande",
+      },
+      {
+        type: "paragraph",
+        text: "Una empresa consolidada graba para reforzar una imagen que ya existe. Una startup graba para explicar algo que casi nadie conoce todavía. La diferencia cambia el vídeo por completo: menos imagen de marca, más claridad sobre qué haces y para quién.",
+      },
+      {
+        type: "paragraph",
+        text: "Además, el producto cambia. Si inviertes en un vídeo de cuatro minutos que enseña una interfaz que rediseñarás en tres meses, el vídeo caduca antes de amortizarse. Por eso prefiero piezas cortas y fáciles de rehacer.",
+      },
+      {
+        type: "paragraph",
+        text: "Y el tiempo del equipo es limitado. Nadie tiene una mañana libre para un rodaje de ocho horas. Un buen plan de grabación para una startup cabe en media jornada.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Qué grabo primero y en qué orden",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "1. Un vídeo que explique el producto en 60-90 segundos",
+      },
+      {
+        type: "paragraph",
+        text: "Es la pieza que más se usa: en la web, en correos a clientes, en la presentación a inversores. Debe responder tres cosas: qué problema resuelves, cómo y para quién. Si la grabación de pantalla es lo principal, la combino con un plano del fundador o fundadora presentándolo, para que haya una cara detrás.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "2. Un vídeo de equipo y de fundadores",
+      },
+      {
+        type: "paragraph",
+        text: "En una startup se invierte en personas antes que en producto, y los inversores y los candidatos lo saben. Una entrevista corta a cada fundador, con dos o tres preguntas sencillas, transmite más que cualquier eslogan. Con una cámara, un micrófono de solapa y una luz suave se resuelve en una mañana.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "3. Piezas cortas para redes y para el pitch",
+      },
+      {
+        type: "paragraph",
+        text: "Del mismo rodaje saco cortes verticales de 20-30 segundos para LinkedIn e Instagram y un clip para abrir el pitch deck. Planificarlo desde el principio no cuesta casi nada. Intentar sacarlo después de una grabación pensada solo en horizontal, sí.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-startups/intermedia.webp",
+        alt: "Monitor de cámara durante una entrevista a un fundador",
+        width: 1920,
+        height: 1280,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cuánto invertir sin tirar el presupuesto",
+      },
+      {
+        type: "paragraph",
+        text: "Para una startup en fase inicial, lo razonable es concentrar el gasto en una sola jornada de rodaje bien preparada, no en varias piezas sueltas. Una mañana de grabación de cuatro horas puede dar el vídeo de producto, las entrevistas al equipo y el material para redes.",
+      },
+      {
+        type: "paragraph",
+        text: "Lo que sí compensa pagar es el sonido y la luz. Un móvil moderno graba una imagen aceptable, pero un audio malo hace que el vídeo parezca amateur de inmediato. Si tienes que recortar en algo, recorta en duración, no en calidad de sonido.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Errores comunes en startups",
+      },
+      {
+        type: "list",
+        items: [
+          "Grabar un vídeo institucional largo antes de tener claro el mensaje del producto.",
+          "Enseñar una versión del producto que cambiará en pocas semanas.",
+          "Dejar que el equipo improvise sin guion y alargue las respuestas.",
+          "Pensar solo en horizontal y no preparar cortes verticales para redes.",
+          "Ahorrar en audio y luego intentar arreglarlo en edición.",
+          "Pedir demasiadas piezas en un solo rodaje y no tener tiempo de grabarlas bien.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Cuándo es buen momento para que una startup haga su primer vídeo?",
+        answer:
+          "Cuando ya puedes explicar en una frase qué problema resuelves y tienes algo que enseñar, aunque sea un prototipo funcional. Antes de eso, un vídeo de equipo y fundadores suele ser suficiente.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto debe durar un vídeo de producto para una startup?",
+        answer:
+          "Entre 60 y 90 segundos para la web y el correo. Para redes, cortes de 20 a 30 segundos. Si necesitas más, normalmente es que el mensaje aún no está claro.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo grabarlo yo mismo con el móvil?",
+        answer:
+          "Para piezas internas o muy rápidas, sí. Para el vídeo que irá en la web o en un pitch, merece la pena cuidar el sonido y la luz, y ahí es donde un profesional marca la diferencia.",
+      },
+      {
+        type: "faq",
+        question: "¿Cómo evito que el vídeo se quede obsoleto?",
+        answer:
+          "Graba al equipo y al mensaje, que cambian poco, y deja el producto en tomas de pantalla que se puedan sustituir. Así rehaces solo esa parte cuando la interfaz cambie.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tu startup necesita decidir qué grabar primero, cuéntame en qué fase estás, qué quieres conseguir con el vídeo y de cuánto tiempo dispone el equipo desde /contacto. Te propongo un plan de rodaje ajustado y un presupuesto concreto.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
