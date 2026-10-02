@@ -13822,6 +13822,165 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "estructura-video-corporativo",
+    title: "Estructura de un vídeo corporativo: qué va en cada tramo",
+    description:
+      "Cómo ordenar un vídeo corporativo de principio a fin: gancho, desarrollo, prueba y cierre, con duraciones orientativas por tramo y errores que conviene evitar.",
+    publishedAt: "2026-10-02",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["estructura de vídeo", "vídeo corporativo", "guion", "narrativa", "preproducción", "Madrid"],
+    keyword: "estructura de un vídeo corporativo",
+    intent: "informacional",
+    excerpt:
+      "Un vídeo corporativo funciona cuando cada tramo tiene un trabajo concreto. Te cuento cómo lo ordeno yo: qué pongo al principio, qué en medio y cómo cierro.",
+    seoTitle: "Estructura de un vídeo corporativo: guía | Daniel Acero",
+    metaDescription:
+      "Estructura de un vídeo corporativo paso a paso: gancho, desarrollo, prueba y cierre, con tiempos orientativos y los errores que más veo al editar.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "La mayoría de vídeos corporativos que veo flojos no fallan por la cámara ni por la luz. Fallan por el orden. Se empieza por la historia de la empresa, se sigue con una lista de servicios y se acaba con un logo. Nadie llega al final.",
+      },
+      {
+        type: "paragraph",
+        text: "Una estructura clara se decide antes de grabar, no en la sala de edición. Aquí te explico cómo la planteo yo cuando preparo un rodaje para una empresa en Madrid.",
+      },
+      {
+        type: "image",
+        src: "/blog/estructura-video-corporativo/hero.webp",
+        alt: "Manos dibujando un esquema sobre papel durante la planificación de un vídeo",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Por qué importa la estructura",
+      },
+      {
+        type: "paragraph",
+        text: "Quien ve tu vídeo decide en los primeros cinco o diez segundos si sigue. Después sigue mientras sienta que avanza: que cada escena le cuenta algo nuevo. La estructura es lo que garantiza ese avance.",
+      },
+      {
+        type: "paragraph",
+        text: "También te ahorra dinero. Si sabes qué tramos necesitas, sabes qué entrevistas, qué planos de recurso y qué localizaciones hacen falta. Lo que no encaja en ningún tramo no se graba.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cómo ordeno un vídeo corporativo",
+      },
+      {
+        type: "paragraph",
+        text: "Trabajo con cuatro tramos. No es una ley, es un punto de partida que casi siempre funciona y que se adapta a la duración final.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "1. Gancho (5 a 15 segundos)",
+      },
+      {
+        type: "paragraph",
+        text: "Abre con el problema que resuelves, una frase fuerte de una persona real o una imagen que muestre el trabajo en marcha. No abras con el logo ni con una panorámica del edificio. Eso puede ir después, cuando ya hay motivo para mirarlo.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "2. Desarrollo (la mitad del vídeo)",
+      },
+      {
+        type: "paragraph",
+        text: "Aquí explicas qué haces y cómo lo haces, en el orden en que lo entendería alguien que no te conoce. Alterno voz de entrevista con planos de recurso que ilustren lo que se dice. Una idea por escena. Si una escena necesita dos ideas, son dos escenas.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "3. Prueba (20 a 30 por ciento)",
+      },
+      {
+        type: "paragraph",
+        text: "Afirmar no basta. Este tramo es para lo que demuestra: un cliente que habla de su experiencia, un proceso visto de cerca, una cifra que la empresa pueda justificar. Si no tienes datos que puedas defender, usa personas y escenas reales en lugar de adjetivos.",
+      },
+      {
+        type: "image",
+        src: "/blog/estructura-video-corporativo/intermedia.webp",
+        alt: "Claqueta sobre una superficie al aire libre antes de un rodaje",
+        width: 1920,
+        height: 1298,
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "4. Cierre y llamada a la acción (5 a 10 segundos)",
+      },
+      {
+        type: "paragraph",
+        text: "Termina con una sola frase y una sola acción: escribir, reservar una llamada, visitar la web. Varias opciones a la vez suelen significar ninguna. El logo y los datos de contacto van aquí y duran lo justo para leerse.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cómo cambia según la duración",
+      },
+      {
+        type: "paragraph",
+        text: "En un vídeo de 60 segundos, el gancho dura 5, el desarrollo 30, la prueba 15 y el cierre 10. En uno de 3 minutos puedes abrir más el desarrollo y meter dos o tres voces distintas, pero el orden es el mismo. Si el vídeo es para redes, comprime todo y adelanta la prueba al segundo diez.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Errores que veo con más frecuencia",
+      },
+      {
+        type: "list",
+        items: [
+          "Empezar por la historia de la empresa en lugar de por el problema del cliente.",
+          "Meter todos los servicios en un solo vídeo. Mejor un vídeo por mensaje.",
+          "Dejar la prueba para el final, cuando ya se ha ido media audiencia.",
+          "Entrevistas largas sin planos de recurso, que cansan a la vista.",
+          "Cerrar con tres llamadas a la acción distintas.",
+          "Decidir el orden en edición, con material que ya no se puede repetir.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Qué estructura es la mejor para un vídeo corporativo?",
+        answer:
+          "La que lleva al espectador de un problema reconocible a una acción concreta. Gancho, desarrollo, prueba y cierre cubre la mayoría de casos. Si el vídeo es institucional y pausado, puedes alargar el desarrollo, pero el gancho y el cierre se mantienen.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto debe durar cada parte?",
+        answer:
+          "Como referencia, el gancho entre 5 y 15 segundos, el cierre entre 5 y 10, y el resto se reparte entre desarrollo y prueba. En un vídeo de un minuto eso deja unos 45 segundos para contar el fondo.",
+      },
+      {
+        type: "faq",
+        question: "¿La estructura se decide en guion o en edición?",
+        answer:
+          "En guion, antes del rodaje. En edición se afina el ritmo, pero si falta una escena clave ya no hay forma de grabarla. Por eso defino el esquema con el cliente en preproducción.",
+      },
+      {
+        type: "faq",
+        question: "¿Sirve la misma estructura para un vídeo de redes?",
+        answer:
+          "Sí, pero comprimida. El gancho tiene que ocurrir en los dos o tres primeros segundos, la prueba se adelanta y el cierre es una sola línea. Muchos vídeos de redes son versiones recortadas del vídeo largo con esa misma lógica.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes un vídeo en mente y no sabes cómo ordenarlo, cuéntame qué quieres conseguir y a quién va dirigido desde /contacto. Antes de hablar de cámaras, preparamos juntos el esquema.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
