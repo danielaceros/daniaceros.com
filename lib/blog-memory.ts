@@ -880,6 +880,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto (candidate SC tangencial, sin evergreen libre: toda la lista agotada). Search Console: 7 impresiones, posición media 7.7 (query 'estructura de un video corporativo', página teaser-vs-video-corporativo-completo). Imágenes Unsplash.",
   },
+  {
+    slug: "grabacion-documental-corporativo",
+    keyword: "grabación documental corporativo",
+    intent: "informacional",
+    createdAt: "2026-10-05",
+    status: "published",
+    notes: "Auto-generado por blog-auto (candidate SC tangencial, sin evergreen libre). Search Console: 3 impresiones, posición media 26 (query 'grabación documental corporativo', página /blog). Imágenes Unsplash.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {

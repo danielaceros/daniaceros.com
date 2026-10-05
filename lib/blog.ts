@@ -13981,6 +13981,119 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "grabacion-documental-corporativo",
+    title: "Grabación documental corporativa: cómo se plantea y se rueda",
+    description:
+      "Cómo es una grabación documental corporativa por dentro: preparación, rodaje observacional, entrevistas y montaje, con tiempos realistas y errores que conviene evitar.",
+    publishedAt: "2026-10-05",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["grabación documental corporativo", "documental corporativo", "vídeo corporativo", "rodaje", "storytelling", "Madrid"],
+    keyword: "grabación documental corporativo",
+    intent: "informacional",
+    excerpt:
+      "Un documental corporativo se parece más a observar que a dirigir. Te cuento cómo preparo y ruedo uno: qué se decide antes, cómo se trabaja en el rodaje y qué pasa en montaje.",
+    seoTitle: "Grabación documental corporativo: guía | Daniel Acero",
+    metaDescription:
+      "Grabación documental corporativo explicada paso a paso: preparación, rodaje observacional, entrevistas y montaje, con tiempos realistas y errores comunes.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cuando una empresa me pide un documental corporativo, casi siempre imagina algo largo y solemne. Lo que realmente quiere es que se vea cómo trabaja su gente sin que parezca un anuncio. Eso se consigue con un método de rodaje distinto al del vídeo corporativo clásico.",
+      },
+      {
+        type: "paragraph",
+        text: "Aquí te explico cómo planteo una grabación documental para una empresa en Madrid, qué decido antes de llegar con la cámara y dónde se suele torcer.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabacion-documental-corporativo/hero.webp",
+        alt: "Cámara de cine preparada en un set de rodaje durante la grabación de una serie documental",
+        width: 1920,
+        height: 1080,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es una grabación documental corporativa y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Es un rodaje que observa una situación real en lugar de escenificarla. No hay guion palabra por palabra. Hay una idea central, una lista de momentos que quiero capturar y una serie de entrevistas con preguntas abiertas.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque el público distingue enseguida lo que está actuado de lo que no. Un equipo trabajando de verdad, con sus pausas y sus bromas, transmite más confianza que cualquier plano perfecto de una sala vacía.",
+      },
+      {
+        type: "paragraph",
+        text: "Sirve para historias de marca, aniversarios, procesos industriales, proyectos de impacto social o la presentación de una cultura de empresa. No sirve cuando necesitas un mensaje comercial cerrado y medido al segundo. Para eso hay otros formatos.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Preparación: la idea se fija antes de rodar" },
+      {
+        type: "paragraph",
+        text: "Aunque no haya guion, hay preparación. Hablo con quien lidera el proyecto, visito el lugar si puedo y defino una pregunta que el documental debe responder. Después hago una lista de escenas probables: una reunión, un turno de trabajo, una llegada, un cierre del día. Con eso sé dónde colocarme y a quién pedir permiso para grabar.",
+      },
+      { type: "heading", level: 3, text: "Rodaje: observar con poco equipo" },
+      {
+        type: "paragraph",
+        text: "Trabajo con una cámara principal, una segunda más ligera y un micrófono de solapa o una caña según el espacio. Cuanto menos equipo se ve, antes se olvidan de mí. Reservo como mínimo una jornada completa de unas 8 horas, porque las dos primeras horas la gente todavía actúa un poco. Lo bueno suele llegar después.",
+      },
+      { type: "heading", level: 3, text: "Entrevistas: preguntas abiertas y sin prisa" },
+      {
+        type: "paragraph",
+        text: "Cada entrevista dura entre 20 y 30 minutos. Pregunto cómo empezó algo, qué salió mal, qué cambiaría. Evito las preguntas que se responden con un sí o un no. Dejo silencios. Las mejores frases suelen venir justo después de uno.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabacion-documental-corporativo/intermedia.webp",
+        alt: "Videocámara negra sobre una mesa de madera lista para una grabación",
+        width: 1920,
+        height: 1280,
+        caption: "En documental pesa más la preparación del equipo que la cantidad de equipo.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Pedir a la gente que repita una acción \"para la cámara\" hasta que parezca natural. Pierde la gracia.",
+          "Rodar una sola mañana y esperar material para un documental de diez minutos.",
+          "Entrevistar con un guion de respuestas aprobado por comunicación. Se nota y suena a nota de prensa.",
+          "Olvidar los permisos de imagen de quienes salen de fondo. Mejor resolverlo antes del rodaje.",
+          "Montar con ritmo de anuncio sobre material observacional. El resultado se siente forzado.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto dura una grabación documental corporativa?",
+        answer:
+          "Depende del alcance. Para una pieza de entre 5 y 8 minutos suelo necesitar de una a dos jornadas de rodaje, y después unas dos semanas de montaje con revisiones. Si hay varias sedes o personas, sumo días.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta guion para un documental corporativo?",
+        answer:
+          "No un guion cerrado. Sí una estructura: la pregunta central, las escenas previstas y las personas a entrevistar. El hilo final se termina de construir en montaje con lo que ha pasado de verdad.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuántas personas hacen falta en el rodaje?",
+        answer:
+          "Para la mayoría de proyectos corporativos me basta conmigo y, a veces, un ayudante de sonido. Un equipo grande cambia el comportamiento de la gente y va contra la idea de observar.",
+      },
+      {
+        type: "faq",
+        question: "¿En qué se diferencia de un vídeo corporativo normal?",
+        answer:
+          "En que no controlo cada plano. El vídeo corporativo clásico se escribe antes y se ejecuta. El documental se prepara, pero se deja a la realidad el margen para sorprender. Tiene más material en bruto y requiere más tiempo de montaje.",
+      },
+      {
+        type: "paragraph",
+        text: "Si estás valorando un documental para tu empresa y no tienes claro si encaja, cuéntamelo desde /contacto. Con una llamada de 15 minutos suelo saber si el formato documental o uno más cerrado te conviene más.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
