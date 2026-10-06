@@ -14094,6 +14094,120 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-ong-fundaciones",
+    title: "Vídeo corporativo para ONG y fundaciones: cómo contar el impacto sin manipular",
+    description:
+      "Cómo plantear un vídeo corporativo para una ONG o una fundación: qué historia contar, cómo grabar con personas vulnerables, qué errores evitar y cuánto tiempo reservar.",
+    publishedAt: "2026-10-06",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["vídeo corporativo ONG", "vídeo para fundaciones", "tercer sector", "storytelling", "vídeo corporativo", "Madrid"],
+    keyword: "vídeo corporativo para ONG y fundaciones",
+    intent: "informacional",
+    excerpt:
+      "Una ONG no vende un producto, pide confianza. Te cuento cómo planteo un vídeo para una fundación: qué historia elegir, cómo grabar con respeto y qué errores restan credibilidad.",
+    seoTitle: "Vídeo corporativo para ONG y fundaciones | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo para ONG y fundaciones: qué historia contar, cómo grabar con respeto a las personas, errores comunes y plazos realistas desde Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Una fundación casi nunca tiene un problema de falta de causa. Tiene un problema de explicarla en dos minutos a alguien que no la conoce. Ahí es donde el vídeo ayuda, y también donde más fácil es hacerlo mal.",
+      },
+      {
+        type: "paragraph",
+        text: "Te cuento cómo planteo un vídeo corporativo para una ONG o una fundación: qué decido antes de grabar, cómo trabajo con personas beneficiarias y qué suele fallar.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-ong-fundaciones/hero.webp",
+        alt: "Voluntario entregando gorros naranjas a unos niños durante una actividad solidaria",
+        width: 1920,
+        height: 1080,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué el vídeo del tercer sector es distinto" },
+      {
+        type: "paragraph",
+        text: "En una empresa el vídeo suele apoyar una venta. En una ONG apoya una decisión de confianza: donar, hacerse socio, ser voluntario, firmar un convenio. Quien mira quiere saber dos cosas. Si el problema es real y si su ayuda sirve de algo.",
+      },
+      {
+        type: "paragraph",
+        text: "Por eso el tono pesa tanto. Un vídeo demasiado pulido parece publicidad. Uno demasiado dramático parece manipulación. Busco un punto intermedio: imagen cuidada, personas reales y datos que se puedan comprobar.",
+      },
+      {
+        type: "paragraph",
+        text: "También cambia el público. Un mismo vídeo puede tener que servir a donantes particulares, a empresas patrocinadoras y a administraciones. Antes de escribir nada pregunto a quién se dirige la pieza principal. Las demás se derivan después.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Elegir una historia, no un resumen de la memoria anual" },
+      {
+        type: "paragraph",
+        text: "El error más habitual es querer contarlo todo: años de trayectoria, líneas de trabajo, cifras. Prefiero una persona, un momento y un cambio concreto. Las cifras entran como apoyo, en pantalla y con la fuente que corresponda. Si la organización no puede respaldar un número, no lo uso.",
+      },
+      { type: "heading", level: 3, text: "Grabar con consentimiento y sin invadir" },
+      {
+        type: "paragraph",
+        text: "Si salen menores o personas en situación vulnerable, el consentimiento va primero. Lo gestiona la organización por escrito y yo lo reviso antes del rodaje. Pregunto qué personas no pueden aparecer y planteo los planos para que se pueda respetar. Si alguien prefiere no mostrar la cara, grabamos manos, espacios o siluetas. La historia sigue funcionando.",
+      },
+      { type: "heading", level: 3, text: "Rodar con poco equipo y mucho tiempo" },
+      {
+        type: "paragraph",
+        text: "Llego con una cámara, un micrófono de solapa y poca luz añadida. Si entro con un equipo grande a un centro o a una actividad, cambio lo que estoy intentando grabar. Suelo pedir una jornada para observar y otra para entrevistas. A veces la primera hora no se graba: sirve para que la gente se acostumbre a mi presencia.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-ong-fundaciones/intermedia.webp",
+        alt: "Sistema de cámara de cine Sony FS7 preparado en un set de rodaje documental",
+        width: 1920,
+        height: 1080,
+        caption: "Un equipo ligero permite estar cerca de las personas sin condicionar lo que ocurre.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Buscar el plano más lacrimógeno. A corto plazo emociona, a largo plazo resta credibilidad a la organización.",
+          "Presentar a los beneficiarios solo como víctimas, sin voz propia ni contexto.",
+          "Usar cifras sin fuente o redondeadas a favor de la causa.",
+          "Meter logos de financiadores a pantalla completa en mitad de la historia.",
+          "Hacer un único vídeo largo y no pensar en versiones cortas para redes y para presentaciones a empresas.",
+          "Dejar la autorización de imagen para después del rodaje.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto dura un buen vídeo para una ONG?",
+        answer:
+          "Para la web o una presentación, entre dos y tres minutos. Para redes, versiones de 30 a 60 segundos sacadas del mismo rodaje. Un vídeo de eventos o de memoria anual puede llegar a cinco minutos si hay ritmo.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar con menores?",
+        answer:
+          "Sí, siempre con autorización firmada por sus tutores y con el acuerdo de la organización sobre cómo se mostrarán. Yo me adapto a esas condiciones, aunque limiten los planos posibles.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo hace falta desde el encargo hasta la entrega?",
+        answer:
+          "Para una pieza de dos o tres minutos, entre cuatro y seis semanas contando preparación, una o dos jornadas de rodaje y montaje con revisiones. Si hay que gestionar autorizaciones, conviene empezar antes.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué hacemos si el presupuesto es limitado?",
+        answer:
+          "Reducimos el alcance, no la calidad. Una sola historia bien contada y versiones cortas del mismo rodaje rinden más que varias piezas hechas con prisa. En /contacto me cuentas el presupuesto y vemos qué cabe.",
+      },
+      {
+        type: "paragraph",
+        text: "Si trabajas en una ONG o una fundación y quieres un vídeo que cuente tu labor con respeto, escríbeme desde /contacto. Con una llamada corta suelo ver qué historia merece la pieza principal.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {

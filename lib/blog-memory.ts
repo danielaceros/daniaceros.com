@@ -888,6 +888,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto (candidate SC tangencial, sin evergreen libre). Search Console: 3 impresiones, posición media 26 (query 'grabación documental corporativo', página /blog). Imágenes Unsplash.",
   },
+  {
+    slug: "video-corporativo-ong-fundaciones",
+    keyword: "vídeo corporativo para ONG y fundaciones",
+    intent: "informacional",
+    createdAt: "2026-10-06",
+    status: "published",
+    notes: "Auto-generado por blog-auto (fallback evergreen — Search Console no disponible por token invalid_grant y lista evergreen agotada; tema nuevo fuera de lista). Imágenes Unsplash.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {
