@@ -14208,6 +14208,119 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-consultoras",
+    title: "Vídeo corporativo para consultoras: cómo mostrar un servicio que no se ve",
+    description:
+      "Cómo plantear un vídeo corporativo para una consultora: qué contar, quién debe salir a cámara, cómo grabar sin revelar datos de clientes y qué errores evitar.",
+    publishedAt: "2026-10-07",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["vídeo corporativo consultoras", "vídeo para consultoría", "servicios profesionales", "vídeo corporativo", "marca personal", "Madrid"],
+    keyword: "vídeo corporativo para consultoras",
+    intent: "informacional",
+    excerpt:
+      "Una consultora vende criterio, y el criterio no se filma. Te cuento cómo planteo un vídeo para una consultora: quién sale, qué se dice y cómo se graba sin exponer a ningún cliente.",
+    seoTitle: "Vídeo corporativo para consultoras | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo para consultoras: qué contar, quién sale a cámara, cómo grabar sin exponer a clientes y qué errores evitar. Guía desde Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Una fábrica puede enseñar su maquinaria. Una consultora tiene reuniones, portátiles y gente pensando. Si grabas eso tal cual, el resultado es un vídeo de personas sentadas que no dice nada.",
+      },
+      {
+        type: "paragraph",
+        text: "Te cuento cómo planteo un vídeo corporativo para una consultora: qué decido antes de grabar, a quién pongo delante de la cámara y qué suele fallar.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-consultoras/hero.webp",
+        alt: "Equipo de trabajo sentado alrededor de una mesa con bolígrafos y documentos durante una reunión",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué una consultora necesita un vídeo distinto" },
+      {
+        type: "paragraph",
+        text: "Quien contrata una consultora compra confianza en las personas. El producto es el equipo. Por eso el vídeo tiene que servir para que un posible cliente piense: con esta gente sí me sentaría a hablar.",
+      },
+      {
+        type: "paragraph",
+        text: "Hay una restricción añadida. Casi todos los proyectos son confidenciales. No puedo enseñar pantallas, documentos ni nombres de clientes sin permiso, y muchas veces no lo hay. Eso obliga a contar la propuesta de valor con otros recursos.",
+      },
+      {
+        type: "paragraph",
+        text: "También cambia el uso. Un vídeo de consultora se envía en propuestas, se pone en la web de servicios y se enseña en reuniones comerciales. Piensa en esos tres sitios antes de decidir la duración.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Poner a los socios y a los seniors a explicar, no a posar" },
+      {
+        type: "paragraph",
+        text: "El mejor material sale de entrevistas cortas con dos o tres personas del equipo. Les pido que expliquen un problema típico de sus clientes y cómo lo abordan. Sin jerga y sin frases de folleto. Si alguien no se siente cómodo, ensayamos diez minutos antes de grabar.",
+      },
+      { type: "heading", level: 3, text: "Sustituir el caso confidencial por un método" },
+      {
+        type: "paragraph",
+        text: "Si no puedes enseñar un caso, enseña cómo trabajas. Las fases, las preguntas que haces en la primera reunión, lo que entregas. Eso se puede apoyar con gráficos animados sencillos hechos para el vídeo, sin datos reales de nadie. Si hay un cliente dispuesto a dar su testimonio, se graba aparte y con autorización por escrito.",
+      },
+      { type: "heading", level: 3, text: "Grabar la oficina como lo que es" },
+      {
+        type: "paragraph",
+        text: "Para el b-roll busco gestos reales: una pizarra con un esquema, una conversación de pie, alguien tomando notas. Reviso antes que no haya papeles, pantallas ni pizarras con información de clientes. Con una cámara tipo Sony A7 y una óptica luminosa suelo resolver sin añadir más que una luz de apoyo.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-consultoras/intermedia.webp",
+        alt: "Profesionales conversando sentados en una sala de reuniones durante una reunión de negocios",
+        width: 1920,
+        height: 1080,
+        caption: "Una conversación natural comunica más que una reunión escenificada.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Enseñar planos de reuniones con gente asintiendo y sin nada que decir. Parece de banco de imágenes.",
+          "Usar un texto de folleto con palabras como sinergias o soluciones integrales. Nadie lo recuerda.",
+          "Incluir pantallas, documentos o nombres de clientes sin autorización.",
+          "Poner solo al fundador a hablar y no enseñar al equipo que hará el trabajo.",
+          "Hacer un vídeo de cinco minutos que nadie ve entero en una propuesta comercial.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto debe durar un vídeo de consultora?",
+        answer:
+          "Para la web y las propuestas, entre uno y dos minutos y medio. Si hay entrevistas con más contenido, saco piezas cortas de 30 a 45 segundos para LinkedIn.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede hacer sin mostrar casos de clientes?",
+        answer:
+          "Sí. Se cuenta el método, el equipo y el tipo de problemas que resolvéis. Si un cliente quiere hablar, se suma después como pieza independiente con su consentimiento.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuántas personas deberían salir a cámara?",
+        answer:
+          "Dos o tres suele ser suficiente. Más personas diluyen el mensaje y complican el rodaje. Prefiero que salgan quienes hablan con los clientes a diario.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto se tarda desde el encargo hasta la entrega?",
+        answer:
+          "Para una pieza de dos minutos, entre tres y cinco semanas con preparación, una jornada de rodaje y montaje con una o dos rondas de revisión. Si hay que cerrar agendas de socios, conviene empezar antes.",
+      },
+      {
+        type: "paragraph",
+        text: "Si diriges una consultora y quieres un vídeo que haga visible a tu equipo sin exponer a tus clientes, escríbeme desde /contacto. Con una llamada corta te digo qué formato encaja con vuestra forma de vender.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
