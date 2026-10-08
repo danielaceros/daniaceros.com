@@ -14321,6 +14321,119 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-estudios-arquitectura",
+    title: "Vídeo corporativo para estudios de arquitectura: cómo enseñar un trabajo que tarda años",
+    description:
+      "Cómo plantear un vídeo corporativo para un estudio de arquitectura: qué enseñar si la obra no está terminada, quién habla, cómo grabar espacios y qué errores evitar.",
+    publishedAt: "2026-10-08",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["vídeo corporativo arquitectura", "vídeo para estudios de arquitectura", "vídeo de obra", "vídeo corporativo", "servicios profesionales", "Madrid"],
+    keyword: "vídeo corporativo para estudios de arquitectura",
+    intent: "informacional",
+    excerpt:
+      "Un estudio de arquitectura vende proyectos que tardan años y que casi siempre se ven en fotos. Te cuento cómo planteo un vídeo que muestre el proceso, el equipo y los espacios sin parecer un catálogo.",
+    seoTitle: "Vídeo corporativo para estudios de arquitectura | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo para estudios de arquitectura: qué enseñar, quién habla, cómo grabar espacios y obra y qué errores evitar. Guía desde Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Un estudio de arquitectura ya tiene fotografía buena. Lo que casi nunca tiene es una forma de enseñar cómo piensa, cómo trabaja y por qué un proyecto acaba siendo como es.",
+      },
+      {
+        type: "paragraph",
+        text: "Te cuento cómo planteo un vídeo corporativo para un estudio de arquitectura: qué decido antes de grabar, a quién pongo delante de la cámara y qué suele salir mal.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-estudios-arquitectura/hero.webp",
+        alt: "Despacho luminoso con una mesa de trabajo, un portátil y ventanales grandes",
+        width: 1920,
+        height: 1080,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué un estudio de arquitectura necesita un vídeo distinto" },
+      {
+        type: "paragraph",
+        text: "Quien contrata a un estudio compra una manera de resolver problemas. Las fotos de un edificio terminado enseñan el resultado, pero no el criterio. El vídeo sirve para eso: que el cliente oiga cómo explica el arquitecto una decisión y piense si quiere trabajar con esa persona.",
+      },
+      {
+        type: "paragraph",
+        text: "Hay dos problemas prácticos. Los proyectos tardan meses o años, así que rara vez coincide el rodaje con una obra terminada. Y muchos edificios están habitados u ocupados, con permisos de acceso limitados.",
+      },
+      {
+        type: "paragraph",
+        text: "Por eso el vídeo de un estudio funciona mejor como suma de piezas pequeñas que como una gran pieza de cinco minutos. Una presentación del estudio, una pieza por proyecto y varios cortes para redes.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Grabar el proceso, no solo el resultado" },
+      {
+        type: "paragraph",
+        text: "Maquetas, planos sobre la mesa, una revisión de proyecto en el despacho, una visita a obra con casco. Todo eso se puede grabar mientras el edificio todavía no existe. Lo planifico a lo largo de varios meses en visitas cortas de media jornada, y al final tengo material de cada fase.",
+      },
+      { type: "heading", level: 3, text: "Entrevistar a quien toma las decisiones" },
+      {
+        type: "paragraph",
+        text: "Un socio explicando por qué abrió una fachada hacia el norte es más útil que cualquier locución. Preparo tres preguntas por persona y grabo sentado, con luz de ventana y un micrófono de solapa. Si quien habla no se siente cómodo, lo dejo hablar caminando por el espacio.",
+      },
+      { type: "heading", level: 3, text: "Grabar los espacios con calma" },
+      {
+        type: "paragraph",
+        text: "La arquitectura se ve mal con movimientos nerviosos. Uso trípode y gimbal con movimientos lentos, lentes angulares sin deformar las líneas y busco la luz de primera hora o de última. Cuando el edificio está ocupado, llego antes de que entre la gente. Para el montaje en DaVinci Resolve mantengo planos largos, sin cortes cada dos segundos.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-estudios-arquitectura/intermedia.webp",
+        alt: "Arquitecto trabajando sobre un plano con lápiz y regla en su mesa",
+        width: 1920,
+        height: 1080,
+        caption: "El trabajo manual del despacho enseña el criterio mejor que un render.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Hacer un montaje de renders y fotos con música de fondo. Eso ya lo tiene la web.",
+          "Grabar el edificio sin pedir permisos a la propiedad ni a los usuarios.",
+          "Poner locución genérica sobre las imágenes en lugar de dejar hablar al equipo.",
+          "Grabar solo cuando la obra está terminada y perder todo el proceso.",
+          "Hacer un único vídeo largo en lugar de piezas por proyecto que se puedan reutilizar.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto debe durar un vídeo de estudio de arquitectura?",
+        answer:
+          "Para la presentación del estudio, entre uno y tres minutos. Para cada proyecto, entre uno y dos. Para redes, cortes de 20 a 40 segundos sacados de lo mismo.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar un proyecto que todavía está en obra?",
+        answer:
+          "Sí, y suele ser buena idea. Necesito permiso de la dirección de obra y cumplir sus normas de seguridad. Con casco, calzado y chaleco se puede grabar sin interferir.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta dron?",
+        answer:
+          "Depende del proyecto. Para un edificio en un entorno abierto aporta contexto. En entornos urbanos exige autorización y no siempre se puede volar, así que no lo doy por hecho.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto se tarda en tener el vídeo?",
+        answer:
+          "Una pieza de presentación suele llevar entre tres y cinco semanas: preparación, una o dos jornadas de rodaje y montaje con una o dos rondas de revisión. Si se graba el proceso de una obra, el calendario lo marca la obra.",
+      },
+      {
+        type: "paragraph",
+        text: "Si diriges un estudio de arquitectura y quieres un vídeo que enseñe cómo trabajáis y no solo lo que construís, escríbeme desde /contacto. Con una llamada corta te digo qué formato encaja con vuestros proyectos.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
