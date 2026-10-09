@@ -912,6 +912,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto (fallback evergreen — Search Console no disponible por token invalid_grant y lista evergreen agotada; tema nuevo fuera de lista). Imágenes Unsplash.",
   },
+  {
+    slug: "video-corporativo-gestorias-asesorias",
+    keyword: "vídeo corporativo para gestorías y asesorías",
+    intent: "informacional",
+    createdAt: "2026-10-09",
+    status: "published",
+    notes: "Auto-generado por blog-auto (fallback evergreen — Search Console no disponible por token invalid_grant y lista evergreen agotada; tema nuevo fuera de lista). Imágenes Unsplash.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {

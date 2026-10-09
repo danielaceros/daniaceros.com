@@ -14434,6 +14434,119 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-gestorias-asesorias",
+    title: "Vídeo corporativo para gestorías y asesorías: cómo generar confianza antes de la primera reunión",
+    description:
+      "Cómo plantear un vídeo corporativo para una gestoría o asesoría: quién habla, qué explicar, cómo grabar en la oficina y qué errores evitar.",
+    publishedAt: "2026-10-09",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["vídeo corporativo gestoría", "vídeo para asesorías", "vídeo corporativo", "servicios profesionales", "confianza de marca", "Madrid"],
+    keyword: "vídeo corporativo para gestorías y asesorías",
+    intent: "informacional",
+    excerpt:
+      "Una gestoría vende algo que no se ve: criterio, orden y tranquilidad. Te cuento cómo planteo un vídeo que ponga cara al equipo y explique cómo trabajáis sin tecnicismos.",
+    seoTitle: "Vídeo corporativo para gestorías y asesorías | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo para gestorías y asesorías: qué contar, quién habla, cómo grabar en la oficina y qué errores evitar. Guía desde Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Casi nadie elige gestoría por su web. Se elige por recomendación y, antes de llamar, se mira quién hay detrás. Ahí es donde un vídeo corto cambia la decisión: el cliente ve a una persona real y decide si se fía.",
+      },
+      {
+        type: "paragraph",
+        text: "Te cuento cómo planteo un vídeo corporativo para una gestoría o asesoría: qué decido antes de grabar, quién sale a cámara y qué suele salir mal.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-gestorias-asesorias/hero.webp",
+        alt: "Dos profesionales sentadas en una reunión de asesoramiento en una oficina",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué una asesoría necesita vídeo" },
+      {
+        type: "paragraph",
+        text: "El servicio es intangible y el cliente llega con miedo: a una sanción, a un error en el IVA, a no entender un papel. Un texto con listas de servicios no responde a eso. Una persona hablando con calma, sí.",
+      },
+      {
+        type: "paragraph",
+        text: "Además, el mercado es muy parecido. Todas las asesorías ofrecen contabilidad, fiscalidad y laboral. Lo que las diferencia es el trato, y el trato solo se transmite con voz y cara.",
+      },
+      {
+        type: "paragraph",
+        text: "Mi recomendación es no hacer un vídeo genérico de empresa. Funciona mejor una pieza de presentación de uno a dos minutos y varias respuestas cortas a dudas reales de clientes.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Quién sale a cámara" },
+      {
+        type: "paragraph",
+        text: "Salen las personas que el cliente va a tener al otro lado del teléfono: el socio y quien lleva el día a día. Prefiero dos o tres voces antes que un solo director. Preparo tres preguntas por persona y grabo sentados, sin guion leído.",
+      },
+      { type: "heading", level: 3, text: "Qué se cuenta" },
+      {
+        type: "paragraph",
+        text: "A quién ayudáis, cómo es el primer mes de trabajo y qué pasa cuando llega una inspección. Esa última pregunta tranquiliza más que cualquier lista de servicios. Evito la jerga: si un autónomo no la usaría, no entra.",
+      },
+      { type: "heading", level: 3, text: "Cómo se graba en la oficina" },
+      {
+        type: "paragraph",
+        text: "Una jornada de rodaje suele bastar. Monto dos cámaras, luz suave junto a una ventana y micrófono de solapa. Aviso con antelación para que el equipo sepa cuándo se graba, y hago los planos de recurso (manos con documentos, pantallas, reunión) sin enseñar datos de clientes. Reviso cada pantalla antes de dar al REC.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-gestorias-asesorias/intermedia.webp",
+        alt: "Calculadora y bolígrafo sobre un documento en una mesa de trabajo",
+        width: 1920,
+        height: 1280,
+        caption: "Los planos de detalle ayudan, siempre que no aparezca información de ningún cliente.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Grabar a alguien leyendo un texto sobre fiscalidad con tono de folleto.",
+          "Dejar documentos o pantallas con datos de clientes visibles en el plano.",
+          "Poner solo al socio y esconder al equipo que realmente atiende al cliente.",
+          "Usar música de stock genérica que no encaja con un despacho serio.",
+          "Hacer una pieza larga en lugar de varias respuestas cortas reutilizables en LinkedIn y en la web.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto debe durar el vídeo de una asesoría?",
+        answer:
+          "La presentación, entre uno y dos minutos. Las respuestas a dudas frecuentes, entre 30 y 60 segundos cada una. Más largo, y casi nadie llega al final.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo explicar temas fiscales sin que quede obsoleto?",
+        answer:
+          "Sí, si hablas de cómo trabajáis y no de cifras o plazos concretos. Las normas cambian cada año; vuestro método no. Si hace falta citar algo concreto, lo dejo fuera del vídeo y lo pongo en texto.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta que todo el equipo salga?",
+        answer:
+          "No. Con dos o tres personas basta. Lo importante es que sean las que el cliente va a encontrar al empezar a trabajar con vosotros.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto se tarda en tenerlo?",
+        answer:
+          "Entre tres y cinco semanas: preparación, una jornada de rodaje y montaje con una o dos rondas de revisión. Las piezas cortas para redes se entregan en la misma tanda.",
+      },
+      {
+        type: "paragraph",
+        text: "Si diriges una gestoría o asesoría y quieres un vídeo que transmita cómo trabajáis y no solo qué servicios ofrecéis, escríbeme desde /contacto. Con una llamada corta te digo qué formato encaja con tu despacho.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
