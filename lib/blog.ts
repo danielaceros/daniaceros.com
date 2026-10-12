@@ -14547,6 +14547,119 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-empresas-ingenieria",
+    title: "Vídeo corporativo para empresas de ingeniería: cómo explicar lo que haces sin aburrir",
+    description:
+      "Cómo plantear un vídeo corporativo para una ingeniería: qué enseñar, quién habla, cómo grabar en obra y en oficina técnica y qué errores evitar.",
+    publishedAt: "2026-10-12",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["vídeo corporativo ingeniería", "vídeo para empresas técnicas", "vídeo corporativo", "grabación en obra", "B2B", "Madrid"],
+    keyword: "vídeo corporativo para empresas de ingeniería",
+    intent: "informacional",
+    excerpt:
+      "Una ingeniería vende conocimiento técnico que el cliente no puede evaluar a simple vista. Te cuento cómo planteo un vídeo que muestre cómo trabajáis y por qué os pueden confiar un proyecto.",
+    seoTitle: "Vídeo corporativo para empresas de ingeniería | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo para empresas de ingeniería: qué enseñar, quién habla, cómo grabar en obra y oficina técnica y qué errores evitar. Guía desde Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Quien contrata una ingeniería no puede comprobar si los cálculos están bien. Lo que sí puede valorar es si el equipo parece serio, ordenado y capaz de explicarse. Un vídeo bien hecho enseña eso en dos minutos.",
+      },
+      {
+        type: "paragraph",
+        text: "Te cuento cómo planteo un vídeo corporativo para una empresa de ingeniería: qué decido antes de grabar, quién sale a cámara y qué suele salir mal.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-empresas-ingenieria/hero.webp",
+        alt: "Dos operarios con casco y chaleco reflectante trabajando en una obra",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué una ingeniería necesita vídeo" },
+      {
+        type: "paragraph",
+        text: "El trabajo de una ingeniería es invisible hasta que se construye. Antes hay planos, modelos y informes que el cliente no sabe leer. La web suele resolverlo con una lista de especialidades y un par de fotos de obra.",
+      },
+      {
+        type: "paragraph",
+        text: "Un vídeo permite enseñar el proceso: quién revisa qué, cómo se coordina el equipo y qué pasa cuando aparece un problema en obra. Eso es lo que reduce el riesgo percibido, y en un contrato grande el riesgo percibido pesa más que el precio.",
+      },
+      {
+        type: "paragraph",
+        text: "Mi recomendación es una pieza de presentación de uno a dos minutos y varios cortes por línea de trabajo, que sirvan para licitaciones, LinkedIn y reuniones comerciales.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Quién sale a cámara" },
+      {
+        type: "paragraph",
+        text: "Salen quienes el cliente va a ver en el proyecto: un socio o director técnico, un jefe de proyecto y alguien de obra. Los técnicos suelen decir que no saben hablar a cámara. Les preparo tres preguntas, grabo sentados y les pido que expliquen el trabajo como se lo explicarían a un cliente que no es del sector.",
+      },
+      { type: "heading", level: 3, text: "Qué se enseña" },
+      {
+        type: "paragraph",
+        text: "Un proyecto real, de principio a fin: el problema, la solución y cómo se ejecutó. Prefiero uno bien contado a cinco enumerados. Las pantallas de cálculo o de modelado quedan bien como plano de recurso, siempre que no se vea información confidencial del cliente.",
+      },
+      { type: "heading", level: 3, text: "Cómo se graba en obra y en oficina" },
+      {
+        type: "paragraph",
+        text: "En obra necesito el permiso de la dirección, casco, calzado y chaleco, y hablar antes con el responsable de seguridad. Grabo con una cámara ligera y planifico los planos en las ventanas en que no se interrumpe el trabajo. En la oficina técnica monto dos cámaras para las entrevistas, luz suave y micrófono de solapa, porque el ruido de ambiente en una obra hace inviable el sonido directo.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-empresas-ingenieria/intermedia.webp",
+        alt: "Pantalla de ordenador con un plano técnico en un programa de diseño asistido",
+        width: 1920,
+        height: 1281,
+        caption: "Un plano de pantalla funciona bien como recurso si no aparece información confidencial.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Montar un vídeo de máquinas y paisajes con música épica y sin que hable nadie del equipo.",
+          "Dejar que el vídeo hable de especialidades en lugar de contar un proyecto concreto.",
+          "Grabar en obra sin avisar a la dirección ni cumplir sus normas de seguridad.",
+          "Enseñar planos o pantallas con datos de clientes sin pedir permiso.",
+          "Usar tecnicismos que solo entiende otro ingeniero y perder a quien decide la contratación.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto debe durar el vídeo de una ingeniería?",
+        answer:
+          "La presentación de la empresa, entre uno y dos minutos. Cada proyecto, entre uno y tres. Para LinkedIn, cortes de 30 a 45 segundos sacados de lo mismo.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar un proyecto en ejecución?",
+        answer:
+          "Sí. Necesito autorización de la propiedad y de la dirección de obra, y cumplir sus normas de seguridad. Suele ser lo mejor que se puede enseñar, porque muestra el trabajo real.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta dron?",
+        answer:
+          "Depende. Para infraestructuras o instalaciones grandes aporta contexto. En entornos urbanos exige autorización y no siempre se puede volar, así que no lo doy por hecho.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto se tarda en tener el vídeo?",
+        answer:
+          "Una pieza de presentación suele llevar entre tres y cinco semanas: preparación, una o dos jornadas de rodaje y montaje con una o dos rondas de revisión. Si hay que grabar en obra, el calendario depende de la obra.",
+      },
+      {
+        type: "paragraph",
+        text: "Si diriges una ingeniería y quieres un vídeo que enseñe cómo trabajáis y no solo qué especialidades cubrís, escríbeme desde /contacto. Con una llamada corta te digo qué formato encaja con vuestros proyectos.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
