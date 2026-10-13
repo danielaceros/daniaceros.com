@@ -324,87 +324,6 @@ export default async function ContenidoMensualPage({ params }: LangParams) {
         </div>
       </section>
 
-      {/* PLANES */}
-      <section className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
-        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
-          <div>
-            <p className="font-inter text-[11px] uppercase tracking-[0.18em] text-white/40 mb-5">
-              {t.plans.kicker}
-            </p>
-            <h2 className="font-display font-semibold uppercase leading-[1.05] text-[clamp(1.8rem,4.5vw,3rem)]">
-              {t.plans.titleLine1}<br /><span className="text-white/55">{t.plans.titleLine2}</span>
-            </h2>
-          </div>
-          <p className="font-inter text-[12px] leading-[1.6] text-white/50 max-w-xs">
-            {t.plans.note}
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          {t.plans.items.map((plan) => (
-            <div
-              key={plan.name}
-              className={
-                plan.highlight
-                  ? "relative rounded-3xl border border-white bg-white text-[#0a0a0a] p-7 flex flex-col lg:scale-[1.04] lg:-translate-y-1 shadow-2xl"
-                  : "relative rounded-3xl border border-white/12 bg-[#0a0a0a] p-7 flex flex-col"
-              }
-            >
-              {plan.highlight && plan.badge && (
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#0a0a0a] text-white font-inter text-[10px] uppercase tracking-[0.12em] font-semibold px-3 py-1.5 rounded-full whitespace-nowrap">
-                  {plan.badge}
-                </span>
-              )}
-
-              <p className={`font-inter text-[11px] uppercase tracking-[0.14em] ${plan.highlight ? "text-[#0a0a0a]/60" : "text-white/45"}`}>
-                {plan.name}
-              </p>
-
-              <ul className={`mt-6 space-y-2 font-inter text-[13px] leading-[1.5] ${plan.highlight ? "text-[#0a0a0a]/85" : "text-white/75"}`}>
-                <li className="flex gap-2"><span className={plan.highlight ? "text-[#0a0a0a]/40" : "text-white/35"}>·</span> {format(t.plans.reels, { n: plan.reels })}</li>
-                <li className="flex gap-2"><span className={plan.highlight ? "text-[#0a0a0a]/40" : "text-white/35"}>·</span> {format(t.plans.pubs, { n: plan.pubs })}</li>
-                <li className="flex gap-2"><span className={plan.highlight ? "text-[#0a0a0a]/40" : "text-white/35"}>·</span> {format(t.plans.session, { session: plan.session })}</li>
-                {plan.extra && <li className="flex gap-2"><span className={plan.highlight ? "text-[#0a0a0a]/40" : "text-white/35"}>·</span> {plan.extra}</li>}
-              </ul>
-
-              <Link
-                href={localizedHref(lang, "/contacto")}
-                className={
-                  plan.highlight
-                    ? "mt-7 inline-flex justify-center rounded-xl bg-[#0a0a0a] text-white px-5 py-3 font-inter text-[13px] font-semibold uppercase tracking-[0.06em] hover:bg-[#1c1917] transition-colors"
-                    : "mt-7 inline-flex justify-center rounded-xl border border-white/25 bg-white/[0.03] px-5 py-3 font-inter text-[13px] font-semibold uppercase tracking-[0.06em] text-white hover:bg-white/[0.07] transition-colors"
-                }
-              >
-                {t.plans.cta}
-              </Link>
-            </div>
-          ))}
-        </div>
-
-        {/* VOLUMEN */}
-        <div className="mt-5 rounded-3xl border border-white/12 bg-white/[0.02] p-6 sm:p-7 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-          <div>
-            <p className="font-inter text-[11px] uppercase tracking-[0.14em] text-white/45">{t.plans.volumeKicker}</p>
-            <h3 className="mt-1.5 font-display text-[20px] sm:text-[24px] font-semibold uppercase leading-tight">
-              {t.plans.volumeTitle}
-            </h3>
-          </div>
-          <Link
-            href={localizedHref(lang, "/contacto")}
-            className="shrink-0 inline-flex justify-center rounded-xl border border-white/30 bg-white/[0.04] px-6 py-3 font-inter text-[13px] font-semibold uppercase tracking-[0.06em] hover:bg-white/[0.08] transition-colors"
-          >
-            {t.plans.volumeCta}
-          </Link>
-        </div>
-
-        {/* TODO INCLUIDO */}
-        <div className="mt-10 rounded-2xl border border-white/12 bg-white/[0.02] p-6 text-center">
-          <p className="font-inter text-[13px] sm:text-[14px] leading-[1.6] text-white/70">
-            <span className="text-white font-semibold">{t.plans.allInLead}</span> {t.plans.allInText}
-          </p>
-        </div>
-      </section>
-
       {/* BONOS — NUEVO */}
       <section className="border-t border-white/[0.06] bg-[#080808]">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
@@ -425,6 +344,12 @@ export default async function ContenidoMensualPage({ params }: LangParams) {
                 <p className="font-inter text-[13px] leading-[1.6] text-white/65 mb-5">{bonus.desc}</p>
               </div>
             ))}
+          </div>
+
+          <div className="mt-10 rounded-2xl border border-white/12 bg-white/[0.02] p-6 text-center">
+            <p className="font-inter text-[13px] sm:text-[14px] leading-[1.6] text-white/70">
+              <span className="text-white font-semibold">{t.plans.allInLead}</span> {t.plans.allInText}
+            </p>
           </div>
         </div>
       </section>

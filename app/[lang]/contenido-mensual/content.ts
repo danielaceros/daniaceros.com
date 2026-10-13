@@ -82,29 +82,13 @@ const es = {
     { handle: "clinicaguinova", name: "Clínica Guinova", meta: "Clínica integral", tag: "Producción recurrente" },
   ],
   plans: {
-    kicker: "Planes mensuales",
-    titleLine1: "Elige tu volumen.",
-    titleLine2: "Empieza este mes.",
-    note: "Mensual cancelable · Sin permanencia",
-    reels: "{n} reels editados",
-    pubs: "{n} pub / semana",
-    session: "Sesión de {session}",
-    cta: "Empezar",
-    items: [
-      { name: "Starter", reels: "8", pubs: "2", session: "2h", extra: null, highlight: false },
-      { name: "Standard", reels: "12", pubs: "3", session: "2h", extra: null, highlight: true, badge: "El más demandado" },
-      { name: "Premium", reels: "20", pubs: "5", session: "4h", extra: "+2 destacados · thumbnails", highlight: false },
-    ],
-    volumeKicker: "Volumen · A medida",
-    volumeTitle: "20+ reels al mes, equipo escalado, lanzamientos.",
-    volumeCta: "Hablemos",
     allInLead: "Todo incluido en el pack:",
     allInText:
       "guiones, grabación, edición, subtítulos y publicación. Sin extras ni sorpresas — pagas el resultado, no las piezas.",
   },
   bonuses: {
     kicker: "Incluido sin coste extra",
-    titleLine1: "Todos los planes incluyen.",
+    titleLine1: "El pack incluye.",
     titleLine2: "Sin letra pequeña.",
     items: [
       {
@@ -234,29 +218,13 @@ const en: typeof es = {
     { handle: "clinicaguinova", name: "Clínica Guinova", meta: "Multidisciplinary clinic", tag: "Recurring production" },
   ],
   plans: {
-    kicker: "Monthly plans",
-    titleLine1: "Choose your volume.",
-    titleLine2: "Start this month.",
-    note: "Cancel monthly · No long-term contract",
-    reels: "{n} edited reels",
-    pubs: "{n} posts / week",
-    session: "{session} session",
-    cta: "Get started",
-    items: [
-      { name: "Starter", reels: "8", pubs: "2", session: "2h", extra: null, highlight: false },
-      { name: "Standard", reels: "12", pubs: "3", session: "2h", extra: null, highlight: true, badge: "Most popular" },
-      { name: "Premium", reels: "20", pubs: "5", session: "4h", extra: "+2 featured · thumbnails", highlight: false },
-    ],
-    volumeKicker: "Volume · Custom",
-    volumeTitle: "20+ reels a month, a scaled-up team, launches.",
-    volumeCta: "Let's talk",
     allInLead: "Everything included in the package:",
     allInText:
       "scripts, filming, editing, subtitles and publishing. No extras, no surprises — you pay for the result, not for individual pieces.",
   },
   bonuses: {
     kicker: "Included at no extra cost",
-    titleLine1: "Included in every plan.",
+    titleLine1: "Included in the package.",
     titleLine2: "No fine print.",
     items: [
       {
