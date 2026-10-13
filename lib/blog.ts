@@ -14660,6 +14660,119 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-empresas-moda",
+    title: "Vídeo corporativo para empresas de moda: cómo enseñar la marca sin hacer un anuncio",
+    description:
+      "Cómo plantear un vídeo corporativo para una marca de moda: qué enseñar, quién habla, cómo grabar taller, showroom y equipo y qué errores evitar.",
+    publishedAt: "2026-10-13",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["vídeo corporativo moda", "vídeo para marcas de moda", "vídeo corporativo", "showroom", "branding", "Madrid"],
+    keyword: "vídeo corporativo para empresas de moda",
+    intent: "informacional",
+    excerpt:
+      "Una marca de moda ya tiene lookbooks y campañas. Lo que casi nunca enseña es cómo trabaja. Te cuento cómo planteo un vídeo corporativo que muestre el proceso, el equipo y el criterio detrás de las prendas.",
+    seoTitle: "Vídeo corporativo para empresas de moda | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo para empresas de moda: qué enseñar, quién habla, cómo grabar taller y showroom y qué errores evitar. Guía desde Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Las marcas de moda suelen tener fotografía y vídeo de producto de sobra. Lo que les falta es un vídeo que explique quiénes son, cómo trabajan y por qué una tienda, un inversor o un candidato debería fiarse de ellas.",
+      },
+      {
+        type: "paragraph",
+        text: "Te cuento cómo planteo un vídeo corporativo para una empresa de moda: qué decido antes de grabar, quién sale a cámara y qué suele salir mal.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-empresas-moda/hero.webp",
+        alt: "Prendas colgadas en una barra de ropa",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué diferencia un vídeo corporativo de una campaña de moda" },
+      {
+        type: "paragraph",
+        text: "Una campaña vende una temporada o una colección. Se graba con modelos, estilismo y una dirección de arte muy cerrada, y caduca en pocos meses.",
+      },
+      {
+        type: "paragraph",
+        text: "El vídeo corporativo cuenta a la empresa: de dónde sale el diseño, quién fabrica, cómo se toman las decisiones. Se usa en la web, en reuniones con distribuidores, en procesos de selección y en dosieres para inversión. Puede durar años si no depende de una colección concreta.",
+      },
+      {
+        type: "paragraph",
+        text: "Mi recomendación es una pieza de presentación de uno a dos minutos y varios cortes cortos por tema: diseño, producción, equipo y valores. Así reutilizas el material en LinkedIn e Instagram sin grabar otra vez.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Quién sale a cámara" },
+      {
+        type: "paragraph",
+        text: "La persona que fundó o dirige la marca, quien lleva el diseño y alguien de producción o patronaje. Quedan mejor que los modelos porque son quienes explican el criterio. Les preparo tres preguntas, grabo sentados y les pido que hablen como si se lo contaran a un comprador de tienda.",
+      },
+      { type: "heading", level: 3, text: "Qué se enseña" },
+      {
+        type: "paragraph",
+        text: "El proceso real: el boceto, la elección de tejidos, el patronaje, la confección y el control de calidad. Los planos de manos trabajando con tela, tijeras o máquina de coser funcionan siempre, porque transmiten oficio sin necesidad de explicarlo. Si parte de la producción es externa, lo cuento con honestidad y enseño a quién la hace, con su permiso.",
+      },
+      { type: "heading", level: 3, text: "Cómo se graba en taller y showroom" },
+      {
+        type: "paragraph",
+        text: "En el taller uso luz natural cuando hay ventanas y la completo con un foco suave. Grabo con cámara de 24 o 25 imágenes por segundo, óptica luminosa y un trípode ligero para no estorbar al equipo. En el showroom cuido el orden antes de encender nada: perchas alineadas, etiquetas fuera de plano y sin cartelería de otras marcas. El color es lo más delicado: una prenda que sale del color real es un problema, así que ajusto la corrección con una referencia de la propia tela.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-empresas-moda/intermedia.webp",
+        alt: "Interior monocromo con piezas colgadas y plataformas de exposición",
+        width: 1920,
+        height: 1280,
+        caption: "Un espacio ordenado y con poco ruido visual deja que la prenda sea lo que se ve.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Hacer un vídeo que parece un anuncio de colección y no dice nada de la empresa.",
+          "Grabar solo a modelos y esconder al equipo que diseña y fabrica.",
+          "Usar música de tendencia con derechos sin resolver, que acaba retirando el vídeo de las redes.",
+          "Mostrar prendas de una colección que ya no se vende, y dejar el vídeo anticuado a los pocos meses.",
+          "Grabar el showroom sin ordenar antes: etiquetas, bolsas y perchas fuera de sitio se ven a cualquier resolución.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto debe durar el vídeo corporativo de una marca de moda?",
+        answer:
+          "La presentación, entre uno y dos minutos. Los cortes por tema, entre 30 y 60 segundos. Para redes, versiones verticales de 15 a 30 segundos sacadas del mismo rodaje.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta contratar modelos?",
+        answer:
+          "No para un vídeo corporativo. Si quieres que se vean las prendas puestas, puede salir alguien del equipo o una persona que ya trabaje con la marca. Si hay modelos externos, necesito su autorización de imagen por escrito.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar el taller sin parar la producción?",
+        answer:
+          "Sí. Pacto con el responsable las franjas en las que el trabajo admite cámara y grabo planos cortos sin interrumpir. Una jornada suele bastar para el taller y otra para showroom y entrevistas.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto se tarda en tener el vídeo?",
+        answer:
+          "Entre tres y cinco semanas: preparación, una o dos jornadas de rodaje y montaje con una o dos rondas de revisión. Si hay que coordinar con temporada o con desfiles, el calendario se adapta a eso.",
+      },
+      {
+        type: "paragraph",
+        text: "Si diriges una marca de moda y quieres un vídeo que enseñe cómo trabajáis y no solo qué vendéis, escríbeme desde /contacto. Con una llamada corta te digo qué formato encaja con tu marca.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
