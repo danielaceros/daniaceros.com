@@ -7,7 +7,7 @@ const es = {
   meta: {
     title: "Pack mensual de contenido para clínicas",
     description:
-      "Tus pacientes te buscan en Instagram antes de pedir cita. En 2 horas grabamos tus 12 reels del mes, editados y con subtítulos. Sin permanencia. Desde 590€/mes.",
+      "Tus pacientes te buscan en Instagram antes de pedir cita. En 2 horas grabamos tus 12 reels del mes, editados y con subtítulos. Sin permanencia.",
     keywords: [
       "contenido para clínicas",
       "marketing para clínicas madrid",
@@ -49,7 +49,7 @@ const es = {
     title: "Tres pasos.",
     titleAccent: "Cero fricción.",
     steps: [
-      ["01", "Una sesión al mes", "Voy a tu clínica con el equipo de grabación, o vienes a mi estudio en Madrid centro. Mismo precio."],
+      ["01", "Una sesión al mes", "Voy a tu clínica con el equipo de grabación, o vienes a mi estudio en Madrid centro. Misma tarifa."],
       ["02", "Grabamos en 2h", "Lees el guion en teleprompter. Yo dirijo encuadre, ritmo y rodaje. Tú no piensas."],
       ["03", "Te entrego tus reels", "Editados, con color, audio y subtítulos. Primer reel en 48h. Resto durante el mes."],
     ],
@@ -85,16 +85,15 @@ const es = {
     kicker: "Planes mensuales",
     titleLine1: "Elige tu volumen.",
     titleLine2: "Empieza este mes.",
-    note: "Mensual cancelable · Sin permanencia · IVA no incluido",
-    perMonth: "/mes",
+    note: "Mensual cancelable · Sin permanencia",
     reels: "{n} reels editados",
     pubs: "{n} pub / semana",
     session: "Sesión de {session}",
     cta: "Empezar",
     items: [
-      { name: "Starter", price: "590€", reels: "8", pubs: "2", session: "2h", extra: null, highlight: false },
-      { name: "Standard", price: "780€", reels: "12", pubs: "3", session: "2h", extra: null, highlight: true, badge: "El más demandado" },
-      { name: "Premium", price: "1.200€", reels: "20", pubs: "5", session: "4h", extra: "+2 destacados · thumbnails", highlight: false },
+      { name: "Starter", reels: "8", pubs: "2", session: "2h", extra: null, highlight: false },
+      { name: "Standard", reels: "12", pubs: "3", session: "2h", extra: null, highlight: true, badge: "El más demandado" },
+      { name: "Premium", reels: "20", pubs: "5", session: "4h", extra: "+2 destacados · thumbnails", highlight: false },
     ],
     volumeKicker: "Volumen · A medida",
     volumeTitle: "20+ reels al mes, equipo escalado, lanzamientos.",
@@ -102,9 +101,6 @@ const es = {
     allInLead: "Todo incluido en el pack:",
     allInText:
       "guiones, grabación, edición, subtítulos y publicación. Sin extras ni sorpresas — pagas el resultado, no las piezas.",
-    quarterlyLead: "¿Pago trimestral?",
-    quarterlyText: "Te baja un 10% y te congelo el precio.",
-    quarterlyNote: "Mensual cancelable · o trimestral con descuento",
   },
   bonuses: {
     kicker: "Incluido sin coste extra",
@@ -114,22 +110,16 @@ const es = {
       {
         title: "Banco B-Roll",
         desc: "Material bruto editable de tu sesión para tus Stories del mes.",
-        value: "350€",
       },
       {
         title: "Pack de fotos",
         desc: "5-10 fotos profesionales en la misma sesión. Web, LinkedIn, perfil.",
-        value: "200€",
       },
       {
         title: "Primer reel 48h",
         desc: "Entrega prioritaria del primer reel para arrancar publicación rápido.",
-        value: "150€",
       },
     ],
-    valueLabel: "Valor · {value}",
-    totalLabel: "Valor total bonos incluidos ·",
-    totalValue: "700€/mes",
   },
   capacity: {
     badge: "Capacidad limitada · Real",
@@ -160,7 +150,7 @@ const es = {
       ["Permanencia", "Sin compromiso. Mensual cancelable. Tu contenido cada mes, mientras te encaje."],
       ["Cancelación", "Preaviso antes del siguiente ciclo. El ciclo en curso no se reembolsa."],
       ["Modificaciones", "1 ronda consolidada de cambios, hasta 72h tras la entrega."],
-      ["Desplazamiento", "Madrid M-40 incluido. Fuera, +50€/sesión. Operamos en toda España."],
+      ["Desplazamiento", "Madrid M-40 incluido. Fuera, se presupuesta aparte. Operamos en toda España."],
     ],
   },
 }
@@ -169,7 +159,7 @@ const en: typeof es = {
   meta: {
     title: "Monthly content package for clinics",
     description:
-      "Patients look you up on Instagram before booking. In 2 hours we film your 12 reels for the month, edited and subtitled. No long-term contract. From €590/month.",
+      "Patients look you up on Instagram before booking. In 2 hours we film your 12 reels for the month, edited and subtitled. No long-term contract.",
     keywords: [
       "content for clinics",
       "clinic marketing madrid",
@@ -211,7 +201,7 @@ const en: typeof es = {
     title: "Three steps.",
     titleAccent: "Zero friction.",
     steps: [
-      ["01", "One session a month", "I come to your clinic with the film crew, or you come to my studio in central Madrid. Same price."],
+      ["01", "One session a month", "I come to your clinic with the film crew, or you come to my studio in central Madrid. Same rate."],
       ["02", "We film in 2 hours", "You read the script on a teleprompter. I direct the framing, pacing and shoot. You don't have to think about a thing."],
       ["03", "I deliver your reels", "Edited, color-graded, with sound and subtitles. First reel within 48 hours. The rest throughout the month."],
     ],
@@ -247,16 +237,15 @@ const en: typeof es = {
     kicker: "Monthly plans",
     titleLine1: "Choose your volume.",
     titleLine2: "Start this month.",
-    note: "Cancel monthly · No long-term contract · VAT not included",
-    perMonth: "/month",
+    note: "Cancel monthly · No long-term contract",
     reels: "{n} edited reels",
     pubs: "{n} posts / week",
     session: "{session} session",
     cta: "Get started",
     items: [
-      { name: "Starter", price: "€590", reels: "8", pubs: "2", session: "2h", extra: null, highlight: false },
-      { name: "Standard", price: "€780", reels: "12", pubs: "3", session: "2h", extra: null, highlight: true, badge: "Most popular" },
-      { name: "Premium", price: "€1,200", reels: "20", pubs: "5", session: "4h", extra: "+2 featured · thumbnails", highlight: false },
+      { name: "Starter", reels: "8", pubs: "2", session: "2h", extra: null, highlight: false },
+      { name: "Standard", reels: "12", pubs: "3", session: "2h", extra: null, highlight: true, badge: "Most popular" },
+      { name: "Premium", reels: "20", pubs: "5", session: "4h", extra: "+2 featured · thumbnails", highlight: false },
     ],
     volumeKicker: "Volume · Custom",
     volumeTitle: "20+ reels a month, a scaled-up team, launches.",
@@ -264,9 +253,6 @@ const en: typeof es = {
     allInLead: "Everything included in the package:",
     allInText:
       "scripts, filming, editing, subtitles and publishing. No extras, no surprises — you pay for the result, not for individual pieces.",
-    quarterlyLead: "Prefer to pay quarterly?",
-    quarterlyText: "You get 10% off and I lock in your price.",
-    quarterlyNote: "Cancel monthly · or pay quarterly at a discount",
   },
   bonuses: {
     kicker: "Included at no extra cost",
@@ -276,22 +262,16 @@ const en: typeof es = {
       {
         title: "B-Roll Library",
         desc: "Editable raw footage from your session for your Stories throughout the month.",
-        value: "€350",
       },
       {
         title: "Photo pack",
         desc: "5-10 professional photos from the same session. Website, LinkedIn, profile.",
-        value: "€200",
       },
       {
         title: "First reel in 48h",
         desc: "Priority delivery of your first reel so you can start posting fast.",
-        value: "€150",
       },
     ],
-    valueLabel: "Value · {value}",
-    totalLabel: "Total value of included bonuses ·",
-    totalValue: "€700/month",
   },
   capacity: {
     badge: "Limited capacity · For real",
@@ -322,7 +302,7 @@ const en: typeof es = {
       ["Commitment", "No commitment. Cancel monthly. Your content every month, for as long as it works for you."],
       ["Cancellation", "Give notice before the next cycle. The current cycle is non-refundable."],
       ["Revisions", "1 consolidated round of changes, up to 72 hours after delivery."],
-      ["Travel", "Within Madrid's M-40 ring road included. Outside it, +€50/session. We work all over Spain."],
+      ["Travel", "Within Madrid's M-40 ring road included. Outside it, quoted separately. We work all over Spain."],
     ],
   },
 }

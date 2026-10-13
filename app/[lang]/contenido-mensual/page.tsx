@@ -360,11 +360,6 @@ export default async function ContenidoMensualPage({ params }: LangParams) {
                 {plan.name}
               </p>
 
-              <div className="mt-4 flex items-baseline gap-1">
-                <span className="font-display text-[42px] sm:text-[50px] font-semibold leading-none">{plan.price}</span>
-                <span className={`font-inter text-[12px] ${plan.highlight ? "text-[#0a0a0a]/55" : "text-white/45"}`}>{t.plans.perMonth}</span>
-              </div>
-
               <ul className={`mt-6 space-y-2 font-inter text-[13px] leading-[1.5] ${plan.highlight ? "text-[#0a0a0a]/85" : "text-white/75"}`}>
                 <li className="flex gap-2"><span className={plan.highlight ? "text-[#0a0a0a]/40" : "text-white/35"}>·</span> {format(t.plans.reels, { n: plan.reels })}</li>
                 <li className="flex gap-2"><span className={plan.highlight ? "text-[#0a0a0a]/40" : "text-white/35"}>·</span> {format(t.plans.pubs, { n: plan.pubs })}</li>
@@ -408,14 +403,6 @@ export default async function ContenidoMensualPage({ params }: LangParams) {
             <span className="text-white font-semibold">{t.plans.allInLead}</span> {t.plans.allInText}
           </p>
         </div>
-
-        {/* MODALIDADES DE PAGO */}
-        <div className="mt-4 rounded-2xl border border-white/12 bg-white/[0.02] p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-          <p className="font-inter text-[13px] sm:text-[14px] text-white/70">
-            <span className="text-white font-semibold">{t.plans.quarterlyLead}</span> {t.plans.quarterlyText}
-          </p>
-          <span className="font-inter text-[12px] text-white/45">{t.plans.quarterlyNote}</span>
-        </div>
       </section>
 
       {/* BONOS — NUEVO */}
@@ -436,14 +423,9 @@ export default async function ContenidoMensualPage({ params }: LangParams) {
                 <div className="h-1 w-12 bg-white/30 mb-6" />
                 <h3 className="font-inter text-[14px] font-semibold uppercase tracking-[0.08em] mb-3">{bonus.title}</h3>
                 <p className="font-inter text-[13px] leading-[1.6] text-white/65 mb-5">{bonus.desc}</p>
-                <p className="font-inter text-[11px] uppercase tracking-[0.14em] text-white/40">{format(t.bonuses.valueLabel, { value: bonus.value })}</p>
               </div>
             ))}
           </div>
-
-          <p className="mt-10 text-center font-inter text-[13px] text-white/55">
-            {t.bonuses.totalLabel} <span className="text-white font-semibold">{t.bonuses.totalValue}</span>
-          </p>
         </div>
       </section>
 
