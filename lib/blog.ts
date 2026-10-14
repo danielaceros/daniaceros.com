@@ -14773,6 +14773,119 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-clinicas-dentales",
+    title: "Vídeo corporativo para clínicas dentales: cómo generar confianza antes de la primera visita",
+    description:
+      "Cómo plantear un vídeo corporativo para una clínica dental: quién habla, qué se enseña, cómo grabar en consulta con pacientes y qué errores evitar.",
+    publishedAt: "2026-10-14",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["vídeo corporativo clínicas dentales", "vídeo para clínicas", "vídeo corporativo", "confianza del paciente", "sector salud", "Madrid"],
+    keyword: "vídeo corporativo para clínicas dentales",
+    intent: "informacional",
+    excerpt:
+      "Nadie elige dentista por una lista de tratamientos. Elige a quien le transmite confianza. Te cuento cómo planteo un vídeo corporativo para una clínica dental que enseñe al equipo, el espacio y la forma de trabajar.",
+    seoTitle: "Vídeo corporativo para clínicas dentales | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo para clínicas dentales: quién habla, qué se enseña, cómo grabar en consulta y qué errores evitar. Guía desde Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Una persona que busca clínica dental suele comparar webs, reseñas y fotos. Casi todas se parecen: sillón blanco, sonrisa en stock y una lista de servicios. Lo que casi nunca ve es a quién se va a encontrar cuando entre por la puerta.",
+      },
+      {
+        type: "paragraph",
+        text: "Ahí es donde un vídeo corporativo hace trabajo real. Quita miedo, enseña al equipo y explica cómo se trabaja antes de que el paciente pida cita.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-clinicas-dentales/hero.webp",
+        alt: "Sala de una clínica dental con mesa y sillas",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué importa en una clínica dental" },
+      {
+        type: "paragraph",
+        text: "El tratamiento dental genera tensión. Mucha gente llega con miedo o con una mala experiencia previa, y decide por sensación. Un vídeo bien hecho trabaja justo esa sensación: tono de voz, trato, orden del espacio.",
+      },
+      {
+        type: "paragraph",
+        text: "También ayuda a la propia clínica. Sirve para la web, para la ficha de Google, para presentar a un doctor nuevo y para procesos de selección de higienistas y auxiliares, que también comparan dónde quieren trabajar.",
+      },
+      {
+        type: "paragraph",
+        text: "Mi recomendación habitual es una pieza de presentación de uno a dos minutos y varios cortes de 30 a 45 segundos: el equipo, la tecnología y cómo es la primera visita.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Quién sale a cámara" },
+      {
+        type: "paragraph",
+        text: "El director o la directora clínica, un par de profesionales de distintas áreas y alguien de recepción. Recepción importa más de lo que parece: es la primera persona con la que habla el paciente. Les preparo tres preguntas sencillas y grabo sentados, sin guion leído.",
+      },
+      { type: "heading", level: 3, text: "Qué se enseña" },
+      {
+        type: "paragraph",
+        text: "El recorrido que haría un paciente: entrada, sala de espera, consulta, y el equipo explicando qué pasa en una primera visita. Los planos de manos, instrumental ordenado y tecnología en uso funcionan bien porque transmiten cuidado sin necesidad de explicarlo. Evito planos de procedimientos explícitos: no ayudan a nadie con miedo.",
+      },
+      { type: "heading", level: 3, text: "Cómo se graba en consulta" },
+      {
+        type: "paragraph",
+        text: "Lo ideal es grabar fuera de horario o en una franja con agenda libre, con una consulta preparada. Si sale un paciente real, necesito su autorización de imagen por escrito antes de encender la cámara, y siempre tiene derecho a decir que no. Uso luz suave y neutra, cámara en trípode y óptica luminosa para no depender de focos grandes. Cuido que la temperatura de color no tiña de azul los blancos de la sala ni los dientes.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-clinicas-dentales/intermedia.webp",
+        alt: "Profesional sanitario con bata blanca durante una consulta",
+        width: 1920,
+        height: 1440,
+        caption: "Una consulta ordenada y bien iluminada transmite más calma que cualquier eslogan.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Usar sonrisas de stock en lugar de enseñar a las personas reales de la clínica.",
+          "Grabar con pacientes sin autorización de imagen firmada.",
+          "Prometer resultados en el vídeo, algo que la publicidad sanitaria limita y puede traer problemas.",
+          "Llenar el vídeo de procedimientos explícitos que asustan en lugar de tranquilizar.",
+          "Ignorar el sonido: una sala con eco y una turbina de fondo estropean cualquier entrevista.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto debe durar el vídeo de una clínica dental?",
+        answer:
+          "La presentación, entre uno y dos minutos. Los cortes por tema, entre 30 y 45 segundos. Para redes, versiones verticales de 15 a 30 segundos sacadas del mismo rodaje.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar sin cerrar la clínica?",
+        answer:
+          "En parte. Las entrevistas y los planos de recurso se graban con una consulta libre, en una franja corta. Para evitar molestias a los pacientes, la mayoría de clínicas prefiere una mañana sin agenda o una tarde tranquila.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito permisos para que salgan pacientes?",
+        answer:
+          "Sí. Hace falta una autorización de imagen por escrito de cada persona que se pueda reconocer. Si no quieres gestionarlo, lo normal es que salga solo el equipo, y es una opción perfectamente válida.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto se tarda en tener el vídeo?",
+        answer:
+          "Entre tres y cinco semanas: preparación, una jornada de rodaje y montaje con una o dos rondas de revisión. Si hay que coordinar con la agenda de la clínica, el calendario se ajusta a eso.",
+      },
+      {
+        type: "paragraph",
+        text: "Si diriges una clínica dental y quieres un vídeo que enseñe a tu equipo y tu forma de trabajar, escríbeme desde /contacto. Con una llamada corta te digo qué formato encaja con tu clínica.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
