@@ -2,6 +2,7 @@ import {
   BUSINESS_ID,
   DEFAULT_OG_IMAGE,
   PERSON_ID,
+  SAME_AS,
   SITE_URL,
   buildBreadcrumbSchema,
   localizedMetadata,
@@ -31,11 +32,7 @@ const personSchema = {
   knowsAbout: getDictionary("es").schema.knowsAbout,
   url: `${SITE_URL}/sobre-mi`,
   image: DEFAULT_OG_IMAGE,
-  sameAs: [
-    "https://www.instagram.com/daniaceros",
-    "https://es.linkedin.com/in/daniaceros",
-    "https://www.youtube.com/@daniacerxs/videos",
-  ],
+  sameAs: SAME_AS,
   worksFor: { "@id": BUSINESS_ID },
 }
 

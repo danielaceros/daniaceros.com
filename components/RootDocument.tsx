@@ -12,7 +12,7 @@ import Header from "@/components/Header"
 import PageTransition from "@/components/PageTransition"
 import LuxuryMotionProvider from "@/components/LuxuryMotionProvider"
 import ContactClickTracking from "@/components/ContactClickTracking"
-import { BUSINESS_ID, DEFAULT_OG_IMAGE, PERSON_ID, SITE_URL } from "@/lib/seo"
+import { BUSINESS_ID, DEFAULT_OG_IMAGE, PERSON_ID, SAME_AS, SITE_URL } from "@/lib/seo"
 import { OG_LOCALE, getDictionary, localizedHref, type Lang } from "@/lib/i18n"
 
 const FAVICON_URL =
@@ -144,11 +144,7 @@ export default function RootDocument({
                 addressLocality: "Madrid",
                 addressCountry: "ES",
               },
-              sameAs: [
-                "https://www.instagram.com/daniaceros",
-                "https://es.linkedin.com/in/daniaceros",
-                "https://www.youtube.com/@daniacerxs/videos",
-              ],
+              sameAs: SAME_AS,
               serviceType: dict.schema.serviceType,
               knowsAbout: dict.schema.knowsAbout,
               // Referencia por @id al Person completo definido en /sobre-mi, en

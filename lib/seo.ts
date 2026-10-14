@@ -22,6 +22,21 @@ export const DEFAULT_OG_IMAGE =
 export const PERSON_ID = `${SITE_URL}/sobre-mi#person`
 export const BUSINESS_ID = `${SITE_URL}/#business`
 
+// Perfiles públicos de la misma entidad (Daniel Acero / Dani Acero). Solo URLs
+// confirmadas como publicadas; añadir Clutch, GoodFirms, Sortlist, Cylex,
+// Europages, etc. cuando salgan de revisión y se verifique la URL pública.
+export const SAME_AS = [
+  "https://www.instagram.com/daniaceros",
+  "https://es.linkedin.com/in/daniaceros",
+  "https://www.youtube.com/@daniacerxs/videos",
+  "https://www.malt.es/profile/danielacero",
+  "https://www.behance.net/danielasagredo",
+  "https://productorasaudiovisuales.com/productora/daniel-acero-filmmaker-corporativo",
+  "https://www.trustpilot.com/review/daniaceros.com",
+  "https://www.crew-united.com/en/Daniel-Acero_916634.html",
+  "https://linktr.ee/danielacer",
+]
+
 export type BreadcrumbEntry = { name: string; path: string }
 
 /** BreadcrumbList JSON-LD a partir de una lista de {name, path} (path relativo, sin dominio). */
