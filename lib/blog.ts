@@ -14886,6 +14886,119 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-clinicas-veterinarias",
+    title: "Vídeo corporativo para clínicas veterinarias: cómo mostrar el trato antes de la primera consulta",
+    description:
+      "Cómo plantear un vídeo corporativo para una clínica veterinaria: quién habla, qué se enseña, cómo grabar con animales y qué errores evitar.",
+    publishedAt: "2026-10-15",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["vídeo corporativo clínicas veterinarias", "vídeo para veterinarios", "vídeo corporativo", "confianza del cliente", "sector veterinario", "Madrid"],
+    keyword: "vídeo corporativo para clínicas veterinarias",
+    intent: "informacional",
+    excerpt:
+      "Quien lleva a su mascota al veterinario busca sobre todo trato y tranquilidad. Te cuento cómo planteo un vídeo corporativo para una clínica veterinaria que enseñe al equipo, el espacio y la forma de trabajar.",
+    seoTitle: "Vídeo corporativo para clínicas veterinarias | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo para clínicas veterinarias: quién habla, qué se enseña, cómo grabar con animales y qué errores evitar. Guía desde Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Quien busca veterinario no compra un servicio cualquiera. Confía a alguien de la familia que no puede explicar qué le duele. Por eso decide por sensación: cómo habla el equipo, cómo trata al animal, si el sitio transmite calma.",
+      },
+      {
+        type: "paragraph",
+        text: "Una web con lista de servicios no enseña nada de eso. Un vídeo corporativo sí. Quita incertidumbre y deja ver a las personas antes de que el cliente pida cita.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-clinicas-veterinarias/hero.webp",
+        alt: "Persona con mascarilla sentada junto a un perro en una clínica",
+        width: 1920,
+        height: 1440,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué importa en una clínica veterinaria" },
+      {
+        type: "paragraph",
+        text: "El cliente llega preocupado y muchas veces con prisa. En ese momento no lee un listado de especialidades: mira reseñas, fotos y vídeos para ver si le dan confianza. El vídeo trabaja justo esa decisión.",
+      },
+      {
+        type: "paragraph",
+        text: "También sirve de puertas adentro. Lo usas para presentar a un veterinario nuevo, para explicar urgencias y horarios, y para captar auxiliares y veterinarios, que también comparan dónde quieren trabajar.",
+      },
+      {
+        type: "paragraph",
+        text: "Mi recomendación habitual es una pieza de presentación de uno a dos minutos y varios cortes de 30 a 45 segundos: el equipo, las instalaciones y cómo es una primera consulta.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Quién sale a cámara" },
+      {
+        type: "paragraph",
+        text: "El responsable de la clínica, dos o tres profesionales de áreas distintas y alguien de recepción. Grabo sentados, con tres preguntas sencillas y sin texto leído. Cuando alguien habla de lo que hace cada día, se nota.",
+      },
+      { type: "heading", level: 3, text: "Qué se enseña" },
+      {
+        type: "paragraph",
+        text: "El recorrido que haría un cliente: entrada, sala de espera, consulta y el equipo explicando qué pasa en una primera visita. Los planos de manos tranquilizando a un animal, el material ordenado y la tecnología en uso transmiten cuidado sin explicarlo. Evito procedimientos explícitos: no ayudan a quien llega con miedo.",
+      },
+      { type: "heading", level: 3, text: "Cómo se graba con animales" },
+      {
+        type: "paragraph",
+        text: "Con animales no se fuerza nada. Grabo con la clínica en una franja tranquila, cámara en trípode, óptica luminosa y luz suave para no estresar a nadie con focos grandes. Los animales que salen son mascotas del equipo o de clientes que lo han aceptado, y si sale una persona reconocible necesito su autorización de imagen por escrito. Si el animal se incomoda, paramos. Siempre hay margen para repetir otro día.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-clinicas-veterinarias/intermedia.webp",
+        alt: "Persona sosteniendo un gato atigrado plateado",
+        width: 1920,
+        height: 1280,
+        caption: "Un plano tranquilo de trato con el animal dice más que cualquier eslogan.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Usar mascotas de stock en lugar de enseñar al equipo y al espacio reales.",
+          "Grabar a clientes sin autorización de imagen firmada.",
+          "Forzar al animal a posar hasta que se estrese.",
+          "Llenar el vídeo de procedimientos explícitos que asustan en lugar de tranquilizar.",
+          "Ignorar el sonido: ladridos, eco y equipos de fondo estropean cualquier entrevista.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto debe durar el vídeo de una clínica veterinaria?",
+        answer:
+          "La presentación, entre uno y dos minutos. Los cortes por tema, entre 30 y 45 segundos. Para redes, versiones verticales de 15 a 30 segundos sacadas del mismo rodaje.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar sin cerrar la clínica?",
+        answer:
+          "En parte. Las entrevistas y los planos de recurso se graban con una consulta libre, en una franja corta. Lo habitual es elegir una mañana con poca agenda o una tarde tranquila.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito permisos para que salgan clientes?",
+        answer:
+          "Sí. Hace falta una autorización de imagen por escrito de cada persona que se pueda reconocer. Si no quieres gestionarlo, puede salir solo el equipo con sus propias mascotas, y funciona muy bien.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto se tarda en tener el vídeo?",
+        answer:
+          "Entre tres y cinco semanas: preparación, una jornada de rodaje y montaje con una o dos rondas de revisión. El calendario se ajusta a la agenda de la clínica.",
+      },
+      {
+        type: "paragraph",
+        text: "Si diriges una clínica veterinaria y quieres un vídeo que enseñe a tu equipo y tu forma de trabajar, escríbeme desde /contacto. Con una llamada corta te digo qué formato encaja con tu clínica.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
