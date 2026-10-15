@@ -30,7 +30,7 @@ export const SAME_AS = [
   "https://es.linkedin.com/in/daniaceros",
   "https://www.youtube.com/@daniacerxs/videos",
   "https://www.malt.es/profile/danielacero",
-  "https://www.behance.net/danielasagredo",
+  "https://www.behance.net/daniaceros",
   "https://productorasaudiovisuales.com/productora/daniel-acero-filmmaker-corporativo",
   "https://www.trustpilot.com/review/daniaceros.com",
   "https://www.crew-united.com/en/Daniel-Acero_916634.html",
