@@ -14999,6 +14999,119 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-centros-fisioterapia",
+    title: "Vídeo corporativo para centros de fisioterapia: cómo transmitir confianza antes de la primera sesión",
+    description:
+      "Cómo plantear un vídeo corporativo para un centro de fisioterapia: quién habla, qué se enseña, cómo grabar con pacientes y qué errores evitar.",
+    publishedAt: "2026-10-16",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["vídeo corporativo fisioterapia", "vídeo para fisioterapeutas", "vídeo corporativo", "confianza del paciente", "sector salud", "Madrid"],
+    keyword: "vídeo corporativo para centros de fisioterapia",
+    intent: "informacional",
+    excerpt:
+      "Un paciente de fisioterapia elige a quien le va a tocar y a acompañar durante semanas. Te cuento cómo planteo un vídeo corporativo para un centro de fisioterapia que enseñe al equipo y su forma de trabajar.",
+    seoTitle: "Vídeo corporativo para centros de fisioterapia | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo para centros de fisioterapia: quién habla, qué se enseña, cómo grabar con pacientes y qué errores evitar. Guía desde Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Quien busca fisioterapeuta suele ir con dolor y con dudas. Va a dejar que alguien le toque, le haga ejercicios y le acompañe durante semanas. Antes de pedir cita quiere saber con quién va a tratar.",
+      },
+      {
+        type: "paragraph",
+        text: "Una web con lista de tratamientos no responde a eso. Un vídeo corporativo sí: deja ver al equipo, el espacio y el trato antes de la primera sesión.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-centros-fisioterapia/hero.webp",
+        alt: "Paciente sentado en una camilla mientras un profesional sanitario le toma la tensión",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué importa en un centro de fisioterapia" },
+      {
+        type: "paragraph",
+        text: "El tratamiento es largo y personal. El paciente compara centros por reseñas, fotos y vídeos, y se queda con el que le da más tranquilidad. El vídeo trabaja justo esa decisión.",
+      },
+      {
+        type: "paragraph",
+        text: "También sirve de puertas adentro. Lo usas para presentar a un fisioterapeuta nuevo, para explicar en qué consiste una primera valoración y para captar profesionales, que también comparan dónde quieren trabajar.",
+      },
+      {
+        type: "paragraph",
+        text: "Mi recomendación habitual es una pieza de presentación de uno a dos minutos y varios cortes de 30 a 45 segundos: el equipo, las instalaciones y cómo es una primera sesión.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Quién sale a cámara" },
+      {
+        type: "paragraph",
+        text: "El responsable del centro, dos o tres fisioterapeutas de áreas distintas y alguien de recepción. Grabo sentados, con tres preguntas sencillas y sin texto leído. Cuando alguien explica lo que hace cada día, se nota.",
+      },
+      { type: "heading", level: 3, text: "Qué se enseña" },
+      {
+        type: "paragraph",
+        text: "El recorrido que haría un paciente: entrada, sala de espera, box de tratamiento y gimnasio de rehabilitación. Los planos de manos trabajando, el material ordenado y los ejercicios guiados transmiten oficio sin explicarlo. Evito cuerpos expuestos y gestos que puedan incomodar: no ayudan a quien llega con dolor.",
+      },
+      { type: "heading", level: 3, text: "Cómo se graba con pacientes" },
+      {
+        type: "paragraph",
+        text: "Para las escenas de tratamiento uso a miembros del equipo o a pacientes que lo han aceptado, con autorización de imagen firmada. Grabo en una franja con poca agenda, con cámara en trípode y luz suave para que nadie se sienta vigilado. Si el paciente se incomoda, paramos. Siempre hay margen para repetir otro día.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-centros-fisioterapia/intermedia.webp",
+        alt: "Profesional sanitario examinando la pierna de un paciente",
+        width: 1920,
+        height: 1280,
+        caption: "Un plano tranquilo de la valoración explica el trato mejor que cualquier eslogan.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Usar imágenes de stock en lugar de enseñar al equipo y al centro reales.",
+          "Grabar a pacientes sin autorización de imagen firmada.",
+          "Prometer resultados o plazos de curación que luego no se pueden cumplir.",
+          "Llenar el vídeo de tecnicismos que el paciente no entiende.",
+          "Ignorar el sonido: música de fondo, eco y aparatos estropean cualquier entrevista.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto debe durar el vídeo de un centro de fisioterapia?",
+        answer:
+          "La presentación, entre uno y dos minutos. Los cortes por tema, entre 30 y 45 segundos. Para redes, versiones verticales de 15 a 30 segundos sacadas del mismo rodaje.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar sin cerrar el centro?",
+        answer:
+          "En parte. Las entrevistas y los planos de recurso se graban con un box libre en una franja corta. Lo habitual es elegir una mañana con poca agenda o una tarde tranquila.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito permisos para que salgan pacientes?",
+        answer:
+          "Sí. Hace falta una autorización de imagen por escrito de cada persona que se pueda reconocer. Si no quieres gestionarlo, puede salir solo el equipo, y funciona muy bien.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto se tarda en tener el vídeo?",
+        answer:
+          "Entre tres y cinco semanas: preparación, una jornada de rodaje y montaje con una o dos rondas de revisión. El calendario se ajusta a la agenda del centro.",
+      },
+      {
+        type: "paragraph",
+        text: "Si diriges un centro de fisioterapia y quieres un vídeo que enseñe a tu equipo y tu forma de trabajar, escríbeme desde /contacto. Con una llamada corta te digo qué formato encaja con tu centro.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
