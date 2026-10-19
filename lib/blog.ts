@@ -15112,6 +15112,119 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-clinicas-estetica",
+    title: "Vídeo corporativo para clínicas de estética: cómo enseñar el trato sin vender humo",
+    description:
+      "Cómo plantear un vídeo corporativo para una clínica de estética: quién habla, qué se enseña, cómo tratar la imagen de los clientes y qué errores evitar.",
+    publishedAt: "2026-10-19",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["vídeo corporativo estética", "vídeo para clínicas de estética", "vídeo corporativo", "confianza del cliente", "sector belleza", "Madrid"],
+    keyword: "vídeo corporativo para clínicas de estética",
+    intent: "informacional",
+    excerpt:
+      "Quien elige una clínica de estética deja que le traten la piel o el rostro. Te cuento cómo planteo un vídeo corporativo para una clínica de estética que enseñe al equipo, el espacio y el trato sin prometer lo que no toca.",
+    seoTitle: "Vídeo corporativo para clínicas de estética | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo para clínicas de estética: quién habla, qué se enseña, cómo tratar la imagen de los clientes y qué errores evitar. Guía desde Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Quien busca una clínica de estética está decidiendo a quién le confía su piel, su rostro o su cuerpo. Compara fotos, reseñas y precios, pero lo que de verdad pesa es la sensación de que ahí le van a tratar bien.",
+      },
+      {
+        type: "paragraph",
+        text: "Un catálogo de tratamientos no transmite eso. Un vídeo corporativo sí: deja ver a las personas, el espacio y la manera de trabajar antes de pedir cita.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-clinicas-estetica/hero.webp",
+        alt: "Sala de tratamiento de una clínica con camilla y equipamiento profesional",
+        width: 1696,
+        height: 1300,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué importa en una clínica de estética" },
+      {
+        type: "paragraph",
+        text: "El sector está lleno de promesas parecidas y de imágenes de stock. Un cliente nuevo no sabe distinguir una clínica seria de otra que solo tiene buen marketing, y el vídeo le da una pista real: quién es el profesional, cómo habla y cómo es el sitio.",
+      },
+      {
+        type: "paragraph",
+        text: "También te sirve de puertas adentro. Presentas a una profesional nueva, explicas cómo es una primera consulta y atraes a gente del sector que también compara dónde quiere trabajar.",
+      },
+      {
+        type: "paragraph",
+        text: "Mi recomendación habitual es una pieza de presentación de uno a dos minutos y varios cortes de 30 a 45 segundos: el equipo, el espacio y cómo es una primera consulta.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Quién sale a cámara" },
+      {
+        type: "paragraph",
+        text: "La directora o el director médico, dos o tres profesionales de áreas distintas y la persona que recibe en recepción. Grabo sentados, con tres preguntas sencillas y sin texto leído. Una esteticista que explica cómo prepara una primera consulta convence más que un eslogan.",
+      },
+      { type: "heading", level: 3, text: "Qué se enseña" },
+      {
+        type: "paragraph",
+        text: "El recorrido que haría una clienta: entrada, recepción, cabina y zona de espera. Los planos de manos preparando el material, la cabina ordenada y la luz cuidada cuentan el nivel de la clínica sin necesidad de explicarlo. Evito el antes y el después en el vídeo corporativo: tiene su sitio en otro formato y con otras reglas.",
+      },
+      { type: "heading", level: 3, text: "Cómo se graba con clientes" },
+      {
+        type: "paragraph",
+        text: "Para las escenas de tratamiento uso a miembros del equipo o a clientes que lo han aceptado, con autorización de imagen firmada. Grabo en una franja sin agenda, con cámara en trípode y sin focos que molesten. Si alguien se siente incómodo, paramos y lo dejamos para otro día.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-clinicas-estetica/intermedia.webp",
+        alt: "Mujer tumbada con mascarilla facial durante un tratamiento",
+        width: 1920,
+        height: 1280,
+        caption: "Un plano tranquilo de una cabina en uso transmite más calma que cualquier texto.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Usar imágenes de stock en lugar de enseñar al equipo y a la clínica reales.",
+          "Grabar a clientes sin autorización de imagen firmada.",
+          "Prometer resultados que dependen de cada persona.",
+          "Llenar el vídeo de tecnicismos o de nombres de aparatos que nadie entiende.",
+          "Descuidar el sonido: música a todo volumen y eco en la cabina estropean cualquier entrevista.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto debe durar el vídeo de una clínica de estética?",
+        answer:
+          "La presentación, entre uno y dos minutos. Los cortes por tema, entre 30 y 45 segundos. Para redes, versiones verticales de 15 a 30 segundos sacadas del mismo rodaje.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar sin cerrar la clínica?",
+        answer:
+          "En parte. Las entrevistas y los planos de recurso se graban con una cabina libre en una franja corta. Lo habitual es elegir una mañana con poca agenda.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito permisos para que salgan clientes?",
+        answer:
+          "Sí. Hace falta una autorización de imagen por escrito de cada persona que se pueda reconocer. Si no quieres gestionarlo, puede salir solo el equipo, y funciona muy bien.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto se tarda en tener el vídeo?",
+        answer:
+          "Entre tres y cinco semanas: preparación, una jornada de rodaje y montaje con una o dos rondas de revisión. El calendario se ajusta a la agenda de la clínica.",
+      },
+      {
+        type: "paragraph",
+        text: "Si diriges una clínica de estética y quieres un vídeo que enseñe a tu equipo y tu forma de trabajar, escríbeme desde /contacto. Con una llamada corta te digo qué formato encaja con tu clínica.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
