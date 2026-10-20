@@ -26,7 +26,7 @@ Guía del patrón de internacionalización. **Léela entera antes de traducir un
 | Blog | `lib/blog.ts` + `lib/blog-translations.ts` | `getLocalizedPost(slug, lang)`, `hasPostTranslation`. |
 | VSL | `lib/media.ts` (`VSL`) + `components/VslSection.tsx` | Vídeo de la home por idioma; `null` = no se renderiza. |
 
-**URLs:** español sin prefijo (`/`, `/servicios`); inglés con `/en` y **los mismos slugs** (`/en`, `/en/servicios`).
+**URLs:** español sin prefijo (`/`, `/servicios`); inglés con `/en` y **slug en inglés** cuando hay mapeo (`/en`, `/en/services`). El mapa vive en `lib/i18n/config.ts` (`EN_PATHS`, `EN_BLOG_SLUGS`): las carpetas de `app/[lang]` siguen siendo las españolas; `localizedHref` aplica el slug EN y el proxy hace 301 de `/en/<slug-es>` a `/en/<slug-en>` y reescribe `/en/<slug-en>` a la carpeta ES. Una ruta sin mapeo mantiene el mismo slug.
 
 ## 2. Proxy (`proxy.ts`)
 
@@ -147,7 +147,8 @@ Ya traducidas: `/`, `/portfolio`, `/portfolio/[slug]` (7 proyectos), Header, Con
   `seoTitle` debe terminar en `| Daniel Acero` (se recorta para `<title>`).
 - Automático al añadirla: `/en/blog/<slug>` usa la traducción (`getLocalizedPost`), pasa a `index` + hreflang (`hasPostTranslation`) y entra en el sitemap.
 - Pendiente en esa fase: textos fijos de las plantillas `app/[lang]/blog/page.tsx`, `[slug]/page.tsx` y `not-found.tsx` (kicker, "Leer artículo", "Ver perfil"…), registrar `/blog` en `routes.ts` cuando el índice esté traducido, y enlaces internos dentro de `body` (hoy apuntan a rutas ES).
-- Slugs EN = slugs ES por ahora. Si algún día se localizan, habrá que añadir un mapa slug-es ↔ slug-en y usarlo en `localizedHref`/sitemap.
+- Slug EN: añade `"slug-es": "slug-en"` a `EN_BLOG_SLUGS` (`lib/i18n/config.ts`), derivado de la `keyword` inglesa (2-6 palabras, único). Sin entrada, la URL EN usa el slug ES.
+- Los artículos nuevos de la automatización se traducen en `lib/blog-translations/en-auto.ts` (clave = slug ES), en el mismo commit que el español.
 
 ## 7. Portfolio
 
