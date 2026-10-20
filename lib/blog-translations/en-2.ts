@@ -13,7 +13,7 @@ export const enPart2: Record<string, BlogPostTranslation> = {
     keyword: "b-roll for corporate video",
     excerpt:
       "B-roll is what separates a corporate video that looks professional from one that looks like a recorded video call. Here are the shots I always film and why.",
-    seoTitle: "B-roll for corporate video: shots that always work | Daniel Acero",
+    seoTitle: "B-roll for corporate video: shots that always work | Dani Acero",
     metaDescription:
       "B-roll for corporate video: the cutaway shots that never fail. What to film, how to organize it and how much you need for an edit that flows.",
     heroKicker: "Blog / Guide",
@@ -122,7 +122,7 @@ export const enPart2: Record<string, BlogPostTranslation> = {
     keyword: "brand manifesto video",
     excerpt:
       "A brand manifesto video isn't an ad or a typical corporate video. It's the piece that answers the fundamental question: why does your company exist?",
-    seoTitle: "Brand manifesto video: how to structure it | Daniel Acero",
+    seoTitle: "Brand manifesto video: how to structure it | Dani Acero",
     metaDescription:
       "What a brand manifesto video is, how to structure it, how long it should run and the most common production mistakes. A practical guide from a Madrid filmmaker.",
     heroKicker: "Blog / Guide",
@@ -237,7 +237,7 @@ export const enPart2: Record<string, BlogPostTranslation> = {
     keyword: "how to measure corporate video ROI",
     excerpt:
       "Measuring the return on a corporate video isn't as simple as counting views. Here's how to do it with the metrics that actually matter.",
-    seoTitle: "Corporate video ROI: how to measure it | Daniel Acero",
+    seoTitle: "Corporate video ROI: how to measure it | Dani Acero",
     metaDescription:
       "How to measure the ROI of a corporate video without vanity metrics: clear objectives, real KPIs and the mistakes that distort the results.",
     heroKicker: "Blog / Guide",
@@ -348,7 +348,7 @@ export const enPart2: Record<string, BlogPostTranslation> = {
     keyword: "employee onboarding video",
     excerpt:
       "A poorly structured onboarding video gets watched once and forgotten. Here's what makes an internal welcome video genuinely useful.",
-    seoTitle: "Employee onboarding video: structure and length | Daniel Acero",
+    seoTitle: "Employee onboarding video: structure and length | Dani Acero",
     metaDescription:
       "Employee onboarding video: how to structure it, how long it should be and what to include so new hires retain what they need.",
     heroKicker: "Blog / Guide",
@@ -460,9 +460,9 @@ export const enPart2: Record<string, BlogPostTranslation> = {
     keyword: "generic corporate video mistakes",
     excerpt:
       "A generic corporate video doesn't convert and isn't remembered. Here are the most frequent mistakes I see in production and how I avoid them with my clients.",
-    seoTitle: "Generic corporate video: common mistakes | Daniel Acero",
+    seoTitle: "Generic corporate video: common mistakes | Dani Acero",
     metaDescription:
-      "Generic corporate video: the mistakes that ruin it and how to avoid them in production. A practical guide by Daniel Acero, corporate filmmaker in Madrid.",
+      "Generic corporate video: the mistakes that ruin it and how to avoid them in production. A practical guide by Dani Acero, corporate filmmaker in Madrid.",
     heroKicker: "Blog / Guide",
     body: [
       {
@@ -572,7 +572,7 @@ export const enPart2: Record<string, BlogPostTranslation> = {
     keyword: "how many cameras for an interview",
     excerpt:
       "One camera can be enough for an interview. Two cameras change the pace of the edit. Here's when it's worth adding the second one.",
-    seoTitle: "How many cameras for a corporate interview | Daniel Acero",
+    seoTitle: "How many cameras for a corporate interview | Dani Acero",
     metaDescription:
       "One or two cameras for your corporate interview? When one is enough and when a second camera changes the final edit. A practical guide.",
     heroKicker: "Blog / Guide",
@@ -683,7 +683,7 @@ export const enPart2: Record<string, BlogPostTranslation> = {
     keyword: "natural vs artificial lighting for video",
     excerpt:
       "Light defines the look of any shoot. Here's when to rely on natural light and when it's worth setting up an artificial lighting kit.",
-    seoTitle: "Natural vs artificial lighting in corporate video | Daniel Acero",
+    seoTitle: "Natural vs artificial lighting in corporate video | Dani Acero",
     metaDescription:
       "Natural or artificial lighting for corporate video: when each option makes sense, what gear you need and how to avoid the most common mistakes.",
     heroKicker: "Blog / Guide",
@@ -788,7 +788,7 @@ export const enPart2: Record<string, BlogPostTranslation> = {
     keyword: "gimbal vs slider vs tripod",
     excerpt:
       "Tripod, slider or gimbal: the right choice depends on the type of shot, the space and the movement you want. Here's how I think it through before every shoot.",
-    seoTitle: "Stabilization: gimbal, slider or tripod | Daniel Acero",
+    seoTitle: "Stabilization: gimbal, slider or tripod | Dani Acero",
     metaDescription:
       "Stabilization for corporate video: when to use a gimbal, a slider or a tripod. Common mistakes and how to choose well before the shoot.",
     heroKicker: "Blog / Guide",
@@ -897,7 +897,7 @@ export const enPart2: Record<string, BlogPostTranslation> = {
     keyword: "ideal corporate video length",
     excerpt:
       "The right length for a corporate video depends on the format, the channel and what you want to achieve. Here are the ranges I use on my projects and the mistakes that make a video longer without adding value.",
-    seoTitle: "Ideal corporate video length | Daniel Acero",
+    seoTitle: "Ideal corporate video length | Dani Acero",
     metaDescription:
       "Ideal corporate video length by format: spot, interview, aftermovie, testimonial and onboarding. Real ranges from a Madrid-based filmmaker.",
     heroKicker: "Blog / Guide",
@@ -1019,7 +1019,7 @@ export const enPart2: Record<string, BlogPostTranslation> = {
     keyword: "corporate video script",
     excerpt:
       "Without a script, the shoot drags on, the message gets diluted and the edit turns into salvaging something coherent from hours of unstructured footage. Here's how to write one that works.",
-    seoTitle: "Corporate video script | Daniel Acero",
+    seoTitle: "Corporate video script | Dani Acero",
     metaDescription:
       "Corporate video script: structure, common mistakes and how to write it so the message comes through cleanly from the shoot to the screen.",
     heroKicker: "Blog / Guide",
@@ -1125,7 +1125,7 @@ export const enPart2: Record<string, BlogPostTranslation> = {
     keyword: "corporate video pre-production",
     excerpt:
       "What happens before the shoot determines almost everything that happens during and after it. This is what I prepare before switching on the camera.",
-    seoTitle: "Corporate Video Pre-Production | Daniel Acero",
+    seoTitle: "Corporate Video Pre-Production | Dani Acero",
     metaDescription:
       "Corporate video pre-production: script, locations, shooting schedule and logistics. Everything you need in place before you start filming.",
     heroKicker: "Blog / Guide",
@@ -1247,7 +1247,7 @@ export const enPart2: Record<string, BlogPostTranslation> = {
     keyword: "outdoor corporate video filming",
     excerpt:
       "Filming outside the office can add a lot of value to a corporate video, but it also multiplies the variables. Here's what to control so nothing goes wrong.",
-    seoTitle: "Outdoor filming for companies | Daniel Acero",
+    seoTitle: "Outdoor filming for companies | Dani Acero",
     metaDescription:
       "Outdoor filming for companies: how to manage natural light, ambient sound, logistics and permits on a corporate video production in Madrid.",
     heroKicker: "Blog / Guide",
@@ -1359,7 +1359,7 @@ export const enPart2: Record<string, BlogPostTranslation> = {
     keyword: "lavalier vs boom mic for interviews",
     excerpt:
       "Lav or boom for a corporate interview: neither is better in the abstract. It depends on movement, clothing noise and how much setup time you have.",
-    seoTitle: "Lavalier vs boom mic for interviews | Daniel Acero",
+    seoTitle: "Lavalier vs boom mic for interviews | Dani Acero",
     metaDescription:
       "Lavalier or boom mic for corporate interviews: when I use each one and what prevents audio problems in your company video.",
     heroKicker: "Blog / Guide",
@@ -1475,7 +1475,7 @@ export const enPart2: Record<string, BlogPostTranslation> = {
     keyword: "employer branding video",
     excerpt:
       "What an employer branding video is, why more and more companies in Madrid are asking for one and how I approach it so it feels credible, not like advertising.",
-    seoTitle: "Employer branding video: how to film it | Daniel Acero",
+    seoTitle: "Employer branding video: how to film it | Dani Acero",
     metaDescription:
       "Employer branding video: what it is, what it's for and how I film it so a company can attract talent in a credible way.",
     heroKicker: "Blog / Guide",
@@ -1585,7 +1585,7 @@ export const enPart2: Record<string, BlogPostTranslation> = {
     keyword: "drone footage for corporate video",
     excerpt:
       "When a drone shot adds real scale to a corporate video, when that budget is better spent elsewhere and which permits I need to fly near a company in Madrid.",
-    seoTitle: "Drones in corporate video: when to use one | Daniel Acero",
+    seoTitle: "Drones in corporate video: when to use one | Dani Acero",
     metaDescription:
       "Drones in corporate video: when they add real scale to a company shoot, when they aren't worth the cost and which permits you need in Madrid.",
     heroKicker: "Blog / Guide",
@@ -1702,7 +1702,7 @@ export const enPart2: Record<string, BlogPostTranslation> = {
     keyword: "how to film a panel discussion",
     excerpt:
       "Filming a round table with several speakers calls for a different logic from a one-to-one interview. Cameras, audio and crew coordination all change completely.",
-    seoTitle: "How to film a corporate panel discussion | Daniel Acero",
+    seoTitle: "How to film a corporate panel discussion | Dani Acero",
     metaDescription:
       "How to film a corporate round table: cameras, audio and lighting for panels with several speakers. A practical guide based on my experience in Madrid.",
     heroKicker: "Blog / Guide",
@@ -1816,7 +1816,7 @@ export const enPart2: Record<string, BlogPostTranslation> = {
     keyword: "trade show video production",
     excerpt:
       "Filming at a trade show or corporate booth calls for a different approach from filming at the office: noise, people walking in front of the camera and just one chance to catch every moment.",
-    seoTitle: "Corporate video for trade shows and booths | Daniel Acero",
+    seoTitle: "Corporate video for trade shows and booths | Dani Acero",
     metaDescription:
       "Corporate video for trade shows and booths: which shots to prioritize, how to handle audio in a noisy hall and what gear to bring. A practical guide from Madrid.",
     heroKicker: "Blog / Guide",
@@ -1925,7 +1925,7 @@ export const enPart2: Record<string, BlogPostTranslation> = {
     keyword: "how to direct employees on camera",
     excerpt:
       "Most employees freeze up as soon as they see the camera rolling. It isn't a personality problem — nobody has explained what's expected of them.",
-    seoTitle: "Directing employees with no on-camera experience | Daniel Acero",
+    seoTitle: "Directing employees with no on-camera experience | Dani Acero",
     metaDescription:
       "How to direct employees with no on-camera experience: preparation beforehand, questions instead of a script and framing that keeps them natural.",
     heroKicker: "Blog / Guide",
@@ -2031,7 +2031,7 @@ export const enPart2: Record<string, BlogPostTranslation> = {
     keyword: "corporate showreel",
     excerpt:
       "A corporate showreel isn't a recap of everything you've filmed. It's a short piece designed to win someone over in the first eight seconds.",
-    seoTitle: "Corporate showreel: what it is and how to edit one | Daniel Acero",
+    seoTitle: "Corporate showreel: what it is and how to edit one | Dani Acero",
     metaDescription:
       "Corporate showreel: what it is, what it's for and how I choose shots, pacing and music to edit a short piece that sells your work.",
     heroKicker: "Blog / Guide",
@@ -2141,7 +2141,7 @@ export const enPart2: Record<string, BlogPostTranslation> = {
     keyword: "industrial video production",
     excerpt:
       "Filming in an industrial plant is nothing like filming in an office. There are safety regulations, noise, production shifts and areas that can't be shut down. Here's how I organize these shoots.",
-    seoTitle: "Corporate video in industrial plants | Daniel Acero",
+    seoTitle: "Corporate video in industrial plants | Dani Acero",
     metaDescription:
       "Filming corporate video in industrial plants: safety regulations, production shifts and logistics so the factory never has to stop.",
     heroKicker: "Blog / Guide",
@@ -2251,7 +2251,7 @@ export const enPart2: Record<string, BlogPostTranslation> = {
     keyword: "employee video consent and image rights",
     excerpt:
       "Filming employees for a corporate video means managing their image rights. Here's the document I need, what it covers and what to do about former employees, minors or third parties who appear on the shoot.",
-    seoTitle: "Employee image rights in corporate video | Daniel Acero",
+    seoTitle: "Employee image rights in corporate video | Dani Acero",
     metaDescription:
       "Employee image rights in corporate video: which release to sign, special cases and mistakes to avoid before filming.",
     heroKicker: "Blog / Guide",
@@ -2361,7 +2361,7 @@ export const enPart2: Record<string, BlogPostTranslation> = {
     keyword: "investor pitch video",
     excerpt:
       "An investor pitch video doesn't replace the pitch deck — it reinforces it. Here's how I structure it so a fund or angel investor understands the business in under three minutes.",
-    seoTitle: "Investor pitch video | Daniel Acero",
+    seoTitle: "Investor pitch video | Dani Acero",
     metaDescription:
       "Investor pitch video: what to include, how to structure it and what to avoid before you film it.",
     heroKicker: "Blog / Guide",
@@ -2472,7 +2472,7 @@ export const enPart2: Record<string, BlogPostTranslation> = {
     keyword: "multilingual corporate video",
     excerpt:
       "Subtitles or dubbing isn't an aesthetic decision. Here's how I choose between them depending on the channel, the market and the budget, and how I make sure the brand sounds the same in every language.",
-    seoTitle: "Multilingual corporate video | Daniel Acero",
+    seoTitle: "Multilingual corporate video | Dani Acero",
     metaDescription:
       "Multilingual corporate video: when to subtitle, when to dub and how to keep your brand consistent in every language.",
     heroKicker: "Blog / Guide",
@@ -2586,7 +2586,7 @@ export const enPart2: Record<string, BlogPostTranslation> = {
     keyword: "videographer vs filmmaker",
     excerpt:
       "Videographer and corporate filmmaker are used as synonyms, but they aren't the same. Here's what changes in the approach, the process and the end result of each.",
-    seoTitle: "Videographer vs corporate filmmaker | Daniel Acero",
+    seoTitle: "Videographer vs corporate filmmaker | Dani Acero",
     metaDescription:
       "The difference between a videographer and a corporate filmmaker: approach, process and deliverables. I explain when you need one or the other.",
     heroKicker: "Blog / Guide",
@@ -2706,7 +2706,7 @@ export const enPart2: Record<string, BlogPostTranslation> = {
     keyword: "client testimonial video interview questions",
     excerpt:
       "Interviewing a client for a testimonial video takes more preparation than a camera and a list of questions. Here's how I approach it so the answers sound real, not rehearsed.",
-    seoTitle: "How to interview for a testimonial video | Daniel Acero",
+    seoTitle: "How to interview for a testimonial video | Dani Acero",
     metaDescription:
       "How to interview a client for a testimonial video: questions, setting and pacing so the answers sound real, not rehearsed.",
     heroKicker: "Blog / Guide",
@@ -2824,7 +2824,7 @@ export const enPart2: Record<string, BlogPostTranslation> = {
     keyword: "filming in an office during work hours",
     excerpt:
       "Shooting in an office during working hours takes as much planning as the filming itself. Here's how I organize the crew, the schedule and the space so nobody's work gets held up.",
-    seoTitle: "Filming in an office without disrupting work | Daniel Acero",
+    seoTitle: "Filming in an office without disrupting work | Dani Acero",
     metaDescription:
       "How to film in an office without disrupting your team: scheduling, space and advance notice so you can shoot without stopping daily operations.",
     heroKicker: "Blog / Guide",
@@ -2939,7 +2939,7 @@ export const enPart2: Record<string, BlogPostTranslation> = {
     keyword: "annual report video",
     excerpt:
       "An annual results video doesn't sell outward — it informs inward. Here's how I structure it so employees and investors remember what matters without getting bored three minutes in.",
-    seoTitle: "Annual results corporate video | Daniel Acero",
+    seoTitle: "Annual results corporate video | Dani Acero",
     metaDescription:
       "Annual results corporate video: how to structure it, what length to aim for and which mistakes to avoid when communicating with employees and investors.",
     heroKicker: "Blog / Guide",
@@ -3050,7 +3050,7 @@ export const enPart2: Record<string, BlogPostTranslation> = {
     keyword: "product launch video",
     excerpt:
       "A launch video has no room for delays: the event date calls the shots. Here's how I plan backward so the video arrives on time without sacrificing quality.",
-    seoTitle: "Product launch corporate video | Daniel Acero",
+    seoTitle: "Product launch corporate video | Dani Acero",
     metaDescription:
       "Product launch corporate video: how I plan the shoot backward from the event date and which mistakes I avoid before filming.",
     heroKicker: "Blog / Guide",
@@ -3160,7 +3160,7 @@ export const enPart2: Record<string, BlogPostTranslation> = {
     keyword: "sustainability video for companies",
     excerpt:
       "A CSR video can't stand on stock footage of solar panels or statements of intent. Here's how I approach it so it shows filmable facts instead of empty posturing.",
-    seoTitle: "CSR and sustainability corporate video | Daniel Acero",
+    seoTitle: "CSR and sustainability corporate video | Dani Acero",
     metaDescription:
       "CSR and sustainability corporate video: how I tell the story with filmable facts, without stock footage or promises that can't be verified.",
     heroKicker: "Blog / Guide",
@@ -3271,7 +3271,7 @@ export const enPart2: Record<string, BlogPostTranslation> = {
     keyword: "actors vs real employees in corporate video",
     excerpt:
       "Hiring actors gives you control and saves shooting time. Filming employees gives you credibility but takes more patience. Here's how I decide which to use on each project.",
-    seoTitle: "Actors or employees in corporate video | Daniel Acero",
+    seoTitle: "Actors or employees in corporate video | Dani Acero",
     metaDescription:
       "Actors vs real employees in corporate video: when to hire actors and when to film your own team, with practical on-set criteria.",
     heroKicker: "Blog / Guide",
@@ -3381,7 +3381,7 @@ export const enPart2: Record<string, BlogPostTranslation> = {
     keyword: "animation vs live action video",
     excerpt:
       "2D animation explains what a camera can't show. Live action builds trust because it shows real people and places. Here's how I decide which to use on each project.",
-    seoTitle: "2D animation vs live action corporate video | Daniel Acero",
+    seoTitle: "2D animation vs live action corporate video | Dani Acero",
     metaDescription:
       "2D animation vs live action for corporate content: when each technique works best, with practical criteria on budget, timeline and message.",
     heroKicker: "Blog / Guide",

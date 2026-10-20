@@ -55,15 +55,15 @@ const es = {
 const en: typeof es = {
   metaTitle: "About me",
   metaDescription:
-    "Meet Daniel Acero, a corporate filmmaker specializing in video for companies, events and institutions.",
+    "Meet Dani Acero, a corporate filmmaker specializing in video for companies, events and institutions.",
   keywords: ["about daniel acero", "filmmaker madrid", "corporate videographer"],
   breadcrumb: "About me",
   jobTitle: "Corporate filmmaker",
   kicker: "about me",
   title: "About me",
   intro:
-    "I'm Daniel Acero, a filmmaker and visual storyteller with more than six years of experience creating valuable content for brands. Ever since I was a kid, I've been fascinated by visual art and the way images can convey emotions and tell stories. That led me to explore the world of communication, from producing films to working as a director of photography. Today, my main focus is helping companies and professionals connect with their audiences through powerful, authentic visual storytelling.",
-  portraitAlt: "Daniel Acero, Filmmaker",
+    "I'm Dani Acero, a filmmaker and visual storyteller with more than six years of experience creating valuable content for brands. Ever since I was a kid, I've been fascinated by visual art and the way images can convey emotions and tell stories. That led me to explore the world of communication, from producing films to working as a director of photography. Today, my main focus is helping companies and professionals connect with their audiences through powerful, authentic visual storytelling.",
+  portraitAlt: "Dani Acero, Filmmaker",
   approachTitle: "My approach as a corporate filmmaker",
   approachText:
     "My approach is all about truly understanding the essence of each brand and turning it into a film that resonates with people. I believe in the power of authenticity and emotional storytelling to build lasting connections and make a real impact. Every project is a chance to explore new ideas, blend creativity with strategy and exceed my clients' expectations, always with an unwavering commitment to excellence and innovation.",

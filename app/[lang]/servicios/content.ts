@@ -61,7 +61,7 @@ const en: typeof es = {
   kicker: "services",
   title: "Video production services for companies, events and brands in Madrid",
   intro: [
-    "I'm Daniel Acero, a filmmaker and videographer who specializes in turning corporate events, conferences and brand experiences into films that communicate with impact.",
+    "I'm Dani Acero, a filmmaker and videographer who specializes in turning corporate events, conferences and brand experiences into films that communicate with impact.",
     "I work with companies and brands looking for professional, emotionally engaging video content that stays true to their identity.",
   ],
   specialtiesLabel: "specialties",

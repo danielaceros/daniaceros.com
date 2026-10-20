@@ -54,7 +54,7 @@ const en: typeof es = {
   title: "Professional video for events, brands and businesses in Madrid",
   servicesTitle: "Filmmaker services in Madrid",
   servicesText:
-    "I'm Daniel Acero, a filmmaker and videographer specializing in corporate video, event coverage and brand content. I work with companies and institutions looking for professional video production in Madrid and across Spain: from a social media spot to full coverage of a conference or a corporate video for an institution.",
+    "I'm Dani Acero, a filmmaker and videographer specializing in corporate video, event coverage and brand content. I work with companies and institutions looking for professional video production in Madrid and across Spain: from a social media spot to full coverage of a conference or a corporate video for an institution.",
   whyTitle: "Why hire me as your filmmaker in Madrid",
   whyText:
     "Experience in corporate and institutional projects, clear communication and deadlines met. I work in an agile way, adapted to each client: from briefing to final delivery, with a consistent vision for the project and the ability to scale up with a crew when needed.",

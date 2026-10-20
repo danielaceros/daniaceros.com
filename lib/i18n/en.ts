@@ -5,9 +5,9 @@ import type { Dictionary } from "./es"
 
 const en: Dictionary = {
   meta: {
-    siteName: "Daniel Acero",
+    siteName: "Dani Acero",
     layout: {
-      defaultTitle: "Daniel Acero | Corporate filmmaker in Madrid",
+      defaultTitle: "Dani Acero | Corporate filmmaker in Madrid",
       description:
         "Corporate filmmaker and event videographer in Madrid. Professional video for companies, brands and institutions.",
       keywords: [
@@ -17,10 +17,10 @@ const en: Dictionary = {
         "event video madrid",
         "video production for companies",
       ],
-      ogTitle: "Daniel Acero | Corporate filmmaker in Madrid",
+      ogTitle: "Dani Acero | Corporate filmmaker in Madrid",
       ogDescription:
         "Professional video for events, brands and companies in Madrid. Video production with a cinematic approach.",
-      twitterTitle: "Daniel Acero | Corporate filmmaker in Madrid",
+      twitterTitle: "Dani Acero | Corporate filmmaker in Madrid",
       twitterDescription: "Professional video for companies, brands and events in Madrid.",
     },
     home: {
@@ -36,13 +36,13 @@ const en: Dictionary = {
     portfolio: {
       title: "Portfolio",
       description:
-        "Real corporate, institutional and event video projects. The video portfolio of Daniel Acero.",
+        "Real corporate, institutional and event video projects. The video portfolio of Dani Acero.",
       keywords: ["filmmaker portfolio", "video production case studies", "corporate video examples"],
     },
     project: {
       notFoundTitle: "Project not found",
       titleTemplate: "{title}: video project",
-      fallbackDescription: "Corporate video project by Daniel Acero.",
+      fallbackDescription: "Corporate video project by Dani Acero.",
       keywords: ["corporate video", "video production", "filmmaker madrid"],
     },
   },
@@ -97,7 +97,7 @@ const en: Dictionary = {
     title: "Watch this first",
     play: "Play video",
     pause: "Pause video",
-    videoLabel: "Introduction video by Daniel Acero",
+    videoLabel: "Introduction video by Dani Acero",
     unmute: "Tap for sound",
     mute: "Mute",
     volume: "Volume",
@@ -115,9 +115,9 @@ const en: Dictionary = {
   },
   about: {
     title: "About me",
-    imageAlt: "Daniel Acero",
+    imageAlt: "Dani Acero",
     paragraphs: [
-      "I'm Daniel Acero, a filmmaker with more than six years of experience helping companies and brands turn their events into visual stories that last.",
+      "I'm Dani Acero, a filmmaker with more than six years of experience helping companies and brands turn their events into visual stories that last.",
       "I've had the chance to cover conventions, product launches, conferences and brand experiences all over Spain, always with one clear goal: capturing the essence of every moment.",
       "My mission is to keep every story alive long after the event is over.",
     ],

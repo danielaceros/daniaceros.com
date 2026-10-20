@@ -183,7 +183,7 @@ export function buildMetadata({
       type: "website",
       locale: OG_LOCALE[lang],
       url,
-      siteName: "Daniel Acero",
+      siteName: lang === "en" ? "Dani Acero" : "Daniel Acero",
       title,
       description,
       images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630, alt: title }],

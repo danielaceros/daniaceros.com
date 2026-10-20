@@ -9,12 +9,16 @@
 //      en `body`; las URLs de imágenes/vídeos pueden reutilizarse).
 //   3. Nada más: getLocalizedPost() la usa, la página pasa a index + hreflang
 //      y app/sitemap.ts la incluye.
-// El slug EN es el mismo que el ES por ahora (/en/blog/<slug-es>).
+// El slug EN puede ser distinto: añádelo a EN_BLOG_SLUGS en lib/i18n/config.ts (sin mapeo, es el mismo que el ES).
 import type { BlogPost } from "@/lib/blog"
 import type { Lang } from "@/lib/i18n/config"
 import { enPart1 } from "@/lib/blog-translations/en-1"
 import { enPart2 } from "@/lib/blog-translations/en-2"
 import { enPart3 } from "@/lib/blog-translations/en-3"
+import { enPart4 } from "@/lib/blog-translations/en-4"
+import { enPart5 } from "@/lib/blog-translations/en-5"
+import { enPart6 } from "@/lib/blog-translations/en-6"
+import { enPart7 } from "@/lib/blog-translations/en-7"
 
 export type BlogPostTranslation = Pick<
   BlogPost,
@@ -32,5 +36,5 @@ export type BlogPostTranslation = Pick<
 >
 
 export const blogTranslations: Partial<Record<Lang, Record<string, BlogPostTranslation>>> = {
-  en: { ...enPart1, ...enPart2, ...enPart3 },
+  en: { ...enPart1, ...enPart2, ...enPart3, ...enPart4, ...enPart5, ...enPart6, ...enPart7 },
 }

@@ -15401,7 +15401,7 @@ export function getPostMetadata(
   // sufijo aquí el <title> queda duplicado ("... | Daniel Acero | Daniel
   // Acero"). openGraph/twitter no pasan por ese template, así que ahí sí
   // usamos el seoTitle completo.
-  const bareTitle = post.seoTitle.replace(/\s*\|\s*Daniel Acero\s*$/i, "")
+  const bareTitle = post.seoTitle.replace(/\s*\|\s*(?:Daniel|Dani) Acero\s*$/i, "")
   return {
     ...buildMetadata({
       title: bareTitle,

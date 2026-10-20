@@ -20,7 +20,7 @@ export const enPart3: Record<string, BlogPostTranslation> = {
     keyword: "corporate video voiceover",
     excerpt:
       "A voiceover can build trust in your corporate video or ruin it with the wrong tone. Here's how I choose the type of voice, the pace and the language based on the message and the audience.",
-    seoTitle: "Voiceover for Corporate Video | Daniel Acero",
+    seoTitle: "Voiceover for Corporate Video | Dani Acero",
     metaDescription:
       "Voiceover for corporate video: how to choose the right tone, pace and voice for your message and the audience you're speaking to.",
     heroKicker: "Blog / Guide",
@@ -137,7 +137,7 @@ export const enPart3: Record<string, BlogPostTranslation> = {
     keyword: "how to organize a corporate video shoot",
     excerpt:
       "A corporate shoot is won or lost before the camera is switched on. Here's how I prepare the call sheet, the schedule and the backup plan so the day goes as planned.",
-    seoTitle: "How to Organize a Corporate Video Shoot | Daniel Acero",
+    seoTitle: "How to Organize a Corporate Video Shoot | Dani Acero",
     metaDescription:
       "How to organize a corporate video shoot: call sheet, block-by-block scheduling and logistics so your shoot day goes smoothly.",
     heroKicker: "Blog / Guide",
@@ -253,7 +253,7 @@ export const enPart3: Record<string, BlogPostTranslation> = {
     keyword: "client welcome video",
     excerpt:
       "A well-made welcome video runs under two minutes and removes more uncertainty than an onboarding email. Here's how I approach it: who's on camera, how long it runs and what I include.",
-    seoTitle: "Welcome Video for New Clients | Daniel Acero",
+    seoTitle: "Welcome Video for New Clients | Dani Acero",
     metaDescription:
       "Welcome video for new clients: how long it should be, who should be on camera and what to include to make a great first impression without sounding corporate.",
     heroKicker: "Blog / Guide",
@@ -370,7 +370,7 @@ export const enPart3: Record<string, BlogPostTranslation> = {
     keyword: "slow motion in corporate video",
     excerpt:
       "Used well, slow motion highlights a gesture or a product detail. Used badly, it stretches a video that was already too long. Here's when I use it, what frame rate I shoot at and what I avoid.",
-    seoTitle: "Slow Motion in Corporate Video | Daniel Acero",
+    seoTitle: "Slow Motion in Corporate Video | Dani Acero",
     metaDescription:
       "Slow motion in corporate video: when to use it, what frame rate to shoot at and the most common mistakes when adding slow motion to business videos.",
     heroKicker: "Blog / Guide",
@@ -487,7 +487,7 @@ export const enPart3: Record<string, BlogPostTranslation> = {
     keyword: "corporate video revision rounds",
     excerpt:
       "Without a fixed number of revision rounds set in the quote, an edit can drag on for weeks. Here's how many I include, how I ask for feedback and what I do when a change goes beyond the approved script.",
-    seoTitle: "Revision Rounds in a Corporate Video | Daniel Acero",
+    seoTitle: "Revision Rounds in a Corporate Video | Dani Acero",
     metaDescription:
       "Revision rounds in a corporate video: how many I include in the quote, how I ask for structured feedback and how I handle changes outside the script.",
     heroKicker: "Blog / Guide",
@@ -603,7 +603,7 @@ export const enPart3: Record<string, BlogPostTranslation> = {
     keyword: "company culture video",
     excerpt:
       "A company culture video can boost your recruiting or come across as corporate posturing. The difference lies in what you choose to show and what you leave out.",
-    seoTitle: "Company Culture Video: What to Show | Daniel Acero",
+    seoTitle: "Company Culture Video: What to Show | Dani Acero",
     metaDescription:
       "Company culture video: which moments to film, how to handle testimonials and what to avoid so it doesn't look like a generic HR ad.",
     heroKicker: "Blog / Guide",
@@ -719,7 +719,7 @@ export const enPart3: Record<string, BlogPostTranslation> = {
     keyword: "company anniversary video",
     excerpt:
       "A company anniversary video can end up as a boring corporate video or become a piece people actually share. The difference lies in which story you decide to tell.",
-    seoTitle: "Company Anniversary Video | Daniel Acero",
+    seoTitle: "Company Anniversary Video | Dani Acero",
     metaDescription:
       "Company anniversary video: what to tell, who to interview and what to avoid so it doesn't look like a generic corporate video.",
     heroKicker: "Blog / Guide",
@@ -836,7 +836,7 @@ export const enPart3: Record<string, BlogPostTranslation> = {
     keyword: "green screen corporate video",
     excerpt:
       "Shooting on green screen isn't the default option: it only makes sense when the background has to change by channel or when there's no real location that works. Here's when I use it and when I rule it out.",
-    seoTitle: "Green Screen for Corporate Video | Daniel Acero",
+    seoTitle: "Green Screen for Corporate Video | Dani Acero",
     metaDescription:
       "Green screen for corporate video: when it's worth it, what the studio needs and the lighting mistakes that ruin the chroma key.",
     heroKicker: "Blog / Guide",
@@ -953,7 +953,7 @@ export const enPart3: Record<string, BlogPostTranslation> = {
     keyword: "corporate behind the scenes video",
     excerpt:
       "A behind-the-scenes video isn't the leftovers of the main shoot. It only works if it's planned from the brief, with its own goal and its own format. Here's when I recommend it and when I'd rather not film one.",
-    seoTitle: "Corporate Behind-the-Scenes Video: When to Film It | Daniel Acero",
+    seoTitle: "Corporate Behind-the-Scenes Video: When to Film It | Dani Acero",
     metaDescription:
       "Corporate behind-the-scenes video: what it is, when it adds value and how I plan it alongside the main video without duplicating the shooting effort.",
     heroKicker: "Blog / Guide",
@@ -1070,7 +1070,7 @@ export const enPart3: Record<string, BlogPostTranslation> = {
     keyword: "corporate video storytelling",
     excerpt:
       "Storytelling in corporate video isn't adding emotion to a product catalog. It's deciding on a conflict, a human protagonist and a resolution before writing the first line of the script.",
-    seoTitle: "Storytelling in Corporate Video | Daniel Acero",
+    seoTitle: "Storytelling in Corporate Video | Dani Acero",
     metaDescription:
       "Storytelling in corporate video: how I choose the conflict, the protagonist and the narrative arc so the video is remembered and isn't just a list of features.",
     heroKicker: "Blog / Guide",
@@ -1186,7 +1186,7 @@ export const enPart3: Record<string, BlogPostTranslation> = {
     keyword: "multi-location corporate video",
     excerpt:
       "Filming at several locations isn't repeating the same shoot three times. The crew changes, the light changes, who's available changes. And the result has to look like it was shot by the same person on the same afternoon.",
-    seoTitle: "Multi-Location Corporate Video: How to Coordinate It | Daniel Acero",
+    seoTitle: "Multi-Location Corporate Video: How to Coordinate It | Dani Acero",
     metaDescription:
       "Multi-location corporate video: how I coordinate shoots across several cities without losing visual consistency or blowing the schedule.",
     heroKicker: "Blog / Guide",
@@ -1302,7 +1302,7 @@ export const enPart3: Record<string, BlogPostTranslation> = {
     keyword: "workplace safety training video",
     excerpt:
       "A workplace safety video doesn't sell, it teaches. I film the plant's real procedure, validate it with the safety officer and leave it ready to be watched as many times as needed.",
-    seoTitle: "Workplace Safety Corporate Video | Daniel Acero",
+    seoTitle: "Workplace Safety Corporate Video | Dani Acero",
     metaDescription:
       "Workplace safety corporate video: how I film clear, validated health and safety procedures for industrial plants in Madrid.",
     heroKicker: "Blog / Guide",
@@ -1420,7 +1420,7 @@ export const enPart3: Record<string, BlogPostTranslation> = {
     keyword: "real estate corporate video",
     excerpt:
       "In real estate I don't sell square meters, I sell what it's like to live in that space. That's why I prioritize natural light, the real surroundings and shots a render will never convey.",
-    seoTitle: "Corporate Video for Real Estate | Daniel Acero",
+    seoTitle: "Corporate Video for Real Estate | Dani Acero",
     metaDescription:
       "Corporate video for the real estate sector: how I film developments and offices for property developers and real estate agencies in Madrid, with shots that actually sell.",
     heroKicker: "Blog / Guide",
@@ -1538,7 +1538,7 @@ export const enPart3: Record<string, BlogPostTranslation> = {
     keyword: "healthcare corporate video",
     excerpt:
       "In healthcare, video doesn't sell a service, it sells trust. That's why I take as much care over patient privacy as over shots that convey professionalism without feeling cold.",
-    seoTitle: "Corporate Video for the Healthcare Sector | Daniel Acero",
+    seoTitle: "Corporate Video for the Healthcare Sector | Dani Acero",
     metaDescription:
       "Corporate video for the healthcare sector: how I film in clinics and medical centers in Madrid while protecting patient privacy and building real trust.",
     heroKicker: "Blog / Guide",
@@ -1656,7 +1656,7 @@ export const enPart3: Record<string, BlogPostTranslation> = {
     keyword: "education corporate video",
     excerpt:
       "In education, video doesn't just sell a school, it sells a decision about a child's future or a career. That's why I take as much care over minors' image rights as over the real atmosphere a classroom conveys.",
-    seoTitle: "Corporate Video for the Education Sector | Daniel Acero",
+    seoTitle: "Corporate Video for the Education Sector | Dani Acero",
     metaDescription:
       "Corporate video for the education sector: how I film at schools and universities in Madrid, protecting minors' image rights and showing the school's real atmosphere.",
     heroKicker: "Blog / Guide",
@@ -1774,7 +1774,7 @@ export const enPart3: Record<string, BlogPostTranslation> = {
     keyword: "tech company corporate video",
     excerpt:
       "In tech the problem is almost never the budget, it's that the product can't be seen. That's why my work starts by translating what the software does into something people understand in ten seconds.",
-    seoTitle: "Corporate Video for the Tech Sector | Daniel Acero",
+    seoTitle: "Corporate Video for the Tech Sector | Dani Acero",
     metaDescription:
       "Corporate video for the tech sector: how I film for startups and software companies in Madrid, showing product and team without falling into generic video.",
     heroKicker: "Blog / Guide",
@@ -1892,7 +1892,7 @@ export const enPart3: Record<string, BlogPostTranslation> = {
     keyword: "financial services corporate video",
     excerpt:
       "In banking, insurance and fintech, a video doesn't just have to look good: it has to get through compliance without losing authenticity. Here's how I approach corporate video for the financial sector.",
-    seoTitle: "Corporate Video for the Financial Sector | Daniel Acero",
+    seoTitle: "Corporate Video for the Financial Sector | Dani Acero",
     metaDescription:
       "Corporate video for the financial sector: how I film for banks, insurers and fintechs in Madrid while taking care of compliance, tone and trust.",
     heroKicker: "Blog / Guide",
@@ -2010,7 +2010,7 @@ export const enPart3: Record<string, BlogPostTranslation> = {
     keyword: "logistics and transport corporate video",
     excerpt:
       "In logistics and transport, a corporate video has to show an operation in motion without stopping it. Here's how I approach corporate video for this sector: which shots matter and what to avoid.",
-    seoTitle: "Logistics & Transport Corporate Video | Daniel Acero",
+    seoTitle: "Logistics & Transport Corporate Video | Dani Acero",
     metaDescription:
       "Corporate video for logistics and transport: how I film in warehouses and with fleets in Madrid without slowing down day-to-day operations.",
     heroKicker: "Blog / Guide",
@@ -2128,7 +2128,7 @@ export const enPart3: Record<string, BlogPostTranslation> = {
     keyword: "retail corporate video",
     excerpt:
       "In retail, a corporate video has to coexist with open stores and real customers coming and going. Here's how I plan the shoot to respect the point of sale and still convey the brand.",
-    seoTitle: "Retail Corporate Video | Daniel Acero",
+    seoTitle: "Retail Corporate Video | Dani Acero",
     metaDescription:
       "Corporate video for the retail sector: how I film in stores open to the public in Madrid without interrupting sales.",
     heroKicker: "Blog / Guide",
@@ -2246,7 +2246,7 @@ export const enPart3: Record<string, BlogPostTranslation> = {
     keyword: "energy sector corporate video",
     excerpt:
       "In the energy sector, corporate video happens at live facilities, with strict safety protocols and restricted access. Here's how I plan the shoot to comply with regulations and still convey the scale of the project.",
-    seoTitle: "Energy Sector Corporate Video | Daniel Acero",
+    seoTitle: "Energy Sector Corporate Video | Dani Acero",
     metaDescription:
       "Corporate video for the energy sector: how I film at wind farms and solar plants while respecting safety rules and without stopping operations.",
     heroKicker: "Blog / Guide",
@@ -2364,7 +2364,7 @@ export const enPart3: Record<string, BlogPostTranslation> = {
     keyword: "hospitality and tourism corporate video",
     excerpt:
       "In hospitality and tourism, a corporate video sells an experience, not a service. Here's how I plan the shoot so it works on the website, on social media and on booking platforms.",
-    seoTitle: "Hospitality & Tourism Corporate Video | Daniel Acero",
+    seoTitle: "Hospitality & Tourism Corporate Video | Dani Acero",
     metaDescription:
       "Corporate video for hospitality and tourism: which shots, sound and formats best convey the real experience of a hotel or restaurant.",
     heroKicker: "Blog / Guide",
@@ -2482,7 +2482,7 @@ export const enPart3: Record<string, BlogPostTranslation> = {
     keyword: "construction company corporate video",
     excerpt:
       "In construction, a corporate video has to deal with safety, noise and dust. Here's how I plan an on-site shoot so the result is useful, not just pretty.",
-    seoTitle: "Corporate Video for the Construction Sector | Daniel Acero",
+    seoTitle: "Corporate Video for the Construction Sector | Dani Acero",
     metaDescription:
       "Corporate video for the construction sector: on-site safety, drone use, documenting project phases and common mistakes when filming for a construction company.",
     heroKicker: "Blog / Guide",
@@ -2599,7 +2599,7 @@ export const enPart3: Record<string, BlogPostTranslation> = {
     keyword: "automotive corporate video",
     excerpt:
       "In automotive I film very different things under the same brief: the vehicle as a product and the factory or workshop as a process. Here's how I keep the two approaches separate on set.",
-    seoTitle: "Automotive Corporate Video | Daniel Acero",
+    seoTitle: "Automotive Corporate Video | Dani Acero",
     metaDescription:
       "Corporate video for the automotive sector: product, plant and vehicles in motion, and how I plan each shoot without mixing them up.",
     heroKicker: "Blog / Guide",
@@ -2716,7 +2716,7 @@ export const enPart3: Record<string, BlogPostTranslation> = {
     keyword: "corporate video for small businesses",
     excerpt:
       "A small business doesn't need big-brand production values. It needs a clear goal, just the right amount of gear and a length designed for where the video will be watched. Here's how I approach it.",
-    seoTitle: "Corporate Video for Small Businesses | Daniel Acero",
+    seoTitle: "Corporate Video for Small Businesses | Dani Acero",
     metaDescription:
       "Corporate video for small businesses: the budget, gear and planning you really need, without paying for things you'll never use.",
     heroKicker: "Blog / Guide",
@@ -2833,7 +2833,7 @@ export const enPart3: Record<string, BlogPostTranslation> = {
     keyword: "corporate video usage rights",
     excerpt:
       "The price of a corporate video doesn't just pay for filming and editing. It also pays for a specific usage license. Here's which clauses to lock in before filming so you don't find out later what you can't do with your own video.",
-    seoTitle: "Corporate Video Contracts & Usage Rights | Daniel Acero",
+    seoTitle: "Corporate Video Contracts & Usage Rights | Dani Acero",
     metaDescription:
       "Which license, territory, term and exclusivity clauses a corporate video contract should include before filming begins.",
     heroKicker: "Blog / Guide",
@@ -2950,7 +2950,7 @@ export const enPart3: Record<string, BlogPostTranslation> = {
     keyword: "law firm corporate video",
     excerpt:
       "At a law firm, video isn't about going viral, it's about conveying seriousness and sound judgment before the first call. Here's how I approach format, tone and filming so it fits the sector.",
-    seoTitle: "Corporate Video for the Legal Sector | Daniel Acero",
+    seoTitle: "Corporate Video for the Legal Sector | Dani Acero",
     metaDescription:
       "Corporate video for the legal sector: the formats, editing tone and preparation a law firm needs before filming.",
     heroKicker: "Blog / Guide",
@@ -3071,7 +3071,7 @@ export const enPart3: Record<string, BlogPostTranslation> = {
     keyword: "corporate video delivery formats",
     excerpt:
       "Before finalizing a corporate video, it's worth being clear about which formats, resolutions and rights the delivery includes. Here's what I ask for myself when I wrap a project, so there are no surprises at the end.",
-    seoTitle: "Corporate Video Delivery Formats | Daniel Acero",
+    seoTitle: "Corporate Video Delivery Formats | Dani Acero",
     metaDescription:
       "Corporate video delivery formats: what to ask your production company for before filming to avoid surprises with the final master.",
     heroKicker: "Blog / Guide",
@@ -3188,7 +3188,7 @@ export const enPart3: Record<string, BlogPostTranslation> = {
     keyword: "food industry corporate video",
     excerpt:
       "Filming in a food processing plant has its own rules: hygiene, safety and a production line that doesn't stop for a camera. Here's how I approach it so the video turns out well without slowing down operations.",
-    seoTitle: "Food & Agriculture Corporate Video | Daniel Acero",
+    seoTitle: "Food & Agriculture Corporate Video | Dani Acero",
     metaDescription:
       "Corporate video for the food and agriculture sector: how to film in a plant, comply with regulations and tell the process story without looking like generic advertising.",
     heroKicker: "Blog / Guide",
@@ -3306,7 +3306,7 @@ export const enPart3: Record<string, BlogPostTranslation> = {
     keyword: "AI in video post-production",
     excerpt:
       "I use AI tools to transcribe, subtitle and clean up audio. I don't use them to decide the pace of the edit or to write the script. Here's where I draw the line and why.",
-    seoTitle: "AI in Corporate Video Post-Production | Daniel Acero",
+    seoTitle: "AI in Corporate Video Post-Production | Dani Acero",
     metaDescription:
       "Artificial intelligence in corporate video post-production: which tasks I automate, which I never delegate and the tools I use day to day.",
     heroKicker: "Blog / Guide",
@@ -3423,7 +3423,7 @@ export const enPart3: Record<string, BlogPostTranslation> = {
     keyword: "public sector corporate video",
     excerpt:
       "Filming for a public administration isn't the same as filming for a private company: approval times, tone and who you're accountable to all change. Here's what's different and how I organize it.",
-    seoTitle: "Public Sector Corporate Video | Daniel Acero",
+    seoTitle: "Public Sector Corporate Video | Dani Acero",
     metaDescription:
       "Corporate video for the public sector: what changes compared with private companies, how the script gets approved and which timelines and accessibility requirements to plan for.",
     heroKicker: "Blog / Guide",
@@ -3539,7 +3539,7 @@ export const enPart3: Record<string, BlogPostTranslation> = {
     keyword: "repurpose corporate video for social media",
     excerpt:
       "Every corporate shoot produces far more footage than ends up in the final video. Here's which extra shots I ask for and how I organize them to get weeks of social media content without scheduling a separate shoot.",
-    seoTitle: "Corporate Video Shoot for Social Media | Daniel Acero",
+    seoTitle: "Corporate Video Shoot for Social Media | Dani Acero",
     metaDescription:
       "How to get social media content out of a corporate video shoot: which extra shots to ask for, how to organize them at ingest and how to keep the shoot from running long.",
     heroKicker: "Blog / Guide",

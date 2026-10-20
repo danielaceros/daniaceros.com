@@ -13,7 +13,9 @@ import {
   LOCALE_COOKIE,
   LOCALE_COOKIE_MAX_AGE,
   SPANISH_FAMILY_LANGUAGES,
+  enRedirectTarget,
   isLang,
+  toEsPath,
   localizedHref,
   type Lang,
 } from "@/lib/i18n/config"
@@ -76,8 +78,24 @@ export function proxy(request: NextRequest) {
     return NextResponse.redirect(url, 301)
   }
 
-  // 2) /en/... → tal cual
-  if (isLang(firstSegment)) return NextResponse.next()
+  // 2) /en/... → slugs en inglés: /en/<slug-es> → 301 a /en/<slug-en>;
+  //    /en/<slug-en> → rewrite interno a la carpeta española /en/<slug-es>.
+  if (isLang(firstSegment)) {
+    const enPath = pathname.slice(firstSegment.length + 1).replace(/\/$/, "") || "/"
+    const redirectTo = enRedirectTarget(enPath)
+    if (redirectTo) {
+      const url = request.nextUrl.clone()
+      url.pathname = `/${firstSegment}${redirectTo}`
+      return NextResponse.redirect(url, 301)
+    }
+    const esPath = toEsPath(enPath)
+    if (esPath !== enPath) {
+      const url = request.nextUrl.clone()
+      url.pathname = `/${firstSegment}${esPath}`
+      return NextResponse.rewrite(url)
+    }
+    return NextResponse.next()
+  }
 
   // 3) Sin prefijo → detección (solo primera visita) o rewrite a ES
   const cookieLocale = request.cookies.get(LOCALE_COOKIE)?.value
