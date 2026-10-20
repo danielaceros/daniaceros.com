@@ -140,6 +140,8 @@ export default function RootDocument({
               url: SITE_URL,
               telephone: "+34 711 25 54 96",
               areaServed: "ES",
+              // GEO: idiomas de trabajo, solo en la versión inglesa (el JSON-LD español no cambia).
+              ...(lang === "en" ? { knowsLanguage: ["es", "en"] } : {}),
               priceRange: "€€",
               address: {
                 "@type": "PostalAddress",
