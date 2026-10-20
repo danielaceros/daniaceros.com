@@ -26,7 +26,7 @@ const en: typeof es = {
   meta: {
     title: "TV — the portfolio in Reels format",
     description:
-      "Daniel Acero's portfolio in Reels format: swipe just like on Instagram and watch every piece exactly as it was published.",
+      "Dani Acero's portfolio in Reels format: swipe just like on Instagram and watch every piece exactly as it was published.",
     keywords: ["daniel acero reels", "vertical video portfolio", "instagram showreel madrid"],
   },
   kicker: "daniel acero · tv",

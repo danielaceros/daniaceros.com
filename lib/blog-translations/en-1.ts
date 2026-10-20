@@ -17,7 +17,7 @@ export const enPart1: Record<string, BlogPostTranslation> = {
     ],
     "keyword": "video content for businesses Madrid",
     "excerpt": "I go to their clinic once a month, we set up the gear, they read from the teleprompter and that gives us 30 Reels to publish throughout the month. No script meetings. No wrestling with the camera.",
-    "seoTitle": "30 Reels a month in 2 hours: Meridian Biohealth case study | Daniel Acero",
+    "seoTitle": "30 Reels a month in 2 hours: Meridian Biohealth case study | Dani Acero",
     "metaDescription": "Business video content in Madrid, case study: 30 Reels a month for Meridian Biohealth, filmed in 2 hours of actual shooting. A system built on teleprompter, editing and publishing.",
     "heroKicker": "Blog / Case study",
     "body": [
@@ -229,7 +229,7 @@ export const enPart1: Record<string, BlogPostTranslation> = {
     ],
     "keyword": "event videography Madrid",
     "excerpt": "What professional event videography in Madrid should include, how to approach it with a commercial mindset, and when it's worth turning it into a piece for sales, brand and recap.",
-    "seoTitle": "Event videography in Madrid for companies | Daniel Acero",
+    "seoTitle": "Event videography in Madrid for companies | Dani Acero",
     "metaDescription": "Event videography in Madrid for companies, conferences, trade shows and brands. Professional video coverage with aftermovie, social media cuts and a commercial focus.",
     "heroKicker": "Blog / SEO",
     "body": [
@@ -337,7 +337,7 @@ export const enPart1: Record<string, BlogPostTranslation> = {
     ],
     "keyword": "corporate filmmaker",
     "excerpt": "A corporate filmmaker isn't just the person who presses record. They decide what gets filmed, how the story is told and how it's delivered so the video actually works for your business.",
-    "seoTitle": "Corporate filmmaker: how to choose | Daniel Acero",
+    "seoTitle": "Corporate filmmaker: how to choose | Dani Acero",
     "metaDescription": "What a corporate filmmaker does, when you need one and how to choose the right one for business video, events and brand content in Madrid.",
     "heroKicker": "Blog / Guide",
     "body": [
@@ -474,7 +474,7 @@ export const enPart1: Record<string, BlogPostTranslation> = {
     ],
     "keyword": "promotional video production for businesses in Madrid",
     "excerpt": "A good promotional video isn't improvised. Here's how I approach it from start to finish working with businesses in Madrid: what I decide before filming, what happens on shoot day and what I deliver at the end.",
-    "seoTitle": "Promotional video production for businesses in Madrid | Daniel Acero",
+    "seoTitle": "Promotional video production for businesses in Madrid | Dani Acero",
     "metaDescription": "Promotional video production for businesses in Madrid: script, shoot, edit and delivery. How I approach it, realistic timelines and the mistakes I avoid.",
     "heroKicker": "Blog / Guide",
     "body": [
@@ -613,7 +613,7 @@ export const enPart1: Record<string, BlogPostTranslation> = {
     ],
     "keyword": "event filmmaker",
     "excerpt": "What exactly a filmmaker does at an event, what they deliver, how they differ from a camera operator hired by the hour and when it makes sense to bring them in from the start.",
-    "seoTitle": "Event filmmaker | Daniel Acero",
+    "seoTitle": "Event filmmaker | Dani Acero",
     "metaDescription": "Event filmmaker: what they cover, how I work live and when it's worth it. A practical guide based on real corporate shoots in Madrid.",
     "heroKicker": "Blog / Guide",
     "body": [
@@ -751,7 +751,7 @@ export const enPart1: Record<string, BlogPostTranslation> = {
     ],
     "keyword": "social media content Madrid",
     "excerpt": "Posting on social media every week without burning out isn't about inspiration. It's about having a system: one shoot day, defined formats for each channel and a calendar that's already locked in.",
-    "seoTitle": "Social media content in Madrid | Daniel Acero",
+    "seoTitle": "Social media content in Madrid | Dani Acero",
     "metaDescription": "Social media content in Madrid: how I set up shoot days, formats for each channel and publishing without relying on weekly inspiration.",
     "heroKicker": "Blog / Guide",
     "body": [
@@ -890,7 +890,7 @@ export const enPart1: Record<string, BlogPostTranslation> = {
     ],
     "keyword": "professional vertical video",
     "excerpt": "Shooting vertical isn't just turning the camera ninety degrees. Framing, lighting, sound and editing all change. This is the guide I use to produce vertical content for companies in Madrid.",
-    "seoTitle": "Professional vertical video: how to shoot it | Daniel Acero",
+    "seoTitle": "Professional vertical video: how to shoot it | Dani Acero",
     "metaDescription": "Professional vertical video for Reels, TikTok and Shorts: 9:16 framing, location sound and the mistakes that sink your content. A practical guide from Madrid.",
     "heroKicker": "Blog / Guide",
     "body": [
@@ -1028,7 +1028,7 @@ export const enPart1: Record<string, BlogPostTranslation> = {
     ],
     "keyword": "professional video production Madrid",
     "excerpt": "Many companies produce their first video without knowing what they'll use it for and end up with a file that doesn't fit anywhere. This is the guide I share before closing any project.",
-    "seoTitle": "Professional video production in Madrid: how to choose | Daniel Acero",
+    "seoTitle": "Professional video production in Madrid: how to choose | Dani Acero",
     "metaDescription": "Professional video production in Madrid for companies: what a well-executed production includes, how to choose a provider and the mistakes that cost money.",
     "heroKicker": "Blog / Guide",
     "body": [
@@ -1167,7 +1167,7 @@ export const enPart1: Record<string, BlogPostTranslation> = {
     ],
     "keyword": "corporate interview lighting",
     "excerpt": "Lighting a corporate interview well changes the result more than the camera model does. Kit, light placement and the mistakes that can cost you an entire session.",
-    "seoTitle": "Lighting for corporate interviews | Daniel Acero",
+    "seoTitle": "Lighting for corporate interviews | Dani Acero",
     "metaDescription": "Lighting for corporate interviews: minimum kit, how to position your lights and the mistakes that ruin the shot. A practical guide from shoots in Madrid.",
     "heroKicker": "Blog / Guide",
     "body": [
@@ -1305,7 +1305,7 @@ export const enPart1: Record<string, BlogPostTranslation> = {
     ],
     "keyword": "how to choose a corporate filmmaker",
     "excerpt": "Hiring the wrong filmmaker for a corporate project is expensive. These are the real criteria I'd use to choose before signing anything.",
-    "seoTitle": "How to choose a corporate filmmaker | Daniel Acero",
+    "seoTitle": "How to choose a corporate filmmaker | Dani Acero",
     "metaDescription": "How to choose a corporate filmmaker without mistakes. Portfolio, communication and budget: what to check before hiring for your company.",
     "heroKicker": "Blog / Guide",
     "body": [
@@ -1439,7 +1439,7 @@ export const enPart1: Record<string, BlogPostTranslation> = {
     ],
     "keyword": "corporate video vs brand video",
     "excerpt": "Two formats, two purposes. The corporate video introduces the company. The brand video connects emotionally with the customer. Knowing which one you need changes the budget, the script and the result.",
-    "seoTitle": "Corporate video vs brand video | Daniel Acero",
+    "seoTitle": "Corporate video vs brand video | Dani Acero",
     "metaDescription": "Corporate video vs brand video: objectives, format, tone and when your company needs each one. A practical guide to choosing the right format.",
     "heroKicker": "Blog / Guide",
     "body": [
@@ -1577,7 +1577,7 @@ export const enPart1: Record<string, BlogPostTranslation> = {
     ],
     "keyword": "equipment needed to shoot a corporate video",
     "excerpt": "The short list of what you actually need to shoot a company video. No overkill, no gear marketing.",
-    "seoTitle": "Minimum Gear for a Corporate Video | Daniel Acero",
+    "seoTitle": "Minimum Gear for a Corporate Video | Dani Acero",
     "metaDescription": "The minimum gear to shoot a corporate video: camera, audio and lighting. What to prioritize, what to rent and what you don't really need.",
     "heroKicker": "Blog / Guide",
     "body": [
@@ -1712,7 +1712,7 @@ export const enPart1: Record<string, BlogPostTranslation> = {
     ],
     "keyword": "how to write a corporate video brief",
     "excerpt": "A half-hour brief saves weeks of revisions. Here are the questions it needs to answer before anyone turns on a camera.",
-    "seoTitle": "How to Write a Corporate Video Brief | Daniel Acero",
+    "seoTitle": "How to Write a Corporate Video Brief | Dani Acero",
     "metaDescription": "What to include in your corporate video brief: objectives, tone, deadlines and common mistakes. Half an hour that saves days of work.",
     "heroKicker": "Blog / Guide",
     "body": [
@@ -1852,7 +1852,7 @@ export const enPart1: Record<string, BlogPostTranslation> = {
     ],
     "keyword": "how much does a corporate video cost",
     "excerpt": "Corporate video prices vary widely depending on scope. Here are the real ranges I work with on my projects, so you can approach any quote with clear numbers.",
-    "seoTitle": "How Much Does a Corporate Video Cost? | Daniel Acero",
+    "seoTitle": "How Much Does a Corporate Video Cost? | Dani Acero",
     "metaDescription": "How much a corporate video costs in Madrid: real price ranges, no marketing fluff. From a simple interview to a full brand production.",
     "heroKicker": "Blog / Guide",
     "body": [
@@ -1984,7 +1984,7 @@ export const enPart1: Record<string, BlogPostTranslation> = {
     ],
     "keyword": "corporate video director Madrid",
     "excerpt": "A corporate video director in Madrid leads and delivers a company's entire video process. Here's exactly what they do, how they differ from a production company and how to choose one.",
-    "seoTitle": "Corporate Video Director in Madrid | Daniel Acero",
+    "seoTitle": "Corporate Video Director in Madrid | Dani Acero",
     "metaDescription": "What a corporate video director in Madrid does, how they differ from a production company and how to choose the right professional for your project.",
     "heroKicker": "Blog / Guide",
     "body": [
@@ -2122,7 +2122,7 @@ export const enPart1: Record<string, BlogPostTranslation> = {
     ],
     "keyword": "corporate video storyboard",
     "excerpt": "Storyboards aren't just for artists. They're a communication tool that prevents mistakes before you get to the shoot. Here's how I use them in corporate production.",
-    "seoTitle": "How to Storyboard a Corporate Video | Daniel Acero",
+    "seoTitle": "How to Storyboard a Corporate Video | Dani Acero",
     "metaDescription": "Corporate video storyboards: what they are, when to use one and how to put one together without drawing skills. A practical guide from a filmmaker in Madrid.",
     "heroKicker": "Blog / Guide",
     "body": [
@@ -2261,7 +2261,7 @@ export const enPart1: Record<string, BlogPostTranslation> = {
     ],
     "keyword": "music licensing for corporate video",
     "excerpt": "Using music without the right license in a corporate video can lead to copyright claims, takedowns and fines. Here's what you need to sort out before you publish.",
-    "seoTitle": "Music in corporate video: licensing and rights | Daniel Acero",
+    "seoTitle": "Music in corporate video: licensing and rights | Dani Acero",
     "metaDescription": "Music licensing and copyright in corporate video: which licenses you need, legal music platforms and the mistakes that can cost you dearly.",
     "heroKicker": "Blog / Guide",
     "body": [
@@ -2397,7 +2397,7 @@ export const enPart1: Record<string, BlogPostTranslation> = {
     ],
     "keyword": "live corporate event video production",
     "excerpt": "Filming a live corporate event involves technical and logistical decisions that leave no room for error. Here I explain what you need, how to prepare and what goes wrong most often.",
-    "seoTitle": "Live corporate event video production | Daniel Acero",
+    "seoTitle": "Live corporate event video production | Dani Acero",
     "metaDescription": "Live corporate event video production: crew, logistics and common mistakes. A practical guide from a filmmaker with real event experience in Madrid.",
     "heroKicker": "Blog / Guide",
     "body": [
@@ -2536,7 +2536,7 @@ export const enPart1: Record<string, BlogPostTranslation> = {
     ],
     "keyword": "event recap video",
     "excerpt": "A good event recap doesn't film everything: it knows what to choose. I explain which shots you can't do without and what usually ends up in the recycle bin.",
-    "seoTitle": "Event recap video: what to include and avoid | Daniel Acero",
+    "seoTitle": "Event recap video: what to include and avoid | Dani Acero",
     "metaDescription": "Event recap videos: the shots and moments you can't miss, and what to cut so the result doesn't look like raw archive footage.",
     "heroKicker": "Blog / Guide",
     "body": [
@@ -2673,7 +2673,7 @@ export const enPart1: Record<string, BlogPostTranslation> = {
     ],
     "keyword": "how to record audio for interviews",
     "excerpt": "Audio decides more than you'd think. This is the bare minimum I need to record corporate interviews with clean sound.",
-    "seoTitle": "Location sound for corporate interviews | Daniel Acero",
+    "seoTitle": "Location sound for corporate interviews | Dani Acero",
     "metaDescription": "Location sound for corporate interviews: the microphone, recorder and setup you need to capture clean audio on a production.",
     "heroKicker": "Blog / Guide",
     "body": [
@@ -2805,7 +2805,7 @@ export const enPart1: Record<string, BlogPostTranslation> = {
     ],
     "keyword": "color grading for corporate video",
     "excerpt": "Color grading isn't just slapping on a filter. It's the visual layer that separates a professional corporate video from one that looks homemade. Here's how I approach it.",
-    "seoTitle": "Color grading for corporate video | Daniel Acero",
+    "seoTitle": "Color grading for corporate video | Dani Acero",
     "metaDescription": "Color grading for corporate video: what it is, how it's done and which mistakes to avoid to get a professional finish on your productions.",
     "heroKicker": "Blog / Guide",
     "body": [
@@ -2957,7 +2957,7 @@ export const enPart1: Record<string, BlogPostTranslation> = {
     ],
     "keyword": "16:9 vs 9:16 aspect ratio for LinkedIn and Instagram",
     "excerpt": "The format you shoot a corporate video in matters as much as the content. Here is when to use 16:9 and when to use 9:16 for LinkedIn and Instagram.",
-    "seoTitle": "16:9 vs 9:16 for LinkedIn and Instagram | Daniel Acero",
+    "seoTitle": "16:9 vs 9:16 for LinkedIn and Instagram | Dani Acero",
     "metaDescription": "Aspect ratio for corporate video: when to shoot 16:9 and when to shoot 9:16 for LinkedIn and Instagram. A practical guide based on real production criteria.",
     "heroKicker": "Blog / Guide",
     "body": [
@@ -3099,7 +3099,7 @@ export const enPart1: Record<string, BlogPostTranslation> = {
     ],
     "keyword": "auto subtitles for corporate video",
     "excerpt": "Automatic subtitle generators save time, but they have clear limits. When I use them in corporate video, when I don't, and what I always check before publishing.",
-    "seoTitle": "Auto-generated subtitles for corporate video | Daniel Acero",
+    "seoTitle": "Auto-generated subtitles for corporate video | Dani Acero",
     "metaDescription": "Auto-generated subtitles for corporate video: which tools work, when they save time and when they need manual review.",
     "heroKicker": "Blog / Guide",
     "body": [
@@ -3235,7 +3235,7 @@ export const enPart1: Record<string, BlogPostTranslation> = {
     ],
     "keyword": "how to prepare a CEO for a video shoot",
     "excerpt": "Getting a CEO to look natural on camera isn't about on-screen talent. It's preparation: a call beforehand, the questions sent in advance, and knowing what to do with your hands when the red tally light comes on.",
-    "seoTitle": "How to prepare a CEO to speak on camera | Daniel Acero",
+    "seoTitle": "How to prepare a CEO to speak on camera | Dani Acero",
     "metaDescription": "How to prepare a CEO to speak on camera: the pre-shoot call, posture, language and mistakes to avoid. A practical guide from a corporate filmmaker.",
     "heroKicker": "Blog / Guide",
     "body": [
@@ -3375,8 +3375,8 @@ export const enPart1: Record<string, BlogPostTranslation> = {
     ],
     "keyword": "when to use a teleprompter",
     "excerpt": "A teleprompter isn't always the answer. Two questions before every shoot tell me whether it makes sense or whether it will hurt the result.",
-    "seoTitle": "Teleprompter for corporate video: when to use it | Daniel Acero",
-    "metaDescription": "Teleprompters: when to use one in corporate video and when not to. A practical guide from Daniel Acero, filmmaker in Madrid, to help you decide before the shoot.",
+    "seoTitle": "Teleprompter for corporate video: when to use it | Dani Acero",
+    "metaDescription": "Teleprompters: when to use one in corporate video and when not to. A practical guide from Dani Acero, filmmaker in Madrid, to help you decide before the shoot.",
     "heroKicker": "Blog / Guide",
     "body": [
       {
@@ -3514,7 +3514,7 @@ export const enPart1: Record<string, BlogPostTranslation> = {
     ],
     "keyword": "corporate interview filming locations Madrid",
     "excerpt": "Choosing the right location is the difference between an interview that looks professional and one that looks like it was shot in a storage room. Here are the options I use in Madrid and when each one makes sense.",
-    "seoTitle": "Corporate interview locations in Madrid | Daniel Acero",
+    "seoTitle": "Corporate interview locations in Madrid | Dani Acero",
     "metaDescription": "Locations for filming corporate interviews in Madrid: offices, hotels, coworking spaces, outdoor spots and studios. What works and what to avoid.",
     "heroKicker": "Blog / Guide",
     "body": [
@@ -3662,7 +3662,7 @@ export const enPart1: Record<string, BlogPostTranslation> = {
     ],
     "keyword": "how long does it take to make a corporate video",
     "excerpt": "When a client asks me when the video will be ready, the honest answer isn't a date: it's a process. These are the real timelines for each phase, so there are no surprises.",
-    "seoTitle": "Corporate video production timelines | Daniel Acero",
+    "seoTitle": "Corporate video production timelines | Dani Acero",
     "metaDescription": "How long it takes to produce a corporate video: real timelines for each phase, from pre-production to final delivery. No surprises in your schedule.",
     "heroKicker": "Blog / Guide",
     "body": [
@@ -3795,7 +3795,7 @@ export const enPart1: Record<string, BlogPostTranslation> = {
     ],
     "keyword": "art direction for corporate video",
     "excerpt": "Art direction defines the look of your video long before the camera rolls. Here's what it involves on a corporate shoot and why it's worth planning.",
-    "seoTitle": "Art direction in corporate video | Daniel Acero",
+    "seoTitle": "Art direction in corporate video | Dani Acero",
     "metaDescription": "Art direction for corporate video: what it is, how to apply it on company shoots and the most common mistakes that ruin the visual result.",
     "heroKicker": "Blog / Guide",
     "body": [
@@ -3929,7 +3929,7 @@ export const enPart1: Record<string, BlogPostTranslation> = {
     ],
     "keyword": "sonic branding for corporate video",
     "excerpt": "Sound decides whether your corporate video feels professional or generic. Here's how I handle music, voice-over and sound effects so they reinforce the brand without distracting.",
-    "seoTitle": "Sonic branding in corporate video | Daniel Acero",
+    "seoTitle": "Sonic branding in corporate video | Dani Acero",
     "metaDescription": "Sonic branding for corporate video: how to choose music, voice-over and sound effects that strengthen your brand. A practical guide with real-world criteria.",
     "heroKicker": "Blog / Guide",
     "body": [
@@ -4062,7 +4062,7 @@ export const enPart1: Record<string, BlogPostTranslation> = {
     ],
     "keyword": "why your corporate video isn't converting",
     "excerpt": "A corporate video that doesn't convert usually has the same underlying problem: it was made to be liked, not to persuade. Here are the most common mistakes.",
-    "seoTitle": "Why your corporate video isn't converting | Daniel Acero",
+    "seoTitle": "Why your corporate video isn't converting | Dani Acero",
     "metaDescription": "Common mistakes that stop a corporate video from generating leads or sales, and what to change to make it work.",
     "heroKicker": "Blog / Guide",
     "body": [
@@ -4199,7 +4199,7 @@ export const enPart1: Record<string, BlogPostTranslation> = {
     ],
     "keyword": "testimonial video vs case study video",
     "excerpt": "A testimonial and a case study aren't the same thing. The difference lies in who speaks, what they say and at which point in the sales cycle each format makes sense.",
-    "seoTitle": "Testimonial vs case study video | Daniel Acero",
+    "seoTitle": "Testimonial vs case study video | Dani Acero",
     "metaDescription": "Testimonial video vs case study video: which format converts better depending on your goal, industry and stage of the sales cycle.",
     "heroKicker": "Blog / Guide",
     "body": [

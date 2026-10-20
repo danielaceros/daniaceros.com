@@ -76,7 +76,7 @@ const es = {
 const en: typeof es = {
   metaTitle: "Work process",
   metaDescription:
-    "Discover Daniel Acero's work process: briefing, production, editing and final delivery for corporate video projects.",
+    "Discover Dani Acero's work process: briefing, production, editing and final delivery for corporate video projects.",
   keywords: ["corporate video process", "how a filmmaker works", "video production for companies"],
   kicker: "process",
   title: "How I work",

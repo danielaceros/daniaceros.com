@@ -70,7 +70,7 @@ const en: typeof es = {
   title: "Corporate filmmaker in Madrid for companies and brands",
   lead: "If you're looking for a corporate filmmaker, you need more than someone who just shoots. You need a film that helps you sell better, present your company with purpose and leaves you with useful material for your website, sales, campaigns and brand communications.",
   intro:
-    "I'm Daniel Acero, and I work as a corporate filmmaker for companies that want to show who they are, what they do and why people should choose them. I take care of the approach, the filming and the editing so the video doesn't stop at looking good: it has to work for the business.",
+    "I'm Dani Acero, and I work as a corporate filmmaker for companies that want to show who they are, what they do and why people should choose them. I take care of the approach, the filming and the editing so the video doesn't stop at looking good: it has to work for the business.",
   whatTitle: "What a corporate filmmaker does",
   whatText:
     "A corporate filmmaker turns a business need into a clear piece of video. It could be a company video for your website, a service presentation, a testimonial, a brand film or content for campaigns. The difference is that everything is planned with intent: message, shoot, edit and deliverables aligned with how the video will actually be used.",

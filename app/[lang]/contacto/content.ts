@@ -11,7 +11,7 @@ const es = {
 const en: typeof es = {
   metaTitle: "Contact",
   metaDescription:
-    "Get in touch with Daniel Acero for corporate video or event coverage in Madrid and across Spain.",
+    "Get in touch with Dani Acero for corporate video or event coverage in Madrid and across Spain.",
   keywords: ["contact filmmaker madrid", "corporate video quote", "videographer madrid"],
 }
 

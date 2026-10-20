@@ -34,16 +34,18 @@ const cormorant = Cormorant_Garamond({
 /** Metadata raíz por idioma (ES = idéntica a la del layout original). */
 export function buildRootMetadata(lang: Lang): Metadata {
   const t = getDictionary(lang).meta.layout
+  // Nombre público: "Dani Acero" en inglés; el español no cambia (posicionamiento ya consolidado).
+  const brand = lang === "en" ? "Dani Acero" : "Daniel Acero"
   const homeUrl = lang === "es" ? SITE_URL : `${SITE_URL}${localizedHref(lang, "/")}`
 
   return {
     metadataBase: new URL(SITE_URL),
     title: {
       default: t.defaultTitle,
-      template: "%s | Daniel Acero",
+      template: `%s | ${brand}`,
     },
     description: t.description,
-    applicationName: "Daniel Acero",
+    applicationName: brand,
     keywords: t.keywords,
     alternates: {
       canonical: localizedHref(lang, "/"),
@@ -57,10 +59,10 @@ export function buildRootMetadata(lang: Lang): Metadata {
       type: "website",
       locale: OG_LOCALE[lang],
       url: homeUrl,
-      siteName: "Daniel Acero",
+      siteName: brand,
       title: t.ogTitle,
       description: t.ogDescription,
-      images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630, alt: "Daniel Acero" }],
+      images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630, alt: brand }],
     },
     twitter: {
       card: "summary_large_image",
