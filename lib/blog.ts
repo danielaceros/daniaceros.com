@@ -15225,6 +15225,119 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-academias-idiomas",
+    title: "Vídeo corporativo para academias de idiomas: cómo enseñar el método y a los profesores",
+    description:
+      "Cómo plantear un vídeo corporativo para una academia de idiomas: quién habla, qué se enseña de las clases, cómo tratar la imagen de los alumnos y qué errores evitar.",
+    publishedAt: "2026-10-20",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["vídeo corporativo academias", "vídeo para academias de idiomas", "vídeo corporativo", "captación de alumnos", "sector formación", "Madrid"],
+    keyword: "vídeo corporativo para academias de idiomas",
+    intent: "informacional",
+    excerpt:
+      "Quien busca una academia de idiomas compara métodos, horarios y precios, pero acaba eligiendo por los profesores y el ambiente. Te cuento cómo planteo un vídeo corporativo para una academia de idiomas que enseñe ambas cosas.",
+    seoTitle: "Vídeo corporativo para academias de idiomas | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo para academias de idiomas: quién habla, qué se enseña de las clases, cómo tratar la imagen de los alumnos y errores a evitar. Guía desde Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Quien busca una academia de idiomas suele tener tres o cuatro webs abiertas. Todas hablan de método propio, grupos reducidos y profesores nativos. Sobre el papel son casi idénticas.",
+      },
+      {
+        type: "paragraph",
+        text: "Lo que desempata es ver cómo es una clase y quién la da. Un vídeo corporativo bien planteado enseña justo eso antes de que el alumno pida información.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-academias-idiomas/hero.webp",
+        alt: "Persona escribiendo en una mesa durante una clase de idiomas",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué importa en una academia de idiomas" },
+      {
+        type: "paragraph",
+        text: "Aprender un idioma lleva meses. El alumno no compra un producto, compra una rutina semanal con unas personas concretas. Por eso la confianza pesa más que el catálogo de cursos.",
+      },
+      {
+        type: "paragraph",
+        text: "El vídeo también te ayuda con las empresas que contratan formación para sus equipos. Un responsable de recursos humanos quiere ver el nivel de los profesores y cómo se organiza el trabajo antes de firmar nada.",
+      },
+      {
+        type: "paragraph",
+        text: "Mi recomendación habitual es una pieza de presentación de uno a dos minutos y varios cortes de 30 a 45 segundos: el método, los profesores y cómo es la primera clase.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Quién sale a cámara" },
+      {
+        type: "paragraph",
+        text: "La directora o el director académico, dos o tres profesores de idiomas distintos y alguien de secretaría que atiende a los alumnos nuevos. Grabo sentados, con tres preguntas sencillas y sin texto leído. Un profesor explicando cómo prepara una clase de conversación convence más que cualquier eslogan.",
+      },
+      { type: "heading", level: 3, text: "Qué se enseña" },
+      {
+        type: "paragraph",
+        text: "Una clase real, aunque sea corta: cómo se reparte el tiempo, qué materiales se usan y cómo corrige el profesor. Añado planos del aula, de la zona de espera y del material. Si das clases online, también grabo una sesión por videollamada para que se vea cómo funciona.",
+      },
+      { type: "heading", level: 3, text: "Cómo se graba con alumnos" },
+      {
+        type: "paragraph",
+        text: "Grabo con una clase concertada y con autorización de imagen firmada por cada alumno que sale. Con menores hace falta la firma de sus padres o tutores. Uso una cámara en trípode y un micrófono de solapa al profesor, y pido a los alumnos que hagan la clase con normalidad. A los diez minutos ya nadie mira a cámara.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-academias-idiomas/intermedia.webp",
+        alt: "Profesor explicando a un grupo de alumnos sentados en un aula",
+        width: 1920,
+        height: 1080,
+        caption: "Una clase real, aunque sea un minuto, enseña el ambiente mejor que cualquier descripción.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Usar imágenes de stock en lugar de enseñar tus aulas y a tus profesores reales.",
+          "Grabar a alumnos sin autorización de imagen firmada, sobre todo si son menores.",
+          "Prometer niveles o plazos para aprobar un examen que dependen de cada alumno.",
+          "Hablar de metodología con términos que el alumno no entiende.",
+          "Descuidar el sonido: el eco del aula o el ruido de fondo estropean cualquier entrevista.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto debe durar el vídeo de una academia de idiomas?",
+        answer:
+          "La presentación, entre uno y dos minutos. Los cortes por tema, entre 30 y 45 segundos. Para redes, versiones verticales de 15 a 30 segundos sacadas del mismo rodaje.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar sin interrumpir las clases?",
+        answer:
+          "Sí, con una clase concertada o aprovechando un aula libre para las entrevistas. Lo habitual es dedicar una mañana o una tarde con poca actividad.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito permisos para que salgan alumnos?",
+        answer:
+          "Sí. Hace falta una autorización de imagen por escrito de cada persona que se pueda reconocer, y de los tutores si son menores. Si no quieres gestionarlo, puede salir solo el equipo docente.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto se tarda en tener el vídeo?",
+        answer:
+          "Entre tres y cinco semanas: preparación, una jornada de rodaje y montaje con una o dos rondas de revisión. El calendario se ajusta al curso de la academia.",
+      },
+      {
+        type: "paragraph",
+        text: "Si diriges una academia de idiomas y quieres un vídeo que enseñe a tu equipo y tu forma de dar clase, escríbeme desde /contacto. Con una llamada corta te digo qué formato encaja con tu academia.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
