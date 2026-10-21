@@ -237,4 +237,121 @@ export const enAuto: Record<string, BlogPostTranslation> = {
       },
     ],
   },
+
+  "video-corporativo-centros-fisioterapia": {
+    title: "Corporate video for physiotherapy centres: how to build trust before the first session",
+    description:
+      "How to plan a corporate video for a physiotherapy centre: who speaks, what you show, how to film with patients and which mistakes to avoid.",
+    readingTime: "5 min read",
+    category: "Guide",
+    tags: [
+      "physiotherapy video",
+      "corporate video",
+      "patient trust",
+      "healthcare sector",
+      "Madrid filmmaker",
+    ],
+    keyword: "physiotherapy centre corporate video",
+    excerpt:
+      "A physiotherapy patient is choosing the person who will touch them and support them for weeks. Here is how I plan a corporate video that shows the team and the way they work.",
+    seoTitle: "Corporate Video for Physiotherapy Centres | Dani Acero",
+    metaDescription:
+      "Corporate video for physiotherapy centres: who speaks, what you show, how to film with patients and mistakes to avoid. A guide from a Madrid filmmaker.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "Anyone looking for a physiotherapist is usually in pain and full of questions. They are going to let someone touch them, give them exercises and support them for weeks. Before booking, they want to know who they will be treated by.",
+      },
+      {
+        type: "paragraph",
+        text: "A website with a list of treatments doesn't answer that. A corporate video does: it shows the team, the space and the care before the first session.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-centros-fisioterapia/hero.webp",
+        alt: "Patient sitting on a treatment couch while a healthcare professional takes their blood pressure",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Why a video matters for a physiotherapy centre" },
+      {
+        type: "paragraph",
+        text: "Treatment is long and personal. Patients compare centres by reviews, photos and videos, and choose the one that gives them the most peace of mind. The video works on exactly that decision.",
+      },
+      {
+        type: "paragraph",
+        text: "It also works internally. You use it to introduce a new physiotherapist, to explain what a first assessment involves and to recruit professionals, who also compare where they want to work.",
+      },
+      {
+        type: "paragraph",
+        text: "What I usually recommend is one introduction piece of one to two minutes plus several 30 to 45 second cuts: the team, the facilities and what a first session is like.",
+      },
+      { type: "heading", level: 2, text: "How to do it properly" },
+      { type: "heading", level: 3, text: "Who appears on camera" },
+      {
+        type: "paragraph",
+        text: "The head of the centre, two or three physiotherapists from different areas and someone from reception. I film them seated, with three simple questions and no read-out script. When someone explains what they do every day, it shows.",
+      },
+      { type: "heading", level: 3, text: "What you show" },
+      {
+        type: "paragraph",
+        text: "The route a patient would take: entrance, waiting room, treatment cubicle and rehabilitation gym. Shots of hands at work, tidy equipment and guided exercises convey craft without explaining it. I avoid exposed bodies and gestures that could make people uncomfortable: they don't help someone arriving in pain.",
+      },
+      { type: "heading", level: 3, text: "How to film with patients" },
+      {
+        type: "paragraph",
+        text: "For treatment scenes I use team members or patients who have agreed, with a signed image release. I film in a slot with few appointments, with the camera on a tripod and soft light so nobody feels watched. If the patient becomes uncomfortable, we stop. There is always room to repeat on another day.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-centros-fisioterapia/intermedia.webp",
+        alt: "Healthcare professional examining a patient's leg",
+        width: 1920,
+        height: 1280,
+        caption: "A calm shot of the assessment explains the care better than any slogan.",
+      },
+      { type: "heading", level: 2, text: "Common mistakes" },
+      {
+        type: "list",
+        items: [
+          "Using stock footage instead of showing your real team and centre.",
+          "Filming patients without a signed image release.",
+          "Promising results or recovery times that can't be met later.",
+          "Filling the video with jargon the patient doesn't understand.",
+          "Ignoring sound: background music, echo and machines ruin any interview.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "How long should a physiotherapy centre video be?",
+        answer:
+          "The introduction, between one and two minutes. Topic cuts, between 30 and 45 seconds. For social media, vertical versions of 15 to 30 seconds taken from the same shoot.",
+      },
+      {
+        type: "faq",
+        question: "Can you film without closing the centre?",
+        answer:
+          "Partly. Interviews and b-roll are shot with one free cubicle in a short slot. Usually I pick a morning with a light appointment book or a quiet afternoon.",
+      },
+      {
+        type: "faq",
+        question: "Do I need permission for patients to appear?",
+        answer:
+          "Yes. You need a written image release from every recognisable person. If you'd rather not manage that, only the team can appear, and it works very well.",
+      },
+      {
+        type: "faq",
+        question: "How long does it take to have the video?",
+        answer:
+          "Between three and five weeks: preparation, one shooting day and editing with one or two rounds of revisions. The schedule is adjusted to the centre's appointment book.",
+      },
+      {
+        type: "paragraph",
+        text: "If you run a physiotherapy centre in Madrid and want a video that shows your team and the way you work, write to me via /en/contacto. A short call is enough for me to tell you which format fits your centre.",
+      },
+    ],
+  },
 }

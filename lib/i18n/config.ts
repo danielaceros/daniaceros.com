@@ -47,6 +47,7 @@ export function toLang(value: string | undefined | null): Lang {
  * Rutas que no estén aquí mantienen el mismo slug en ambos idiomas.
  */
 export const EN_PATHS: Record<string, string> = {
+  "video-corporativo-centros-fisioterapia": "physiotherapy-centre-video-madrid",
   "video-corporativo-clinicas-estetica": "aesthetic-clinic-video-madrid",
   "/servicios": "/services",
   "/servicios/corporativo": "/services/corporate",
