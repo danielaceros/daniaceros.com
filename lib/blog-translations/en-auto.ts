@@ -120,4 +120,121 @@ export const enAuto: Record<string, BlogPostTranslation> = {
       },
     ],
   },
+
+  "video-corporativo-clinicas-estetica": {
+    title: "Corporate video for aesthetic clinics: how to show the care without overselling",
+    description:
+      "How to plan a corporate video for an aesthetic clinic: who speaks, what you show, how to handle clients' image rights and which mistakes to avoid.",
+    readingTime: "5 min read",
+    category: "Guide",
+    tags: [
+      "aesthetic clinic video",
+      "corporate video",
+      "client trust",
+      "beauty sector",
+      "Madrid filmmaker",
+    ],
+    keyword: "aesthetic clinic corporate video",
+    excerpt:
+      "Someone choosing an aesthetic clinic is trusting it with their skin or face. Here is how I plan a corporate video that shows the team, the space and the care without promising what it shouldn't.",
+    seoTitle: "Corporate Video for Aesthetic Clinics | Dani Acero",
+    metaDescription:
+      "Corporate video for aesthetic clinics: who speaks, what you show, how to handle clients' image rights and mistakes to avoid. A guide from a Madrid filmmaker.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "Anyone looking for an aesthetic clinic is deciding who to trust with their skin, face or body. They compare photos, reviews and prices, but what really counts is the feeling that they will be looked after well.",
+      },
+      {
+        type: "paragraph",
+        text: "A treatment catalogue doesn't convey that. A corporate video does: it shows the people, the space and the way of working before the client books.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-clinicas-estetica/hero.webp",
+        alt: "Clinic treatment room with a couch and professional equipment",
+        width: 1696,
+        height: 1300,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Why a video matters for an aesthetic clinic" },
+      {
+        type: "paragraph",
+        text: "The sector is full of similar promises and stock images. A new client can't tell a serious clinic from one that simply has good marketing, and the video gives a real clue: who the professional is, how they speak and what the place is like.",
+      },
+      {
+        type: "paragraph",
+        text: "It also works internally. You introduce a new practitioner, explain what a first consultation involves and attract people from the sector who are also comparing where they want to work.",
+      },
+      {
+        type: "paragraph",
+        text: "What I usually recommend is one introduction piece of one to two minutes plus several 30 to 45 second cuts: the team, the space and what a first consultation is like.",
+      },
+      { type: "heading", level: 2, text: "How to do it properly" },
+      { type: "heading", level: 3, text: "Who appears on camera" },
+      {
+        type: "paragraph",
+        text: "The medical director, two or three practitioners from different areas and the person at reception. I film them seated, with three simple questions and no read-out script. An aesthetician explaining how she prepares a first consultation convinces more than a slogan.",
+      },
+      { type: "heading", level: 3, text: "What you show" },
+      {
+        type: "paragraph",
+        text: "The route a client would take: entrance, reception, treatment room and waiting area. Shots of hands preparing the materials, a tidy treatment room and careful lighting show the level of the clinic without having to explain it. I avoid before-and-after images in the corporate video: they belong in another format with different rules.",
+      },
+      { type: "heading", level: 3, text: "How to film with clients" },
+      {
+        type: "paragraph",
+        text: "For treatment scenes I use team members or clients who have agreed, with a signed image release. I film in a slot with no appointments, with the camera on a tripod and no lights that get in the way. If anyone feels uncomfortable, we stop and leave it for another day.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-clinicas-estetica/intermedia.webp",
+        alt: "Woman lying down with a facial mask during a treatment",
+        width: 1920,
+        height: 1280,
+        caption: "A calm shot of a treatment room in use conveys more calm than any text.",
+      },
+      { type: "heading", level: 2, text: "Common mistakes" },
+      {
+        type: "list",
+        items: [
+          "Using stock footage instead of showing your real team and clinic.",
+          "Filming clients without a signed image release.",
+          "Promising results that depend on each person.",
+          "Filling the video with jargon or equipment names nobody understands.",
+          "Neglecting sound: loud music and echo in the treatment room ruin any interview.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "How long should an aesthetic clinic video be?",
+        answer:
+          "The introduction, between one and two minutes. Topic cuts, between 30 and 45 seconds. For social media, vertical versions of 15 to 30 seconds taken from the same shoot.",
+      },
+      {
+        type: "faq",
+        question: "Can you film without closing the clinic?",
+        answer:
+          "Partly. Interviews and b-roll are shot with one free treatment room in a short slot. Usually I pick a morning with a light appointment book.",
+      },
+      {
+        type: "faq",
+        question: "Do I need permission for clients to appear?",
+        answer:
+          "Yes. You need a written image release from every recognisable person. If you'd rather not manage that, only the team can appear, and it works very well.",
+      },
+      {
+        type: "faq",
+        question: "How long does it take to have the video?",
+        answer:
+          "Between three and five weeks: preparation, one shooting day and editing with one or two rounds of revisions. The schedule is adjusted to the clinic's appointment book.",
+      },
+      {
+        type: "paragraph",
+        text: "If you run an aesthetic clinic in Madrid and want a video that shows your team and the way you work, write to me via /en/contacto. A short call is enough for me to tell you which format fits your clinic.",
+      },
+    ],
+  },
 }
