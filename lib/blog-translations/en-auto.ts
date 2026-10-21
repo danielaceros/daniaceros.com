@@ -354,4 +354,121 @@ export const enAuto: Record<string, BlogPostTranslation> = {
       },
     ],
   },
+
+  "filmacion-profesional-empresas": {
+    title: "Professional filming for companies: what it includes and when it's worth it",
+    description:
+      "What professional filming means for a company, what a shoot includes, how long it takes and when it beats recording on a phone. A guide from Madrid.",
+    readingTime: "5 min read",
+    category: "Guide",
+    tags: [
+      "professional filming",
+      "corporate video",
+      "video shoot",
+      "audiovisual production",
+      "Madrid filmmaker",
+    ],
+    keyword: "professional filming madrid",
+    excerpt:
+      "Professional filming is not just a better camera. Here is what a shoot for a company includes, how long it usually takes and when it beats recording on a phone.",
+    seoTitle: "Professional Filming for Companies in Madrid | Dani Acero",
+    metaDescription:
+      "Professional filming for companies: what a shoot includes, how long it takes and when it beats a phone. A practical guide from a Madrid filmmaker.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "Professional filming is a shoot planned from start to finish: a script or shot list, picture and sound crew, a prepared location and post-production afterwards. What sets it apart from recording on a phone is not only the camera, but that the whole process is designed so the result can be used for years.",
+      },
+      {
+        type: "paragraph",
+        text: "For a company, the usual set-up is a shooting day of 4 to 8 hours, one or two cameras, lavalier microphones and three to five weeks until the edited video is ready. Here is what sits behind those numbers.",
+      },
+      {
+        type: "image",
+        src: "/blog/filmacion-profesional-empresas/hero.webp",
+        alt: "Film set with professional camera and lighting equipment",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "What does professional filming include?" },
+      {
+        type: "paragraph",
+        text: "There are three phases. Preparation: a call to understand the goal, a visit or review of the location and a shot list with the shots and questions. The shoot: controlled camera, light and sound. And post-production: editing, colour grading, audio mixing and delivery in the formats you need.",
+      },
+      {
+        type: "paragraph",
+        text: "Sound is what separates a professional shoot from a home one the most. A lavalier or a boom pole a hand's width from the speaker changes the result more than an expensive camera. Light comes right after: a side window and one soft light are enough for a clean interview.",
+      },
+      {
+        type: "paragraph",
+        text: "I work with large-sensor Sony cameras, fast lenses, a tripod and, when the shot needs it, a gimbal. I edit in DaVinci Resolve and deliver 16:9 and 9:16 versions if the video is also going to social media.",
+      },
+      { type: "heading", level: 2, text: "How is a shoot organised?" },
+      { type: "heading", level: 3, text: "Before: preparation" },
+      {
+        type: "paragraph",
+        text: "I spend one or two hours on a call pinning down the goal, the audience and the tone. With that I prepare the shot list. If the shoot is at your office or in a public space in Madrid, I check permits and access well in advance.",
+      },
+      { type: "heading", level: 3, text: "During: the shooting day" },
+      {
+        type: "paragraph",
+        text: "I arrive 60 to 90 minutes early to set up light and sound. Interviews are filmed first, seated and with three simple questions, then the b-roll: the team at work, the facilities, the details. A well-run day gives enough material for the main video and several short cuts.",
+      },
+      { type: "heading", level: 3, text: "After: editing and delivery" },
+      {
+        type: "paragraph",
+        text: "The first cut arrives in one to two weeks. There are one or two rounds of revisions and a final delivery with subtitles if needed. It is better to collect everyone's comments in a single document, because scattered revisions stretch the timeline.",
+      },
+      {
+        type: "image",
+        src: "/blog/filmacion-profesional-empresas/intermedia.webp",
+        alt: "Video editing timeline on a dark screen",
+        width: 1920,
+        height: 1280,
+        caption: "Editing is half the work: a good shoot can be ruined by a bad cut.",
+      },
+      { type: "heading", level: 2, text: "When is it worth it, and when not?" },
+      {
+        type: "list",
+        items: [
+          "It is worth it if the video will live on your website, in a sales presentation or in a campaign for months.",
+          "It is worth it if executives or clients appear and the company's image depends on the result.",
+          "It is worth it if you need several pieces (main video, cuts, vertical) from a single shooting day.",
+          "It isn't worth it for a one-off internal notice or a quick update: a phone with a microphone is enough there.",
+          "It isn't worth it if the message is still unclear: before shooting, define what you want viewers to do.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "How long does professional filming take for a company?",
+        answer:
+          "Usually one shooting day of 4 to 8 hours. Projects with several locations or many interviews may need two days.",
+      },
+      {
+        type: "faq",
+        question: "How long until the video is ready?",
+        answer:
+          "Between three and five weeks from the first call: preparation, shooting and editing with one or two rounds of revisions.",
+      },
+      {
+        type: "faq",
+        question: "What is the difference from recording on a phone?",
+        answer:
+          "Sound, light and editing. A current phone gives a good image, but without an external microphone or controlled light the result looks amateur, especially in interviews.",
+      },
+      {
+        type: "faq",
+        question: "Do I need a final script before the shoot?",
+        answer:
+          "You don't need a word-for-word script. A shot list and the interview questions are enough, and it usually sounds more natural.",
+      },
+      {
+        type: "paragraph",
+        text: "If you need professional filming for your company in Madrid, write to me via /en/contacto. A short call is enough for me to tell you which shoot fits your goal and how much time it needs.",
+      },
+    ],
+  },
 }

@@ -15338,6 +15338,119 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "filmacion-profesional-empresas",
+    title: "Filmación profesional para empresas: qué incluye y cuándo merece la pena",
+    description:
+      "Qué es una filmación profesional para una empresa, qué incluye un rodaje, cuánto tarda y cuándo compensa frente a grabar con el móvil. Guía desde Madrid.",
+    publishedAt: "2026-10-21",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["filmación profesional", "vídeo corporativo", "rodaje", "producción audiovisual", "empresas", "Madrid"],
+    keyword: "filmación profesional",
+    intent: "informacional",
+    excerpt:
+      "Una filmación profesional no es solo una cámara mejor. Te cuento qué incluye un rodaje para una empresa, cuánto suele tardar y en qué casos compensa frente a grabar con el móvil.",
+    seoTitle: "Filmación profesional para empresas en Madrid | Daniel Acero",
+    metaDescription:
+      "Filmación profesional para empresas: qué incluye un rodaje, cuánto tarda y cuándo compensa frente al móvil. Guía práctica desde Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Una filmación profesional es un rodaje planificado de principio a fin: guion o escaleta, equipo de imagen y sonido, localización preparada y montaje posterior. Lo que la distingue de grabar con el móvil no es solo la cámara, sino que todo el proceso está pensado para que el resultado se pueda usar durante años.",
+      },
+      {
+        type: "paragraph",
+        text: "Para una empresa, lo habitual es una jornada de rodaje de 4 a 8 horas, una o dos cámaras, micrófonos de solapa y entre tres y cinco semanas hasta tener el vídeo editado. Te explico qué hay detrás de esos números.",
+      },
+      {
+        type: "image",
+        src: "/blog/filmacion-profesional-empresas/hero.webp",
+        alt: "Plató de rodaje con equipo de cámara e iluminación profesional",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué incluye una filmación profesional" },
+      {
+        type: "paragraph",
+        text: "Hay tres fases. La preparación: una llamada para entender el objetivo, una visita o revisión de la localización y una escaleta con los planos y las preguntas. El rodaje: cámara, luz y sonido controlados. Y la postproducción: montaje, corrección de color, mezcla de audio y entrega en los formatos que necesites.",
+      },
+      {
+        type: "paragraph",
+        text: "El sonido es lo que más separa un rodaje profesional de uno casero. Un micrófono de solapa o una pértiga a dos palmos del que habla cambia el resultado más que una cámara cara. La luz va justo después: una ventana lateral y un foco suave bastan para que una entrevista se vea limpia.",
+      },
+      {
+        type: "paragraph",
+        text: "Trabajo con cámaras Sony de sensor grande, ópticas luminosas, trípode y, cuando el plano lo pide, gimbal. El montaje lo hago en DaVinci Resolve y entrego versiones 16:9 y 9:16 si el vídeo va a ir también a redes.",
+      },
+      { type: "heading", level: 2, text: "Cómo se organiza un rodaje" },
+      { type: "heading", level: 3, text: "Antes: preparación" },
+      {
+        type: "paragraph",
+        text: "Dedico una o dos horas de llamada a cerrar el objetivo, el público y el tono. Con eso preparo la escaleta y una lista de planos. Si el rodaje es en tu oficina o en un espacio público de Madrid, reviso permisos y accesos con antelación.",
+      },
+      { type: "heading", level: 3, text: "Durante: la jornada" },
+      {
+        type: "paragraph",
+        text: "Llego 60 a 90 minutos antes para montar luz y sonido. Las entrevistas se graban primero, sentados y con tres preguntas sencillas, y después los planos de recurso: el equipo trabajando, las instalaciones, los detalles. Una jornada bien llevada da material para el vídeo principal y varios cortes cortos.",
+      },
+      { type: "heading", level: 3, text: "Después: montaje y entrega" },
+      {
+        type: "paragraph",
+        text: "El primer corte llega en una o dos semanas. Hay una o dos rondas de revisión y una entrega final con subtítulos si hace falta. Es mejor reunir los comentarios de todos los implicados en un solo documento, porque las revisiones sueltas alargan el plazo.",
+      },
+      {
+        type: "image",
+        src: "/blog/filmacion-profesional-empresas/intermedia.webp",
+        alt: "Línea de tiempo de montaje de vídeo en una pantalla oscura",
+        width: 1920,
+        height: 1280,
+        caption: "El montaje es la mitad del trabajo: un buen rodaje se estropea con un mal corte.",
+      },
+      { type: "heading", level: 2, text: "Cuándo merece la pena y cuándo no" },
+      {
+        type: "list",
+        items: [
+          "Merece la pena si el vídeo va a estar en tu web, en una presentación comercial o en una campaña durante meses.",
+          "Merece la pena si aparecen directivos o clientes y la imagen de la empresa depende del resultado.",
+          "Merece la pena si necesitas varias piezas (principal, cortes, vertical) de un mismo día de rodaje.",
+          "No compensa para un aviso interno puntual o una actualización rápida: ahí basta el móvil con un micrófono.",
+          "No compensa si todavía no tienes claro el mensaje: antes de rodar, define qué quieres que haga quien lo vea.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto dura una filmación profesional para una empresa?",
+        answer:
+          "Lo habitual es una jornada de 4 a 8 horas de rodaje. Los proyectos con varias localizaciones o muchas entrevistas pueden necesitar dos días.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tarda en estar listo el vídeo?",
+        answer:
+          "Entre tres y cinco semanas desde la primera llamada: preparación, rodaje y montaje con una o dos rondas de revisión.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué diferencia hay con grabar con el móvil?",
+        answer:
+          "El sonido, la luz y el montaje. Un móvil actual da buena imagen, pero sin micrófono externo ni luz controlada el resultado se nota amateur, sobre todo en entrevistas.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito un guion cerrado antes del rodaje?",
+        answer:
+          "No hace falta un guion palabra por palabra. Con una escaleta y las preguntas de las entrevistas es suficiente, y suele sonar más natural.",
+      },
+      {
+        type: "paragraph",
+        text: "Si necesitas una filmación profesional para tu empresa en Madrid, escríbeme desde /contacto. Con una llamada corta te digo qué rodaje encaja con tu objetivo y cuánto tiempo hace falta.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
