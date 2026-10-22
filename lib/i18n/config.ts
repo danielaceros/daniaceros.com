@@ -187,6 +187,7 @@ export const EN_BLOG_SLUGS: Record<string, string> = {
   "video-corporativo-sector-seguros": "insurance-corporate-video",
   "testimonios-remoto-video-corporativo": "remote-video-testimonials",
   "teaser-vs-video-corporativo-completo": "teaser-vs-corporate-video",
+  "video-corporativo-clinicas-veterinarias": "veterinary-clinic-video-madrid",
 }
 
 const EN_PATH_TO_ES: Record<string, string> = Object.fromEntries([

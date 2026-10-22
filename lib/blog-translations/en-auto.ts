@@ -471,4 +471,120 @@ export const enAuto: Record<string, BlogPostTranslation> = {
       },
     ],
   },
+  "video-corporativo-clinicas-veterinarias": {
+    title: "Corporate video for veterinary clinics: how to show your care before the first appointment",
+    description:
+      "How to plan a corporate video for a veterinary clinic: who speaks, what you show, how to film around animals and which mistakes to avoid.",
+    readingTime: "5 min read",
+    category: "Guide",
+    tags: [
+      "veterinary clinic video",
+      "corporate video",
+      "client trust",
+      "veterinary sector",
+      "Madrid filmmaker",
+    ],
+    keyword: "veterinary clinic video",
+    excerpt:
+      "People choosing a vet are mostly looking for kindness and reassurance. Here is how I plan a corporate video for a veterinary clinic that shows the team, the space and the way you work.",
+    seoTitle: "Corporate Video for Veterinary Clinics | Dani Acero",
+    metaDescription:
+      "Corporate video for veterinary clinics: who speaks, what you show, how to film around animals and mistakes to avoid. A guide from a Madrid filmmaker.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "Someone looking for a vet is not buying just any service. They are trusting a member of the family who cannot say what hurts. So they decide by feel: how the team talks, how they handle the animal, whether the place feels calm.",
+      },
+      {
+        type: "paragraph",
+        text: "A website with a list of services shows none of that. A corporate video does. It removes uncertainty and lets people see the team before the client books an appointment.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-clinicas-veterinarias/hero.webp",
+        alt: "Person wearing a mask sitting next to a dog in a clinic",
+        width: 1920,
+        height: 1440,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Why a video matters for a veterinary clinic" },
+      {
+        type: "paragraph",
+        text: "The client arrives worried and often in a hurry. At that moment they do not read a list of specialities: they look at reviews, photos and videos to see whether the clinic earns their trust. The video works on exactly that decision.",
+      },
+      {
+        type: "paragraph",
+        text: "It also helps internally. You can use it to introduce a new vet, to explain emergencies and opening hours, and to attract nurses and vets, who also compare where they want to work.",
+      },
+      {
+        type: "paragraph",
+        text: "What I usually recommend is one introduction piece of one to two minutes plus several 30 to 45 second cuts: the team, the facilities and what a first appointment looks like.",
+      },
+      { type: "heading", level: 2, text: "How to do it properly" },
+      { type: "heading", level: 3, text: "Who appears on camera" },
+      {
+        type: "paragraph",
+        text: "The clinic manager, two or three professionals from different areas and someone from the front desk. I film them seated, with three simple questions and no read-out script. When someone talks about what they do every day, it shows.",
+      },
+      { type: "heading", level: 3, text: "What you show" },
+      {
+        type: "paragraph",
+        text: "The route a client would take: entrance, waiting room, consulting room and the team explaining what happens at a first visit. Shots of hands calming an animal, tidy equipment and the technology in use convey care without explaining it. I avoid explicit procedures: they do not help someone who arrives scared.",
+      },
+      { type: "heading", level: 3, text: "How to film around animals" },
+      {
+        type: "paragraph",
+        text: "You never force anything with animals. I shoot during a quiet slot, with the camera on a tripod, a fast lens and soft light so nobody is stressed by big lamps. The animals on screen are the team's own pets or clients' pets whose owners agreed, and if a recognisable person appears I need their written image release. If an animal gets uncomfortable, we stop. There is always room to retake another day.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-clinicas-veterinarias/intermedia.webp",
+        alt: "Person holding a silver tabby cat",
+        width: 1920,
+        height: 1280,
+        caption: "A calm shot of how an animal is handled says more than any slogan.",
+      },
+      { type: "heading", level: 2, text: "Common mistakes" },
+      {
+        type: "list",
+        items: [
+          "Using stock pets instead of showing the real team and space.",
+          "Filming clients without a signed image release.",
+          "Forcing the animal to pose until it gets stressed.",
+          "Filling the video with explicit procedures that scare instead of reassure.",
+          "Ignoring sound: barking, echo and background equipment ruin any interview.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "How long should a veterinary clinic video be?",
+        answer:
+          "The introduction, between one and two minutes. Topic cuts, between 30 and 45 seconds. For social media, vertical versions of 15 to 30 seconds taken from the same shoot.",
+      },
+      {
+        type: "faq",
+        question: "Can you film without closing the clinic?",
+        answer:
+          "Partly. Interviews and cutaway shots are filmed with one consulting room free, in a short slot. Usually we pick a morning with a light schedule or a quiet afternoon.",
+      },
+      {
+        type: "faq",
+        question: "Do I need permission for clients to appear?",
+        answer:
+          "Yes. You need a written image release from every recognisable person. If you would rather avoid that, only the team can appear with their own pets, and it works very well.",
+      },
+      {
+        type: "faq",
+        question: "How long until I have the video?",
+        answer:
+          "Between three and five weeks: preparation, one shooting day and editing with one or two review rounds. The calendar adapts to the clinic's schedule.",
+      },
+      {
+        type: "paragraph",
+        text: "If you run a veterinary clinic in Madrid and want a video that shows your team and the way you work, write to me via /en/contacto. A short call is enough for me to tell you which format fits your clinic.",
+      },
+    ],
+  },
 }
