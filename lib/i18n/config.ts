@@ -188,6 +188,7 @@ export const EN_BLOG_SLUGS: Record<string, string> = {
   "testimonios-remoto-video-corporativo": "remote-video-testimonials",
   "teaser-vs-video-corporativo-completo": "teaser-vs-corporate-video",
   "video-corporativo-clinicas-veterinarias": "veterinary-clinic-video-madrid",
+  "videografo-congresos-madrid": "conference-videographer-madrid",
 }
 
 const EN_PATH_TO_ES: Record<string, string> = Object.fromEntries([

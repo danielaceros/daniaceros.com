@@ -15451,6 +15451,128 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "videografo-congresos-madrid",
+    title: "Cómo contratar un videógrafo para un congreso en Madrid",
+    description:
+      "Guía para contratar un videógrafo para un congreso en Madrid: qué pedir, cuántas cámaras, plazos de entrega, permisos del recinto y errores que evitar.",
+    publishedAt: "2026-10-22",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["videógrafo para congresos", "vídeo de congresos Madrid", "grabación de eventos", "aftermovie", "eventos internacionales", "Madrid"],
+    keyword: "videógrafo para congresos en Madrid",
+    intent: "informacional",
+    excerpt:
+      "Si organizas un congreso en Madrid, sobre todo desde fuera de España, contratar bien al videógrafo ahorra problemas. Te cuento qué pedir, qué preguntar y qué plazos son realistas.",
+    seoTitle: "Videógrafo para congresos en Madrid: guía | Daniel Acero",
+    metaDescription:
+      "Videógrafo para congresos en Madrid: qué pedir, cuántas cámaras, plazos, permisos del recinto y errores comunes. Guía de un filmmaker de Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Para contratar un videógrafo para un congreso en Madrid necesitas cerrar cuatro cosas antes de pedir presupuesto: qué se graba (ponencias, entrevistas, ambiente), cuántos días dura, qué entregas quieres y quién gestiona el acceso al recinto. Con eso, cualquier profesional puede darte un precio cerrado.",
+      },
+      {
+        type: "paragraph",
+        text: "Si organizas el evento desde otro país, además conviene que el videógrafo trabaje cómodo en inglés y conozca cómo funcionan los recintos de aquí. Es lo que más tiempo ahorra cuando tú no estás en Madrid.",
+      },
+      {
+        type: "image",
+        src: "/blog/videografo-congresos-madrid/hero.webp",
+        alt: "Asistentes a un congreso en una sala con escenario y pantallas",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué hace un videógrafo en un congreso" },
+      {
+        type: "paragraph",
+        text: "No solo graba lo que pasa en el escenario. Un congreso suele necesitar tres cosas distintas: las ponencias, las entrevistas a ponentes y asistentes, y el ambiente del evento para el vídeo resumen. Cada una pide una forma de grabar diferente.",
+      },
+      {
+        type: "paragraph",
+        text: "Las ponencias se graban con plano fijo, buen sonido y, si hay pantalla, tomando la señal de la mesa de mezclas. Las entrevistas se hacen en un rincón tranquilo, con luz y micrófono propios. El ambiente es cámara en mano, con planos de público, networking y detalles del recinto.",
+      },
+      {
+        type: "paragraph",
+        text: "Si no defines cuál de las tres es la prioridad, el presupuesto se dispara o el resultado se queda corto. Decídelo antes de hablar con nadie.",
+      },
+      { type: "heading", level: 2, text: "Cómo contratarlo bien" },
+      { type: "heading", level: 3, text: "Cuántas cámaras y cuántas personas" },
+      {
+        type: "paragraph",
+        text: "Para un congreso de un día con una sala, lo habitual son dos cámaras en ponencias y una tercera para entrevistas y ambiente, con un videógrafo y un segundo operador. Si hay varias salas en paralelo, necesitas un equipo por sala. Ajusta el equipo al número de salas, no al número de asistentes.",
+      },
+      { type: "heading", level: 3, text: "Sonido y señal del recinto" },
+      {
+        type: "paragraph",
+        text: "El sonido es lo que más falla. Pregunta al recinto si puedes tomar audio de la mesa de mezclas y confirma quién lo gestiona. Aun así, grabo siempre un audio de respaldo con micrófono propio. Si el evento es en varios idiomas, avisa de si hay interpretación simultánea, porque cambia cómo se capta el audio.",
+      },
+      { type: "heading", level: 3, text: "Permisos y acceso al recinto" },
+      {
+        type: "paragraph",
+        text: "En recintos como IFEMA o un palacio de congresos, el acceso del equipo, el material y el montaje suelen tener normas y horarios propios. Pide al organizador o al recinto las condiciones por escrito con tiempo. Y si salen personas reconocibles, avisa a los asistentes de que se graba, con un cartel o en la acreditación.",
+      },
+      {
+        type: "image",
+        src: "/blog/videografo-congresos-madrid/intermedia.webp",
+        alt: "Público sentado en una sala durante una conferencia",
+        width: 1920,
+        height: 1280,
+        caption: "Una sala llena se graba distinto desde el fondo, desde un lateral y con cámara en mano.",
+      },
+      { type: "heading", level: 2, text: "Qué entregables pedir y en cuánto tiempo" },
+      {
+        type: "paragraph",
+        text: "Lo más útil es combinar tres entregas: un vídeo resumen de uno a dos minutos para redes y web, las ponencias completas editadas y varios cortes verticales de 20 a 30 segundos. El resumen suele estar listo en una semana. Las ponencias completas, en dos o tres semanas según el volumen.",
+      },
+      {
+        type: "paragraph",
+        text: "Si necesitas algo el mismo día, por ejemplo un avance para redes durante el evento, se puede, pero hay que pedirlo desde el principio porque requiere una persona de montaje dedicada.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Pedir presupuesto sin decir cuántas salas ni cuántas horas de ponencias hay.",
+          "No confirmar con el recinto quién entrega el audio de la mesa de mezclas.",
+          "Dejar los permisos de acceso y montaje para el día anterior.",
+          "No avisar a los ponentes de que se grabará y publicará su charla.",
+          "Querer todo en el mismo plazo: resumen, ponencias y cortes no se entregan a la vez.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta un videógrafo para un congreso en Madrid?",
+        answer:
+          "Depende de las horas, las salas y las entregas. Un día con un videógrafo y un segundo operador no cuesta lo mismo que un congreso de tres días con varias salas. Con el programa del evento y las entregas que quieres, te doy un precio cerrado.",
+      },
+      {
+        type: "faq",
+        question: "¿Puede grabar en inglés si el evento es internacional?",
+        answer:
+          "Sí. Puedo coordinar con el organizador, hacer entrevistas en inglés y entregar la comunicación del proyecto en ese idioma. Si hay más idiomas en las charlas, se planifica el audio de antemano.",
+      },
+      {
+        type: "faq",
+        question: "¿Con cuánta antelación debo contratarlo?",
+        answer:
+          "Lo ideal son cuatro semanas, sobre todo si hay permisos de recinto que gestionar. En fechas de mucha actividad, como ferias grandes en otoño y primavera, conviene reservar antes.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito autorización de los asistentes para grabar?",
+        answer:
+          "Para el público general basta con avisar de que se graba, con carteles y en la acreditación. A los ponentes y a las personas entrevistadas se les pide una autorización de imagen por escrito.",
+      },
+      {
+        type: "paragraph",
+        text: "Si organizas un congreso en Madrid y quieres saber qué grabación encaja con tu programa, escríbeme desde /contacto. Con el calendario del evento y las entregas que necesitas, te digo cómo lo plantearía y cuánto tiempo hace falta.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {

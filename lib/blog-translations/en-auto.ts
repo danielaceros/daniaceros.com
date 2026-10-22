@@ -587,4 +587,129 @@ export const enAuto: Record<string, BlogPostTranslation> = {
       },
     ],
   },
+  "videografo-congresos-madrid": {
+    title: "How to hire a videographer for a conference in Madrid",
+    description:
+      "A guide to hiring a conference videographer in Madrid: what to ask for, how many cameras, delivery times, venue permits and mistakes to avoid.",
+    readingTime: "5 min read",
+    category: "Guide",
+    tags: [
+      "conference videographer madrid",
+      "conference video Madrid",
+      "event filming",
+      "aftermovie",
+      "international events",
+    ],
+    keyword: "conference videographer madrid",
+    excerpt:
+      "If you are organising a conference in Madrid, especially from abroad, hiring the right videographer saves a lot of trouble. Here is what to ask for, what to check and which timelines are realistic.",
+    seoTitle: "Conference Videographer in Madrid: Guide | Dani Acero",
+    metaDescription:
+      "Conference videographer in Madrid: what to ask for, how many cameras, timelines, venue permits and common mistakes. A guide from a Madrid filmmaker.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "To hire a conference videographer in Madrid, settle four things before asking for a quote: what is filmed (talks, interviews, atmosphere), how many days it lasts, which deliverables you want and who handles venue access. With that, any professional can give you a fixed price.",
+      },
+      {
+        type: "paragraph",
+        text: "If you organise the event from another country, it also helps if the videographer works comfortably in English and knows how venues here operate. That is what saves the most time when you are not in Madrid.",
+      },
+      {
+        type: "image",
+        src: "/blog/videografo-congresos-madrid/hero.webp",
+        alt: "Conference attendees in a hall with a stage and screens",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "What does a conference videographer actually do?" },
+      {
+        type: "paragraph",
+        text: "They do not just film the stage. A conference usually needs three different things: the talks, interviews with speakers and attendees, and the atmosphere of the event for the highlights video. Each one is filmed in a different way.",
+      },
+      {
+        type: "paragraph",
+        text: "Talks are filmed on a fixed shot with good sound and, if there are slides, a feed from the mixing desk. Interviews happen in a quiet corner with my own light and microphone. The atmosphere is handheld: audience, networking and details of the venue.",
+      },
+      {
+        type: "paragraph",
+        text: "If you do not decide which of the three is the priority, the budget balloons or the result falls short. Decide before you talk to anyone.",
+      },
+      { type: "heading", level: 2, text: "How to hire one properly" },
+      { type: "heading", level: 3, text: "How many cameras and how many people" },
+      {
+        type: "paragraph",
+        text: "For a one-day conference with a single room, the usual set-up is two cameras on the talks and a third for interviews and atmosphere, with one videographer and a second operator. If there are several parallel rooms, you need one crew per room. Size the crew to the number of rooms, not the number of attendees.",
+      },
+      { type: "heading", level: 3, text: "Sound and the venue feed" },
+      {
+        type: "paragraph",
+        text: "Sound is what fails most often. Ask the venue whether you can take audio from the mixing desk and confirm who handles it. Even then, I always record a backup with my own microphone. If the event is multilingual, say whether there is simultaneous interpreting, because it changes how the audio is captured.",
+      },
+      { type: "heading", level: 3, text: "Permits and venue access" },
+      {
+        type: "paragraph",
+        text: "At venues such as IFEMA or a conference centre, crew access, equipment and set-up usually have their own rules and schedules. Ask the organiser or the venue for the conditions in writing well ahead. And if recognisable people appear, tell attendees that filming is taking place, with a sign or on the badge.",
+      },
+      {
+        type: "image",
+        src: "/blog/videografo-congresos-madrid/intermedia.webp",
+        alt: "Audience seated in a room during a conference",
+        width: 1920,
+        height: 1280,
+        caption: "A full room is filmed differently from the back, from the side and handheld.",
+      },
+      { type: "heading", level: 2, text: "Which deliverables to ask for and how long they take" },
+      {
+        type: "paragraph",
+        text: "The most useful mix is three deliveries: a one to two minute highlights video for social media and your website, the full edited talks and several vertical cuts of 20 to 30 seconds. The highlights are usually ready within a week. Full talks take two to three weeks depending on volume.",
+      },
+      {
+        type: "paragraph",
+        text: "If you need something the same day, such as a teaser for social media during the event, it can be done, but you have to ask from the start because it needs a dedicated editor on site.",
+      },
+      { type: "heading", level: 2, text: "Common mistakes" },
+      {
+        type: "list",
+        items: [
+          "Asking for a quote without saying how many rooms or hours of talks there are.",
+          "Not confirming with the venue who provides the mixing desk audio.",
+          "Leaving access and set-up permits until the day before.",
+          "Not telling speakers that their talk will be recorded and published.",
+          "Wanting everything on the same timeline: highlights, talks and cuts are not delivered together.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "How much does a conference videographer cost in Madrid?",
+        answer:
+          "It depends on hours, rooms and deliverables. One day with a videographer and a second operator does not cost the same as a three-day conference with several rooms. Send me the programme and the deliverables you want and I will give you a fixed price.",
+      },
+      {
+        type: "faq",
+        question: "Can you work in English for an international event?",
+        answer:
+          "Yes. I can coordinate with the organiser, run interviews in English and handle project communication in that language. If the talks use other languages, we plan the audio in advance.",
+      },
+      {
+        type: "faq",
+        question: "How far in advance should I book?",
+        answer:
+          "Four weeks is ideal, especially if there are venue permits to arrange. In busy periods, such as the big autumn and spring trade fairs, book earlier.",
+      },
+      {
+        type: "faq",
+        question: "Do I need attendees' permission to film?",
+        answer:
+          "For the general audience it is enough to announce that filming is taking place, with signs and on the badge. Speakers and interviewees are asked for a written image release.",
+      },
+      {
+        type: "paragraph",
+        text: "If you are organising a conference in Madrid and want to know which filming fits your programme, write to me via /en/contacto. With the event schedule and the deliverables you need, I will tell you how I would plan it and how much time it takes.",
+      },
+    ],
+  },
 }

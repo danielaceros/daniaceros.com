@@ -984,6 +984,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto. Search Console: 14 impresiones, posición media 33.1. Imágenes Unsplash.",
   },
+  {
+    slug: "videografo-congresos-madrid",
+    keyword: "videógrafo para congresos en Madrid",
+    intent: "informacional",
+    createdAt: "2026-10-22",
+    status: "published",
+    notes: "Auto-generado por blog-auto. Tema público extranjero (rotación 1/3); Search Console no usado (token invalid_grant). Imágenes Unsplash.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {
