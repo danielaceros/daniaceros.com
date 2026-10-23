@@ -15573,6 +15573,124 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "grabacion-eventos-corporativos-empresas",
+    title: "Grabación de eventos corporativos: cómo planificarla y qué pedir",
+    description:
+      "Guía para planificar la grabación de eventos corporativos en Madrid: equipo, cámaras, sonido, entregables y plazos reales, de un filmmaker de empresa.",
+    publishedAt: "2026-10-23",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["grabación de eventos corporativos", "vídeo de eventos", "aftermovie", "evento de empresa", "producción audiovisual", "Madrid"],
+    keyword: "grabación de eventos y corporativos",
+    intent: "informacional",
+    excerpt:
+      "Grabar un evento de empresa no es poner una cámara en la sala. Te cuento cómo lo planifico: qué se graba, con qué equipo, qué entregas pedir y en cuánto tiempo.",
+    seoTitle: "Grabación de eventos corporativos: guía | Daniel Acero",
+    metaDescription:
+      "Grabación de eventos corporativos en Madrid: qué grabar, cuántas cámaras, sonido, entregables y plazos reales. Guía práctica de un filmmaker de empresa.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Para grabar bien un evento corporativo necesitas decidir tres cosas antes de contratar: qué momentos hay que cubrir, qué piezas quieres al final (resumen, ponencias, cortes para redes) y quién da acceso al espacio. Con eso se calcula el equipo y el precio sin sorpresas.",
+      },
+      {
+        type: "paragraph",
+        text: "El error habitual es pensar que basta con una cámara fija en el fondo de la sala. Eso sirve de archivo, pero no de vídeo que alguien quiera ver. Lo que cambia el resultado es la planificación previa, no la cámara.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabacion-eventos-corporativos-empresas/hero.webp",
+        alt: "Asistente con camiseta azul en un evento en interior",
+        width: 1920,
+        height: 1440,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué se graba en un evento corporativo" },
+      {
+        type: "paragraph",
+        text: "Un evento de empresa tiene casi siempre tres capas: lo que pasa en el escenario, las personas (entrevistas, saludos, networking) y el ambiente del espacio. Cada una se graba de forma distinta y conviene decidir cuál manda.",
+      },
+      {
+        type: "paragraph",
+        text: "Si el objetivo es comunicar hacia fuera, pesa más el ambiente y las caras. Si es dejar constancia de una presentación, pesa más el escenario y el sonido. Decirlo desde el principio evita pagar horas de cámara que luego no se usan.",
+      },
+      { type: "heading", level: 2, text: "Cómo planifico la grabación" },
+      { type: "heading", level: 3, text: "Cuántas cámaras y cuántas personas" },
+      {
+        type: "paragraph",
+        text: "Para un evento de media jornada con una sala, trabajo con dos cámaras en el escenario y una tercera en mano para ambiente y entrevistas. Con un evento pequeño de menos de 50 personas, una cámara y un operador pueden ser suficientes. Si hay varias salas a la vez, hace falta un equipo por sala.",
+      },
+      { type: "heading", level: 3, text: "Sonido: lo que más se estropea" },
+      {
+        type: "paragraph",
+        text: "La imagen perdona más que el audio. Pido siempre una salida de la mesa de mezclas y grabo además un audio de respaldo con micrófono propio. Para entrevistas uso lavalier o micro de mano, nunca el sonido ambiente de la sala.",
+      },
+      { type: "heading", level: 3, text: "Luz y espacio" },
+      {
+        type: "paragraph",
+        text: "Visito el espacio o pido fotos antes. Hay que saber de dónde entra la luz, dónde hay pantallas y si existe un rincón tranquilo para entrevistas. En recintos de Madrid como IFEMA o un hotel de congresos, pido las normas de acceso y montaje por escrito con tiempo.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabacion-eventos-corporativos-empresas/intermedia.webp",
+        alt: "Multitud de personas en el vestíbulo de un edificio durante un evento",
+        width: 1920,
+        height: 1280,
+        caption: "El ambiente del evento se graba con cámara en mano, buscando caras y momentos, no solo planos generales.",
+      },
+      { type: "heading", level: 2, text: "Entregables y plazos realistas" },
+      {
+        type: "paragraph",
+        text: "Lo más útil suele ser combinar un vídeo resumen de uno a dos minutos, varios cortes verticales de 20 a 30 segundos para redes y, si hay ponencias, las charlas completas editadas. El resumen puede estar en una semana. Las ponencias completas, en dos o tres semanas según el volumen.",
+      },
+      {
+        type: "paragraph",
+        text: "Si necesitas un avance el mismo día, hay que pedirlo desde el principio porque requiere a una persona de montaje dedicada. Y si el evento es parte de una estrategia más amplia, puedes ver cómo trabajo en /servicios.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Pedir presupuesto sin indicar horas, número de salas ni entregas.",
+          "No definir qué momentos son imprescindibles antes del día del evento.",
+          "Dejar el sonido en manos del recinto sin audio de respaldo.",
+          "No avisar a ponentes y asistentes de que se graba.",
+          "Esperar resumen, ponencias y cortes para redes en el mismo plazo.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta grabar un evento corporativo?",
+        answer:
+          "Depende de las horas, el número de cámaras y las entregas. Una media jornada con un operador no se parece a un evento de dos días con varias salas. Con el programa y lo que quieres entregar, te doy un precio cerrado.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuántas cámaras necesito para un evento?",
+        answer:
+          "Para una sala y media jornada, dos cámaras en escenario y una en mano suelen cubrirlo. En eventos pequeños puede bastar una. El número lo marcan las salas y las entregas, no los asistentes.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tarda en estar el vídeo resumen?",
+        answer:
+          "Un resumen de uno o dos minutos suele estar en una semana. Si hay ponencias completas o varios idiomas, el plazo sube a dos o tres semanas.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito autorización para grabar a los asistentes?",
+        answer:
+          "Para el público basta con avisar de que se graba, con carteles y en la acreditación. A ponentes y personas entrevistadas se les pide una autorización de imagen por escrito.",
+      },
+      {
+        type: "paragraph",
+        text: "Si preparas un evento de empresa en Madrid y quieres saber cómo lo grabaría, escríbeme desde /contacto. Con la fecha, el programa y las entregas que necesitas, te explico el plan y los plazos.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {

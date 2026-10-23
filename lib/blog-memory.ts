@@ -992,6 +992,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto. Tema público extranjero (rotación 1/3); Search Console no usado (token invalid_grant). Imágenes Unsplash.",
   },
+  {
+    slug: "grabacion-eventos-corporativos-empresas",
+    keyword: "grabación de eventos y corporativos",
+    intent: "informacional",
+    createdAt: "2026-10-23",
+    status: "published",
+    notes: "Auto-generado por blog-auto. Search Console: 11 impresiones, posición media 29.9. Imágenes Unsplash.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {

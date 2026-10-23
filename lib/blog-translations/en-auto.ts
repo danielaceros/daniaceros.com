@@ -712,4 +712,119 @@ export const enAuto: Record<string, BlogPostTranslation> = {
       },
     ],
   },
+  "grabacion-eventos-corporativos-empresas": {
+    title: "Corporate event filming in Madrid: how to plan it and what to ask for",
+    description:
+      "How to plan corporate event filming in Madrid: cameras, sound, deliverables and realistic timelines, from a corporate filmmaker based in the city.",
+    readingTime: "5 min read",
+    category: "Guide",
+    tags: ["corporate event filming", "event video", "aftermovie", "company event", "video production", "Madrid"],
+    keyword: "corporate event filming madrid",
+    excerpt:
+      "Filming a company event is not putting one camera at the back of the room. Here is how I plan it: what to film, which gear, which deliverables to ask for and how long it takes.",
+    seoTitle: "Corporate Event Filming in Madrid: Guide | Dani Acero",
+    metaDescription:
+      "Corporate event filming in Madrid: what to film, how many cameras, sound, deliverables and realistic timelines. A practical guide from a corporate filmmaker.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "To film a corporate event well, decide three things before you hire anyone: which moments must be covered, which pieces you want at the end (highlight video, full talks, social cuts) and who gives access to the venue. With that, the crew and the price can be fixed without surprises.",
+      },
+      {
+        type: "paragraph",
+        text: "The usual mistake is thinking one fixed camera at the back of the room is enough. It works as an archive, not as a video anyone wants to watch. Planning ahead changes the result more than the camera does.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabacion-eventos-corporativos-empresas/hero.webp",
+        alt: "Attendee in a blue shirt at an indoor corporate event",
+        width: 1920,
+        height: 1440,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "What do you film at a corporate event?" },
+      {
+        type: "paragraph",
+        text: "A company event almost always has three layers: what happens on stage, the people (interviews, greetings, networking) and the atmosphere of the venue. Each is filmed differently, and you should decide which one leads.",
+      },
+      {
+        type: "paragraph",
+        text: "If the goal is outward communication, atmosphere and faces matter most. If it is to keep a record of a presentation, the stage and the sound matter most. Saying so from the start avoids paying for camera hours you never use.",
+      },
+      { type: "heading", level: 2, text: "How I plan event filming" },
+      { type: "heading", level: 3, text: "How many cameras and how many people?" },
+      {
+        type: "paragraph",
+        text: "For a half-day event in one room I use two cameras on the stage and a third handheld for atmosphere and interviews. For a small event of under 50 people, one camera and one operator can be enough. With several rooms running at once you need a crew per room.",
+      },
+      { type: "heading", level: 3, text: "Sound: what goes wrong most often" },
+      {
+        type: "paragraph",
+        text: "Picture forgives more than audio. I always ask for a feed from the mixing desk and also record a backup with my own microphone. For interviews I use a lavalier or handheld mic, never the room sound.",
+      },
+      { type: "heading", level: 3, text: "Light and space" },
+      {
+        type: "paragraph",
+        text: "I visit the venue or ask for photos beforehand. You need to know where the light comes from, where the screens are and whether there is a quiet corner for interviews. At Madrid venues such as IFEMA or a congress hotel, I ask for access and set-up rules in writing well in advance.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabacion-eventos-corporativos-empresas/intermedia.webp",
+        alt: "Crowd of people in a building lobby during an event",
+        width: 1920,
+        height: 1280,
+        caption: "The atmosphere of an event is filmed handheld, looking for faces and moments, not just wide shots.",
+      },
+      { type: "heading", level: 2, text: "Deliverables and realistic timelines" },
+      {
+        type: "paragraph",
+        text: "The most useful mix is usually a highlight video of one to two minutes, several vertical cuts of 20 to 30 seconds for social media and, if there are talks, the full sessions edited. The highlight can be ready in a week. Full talks take two to three weeks depending on volume.",
+      },
+      {
+        type: "paragraph",
+        text: "If you need a same-day preview, ask for it from the start because it needs a dedicated editor on site. You can also see how I work on my /servicios page.",
+      },
+      { type: "heading", level: 2, text: "Common mistakes" },
+      {
+        type: "list",
+        items: [
+          "Asking for a quote without saying hours, number of rooms or deliverables.",
+          "Not defining the must-have moments before the day of the event.",
+          "Leaving sound to the venue with no backup audio.",
+          "Not telling speakers and attendees that filming is taking place.",
+          "Expecting the highlight video, full talks and social cuts in the same timeframe.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "How much does it cost to film a corporate event?",
+        answer:
+          "It depends on hours, number of cameras and deliverables. A half day with one operator is nothing like a two-day event with several rooms. With the programme and what you want delivered, I give you a fixed price.",
+      },
+      {
+        type: "faq",
+        question: "How many cameras do I need for an event?",
+        answer:
+          "For one room and a half day, two cameras on stage and one handheld usually cover it. Small events can need only one. The number is set by rooms and deliverables, not by attendees.",
+      },
+      {
+        type: "faq",
+        question: "How long does the highlight video take?",
+        answer:
+          "A one to two minute highlight is usually ready in a week. If there are full talks or several languages, the timeline goes up to two or three weeks.",
+      },
+      {
+        type: "faq",
+        question: "Do I need permission to film attendees?",
+        answer:
+          "For the audience it is enough to announce that filming is taking place, with signs and on the badge. Speakers and interviewees are asked for a written image release.",
+      },
+      {
+        type: "paragraph",
+        text: "If you are preparing a company event in Madrid and want to know how I would film it, write to me via /contacto. With the date, the programme and the deliverables you need, I will explain the plan and the timeline.",
+      },
+    ],
+  },
 }
