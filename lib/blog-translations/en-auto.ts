@@ -827,4 +827,110 @@ export const enAuto: Record<string, BlogPostTranslation> = {
       },
     ],
   },
+  "video-corporativo-movil-o-camara-profesional": {
+    title: "Corporate video on a phone or a professional camera: when to use each",
+    description:
+      "When a phone is enough for a corporate video and when a professional camera is worth it: light, sound, background and final use, explained by a Madrid filmmaker.",
+    readingTime: "4 min read",
+    category: "Guide",
+    tags: ["phone corporate video", "professional camera", "filming equipment", "business video", "Madrid filmmaker"],
+    keyword: "phone or camera corporate video",
+    excerpt:
+      "A phone shoots well, but not for everything. Here is how I choose between a phone and a professional camera based on where the video will run, who is on screen and what is at stake.",
+    seoTitle: "Corporate Video: Phone or Pro Camera? | Dani Acero",
+    metaDescription:
+      "Corporate video on a phone or a professional camera: when a phone is enough and when a camera pays off. Light, sound and final use, from Madrid.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "For a corporate video that will live on a website or LinkedIn, a current phone is enough if the piece is informal, well lit and carries no heavy brand pressure. For a leadership interview, an institutional film or anything shown on a big screen, a professional camera is worth it. The difference is not sharpness, it is control.",
+      },
+      {
+        type: "paragraph",
+        text: "What decides it is where the video will be seen, who is on screen and how much that image matters. With those three answers the choice is usually obvious. This is how I decide when a client in Madrid asks me whether they can shoot it on an iPhone.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-movil-o-camara-profesional/hero.webp",
+        alt: "Man holding a phone mounted on a gimbal stabilizer outdoors",
+        width: 1920,
+        height: 1281,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Phone or professional camera: what really changes" },
+      {
+        type: "paragraph",
+        text: "A high-end phone shoots sharp 4K in bright light. The problems show up indoors in low light, where the small sensor adds noise, and with the background: you cannot blur it naturally, so everything is equally sharp and the image looks flat.",
+      },
+      {
+        type: "paragraph",
+        text: "A camera like the Sony A7 with a fast lens separates the speaker from the background, copes better with office lighting and lets you change lenses. It also records colour profiles that grade cleanly in DaVinci Resolve, which a phone handles less well.",
+      },
+      { type: "heading", level: 2, text: "How I decide which one to use" },
+      { type: "heading", level: 3, text: "Where the video will be seen" },
+      {
+        type: "paragraph",
+        text: "A vertical clip for Instagram or a quick reply on LinkedIn works fine on a phone. On a full-screen corporate website, a projection at an event or a paid ad, every flaw shows more. That is where I use a camera.",
+      },
+      { type: "heading", level: 3, text: "Who is on screen and what is at stake" },
+      {
+        type: "paragraph",
+        text: "An internal message from the HR team can be shot on a phone. A CEO interview or a client testimonial represents the brand for years and deserves proper light, sound and image. Think about how long it will stay published.",
+      },
+      { type: "heading", level: 3, text: "Sound matters more than image" },
+      {
+        type: "paragraph",
+        text: "Whatever the camera, audio rules. A phone with a lavalier mic sounds better than an expensive camera on its built-in mic. If your budget covers one upgrade, buy the microphone before the camera.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-movil-o-camara-profesional/intermedia.webp",
+        alt: "Black DSLR camera on a tripod",
+        width: 1920,
+        height: 1280,
+        caption: "A camera on a tripod gives stable shots and control over depth of field, which a phone does not match.",
+      },
+      { type: "heading", level: 2, text: "Common mistakes when shooting on a phone" },
+      {
+        type: "list",
+        items: [
+          "Shooting vertical a video you later want horizontal on the website.",
+          "Using the front camera or digital zoom, which cut quality a lot.",
+          "Recording with the phone mic more than a metre from the speaker.",
+          "Leaving the phone on auto, with exposure and focus shifting mid-sentence.",
+          "Placing the person with their back to a window, face in shadow.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "Can you make a corporate video with a phone?",
+        answer:
+          "Yes, for informal pieces, social media or internal communication. For an institutional film, a leadership interview or an ad, a professional camera gives you more control over light, background and colour.",
+      },
+      {
+        type: "faq",
+        question: "How much more does a professional camera shoot cost than a phone?",
+        answer:
+          "The cost is driven mostly by the operator's hours, sound and editing, not only the camera. With a camera plus minimal lighting and sound, a half-day shoot falls in a range I can pin down once I have the brief.",
+      },
+      {
+        type: "faq",
+        question: "Which phone shoots best for business video?",
+        answer:
+          "Any recent high-end phone records well in 4K at 24 or 30 frames per second. More than the model, light, a stabiliser and an external microphone matter.",
+      },
+      {
+        type: "faq",
+        question: "Is it better to upgrade the phone setup or buy a camera?",
+        answer:
+          "Start with a lavalier microphone and a soft light, which improve the result on any gear. A camera makes sense when you shoot often and need to control background and colour.",
+      },
+      {
+        type: "paragraph",
+        text: "If you are unsure whether to shoot it yourself on a phone or hire a crew, write to me via /contacto. With the use of the video and who appears in it, I will tell you what gear is needed and what you can safely film yourself.",
+      },
+    ],
+  },
 }

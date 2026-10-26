@@ -15691,6 +15691,115 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-movil-o-camara-profesional",
+    title: "Vídeo corporativo con móvil o cámara profesional: cuándo usar cada uno",
+    description:
+      "Cuándo basta el móvil para un vídeo corporativo y cuándo compensa una cámara profesional: luz, sonido, fondo y uso final, explicado por un filmmaker de Madrid.",
+    publishedAt: "2026-10-26",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: ["vídeo corporativo con móvil", "cámara profesional", "equipo de grabación", "vídeo de empresa", "producción audiovisual", "Madrid"],
+    keyword: "vídeo corporativo con móvil o cámara profesional",
+    intent: "informacional",
+    excerpt:
+      "El móvil graba bien, pero no sirve para todo. Te cuento cómo decido entre móvil y cámara profesional según dónde se verá el vídeo, quién sale y qué te juegas.",
+    seoTitle: "Vídeo corporativo: móvil o cámara profesional | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo con móvil o cámara profesional: cuándo basta el teléfono y cuándo compensa la cámara. Luz, sonido y uso final, desde Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Para un vídeo corporativo que se va a ver en una web o en LinkedIn, el móvil actual sirve si la pieza es informal, con luz buena y sin presión de marca. Para una entrevista a dirección, un vídeo institucional o cualquier cosa que vaya a pantalla grande, compensa una cámara profesional. La diferencia no está en la nitidez, está en el control.",
+      },
+      {
+        type: "paragraph",
+        text: "Lo que decide es dónde se va a ver, quién sale en pantalla y cuánto te juegas con esa imagen. Con esas tres respuestas, la elección suele ser evidente. Te cuento cómo lo decido yo cuando un cliente me pregunta si puede grabarlo con el iPhone.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-movil-o-camara-profesional/hero.webp",
+        alt: "Hombre sujetando un móvil montado en un estabilizador gimbal en exteriores",
+        width: 1920,
+        height: 1281,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Móvil o cámara profesional: qué cambia de verdad" },
+      {
+        type: "paragraph",
+        text: "Un móvil de gama alta graba en 4K con buena nitidez a plena luz. El problema aparece en interiores con poca luz, donde el sensor pequeño genera ruido, y con el fondo: no puedes desenfocarlo de forma natural, así que todo sale igual de nítido y la imagen se ve plana.",
+      },
+      {
+        type: "paragraph",
+        text: "Una cámara como la Sony A7 con una óptica luminosa separa al entrevistado del fondo, aguanta mejor la luz de una oficina y permite cambiar de objetivo. Además graba en perfiles de color que se corrigen en DaVinci Resolve sin romper la imagen, algo que el móvil aguanta peor.",
+      },
+      { type: "heading", level: 2, text: "Cómo decido qué usar" },
+      { type: "heading", level: 3, text: "Dónde se va a ver el vídeo" },
+      {
+        type: "paragraph",
+        text: "Si es un clip vertical para Instagram o una respuesta rápida en LinkedIn, el móvil cumple. En una web corporativa a pantalla completa, en una proyección en un evento o en un anuncio de pago, cualquier defecto se nota más. Ahí uso cámara.",
+      },
+      { type: "heading", level: 3, text: "Quién sale en pantalla y cuánto está en juego" },
+      {
+        type: "paragraph",
+        text: "Un mensaje interno del equipo de RRHH se puede grabar con móvil. Una entrevista al CEO o un testimonial de cliente representan a la marca durante años y merecen luz, sonido y una imagen cuidada. Piensa cuánto tiempo va a estar publicado.",
+      },
+      { type: "heading", level: 3, text: "El sonido pesa más que la imagen" },
+      {
+        type: "paragraph",
+        text: "Sea cual sea la cámara, el audio manda. Un móvil con un micrófono lavalier suena mejor que una cámara cara con el micro integrado. Si solo tienes presupuesto para una mejora, cómprate el micrófono antes que la cámara.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-movil-o-camara-profesional/intermedia.webp",
+        alt: "Cámara réflex negra sobre un trípode",
+        width: 1920,
+        height: 1280,
+        caption: "Una cámara sobre trípode da planos estables y controlas la profundidad de campo, algo que el móvil no hace igual.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes al grabar con móvil" },
+      {
+        type: "list",
+        items: [
+          "Grabar en vertical un vídeo que luego se quiere usar en horizontal en la web.",
+          "Usar la cámara frontal o el zoom digital, que bajan mucho la calidad.",
+          "Grabar con el micrófono del teléfono a más de un metro de la persona.",
+          "Dejar el móvil en modo automático, con exposición y enfoque que cambian en mitad de la frase.",
+          "Poner a la persona de espaldas a una ventana, con la cara en sombra.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Se puede hacer un vídeo corporativo con el móvil?",
+        answer:
+          "Sí, para piezas informales, redes sociales o comunicación interna. Para un vídeo institucional, una entrevista a dirección o un anuncio, la cámara profesional da más control sobre luz, fondo y color.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto más cuesta grabar con cámara profesional que con móvil?",
+        answer:
+          "El coste lo marcan sobre todo las horas del operador, el sonido y la edición, no solo la cámara. Con cámara y un equipo mínimo de luz y sonido, un rodaje de media jornada se mueve en un rango que te concreto con el briefing.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué móvil graba mejor para vídeo de empresa?",
+        answer:
+          "Cualquier gama alta reciente graba bien en 4K a 24 o 30 fotogramas. Más que el modelo, importan la luz, un estabilizador y un micrófono externo.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué es mejor, mejorar el móvil o comprar una cámara?",
+        answer:
+          "Primero un micrófono lavalier y una luz suave, que mejoran el resultado con cualquier equipo. Una cámara tiene sentido cuando grabas con frecuencia y necesitas controlar el fondo y el color.",
+      },
+      {
+        type: "paragraph",
+        text: "Si dudas entre grabarlo tú con el móvil o contratar un rodaje, escríbeme desde /contacto. Con el uso del vídeo y la persona que sale, te digo qué equipo hace falta y qué puedes grabar tú mismo sin perder calidad.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {

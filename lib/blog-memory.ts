@@ -1000,6 +1000,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto. Search Console: 11 impresiones, posición media 29.9. Imágenes Unsplash.",
   },
+  {
+    slug: "video-corporativo-movil-o-camara-profesional",
+    keyword: "vídeo corporativo con móvil o cámara profesional",
+    intent: "informacional",
+    createdAt: "2026-10-26",
+    status: "published",
+    notes: "Auto-generado por blog-auto (fallback evergreen, sin candidate SC limpio; temas de la lista agotados, tema nuevo). Imágenes Unsplash.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {
