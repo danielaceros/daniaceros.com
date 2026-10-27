@@ -933,4 +933,125 @@ export const enAuto: Record<string, BlogPostTranslation> = {
       },
     ],
   },
+  "grabar-en-ifema-empresa-extranjera": {
+    title: "Filming at IFEMA Madrid: what a foreign company needs to know",
+    description:
+      "What a foreign company should know before filming at IFEMA Madrid: access rules, setup times, permissions, deadlines and how to hire a local video crew.",
+    readingTime: "5 min read",
+    category: "Guide",
+    tags: [
+      "filming at IFEMA",
+      "trade fair videographer Madrid",
+      "trade show video",
+      "foreign company in Madrid",
+      "aftermovie",
+      "international events",
+    ],
+    keyword: "filming at ifema madrid",
+    excerpt:
+      "If your company exhibits at a trade fair at IFEMA Madrid from abroad, filming without surprises comes down to three things: the venue's rules, the setup schedule and a crew that already knows the place.",
+    seoTitle: "Filming at IFEMA Madrid: Guide for Foreign Companies | Dani Acero",
+    metaDescription:
+      "Filming at IFEMA Madrid as a foreign company: access rules, setup, permissions, deadlines and how to hire a video crew. A guide from a Madrid filmmaker.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "To film at IFEMA as a foreign company you need three things settled before you travel: the access and filming conditions set by the venue or the fair organiser, your stand's setup schedule and a local video crew that has already worked in large halls. With those, the shoot is routine.",
+      },
+      {
+        type: "paragraph",
+        text: "What wastes the most time is not the camera, it is the paperwork and logistics. I see it every time a company arrives from abroad and finds out two days before that the filming crew needed accreditation.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabar-en-ifema-empresa-extranjera/hero.webp",
+        alt: "Visitors walking between stands in a trade fair hall",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "What changes when you film at a venue like IFEMA" },
+      {
+        type: "paragraph",
+        text: "A fair hall is not a rented space. It has access rules for vehicles and equipment, setup and teardown times, and an organiser who decides what can be filmed and when. Those rules depend on each fair and on your exhibitor contract, so do not rely on what worked for another company.",
+      },
+      {
+        type: "paragraph",
+        text: "My advice is to ask in writing, at least two or three weeks ahead, for the filming conditions: whether the crew needs accreditation, which areas are shared, whether there are limits on tripods, drones or your own lighting, and what time you can enter to set up.",
+      },
+      { type: "heading", level: 2, text: "How to prepare the shoot without surprises" },
+      { type: "heading", level: 3, text: "Accreditation and crew access" },
+      {
+        type: "paragraph",
+        text: "The video crew usually needs its own accreditation, just like your stand staff. Send me the details early and I handle it with you. If you arrive the day before with an unaccredited crew, you lose setup hours you cannot recover.",
+      },
+      { type: "heading", level: 3, text: "Setup, light and sound in a large hall" },
+      {
+        type: "paragraph",
+        text: "A fair hall is loud and the light mixes different colour temperatures. For interviews I use lavalier microphones and look for a corner of the stand or a nearby room. For atmosphere I shoot with two cameras: one wide and one on details, with a gimbal to move through the aisles.",
+      },
+      { type: "heading", level: 3, text: "Image rights of the people on camera" },
+      {
+        type: "paragraph",
+        text: "At a fair many people appear who are not your staff. Put up a sign at the stand saying filming is under way and get written consent from anyone featured in an interview. If the video will be used in advertising, it is better to have it signed.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabar-en-ifema-empresa-extranjera/detalle.webp",
+        alt: "Person filming with a camera on a tripod in blue and red light",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Common mistakes foreign companies make" },
+      {
+        type: "list",
+        items: [
+          "Hiring the video crew once the stand is already built, with no time to get accreditation or plan shots.",
+          "Assuming the rules from another fair or another country apply here.",
+          "Not deciding the deliverables in advance: a 60-second cut for social media, a 2-minute aftermovie and loose product clips.",
+          "Forgetting language: if interviews are in English or in your own language, you need subtitles for both markets.",
+          "Leaving the music without a clear licence for commercial use.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Realistic deadlines and deliverables" },
+      {
+        type: "paragraph",
+        text: "For a fair of three or four days, the usual setup is one shooting day per fair day, with one or two operators. A short social media cut can be ready in 48 to 72 hours, while a 2-minute aftermovie with interviews takes one to two weeks, depending on the footage and revisions.",
+      },
+      {
+        type: "paragraph",
+        text: "If you need something published while the fair is still open, tell me in the briefing. A first-day clip can be edited for your social channels while we keep shooting.",
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "Do I need a permit to film at IFEMA?",
+        answer:
+          "It depends on the fair and your exhibitor contract. Filming your own stand with your own crew is usually allowed, but confirm crew access, accreditation and any drone or lighting restrictions in writing with the organiser.",
+      },
+      {
+        type: "faq",
+        question: "How far ahead should I hire the videographer?",
+        answer:
+          "Ideally three or four weeks before the fair. That leaves time to accredit the crew, review the stand plan and agree the list of deliverables.",
+      },
+      {
+        type: "faq",
+        question: "Can you film interviews in English?",
+        answer:
+          "Yes. I work with international clients and deliver the footage with subtitles in the language you need. If an interview is in another language, we cover it in the briefing to plan the translation.",
+      },
+      {
+        type: "faq",
+        question: "What do I get after the fair?",
+        answer:
+          "Usually a short social media cut, a 1 to 2 minute aftermovie and loose clips of products or interviews. Everything in horizontal and, if you ask, in vertical for LinkedIn and Instagram.",
+      },
+      {
+        type: "paragraph",
+        text: "If your company exhibits in Madrid and you want the video sorted before you travel, write to me through /contacto. With the fair dates and your stand I will tell you what crew you need and how to plan it.",
+      },
+    ],
+  },
 }

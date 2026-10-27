@@ -15800,6 +15800,123 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "grabar-en-ifema-empresa-extranjera",
+    title: "Grabar en IFEMA: lo que debe saber una empresa extranjera",
+    description:
+      "Qué debe saber una empresa extranjera antes de grabar en IFEMA Madrid: normas de acceso, montaje, permisos, plazos, idioma y cómo contratar al equipo de vídeo.",
+    publishedAt: "2026-10-27",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["grabar en IFEMA", "videógrafo feria Madrid", "vídeo de ferias", "empresa extranjera en Madrid", "aftermovie", "eventos internacionales"],
+    keyword: "grabar en IFEMA",
+    intent: "informacional",
+    excerpt:
+      "Si tu empresa expone en una feria de IFEMA Madrid desde otro país, grabar sin sorpresas depende de tres cosas: las normas del recinto, el calendario de montaje y un equipo que ya conozca el sitio.",
+    seoTitle: "Grabar en IFEMA: guía para empresas extranjeras | Daniel Acero",
+    metaDescription:
+      "Grabar en IFEMA Madrid siendo una empresa extranjera: normas de acceso, montaje, permisos, plazos y cómo contratar al equipo de vídeo. Guía de un filmmaker.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Para grabar en IFEMA siendo una empresa extranjera necesitas tres cosas cerradas antes de viajar: las condiciones de acceso y rodaje que fija el recinto o el organizador de la feria, el horario de montaje de tu stand y un equipo de vídeo local que ya haya trabajado en pabellones grandes. Con eso, el rodaje es rutina.",
+      },
+      {
+        type: "paragraph",
+        text: "Lo que más tiempo hace perder no es la cámara, es el papeleo y la logística. Lo veo cada vez que una empresa viene de fuera y descubre dos días antes que el equipo de grabación debía estar acreditado.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabar-en-ifema-empresa-extranjera/hero.webp",
+        alt: "Visitantes entre los stands de un pabellón de feria",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué cambia cuando grabas en un recinto como IFEMA" },
+      {
+        type: "paragraph",
+        text: "Un pabellón de feria no es un local alquilado. Tiene normas de acceso de vehículos y material, horarios de montaje y desmontaje, y una organización que decide qué se puede grabar y cuándo. Esas normas dependen de cada feria y de tu contrato de expositor, así que no te fíes de lo que le sirvió a otra empresa.",
+      },
+      {
+        type: "paragraph",
+        text: "Mi consejo es pedir por escrito, con al menos dos o tres semanas de margen, las condiciones para rodar: si el equipo necesita acreditación, qué zonas son de uso común, si hay restricciones con trípodes, drones o iluminación propia, y a qué hora se puede entrar a montar.",
+      },
+      { type: "heading", level: 2, text: "Cómo preparar el rodaje sin sorpresas" },
+      { type: "heading", level: 3, text: "Acreditaciones y acceso del equipo" },
+      {
+        type: "paragraph",
+        text: "El equipo de vídeo suele necesitar acreditación propia, igual que tu personal de stand. Dame los datos con tiempo y los gestiono contigo. Si llegas el día antes con el equipo sin acreditar, pierdes horas de montaje que no se recuperan.",
+      },
+      { type: "heading", level: 3, text: "Montaje, luz y sonido en un pabellón grande" },
+      {
+        type: "paragraph",
+        text: "Un pabellón es ruidoso y la luz mezcla temperaturas distintas. Para entrevistas uso micrófonos de corbata y busco un rincón del stand o una sala cercana. Para ambiente grabo con dos cámaras: una en plano abierto y otra en detalle, con un gimbal para moverme entre pasillos.",
+      },
+      { type: "heading", level: 3, text: "Imagen de las personas que salen" },
+      {
+        type: "paragraph",
+        text: "En una feria sale mucha gente que no es tu personal. Avisa de que se graba con un cartel en el stand y pide autorización por escrito a quien protagonice una entrevista. Si el vídeo se va a usar en publicidad, mejor tenerla firmada.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabar-en-ifema-empresa-extranjera/detalle.webp",
+        alt: "Persona grabando con una cámara sobre trípode con luz azul y roja",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes de las empresas que vienen de fuera" },
+      {
+        type: "list",
+        items: [
+          "Contratar al equipo de vídeo cuando el stand ya está montado, sin margen para acreditar ni para planificar planos.",
+          "Dar por hecho que valen las normas de otra feria o de otro país.",
+          "No decidir de antemano las entregas: un resumen de 60 segundos para redes, un aftermovie de 2 minutos y los clips sueltos de producto.",
+          "Olvidar el idioma: si hay entrevistas en inglés o en tu idioma, hay que subtitular en los dos mercados.",
+          "Dejar la música sin licencia clara para uso comercial.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Plazos y entregas realistas" },
+      {
+        type: "paragraph",
+        text: "Para una feria de tres o cuatro días lo habitual es una jornada de rodaje por día de feria, con uno o dos operadores. Un resumen corto para redes puede estar en 48 a 72 horas, mientras que un aftermovie de 2 minutos con entrevistas lo entrego en una a dos semanas, según el material y las correcciones.",
+      },
+      {
+        type: "paragraph",
+        text: "Si necesitas algo publicado mientras la feria sigue abierta, dímelo en el briefing. Se puede montar un clip del primer día para tus redes mientras seguimos grabando.",
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Hace falta permiso para grabar en IFEMA?",
+        answer:
+          "Depende de la feria y de tu contrato de expositor. Grabar tu propio stand con tu equipo suele estar permitido, pero conviene confirmar por escrito el acceso del equipo, las acreditaciones y las restricciones de drones o iluminación con el organizador.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo antes debo contratar al videógrafo?",
+        answer:
+          "Lo ideal son tres o cuatro semanas antes de la feria. Así hay margen para acreditar al equipo, visitar o revisar el plano del stand y cerrar el guion de entregas.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedes grabar entrevistas en inglés?",
+        answer:
+          "Sí. Trabajo con clientes internacionales y entrego el material con subtítulos en el idioma que necesites. Si la entrevista es en otro idioma, lo hablamos en el briefing para planificar la traducción.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué entrego después de la feria?",
+        answer:
+          "Normalmente un resumen corto para redes, un aftermovie de 1 a 2 minutos y los clips sueltos de producto o entrevistas. Todo en horizontal y, si lo pides, en vertical para LinkedIn e Instagram.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tu empresa expone en Madrid y quieres dejar el vídeo resuelto antes de viajar, escríbeme desde /contacto. Con la fecha de la feria y tu stand te digo qué equipo hace falta y cómo planificarlo.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {

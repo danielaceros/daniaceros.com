@@ -1008,6 +1008,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto (fallback evergreen, sin candidate SC limpio; temas de la lista agotados, tema nuevo). Imágenes Unsplash.",
   },
+  {
+    slug: "grabar-en-ifema-empresa-extranjera",
+    keyword: "grabar en IFEMA",
+    intent: "informacional",
+    createdAt: "2026-10-27",
+    status: "published",
+    notes: "Auto-generado por blog-auto. Tema público extranjero (rotación 1/3); Search Console no usado (token invalid_grant). Imágenes Unsplash.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {
