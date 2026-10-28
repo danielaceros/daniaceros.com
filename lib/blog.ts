@@ -15917,6 +15917,115 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-podcast-corporativo",
+    title: "Vídeo podcast corporativo: cómo grabarlo bien en una empresa",
+    description:
+      "Cómo grabar un vídeo podcast corporativo: cámaras, audio, localización, duración y edición para sacar un episodio largo y varios clips para LinkedIn.",
+    publishedAt: "2026-10-28",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["vídeo podcast corporativo", "podcast de empresa", "grabación de entrevistas", "contenido para LinkedIn", "audio profesional", "videógrafo Madrid"],
+    keyword: "vídeo podcast corporativo",
+    intent: "informacional",
+    excerpt:
+      "Un vídeo podcast de empresa se sostiene con buen audio, dos o tres cámaras fijas y un formato que se pueda recortar en clips. Esto es lo que necesitas y lo que cuesta de verdad.",
+    seoTitle: "Vídeo podcast corporativo: guía para grabarlo | Daniel Acero",
+    metaDescription:
+      "Vídeo podcast corporativo: equipo, audio, localización, duración y edición para publicar un episodio largo y clips cortos. Guía de un filmmaker de Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Un vídeo podcast corporativo funciona cuando hay buen audio, dos o tres cámaras fijas y un guion de temas, no de frases. Con una sala tranquila y una sesión de dos a tres horas puedes grabar dos episodios y sacar de cada uno cinco o seis clips para LinkedIn.",
+      },
+      {
+        type: "paragraph",
+        text: "Lo que más veo fallar no es la imagen, es el sonido y la falta de un formato claro. Si el audio es malo, nadie aguanta veinte minutos. Si no hay formato, el episodio se alarga y no hay clips que rescatar.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-podcast-corporativo/hero.webp",
+        alt: "Micrófono de condensador en un estudio de grabación",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es un vídeo podcast de empresa y para qué sirve" },
+      {
+        type: "paragraph",
+        text: "Es una conversación grabada en audio y vídeo que se publica entera en YouTube o en la web y se trocea en clips para redes. Sirve para dar voz a directivos o expertos internos sin montar una producción pesada, y para tener contenido recurrente con un coste por episodio razonable.",
+      },
+      {
+        type: "paragraph",
+        text: "No es una entrevista corporativa al uso. Aquí la conversación manda: menos guion cerrado, más preguntas abiertas y un presentador que sabe escuchar. Eso se nota en el ritmo y en lo fácil que resulta editar después.",
+      },
+      { type: "heading", level: 2, text: "Cómo se graba bien un vídeo podcast corporativo" },
+      { type: "heading", level: 3, text: "Audio: lo primero que se decide" },
+      {
+        type: "paragraph",
+        text: "Un micrófono dinámico por persona, con brazo y pie, a unos 10 centímetros de la boca, y cada uno en su propio canal. Así puedo limpiar y equilibrar voces en DaVinci Resolve sin que una pise a otra. Los micros de corbata valen si hay poco espacio, pero un micro de mesa suena mejor y le da al invitado una referencia física para hablar.",
+      },
+      { type: "heading", level: 3, text: "Cámaras y encuadres" },
+      {
+        type: "paragraph",
+        text: "Para dos personas uso tres cámaras: un plano general y un plano medio de cada una. Con una Sony A7 en cada posición, en 4K y fijas sobre trípode, tienes cambios de plano en edición sin necesidad de operador por cámara. Con un solo invitado bastan dos.",
+      },
+      { type: "heading", level: 3, text: "Sala, luz y decorado" },
+      {
+        type: "paragraph",
+        text: "Elige una sala sin eco: moqueta, cortinas, estanterías con libros. Evita las salas de reuniones con paredes de cristal. La luz es suave, desde delante y ligeramente lateral, con un fondo con algo de profundidad y un punto de color de marca, no un logotipo gigante.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-podcast-corporativo/detalle.webp",
+        alt: "Monitor de cámara en un rodaje de entrevista",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes al grabar un podcast de empresa" },
+      {
+        type: "list",
+        items: [
+          "Grabar en una sala de reuniones con eco y ruido de aire acondicionado.",
+          "Usar un único micro de sala para todos los invitados.",
+          "No acordar un formato: duración, secciones y número de preguntas.",
+          "Publicar el episodio entero sin sacar clips cortos de 30 a 60 segundos.",
+          "Cambiar de presentador cada episodio y perder la voz de la serie.",
+          "Dejar la edición para el final sin haber pensado en qué clips quieres.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto dura un vídeo podcast corporativo?",
+        answer:
+          "Entre 20 y 40 minutos suele funcionar en empresa. Más largo exige un invitado muy sólido, y más corto no deja espacio para que la conversación se desarrolle.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuántas cámaras necesito?",
+        answer:
+          "Dos para un invitado y tres para dos personas. Todas fijas y en 4K, así puedes reencuadrar en edición y sacar versiones verticales para redes.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tarda la edición de un episodio?",
+        answer:
+          "Entre tres y cinco días laborables para el episodio completo y cinco clips cortos, contando una ronda de revisión. Si hay subtítulos y versión vertical, cuenta algún día más.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo grabarlo en mi propia oficina?",
+        answer:
+          "Sí, si encuentras una sala silenciosa y con poca reverberación. Voy un día antes o llego con tiempo para probar el sonido, porque la acústica decide más que la cámara.",
+      },
+      {
+        type: "paragraph",
+        text: "Si quieres montar un podcast de empresa y no sabes por dónde empezar, escríbeme desde /contacto. Con el número de invitados y la sala disponible te digo qué equipo hace falta y cuántos episodios puedo grabar en una sesión.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {

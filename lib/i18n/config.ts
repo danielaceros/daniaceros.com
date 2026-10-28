@@ -71,6 +71,7 @@ export const EN_PATHS: Record<string, string> = {
 
 /** Slugs de artículos del blog en inglés (clave = slug ES, valor = slug EN). */
 export const EN_BLOG_SLUGS: Record<string, string> = {
+  "video-podcast-corporativo": "corporate-video-podcast",
   "grabar-en-ifema-empresa-extranjera": "filming-at-ifema-madrid",
   "video-corporativo-academias-idiomas": "language-school-video-madrid",
   "cuanto-cuesta-video-corporativo": "how-much-does-a-corporate-video-cost",

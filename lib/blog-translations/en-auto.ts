@@ -4,6 +4,119 @@
 import type { BlogPostTranslation } from "@/lib/blog-translations"
 
 export const enAuto: Record<string, BlogPostTranslation> = {
+  "video-podcast-corporativo": {
+    title: "Corporate video podcast: how to record one properly in a company",
+    description:
+      "How to record a corporate video podcast: cameras, audio, location, length and editing to get one long episode and several short clips for LinkedIn.",
+    readingTime: "5 min read",
+    category: "Guide",
+    tags: [
+      "corporate video podcast",
+      "company podcast",
+      "interview recording",
+      "LinkedIn content",
+      "professional audio",
+      "videographer Madrid",
+    ],
+    keyword: "corporate video podcast",
+    excerpt:
+      "A company video podcast stands on good audio, two or three fixed cameras and a format that can be cut into clips. Here is what you need and what it really takes.",
+    seoTitle: "Corporate Video Podcast: How to Record One | Dani Acero",
+    metaDescription:
+      "Corporate video podcast: gear, audio, location, length and editing to publish a full episode and short clips. A guide from a Madrid filmmaker.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "A corporate video podcast works when you have clean audio, two or three fixed cameras and a list of topics, not scripted lines. With a quiet room and a two to three hour session you can record two episodes and pull five or six LinkedIn clips from each.",
+      },
+      {
+        type: "paragraph",
+        text: "What fails most often is not the picture, it is the sound and the lack of a clear format. If the audio is poor, nobody sits through twenty minutes. Without a format, the episode drags and there are no clips to rescue.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-podcast-corporativo/hero.webp",
+        alt: "Condenser microphone in a recording studio",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "What is a company video podcast and what is it for?" },
+      {
+        type: "paragraph",
+        text: "It is a conversation recorded in audio and video, published in full on YouTube or your website and cut into clips for social media. It gives executives or in-house experts a voice without a heavy production, and it gives you recurring content at a reasonable cost per episode.",
+      },
+      {
+        type: "paragraph",
+        text: "It is not a standard corporate interview. The conversation leads: less closed script, more open questions and a host who knows how to listen. You can hear it in the pace, and it makes the edit much easier.",
+      },
+      { type: "heading", level: 2, text: "How to record a corporate video podcast well" },
+      { type: "heading", level: 3, text: "Audio: decide this first" },
+      {
+        type: "paragraph",
+        text: "One dynamic microphone per person, on a boom arm, about 10 centimetres from the mouth, each on its own channel. That lets me clean and balance voices in DaVinci Resolve without one speaker bleeding into another. Lavalier mics work in tight spaces, but a table mic sounds better and gives the guest a physical cue to speak to.",
+      },
+      { type: "heading", level: 3, text: "Cameras and framing" },
+      {
+        type: "paragraph",
+        text: "For two people I use three cameras: a wide shot and a medium shot of each speaker. With a Sony A7 in each position, locked off on tripods in 4K, you get shot changes in the edit without an operator on every camera. With a single guest, two cameras are enough.",
+      },
+      { type: "heading", level: 3, text: "Room, light and set" },
+      {
+        type: "paragraph",
+        text: "Pick a room without echo: carpet, curtains, bookshelves. Avoid glass-walled meeting rooms. Light is soft, from the front and slightly to the side, with a background that has some depth and a touch of brand colour, not a giant logo.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-podcast-corporativo/detalle.webp",
+        alt: "Camera monitor on an interview shoot",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Common mistakes when recording a company podcast" },
+      {
+        type: "list",
+        items: [
+          "Recording in a meeting room with echo and air conditioning noise.",
+          "Using a single room microphone for every guest.",
+          "Not agreeing on a format: length, sections and number of questions.",
+          "Publishing the full episode without cutting 30 to 60 second clips.",
+          "Changing host every episode and losing the voice of the series.",
+          "Leaving the edit for last without deciding which clips you want.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "How long should a corporate video podcast be?",
+        answer:
+          "Between 20 and 40 minutes usually works for a company. Longer needs a very strong guest, and shorter leaves no room for the conversation to develop.",
+      },
+      {
+        type: "faq",
+        question: "How many cameras do I need?",
+        answer:
+          "Two for one guest and three for two people. All fixed and in 4K, so you can reframe in the edit and make vertical versions for social media.",
+      },
+      {
+        type: "faq",
+        question: "How long does editing an episode take?",
+        answer:
+          "Three to five working days for the full episode and five short clips, including one round of revisions. With subtitles and a vertical version, allow a few more days.",
+      },
+      {
+        type: "faq",
+        question: "Can I record it in my own office?",
+        answer:
+          "Yes, if you find a quiet room with little reverb. I visit the day before or arrive early to test the sound, because room acoustics matter more than the camera.",
+      },
+      {
+        type: "paragraph",
+        text: "If you want to start a company podcast in Madrid and are not sure where to begin, write to me through /contacto. With the number of guests and the room available, I will tell you what equipment you need and how many episodes I can record in one session.",
+      },
+    ],
+  },
   "video-corporativo-academias-idiomas": {
     title: "Corporate video for language schools: how to show your method and your teachers",
     description:
