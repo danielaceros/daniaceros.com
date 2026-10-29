@@ -1167,4 +1167,117 @@ export const enAuto: Record<string, BlogPostTranslation> = {
       },
     ],
   },
+  "video-formacion-interna-elearning-empresas": {
+    title: "Corporate training video: how to produce one people actually finish",
+    description:
+      "How to produce corporate training and e-learning video: length, structure, screen and on-camera recording, and realistic delivery times from a Madrid filmmaker.",
+    readingTime: "5 min read",
+    category: "Guide",
+    tags: [
+      "corporate training video",
+      "e-learning video production",
+      "internal training",
+      "tutorial video",
+      "video production Madrid",
+      "videographer Madrid",
+    ],
+    keyword: "corporate training video",
+    excerpt:
+      "A training video works when it is short, teaches one thing and is recorded with the viewer's time in mind. Here is what I decide before shooting and what it really takes.",
+    seoTitle: "Corporate Training Video Production Guide | Dani Acero",
+    metaDescription:
+      "Corporate training video: structure, length, recording and timelines for e-learning and internal training. A guide from a Madrid filmmaker.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "A corporate training video works when each piece teaches one thing, runs three to six minutes and has clean sound. In one shooting day I can record eight to twelve short videos for the same course, with the same set and the same lighting.",
+      },
+      {
+        type: "paragraph",
+        text: "What fails most often is not the camera. It is the plan: one forty-minute video nobody finishes, echoey audio and a presenter reading slides. If the employee drops out after two minutes, the training never happened.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-formacion-interna-elearning-empresas/hero.webp",
+        alt: "People working on laptops in an office",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "What is an internal training video and when is it worth it?" },
+      {
+        type: "paragraph",
+        text: "It is a video that explains a procedure, a tool or a policy to employees and can be watched whenever needed. It pays off when the same explanation is repeated more than three or four times a year: onboarding protocols, how to use software, internal policies or product training for sales teams.",
+      },
+      {
+        type: "paragraph",
+        text: "It does not pay off if the content changes every month. In that case a living document or a simple screen recording you can redo in an afternoon is better. A camera shoot is for material that will last at least a year.",
+      },
+      { type: "heading", level: 2, text: "How to produce a training video people watch to the end" },
+      { type: "heading", level: 3, text: "One goal per video and a short running time" },
+      {
+        type: "paragraph",
+        text: "Before shooting I write one sentence with the client: by the end of this video, the employee will be able to do X. If the sentence has a comma or an \"and\", it is two videos. Three to six minute pieces get finished; twenty-minute ones get abandoned and picked up late.",
+      },
+      { type: "heading", level: 3, text: "On-camera presenter plus screen recording" },
+      {
+        type: "paragraph",
+        text: "For software I combine a shot of the trainer with a screen capture. The trainer appears at the start and the end for a human touch, and in the middle the screen is shown with zoom on what matters. I record the capture in 1080p or 4K and the narration, with a lavalier or desk microphone, in a room without echo.",
+      },
+      { type: "heading", level: 3, text: "A short, rehearsed script" },
+      {
+        type: "paragraph",
+        text: "The trainer is an internal expert, not an actor. I prepare a script of bullet points, not full sentences, and use a teleprompter only when the content is technical and exact. A ten-minute rehearsal before recording saves half an hour of retakes.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-formacion-interna-elearning-empresas/detalle.webp",
+        alt: "Laptop next to a notebook on a work desk",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Common mistakes in corporate training video" },
+      {
+        type: "list",
+        items: [
+          "Putting the whole course into one long video with no chapters.",
+          "Recording in a meeting room with echo and air conditioning noise.",
+          "Reading slides aloud instead of explaining with real examples from the company.",
+          "Forgetting subtitles: many people watch training in the office with the sound off.",
+          "Not deciding who will update the video when the process changes.",
+          "Shooting on a different set each day, so the pieces of one course do not look like the same series.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "How long should an employee training video be?",
+        answer:
+          "Three to six minutes per piece, with a single goal. If the topic is long I split it into chapters and group them in a playlist or in the company's LMS.",
+      },
+      {
+        type: "faq",
+        question: "How many training videos can you record in a day?",
+        answer:
+          "Eight to twelve short pieces if the script is ready and the set stays the same. With screen capture and several trainers, I plan a day and a half.",
+      },
+      {
+        type: "faq",
+        question: "How long does editing take?",
+        answer:
+          "One to two weeks for a ten-piece course, including one round of revisions. Subtitles and supporting graphics can add a few days.",
+      },
+      {
+        type: "faq",
+        question: "Can you film in our own office?",
+        answer:
+          "Yes, if there is a quiet room with little reverb. I arrive early to test the sound, because acoustics matter more than the camera in training that people watch with headphones.",
+      },
+      {
+        type: "paragraph",
+        text: "If you want to turn your internal processes into a video course and do not know how to split it, write to me through /contacto. With the syllabus and the number of trainers I will tell you how many pieces it makes, how many shooting days you need and what timeline is realistic.",
+      },
+    ],
+  },
 }

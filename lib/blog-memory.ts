@@ -1024,6 +1024,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto (fallback evergreen, temas de la lista agotados, tema nuevo; Search Console no usado, token invalid_grant). Imágenes Unsplash.",
   },
+  {
+    slug: "video-formacion-interna-elearning-empresas",
+    keyword: "vídeo de formación para empresas",
+    intent: "informacional",
+    createdAt: "2026-10-29",
+    status: "published",
+    notes: "Auto-generado por blog-auto (fallback evergreen, temas de la lista agotados, tema nuevo; Search Console no usado, token invalid_grant). Imágenes Unsplash.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {

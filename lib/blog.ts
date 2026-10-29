@@ -16026,6 +16026,115 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-formacion-interna-elearning-empresas",
+    title: "Vídeo de formación para empresas: cómo grabarlo para que se vea entero",
+    description:
+      "Cómo producir vídeo de formación interna y e-learning para empresas: duración, estructura, grabación de pantalla y de persona, y plazos reales de entrega.",
+    publishedAt: "2026-10-29",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["vídeo de formación para empresas", "e-learning corporativo", "formación interna", "vídeo tutorial", "producción audiovisual", "videógrafo Madrid"],
+    keyword: "vídeo de formación para empresas",
+    intent: "informacional",
+    excerpt:
+      "Un vídeo de formación funciona si es corto, tiene un objetivo por pieza y se graba pensando en quien lo ve con prisa. Esto es lo que decido antes de grabar y lo que cuesta de verdad.",
+    seoTitle: "Vídeo de formación para empresas: guía | Daniel Acero",
+    metaDescription:
+      "Vídeo de formación para empresas: estructura, duración, grabación y plazos para e-learning y formación interna. Guía de un filmmaker de Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Un vídeo de formación para empresas funciona cuando cada pieza enseña una sola cosa, dura entre tres y seis minutos y se graba con buen sonido. Con una jornada de rodaje puedo grabar entre ocho y doce vídeos cortos de un mismo curso, con el mismo decorado y la misma luz.",
+      },
+      {
+        type: "paragraph",
+        text: "Lo que más veo fallar no es la cámara. Es el planteamiento: un único vídeo de cuarenta minutos que nadie termina, un audio con eco y un presentador leyendo diapositivas. Si el empleado abandona a los dos minutos, la formación no ha existido.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-formacion-interna-elearning-empresas/hero.webp",
+        alt: "Personas trabajando con portátiles en una oficina",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es un vídeo de formación interna y cuándo compensa" },
+      {
+        type: "paragraph",
+        text: "Es una pieza audiovisual que explica un procedimiento, una herramienta o una norma a los empleados, y que se puede ver cuando haga falta. Compensa cuando la misma explicación se repite más de tres o cuatro veces al año: protocolos de entrada, uso de un software, políticas internas o formación de producto para ventas.",
+      },
+      {
+        type: "paragraph",
+        text: "No compensa si el contenido cambia cada mes. En ese caso es mejor un documento vivo o una grabación de pantalla sencilla que se pueda rehacer en una tarde. Un rodaje con cámara se reserva para lo que va a durar al menos un año.",
+      },
+      { type: "heading", level: 2, text: "Cómo se produce un vídeo de formación que se ve entero" },
+      { type: "heading", level: 3, text: "Un objetivo por vídeo y duración corta" },
+      {
+        type: "paragraph",
+        text: "Antes de grabar escribo con el cliente una frase: al terminar este vídeo, el empleado sabrá hacer X. Si la frase lleva una coma o una «y», son dos vídeos. Las piezas de tres a seis minutos se acaban; las de veinte se abandonan y se retoman tarde.",
+      },
+      { type: "heading", level: 3, text: "Persona a cámara más grabación de pantalla" },
+      {
+        type: "paragraph",
+        text: "Para software combino plano de persona y captura de pantalla. El formador aparece al principio y al final para dar cercanía, y en medio se ve la pantalla con zoom en lo que importa. La captura la grabo en 1080p o 4K y la narración, con un micrófono de corbata o de mesa, en una sala sin eco.",
+      },
+      { type: "heading", level: 3, text: "Guion corto y ensayado" },
+      {
+        type: "paragraph",
+        text: "El formador es un experto interno, no un actor. Le preparo un guion de puntos, no de frases, y un teleprompter solo si el contenido es técnico y exacto. Un ensayo de diez minutos antes de grabar ahorra media hora de tomas repetidas.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-formacion-interna-elearning-empresas/detalle.webp",
+        alt: "Portátil junto a un cuaderno sobre una mesa de trabajo",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes en el vídeo de formación para empresas" },
+      {
+        type: "list",
+        items: [
+          "Meter todo el curso en un solo vídeo largo sin capítulos.",
+          "Grabar en una sala de reuniones con eco y ruido de aire acondicionado.",
+          "Leer diapositivas en voz alta en lugar de explicar con ejemplos reales de la empresa.",
+          "Olvidar los subtítulos: mucha gente ve la formación en la oficina sin sonido.",
+          "No decidir quién actualizará el vídeo cuando cambie el proceso.",
+          "Grabar con un decorado distinto cada día, de modo que las piezas de un mismo curso no parecen de la misma serie.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto debe durar un vídeo de formación para empleados?",
+        answer:
+          "Entre tres y seis minutos por pieza, con un único objetivo. Si el tema es largo, lo divido en capítulos y los agrupo en una lista de reproducción o en el LMS de la empresa.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuántos vídeos se pueden grabar en un día?",
+        answer:
+          "Entre ocho y doce piezas cortas si el guion está listo y el decorado es el mismo. Si hay captura de pantalla y varios formadores, cuento con un día y medio.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tarda la edición?",
+        answer:
+          "Entre una y dos semanas para un curso de diez piezas, contando una ronda de revisión. Los subtítulos y los gráficos de apoyo pueden añadir unos días.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar en la propia oficina?",
+        answer:
+          "Sí, si hay una sala silenciosa y con poca reverberación. Voy con tiempo para probar el sonido, porque la acústica pesa más que la cámara en una formación que se ve con auriculares.",
+      },
+      {
+        type: "paragraph",
+        text: "Si quieres convertir tus procesos internos en un curso en vídeo y no sabes cómo dividirlo, escríbeme desde /contacto. Con el temario y el número de formadores te digo cuántas piezas salen, cuántos días de rodaje hacen falta y qué plazo es realista.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
