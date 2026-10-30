@@ -194,6 +194,7 @@ export const EN_BLOG_SLUGS: Record<string, string> = {
   "videografo-congresos-madrid": "conference-videographer-madrid",
   "grabacion-eventos-corporativos-empresas": "corporate-event-filming-madrid",
   "video-corporativo-movil-o-camara-profesional": "phone-or-pro-camera-corporate-video",
+  "videografo-ingles-madrid": "english-speaking-videographer-madrid",
 }
 
 const EN_PATH_TO_ES: Record<string, string> = Object.fromEntries([

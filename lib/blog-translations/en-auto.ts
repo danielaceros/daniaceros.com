@@ -1280,4 +1280,117 @@ export const enAuto: Record<string, BlogPostTranslation> = {
       },
     ],
   },
+  "videografo-ingles-madrid": {
+    title: "English-speaking videographer in Madrid: what to ask before you hire",
+    description:
+      "What an English-speaking videographer in Madrid should offer: briefing, on-set direction, deliverables and English subtitles for teams filming in Spain from abroad.",
+    readingTime: "5 min read",
+    category: "Guide",
+    tags: [
+      "english-speaking videographer madrid",
+      "bilingual videographer",
+      "foreign company filming in Spain",
+      "video production Madrid",
+      "english subtitles",
+      "filmmaker Madrid",
+    ],
+    keyword: "english speaking videographer madrid",
+    excerpt:
+      "Hiring an English-speaking videographer is not just about emailing without a translator. It is about closing the brief, permits, deliverables and subtitles without misunderstandings when your team is abroad.",
+    seoTitle: "English-Speaking Videographer in Madrid: What to Ask | Dani Acero",
+    metaDescription:
+      "English-speaking videographer in Madrid: what to ask for in the brief, on set and in delivery if your team or client is based outside Spain.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "An English-speaking videographer in Madrid should be able to do three things in English: close the brief and the quote in writing, direct the people on camera on shoot day, and deliver files with subtitles and file names your team understands. If they only answer emails in English, that is not enough.",
+      },
+      {
+        type: "paragraph",
+        text: "When your company is based abroad, the language is the easy part. Distance is what gets complicated: time zones, who approves the script and who signs the permits. That is why I ask for everything in writing and for a single point of contact.",
+      },
+      {
+        type: "image",
+        src: "/blog/videografo-ingles-madrid/hero.webp",
+        alt: "Two professionals talking during a business meeting in a modern office",
+        width: 1880,
+        height: 1253,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Why English matters in a video production" },
+      {
+        type: "paragraph",
+        text: "On a shoot there is a small decision every ten minutes: repeat a take, change position, adjust a sentence. If the person directing and the person in front of the camera do not understand each other easily, the interview comes out stiff and shooting time is lost.",
+      },
+      {
+        type: "paragraph",
+        text: "It matters in the edit too. A video for a head office in London, Berlin or New York is reviewed in English, with comments tied to timecodes. Whoever edits must understand those comments without running them through machine translation.",
+      },
+      { type: "heading", level: 2, text: "What to ask an English-speaking videographer for" },
+      { type: "heading", level: 3, text: "A written brief and quote in English" },
+      {
+        type: "paragraph",
+        text: "I ask for a quote that spells out shooting days, number of cameras, deliverables and revision rounds. On international projects that is usually two rounds of changes, and it is best written down before starting. A thirty-minute call to go over the brief saves days of emails.",
+      },
+      { type: "heading", level: 3, text: "Directing people on set" },
+      {
+        type: "paragraph",
+        text: "If your executive speaks English with an accent or in a hurry, you want a videographer who gives short, clear instructions. I use simple sentences and rephrase a question if needed. I always record a test take to set the sound before getting into the real content.",
+      },
+      { type: "heading", level: 3, text: "Deliverables and English subtitles" },
+      {
+        type: "paragraph",
+        text: "English subtitles are the norm when a video is watched in several countries. I deliver the .srt file separately and a version with burned-in subtitles for social media. If the video is in Spanish, I review the translation before handing it over; I do not trust automatic output without a read-through.",
+      },
+      {
+        type: "image",
+        src: "/blog/videografo-ingles-madrid/detalle.webp",
+        alt: "Person working on a laptop during a video call",
+        width: 1920,
+        height: 1281,
+      },
+      { type: "heading", level: 2, text: "Common mistakes when hiring remotely" },
+      {
+        type: "list",
+        items: [
+          "Assuming that speaking English also means writing a script in English.",
+          "Not naming a single contact who approves on behalf of the company.",
+          "Forgetting filming permits for specific locations in Madrid.",
+          "Asking for a delivery date without counting the time zone on review rounds.",
+          "Not agreeing on file formats: resolution, aspect ratio and subtitles.",
+          "Hiring on price alone without seeing similar previous work.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "How much does an English-speaking videographer cost in Madrid?",
+        answer:
+          "The language does not usually change the rate. The shooting day, the cameras and the edit do. A one-day shoot with editing and subtitles ranges from a few hundred to a few thousand euros depending on scope.",
+      },
+      {
+        type: "faq",
+        question: "Can you deliver the video with English subtitles?",
+        answer:
+          "Yes. I deliver the subtitle file separately and a version with them burned in. If the original audio is in Spanish, I review the translation before sending it.",
+      },
+      {
+        type: "faq",
+        question: "Can the shoot be directed remotely?",
+        answer:
+          "Yes. I send the shooting plan in advance and open a video call on shoot day so your team can see the shots and approve the important ones live.",
+      },
+      {
+        type: "faq",
+        question: "How long does delivery take?",
+        answer:
+          "One to three weeks depending on the length of the video and the revision rounds. With a time difference, I count one extra day per round.",
+      },
+      {
+        type: "paragraph",
+        text: "If your company or your client is based outside Spain and you need to film in Madrid, write to me through /contacto with the date, the location and the language of the video. I will reply with a shooting plan and a fixed quote.",
+      },
+    ],
+  },
 }

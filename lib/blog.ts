@@ -16135,6 +16135,115 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "videografo-ingles-madrid",
+    title: "Videógrafo que habla inglés en Madrid: qué pedir antes de contratar",
+    description:
+      "Qué debe ofrecer un videógrafo que habla inglés en Madrid: comunicación, briefing, entregables y subtítulos para equipos internacionales que graban en España.",
+    publishedAt: "2026-10-30",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["videógrafo que habla inglés en Madrid", "videógrafo bilingüe", "empresa extranjera", "producción en Madrid", "subtítulos en inglés", "filmmaker Madrid"],
+    keyword: "videógrafo que habla inglés en Madrid",
+    intent: "informacional",
+    excerpt:
+      "Contratar a un videógrafo que hable inglés no es solo poder escribirse sin traductor. Es cerrar briefing, permisos, entregables y subtítulos sin malentendidos cuando el equipo está fuera de España.",
+    seoTitle: "Videógrafo que habla inglés en Madrid: qué pedir | Daniel Acero",
+    metaDescription:
+      "Videógrafo que habla inglés en Madrid: qué pedir en el briefing, la grabación y la entrega si tu equipo o tu cliente están fuera de España.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Un videógrafo que habla inglés en Madrid tiene que poder hacer tres cosas en ese idioma: cerrar el briefing y el presupuesto por escrito, dirigir a las personas que salen a cámara el día del rodaje y entregar los archivos con subtítulos y nombres que tu equipo entienda. Si solo contesta emails en inglés, no es suficiente.",
+      },
+      {
+        type: "paragraph",
+        text: "Cuando la empresa tiene la sede fuera de España, el idioma es la parte fácil. Lo que se complica es la distancia: husos horarios, quien aprueba el guion y quien firma los permisos. Por eso pido que todo quede escrito y con un único interlocutor.",
+      },
+      {
+        type: "image",
+        src: "/blog/videografo-ingles-madrid/hero.webp",
+        alt: "Dos profesionales conversan durante una reunión de trabajo en una oficina moderna",
+        width: 1880,
+        height: 1253,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué importa el inglés en una producción de vídeo" },
+      {
+        type: "paragraph",
+        text: "En un rodaje hay decisiones pequeñas cada diez minutos: repetir una toma, cambiar de sitio, ajustar una frase. Si quien entrevista y quien está delante de la cámara no se entienden con soltura, la entrevista sale rígida y se pierde tiempo de jornada.",
+      },
+      {
+        type: "paragraph",
+        text: "También importa en la edición. Un vídeo para una matriz en Londres, Berlín o Nueva York se revisa en inglés, con comentarios sobre el minutado. Quien edita tiene que entender esos comentarios sin pasarlos por un traductor automático.",
+      },
+      { type: "heading", level: 2, text: "Qué pedir a un videógrafo que habla inglés" },
+      { type: "heading", level: 3, text: "Briefing y presupuesto en inglés, por escrito" },
+      {
+        type: "paragraph",
+        text: "Pido que el presupuesto detalle jornadas, número de cámaras, entregables y rondas de revisión. En una producción internacional suelen ser dos rondas de cambios, y conviene dejarlo escrito antes de empezar. Una llamada de media hora para repasar el briefing ahorra días de emails.",
+      },
+      { type: "heading", level: 3, text: "Dirección de personas en el rodaje" },
+      {
+        type: "paragraph",
+        text: "Si tu directivo habla inglés con acento o con prisa, conviene un videógrafo que sepa dar indicaciones claras y cortas. Yo uso frases simples y repito la pregunta de otra forma si hace falta. Grabo siempre una toma de prueba para ajustar el sonido antes de entrar en materia.",
+      },
+      { type: "heading", level: 3, text: "Entregables y subtítulos en inglés" },
+      {
+        type: "paragraph",
+        text: "Los subtítulos en inglés son lo habitual cuando el vídeo se ve en varios países. Entrego el archivo .srt aparte y una versión con los subtítulos incrustados para redes. Si el vídeo está en español, la traducción la reviso antes de entregarla; no me fío del resultado automático sin una lectura.",
+      },
+      {
+        type: "image",
+        src: "/blog/videografo-ingles-madrid/detalle.webp",
+        alt: "Persona trabajando con un portátil durante una videollamada",
+        width: 1920,
+        height: 1281,
+      },
+      { type: "heading", level: 2, text: "Errores comunes al contratar a distancia" },
+      {
+        type: "list",
+        items: [
+          "Dar por hecho que hablar inglés incluye saber redactar un guion en inglés.",
+          "No fijar un único interlocutor que apruebe en nombre de la empresa.",
+          "Olvidar los permisos de grabación en localizaciones concretas de Madrid.",
+          "Pedir una fecha de entrega sin contar la diferencia horaria de las revisiones.",
+          "No acordar el formato de los archivos: resolución, relación de aspecto y subtítulos.",
+          "Contratar solo por el precio sin ver un trabajo previo parecido.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta un videógrafo que habla inglés en Madrid?",
+        answer:
+          "El idioma no suele cambiar la tarifa. Lo que la cambia es la jornada, las cámaras y la edición. Un rodaje de un día con edición y subtítulos se mueve en rangos de varios cientos a pocos miles de euros según el alcance.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedes entregar el vídeo con subtítulos en inglés?",
+        answer:
+          "Sí. Entrego el archivo de subtítulos aparte y una versión con ellos incrustados. Si el audio original es en español, reviso la traducción antes de enviarla.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede dirigir el rodaje en remoto?",
+        answer:
+          "Sí. Mando el plan de rodaje con antelación y abro una videollamada el día de la grabación para que tu equipo vea los planos y apruebe lo importante en directo.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tarda la entrega?",
+        answer:
+          "Entre una y tres semanas según la duración del vídeo y las rondas de revisión. Con la diferencia horaria, cuento un día extra por cada ronda.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tu empresa o tu cliente están fuera de España y necesitas grabar en Madrid, escríbeme desde /contacto con la fecha, la localización y el idioma del vídeo. Te respondo con un plan de rodaje y un presupuesto cerrado.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
