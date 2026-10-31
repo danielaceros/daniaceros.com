@@ -1040,6 +1040,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto. Tema público extranjero (rotación 1/3); Search Console no usado (token invalid_grant). Imágenes Unsplash/Pexels.",
   },
+  {
+    slug: "video-felicitacion-navidena-corporativa",
+    keyword: "vídeo de felicitación navideña corporativa",
+    intent: "informacional",
+    createdAt: "2026-10-31",
+    status: "published",
+    notes: "Auto-generado por blog-auto (fallback evergreen, temas de la lista agotados, tema nuevo de temporada; Search Console no usado, token invalid_grant). Imágenes Unsplash.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {

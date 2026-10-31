@@ -1393,4 +1393,122 @@ export const enAuto: Record<string, BlogPostTranslation> = {
       },
     ],
   },
+  "video-felicitacion-navidena-corporativa": {
+    title: "Corporate Christmas greeting video: how to do it well",
+    description:
+      "How to plan a corporate Christmas greeting video: length, script, who goes on camera, shooting timeline and the mistakes that make it generic. Madrid filmmaker guide.",
+    readingTime: "5 min read",
+    category: "Guide",
+    tags: [
+      "corporate christmas video",
+      "company christmas greeting video",
+      "holiday video for clients",
+      "video production Madrid",
+      "year-end company video",
+      "filmmaker Madrid",
+    ],
+    keyword: "corporate christmas video",
+    excerpt:
+      "A Christmas greeting video works when it is short, has one idea and is delivered by someone your clients recognise. Here are the timeline, structure and mistakes I see every December.",
+    seoTitle: "Corporate Christmas Greeting Video: How to Do It | Dani Acero",
+    metaDescription:
+      "Corporate Christmas greeting video: length, script, who goes on camera and the timeline to have it ready before the holidays. A Madrid filmmaker's guide.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "A good corporate Christmas greeting video runs 30 to 60 seconds, has a single idea and is presented by someone your clients recognise. If you want it in their inbox by mid-December, the shoot has to be wrapped by the end of November.",
+      },
+      {
+        type: "paragraph",
+        text: "Most video greetings I see end the same way: a team shot of people smiling, background music and a generic message. They get forwarded once and forgotten. The difference is rarely the budget; it is deciding beforehand what you want the viewer to remember.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-felicitacion-navidena-corporativa/hero.webp",
+        alt: "Christmas tree with blurred lights in the background, festive greeting atmosphere",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Why a video instead of a card" },
+      {
+        type: "paragraph",
+        text: "December is the month a client receives the most greetings. A PDF card competes with forty others. A short video with a familiar face gets opened more, gets shown around the team and can be reused on LinkedIn or in an email signature.",
+      },
+      {
+        type: "paragraph",
+        text: "It also works as a human year-end note. If your year brought changes, a move, a launch or a bigger team, one well-told minute explains it better than a paragraph.",
+      },
+      { type: "heading", level: 2, text: "How to make a corporate Christmas video well" },
+      { type: "heading", level: 3, text: "One idea, one message" },
+      {
+        type: "paragraph",
+        text: "Pick a single thread: thank your clients, sum up the year in three milestones or show who is behind the team. I write the script at about 90 words at most, which at a natural pace is roughly 40 seconds. If it does not fit, something has to go.",
+      },
+      { type: "heading", level: 3, text: "Who goes on camera" },
+      {
+        type: "paragraph",
+        text: "It works best with one executive and two or three team members your clients actually know. I avoid asking the whole staff to say a line: it drags, there are weak takes and the edit gets messy. With five well-directed people, the shoot fits in a morning of around three hours.",
+      },
+      { type: "heading", level: 3, text: "Where and how to shoot" },
+      {
+        type: "paragraph",
+        text: "I shoot in your own office with soft light and a tidy background, using one camera and a lavalier microphone. You do not need to decorate the whole office; one discreet festive detail in the frame is enough. If the office is small or not photogenic, I look for a room with a window and work with natural light.",
+      },
+      { type: "heading", level: 3, text: "Format and delivery" },
+      {
+        type: "paragraph",
+        text: "I deliver a horizontal 16:9 version for email and web, and a vertical 9:16 version for social media. I add burned-in subtitles, because many people will watch without sound. Editing takes around five working days with one round of changes.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-felicitacion-navidena-corporativa/detalle.webp",
+        alt: "Group of colleagues smiling for a photo in a modern office",
+        width: 1200,
+        height: 675,
+      },
+      { type: "heading", level: 2, text: "Common mistakes in a Christmas greeting video" },
+      {
+        type: "list",
+        items: [
+          "Starting to plan in December and running out of shooting and editing dates.",
+          "Going over a minute: hardly anyone watches a two-minute greeting.",
+          "Using commercial music without a licence, which can get the video blocked on social media.",
+          "Making the whole team say a line instead of choosing one clear voice.",
+          "Forgetting image release forms for the people on camera.",
+          "Sending it in an email with no specific subject line or recognisable thumbnail.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "How long should a company Christmas greeting video be?",
+        answer:
+          "Between 30 and 60 seconds. After the one-minute mark far fewer people watch to the end, and a greeting does not need more.",
+      },
+      {
+        type: "faq",
+        question: "How far ahead should I book it?",
+        answer:
+          "Ideally you hire in early November, shoot before the month ends and receive delivery in the first week of December. Diaries fill up in December and editing time gets squeezed.",
+      },
+      {
+        type: "faq",
+        question: "Do the people in the video need to give consent?",
+        answer:
+          "Yes. Anyone on camera should sign an image release that states the planned use: web, social media and email. It is a short document, best signed before the shoot.",
+      },
+      {
+        type: "faq",
+        question: "Can it be filmed with a phone?",
+        answer:
+          "It can if the message is very informal and the light and sound are good. For a company whose image matters in sales, I prefer a camera with a lavalier microphone; audio is what people notice most.",
+      },
+      {
+        type: "paragraph",
+        text: "If you want a Christmas greeting video for your company in Madrid, write to me through /contacto with your deadline and the number of people who would appear on camera. I will propose a shooting plan and a fixed quote.",
+      },
+    ],
+  },
 }

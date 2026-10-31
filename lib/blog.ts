@@ -16244,6 +16244,120 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-felicitacion-navidena-corporativa",
+    title: "Vídeo de felicitación navideña corporativa: cómo hacerlo bien",
+    description:
+      "Cómo preparar un vídeo de felicitación navideña para tu empresa: duración, guion, quién sale a cámara, plazos de grabación y errores que lo vuelven genérico.",
+    publishedAt: "2026-10-31",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["vídeo de felicitación navideña", "vídeo corporativo Navidad", "felicitación de empresa", "vídeo para clientes", "producción en Madrid", "filmmaker Madrid"],
+    keyword: "vídeo de felicitación navideña corporativa",
+    intent: "informacional",
+    excerpt:
+      "Una felicitación navideña en vídeo funciona cuando es corta, tiene una idea y la dice alguien reconocible de la empresa. Estos son los plazos, la estructura y los errores que veo cada diciembre.",
+    seoTitle: "Vídeo de felicitación navideña corporativa | Daniel Acero",
+    metaDescription:
+      "Vídeo de felicitación navideña corporativa: duración, guion, quién sale a cámara y plazos para tenerlo listo antes de las fiestas. Guía de un filmmaker de Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Un buen vídeo de felicitación navideña corporativa dura entre 30 y 60 segundos, tiene una sola idea y lo presenta alguien de la empresa que los clientes reconocen. Si quieres tenerlo en la bandeja de tus clientes a mediados de diciembre, la grabación debe cerrarse a finales de noviembre.",
+      },
+      {
+        type: "paragraph",
+        text: "La mayoría de las felicitaciones en vídeo que veo acaban igual: plano de equipo sonriendo, música de fondo y un texto genérico. Se reenvían una vez y se olvidan. La diferencia casi nunca está en el presupuesto, está en decidir antes qué quieres que recuerde quien lo ve.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-felicitacion-navidena-corporativa/hero.webp",
+        alt: "Árbol de Navidad con luces desenfocadas al fondo, ambiente de felicitación navideña",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué un vídeo y no una tarjeta" },
+      {
+        type: "paragraph",
+        text: "Diciembre es el mes en que más felicitaciones recibe un cliente. Una tarjeta en PDF compite con otras cuarenta. Un vídeo corto con una cara conocida se abre más, se enseña dentro del equipo y se puede reutilizar en LinkedIn o en la firma de correo.",
+      },
+      {
+        type: "paragraph",
+        text: "También sirve de cierre de año con tono humano. Si has tenido un año de cambios, una mudanza, un lanzamiento o un equipo más grande, un minuto bien contado lo explica mejor que un párrafo.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Una idea, un mensaje" },
+      {
+        type: "paragraph",
+        text: "Elige un solo hilo: agradecer a los clientes, resumir el año en tres hitos o enseñar quién hay detrás del equipo. Escribo el guion en unas 90 palabras como máximo, que a ritmo natural son cerca de 40 segundos. Si no cabe, sobra algo.",
+      },
+      { type: "heading", level: 3, text: "Quién sale a cámara" },
+      {
+        type: "paragraph",
+        text: "Funciona mejor un directivo y dos o tres personas del equipo que los clientes conocen de verdad. Evito pedir a toda la plantilla que diga una frase: se alarga, hay tomas flojas y la edición se complica. Con cinco personas bien dirigidas, la grabación cabe en una mañana de unas tres horas.",
+      },
+      { type: "heading", level: 3, text: "Dónde y cómo grabar" },
+      {
+        type: "paragraph",
+        text: "Grabo en la propia oficina con luz suave y un fondo ordenado, con una cámara y un micrófono de solapa. No hace falta decorar la sede entera; basta un detalle navideño discreto en el plano. Si la oficina es pequeña o poco fotogénica, busco una sala con ventana y trabajo con luz natural.",
+      },
+      { type: "heading", level: 3, text: "Formato y entrega" },
+      {
+        type: "paragraph",
+        text: "Entrego una versión horizontal 16:9 para correo y web, y una vertical 9:16 para redes. Añado subtítulos incrustados, porque muchos lo verán sin sonido. El tiempo de edición ronda los cinco días laborables con una ronda de cambios.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-felicitacion-navidena-corporativa/detalle.webp",
+        alt: "Grupo de compañeros sonriendo para una foto en una oficina moderna",
+        width: 1200,
+        height: 675,
+      },
+      { type: "heading", level: 2, text: "Errores comunes en una felicitación en vídeo" },
+      {
+        type: "list",
+        items: [
+          "Empezar a pensarlo en diciembre y quedarse sin fecha de grabación ni de edición.",
+          "Superar el minuto: casi nadie ve una felicitación de dos minutos.",
+          "Usar música comercial sin licencia, que puede bloquear el vídeo en redes.",
+          "Hacer que todo el equipo diga una frase en lugar de elegir una voz clara.",
+          "Olvidar la autorización de imagen de las personas que salen a cámara.",
+          "Enviarlo en un correo sin un asunto concreto ni una miniatura reconocible.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto debe durar un vídeo de felicitación navideña de empresa?",
+        answer:
+          "Entre 30 y 60 segundos. Pasado el minuto baja mucho la gente que lo termina de ver, y para una felicitación no necesitas más.",
+      },
+      {
+        type: "faq",
+        question: "¿Con cuánta antelación hay que encargarlo?",
+        answer:
+          "Lo ideal es contratar a principios de noviembre, grabar antes de que termine el mes y recibir la entrega en la primera semana de diciembre. En diciembre las agendas se llenan y la edición se aprieta.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta autorización de las personas que salen en el vídeo?",
+        answer:
+          "Sí. Quien sale a cámara debe firmar una autorización de uso de imagen, con el uso previsto: web, redes y correo. Es un documento breve que conviene tener antes del rodaje.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar con el móvil?",
+        answer:
+          "Se puede si el mensaje es muy informal y hay buena luz y sonido. Para una empresa cuya imagen pesa en la venta, prefiero una cámara con micrófono de solapa; el audio es lo que más se nota.",
+      },
+      {
+        type: "paragraph",
+        text: "Si quieres una felicitación en vídeo para tu empresa en Madrid, escríbeme desde /contacto con la fecha límite y el número de personas que saldrían a cámara. Te propongo un plan de rodaje y un presupuesto cerrado.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
