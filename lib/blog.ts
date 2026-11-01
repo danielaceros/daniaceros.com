@@ -16358,6 +16358,115 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "cuanto-cuesta-videografo-eventos-madrid",
+    title: "Cuánto cuesta un videógrafo de eventos en Madrid: de qué depende el precio",
+    description:
+      "Cuánto cuesta un videógrafo de eventos en Madrid: qué incluye la jornada, qué hace subir el presupuesto y cómo comparar ofertas con el mismo alcance.",
+    publishedAt: "2026-11-01",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["cuánto cuesta un videógrafo de eventos", "videógrafo de eventos Madrid", "presupuesto grabación evento", "aftermovie", "empresa extranjera", "filmmaker Madrid"],
+    keyword: "cuánto cuesta un videógrafo de eventos en Madrid",
+    intent: "informacional",
+    excerpt:
+      "El precio de un videógrafo de eventos en Madrid depende de la duración, las cámaras, la edición y los plazos. Así se desglosa un presupuesto y qué preguntar para comparar ofertas.",
+    seoTitle: "Cuánto cuesta un videógrafo de eventos en Madrid | Daniel Acero",
+    metaDescription:
+      "Cuánto cuesta un videógrafo de eventos en Madrid: qué incluye la jornada, qué sube el presupuesto y cómo comparar ofertas con el mismo alcance.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "El precio de un videógrafo de eventos en Madrid no se fija por hora de rodaje, sino por alcance: cuántas horas de evento, cuántas cámaras, qué entregables y en qué plazo. Como orientación de mercado, un evento corto con un operador y un vídeo resumen se mueve en varios cientos de euros; uno de jornada completa con edición, en cifras de cuatro dígitos.",
+      },
+      {
+        type: "paragraph",
+        text: "Estas cifras son un marco para comparar, no una tarifa cerrada. Dos presupuestos del mismo importe pueden incluir cosas muy distintas, y esa diferencia casi siempre está en la edición y en los derechos de uso. Lo primero es poner las ofertas sobre el mismo alcance.",
+      },
+      {
+        type: "image",
+        src: "/blog/cuanto-cuesta-videografo-eventos-madrid/hero.webp",
+        alt: "Público sentado en una sala durante un evento profesional",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué incluye el precio de un videógrafo de eventos" },
+      {
+        type: "paragraph",
+        text: "Un presupuesto honesto separa tres bloques: el rodaje (tiempo en el evento y equipo), la postproducción (edición, color, audio, subtítulos) y la entrega (formatos, rondas de cambios, licencia de uso). Si una oferta solo habla de \"cobertura del evento\", falta información.",
+      },
+      {
+        type: "paragraph",
+        text: "El rodaje se cobra por media jornada (hasta 4 horas) o jornada completa (hasta 8 o 9 horas). La edición suele pesar tanto como el rodaje: un evento de un día genera varias horas de material que hay que revisar, seleccionar y montar.",
+      },
+      { type: "heading", level: 2, text: "Qué hace subir o bajar el presupuesto" },
+      { type: "heading", level: 3, text: "Duración y número de cámaras" },
+      {
+        type: "paragraph",
+        text: "Una cámara cubre bien un evento pequeño: ambiente, asistentes y algún testimonio. Para un congreso con ponencias en un auditorio conviene una segunda cámara fija y audio directo de la mesa de sonido. Cada operador adicional suma una jornada al presupuesto.",
+      },
+      { type: "heading", level: 3, text: "Qué entregas: resumen, ponencias, redes" },
+      {
+        type: "paragraph",
+        text: "Un vídeo resumen de 1 a 3 minutos es lo más habitual. Si además quieres las ponencias completas, cinco o seis clips verticales para redes o entrevistas a asistentes, la edición se multiplica. Pide el desglose por pieza y no por paquete.",
+      },
+      { type: "heading", level: 3, text: "Plazo, localización y desplazamientos" },
+      {
+        type: "paragraph",
+        text: "Una entrega en 24 o 48 horas, por ejemplo para publicar durante una feria, se paga aparte. Los recintos como IFEMA tienen normas de acreditación y de acceso de equipo que conviene consultar semanas antes. Dentro de Madrid ciudad los desplazamientos apenas cambian el precio.",
+      },
+      {
+        type: "image",
+        src: "/blog/cuanto-cuesta-videografo-eventos-madrid/detalle.webp",
+        alt: "Mujer hablando sobre un escenario mientras un operador de cámara la graba",
+        width: 1920,
+        height: 1269,
+      },
+      { type: "heading", level: 2, text: "Cómo comparar presupuestos sin equivocarte" },
+      {
+        type: "list",
+        items: [
+          "Pide que cada oferta indique horas de rodaje, número de cámaras y operadores.",
+          "Exige el número de piezas entregadas y su duración aproximada.",
+          "Confirma cuántas rondas de cambios incluye la edición y cuánto cuesta una extra.",
+          "Pregunta por la licencia de uso: web, redes, publicidad de pago y duración.",
+          "Aclara quién paga acreditaciones, parking y gastos de recinto.",
+          "Si tu equipo está fuera de España, pide el presupuesto y el contrato en inglés.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta un videógrafo para un evento de medio día en Madrid?",
+        answer:
+          "Como orientación, entre varios cientos y algo más de mil euros con un operador y un vídeo resumen editado. Depende de las horas reales, del plazo y de si necesitas audio directo o varias piezas.",
+      },
+      {
+        type: "faq",
+        question: "¿La edición está incluida en el precio?",
+        answer:
+          "Depende de la oferta. En mi caso la entrego siempre dentro del presupuesto, con el número de piezas y de rondas de cambios acordado por escrito. Si una oferta no la menciona, pregunta.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto antes hay que contratar?",
+        answer:
+          "Con tres o cuatro semanas de antelación hay agenda casi siempre. En ferias y semanas de congresos de Madrid conviene cerrar antes, y más si el recinto exige acreditar al equipo.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedes trabajar en inglés con una empresa extranjera?",
+        answer:
+          "Sí. Presupuesto, briefing y entrega pueden ir en inglés, con subtítulos si el evento es en español. Lo dejo todo por escrito con un único interlocutor.",
+      },
+      {
+        type: "paragraph",
+        text: "Si quieres un presupuesto para tu evento en Madrid, escríbeme desde /contacto con la fecha, el recinto, las horas de duración y lo que necesitas recibir. Te respondo con un desglose por rodaje, edición y entrega. Si buscas ideas de formato, tienes más en /video-eventos-madrid.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {

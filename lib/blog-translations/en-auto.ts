@@ -1511,4 +1511,117 @@ export const enAuto: Record<string, BlogPostTranslation> = {
       },
     ],
   },
+  "cuanto-cuesta-videografo-eventos-madrid": {
+    title: "How much does an event videographer cost in Madrid? What drives the price",
+    description:
+      "How much an event videographer costs in Madrid: what a day rate includes, what pushes a quote up and how to compare offers on the same scope.",
+    readingTime: "5 min read",
+    category: "Guide",
+    tags: [
+      "event videographer cost madrid",
+      "event videographer madrid",
+      "event filming quote",
+      "aftermovie",
+      "foreign company filming in Spain",
+      "filmmaker Madrid",
+    ],
+    keyword: "event videographer cost madrid",
+    excerpt:
+      "An event videographer's price in Madrid depends on duration, cameras, editing and deadlines. Here is how a quote breaks down and what to ask so you can compare offers.",
+    seoTitle: "Event Videographer Cost in Madrid: What to Expect | Dani Acero",
+    metaDescription:
+      "Event videographer cost in Madrid: what a day rate includes, what raises the quote and how to compare offers on the same scope. By Dani Acero.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "An event videographer's price in Madrid is not set per hour of filming but by scope: how many event hours, how many cameras, which deliverables and what deadline. As a market guide, a short event with one operator and one highlight video runs to a few hundred euros; a full day with editing runs to four figures.",
+      },
+      {
+        type: "paragraph",
+        text: "These figures are a frame for comparing, not a fixed rate. Two quotes for the same amount can include very different things, and the gap is almost always in the editing and the usage rights. First, put the offers on the same scope.",
+      },
+      {
+        type: "image",
+        src: "/blog/cuanto-cuesta-videografo-eventos-madrid/hero.webp",
+        alt: "Audience seated in a room during a professional event",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "What does an event videographer's price include?" },
+      {
+        type: "paragraph",
+        text: "An honest quote separates three blocks: filming (time at the event and equipment), post-production (editing, colour, audio, subtitles) and delivery (formats, revision rounds, usage licence). If an offer only says \"event coverage\", information is missing.",
+      },
+      {
+        type: "paragraph",
+        text: "Filming is charged per half day (up to 4 hours) or full day (up to 8 or 9 hours). Editing often weighs as much as filming: a one-day event produces several hours of footage that has to be reviewed, selected and cut.",
+      },
+      { type: "heading", level: 2, text: "What raises or lowers an event videography quote?" },
+      { type: "heading", level: 3, text: "Duration and number of cameras" },
+      {
+        type: "paragraph",
+        text: "One camera covers a small event well: atmosphere, attendees and a few testimonials. For a conference with talks in an auditorium you want a second fixed camera and a direct audio feed from the sound desk. Each extra operator adds a day to the quote.",
+      },
+      { type: "heading", level: 3, text: "What you receive: highlight video, talks, social clips" },
+      {
+        type: "paragraph",
+        text: "A highlight video of 1 to 3 minutes is the most common deliverable. If you also want full talks, five or six vertical clips for social media or attendee interviews, the editing multiplies. Ask for a breakdown per piece, not per package.",
+      },
+      { type: "heading", level: 3, text: "Deadline, venue and travel" },
+      {
+        type: "paragraph",
+        text: "A 24 or 48 hour turnaround, for example to publish during a trade fair, is charged separately. Venues like IFEMA have accreditation and equipment access rules worth checking weeks ahead. Inside Madrid city, travel barely changes the price.",
+      },
+      {
+        type: "image",
+        src: "/blog/cuanto-cuesta-videografo-eventos-madrid/detalle.webp",
+        alt: "Woman speaking on a stage while a camera operator films her",
+        width: 1920,
+        height: 1269,
+      },
+      { type: "heading", level: 2, text: "How to compare quotes without getting it wrong" },
+      {
+        type: "list",
+        items: [
+          "Ask every offer to state filming hours, number of cameras and operators.",
+          "Require the number of delivered pieces and their approximate length.",
+          "Confirm how many revision rounds editing includes and what an extra one costs.",
+          "Ask about the usage licence: web, social, paid advertising and duration.",
+          "Clarify who pays for accreditations, parking and venue fees.",
+          "If your team is abroad, ask for the quote and the contract in English.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "How much does a videographer cost for a half-day event in Madrid?",
+        answer:
+          "As a guide, between a few hundred and a little over a thousand euros with one operator and an edited highlight video. It depends on the real hours, the deadline and whether you need direct audio or several pieces.",
+      },
+      {
+        type: "faq",
+        question: "Is editing included in the price?",
+        answer:
+          "It depends on the offer. In my case it is always inside the quote, with the number of pieces and revision rounds agreed in writing. If an offer does not mention it, ask.",
+      },
+      {
+        type: "faq",
+        question: "How far ahead should I book?",
+        answer:
+          "With three or four weeks' notice there is almost always room in the calendar. During Madrid trade fairs and conference weeks, book earlier, and more so if the venue requires accrediting the crew.",
+      },
+      {
+        type: "faq",
+        question: "Can you work in English with a foreign company?",
+        answer:
+          "Yes. Quote, brief and delivery can be in English, with subtitles if the event is in Spanish. I keep everything in writing with one point of contact.",
+      },
+      {
+        type: "paragraph",
+        text: "If you want a quote for your event in Madrid, write to me through /contacto with the date, the venue, the duration and what you need to receive. I will reply with a breakdown by filming, editing and delivery. For format ideas, see /video-eventos-madrid.",
+      },
+    ],
+  },
 }

@@ -1048,6 +1048,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto (fallback evergreen, temas de la lista agotados, tema nuevo de temporada; Search Console no usado, token invalid_grant). Imágenes Unsplash.",
   },
+  {
+    slug: "cuanto-cuesta-videografo-eventos-madrid",
+    keyword: "cuánto cuesta un videógrafo de eventos en Madrid",
+    intent: "informacional",
+    createdAt: "2026-11-01",
+    status: "published",
+    notes: "Auto-generado por blog-auto. Tema público extranjero (rotación 1/3); Search Console no usado (token invalid_grant). Imágenes Unsplash.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {
