@@ -1624,4 +1624,117 @@ export const enAuto: Record<string, BlogPostTranslation> = {
       },
     ],
   },
+  "aftermovie-feria-espana": {
+    title: "Trade fair aftermovie in Spain: turnaround times and deliverables to ask for",
+    description:
+      "Trade fair aftermovie in Spain: delivery times, what pieces it includes, when to film and what to agree beforehand if you organise or exhibit from abroad.",
+    readingTime: "5 min read",
+    category: "Guide",
+    tags: [
+      "trade fair aftermovie",
+      "trade fair highlight video",
+      "filming trade fairs in Spain",
+      "event video deliverables",
+      "foreign company filming in Spain",
+      "filmmaker Madrid",
+    ],
+    keyword: "trade fair aftermovie spain",
+    excerpt:
+      "A trade fair aftermovie is delivered in days, not weeks, if it is planned ahead. Which pieces to ask for, which turnaround times are realistic and what to put in writing before filming.",
+    seoTitle: "Trade Fair Aftermovie in Spain: Timelines | Dani Acero",
+    metaDescription:
+      "Trade fair aftermovie in Spain: delivery times, pieces included and what to agree before filming. A guide from a Madrid filmmaker.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "A trade fair aftermovie in Spain is usually a highlight video of 1 to 2 minutes, normally delivered 3 to 7 working days after the last day of the fair. If you need to publish during the event, a preview in 24 or 48 hours is agreed beforehand and charged separately.",
+      },
+      {
+        type: "paragraph",
+        text: "The difference between an aftermovie that works and one that arrives late is not the camera but what is agreed beforehand: which pieces, which filming days, who approves and in which language it is delivered. All of that is settled in writing weeks before the venue opens.",
+      },
+      {
+        type: "image",
+        src: "/blog/aftermovie-feria-espana/hero.webp",
+        alt: "Crowd of visitors inside a large trade fair pavilion with decorated stands",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "What is a trade fair aftermovie and what is it for?" },
+      {
+        type: "paragraph",
+        text: "It is the video that sums up the fair with rhythm, music and the best shots: aisle atmosphere, stands, meetings, talks and people. It shows management what happened, helps attract exhibitors for the next edition and gives you your own content for social media and your website.",
+      },
+      {
+        type: "paragraph",
+        text: "It is not a full recording of the event or a report on every stand. It is an edited piece with intent. If you also want videos per exhibitor or complete talks, those are different deliverables with their own quote.",
+      },
+      { type: "heading", level: 2, text: "How to plan timelines and deliverables without surprises" },
+      { type: "heading", level: 3, text: "Realistic turnaround times" },
+      {
+        type: "paragraph",
+        text: "For a 90 second aftermovie after a one to three day fair, I count 3 to 7 working days to the first version, plus one or two revision rounds. If there is a preview during the event, I edit it at night with the first shots and upload it the next morning.",
+      },
+      { type: "heading", level: 3, text: "Which pieces to ask for" },
+      {
+        type: "paragraph",
+        text: "The usual set is one main aftermovie in 16:9, two or three vertical cuts of 15 to 30 seconds for social media and, if needed, a version without music so your team can reuse it. Ask for the approximate length of each piece, not just \"a highlight video\".",
+      },
+      { type: "heading", level: 3, text: "When to film and which days count" },
+      {
+        type: "paragraph",
+        text: "Set-up day gives clean shots of the stands without people, and opening day concentrates the best moments. You do not need to cover every hour: one well chosen filming day plus half a day of backup is usually enough. At venues like IFEMA, accreditations and crew access are requested weeks ahead.",
+      },
+      {
+        type: "image",
+        src: "/blog/aftermovie-feria-espana/detalle.webp",
+        alt: "Video editing timeline on a dark screen",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "What to put in writing before filming if you organise from abroad" },
+      {
+        type: "list",
+        items: [
+          "Exact filming dates and venue, with the fair's production contact.",
+          "Number of pieces, length and formats (16:9 and vertical) with a delivery date for each.",
+          "Who approves the video and how many revision rounds the quote includes.",
+          "Language of the music, titles and subtitles: Spanish, English or both.",
+          "Usage licence: web, social, paid advertising and for how long.",
+          "Who handles accreditations, drone permits (if applicable) and venue fees.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "How long does a trade fair aftermovie take to deliver?",
+        answer:
+          "Between 3 and 7 working days after the last day of the fair for the first version. A preview during the event, in 24 or 48 hours, is possible if it is agreed beforehand and quoted separately.",
+      },
+      {
+        type: "faq",
+        question: "How long should an aftermovie be?",
+        answer:
+          "Between 60 and 120 seconds for the main version. For social media, cuts of 15 to 30 seconds. Longer loses pace and almost nobody watches it to the end.",
+      },
+      {
+        type: "faq",
+        question: "Do you need to film all days of the fair?",
+        answer:
+          "Usually not. One well chosen day, normally the busiest, plus a set-up or closing backup gives enough material. Filming everything makes editing more expensive without improving the result.",
+      },
+      {
+        type: "faq",
+        question: "Can I receive it with English subtitles and titles?",
+        answer:
+          "Yes. I deliver versions in Spanish, in English or with both languages, agreed before filming. The quote and the brief can also be in English.",
+      },
+      {
+        type: "paragraph",
+        text: "If you organise or exhibit at a trade fair in Spain and want an aftermovie, write to me through /contacto with the dates, the venue and the pieces you need. I will reply with a filming plan and an itemised quote. More on event coverage at /video-eventos-madrid.",
+      },
+    ],
+  },
 }

@@ -16467,6 +16467,115 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "aftermovie-feria-espana",
+    title: "Aftermovie de una feria en España: plazos y entregables que debes pedir",
+    description:
+      "Aftermovie de una feria en España: plazos de entrega, qué piezas incluye, cuándo se rueda y qué acordar antes si organizas o expones desde fuera.",
+    publishedAt: "2026-11-02",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["aftermovie feria", "vídeo resumen de feria", "grabación de ferias en España", "entregables vídeo evento", "empresa extranjera", "filmmaker Madrid"],
+    keyword: "aftermovie de una feria en España",
+    intent: "informacional",
+    excerpt:
+      "Un aftermovie de feria se entrega en días, no en semanas, si se planifica antes. Qué piezas pedir, qué plazos son realistas y qué dejar por escrito antes del rodaje.",
+    seoTitle: "Aftermovie de una feria en España: plazos | Daniel Acero",
+    metaDescription:
+      "Aftermovie de una feria en España: plazos de entrega, piezas que incluye y qué acordar antes del rodaje. Guía de un filmmaker de Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Un aftermovie de una feria en España suele ser un vídeo resumen de 1 a 2 minutos, con una entrega habitual de 3 a 7 días laborables después del último día de feria. Si necesitas publicar durante el evento, se acuerda antes un avance en 24 o 48 horas, que se cobra aparte.",
+      },
+      {
+        type: "paragraph",
+        text: "La diferencia entre un aftermovie que funciona y uno que llega tarde no está en la cámara, sino en lo que se pacta antes: qué piezas, qué días de rodaje, quién da el visto bueno y en qué idioma se entrega. Todo eso se cierra por escrito semanas antes de que abra el recinto.",
+      },
+      {
+        type: "image",
+        src: "/blog/aftermovie-feria-espana/hero.webp",
+        alt: "Multitud de visitantes dentro de un gran pabellón de feria con stands decorados",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es un aftermovie de feria y para qué sirve" },
+      {
+        type: "paragraph",
+        text: "Es el vídeo que resume la feria con ritmo, música y los mejores planos: ambiente de pasillo, stand, reuniones, ponencias y gente. Sirve para enseñar a la dirección lo que pasó, para captar expositores de la próxima edición y para tener contenido propio en redes y web.",
+      },
+      {
+        type: "paragraph",
+        text: "No es una grabación completa del evento ni un reportaje de cada stand. Es una pieza editada con intención. Si además quieres vídeos por expositor o ponencias enteras, son entregables distintos y con presupuesto propio.",
+      },
+      { type: "heading", level: 2, text: "Cómo planificar plazos y entregables sin sorpresas" },
+      { type: "heading", level: 3, text: "Plazos realistas de entrega" },
+      {
+        type: "paragraph",
+        text: "Para un aftermovie de 90 segundos tras una feria de uno a tres días cuento de 3 a 7 días laborables hasta la primera versión, más una o dos rondas de cambios. Si hay avance durante el evento, lo edito de noche con los primeros planos y lo subo a la mañana siguiente.",
+      },
+      { type: "heading", level: 3, text: "Qué piezas pedir" },
+      {
+        type: "paragraph",
+        text: "Lo habitual es un aftermovie principal en 16:9, dos o tres cortes verticales de 15 a 30 segundos para redes y, si hace falta, una versión sin música para que tu equipo la reutilice. Pide la duración aproximada de cada pieza, no solo \"un vídeo resumen\".",
+      },
+      { type: "heading", level: 3, text: "Cuándo se rueda y qué días cuentan" },
+      {
+        type: "paragraph",
+        text: "El día de montaje da planos limpios de los stands sin gente, y el día de inauguración concentra los mejores momentos. No hace falta cubrir todas las horas: con una jornada de rodaje bien elegida y media más de refuerzo suele bastar. En recintos como IFEMA las acreditaciones y el acceso del equipo se piden con semanas de antelación.",
+      },
+      {
+        type: "image",
+        src: "/blog/aftermovie-feria-espana/detalle.webp",
+        alt: "Línea de tiempo de edición de vídeo en una pantalla oscura",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Qué dejar por escrito antes del rodaje si organizas desde fuera" },
+      {
+        type: "list",
+        items: [
+          "Fechas exactas de rodaje y recinto, con el contacto de producción de la feria.",
+          "Número de piezas, duración y formatos (16:9 y vertical) con fecha de entrega para cada una.",
+          "Quién aprueba el vídeo y cuántas rondas de cambios incluye el presupuesto.",
+          "Idioma de la música, los rótulos y los subtítulos: español, inglés o ambos.",
+          "Licencia de uso: web, redes, publicidad de pago y durante cuánto tiempo.",
+          "Quién tramita acreditaciones, permisos de dron (si aplica) y gastos del recinto.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿En cuánto tiempo se entrega un aftermovie de feria?",
+        answer:
+          "Entre 3 y 7 días laborables tras el último día de feria para la primera versión. Un avance durante el evento, en 24 o 48 horas, es posible si se pacta antes y se presupuesta por separado.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto debe durar un aftermovie?",
+        answer:
+          "Entre 60 y 120 segundos para la versión principal. Para redes, cortes de 15 a 30 segundos. Más largo pierde ritmo y casi nadie lo ve entero.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta grabar los tres días de feria?",
+        answer:
+          "Normalmente no. Una jornada bien elegida, normalmente el día de más afluencia, más un refuerzo de montaje o clausura, da material suficiente. Grabar todo encarece la edición sin mejorar el resultado.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo recibirlo con subtítulos y rótulos en inglés?",
+        answer:
+          "Sí. Entrego versiones en español, en inglés o con ambos idiomas, y lo acordamos antes del rodaje. El presupuesto y el briefing también pueden ir en inglés.",
+      },
+      {
+        type: "paragraph",
+        text: "Si organizas o expones en una feria en España y quieres un aftermovie, escríbeme desde /contacto con las fechas, el recinto y las piezas que necesitas. Te respondo con un plan de rodaje y un presupuesto desglosado. Más sobre cobertura de eventos en /video-eventos-madrid.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
