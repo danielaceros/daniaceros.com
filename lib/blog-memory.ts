@@ -1064,6 +1064,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto. Tema público extranjero (rotación 1/3); Search Console no usado (token invalid_grant). Imágenes Unsplash.",
   },
+  {
+    slug: "checklist-grabar-evento-corporativo-madrid",
+    keyword: "checklist para grabar un evento corporativo en Madrid",
+    intent: "informacional",
+    createdAt: "2026-11-03",
+    status: "published",
+    notes: "Auto-generado por blog-auto (fallback evergreen, temas de la lista agotados, tema del bloque público extranjero; Search Console no usado, token invalid_grant). Imágenes Unsplash.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {

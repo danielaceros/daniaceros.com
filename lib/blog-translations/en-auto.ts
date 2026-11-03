@@ -1737,4 +1737,117 @@ export const enAuto: Record<string, BlogPostTranslation> = {
       },
     ],
   },
+  "checklist-grabar-evento-corporativo-madrid": {
+    title: "Corporate event filming checklist in Madrid: what to settle before the day",
+    description:
+      "Corporate event filming checklist for Madrid: what to agree on the venue, crew and deliverables before filming so nothing fails on the day of the event.",
+    readingTime: "5 min read",
+    category: "Guide",
+    tags: [
+      "event filming checklist",
+      "filming an event in Madrid",
+      "preparing an event shoot",
+      "event videographer",
+      "event production",
+      "filmmaker Madrid",
+    ],
+    keyword: "event filming checklist madrid",
+    excerpt:
+      "What decides whether an event is filmed well is settled days before: venue, access, schedule, deliverables and who approves. A practical list so you do not have to improvise.",
+    seoTitle: "Event Filming Checklist in Madrid | Dani Acero",
+    metaDescription:
+      "Event filming checklist for Madrid: venue, permits, schedule, crew and deliverables. What to settle before the day. A guide from a Madrid filmmaker.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "To film a corporate event in Madrid without surprises you need to settle four things before the day: venue access and conditions, a schedule with real times, which pieces will be delivered and who approves the result. With that done, filming is execution, not improvisation.",
+      },
+      {
+        type: "paragraph",
+        text: "Below is the list I use before every event. It works the same if you organise from an office in Madrid or from another country and will not set foot in the venue until the day before. The sooner I get the information, the fewer filming hours are spent solving doubts.",
+      },
+      {
+        type: "image",
+        src: "/blog/checklist-grabar-evento-corporativo-madrid/hero.webp",
+        alt: "Audience seated in a room during a corporate event",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Why a checklist changes the result of event filming" },
+      {
+        type: "paragraph",
+        text: "An event does not repeat. If the keynote starts twenty minutes early or the speaker does not want a camera in their face, there is no second take. That is why almost everything important is decided beforehand: where each camera goes, what is recorded live and what is kept for the aftermovie.",
+      },
+      {
+        type: "paragraph",
+        text: "In my experience the problems do not come from the camera. They come from a schedule that changed and nobody said so, a venue that asks for accreditation 48 hours ahead, or a client who expected a piece that was never discussed. A short list avoids all three.",
+      },
+      { type: "heading", level: 2, text: "What to settle before the day of the event" },
+      { type: "heading", level: 3, text: "Venue, access and permits" },
+      {
+        type: "paragraph",
+        text: "Ask the venue about audiovisual production rules: load-in times, accreditation, use of tripods and gimbals, and whether filming in common areas is allowed. Large venues such as IFEMA usually ask for the details of whoever enters with equipment a few days in advance. If you want a drone, that is a separate process and rarely worth it indoors.",
+      },
+      { type: "heading", level: 3, text: "A schedule with real times and key moments" },
+      {
+        type: "paragraph",
+        text: "Ask for the final schedule with times and mark the three or four moments that must be recorded: opening, keynote, awards, networking. One or two people cannot cover everything at once, and it is better to decide beforehand than to miss a moment because you were somewhere else.",
+      },
+      { type: "heading", level: 3, text: "Sound, light and space for the camera" },
+      {
+        type: "paragraph",
+        text: "Find out whether the room audio can be taken from the sound desk instead of recording only with the camera microphone. It is the difference between a clean voice and one with echo. Ask also about stage lighting and where the camera can go without blocking anyone in the front rows.",
+      },
+      {
+        type: "image",
+        src: "/blog/checklist-grabar-evento-corporativo-madrid/detalle.webp",
+        alt: "Camera operator filming with a camera on a tripod in coloured light",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Common mistakes that complicate delivery" },
+      {
+        type: "list",
+        items: [
+          "Not deciding the deliverables beforehand: a 90 second summary, vertical cuts for social media and loose speaker clips are different jobs.",
+          "Sending the final schedule on the day of the event, when camera planning is no longer possible.",
+          "Not telling speakers there will be a camera and what will be done with their image, especially if the video will be published.",
+          "Not naming one person who approves the video, which stretches revisions longer than necessary.",
+          "Forgetting the usage licence: web, social, paid advertising and for how long.",
+          "Not specifying the language of titles and subtitles when the audience is international.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "How far in advance should I book event filming?",
+        answer:
+          "Two or three weeks is ideal, and more if the event falls on a busy date. With less time it is usually possible, but there is less margin to visit the venue and close accreditations.",
+      },
+      {
+        type: "faq",
+        question: "Do you need to visit the venue before the event?",
+        answer:
+          "For large events or those with a stage, yes, even if it is a short half hour visit. If that is not possible, I ask for photos of the space, the room plan and the venue's production contact.",
+      },
+      {
+        type: "faq",
+        question: "How many cameras do I need for an event?",
+        answer:
+          "For a simple talk or conference, one camera with good audio is enough. If there is a stage, an audience and speakers who move, two cameras let you cover a wide shot and a medium shot without missing moments.",
+      },
+      {
+        type: "faq",
+        question: "What information should I send the filmmaker?",
+        answer:
+          "Date, venue, schedule with times, key moments, production contact, the pieces you want to receive and who approves. With that I can prepare a filming plan and an itemised quote.",
+      },
+      {
+        type: "paragraph",
+        text: "If you have an event in Madrid and want it filmed properly, write to me through /contacto with the date, the venue, the schedule and what you need to receive. I will reply with a filming plan and an itemised quote. For format ideas, there is more at /video-eventos-madrid.",
+      },
+    ],
+  },
 }

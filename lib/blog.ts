@@ -16576,6 +16576,115 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "checklist-grabar-evento-corporativo-madrid",
+    title: "Checklist para grabar un evento corporativo en Madrid: qué cerrar antes del día",
+    description:
+      "Checklist para grabar un evento corporativo en Madrid: qué cerrar con el recinto, el equipo y la entrega antes del rodaje para que nada falle el día del evento.",
+    publishedAt: "2026-11-03",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["checklist evento corporativo", "grabar un evento en Madrid", "preparar rodaje de evento", "videógrafo de eventos", "producción de eventos", "filmmaker Madrid"],
+    keyword: "checklist para grabar un evento corporativo en Madrid",
+    intent: "informacional",
+    excerpt:
+      "Lo que decide si la grabación de un evento sale bien se cierra días antes: recinto, accesos, programa, entregables y quién aprueba. Una lista práctica para no improvisar.",
+    seoTitle: "Checklist para grabar un evento en Madrid | Daniel Acero",
+    metaDescription:
+      "Checklist para grabar un evento corporativo en Madrid: recinto, permisos, programa, equipo y entrega. Qué cerrar antes del día. Guía de un filmmaker.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Para grabar un evento corporativo en Madrid sin sorpresas hay que cerrar cuatro cosas antes del día: acceso y condiciones del recinto, programa con horas reales, qué piezas se van a entregar y quién aprueba el resultado. Con eso resuelto, el rodaje es ejecución, no improvisación.",
+      },
+      {
+        type: "paragraph",
+        text: "Lo que sigue es la lista que uso yo antes de cada evento. Sirve igual si organizas desde una oficina en Madrid o desde otro país y no vas a pisar el recinto hasta el día anterior. Cuanto antes me llega la información, menos horas de rodaje se gastan en resolver dudas.",
+      },
+      {
+        type: "image",
+        src: "/blog/checklist-grabar-evento-corporativo-madrid/hero.webp",
+        alt: "Público sentado en una sala durante un evento corporativo",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué una checklist cambia el resultado de la grabación" },
+      {
+        type: "paragraph",
+        text: "Un evento no se repite. Si la ponencia principal empieza veinte minutos antes de lo previsto o el ponente no quiere cámara en la cara, no hay segunda toma. Por eso casi todo lo importante se decide antes: dónde se coloca cada cámara, qué se graba en directo y qué se reserva para el aftermovie.",
+      },
+      {
+        type: "paragraph",
+        text: "En mi experiencia los problemas no vienen de la cámara. Vienen de un programa que cambió y nadie avisó, de un recinto que exige acreditación con 48 horas de antelación o de un cliente que esperaba una pieza que nunca se habló. Una lista corta evita las tres cosas.",
+      },
+      { type: "heading", level: 2, text: "Qué cerrar antes del día del evento" },
+      { type: "heading", level: 3, text: "Recinto, accesos y permisos" },
+      {
+        type: "paragraph",
+        text: "Pregunta al recinto si hay normas de producción audiovisual: horario de carga, acreditaciones, uso de trípodes y gimbal, y si permiten grabar en zonas comunes. En recintos grandes como IFEMA suelen pedir los datos de quien entra con equipo con unos días de margen. Si quieres usar dron, es otro trámite aparte y casi nunca compensa en interior.",
+      },
+      { type: "heading", level: 3, text: "Programa con horas reales y momentos clave" },
+      {
+        type: "paragraph",
+        text: "Pide el programa final con horas y marca los tres o cuatro momentos que sí o sí deben quedar grabados: apertura, ponencia principal, entrega de premios, networking. Con un equipo de una o dos personas no se cubre todo a la vez, y es mejor decidirlo antes que perder un momento por estar en otro sitio.",
+      },
+      { type: "heading", level: 3, text: "Sonido, luz y espacio para cámara" },
+      {
+        type: "paragraph",
+        text: "Averigua si el audio de sala se puede sacar de la mesa de sonido en lugar de grabar solo con micrófono de cámara. Es la diferencia entre una voz limpia y una con eco. Pregunta también por la iluminación del escenario y por dónde puede ir la cámara sin tapar a nadie de las primeras filas.",
+      },
+      {
+        type: "image",
+        src: "/blog/checklist-grabar-evento-corporativo-madrid/detalle.webp",
+        alt: "Operador de cámara grabando con una cámara sobre trípode en un entorno con luz de colores",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes que complican la entrega" },
+      {
+        type: "list",
+        items: [
+          "No decidir los entregables antes: un resumen de 90 segundos, cortes verticales para redes y clips sueltos de ponentes son encargos distintos.",
+          "Dar el programa definitivo el mismo día del evento, cuando ya no se puede planificar el reparto de cámaras.",
+          "No avisar a los ponentes de que habrá cámara y de qué se hará con su imagen, sobre todo si el vídeo se publicará.",
+          "Dejar sin nombrar a una persona que apruebe el vídeo, lo que alarga las revisiones más de lo necesario.",
+          "Olvidar la licencia de uso: web, redes, publicidad de pago y durante cuánto tiempo.",
+          "No pedir el idioma de rótulos y subtítulos cuando la audiencia es internacional.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Con cuánta antelación debo contratar la grabación de un evento?",
+        answer:
+          "Lo ideal son dos o tres semanas, y más si el evento cae en fechas de mucha demanda. Con menos tiempo suele ser posible, pero queda menos margen para visitar el recinto y cerrar acreditaciones.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta visitar el recinto antes del evento?",
+        answer:
+          "En eventos grandes o con escenario, sí conviene, aunque sea una visita corta de media hora. Si no es posible, pido fotos del espacio, el plano de sala y el contacto de producción del recinto.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuántas cámaras necesito para un evento?",
+        answer:
+          "Para una charla o conferencia sencilla basta una cámara con un buen audio. Si hay escenario, público y ponentes que se mueven, dos cámaras permiten cubrir plano general y plano medio sin perder momentos.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué información debo mandar al filmmaker?",
+        answer:
+          "Fecha, recinto, programa con horas, momentos clave, contacto de producción, piezas que quieres recibir y quién aprueba. Con eso puedo preparar un plan de rodaje y un presupuesto desglosado.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes un evento en Madrid y quieres que esté bien grabado, escríbeme desde /contacto con la fecha, el recinto, el programa y lo que necesitas recibir. Te respondo con un plan de rodaje y un presupuesto por partidas. Si buscas ideas de formato, tienes más en /video-eventos-madrid.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {

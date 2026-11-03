@@ -198,6 +198,7 @@ export const EN_BLOG_SLUGS: Record<string, string> = {
   "video-felicitacion-navidena-corporativa": "corporate-christmas-greeting-video",
   "cuanto-cuesta-videografo-eventos-madrid": "event-videographer-cost-madrid",
   "aftermovie-feria-espana": "trade-fair-aftermovie-spain",
+  "checklist-grabar-evento-corporativo-madrid": "event-filming-checklist-madrid",
 }
 
 const EN_PATH_TO_ES: Record<string, string> = Object.fromEntries([
