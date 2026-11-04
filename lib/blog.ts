@@ -16685,6 +16685,120 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "filmmaker-madrid-empresas-extranjeras",
+    title: "Filmmaker en Madrid para empresas con sede fuera de España: cómo trabajar a distancia",
+    description:
+      "Cómo contratar un filmmaker en Madrid si tu empresa tiene sede fuera de España: briefing a distancia, plazos, facturación, aprobaciones y entrega en varios idiomas.",
+    publishedAt: "2026-11-04",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["filmmaker Madrid", "empresas extranjeras", "rodaje en Madrid", "vídeo corporativo internacional", "contratar filmmaker", "producción audiovisual Madrid"],
+    keyword: "filmmaker en Madrid para empresas con sede fuera de España",
+    intent: "informacional",
+    excerpt:
+      "Contratar un filmmaker en Madrid desde otro país es sencillo si se cierran bien cuatro cosas: briefing a distancia, calendario, aprobaciones y entrega. Así lo organizo yo.",
+    seoTitle: "Filmmaker en Madrid para empresas extranjeras | Daniel Acero",
+    metaDescription:
+      "Filmmaker en Madrid para empresas con sede fuera de España: briefing a distancia, plazos, facturación y entrega en varios idiomas. Guía práctica.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Si tu empresa tiene la sede fuera de España y necesitas grabar en Madrid, no hace falta viajar para dirigir el rodaje. Se trabaja con un briefing por escrito, una llamada de preparación, un plan de rodaje cerrado y una persona de tu lado que apruebe. Con eso, el filmmaker local se encarga del resto.",
+      },
+      {
+        type: "paragraph",
+        text: "Es un encargo habitual: equipos de marketing de Londres, Berlín o Ciudad de México que tienen una convención, una visita de directivos o una entrevista a un directivo en Madrid y necesitan imagen cinematográfica sin montar una producción propia. Lo que sigue es cómo lo organizo yo.",
+      },
+      {
+        type: "image",
+        src: "/blog/filmmaker-madrid-empresas-extranjeras/hero.webp",
+        alt: "Persona de pie presentando a un grupo sentado alrededor de una mesa con portátiles en una reunión de trabajo",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué conviene un filmmaker local si tu empresa no está en Madrid" },
+      {
+        type: "paragraph",
+        text: "Un profesional que vive en Madrid conoce los recintos, los accesos, los tiempos de montaje y las normas de grabación de cada espacio. Eso evita enviar a un equipo desde otro país, con viajes, dietas y facturación de equipo en tránsito. También resuelve imprevistos el mismo día, algo imposible a distancia.",
+      },
+      {
+        type: "paragraph",
+        text: "La parte que sí se hace a distancia es la dirección creativa: tú decides el mensaje, el tono y las piezas; yo propongo cómo grabarlo con lo que hay en Madrid. Para una pieza corporativa, la preparación se reparte en dos o tres llamadas cortas y un documento compartido.",
+      },
+      { type: "heading", level: 2, text: "Cómo se organiza un rodaje en Madrid trabajando a distancia" },
+      { type: "heading", level: 3, text: "Briefing por escrito antes de la primera llamada" },
+      {
+        type: "paragraph",
+        text: "Pido un documento corto con objetivo del vídeo, público, idioma de la pieza, referencias visuales y una lista de personas que saldrán a cámara. Si tu equipo tiene guía de marca, la incluyo en la preparación desde el principio. Con ese material, la primera llamada dura media hora y sirve para decidir, no para explicar desde cero.",
+      },
+      { type: "heading", level: 3, text: "Calendario y zona horaria" },
+      {
+        type: "paragraph",
+        text: "Madrid va una o dos horas por delante de Londres y entre seis y nueve horas por delante de la costa este de Estados Unidos y de varios países de Latinoamérica. Fijo las llamadas en una franja que funcione para los dos y dejo por escrito qué se decide en cada una. Para un rodaje de medio día suelo pedir dos semanas de margen desde el encargo.",
+      },
+      { type: "heading", level: 3, text: "Aprobaciones: una sola persona decide" },
+      {
+        type: "paragraph",
+        text: "Cuando hay varias oficinas implicadas, las revisiones se alargan. Pido que una persona de tu lado reúna los comentarios y me los mande consolidados. Con una ronda de cambios incluida y comentarios por escrito sobre un enlace de revisión, un montaje de unos 90 segundos suele cerrarse en pocos días.",
+      },
+      { type: "heading", level: 3, text: "Facturación y contrato" },
+      {
+        type: "paragraph",
+        text: "Trabajo con presupuesto por partidas, contrato de servicios y factura española. Si tu empresa es de la Unión Europea, la factura puede llevar la operación intracomunitaria con tu número de IVA; para otros países, conviene que lo revise tu administración. Si necesitas un formato concreto de factura, dímelo antes de cerrar el presupuesto.",
+      },
+      {
+        type: "image",
+        src: "/blog/filmmaker-madrid-empresas-extranjeras/detalle.webp",
+        alt: "Cámara de cine profesional montada sobre un equipo de rodaje durante una grabación",
+        width: 1920,
+        height: 1080,
+      },
+      { type: "heading", level: 2, text: "Errores comunes al contratar a distancia" },
+      {
+        type: "list",
+        items: [
+          "No decidir el idioma de la pieza antes del rodaje: grabar en inglés, en español o en ambos cambia el guion, el sonido y el montaje.",
+          "Dejar las aprobaciones repartidas entre varias personas sin una que cierre.",
+          "No avisar con tiempo a los participantes de que habrá cámara y de qué se hará con su imagen.",
+          "Olvidar los subtítulos: un vídeo para público internacional casi siempre los necesita, y es más barato planificarlos que añadirlos después.",
+          "No pedir la licencia de uso por escrito: dónde se publica, durante cuánto tiempo y si habrá publicidad de pago.",
+          "Dejar el calendario sin margen para imprevistos de producción en el recinto.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Puedo contratar un filmmaker en Madrid sin viajar?",
+        answer:
+          "Sí. Con un briefing por escrito, una o dos llamadas de preparación y una persona de tu lado que apruebe, no necesitas estar presente en el rodaje. Recibes el material y el montaje por enlace de revisión.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar en inglés?",
+        answer:
+          "Sí. Trabajo en inglés con empresas de fuera y puedo grabar entrevistas en inglés, español o en los dos idiomas. Conviene decirlo antes, porque cambia el guion y los subtítulos.",
+      },
+      {
+        type: "faq",
+        question: "¿Con cuánta antelación debo escribir?",
+        answer:
+          "Lo cómodo son dos semanas para un rodaje de medio día, y más si hay recinto con acreditaciones o varias localizaciones. Con menos tiempo suele ser posible según agenda.",
+      },
+      {
+        type: "faq",
+        question: "¿Cómo se entrega el material?",
+        answer:
+          "Por enlace de descarga en las resoluciones y formatos que necesites: vídeo principal, cortes verticales para redes y versión con subtítulos. Lo acordamos en el presupuesto.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tu empresa está fuera de España y necesitas grabar en Madrid, escríbeme desde /contacto con la fecha, el lugar, el idioma y lo que necesitas recibir. Te respondo con un plan de rodaje y un presupuesto por partidas. Si te interesa un evento, tienes más información en /video-eventos-madrid.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {

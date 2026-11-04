@@ -1850,4 +1850,122 @@ export const enAuto: Record<string, BlogPostTranslation> = {
       },
     ],
   },
+  "filmmaker-madrid-empresas-extranjeras": {
+    title: "Filmmaker in Madrid for companies based outside Spain: how to work remotely",
+    description:
+      "How to hire a filmmaker in Madrid if your company is based abroad: remote briefing, timelines, invoicing, approvals and delivery in several languages.",
+    readingTime: "5 min read",
+    category: "Guide",
+    tags: [
+      "filmmaker Madrid",
+      "foreign companies",
+      "filming in Madrid",
+      "international corporate video",
+      "hire a filmmaker",
+      "video production Madrid",
+    ],
+    keyword: "filmmaker madrid foreign company",
+    excerpt:
+      "Hiring a filmmaker in Madrid from another country is simple if you settle four things: remote briefing, calendar, approvals and delivery. This is how I organise it.",
+    seoTitle: "Filmmaker in Madrid for Foreign Companies | Dani Acero",
+    metaDescription:
+      "Filmmaker in Madrid for companies based outside Spain: remote briefing, timelines, invoicing and delivery in several languages. A practical guide.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "If your company is based outside Spain and you need to film in Madrid, you do not have to travel to direct the shoot. You work with a written brief, a preparation call, a locked filming plan and one person on your side who approves. With that in place, the local filmmaker handles the rest.",
+      },
+      {
+        type: "paragraph",
+        text: "It is a common request: marketing teams in London, Berlin or Mexico City with a convention, an executive visit or a leadership interview in Madrid who need cinematic footage without setting up their own production. Here is how I organise it as Dani Acero.",
+      },
+      {
+        type: "image",
+        src: "/blog/filmmaker-madrid-empresas-extranjeras/hero.webp",
+        alt: "Person standing and presenting to a group seated around a table with laptops in a work meeting",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Why hire a local filmmaker if your company is not in Madrid?" },
+      {
+        type: "paragraph",
+        text: "A professional who lives in Madrid knows the venues, the access routes, the setup times and the filming rules of each space. That saves sending a crew from another country, with travel, per diems and equipment in transit. It also lets me solve problems on the day itself, which is impossible remotely.",
+      },
+      {
+        type: "paragraph",
+        text: "What does happen remotely is the creative direction: you decide the message, the tone and the pieces; I propose how to shoot it with what Madrid offers. For a corporate piece, preparation fits into two or three short calls and a shared document.",
+      },
+      { type: "heading", level: 2, text: "How does a remote shoot in Madrid work?" },
+      { type: "heading", level: 3, text: "A written brief before the first call" },
+      {
+        type: "paragraph",
+        text: "I ask for a short document with the goal of the video, the audience, the language of the piece, visual references and a list of the people who will be on camera. If your team has brand guidelines, I include them in preparation from the start. With that material the first call lasts half an hour and is for deciding, not for explaining from scratch.",
+      },
+      { type: "heading", level: 3, text: "Calendar and time zones" },
+      {
+        type: "paragraph",
+        text: "Madrid is one or two hours ahead of London and between six and nine hours ahead of the US East Coast and several Latin American countries. I set calls in a window that works for both sides and put in writing what is decided in each one. For a half-day shoot I usually ask for two weeks from the booking.",
+      },
+      { type: "heading", level: 3, text: "Approvals: one person decides" },
+      {
+        type: "paragraph",
+        text: "When several offices are involved, reviews drag on. I ask one person on your side to collect the comments and send them to me consolidated. With one round of changes included and written comments on a review link, a cut of around 90 seconds is usually closed within a few days.",
+      },
+      { type: "heading", level: 3, text: "Invoicing and contract" },
+      {
+        type: "paragraph",
+        text: "I work with an itemised quote, a services contract and a Spanish invoice. If your company is in the European Union, the invoice can carry the intra-EU transaction with your VAT number; for other countries, your finance team should check it. If you need a specific invoice format, tell me before the quote is closed.",
+      },
+      {
+        type: "image",
+        src: "/blog/filmmaker-madrid-empresas-extranjeras/detalle.webp",
+        alt: "Professional cinema camera mounted on a camera rig during a shoot",
+        width: 1920,
+        height: 1080,
+      },
+      { type: "heading", level: 2, text: "Common mistakes when hiring remotely" },
+      {
+        type: "list",
+        items: [
+          "Not deciding the language of the piece before the shoot: filming in English, Spanish or both changes the script, the sound and the edit.",
+          "Leaving approvals spread across several people with nobody to close them.",
+          "Not telling participants in advance that cameras will be there and what will be done with their image.",
+          "Forgetting subtitles: a video for an international audience almost always needs them, and planning them is cheaper than adding them later.",
+          "Not asking for the usage licence in writing: where it is published, for how long and whether paid ads are involved.",
+          "Leaving no margin in the calendar for production surprises at the venue.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "Can I hire a filmmaker in Madrid without travelling?",
+        answer:
+          "Yes. With a written brief, one or two preparation calls and one person on your side who approves, you do not need to be at the shoot. You receive the footage and the edit through a review link.",
+      },
+      {
+        type: "faq",
+        question: "Can the shoot be done in English?",
+        answer:
+          "Yes. I work in English with companies from abroad and can film interviews in English, Spanish or both. Say so in advance, because it changes the script and the subtitles.",
+      },
+      {
+        type: "faq",
+        question: "How far in advance should I get in touch?",
+        answer:
+          "Two weeks is comfortable for a half-day shoot, and more if the venue needs accreditations or there are several locations. With less time it is often possible depending on my calendar.",
+      },
+      {
+        type: "faq",
+        question: "How is the footage delivered?",
+        answer:
+          "Through a download link in the resolutions and formats you need: the main video, vertical cuts for social media and a subtitled version. We agree this in the quote.",
+      },
+      {
+        type: "paragraph",
+        text: "If your company is based outside Spain and you need to film in Madrid, write to me through /contacto with the date, the location, the language and what you need to receive. I will reply with a filming plan and an itemised quote. If you are interested in an event, there is more at /video-eventos-madrid.",
+      },
+    ],
+  },
 }
