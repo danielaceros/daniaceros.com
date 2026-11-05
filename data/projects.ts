@@ -297,9 +297,9 @@ export const projects = [
 {
   slug: "ifema",
   title: "IFEMA",
-  video: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/ifema-M2z4wQuTl5xemnLUxjFrS4fx9J0Eq6.mp4",
-  poster: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/ifema-poster-m2zfbFvOQ4XE2mEURnSbK3ByvgEIzh.jpg",
-  href: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/ifema-M2z4wQuTl5xemnLUxjFrS4fx9J0Eq6.mp4",
+  video: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/ifema-tranjis-7AhzP1iUfeuqs5BmILLBrkhPKaaQDI.mp4",
+  poster: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/ifema-tranjis-poster-lYCnaWEOnkqq7mJpVrlLzWoNTG9g2H.jpg",
+  href: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/ifema-tranjis-7AhzP1iUfeuqs5BmILLBrkhPKaaQDI.mp4",
   sections: [
     {
       title: "",
