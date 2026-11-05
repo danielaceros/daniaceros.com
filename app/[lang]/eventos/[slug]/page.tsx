@@ -62,6 +62,10 @@ export default async function LandingPage({ params }: Props) {
     poster,
   }))
 
+  const featured = landing.featuredProject
+    ? portfolioItems.find((item) => item.slug === landing.featuredProject)
+    : undefined
+
   return (
     <main className="text-white">
       <LandingTracking lpId={landing.id} />
@@ -99,6 +103,26 @@ export default async function LandingPage({ params }: Props) {
           <LandingCta lpId={landing.id} position="hero" label={landing.ctaLabel} className="mt-7 sm:mt-9" />
         </div>
       </section>
+
+      {/* 2b. Referencia principal (opcional): vídeo de un proyecto del portfolio, p. ej. IFEMA en la landing de
+          expositores. Vertical, con controles; el póster evita descargar el vídeo hasta que se pulsa play. */}
+      {featured ? (
+        <section className="page-container pb-12 sm:pb-16">
+          <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
+            <h2 className={SECTION_TITLE}>{landing.featuredTitle ?? featured.title}</h2>
+            <div className="mt-6 w-full max-w-[320px] overflow-hidden rounded-2xl border border-white/10 bg-black sm:max-w-[360px]">
+              <video
+                className="aspect-[9/16] w-full object-cover"
+                src={featured.video}
+                poster={featured.poster}
+                controls
+                playsInline
+                preload="none"
+              />
+            </div>
+          </div>
+        </section>
+      ) : null}
 
       {/* 3. Expertise, con lo que menciona ese reel */}
       <section className="page-container pb-12 sm:pb-16">

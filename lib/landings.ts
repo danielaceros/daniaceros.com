@@ -25,6 +25,10 @@ export type Landing = {
   /** Expertise que menciona ese reel (4 líneas). */
   expertise: string[]
   ctaLabel: string
+  /** Slug de un proyecto de data/projects.ts que se muestra como referencia principal (bloque con su vídeo). */
+  featuredProject?: string
+  /** Título del bloque de referencia principal. */
+  featuredTitle?: string
 }
 
 export const LANDINGS: Landing[] = [
@@ -261,6 +265,30 @@ export const LANDINGS: Landing[] = [
       "Clips de 30 segundos listos para publicar",
     ],
     ctaLabel: "Quiero testimonios de mi evento",
+  },
+  {
+    // Landing para expositores de ferias de IFEMA (outreach en frío, no un anuncio de Meta). Pedido de Dani
+    // 2026-11-05. Referencia principal: el reel de IFEMA. Sin cifras ni clientes que no estén ya en la web.
+    id: "ev13",
+    reel: "IFEMA",
+    slug: "ifema",
+    metaTitle: "Vídeo para expositores de IFEMA | Dani Acero",
+    title: "¿Expones en IFEMA? Que tu stand deje huella después de la feria",
+    subtitle: "Llevo tiempo ayudando a empresas expositoras de IFEMA a crear contenido que deja huella en su participación: resumen del stand, entrevistas en pista y reels listos para publicar.",
+    pains: [
+      "Inviertes en el stand y, cuando acaba la feria, no te queda material para aprovecharlo.",
+      "En plena feria no tienes tiempo de grabar ni de coordinar a un cámara.",
+      "Quieres publicar mientras la feria sigue en la conversación, no semanas después.",
+    ],
+    expertise: [
+      "Más de 6 años como filmmaker corporativo en Madrid",
+      "He trabajado con IFEMA y conozco cómo se mueve una feria por dentro",
+      "Grabo tu stand, a tu equipo y a tus clientes en pista",
+      "Resumen del stand y reels para redes, listos para publicar",
+    ],
+    ctaLabel: "Quiero contenido de mi stand",
+    featuredProject: "ifema",
+    featuredTitle: "Así grabo una feria en IFEMA",
   },
 ]
 
