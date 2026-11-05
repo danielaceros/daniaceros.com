@@ -25,10 +25,8 @@ export type Landing = {
   /** Expertise que menciona ese reel (4 líneas). */
   expertise: string[]
   ctaLabel: string
-  /** Slug de un proyecto de data/projects.ts que se muestra como referencia principal (bloque con su vídeo). */
+  /** Slug de un proyecto de data/projects.ts que va el primero en "Trabajos recientes" (referencia principal). */
   featuredProject?: string
-  /** Título del bloque de referencia principal. */
-  featuredTitle?: string
 }
 
 export const LANDINGS: Landing[] = [
@@ -288,7 +286,6 @@ export const LANDINGS: Landing[] = [
     ],
     ctaLabel: "Quiero contenido de mi stand",
     featuredProject: "ifema",
-    featuredTitle: "Así grabo una feria en IFEMA",
   },
 ]
 
