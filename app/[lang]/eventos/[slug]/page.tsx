@@ -78,65 +78,93 @@ export default async function LandingPage({ params }: Props) {
   const titleParts = landing.title.split("{logo}")
   const titleText = landing.title.replace("{logo}", "IFEMA")
 
+  // Titular compartido por los dos layouts. Tráfico de Instagram/Facebook en móvil: con ganchos largos (>70
+  // caracteres) baja un punto para que el vídeo siga asomando en la primera pantalla.
+  const titleNode = (
+    <h1
+      className={`font-display font-semibold uppercase leading-[1] text-balance ${
+        titleText.length > 70 ? "text-[clamp(1.55rem,6.1vw,3rem)]" : "text-[clamp(1.85rem,7.2vw,3.6rem)]"
+      } ${reel ? "lg:text-[clamp(2.4rem,3.6vw,3.6rem)]" : ""}`}
+    >
+      {titleParts[0]}
+      {titleParts.length > 1 ? (
+        <>
+          {/* El signo que sigue al logo ("?") va pegado a él: sin esto, en móvil salta solo a la línea de abajo. */}
+          <span className="whitespace-nowrap">
+            <Image
+              src="/logos/ifema.png"
+              alt="IFEMA"
+              width={128}
+              height={88}
+              priority
+              className="ml-[0.1em] mr-[-0.02em] inline-block h-[1.55em] w-auto align-[-0.5em]"
+            />
+            {titleParts[1].match(/^[?!.,:;]*/)?.[0]}
+          </span>
+          {titleParts[1].replace(/^[?!.,:;]*/, "")}
+        </>
+      ) : null}
+    </h1>
+  )
+
   return (
     <main className="text-white">
       <LandingTracking lpId={landing.id} />
 
-      {/* 1–2. Gancho del reel + VSL. Mismo encaje que el hero con vídeo de la home: el póster del VSL es el LCP. */}
+      {reel ? (
+        <>
+          {/* 1. Hero a dos columnas en escritorio: titular a la izquierda y reel a la derecha (ahorra altura);
+              en móvil se apilan, titular y después el reel. */}
+          <section className="relative w-full overflow-hidden pb-8 pt-8 sm:pt-10 lg:pb-12">
+            <div className="mx-auto grid w-full max-w-6xl items-center gap-8 px-4 text-center sm:px-6 lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-16 lg:text-left">
+              <div className="flex flex-col items-center lg:items-start">
+                {titleNode}
+                <p className="mt-4 max-w-2xl px-1 font-inter text-[14px] leading-[1.7] text-white/74 text-balance sm:text-[16px] lg:max-w-xl lg:px-0 lg:text-[17px]">
+                  {landing.subtitle}
+                </p>
+              </div>
+              <LandingReel
+                src={reel.video}
+                poster={reel.poster}
+                label="Reel · IFEMA Madrid"
+                className="lg:mx-0 lg:max-w-[340px]"
+              />
+            </div>
+          </section>
+
+          {/* 2. Marcas → VSL → botón, en columna centrada (mismo ancho que el reproductor). */}
+          <section className="relative z-10 flex flex-col items-center px-4 pb-12 text-center sm:px-6 sm:pb-16">
+            <ClientLogosTicker />
+            {VSL[lang] ? (
+              <div className="mt-8 w-full sm:mt-10">
+                <VslSection lang={lang} hideTitle inline formOnly reveal={false} formHref="#contacto" />
+              </div>
+            ) : null}
+            <LandingCta lpId={landing.id} position="hero" label={landing.ctaLabel} className="mt-7 sm:mt-9" />
+          </section>
+        </>
+      ) : (
       <section className="relative w-full overflow-hidden pb-12 pt-8 sm:pb-16 sm:pt-10">
         <div className="relative z-10 flex flex-col items-center px-4 text-center sm:px-6">
           <div className="flex w-full max-w-4xl flex-col items-center">
-            {/* Tráfico de Instagram/Facebook en móvil: con ganchos largos (>70 caracteres) el titular baja un
-                punto para que el VSL siga asomando en la primera pantalla. */}
-            <h1
-              className={`font-display font-semibold uppercase leading-[1] text-balance ${
-                titleText.length > 70
-                  ? "text-[clamp(1.55rem,6.1vw,3rem)]"
-                  : "text-[clamp(1.85rem,7.2vw,3.6rem)]"
-              }`}
-            >
-              {titleParts[0]}
-              {titleParts.length > 1 ? (
-                <>
-                  <Image
-                    src="/logos/ifema.png"
-                    alt="IFEMA"
-                    width={128}
-                    height={88}
-                    priority
-                    className="ml-[0.1em] mr-[-0.02em] inline-block h-[1.55em] w-auto align-[-0.5em]"
-                  />
-                  {titleParts[1]}
-                </>
-              ) : null}
-            </h1>
+            {titleNode}
             <p className="mt-4 max-w-2xl px-1 font-inter text-[14px] leading-[1.7] text-white/74 text-balance sm:text-[16px]">
               {landing.subtitle}
             </p>
           </div>
-          {reel ? (
-            <LandingReel src={reel.video} poster={reel.poster} label="Reel · IFEMA Madrid" className="mt-7 sm:mt-9" />
-          ) : VSL[lang] ? (
+          {VSL[lang] ? (
             <div className="mt-7 w-full sm:mt-9">
               <VslSection lang={lang} hideTitle inline formOnly reveal={false} formHref="#contacto" />
             </div>
           ) : null}
           {/* Autoridad antes del botón: los logos van entre el vídeo y el CTA a propósito. Ponerlos encima
               del VSL le robaría atención al vídeo, que es lo que vende.
-              Vuelve dentro del contenedor (antes iba a ancho completo): la tira mide lo mismo que el
-              reproductor y queda alineada con él, para que se lea como parte de la misma composición. El ancho
-              lo comparten vía VSL_INLINE_MAX_WIDTH, así que no pueden descuadrarse. */}
+              La tira mide lo mismo que el reproductor (VSL_INLINE_MAX_WIDTH, compartida con VslSection). */}
           <ClientLogosTicker className="mt-8 sm:mt-10" />
           <LandingCta lpId={landing.id} position="hero" label={landing.ctaLabel} className="mt-7 sm:mt-9" />
         </div>
       </section>
-
-      {/* 2b. Con reel protagonista, el VSL genérico va aquí, debajo del hero. */}
-      {reel && VSL[lang] ? (
-        <section className="px-4 pb-12 text-center sm:px-6 sm:pb-16">
-          <VslSection lang={lang} hideTitle inline formOnly reveal={false} formHref="#contacto" />
-        </section>
-      ) : null}
+      )}
 
       {/* 3. Expertise, con lo que menciona ese reel */}
       <section className="page-container pb-12 sm:pb-16">
