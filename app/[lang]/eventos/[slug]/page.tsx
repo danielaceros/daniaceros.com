@@ -3,6 +3,7 @@
 // Funnel aparte de la web-portfolio: cabecera mínima (Header.tsx), sin enlaces de navegación, noindex y fuera
 // del sitemap. Orden pensado para móvil: gancho del reel → VSL → expertise → dolor → portfolio → formulario.
 import type { Metadata } from "next"
+import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import VslSection from "@/components/VslSection"
@@ -10,6 +11,7 @@ import ClientLogosTicker from "@/components/landing/ClientLogosTicker"
 import ContactCTA from "@/components/ContactCTA"
 import PortfolioMarquee from "@/components/PortfolioMarquee"
 import LandingCta from "@/components/landing/LandingCta"
+import LandingReel from "@/components/landing/LandingReel"
 import LandingTracking from "@/components/landing/LandingTracking"
 import { getProjects } from "@/data/projects"
 import { buildMetadata } from "@/lib/seo"
@@ -69,6 +71,13 @@ export default async function LandingPage({ params }: Props) {
     if (idx > 0) portfolioItems.unshift(...portfolioItems.splice(idx, 1))
   }
 
+  // Si la landing tiene referencia principal, su reel es el vídeo del hero (habla justo de ese cliente) y el VSL
+  // genérico pasa a una sección secundaria justo debajo.
+  const reel = landing.featuredProject ? portfolioItems.find((item) => item.slug === landing.featuredProject) : undefined
+  // "{logo}" en el titular se sustituye por el logo de IFEMA (blanco, apilado); para medir longitud cuenta como texto.
+  const titleParts = landing.title.split("{logo}")
+  const titleText = landing.title.replace("{logo}", "IFEMA")
+
   return (
     <main className="text-white">
       <LandingTracking lpId={landing.id} />
@@ -81,18 +90,33 @@ export default async function LandingPage({ params }: Props) {
                 punto para que el VSL siga asomando en la primera pantalla. */}
             <h1
               className={`font-display font-semibold uppercase leading-[1] text-balance ${
-                landing.title.length > 70
+                titleText.length > 70
                   ? "text-[clamp(1.55rem,6.1vw,3rem)]"
                   : "text-[clamp(1.85rem,7.2vw,3.6rem)]"
               }`}
             >
-              {landing.title}
+              {titleParts[0]}
+              {titleParts.length > 1 ? (
+                <>
+                  <Image
+                    src="/logos/ifema.png"
+                    alt="IFEMA"
+                    width={128}
+                    height={88}
+                    priority
+                    className="ml-[0.1em] mr-[-0.02em] inline-block h-[1.55em] w-auto align-[-0.5em]"
+                  />
+                  {titleParts[1]}
+                </>
+              ) : null}
             </h1>
             <p className="mt-4 max-w-2xl px-1 font-inter text-[14px] leading-[1.7] text-white/74 text-balance sm:text-[16px]">
               {landing.subtitle}
             </p>
           </div>
-          {VSL[lang] ? (
+          {reel ? (
+            <LandingReel src={reel.video} poster={reel.poster} label="Reel · IFEMA Madrid" className="mt-7 sm:mt-9" />
+          ) : VSL[lang] ? (
             <div className="mt-7 w-full sm:mt-9">
               <VslSection lang={lang} hideTitle inline formOnly reveal={false} formHref="#contacto" />
             </div>
@@ -106,6 +130,13 @@ export default async function LandingPage({ params }: Props) {
           <LandingCta lpId={landing.id} position="hero" label={landing.ctaLabel} className="mt-7 sm:mt-9" />
         </div>
       </section>
+
+      {/* 2b. Con reel protagonista, el VSL genérico va aquí, debajo del hero. */}
+      {reel && VSL[lang] ? (
+        <section className="px-4 pb-12 text-center sm:px-6 sm:pb-16">
+          <VslSection lang={lang} hideTitle inline formOnly reveal={false} formHref="#contacto" />
+        </section>
+      ) : null}
 
       {/* 3. Expertise, con lo que menciona ese reel */}
       <section className="page-container pb-12 sm:pb-16">

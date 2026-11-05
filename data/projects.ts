@@ -297,7 +297,8 @@ export const projects = [
 {
   slug: "ifema",
   title: "IFEMA",
-  video: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/ifema-tranjis-7AhzP1iUfeuqs5BmILLBrkhPKaaQDI.mp4",
+  // `video` = versión web ligera (720p, ~14 MB) para no gastar CDN; `href` = original de alta calidad (80 MB).
+  video: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/ifema-tranjis-web2-guK7tj1EfBUZKXrh1T7ZvnA1rsVs8j.mp4",
   poster: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/ifema-tranjis-poster-lYCnaWEOnkqq7mJpVrlLzWoNTG9g2H.jpg",
   href: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/ifema-tranjis-7AhzP1iUfeuqs5BmILLBrkhPKaaQDI.mp4",
   sections: [

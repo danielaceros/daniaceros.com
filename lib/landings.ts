@@ -271,7 +271,8 @@ export const LANDINGS: Landing[] = [
     reel: "IFEMA",
     slug: "ifema",
     metaTitle: "Vídeo para expositores de IFEMA | Dani Acero",
-    title: "¿Expones en IFEMA? Que tu stand deje huella después de la feria",
+    // "{logo}" lo sustituye la plantilla por el logo de IFEMA.
+    title: "¿Expones en {logo}? Que tu stand deje huella después de la feria",
     subtitle: "Llevo tiempo ayudando a empresas expositoras de IFEMA a crear contenido que deja huella en su participación: resumen del stand, entrevistas en pista y reels listos para publicar.",
     pains: [
       "Inviertes en el stand y, cuando acaba la feria, no te queda material para aprovecharlo.",
