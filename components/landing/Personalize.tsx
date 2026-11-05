@@ -18,8 +18,8 @@ export type Personalization = { empresa: string | null; feria: string | null }
 const SAFE = /^[\p{L}\p{N} .,&'’\-+/()·]{2,60}$/u
 // Anclas internas de la página: no son datos de personalización.
 const ANCHORS = new Set(["contacto"])
-// {dato|escape} o {dato|escape|b} (negrita) / {dato|escape|u} (subrayado fino). Sin estilo = texto normal.
-const TOKEN = /\{(empresa|feria)\|([^}|]*)(?:\|([bu]))?\}/g
+// {dato|escape} o {dato|escape|b} (negrita) / {dato|escape|w} (blanco más brillante, sin negrita). Sin estilo = texto normal.
+const TOKEN = /\{(empresa|feria)\|([^}|]*)(?:\|([bw]))?\}/g
 
 const Ctx = createContext<Personalization>({ empresa: null, feria: null })
 
@@ -66,12 +66,12 @@ export function PersonalizeProvider({ children }: { children: ReactNode }) {
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>
 }
 
-export type HighlightKind = "b" | "u"
+export type HighlightKind = "b" | "w"
 
-/** Resaltado suave de lo personalizado: negrita o subrayado fino (nunca los dos a la vez). */
+/** Resaltado suave de lo personalizado, sin subrayados: negrita ("b") o un blanco algo más brillante ("w"). */
 export function Highlight({ children, kind = "b" }: { children: ReactNode; kind?: HighlightKind }) {
-  return kind === "u" ? (
-    <span className="underline decoration-white/55 decoration-1 underline-offset-[0.28em]">{children}</span>
+  return kind === "w" ? (
+    <span className="font-medium text-white">{children}</span>
   ) : (
     <strong className="font-bold text-white">{children}</strong>
   )

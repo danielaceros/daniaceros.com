@@ -2,7 +2,7 @@
 
 // Minititulo sobre el VSL de la landing de expositores (/eventos/ifema): "¿Cómo puedo ayudar a <empresa> en
 // <feria>?". Usa la personalización compartida (Personalize.tsx). La empresa va en negrita (también en la versión genérica,
-// "tu empresa") y la feria subrayada.
+// "tu empresa") y la feria en blanco más brillante (sin subrayados).
 import { Highlight, usePersonalization } from "@/components/landing/Personalize"
 
 export default function LandingGreeting({ className }: { className?: string }) {
@@ -13,7 +13,7 @@ export default function LandingGreeting({ className }: { className?: string }) {
       {feria ? (
         <>
           {" "}
-          en <Highlight kind="u">{feria}</Highlight>
+          en <Highlight kind="w">{feria}</Highlight>
         </>
       ) : null}
       ?

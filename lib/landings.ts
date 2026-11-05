@@ -276,16 +276,16 @@ export const LANDINGS: Landing[] = [
     // "{logo}" lo sustituye la plantilla por el logo de IFEMA. Marcadores "{empresa|escape}" y "{feria|escape}":
     // se personalizan con el fragmento del enlace del email (#Empresa~Feria); si falta el dato, se usa el escape.
     title: "¿Expones en {logo}? Que el stand de {empresa|tu empresa|b} deje huella después de {feria|la feria}",
-    subtitle: "Llevo tiempo ayudando a empresas expositoras de IFEMA a crear contenido que deja huella. Para {empresa|tu empresa|u} en {feria|tu próxima feria}: resumen del stand, entrevistas en pista y reels listos para publicar.",
+    subtitle: "Llevo tiempo ayudando a empresas expositoras de IFEMA a crear contenido que deja huella. Para {empresa|tu empresa|w} en {feria|tu próxima feria}: resumen del stand, entrevistas en pista y reels listos para publicar.",
     pains: [
       "Inviertes en el stand de {empresa|tu empresa|b} y, cuando acaba {feria|la feria}, no te queda material para aprovecharlo.",
-      "Durante {feria|la feria|u} no tienes tiempo de grabar ni de coordinar a un cámara.",
+      "Durante {feria|la feria|w} no tienes tiempo de grabar ni de coordinar a un cámara.",
       "Quieres publicar mientras {feria|la feria} sigue en la conversación, no semanas después.",
     ],
     expertise: [
       "Más de 6 años como filmmaker corporativo en Madrid",
       "He trabajado con IFEMA y conozco cómo se mueve una feria por dentro",
-      "Grabo el stand de {empresa|tu empresa|u}, a tu equipo y a tus clientes en pista",
+      "Grabo el stand de {empresa|tu empresa|w}, a tu equipo y a tus clientes en pista",
       "Resumen del stand y reels para redes, listos para publicar",
     ],
     ctaLabel: "Quiero contenido de mi stand",
