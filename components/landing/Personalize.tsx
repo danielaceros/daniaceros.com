@@ -18,7 +18,8 @@ export type Personalization = { empresa: string | null; feria: string | null }
 const SAFE = /^[\p{L}\p{N} .,&'’\-+/()·]{2,60}$/u
 // Anclas internas de la página: no son datos de personalización.
 const ANCHORS = new Set(["contacto"])
-const TOKEN = /\{(empresa|feria)\|([^}]*)\}/g
+// {dato|escape} o {dato|escape|b} (negrita) / {dato|escape|u} (subrayado fino). Sin estilo = texto normal.
+const TOKEN = /\{(empresa|feria)\|([^}|]*)(?:\|([bu]))?\}/g
 
 const Ctx = createContext<Personalization>({ empresa: null, feria: null })
 
@@ -65,12 +66,18 @@ export function PersonalizeProvider({ children }: { children: ReactNode }) {
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>
 }
 
-/** Resaltado de lo personalizado: negrita y subrayado. */
-export function Highlight({ children }: { children: ReactNode }) {
-  return <strong className="font-bold underline decoration-white/60 decoration-2 underline-offset-[0.22em]">{children}</strong>
+export type HighlightKind = "b" | "u"
+
+/** Resaltado suave de lo personalizado: negrita o subrayado fino (nunca los dos a la vez). */
+export function Highlight({ children, kind = "b" }: { children: ReactNode; kind?: HighlightKind }) {
+  return kind === "u" ? (
+    <span className="underline decoration-white/55 decoration-1 underline-offset-[0.28em]">{children}</span>
+  ) : (
+    <strong className="font-bold text-white">{children}</strong>
+  )
 }
 
-/** Pinta un texto con marcadores {empresa|escape} / {feria|escape}; resalta solo los datos reales. */
+/** Pinta un texto con marcadores {empresa|escape|estilo}; el escape y los datos sin estilo van en texto normal. */
 export function Rich({ text }: { text: string }) {
   const data = usePersonalization()
   const parts: ReactNode[] = []
@@ -80,7 +87,8 @@ export function Rich({ text }: { text: string }) {
     const index = match.index ?? 0
     if (index > last) parts.push(text.slice(last, index))
     const value = data[match[1] as keyof Personalization]
-    parts.push(value ? <Highlight key={i++}>{value}</Highlight> : match[2])
+    const kind = match[3] as HighlightKind | undefined
+    parts.push(value ? (kind ? <Highlight key={i++} kind={kind}>{value}</Highlight> : value) : match[2])
     last = index + match[0].length
   }
   if (last < text.length) parts.push(text.slice(last))

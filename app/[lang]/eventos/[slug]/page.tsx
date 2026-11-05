@@ -103,7 +103,8 @@ export default async function LandingPage({ params }: Props) {
             />
             {titleParts[1].match(/^[?!.,:;]*/)?.[0]}
           </span>
-          <Rich text={titleParts[1].replace(/^[?!.,:;]*/, "")} />
+          <br />
+          <Rich text={titleParts[1].replace(/^[?!.,:;]*/, "").trimStart()} />
         </>
       ) : null}
     </h1>
