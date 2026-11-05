@@ -17,6 +17,7 @@ import LandingReel from "@/components/landing/LandingReel"
 import LandingTracking from "@/components/landing/LandingTracking"
 import { getProjects } from "@/data/projects"
 import { buildMetadata } from "@/lib/seo"
+import { CONTACT_EMAIL, whatsappUrl } from "@/lib/contact"
 import { getDictionary, localizedHref, toLang } from "@/lib/i18n"
 import { LANDINGS, getLanding, plain } from "@/lib/landings"
 import { VSL } from "@/lib/media"
@@ -147,6 +148,26 @@ export default async function LandingPage({ params }: Props) {
               </div>
             ) : null}
             <LandingCta lpId={landing.id} position="hero" label={landing.ctaLabel} className="mt-7 sm:mt-9" />
+            {landing.contactRoutes ? (
+              <p className="mt-4 font-inter text-[13px] leading-[1.6] text-white/62 sm:text-[14px]">
+                o escríbeme directamente:{" "}
+                <a
+                  href={whatsappUrl("Hola Dani, vengo de la página de IFEMA y me gustaría hablar de contenido para mi stand.")}
+                  target="_blank"
+                  rel="noopener"
+                  className="underline decoration-white/40 underline-offset-[0.25em] transition-colors hover:text-white"
+                >
+                  WhatsApp
+                </a>{" "}
+                ·{" "}
+                <a
+                  href={`mailto:${CONTACT_EMAIL}`}
+                  className="underline decoration-white/40 underline-offset-[0.25em] transition-colors hover:text-white"
+                >
+                  {CONTACT_EMAIL}
+                </a>
+              </p>
+            ) : null}
           </section>
         </>
       ) : (
@@ -226,8 +247,8 @@ export default async function LandingPage({ params }: Props) {
         <ContactCTA
           lang={lang}
           mobileFormFirst
-          hideMobileContactInfo
-          formOnly
+          hideMobileContactInfo={!landing.contactRoutes}
+          formOnly={!landing.contactRoutes}
           hideFooter
           // Empieza a cargar ~una pantalla y media antes: al llegar (o al pulsar un CTA) ya está listo.
           formPreloadMargin="1000px"

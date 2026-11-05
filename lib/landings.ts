@@ -27,6 +27,8 @@ export type Landing = {
   ctaLabel: string
   /** Slug de un proyecto de data/projects.ts que va el primero en "Trabajos recientes" (referencia principal). */
   featuredProject?: string
+  /** Muestra las tres vías de contacto (formulario, email y WhatsApp), no solo el formulario. */
+  contactRoutes?: boolean
 }
 
 export const LANDINGS: Landing[] = [
@@ -288,6 +290,7 @@ export const LANDINGS: Landing[] = [
     ],
     ctaLabel: "Quiero contenido de mi stand",
     featuredProject: "ifema",
+    contactRoutes: true,
   },
 ]
 
