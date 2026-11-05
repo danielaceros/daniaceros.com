@@ -84,7 +84,7 @@ export const projects = [
 {
   slug: "omar-montes",
   title: "Omar Montes",
-  video: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/omar-montes-FtJaM4v1WwcGYflEUuLvMpVrEEuGGM.mp4",
+  video: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/omar-montes-web-YmO6tJIw795rxQDAvfQRkBiSy7irRF.mp4",
   poster: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/omar-montes-poster-unSyjbcKFfSVYifFYX2FBUKpXa2MpO.jpg",
   href: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/omar-montes-FtJaM4v1WwcGYflEUuLvMpVrEEuGGM.mp4",
   sections: [
@@ -445,7 +445,7 @@ export const projects = [
 {
   slug: "cinesa",
   title: "Cinesa",
-  video: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/cinesa-36LhsKhSkLDenX3JaZkxpiKz3V15R5.mp4",
+  video: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/cinesa-web-1CYl8JzgA3l8E7mVFWr6cZfVYLNYDT.mp4",
   poster: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/cinesa-poster-1xiDgetIzToSl4xReEBWXtgVYEefDH.jpg",
   href: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/cinesa-36LhsKhSkLDenX3JaZkxpiKz3V15R5.mp4",
   sections: [
