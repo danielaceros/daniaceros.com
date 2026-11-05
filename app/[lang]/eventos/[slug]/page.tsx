@@ -11,12 +11,14 @@ import ClientLogosTicker from "@/components/landing/ClientLogosTicker"
 import ContactCTA from "@/components/ContactCTA"
 import PortfolioMarquee from "@/components/PortfolioMarquee"
 import LandingCta from "@/components/landing/LandingCta"
+import LandingGreeting from "@/components/landing/LandingGreeting"
+import { PersonalizeProvider, Rich } from "@/components/landing/Personalize"
 import LandingReel from "@/components/landing/LandingReel"
 import LandingTracking from "@/components/landing/LandingTracking"
 import { getProjects } from "@/data/projects"
 import { buildMetadata } from "@/lib/seo"
 import { getDictionary, localizedHref, toLang } from "@/lib/i18n"
-import { LANDINGS, getLanding } from "@/lib/landings"
+import { LANDINGS, getLanding, plain } from "@/lib/landings"
 import { VSL } from "@/lib/media"
 
 type Props = { params: Promise<{ lang: string; slug: string }> }
@@ -36,7 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     ...buildMetadata({
       title: landing.metaTitle,
-      description: landing.subtitle,
+      description: plain(landing.subtitle),
       path: `/eventos/${landing.slug}`,
       noIndex: true,
       translated: false,
@@ -76,7 +78,7 @@ export default async function LandingPage({ params }: Props) {
   const reel = landing.featuredProject ? portfolioItems.find((item) => item.slug === landing.featuredProject) : undefined
   // "{logo}" en el titular se sustituye por el logo de IFEMA (blanco, apilado); para medir longitud cuenta como texto.
   const titleParts = landing.title.split("{logo}")
-  const titleText = landing.title.replace("{logo}", "IFEMA")
+  const titleText = plain(landing.title).replace("{logo}", "IFEMA")
 
   // Titular compartido por los dos layouts. Tráfico de Instagram/Facebook en móvil: con ganchos largos (>70
   // caracteres) baja un punto para que el vídeo siga asomando en la primera pantalla.
@@ -86,7 +88,7 @@ export default async function LandingPage({ params }: Props) {
         titleText.length > 70 ? "text-[clamp(1.55rem,6.1vw,3rem)]" : "text-[clamp(1.85rem,7.2vw,3.6rem)]"
       } ${reel ? "lg:text-[clamp(2.4rem,3.6vw,3.6rem)]" : ""}`}
     >
-      {titleParts[0]}
+      <Rich text={titleParts[0]} />
       {titleParts.length > 1 ? (
         <>
           {/* El signo que sigue al logo ("?") va pegado a él: sin esto, en móvil salta solo a la línea de abajo. */}
@@ -101,13 +103,14 @@ export default async function LandingPage({ params }: Props) {
             />
             {titleParts[1].match(/^[?!.,:;]*/)?.[0]}
           </span>
-          {titleParts[1].replace(/^[?!.,:;]*/, "")}
+          <Rich text={titleParts[1].replace(/^[?!.,:;]*/, "")} />
         </>
       ) : null}
     </h1>
   )
 
   return (
+    <PersonalizeProvider>
     <main className="text-white">
       <LandingTracking lpId={landing.id} />
 
@@ -120,7 +123,7 @@ export default async function LandingPage({ params }: Props) {
               <div className="flex flex-col items-center lg:items-start">
                 {titleNode}
                 <p className="mt-4 max-w-2xl px-1 font-inter text-[14px] leading-[1.7] text-white/74 text-balance sm:text-[16px] lg:max-w-xl lg:px-0 lg:text-[17px]">
-                  {landing.subtitle}
+                  <Rich text={landing.subtitle} />
                 </p>
               </div>
               <LandingReel
@@ -137,6 +140,8 @@ export default async function LandingPage({ params }: Props) {
             <ClientLogosTicker />
             {VSL[lang] ? (
               <div className="mt-8 w-full sm:mt-10">
+                {/* Minititulo que sitúa el vídeo: personalizado con ?empresa=&feria= del email, genérico si faltan. */}
+                <LandingGreeting className="mb-4 font-display text-[clamp(1.25rem,5.2vw,1.9rem)] font-semibold uppercase leading-[1.1] text-balance sm:mb-5" />
                 <VslSection lang={lang} hideTitle inline formOnly reveal={false} formHref="#contacto" />
               </div>
             ) : null}
@@ -149,7 +154,7 @@ export default async function LandingPage({ params }: Props) {
           <div className="flex w-full max-w-4xl flex-col items-center">
             {titleNode}
             <p className="mt-4 max-w-2xl px-1 font-inter text-[14px] leading-[1.7] text-white/74 text-balance sm:text-[16px]">
-              {landing.subtitle}
+              <Rich text={landing.subtitle} />
             </p>
           </div>
           {VSL[lang] ? (
@@ -177,7 +182,9 @@ export default async function LandingPage({ params }: Props) {
                 className="flex items-baseline gap-4 border-b border-white/10 py-4 font-inter text-[15px] leading-[1.6] text-white/86 sm:text-[16px]"
               >
                 <span aria-hidden className="h-px w-5 shrink-0 translate-y-[-0.3em] bg-white/70" />
-                <span>{line}</span>
+                <span>
+                  <Rich text={line} />
+                </span>
               </li>
             ))}
           </ul>
@@ -192,7 +199,9 @@ export default async function LandingPage({ params }: Props) {
             {landing.pains.map((pain) => (
               <li key={pain} className="flex gap-3 font-inter text-[15px] leading-[1.7] text-white/80 sm:text-[16px]">
                 <span aria-hidden className="mt-[0.85em] h-1.5 w-1.5 shrink-0 rounded-full bg-white/60" />
-                <span>{pain}</span>
+                <span>
+                  <Rich text={pain} />
+                </span>
               </li>
             ))}
           </ul>
@@ -245,5 +254,6 @@ export default async function LandingPage({ params }: Props) {
         </p>
       </footer>
     </main>
+    </PersonalizeProvider>
   )
 }

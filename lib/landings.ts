@@ -271,24 +271,30 @@ export const LANDINGS: Landing[] = [
     reel: "IFEMA",
     slug: "ifema",
     metaTitle: "Vídeo para expositores de IFEMA | Dani Acero",
-    // "{logo}" lo sustituye la plantilla por el logo de IFEMA.
-    title: "¿Expones en {logo}? Que tu stand deje huella después de la feria",
-    subtitle: "Llevo tiempo ayudando a empresas expositoras de IFEMA a crear contenido que deja huella en su participación: resumen del stand, entrevistas en pista y reels listos para publicar.",
+    // "{logo}" lo sustituye la plantilla por el logo de IFEMA. Marcadores "{empresa|escape}" y "{feria|escape}":
+    // se personalizan con el fragmento del enlace del email (#Empresa~Feria); si falta el dato, se usa el escape.
+    title: "¿Expones en {logo}? Que el stand de {empresa|tu empresa} deje huella después de {feria|la feria}",
+    subtitle: "Llevo tiempo ayudando a empresas expositoras de IFEMA a crear contenido que deja huella. Para {empresa|tu empresa} en {feria|tu próxima feria}: resumen del stand, entrevistas en pista y reels listos para publicar.",
     pains: [
-      "Inviertes en el stand y, cuando acaba la feria, no te queda material para aprovecharlo.",
-      "En plena feria no tienes tiempo de grabar ni de coordinar a un cámara.",
-      "Quieres publicar mientras la feria sigue en la conversación, no semanas después.",
+      "Inviertes en el stand de {empresa|tu empresa} y, cuando acaba {feria|la feria}, no te queda material para aprovecharlo.",
+      "Durante {feria|la feria} no tienes tiempo de grabar ni de coordinar a un cámara.",
+      "Quieres publicar mientras {feria|la feria} sigue en la conversación, no semanas después.",
     ],
     expertise: [
       "Más de 6 años como filmmaker corporativo en Madrid",
       "He trabajado con IFEMA y conozco cómo se mueve una feria por dentro",
-      "Grabo tu stand, a tu equipo y a tus clientes en pista",
+      "Grabo el stand de {empresa|tu empresa}, a tu equipo y a tus clientes en pista",
       "Resumen del stand y reels para redes, listos para publicar",
     ],
     ctaLabel: "Quiero contenido de mi stand",
     featuredProject: "ifema",
   },
 ]
+
+/** Texto sin marcadores de personalización: cada "{dato|escape}" se queda con su escape (metadatos, longitudes). */
+export function plain(text: string): string {
+  return text.replace(/\{(?:empresa|feria)\|([^}]*)\}/g, "$1")
+}
 
 export function getLanding(slug: string): Landing | undefined {
   return LANDINGS.find((landing) => landing.slug === slug)
