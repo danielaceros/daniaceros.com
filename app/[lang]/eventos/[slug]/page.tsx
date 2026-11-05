@@ -239,6 +239,20 @@ export default async function LandingPage({ params }: Props) {
         <div className="mt-6 sm:mt-8">
           <PortfolioMarquee items={portfolioItems} size="xl" mode="modal" scrollable lang={lang} />
         </div>
+        {landing.moreWork ? (
+          <div className="mt-8 flex justify-center px-4 sm:mt-10">
+            {/* Pestaña nueva: la landing es un funnel, y así quien mira más trabajos no pierde el formulario. */}
+            <Link
+              href={localizedHref(lang, landing.moreWork.href)}
+              target="_blank"
+              rel="noopener"
+              prefetch={false}
+              className="inline-flex min-h-[52px] items-center justify-center rounded-2xl border border-white/30 px-8 py-3 text-center font-inter text-[12px] font-semibold uppercase leading-[1.35] tracking-[0.06em] text-white transition-colors duration-300 hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black sm:min-h-[56px] sm:px-10 sm:text-[13px]"
+            >
+              {landing.moreWork.label}
+            </Link>
+          </div>
+        ) : null}
       </section>
 
       {/* 6. Formulario GHL: único final del camino. Sin email ni WhatsApp (Dani los enseña en /gracias, tras el
