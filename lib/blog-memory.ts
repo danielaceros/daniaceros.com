@@ -1080,6 +1080,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto (fallback evergreen, temas de la lista agotados, tema del bloque público extranjero; Search Console no usado, token invalid_grant). Imágenes Unsplash.",
   },
+  {
+    slug: "grabar-evento-interpretacion-simultanea-madrid",
+    keyword: "grabar evento con interpretación simultánea",
+    intent: "informacional",
+    createdAt: "2026-11-05",
+    status: "published",
+    notes: "Auto-generado por blog-auto (fallback evergreen, temas de la lista agotados, tema del bloque público extranjero; Search Console no usado, token invalid_grant). Imágenes Unsplash.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {

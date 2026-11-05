@@ -1968,4 +1968,126 @@ export const enAuto: Record<string, BlogPostTranslation> = {
       },
     ],
   },
+  "grabar-evento-interpretacion-simultanea-madrid": {
+    title: "How to film an event with simultaneous interpretation in Madrid",
+    description:
+      "How to film a conference or event with simultaneous interpretation in Madrid: what audio to request from the AV company, how to separate languages and how to deliver subtitled versions.",
+    readingTime: "5 min read",
+    category: "Guide",
+    tags: [
+      "simultaneous interpretation",
+      "conference filming",
+      "international event Madrid",
+      "multilingual audio",
+      "event videographer",
+      "multilingual corporate video",
+    ],
+    keyword: "film event simultaneous interpretation",
+    excerpt:
+      "If your event in Madrid has interpreter booths, the video is decided by the audio: ask for a clean feed from the mixing desk and record each language separately. This is how I plan it.",
+    seoTitle: "Filming Events with Simultaneous Interpretation | Dani Acero",
+    metaDescription:
+      "Filming an event with simultaneous interpretation in Madrid: audio per language, coordination with the AV company and subtitled delivery. A practical guide.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "To film an event with simultaneous interpretation, you have to solve the audio before the picture. The usual approach is to ask the AV company for a clean feed from the mixing desk with the speaker's original voice, plus one feed for each interpreter channel, and to record them on separate tracks. That lets me cut one version per language afterwards.",
+      },
+      {
+        type: "paragraph",
+        text: "It is a common case at international conferences and conventions in Madrid: the speaker talks in one language, the booths interpret live, and the client later wants a video that works for the whole audience. If the audio is not prepared with the interpretation provider, that recording is lost. Here is what I check before the event as Dani Acero.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabar-evento-interpretacion-simultanea-madrid/hero.webp",
+        alt: "Black and brown headset next to a laptop, typical equipment of an interpreter booth",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Why does simultaneous interpretation change how you film an event?" },
+      {
+        type: "paragraph",
+        text: "At an event without interpretation, an ambient microphone and the signal from the mixing desk are enough for the main audio. With interpretation, several voices run in parallel: the speaker in the room, one or more interpreters in booths and, sometimes, audience questions in a third language.",
+      },
+      {
+        type: "paragraph",
+        text: "Interpreters work in booths with their own equipment and send their signal to the attendees' receivers. That signal does not reach my camera automatically. You have to ask for it, and it is best to do so early, because the company setting up the sound has to leave an output ready.",
+      },
+      { type: "heading", level: 2, text: "How do you prepare the audio to record several languages?" },
+      { type: "heading", level: 3, text: "What to ask the AV company for" },
+      {
+        type: "paragraph",
+        text: "I ask for a line output from the desk with the room audio (the speaker's voice) and one output for each interpretation channel you want to keep. If the event has three languages, that is three channels plus the original. I confirm it in writing a week before and test it at the sound check, not during the first talk.",
+      },
+      { type: "heading", level: 3, text: "Record each channel on its own track" },
+      {
+        type: "paragraph",
+        text: "Each source goes to a different track on a separate audio recorder, in addition to the audio entering the camera as a backup. If everything is mixed into one track, you cannot remove an interpreter's voice later. Kept separate, I build one version per language in DaVinci Resolve without touching the picture.",
+      },
+      { type: "heading", level: 3, text: "Where to stand without disturbing the booths" },
+      {
+        type: "paragraph",
+        text: "Booths are usually at the back of the room or at one side, and interpreters need to see the speaker and the screen. We agree a camera position with the event manager that does not block their view or add noise. With two cameras, one fixed on the stage and one handheld with a telephoto lens, the room is covered without walking in front of anyone.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabar-evento-interpretacion-simultanea-madrid/detalle.webp",
+        alt: "Man wearing black wireless headphones walking among event attendees",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "How do you deliver the video to an audience in several languages?" },
+      {
+        type: "paragraph",
+        text: "There are two usual ways. The first is one version per language, with the interpreter's voice over the video and the speaker's at low volume. The second is to keep the original audio and add subtitles in the languages you need. For LinkedIn, where almost everything is watched without sound, subtitles tend to work better.",
+      },
+      {
+        type: "paragraph",
+        text: "If you want to publish the interpreter's voice, it is best to have their permission. This is a rights question that is settled before the event with the interpretation agency, not afterwards. I include it as a point on the preparation list with the client.",
+      },
+      { type: "heading", level: 2, text: "Common mistakes when filming events with interpretation" },
+      {
+        type: "list",
+        items: [
+          "Assuming the booth audio reaches the camera: you have to ask for the output and test it.",
+          "Mixing all languages into one track and being unable to separate them later.",
+          "Not talking to the interpretation agency about using their voice in the final video.",
+          "Placing the camera blocking the booth's view or too close to it, adding fan noise and equipment handling.",
+          "Not deciding beforehand which languages are delivered: each version adds hours of editing and review.",
+          "Arriving at the sound check without time to check levels on each channel.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "Can you record the interpreters' audio at a conference?",
+        answer:
+          "Yes, if the AV company prepares an output from the desk for each interpretation channel. You need to ask for it before the event and also confirm with the interpretation agency that their voice can be used in the video.",
+      },
+      {
+        type: "faq",
+        question: "Is it better to deliver the video with subtitles or with the interpreter's voice?",
+        answer:
+          "It depends on where it will be watched. For social media and LinkedIn, subtitles tend to work better because many people play videos without sound. For a full recording of the day, it makes sense to also offer a version with the interpreter audio.",
+      },
+      {
+        type: "faq",
+        question: "How far in advance should the audio be coordinated?",
+        answer:
+          "A week before the event is comfortable, to confirm the audio outputs and run the sound check the day before or first thing in the morning. With less time it can be done, but with a higher risk of losing a channel.",
+      },
+      {
+        type: "faq",
+        question: "How many cameras do you need at an event with booths?",
+        answer:
+          "For a day of talks, two cameras are usually enough: one fixed on the stage and one handheld for audience and detail shots. The number depends more on the event format than on the interpretation.",
+      },
+      {
+        type: "paragraph",
+        text: "If you have an event in Madrid with simultaneous interpretation and want it filmed properly, write to me through /contacto with the date, the venue, the languages and what you want to receive. I will reply with an audio plan and an itemised quote. If you want more information about this kind of service, there is /video-eventos-madrid.",
+      },
+    ],
+  },
 }

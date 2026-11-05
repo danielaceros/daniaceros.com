@@ -16799,6 +16799,124 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "grabar-evento-interpretacion-simultanea-madrid",
+    title: "Cómo grabar en vídeo un evento con interpretación simultánea en Madrid",
+    description:
+      "Cómo grabar un congreso o evento con interpretación simultánea en Madrid: qué audio pedir a la empresa técnica, cómo separar idiomas y cómo entregar versiones subtituladas.",
+    publishedAt: "2026-11-05",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["interpretación simultánea", "grabación de congresos", "evento internacional Madrid", "audio multilingüe", "videógrafo de eventos", "vídeo corporativo multiidioma"],
+    keyword: "grabar evento con interpretación simultánea",
+    intent: "informacional",
+    excerpt:
+      "Si tu evento en Madrid tiene cabinas de interpretación, el vídeo se decide en el audio: hay que pedir una salida limpia de la mesa de sonido y grabar cada idioma por separado. Así lo planteo yo.",
+    seoTitle: "Grabar evento con interpretación simultánea | Daniel Acero",
+    metaDescription:
+      "Grabar un evento con interpretación simultánea en Madrid: audio por idiomas, coordinación con la empresa técnica y entrega con subtítulos. Guía práctica.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Para grabar un evento con interpretación simultánea hay que resolver el audio antes que la imagen. Lo normal es pedir a la empresa técnica una salida limpia de la mesa de sonido con la voz original del ponente y otra con cada canal de intérprete, y grabarlas por separado en pistas distintas. Así se puede montar después una versión por idioma.",
+      },
+      {
+        type: "paragraph",
+        text: "Es un caso frecuente en congresos y convenciones internacionales en Madrid: el ponente habla en un idioma, las cabinas traducen en directo y el cliente quiere después un vídeo que funcione para todo el público. Si el audio no se prepara con la empresa de interpretación, esa grabación se pierde. Esto es lo que compruebo yo antes del evento.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabar-evento-interpretacion-simultanea-madrid/hero.webp",
+        alt: "Auriculares negros y marrones junto a un portátil, equipo típico de una cabina de interpretación",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué la interpretación simultánea cambia cómo se graba un evento" },
+      {
+        type: "paragraph",
+        text: "En un evento sin interpretación, un micrófono de ambiente y la señal de la mesa de sonido bastan para tener el audio principal. Con interpretación aparecen varias voces en paralelo: el ponente en sala, uno o varios intérpretes en cabina y, a veces, preguntas del público en un tercer idioma.",
+      },
+      {
+        type: "paragraph",
+        text: "Los intérpretes trabajan en cabinas con su propio equipo y envían su señal a los receptores de los asistentes. Esa señal no llega a mi cámara de forma automática. Hay que pedirla, y conviene hacerlo con tiempo, porque la empresa que monta el sonido tiene que dejar una salida preparada.",
+      },
+      { type: "heading", level: 2, text: "Cómo se prepara el audio para grabar varios idiomas" },
+      { type: "heading", level: 3, text: "Qué pedir a la empresa técnica" },
+      {
+        type: "paragraph",
+        text: "Pido una salida de línea de la mesa con el audio de sala (la voz del ponente) y una salida por cada canal de interpretación que se quiera conservar. Si el evento tiene tres idiomas, son tres canales más el original. Lo confirmo por escrito una semana antes y lo pruebo en la prueba de sonido, no durante la primera ponencia.",
+      },
+      { type: "heading", level: 3, text: "Grabar cada canal en una pista separada" },
+      {
+        type: "paragraph",
+        text: "Cada fuente va a una pista distinta en un grabador de audio independiente, además del audio que entra en cámara como respaldo. Si todo se mezcla en una sola pista, no se puede quitar la voz de un intérprete después. Separado, en posproducción en DaVinci Resolve monto una versión por idioma sin tocar la imagen.",
+      },
+      { type: "heading", level: 3, text: "Dónde colocarse sin molestar a las cabinas" },
+      {
+        type: "paragraph",
+        text: "Las cabinas suelen estar al fondo de la sala o en un lateral, y los intérpretes necesitan ver al ponente y la pantalla. Acordamos con el responsable del evento una posición de cámara que no tape su visión ni genere ruido. Con dos cámaras, una fija en el escenario y otra móvil con teleobjetivo, se cubre la sala sin pasar por delante de nadie.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabar-evento-interpretacion-simultanea-madrid/detalle.webp",
+        alt: "Hombre con auriculares inalámbricos negros caminando entre asistentes a un evento",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Cómo entregar el vídeo a un público en varios idiomas" },
+      {
+        type: "paragraph",
+        text: "Hay dos formas habituales. La primera es una versión por idioma, con la voz del intérprete sobre el vídeo y la del ponente a bajo volumen. La segunda es dejar el audio original y añadir subtítulos en los idiomas que se necesiten. Para LinkedIn, donde casi todo se ve sin sonido, los subtítulos suelen funcionar mejor.",
+      },
+      {
+        type: "paragraph",
+        text: "Si se quiere publicar la voz del intérprete, conviene tener su permiso. Es un tema de derechos que se resuelve antes del evento con la agencia de interpretación, no después. Lo dejo como punto de la lista de preparación con el cliente.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes al grabar eventos con interpretación" },
+      {
+        type: "list",
+        items: [
+          "Dar por hecho que el audio de cabina llega a la cámara: hay que pedir la salida y probarla.",
+          "Mezclar todos los idiomas en una única pista y no poder separarlos después.",
+          "No hablar con la agencia de interpretación sobre el uso de su voz en el vídeo final.",
+          "Colocar la cámara tapando la visión de la cabina o cerca de ella, con ruido de ventilación y manejo del equipo.",
+          "No definir antes qué idiomas se entregan: cada versión añade horas de edición y revisión.",
+          "Llegar a la prueba de sonido sin tiempo para comprobar niveles de cada canal.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Se puede grabar el audio de los intérpretes de un congreso?",
+        answer:
+          "Sí, si la empresa técnica prepara una salida de la mesa para cada canal de interpretación. Hay que pedirla antes del evento y confirmar también con la agencia de interpretación que se puede usar su voz en el vídeo.",
+      },
+      {
+        type: "faq",
+        question: "¿Es mejor entregar el vídeo con subtítulos o con voz del intérprete?",
+        answer:
+          "Depende de dónde se vaya a ver. Para redes sociales y LinkedIn, los subtítulos suelen funcionar mejor porque mucha gente reproduce sin sonido. Para una grabación completa de la jornada, tiene sentido ofrecer también una versión con el audio de intérprete.",
+      },
+      {
+        type: "faq",
+        question: "¿Con cuánta antelación hay que coordinar el audio?",
+        answer:
+          "Lo cómodo es una semana antes del evento para confirmar salidas de audio y hacer la prueba de sonido el día anterior o a primera hora. Con menos margen se puede hacer, pero con más riesgo de perder algún canal.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuántas cámaras hacen falta en un evento con cabinas?",
+        answer:
+          "Para una jornada de ponencias, dos cámaras suelen ser suficientes: una fija en el escenario y otra móvil para planos de público y detalle. El número depende más del formato del evento que de la interpretación.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes un evento en Madrid con interpretación simultánea y quieres que quede bien grabado en vídeo, escríbeme desde /contacto con la fecha, el recinto, los idiomas y lo que quieres entregar. Te respondo con un plan de audio y un presupuesto por partidas. Si buscas más información sobre este tipo de servicio, tienes /video-eventos-madrid.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
