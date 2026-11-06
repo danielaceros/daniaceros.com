@@ -16917,6 +16917,124 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "grabacion-convencion-anual-empresa",
+    title: "Cómo grabar en vídeo la convención anual de una empresa",
+    description:
+      "Cómo grabar la convención anual de una empresa en Madrid: cuántas cámaras, qué sesiones cubrir, cómo planificar el día y qué piezas entregar después.",
+    publishedAt: "2026-11-06",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["convención anual de empresa", "grabación de eventos corporativos", "videógrafo de eventos Madrid", "evento interno", "vídeo resumen de evento", "filmmaker corporativo"],
+    keyword: "grabación de una convención anual de empresa",
+    intent: "informacional",
+    excerpt:
+      "Una convención anual se graba bien con dos o tres cámaras, un guion de sesiones cerrado y piezas definidas antes del evento: resumen, ponencias y clips para redes. Así lo organizo yo.",
+    seoTitle: "Grabar la convención anual de una empresa | Daniel Acero",
+    metaDescription:
+      "Grabar la convención anual de una empresa en Madrid: cámaras, sesiones, planificación del día y entregables. Guía práctica de un filmmaker corporativo.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Para grabar una convención anual hacen falta, como mínimo, dos cámaras en la sala principal, audio tomado de la mesa de sonido y una lista cerrada de las sesiones que se cubren. Con eso se obtiene el resumen del evento y las ponencias completas. Lo que decide el resultado es lo que se acuerda antes del día.",
+      },
+      {
+        type: "paragraph",
+        text: "Una convención dura entre una y tres jornadas, con ponencias, premios, trabajo en grupo y cenas. No se puede cubrir todo con la misma intensidad. Yo pregunto desde el principio qué momentos importan de verdad a la empresa y a partir de ahí decido equipo, horarios y entregables.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabacion-convencion-anual-empresa/hero.webp",
+        alt: "Público sentado en una sala durante una convención de empresa",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué hay que decidir antes de grabar una convención" },
+      {
+        type: "paragraph",
+        text: "Lo primero es el uso del vídeo. Un resumen para enseñar a quien no pudo venir se plantea distinto que unas ponencias completas para el canal interno o un vídeo para captar talento. Lo segundo es quién lo va a ver: la plantilla, los clientes o público externo. Eso cambia el tono, la duración y lo que se puede enseñar.",
+      },
+      {
+        type: "paragraph",
+        text: "Lo tercero es el programa. Pido la agenda con horarios, la lista de ponentes y los momentos que no se pueden perder: la apertura del CEO, la entrega de premios, una presentación de producto. Con eso preparo un guion de rodaje por franjas, con quién cubre qué y cuándo hay hueco para tomar imágenes de ambiente.",
+      },
+      { type: "heading", level: 2, text: "Cómo se organiza la grabación de una convención anual" },
+      { type: "heading", level: 3, text: "Cuántas cámaras y dónde colocarlas" },
+      {
+        type: "paragraph",
+        text: "En la sala principal, una cámara fija en plano general desde el fondo y otra en plano medio del ponente. Con una tercera en mano se consiguen reacciones del público y detalles. En una convención pequeña, con una sola sala y un solo día, dos cámaras y un operador de apoyo suelen bastar. Si hay sesiones en paralelo, hace falta más gente, no más cámaras por persona.",
+      },
+      { type: "heading", level: 3, text: "Audio: la señal de la mesa y un respaldo" },
+      {
+        type: "paragraph",
+        text: "El audio de una ponencia no se resuelve con el micrófono de cámara. Pido una salida de línea de la mesa de sonido de la sala y llevo un grabador independiente como respaldo. Si el ponente usa micro de diadema o solapa, mejor, porque la voz llega limpia. Pruebo niveles en el ensayo, no con el público ya sentado.",
+      },
+      { type: "heading", level: 3, text: "Planificar el día con holgura" },
+      {
+        type: "paragraph",
+        text: "Llego antes de que abran puertas, normalmente entre una y dos horas antes, para revisar la sala, la luz y las conexiones. Durante el evento dejo un margen entre sesiones para cambiar baterías, volcar tarjetas y hacer imágenes del networking, el café y la llegada de los asistentes, que son las que dan vida al resumen.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabacion-convencion-anual-empresa/detalle.webp",
+        alt: "Asistentes reunidos en una sala durante un evento de empresa",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Qué piezas entregar después de la convención" },
+      {
+        type: "paragraph",
+        text: "Lo habitual es un vídeo resumen de entre dos y tres minutos, las ponencias completas editadas con los gráficos del ponente y una serie de clips verticales para LinkedIn e Instagram. Si el evento tiene un momento fuerte, como un premio o un anuncio, merece su propia pieza corta.",
+      },
+      {
+        type: "paragraph",
+        text: "Los plazos dependen de cuántas piezas se pidan. El resumen suele salir en una o dos semanas; las ponencias completas, algo más si hay que sincronizar diapositivas. Lo acordamos antes del evento, junto con las rondas de revisión, para que nadie espere más de lo previsto.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes al grabar una convención" },
+      {
+        type: "list",
+        items: [
+          "No pedir la agenda con horarios y llegar sin saber en qué sesiones hay que estar.",
+          "Fiarse del audio de cámara en una sala grande, con eco y ruido de público.",
+          "Dejar sin cubrir el ambiente: llegada, networking, pausas y cena.",
+          "No acordar qué piezas se entregan, y recibir al final una petición de diez vídeos distintos.",
+          "No avisar a los asistentes de que se graba y no tener resueltos los permisos de imagen.",
+          "Contar con una sola cámara y quedarse sin plano alternativo cuando falla una batería o un enfoque.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuántas cámaras hacen falta para grabar una convención de empresa?",
+        answer:
+          "En una sala principal, dos cámaras como mínimo: un plano general fijo y un plano medio del ponente. Una tercera en mano aporta reacciones del público y detalles. El número final depende de cuántas salas haya y de qué sesiones se quieran cubrir.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tarda la entrega del vídeo de una convención?",
+        answer:
+          "El vídeo resumen suele estar listo en una o dos semanas. Las ponencias completas pueden llevar algo más, sobre todo si hay que integrar diapositivas. Los plazos se cierran por escrito antes del evento.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar solo la sesión principal y no el resto?",
+        answer:
+          "Sí. Muchas empresas graban solo la apertura y los premios, y complementan con imágenes de ambiente. Lo importante es decidir antes qué sesiones se cubren y qué piezas se entregan, para ajustar equipo y presupuesto.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta avisar a los asistentes de que se está grabando?",
+        answer:
+          "Sí. Conviene avisar en la invitación o con un cartel en la entrada, y tener claro cómo se usará el vídeo. Eso evita problemas de derechos de imagen, sobre todo si el contenido se publicará fuera de la empresa.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tu empresa prepara una convención en Madrid y quieres grabarla bien, escríbeme desde /contacto con la fecha, el lugar, el programa y lo que necesitas recibir. Te respondo con un plan de rodaje y un presupuesto por partidas. Los servicios de grabación de eventos están en /servicios.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {

@@ -2090,4 +2090,126 @@ export const enAuto: Record<string, BlogPostTranslation> = {
       },
     ],
   },
+  "grabacion-convencion-anual-empresa": {
+    title: "How to film a company's annual convention",
+    description:
+      "How to film an annual company convention in Madrid: how many cameras, which sessions to cover, how to plan the day and which videos to deliver afterwards.",
+    readingTime: "5 min read",
+    category: "Guide",
+    tags: [
+      "annual company convention",
+      "corporate event filming",
+      "event videographer Madrid",
+      "internal event",
+      "event recap video",
+      "corporate filmmaker",
+    ],
+    keyword: "annual convention filming madrid",
+    excerpt:
+      "An annual convention is filmed well with two or three cameras, a fixed session plan and deliverables agreed before the event: recap, full talks and social clips. This is how I set it up.",
+    seoTitle: "Filming a Company Annual Convention in Madrid | Dani Acero",
+    metaDescription:
+      "Filming an annual company convention in Madrid: cameras, sessions, planning the day and deliverables. A practical guide from a corporate filmmaker.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "To film an annual convention you need at least two cameras in the main room, audio taken from the sound desk and a fixed list of the sessions you will cover. That gives you the event recap and the full talks. What decides the result is what you agree before the day.",
+      },
+      {
+        type: "paragraph",
+        text: "A convention lasts from one to three days, with talks, awards, group work and dinners. You cannot cover all of it with the same intensity. I ask from the start which moments really matter to the company, and from there I decide the gear, the schedule and the deliverables.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabacion-convencion-anual-empresa/hero.webp",
+        alt: "Audience seated in a room during a company convention",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "What to decide before filming a convention" },
+      {
+        type: "paragraph",
+        text: "First, what the video is for. A recap for people who could not attend is planned differently from full talks for an internal channel or a video to attract talent. Second, who will watch it: your staff, your clients or an outside audience. That changes the tone, the length and what you can show.",
+      },
+      {
+        type: "paragraph",
+        text: "Third, the programme. I ask for the agenda with times, the list of speakers and the moments you cannot miss: the CEO's opening, the awards, a product launch. With that I prepare a shooting plan by time slot, with who covers what and when there is room for atmosphere shots.",
+      },
+      { type: "heading", level: 2, text: "How to organise the filming of an annual convention" },
+      { type: "heading", level: 3, text: "How many cameras and where to put them" },
+      {
+        type: "paragraph",
+        text: "In the main room, one fixed camera on a wide shot from the back and another on a medium shot of the speaker. A third, handheld, gives you audience reactions and details. At a small convention with one room and one day, two cameras and a support operator are usually enough. If there are parallel sessions, you need more people, not more cameras per person.",
+      },
+      { type: "heading", level: 3, text: "Audio: the sound desk feed and a backup" },
+      {
+        type: "paragraph",
+        text: "You do not solve the audio of a talk with the camera microphone. I ask for a line output from the room's sound desk and bring a separate recorder as backup. If the speaker wears a headset or lavalier mic, even better, because the voice arrives clean. I test levels at the rehearsal, not with the audience already seated.",
+      },
+      { type: "heading", level: 3, text: "Planning the day with some slack" },
+      {
+        type: "paragraph",
+        text: "I arrive before the doors open, usually one to two hours early, to check the room, the light and the connections. During the event I leave a gap between sessions to change batteries, offload cards and shoot the networking, the coffee and the arrival of attendees, which are the shots that bring the recap to life.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabacion-convencion-anual-empresa/detalle.webp",
+        alt: "Attendees gathered in a room during a company event",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Which videos to deliver after the convention" },
+      {
+        type: "paragraph",
+        text: "The usual set is a recap video of two to three minutes, the full talks edited with the speaker's slides and a series of vertical clips for LinkedIn and Instagram. If the event has a strong moment, such as an award or an announcement, it deserves its own short piece.",
+      },
+      {
+        type: "paragraph",
+        text: "Timelines depend on how many pieces you ask for. The recap usually comes out in one to two weeks; the full talks take a little longer if slides need syncing. We agree this before the event, together with the revision rounds, so nobody waits longer than planned.",
+      },
+      { type: "heading", level: 2, text: "Common mistakes when filming a convention" },
+      {
+        type: "list",
+        items: [
+          "Not asking for the agenda with times and arriving without knowing which sessions to be in.",
+          "Trusting the camera audio in a large room with echo and crowd noise.",
+          "Leaving the atmosphere uncovered: arrivals, networking, breaks and dinner.",
+          "Not agreeing which videos are delivered, and ending up with a request for ten different cuts.",
+          "Not telling attendees they are being filmed and not having image permissions sorted.",
+          "Relying on a single camera and having no alternative angle when a battery or focus fails.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "How many cameras do you need to film a company convention?",
+        answer:
+          "In the main room, at least two: a fixed wide shot and a medium shot of the speaker. A third, handheld, adds audience reactions and details. The final number depends on how many rooms there are and which sessions you want covered.",
+      },
+      {
+        type: "faq",
+        question: "How long does it take to deliver a convention video?",
+        answer:
+          "The recap video is usually ready in one to two weeks. Full talks can take a little longer, especially if slides need to be integrated. Timelines are agreed in writing before the event.",
+      },
+      {
+        type: "faq",
+        question: "Can you film only the main session and not the rest?",
+        answer:
+          "Yes. Many companies film only the opening and the awards, and add atmosphere shots. What matters is deciding beforehand which sessions are covered and which videos are delivered, so gear and budget fit.",
+      },
+      {
+        type: "faq",
+        question: "Do you need to tell attendees the event is being filmed?",
+        answer:
+          "Yes. Mention it in the invitation or with a sign at the entrance, and be clear about how the video will be used. That avoids image-rights problems, especially if the content will be published outside the company.",
+      },
+      {
+        type: "paragraph",
+        text: "If your company is preparing a convention in Madrid and wants it filmed properly, write to me from /contacto with the date, the venue, the programme and what you need to receive. I will reply with a shooting plan and an itemised quote. The event filming services are on /servicios.",
+      },
+    ],
+  },
 }
