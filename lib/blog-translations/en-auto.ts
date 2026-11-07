@@ -2212,4 +2212,126 @@ export const enAuto: Record<string, BlogPostTranslation> = {
       },
     ],
   },
+  "gala-premios-corporativa-grabacion": {
+    title: "How to film a corporate awards gala",
+    description:
+      "How to film a company awards gala in Madrid: cameras, ceremony script, audio, stage lighting and the videos worth delivering afterwards.",
+    readingTime: "5 min read",
+    category: "Guide",
+    tags: [
+      "corporate awards gala",
+      "corporate event filming",
+      "event videographer Madrid",
+      "awards ceremony",
+      "event recap video",
+      "corporate filmmaker",
+    ],
+    keyword: "awards gala videographer madrid",
+    excerpt:
+      "An awards gala is filmed well with three cameras, the ceremony script in hand and audio from the sound desk. The key is not to miss any presentation moment. This is how I prepare it.",
+    seoTitle: "Filming a Corporate Awards Gala in Madrid | Dani Acero",
+    metaDescription:
+      "Filming a corporate awards gala in Madrid: cameras, ceremony script, audio, lighting and deliverables. A practical guide from a corporate filmmaker.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "To film an awards gala you need at least three cameras: one fixed on a wide shot of the stage, one on a medium shot of the host and the person presenting, and a third for the winners and the audience. Plus audio from the sound desk and the ceremony script, minute by minute.",
+      },
+      {
+        type: "paragraph",
+        text: "At a gala every award happens once. If the camera is not in place when the winner walks on stage, that moment does not come back. That is why almost all the work happens before the ceremony: knowing the running order, the positions and who covers each presentation.",
+      },
+      {
+        type: "image",
+        src: "/blog/gala-premios-corporativa-grabacion/hero.webp",
+        alt: "Room with tables and chairs set up for a company gala",
+        width: 1920,
+        height: 1281,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "What I need to know before filming an awards gala" },
+      {
+        type: "paragraph",
+        text: "I ask for the ceremony script with times, the order of the categories, the winners' names and the moments with music or projected video. I also ask whether there is a technical rehearsal. If there is, I use it to place cameras and check the light with the stage built.",
+      },
+      {
+        type: "paragraph",
+        text: "Another thing I settle early is what the video is for. A social recap and a full archive recording are planned differently. And it helps to know whether winners give speeches, because then I need clean audio from each one and not only from the host.",
+      },
+      { type: "heading", level: 2, text: "How to organise the filming of a gala" },
+      { type: "heading", level: 3, text: "How many cameras and what each one does" },
+      {
+        type: "paragraph",
+        text: "Camera A stays fixed on a wide shot from the back and works as the safety. B follows the host and the person handing over the award. C, handheld or at the side, covers the winner walking up, the table's reaction and the applause. With four cameras I add a tight frontal shot of the lectern. At a small gala of around 80 people, two cameras and a good position can be enough.",
+      },
+      { type: "heading", level: 3, text: "Audio: the sound desk and handheld mics" },
+      {
+        type: "paragraph",
+        text: "I ask for a line output from the sound desk and also record on a backup recorder. Galas have loud music, applause and mics passed from hand to hand, so camera audio is no use. I check levels at the sound check and look at them again when the music comes in.",
+      },
+      { type: "heading", level: 3, text: "Stage lighting and exposure" },
+      {
+        type: "paragraph",
+        text: "The stage is usually bright and the room dark, with LED screens and colour changes. I expose for the speaker's face, not the background, and shoot in a profile that holds the highlights. A Sony A7 with fast lenses works well in those conditions. I avoid spotlights that dazzle me without warning the venue's lighting technician.",
+      },
+      {
+        type: "image",
+        src: "/blog/gala-premios-corporativa-grabacion/detalle.webp",
+        alt: "Attendees gathered at an event with a presentation on screen",
+        width: 1920,
+        height: 1223,
+      },
+      { type: "heading", level: 2, text: "Which videos to deliver after the gala" },
+      {
+        type: "paragraph",
+        text: "The usual set is a recap of two to three minutes for social media and internal communication, one individual clip per winner and the full recording of the ceremony. The individual clips tend to be shared the most, because each winner posts theirs on their own profile.",
+      },
+      {
+        type: "paragraph",
+        text: "Timelines depend on the number of pieces. A recap can be ready in a week; the clips for every winner take one or two more. If you need something the same day to show at dinner, it is planned as a separate quick piece and agreed beforehand.",
+      },
+      { type: "heading", level: 2, text: "Common mistakes when filming an awards gala" },
+      {
+        type: "list",
+        items: [
+          "Not having the order of the awards and missing a presentation by standing in the wrong place.",
+          "Trusting the camera mic with loud music and applause.",
+          "Exposing for the stage background and leaving winners' faces blown out or too dark.",
+          "Not asking for a technical rehearsal and placing cameras while the room is still unbuilt.",
+          "Skipping the red carpet, the guests' arrival and the cocktail, which give context to the recap.",
+          "Not agreeing in advance which videos are delivered and by when.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "How many cameras do you need to film an awards gala?",
+        answer:
+          "Three is a good minimum: a fixed wide shot, a medium shot of the stage and a camera for winners and audience. At small galas two can be enough. At large events a fourth camera covers the lectern or the back of the room.",
+      },
+      {
+        type: "faq",
+        question: "Can you deliver a video on the same day as the gala?",
+        answer:
+          "Yes, a short piece of 60 to 90 seconds, if it is agreed beforehand and an editing workflow is set up during the event. The full recap and the individual clips come later, with more care in editing and colour.",
+      },
+      {
+        type: "faq",
+        question: "What do you do if the room is very dark?",
+        answer:
+          "I talk to the lighting technician so winners are well lit on stage, and I use fast lenses. What matters is that whoever is speaking has light; the rest of the room can stay in the dark without a problem.",
+      },
+      {
+        type: "faq",
+        question: "Do you film the whole gala or only the awards?",
+        answer:
+          "It depends on the use. For an archive you film the whole ceremony; for communication the presentations and the atmosphere are enough. I settle it before the event because it changes the number of cameras and the budget.",
+      },
+      {
+        type: "paragraph",
+        text: "If your company is organising an awards gala in Madrid and wants it filmed properly, write to me from /contacto with the date, the venue, the ceremony script and what you need to receive. I will reply with a shooting plan and an itemised quote. The event filming services are on /servicios.",
+      },
+    ],
+  },
 }

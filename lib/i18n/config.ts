@@ -202,6 +202,7 @@ export const EN_BLOG_SLUGS: Record<string, string> = {
   "filmmaker-madrid-empresas-extranjeras": "madrid-filmmaker-for-foreign-companies",
   "grabar-evento-interpretacion-simultanea-madrid": "filming-event-simultaneous-interpretation-madrid",
   "grabacion-convencion-anual-empresa": "filming-annual-company-convention",
+  "gala-premios-corporativa-grabacion": "corporate-awards-gala-filming",
 }
 
 const EN_PATH_TO_ES: Record<string, string> = Object.fromEntries([

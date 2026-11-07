@@ -17035,6 +17035,124 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "gala-premios-corporativa-grabacion",
+    title: "Cómo grabar en vídeo una gala de premios corporativa",
+    description:
+      "Cómo grabar una gala de premios de empresa en Madrid: cámaras, guion de la ceremonia, audio, luz de escenario y piezas que conviene entregar después.",
+    publishedAt: "2026-11-07",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["gala de premios corporativa", "grabación de eventos corporativos", "videógrafo de eventos Madrid", "ceremonia de premios", "vídeo resumen de evento", "filmmaker corporativo"],
+    keyword: "grabación de una gala de premios corporativa",
+    intent: "informacional",
+    excerpt:
+      "Una gala de premios se graba bien con tres cámaras, el guion de la ceremonia en la mano y audio de la mesa de sonido. La clave es no perder ningún momento de entrega. Así lo preparo yo.",
+    seoTitle: "Grabar una gala de premios corporativa | Daniel Acero",
+    metaDescription:
+      "Grabar una gala de premios corporativa en Madrid: cámaras, guion de la ceremonia, audio, luz y entregables. Guía práctica de un filmmaker corporativo.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Para grabar una gala de premios hacen falta tres cámaras como mínimo: una fija en plano general del escenario, otra en plano medio de quien presenta y entrega, y una tercera para los premiados y el público. Más el audio de la mesa de sonido y el guion de la ceremonia, minuto a minuto.",
+      },
+      {
+        type: "paragraph",
+        text: "En una gala cada premio ocurre una sola vez. Si la cámara no está en el sitio cuando el ganador sube al escenario, ese momento no se repite. Por eso casi todo el trabajo está antes de la ceremonia: saber el orden, las posiciones y quién cubre cada entrega.",
+      },
+      {
+        type: "image",
+        src: "/blog/gala-premios-corporativa-grabacion/hero.webp",
+        alt: "Sala con mesas y sillas preparada para una gala de empresa",
+        width: 1920,
+        height: 1281,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué necesito saber antes de grabar una gala de premios" },
+      {
+        type: "paragraph",
+        text: "Pido el guion de la ceremonia con horarios, el orden de las categorías, los nombres de los premiados y los momentos con música o vídeo proyectado. También pregunto si hay ensayo técnico. Si lo hay, lo aprovecho para colocar cámaras y comprobar la luz con el escenario montado.",
+      },
+      {
+        type: "paragraph",
+        text: "Otra cosa que cierro pronto es el uso del vídeo. Un resumen para redes y una grabación íntegra para archivo se plantean distinto. Y conviene saber si los premiados hablan, porque entonces necesito audio limpio de cada intervención y no solo del presentador.",
+      },
+      { type: "heading", level: 2, text: "Cómo se organiza la grabación de una gala" },
+      { type: "heading", level: 3, text: "Cuántas cámaras y qué hace cada una" },
+      {
+        type: "paragraph",
+        text: "La cámara A queda fija en un plano general desde el fondo, y sirve de seguridad. La B sigue al presentador y al que entrega el premio. La C, en mano o en un lateral, hace al premiado subiendo, la reacción de la mesa y el aplauso. Con cuatro cámaras añado un plano frontal cerrado al atril. En una gala pequeña de unas 80 personas, dos cámaras y una buena posición pueden bastar.",
+      },
+      { type: "heading", level: 3, text: "Audio: mesa de sonido y micros de mano" },
+      {
+        type: "paragraph",
+        text: "Pido una salida de línea de la mesa de sonido y grabo además con un registrador de respaldo. En las galas hay música alta, aplausos y micros que se pasan de mano en mano, así que el audio de cámara no sirve. Compruebo niveles en la prueba de sonido y vuelvo a mirarlos cuando entra la música.",
+      },
+      { type: "heading", level: 3, text: "Luz de escenario y exposición" },
+      {
+        type: "paragraph",
+        text: "El escenario suele estar muy iluminado y la sala a oscuras, con pantallas LED y cambios de color. Expongo para la cara de quien habla, no para el fondo, y grabo en un perfil que aguante las altas luces. Con una Sony A7 y objetivos luminosos se trabaja bien en esas condiciones. Evito los focos que me deslumbran sin avisar al técnico de sala.",
+      },
+      {
+        type: "image",
+        src: "/blog/gala-premios-corporativa-grabacion/detalle.webp",
+        alt: "Asistentes reunidos en un evento con una presentación en pantalla",
+        width: 1920,
+        height: 1223,
+      },
+      { type: "heading", level: 2, text: "Qué piezas conviene entregar después de la gala" },
+      {
+        type: "paragraph",
+        text: "Lo habitual es un resumen de dos a tres minutos para redes y comunicación interna, un clip individual por cada premiado y la grabación íntegra de la ceremonia. Los clips individuales suelen ser lo que más se comparte, porque cada ganador lo publica en su perfil.",
+      },
+      {
+        type: "paragraph",
+        text: "Los plazos dependen del número de piezas. Un resumen puede estar en una semana; los clips de todos los premiados, en una o dos más. Si necesitas algo el mismo día para enseñarlo en la cena, se plantea como una pieza rápida aparte y se acuerda antes.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes al grabar una gala de premios" },
+      {
+        type: "list",
+        items: [
+          "No tener el orden de los premios y perder una entrega por estar en otra posición.",
+          "Fiarse del micro de cámara con música alta y aplausos.",
+          "Exponer para el fondo del escenario y dejar la cara de los premiados quemada u oscura.",
+          "No pedir ensayo técnico y colocar las cámaras con la sala todavía sin montar.",
+          "Dejar sin grabar la alfombra roja, la llegada de invitados y el cóctel, que dan contexto al resumen.",
+          "No acordar con antelación qué piezas se entregan y en qué plazo.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuántas cámaras hacen falta para grabar una gala de premios?",
+        answer:
+          "Tres es un buen mínimo: un plano general fijo, un plano medio del escenario y una cámara para premiados y público. En galas pequeñas pueden bastar dos. En eventos grandes se añade una cuarta cámara para el atril o el fondo de sala.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede entregar un vídeo el mismo día de la gala?",
+        answer:
+          "Sí, una pieza corta de entre 60 y 90 segundos, si se acuerda antes y se prepara un flujo de edición durante el evento. El resumen completo y los clips individuales llegan después, con más cuidado de montaje y color.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué hago si la sala está muy oscura?",
+        answer:
+          "Hablo con el técnico de luces para que los premiados queden bien iluminados en el escenario y uso objetivos luminosos. Lo esencial es que quien habla tenga luz; el resto de la sala puede quedar en penumbra sin problema.",
+      },
+      {
+        type: "faq",
+        question: "¿Se graba la gala completa o solo los premios?",
+        answer:
+          "Depende del uso. Para archivo se graba la ceremonia íntegra; para comunicación bastan las entregas y el ambiente. Lo cierro antes del evento porque cambia el número de cámaras y el presupuesto.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tu empresa organiza una gala de premios en Madrid y quieres grabarla bien, escríbeme desde /contacto con la fecha, el lugar, el guion de la ceremonia y lo que necesitas recibir. Te respondo con un plan de rodaje y un presupuesto por partidas. Los servicios de grabación de eventos están en /servicios.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
