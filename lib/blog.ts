@@ -17153,6 +17153,124 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-inversores-extranjeros-madrid",
+    title: "Vídeo de empresa para presentar a inversores extranjeros desde Madrid",
+    description:
+      "Cómo grabar un vídeo de empresa para inversores internacionales: duración, guion, idioma, subtítulos, planos y entregables. Guía de un filmmaker de Madrid.",
+    publishedAt: "2026-11-08",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["vídeo para inversores", "vídeo corporativo en inglés", "presentación de empresa", "subtítulos en inglés", "filmmaker corporativo Madrid", "empresas con inversión extranjera"],
+    keyword: "vídeo de empresa para inversores extranjeros",
+    intent: "informacional",
+    excerpt:
+      "Un vídeo para inversores extranjeros dura de tres a cinco minutos, se graba con quien dirige la empresa a cámara, y se entrega con subtítulos en inglés o doblado. Así lo planteo desde Madrid.",
+    seoTitle: "Vídeo de empresa para inversores extranjeros | Daniel Acero",
+    metaDescription:
+      "Vídeo de empresa para inversores extranjeros: duración, guion, idioma, subtítulos en inglés y entregables. Guía práctica de un filmmaker corporativo en Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Un vídeo de empresa para inversores extranjeros funciona con tres a cinco minutos, quien dirige la empresa hablando a cámara y una explicación clara de qué hace la compañía, qué problema resuelve y qué momento atraviesa. Se entrega con subtítulos en inglés, o con una versión grabada directamente en inglés.",
+      },
+      {
+        type: "paragraph",
+        text: "El inversor que no está en Madrid no puede visitar la oficina ni tomar un café con el equipo. El vídeo hace ese papel antes de la primera reunión. Si se ve cuidado y se entiende a la primera, la conversación empieza en un punto más avanzado.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-inversores-extranjeros-madrid/hero.webp",
+        alt: "Personas en una mesa de reuniones escuchando a una mujer que presenta",
+        width: 1920,
+        height: 1282,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué debe contar un vídeo para inversores internacionales" },
+      {
+        type: "paragraph",
+        text: "Lo primero es lo esencial: quién eres, qué vendes y a quién. En los primeros veinte segundos tiene que quedar claro. Después viene el contexto del mercado, el equipo y la tracción, es decir, lo que ya funciona. Cierro siempre con la siguiente etapa de la empresa y por qué hace falta capital o un socio ahora.",
+      },
+      {
+        type: "paragraph",
+        text: "No meto cifras que no estén respaldadas en otro documento. El vídeo acompaña al dossier y a los números, no los sustituye. Si hay una métrica clave, la pongo en pantalla como gráfico sencillo y la persona que habla la comenta con sus palabras.",
+      },
+      { type: "heading", level: 2, text: "Cómo se graba bien un vídeo para inversores" },
+      { type: "heading", level: 3, text: "Idioma: grabar en inglés o subtitular" },
+      {
+        type: "paragraph",
+        text: "Si quien presenta se desenvuelve bien en inglés, grabo directamente en inglés: suena más natural y el inversor lo percibe. Si no, grabo en español con calma y subtitulo en inglés. Lo que no recomiendo es forzar un inglés con el que la persona no esté cómoda, porque se nota en cámara y resta confianza.",
+      },
+      { type: "heading", level: 3, text: "Quién habla y cómo se prepara" },
+      {
+        type: "paragraph",
+        text: "Funciona mejor la persona que lidera la empresa, con un guion de puntos y no leído palabra por palabra. Hago un ensayo corto antes de grabar y uso teleprompter solo si hace falta. Una entrevista con preguntas guiadas suele sacar un tono más natural que un monólogo.",
+      },
+      { type: "heading", level: 3, text: "Planos de la empresa y del producto" },
+      {
+        type: "paragraph",
+        text: "Para que el inversor vea la empresa real, grabo planos de apoyo: el equipo trabajando, las instalaciones, el producto en uso y, si encaja, un par de clientes o usuarios hablando. Una jornada de rodaje en Madrid suele cubrir la entrevista principal y entre 30 y 40 minutos de planos de apoyo.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-inversores-extranjeros-madrid/detalle.webp",
+        alt: "Cámara de cine preparada en un set de rodaje de entrevista",
+        width: 1920,
+        height: 1080,
+      },
+      { type: "heading", level: 2, text: "Qué entregables piden los inversores" },
+      {
+        type: "paragraph",
+        text: "El formato habitual es una pieza principal de tres a cinco minutos, más una versión corta de entre 60 y 90 segundos para enviar por correo o LinkedIn. Entrego los dos con subtítulos en inglés incrustados y también con el archivo de subtítulos aparte, por si el inversor quiere verlos en otro idioma.",
+      },
+      {
+        type: "paragraph",
+        text: "Conviene pensar desde el inicio dónde se verá: un enlace privado, la web de la empresa o una sala de datos. Con eso decido el formato, el peso del archivo y si necesito versión vertical. Los plazos de entrega suelen estar entre dos y tres semanas desde el rodaje.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes en un vídeo para inversores" },
+      {
+        type: "list",
+        items: [
+          "Alargarlo más de cinco minutos: el inversor deja de verlo antes del final.",
+          "Contar la historia de la empresa durante dos minutos antes de explicar qué hace.",
+          "Usar jerga interna o siglas que alguien de fuera no conoce.",
+          "Grabar en inglés con alguien que no se siente cómodo y sonar forzado.",
+          "Música alta o efectos que tapan la voz, sobre todo con subtítulos.",
+          "Prometer resultados o cifras que luego no coinciden con el dossier.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto debe durar un vídeo para inversores?",
+        answer:
+          "Entre tres y cinco minutos para la pieza principal. Una versión de 60 a 90 segundos sirve para correos y redes. Más largo suele perder atención, y los detalles ya están en el dossier y en las reuniones.",
+      },
+      {
+        type: "faq",
+        question: "¿Hay que grabarlo en inglés o basta con subtitular?",
+        answer:
+          "Depende de quien habla. Si domina el inglés, grabarlo directamente suena más natural. Si no, es mejor grabar en español y subtitular en inglés con cuidado, que forzar un idioma con el que no hay soltura.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tarda en estar listo?",
+        answer:
+          "Un rodaje de una jornada en Madrid y una edición con subtítulos suelen estar entregados en dos o tres semanas. Si hay una reunión con fecha, lo digo desde el primer día para planificar hacia atrás.",
+      },
+      {
+        type: "faq",
+        question: "¿Puede salir la persona que dirige la empresa si no está acostumbrada a la cámara?",
+        answer:
+          "Sí. Con un guion de puntos, un ensayo corto y preguntas guiadas en lugar de un monólogo, casi todo el mundo llega a un resultado natural. Grabo varias tomas y elijo las mejores en edición.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tu empresa tiene sede en Madrid y necesita presentarse a inversores de otros países, escríbeme desde /contacto con la fecha de tu próxima reunión, el idioma y lo que quieres contar. Te respondo con un plan de rodaje y un presupuesto por partidas. Los servicios de vídeo corporativo están en /servicios.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {

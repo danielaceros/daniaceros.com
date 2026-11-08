@@ -2334,4 +2334,126 @@ export const enAuto: Record<string, BlogPostTranslation> = {
       },
     ],
   },
+  "video-inversores-extranjeros-madrid": {
+    title: "Company video to pitch foreign investors from Madrid",
+    description:
+      "How to film a company video for international investors: length, script, language, subtitles, shots and deliverables. A guide from a Madrid filmmaker.",
+    readingTime: "5 min read",
+    category: "Guide",
+    tags: [
+      "investor video",
+      "corporate video in English",
+      "company presentation",
+      "English subtitles",
+      "corporate filmmaker Madrid",
+      "companies with foreign investment",
+    ],
+    keyword: "investor video madrid",
+    excerpt:
+      "An investor video runs three to five minutes, is shot with the company's leader speaking to camera, and is delivered with English subtitles or filmed directly in English. This is how I plan it from Madrid.",
+    seoTitle: "Investor Video for a Madrid Company | Dani Acero",
+    metaDescription:
+      "Investor video for a Madrid company: length, script, language, English subtitles and deliverables. A practical guide from a corporate filmmaker in Madrid.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "A company video for foreign investors works with three to five minutes, the person who runs the company speaking to camera, and a clear explanation of what the company does, what problem it solves and what stage it is at. It is delivered with English subtitles, or as a version filmed directly in English.",
+      },
+      {
+        type: "paragraph",
+        text: "An investor who is not in Madrid cannot visit the office or have a coffee with the team. The video does that job before the first meeting. If it looks polished and is understood at first viewing, the conversation starts at a more advanced point.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-inversores-extranjeros-madrid/hero.webp",
+        alt: "People at a meeting table listening to a woman presenting",
+        width: 1920,
+        height: 1282,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "What should a video for international investors cover?" },
+      {
+        type: "paragraph",
+        text: "First, the essentials: who you are, what you sell and to whom. It has to be clear in the first twenty seconds. Then comes the market context, the team and the traction, meaning what already works. I always close with the company's next stage and why capital or a partner is needed now.",
+      },
+      {
+        type: "paragraph",
+        text: "I do not include figures that are not backed up in another document. The video supports the deck and the numbers; it does not replace them. If there is one key metric, I put it on screen as a simple chart and the speaker comments on it in their own words.",
+      },
+      { type: "heading", level: 2, text: "How to film an investor video well" },
+      { type: "heading", level: 3, text: "Language: film in English or add subtitles?" },
+      {
+        type: "paragraph",
+        text: "If the presenter is comfortable in English, I film directly in English: it sounds more natural and the investor notices. If not, I film in Spanish at a relaxed pace and subtitle in English. What I do not recommend is forcing English that the person is not at ease with, because it shows on camera and reduces trust.",
+      },
+      { type: "heading", level: 3, text: "Who speaks and how they prepare" },
+      {
+        type: "paragraph",
+        text: "It works best with the person who leads the company, using a bullet-point script rather than reading word for word. I run a short rehearsal before filming and use a teleprompter only if needed. An interview with guided questions usually gets a more natural tone than a monologue.",
+      },
+      { type: "heading", level: 3, text: "Shots of the company and the product" },
+      {
+        type: "paragraph",
+        text: "So the investor sees the real company, I film supporting shots: the team at work, the premises, the product in use and, if it fits, a couple of customers or users speaking. One shooting day in Madrid usually covers the main interview and 30 to 40 minutes of supporting footage.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-inversores-extranjeros-madrid/detalle.webp",
+        alt: "Cinema camera set up on an interview shoot",
+        width: 1920,
+        height: 1080,
+      },
+      { type: "heading", level: 2, text: "What deliverables do investors ask for?" },
+      {
+        type: "paragraph",
+        text: "The usual format is one main piece of three to five minutes, plus a short version of 60 to 90 seconds to send by email or on LinkedIn. I deliver both with English subtitles burned in and also with the subtitle file separately, in case the investor wants them in another language.",
+      },
+      {
+        type: "paragraph",
+        text: "It helps to think from the start about where it will be watched: a private link, the company website or a data room. That decides the format, the file size and whether I need a vertical version. Delivery usually takes two to three weeks from the shoot.",
+      },
+      { type: "heading", level: 2, text: "Common mistakes in an investor video" },
+      {
+        type: "list",
+        items: [
+          "Running past five minutes: the investor stops watching before the end.",
+          "Telling the company's history for two minutes before explaining what it does.",
+          "Using internal jargon or acronyms that an outsider does not know.",
+          "Filming in English with someone who is not comfortable and sounding forced.",
+          "Loud music or effects that cover the voice, especially with subtitles.",
+          "Promising results or figures that later do not match the deck.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "How long should an investor video be?",
+        answer:
+          "Between three and five minutes for the main piece. A 60 to 90 second version works for emails and social media. Longer usually loses attention, and the details are already in the deck and in the meetings.",
+      },
+      {
+        type: "faq",
+        question: "Do you have to film it in English, or are subtitles enough?",
+        answer:
+          "It depends on the speaker. If they are fluent, filming directly in English sounds more natural. If not, it is better to film in Spanish and subtitle carefully in English than to force a language they are not at ease with.",
+      },
+      {
+        type: "faq",
+        question: "How long does it take to be ready?",
+        answer:
+          "A one-day shoot in Madrid and an edit with subtitles are usually delivered in two to three weeks. If there is a meeting with a fixed date, I ask for it on day one so I can plan backwards.",
+      },
+      {
+        type: "faq",
+        question: "Can the company's leader appear if they are not used to the camera?",
+        answer:
+          "Yes. With a bullet-point script, a short rehearsal and guided questions instead of a monologue, almost everyone reaches a natural result. I film several takes and pick the best ones in the edit.",
+      },
+      {
+        type: "paragraph",
+        text: "If your company is based in Madrid and needs to present itself to investors from other countries, write to me from /contacto with the date of your next meeting, the language and what you want to say. I will reply with a shooting plan and an itemised quote. The corporate video services are on /servicios.",
+      },
+    ],
+  },
 }

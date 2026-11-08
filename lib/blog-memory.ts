@@ -1104,6 +1104,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto (fallback evergreen, temas de la lista agotados, tema nuevo; Search Console no usado, token invalid_grant). Imágenes Unsplash.",
   },
+  {
+    slug: "video-inversores-extranjeros-madrid",
+    keyword: "vídeo de empresa para inversores extranjeros",
+    intent: "informacional",
+    createdAt: "2026-11-08",
+    status: "published",
+    notes: "Auto-generado por blog-auto (fallback evergreen, temas de la lista agotados, tema del bloque público extranjero; Search Console no usado, token invalid_grant). Imágenes Unsplash.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {
