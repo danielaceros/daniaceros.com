@@ -17271,6 +17271,124 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-hero-web-empresa",
+    title: "Vídeo de cabecera para la web de una empresa: cómo grabarlo y que no la ralentice",
+    description:
+      "Cómo plantear un vídeo de cabecera (hero) para la web de empresa: duración, peso, formato, bucle sin sonido y versión móvil. Guía de un filmmaker de Madrid.",
+    publishedAt: "2026-11-09",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["vídeo de cabecera web", "hero video", "vídeo para web de empresa", "vídeo en bucle", "velocidad de carga", "filmmaker corporativo Madrid"],
+    keyword: "vídeo de cabecera para web de empresa",
+    intent: "informacional",
+    excerpt:
+      "Un vídeo de cabecera para la web dura entre 8 y 15 segundos, va en bucle y sin sonido, y pesa menos de 4 MB. Así lo grabo y lo preparo para que se vea bien sin frenar la carga.",
+    seoTitle: "Vídeo de cabecera para web de empresa | Daniel Acero",
+    metaDescription:
+      "Vídeo de cabecera para web de empresa: duración, peso, formato, bucle sin sonido y versión móvil. Guía práctica de un filmmaker corporativo en Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Un vídeo de cabecera para la web de una empresa dura entre 8 y 15 segundos, se reproduce en bucle y sin sonido, y se exporta por debajo de 4 MB para no frenar la carga. Se graba pensando en que el texto de la web va encima, con planos lentos y limpios.",
+      },
+      {
+        type: "paragraph",
+        text: "Es el primer contacto que tiene una visita con la marca. Si el vídeo es pesado o genérico, hace más daño que bien. Si enseña el trabajo real de la empresa y carga rápido, la web se entiende en tres segundos.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-hero-web-empresa/hero.webp",
+        alt: "Portátil sobre una mesa de madera mostrando una página web con vídeo",
+        width: 1880,
+        height: 1253,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es un vídeo hero y para qué sirve" },
+      {
+        type: "paragraph",
+        text: "Es el vídeo que ocupa la parte superior de la página de inicio, detrás del titular y del botón principal. No es un vídeo corporativo para ver con sonido: es una imagen en movimiento que da contexto. Una nave en funcionamiento, un equipo en una reunión, un producto en uso.",
+      },
+      {
+        type: "paragraph",
+        text: "No sustituye al vídeo corporativo completo. Lo complementa. El hero crea ambiente en la portada y, si la visita quiere saber más, un botón lleva al vídeo largo o a la página de servicios.",
+      },
+      { type: "heading", level: 2, text: "Cómo se graba bien un vídeo de cabecera" },
+      { type: "heading", level: 3, text: "Planos lentos, con espacio para el texto" },
+      {
+        type: "paragraph",
+        text: "Grabo con movimientos suaves: un slider, un gimbal o cámara fija con algo de vida dentro del encuadre. Dejo un tercio del plano vacío o desenfocado, que es donde irá el titular. Los cortes rápidos y los planos con mucho detalle compiten con el texto y cansan.",
+      },
+      { type: "heading", level: 3, text: "Duración y bucle sin salto" },
+      {
+        type: "paragraph",
+        text: "Con 10 segundos suele bastar. Lo importante es que el final enlace con el principio sin que se note el corte. Lo resuelvo en edición con un fundido corto o con un plano que termina en un movimiento parecido al del inicio. Un bucle que salta resulta molesto después de la segunda vuelta.",
+      },
+      { type: "heading", level: 3, text: "Sin sonido, con subtítulos solo si hay voz" },
+      {
+        type: "paragraph",
+        text: "Los navegadores solo dejan reproducir automáticamente un vídeo si va silenciado, así que el hero no lleva audio. Si grabo a alguien hablando, no cuenta con que se oiga: lo uso como imagen y el mensaje va en el texto de la web.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-hero-web-empresa/detalle.webp",
+        alt: "Línea de tiempo de edición de vídeo en una pantalla oscura",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Peso y formato para que la web siga siendo rápida" },
+      {
+        type: "paragraph",
+        text: "Exporto en 1920 × 1080 como máximo, a 24 o 25 fotogramas por segundo, en H.264 (MP4) y, si el desarrollador lo pide, también en WebM. El objetivo es quedarme entre 2 y 4 MB. Para lograrlo bajo la tasa de bits, quito el audio y recorto la duración antes de bajar la calidad.",
+      },
+      {
+        type: "paragraph",
+        text: "Además entrego una imagen fija (poster) del primer fotograma. Se carga al instante mientras llega el vídeo y es lo que se ve si el navegador no reproduce el bucle. En móvil suelo entregar una versión más ligera, a veces vertical, o directamente la imagen fija para ahorrar datos.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes en un vídeo de cabecera" },
+      {
+        type: "list",
+        items: [
+          "Subir un archivo de 30 o 40 MB sin comprimir y dejar la portada tardando varios segundos.",
+          "Usar imágenes de archivo genéricas en lugar de la empresa real.",
+          "Poner un vídeo con mucho movimiento que dificulta leer el titular.",
+          "Olvidar la imagen fija y dejar la cabecera en negro mientras carga.",
+          "Dejar el audio activado, con lo que el navegador no lo reproduce automáticamente.",
+          "No probar en móvil con conexión normal, no con wifi de oficina.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto debe durar un vídeo de cabecera?",
+        answer:
+          "Entre 8 y 15 segundos, en bucle. Más largo aumenta el peso sin aportar nada, porque la visita no lo ve entero. Lo importante es que el bucle no se note.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto debe pesar para no ralentizar la web?",
+        answer:
+          "Entre 2 y 4 MB para escritorio. En móvil conviene una versión más ligera o una imagen fija. Un vídeo hero de más de 10 MB suele notarse en la velocidad de carga.",
+      },
+      {
+        type: "faq",
+        question: "¿Puede llevar sonido?",
+        answer:
+          "No si quieres que arranque solo. Los navegadores bloquean la reproducción automática con audio. El hero va silenciado y, si hay un mensaje hablado, va en otro vídeo con botón de reproducir.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede reutilizar material de otro rodaje?",
+        answer:
+          "Sí, siempre que los planos sean limpios y haya derechos sobre ellos. Muchas veces aprovecho un rodaje corporativo para sacar los planos del hero, así no hace falta una jornada aparte.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tu empresa necesita un vídeo de cabecera para la web, escríbeme desde /contacto con la dirección de la página y el tipo de planos que tienes en mente. Te respondo con un plan de rodaje y un presupuesto por partidas. Los servicios de vídeo corporativo están en /servicios.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {

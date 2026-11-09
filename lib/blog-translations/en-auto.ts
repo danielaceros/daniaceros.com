@@ -2456,4 +2456,126 @@ export const enAuto: Record<string, BlogPostTranslation> = {
       },
     ],
   },
+  "video-hero-web-empresa": {
+    title: "Hero video for a company website: how to film it without slowing the site down",
+    description:
+      "How to plan a hero video for a company website: length, file size, format, silent loop and mobile version. A guide from a Madrid filmmaker.",
+    readingTime: "5 min read",
+    category: "Guide",
+    tags: [
+      "website hero video",
+      "hero video",
+      "video for company website",
+      "looping video",
+      "page load speed",
+      "corporate filmmaker Madrid",
+    ],
+    keyword: "website hero video",
+    excerpt:
+      "A website hero video runs 8 to 15 seconds, loops without sound and weighs under 4 MB. This is how I film it and prepare it so it looks good without slowing the page.",
+    seoTitle: "Website hero video for companies | Dani Acero",
+    metaDescription:
+      "Website hero video for companies: length, file size, format, silent loop and mobile version. A practical guide from a corporate filmmaker in Madrid.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "A hero video for a company website runs 8 to 15 seconds, loops without sound and is exported under 4 MB so it does not slow the page. I film it knowing the website text will sit on top, with slow, clean shots.",
+      },
+      {
+        type: "paragraph",
+        text: "It is the first contact a visitor has with the brand. If the video is heavy or generic, it does more harm than good. If it shows the company's real work and loads fast, the site makes sense in three seconds.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-hero-web-empresa/hero.webp",
+        alt: "Laptop on a wooden table showing a web page with video",
+        width: 1880,
+        height: 1253,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "What is a hero video and what is it for?" },
+      {
+        type: "paragraph",
+        text: "It is the video that fills the top of the home page, behind the headline and the main button. It is not a corporate video to watch with sound: it is moving imagery that gives context. A factory floor at work, a team in a meeting, a product in use.",
+      },
+      {
+        type: "paragraph",
+        text: "It does not replace the full corporate video. It complements it. The hero sets the mood on the front page and, if the visitor wants to know more, a button leads to the long video or the services page.",
+      },
+      { type: "heading", level: 2, text: "How to film a hero video well" },
+      { type: "heading", level: 3, text: "Slow shots with room for text" },
+      {
+        type: "paragraph",
+        text: "I shoot with smooth movement: a slider, a gimbal or a static camera with some life inside the frame. I leave a third of the frame empty or out of focus, which is where the headline will go. Fast cuts and shots with lots of detail compete with the text and tire the eye.",
+      },
+      { type: "heading", level: 3, text: "Length and a loop without a jump" },
+      {
+        type: "paragraph",
+        text: "Ten seconds is usually enough. What matters is that the end connects to the start without the cut showing. I solve it in the edit with a short dissolve or a shot that ends on a movement similar to the opening. A loop that jumps gets annoying after the second round.",
+      },
+      { type: "heading", level: 3, text: "No sound, no subtitles unless someone speaks" },
+      {
+        type: "paragraph",
+        text: "Browsers only autoplay a video if it is muted, so the hero carries no audio. If I film someone speaking, I do not count on it being heard: I use it as imagery and the message goes in the website text.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-hero-web-empresa/detalle.webp",
+        alt: "Video editing timeline on a dark screen",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "File size and format to keep the site fast" },
+      {
+        type: "paragraph",
+        text: "I export at 1920 × 1080 at most, at 24 or 25 frames per second, in H.264 (MP4) and, if the developer asks, also WebM. The target is 2 to 4 MB. To get there I lower the bitrate, remove the audio and trim the length before I reduce quality.",
+      },
+      {
+        type: "paragraph",
+        text: "I also deliver a still image (poster) of the first frame. It loads instantly while the video arrives and is what shows if the browser does not play the loop. On mobile I usually deliver a lighter version, sometimes vertical, or just the still image to save data.",
+      },
+      { type: "heading", level: 2, text: "Common mistakes in a hero video" },
+      {
+        type: "list",
+        items: [
+          "Uploading a 30 or 40 MB uncompressed file and leaving the front page loading for several seconds.",
+          "Using generic stock footage instead of the real company.",
+          "Using a video with so much movement that the headline is hard to read.",
+          "Forgetting the still image and leaving the header black while it loads.",
+          "Leaving the audio on, so the browser does not autoplay it.",
+          "Not testing on mobile with a normal connection, rather than office wifi.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "How long should a website hero video be?",
+        answer:
+          "Between 8 and 15 seconds, looping. Longer adds weight without adding value, because visitors do not watch it all. What matters is that the loop is not noticeable.",
+      },
+      {
+        type: "faq",
+        question: "How big should the file be so it does not slow the site?",
+        answer:
+          "Between 2 and 4 MB for desktop. On mobile a lighter version or a still image is better. A hero video over 10 MB is usually noticeable in load speed.",
+      },
+      {
+        type: "faq",
+        question: "Can a hero video have sound?",
+        answer:
+          "Not if you want it to start on its own. Browsers block autoplay with audio. The hero is muted and, if there is a spoken message, it goes in a separate video with a play button.",
+      },
+      {
+        type: "faq",
+        question: "Can footage from another shoot be reused?",
+        answer:
+          "Yes, as long as the shots are clean and you hold the rights. I often use a corporate shoot to get the hero shots, so no separate day is needed.",
+      },
+      {
+        type: "paragraph",
+        text: "If your company needs a hero video for its website, write to me from /contacto with the page address and the kind of shots you have in mind. I will reply with a shooting plan and an itemised quote. The corporate video services are on /servicios.",
+      },
+    ],
+  },
 }
