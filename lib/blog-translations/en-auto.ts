@@ -2578,4 +2578,126 @@ export const enAuto: Record<string, BlogPostTranslation> = {
       },
     ],
   },
+  "video-employer-branding-empresa": {
+    title: "Employer branding video: how to film one to attract talent",
+    description:
+      "How to plan an employer branding video to attract candidates: length, who appears, what to say and where to publish it. A guide from a Madrid filmmaker.",
+    readingTime: "5 min read",
+    category: "Guide",
+    tags: [
+      "employer branding video",
+      "employer branding",
+      "talent attraction",
+      "company video",
+      "recruitment video",
+      "corporate filmmaker Madrid",
+    ],
+    keyword: "employer branding video",
+    excerpt:
+      "An employer branding video runs 90 seconds to 2 minutes, stars real employees and shows how people actually work. This is how I plan and film it.",
+    seoTitle: "Employer Branding Video to Attract Talent | Dani Acero",
+    metaDescription:
+      "Employer branding video to attract talent: length, who appears, content and where to publish it. A practical guide from a corporate filmmaker in Madrid.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "An employer branding video runs 90 seconds to 2 minutes, stars real employees and shows how people work at the company, not how management would like it to look. It is filmed in a single shooting day with three or four team members.",
+      },
+      {
+        type: "paragraph",
+        text: "Its job is to give a candidate a feel for the company before the first interview. If the video is generic, it shows. If it features real people, spaces and tasks, it filters candidates better and saves HR time.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-employer-branding-empresa/hero.webp",
+        alt: "People working at desks in an open-plan office",
+        width: 1920,
+        height: 1281,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "What is an employer branding video and what is it for?" },
+      {
+        type: "paragraph",
+        text: "It is a video made for someone who does not work at the company yet and is deciding whether they want to. It goes on the careers page, on LinkedIn and on job postings. It does not explain what the company sells: it explains what it is like to work there.",
+      },
+      {
+        type: "paragraph",
+        text: "It does not replace the corporate video or the internal culture video. It has a different audience and tone. It speaks to a candidate, so it answers what people ask before sending a CV: who is on the team, what a normal day looks like and what you learn.",
+      },
+      { type: "heading", level: 2, text: "How to film an employer branding video well" },
+      { type: "heading", level: 3, text: "Real employees, not actors" },
+      {
+        type: "paragraph",
+        text: "I choose three or four people with different profiles: someone junior, someone with years at the company and, where it fits, a team lead. They speak in their own words from a list of questions, not written lines. Before filming, I confirm their image-use consent in writing.",
+      },
+      { type: "heading", level: 3, text: "Which questions work" },
+      {
+        type: "paragraph",
+        text: "The ones a candidate would ask: what a normal day looks like, what you learned in your first year, what you did not expect when you joined, what kind of person fits in here. I avoid brochure phrases like \"we are one big family\". A concrete 15-second answer is worth more than a minute of values.",
+      },
+      { type: "heading", level: 3, text: "Real work shots and natural light" },
+      {
+        type: "paragraph",
+        text: "I film people working, at their desk, in a meeting or on the production floor, using the office's own light whenever possible. With two cameras and one lavalier microphone per interviewee, a 6 to 8 hour day covers interviews and supporting shots.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-employer-branding-empresa/detalle.webp",
+        alt: "Two people talking across a table during a job interview",
+        width: 1920,
+        height: 1462,
+      },
+      { type: "heading", level: 2, text: "Length and formats for each channel" },
+      {
+        type: "paragraph",
+        text: "The main version, 90 seconds to 2 minutes, goes on the careers page and on LinkedIn. From the same day I also cut three or four pieces of 20 to 40 seconds, one per employee or topic, vertical and subtitled, for social media and to go with each job posting.",
+      },
+      {
+        type: "paragraph",
+        text: "If the company has offices in several cities or hires for very different roles, I plan one piece per area instead of a single video trying to speak to everyone.",
+      },
+      { type: "heading", level: 2, text: "Common mistakes in an employer branding video" },
+      {
+        type: "list",
+        items: [
+          "Using a sales-oriented corporate video and calling it a recruitment video.",
+          "Featuring only executives and nobody from the roles you want to fill.",
+          "Scripting the answers until they sound like a press release.",
+          "Promising a culture the candidate does not find in the interview.",
+          "Making one 4-minute video that nobody watches to the end.",
+          "Filming without signed consent from the people who appear.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "How long should an employer branding video be?",
+        answer:
+          "Between 90 seconds and 2 minutes for the main piece. It also helps to have 20 to 40 second cuts for social media and job postings, because most candidates only watch the first few seconds.",
+      },
+      {
+        type: "faq",
+        question: "Who should appear in the video?",
+        answer:
+          "Real employees of different profiles and seniority, especially from the roles you want to fill. A director can open or close it, but should not take up the whole video.",
+      },
+      {
+        type: "faq",
+        question: "How long does it take to produce?",
+        answer:
+          "Between 3 and 4 weeks from briefing to delivery: one week of preparation, one shooting day and two weeks of editing with one round of corrections.",
+      },
+      {
+        type: "faq",
+        question: "Where should it be published?",
+        answer:
+          "On the careers page of the website, on LinkedIn and on job postings. The short vertical versions work well on Instagram and in the company's stories.",
+      },
+      {
+        type: "paragraph",
+        text: "If your company wants to film a video to attract talent, write to me from /contacto with the kind of profiles you are hiring and how many people could appear. I will reply with a shooting plan and an itemised quote. The corporate video services are on /servicios.",
+      },
+    ],
+  },
 }

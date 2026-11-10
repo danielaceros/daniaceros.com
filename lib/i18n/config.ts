@@ -205,6 +205,7 @@ export const EN_BLOG_SLUGS: Record<string, string> = {
   "gala-premios-corporativa-grabacion": "corporate-awards-gala-filming",
   "video-inversores-extranjeros-madrid": "investor-video-production-madrid",
   "video-hero-web-empresa": "website-hero-video-company",
+  "video-employer-branding-empresa": "employer-branding-video-company",
 }
 
 const EN_PATH_TO_ES: Record<string, string> = Object.fromEntries([

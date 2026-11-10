@@ -17389,6 +17389,124 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-employer-branding-empresa",
+    title: "Vídeo de marca empleadora: cómo grabarlo para captar talento",
+    description:
+      "Cómo plantear un vídeo de marca empleadora para atraer candidatos: duración, quién sale, qué contar y dónde publicarlo. Guía de un filmmaker de Madrid.",
+    publishedAt: "2026-11-10",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["vídeo de marca empleadora", "employer branding", "captación de talento", "vídeo de empresa", "recursos humanos", "filmmaker corporativo Madrid"],
+    keyword: "vídeo de marca empleadora para captar talento",
+    intent: "informacional",
+    excerpt:
+      "Un vídeo de marca empleadora dura entre 90 segundos y 2 minutos, lo protagonizan empleados reales y enseña cómo se trabaja de verdad. Así lo planteo y lo grabo.",
+    seoTitle: "Vídeo de marca empleadora para captar talento | Daniel Acero",
+    metaDescription:
+      "Vídeo de marca empleadora para captar talento: duración, protagonistas, contenido y dónde publicarlo. Guía práctica de un filmmaker corporativo en Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Un vídeo de marca empleadora dura entre 90 segundos y 2 minutos, lo protagonizan empleados reales y enseña cómo se trabaja en la empresa, no cómo le gustaría ser a la dirección. Se graba en una jornada de rodaje con tres o cuatro personas del equipo.",
+      },
+      {
+        type: "paragraph",
+        text: "Sirve para que un candidato se haga una idea de la empresa antes de la primera entrevista. Si el vídeo es genérico, se nota. Si enseña gente, espacios y tareas reales, filtra mejor y ahorra tiempo a recursos humanos.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-employer-branding-empresa/hero.webp",
+        alt: "Personas trabajando en mesas de una oficina de planta abierta",
+        width: 1920,
+        height: 1281,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es un vídeo de marca empleadora y para qué sirve" },
+      {
+        type: "paragraph",
+        text: "Es un vídeo pensado para quien aún no trabaja en la empresa y está decidiendo si quiere hacerlo. Se publica en la web de empleo, en LinkedIn y en las ofertas. No explica qué vende la empresa: explica cómo es trabajar en ella.",
+      },
+      {
+        type: "paragraph",
+        text: "No sustituye al vídeo corporativo ni al de cultura interna. Tiene otro público y otro tono. Habla a un candidato, así que responde a lo que se pregunta antes de enviar un currículum: quién es el equipo, qué se hace un día normal y qué se aprende.",
+      },
+      { type: "heading", level: 2, text: "Cómo se graba bien un vídeo de marca empleadora" },
+      { type: "heading", level: 3, text: "Empleados reales, no actores" },
+      {
+        type: "paragraph",
+        text: "Elijo entre tres y cuatro personas de perfiles distintos: alguien junior, alguien con años en la empresa y, si procede, un responsable de equipo. Hablan con sus palabras, a partir de un guion de preguntas y no de frases escritas. Antes de grabar, confirmo por escrito su consentimiento de uso de imagen.",
+      },
+      { type: "heading", level: 3, text: "Qué preguntas funcionan" },
+      {
+        type: "paragraph",
+        text: "Las que haría un candidato: qué hace un día cualquiera, qué aprendiste el primer año, qué no esperabas al entrar, qué tipo de persona encaja aquí. Evito las frases de catálogo como \"somos una gran familia\". Una respuesta concreta de 15 segundos vale más que un minuto de valores.",
+      },
+      { type: "heading", level: 3, text: "Planos de trabajo real y luz natural" },
+      {
+        type: "paragraph",
+        text: "Grabo a las personas trabajando, en su mesa, en una reunión o en la zona de producción, con luz de la propia oficina siempre que se pueda. Con dos cámaras y un micrófono de corbata por entrevistado, una jornada de 6 a 8 horas cubre entrevistas y planos de apoyo.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-employer-branding-empresa/detalle.webp",
+        alt: "Dos personas conversando en una mesa durante una entrevista de trabajo",
+        width: 1920,
+        height: 1462,
+      },
+      { type: "heading", level: 2, text: "Duración y formatos para cada canal" },
+      {
+        type: "paragraph",
+        text: "La versión principal, de 90 segundos a 2 minutos, va en la web de empleo y en LinkedIn. De la misma jornada saco además tres o cuatro piezas de 20 a 40 segundos, una por empleado o por tema, en vertical y con subtítulos, para redes y para acompañar cada oferta.",
+      },
+      {
+        type: "paragraph",
+        text: "Si la empresa tiene sedes en varias ciudades o contrata para perfiles muy distintos, planteo una pieza por área en lugar de un solo vídeo que intente hablar a todos.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes en un vídeo de marca empleadora" },
+      {
+        type: "list",
+        items: [
+          "Usar un vídeo corporativo comercial y llamarlo vídeo de empleo.",
+          "Poner solo a directivos y ningún perfil de los puestos que se quieren cubrir.",
+          "Guionizar las respuestas hasta que suenan a nota de prensa.",
+          "Prometer una cultura que luego el candidato no encuentra en la entrevista.",
+          "Hacer un único vídeo de 4 minutos que nadie ve entero.",
+          "Grabar sin consentimiento firmado de las personas que salen.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto debe durar un vídeo de marca empleadora?",
+        answer:
+          "Entre 90 segundos y 2 minutos para la pieza principal. Además conviene tener cortes de 20 a 40 segundos para redes y ofertas, porque la mayoría de candidatos ve solo los primeros segundos.",
+      },
+      {
+        type: "faq",
+        question: "¿Quién debe salir en el vídeo?",
+        answer:
+          "Empleados reales de distintos perfiles y antigüedades, sobre todo de los puestos que quieres cubrir. Un director puede abrir o cerrar, pero no debe ocupar todo el vídeo.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tarda en producirse?",
+        answer:
+          "Entre 3 y 4 semanas desde el briefing hasta la entrega: una semana de preparación, una jornada de rodaje y dos semanas de edición con una ronda de correcciones.",
+      },
+      {
+        type: "faq",
+        question: "¿Dónde se publica?",
+        answer:
+          "En la página de empleo de la web, en LinkedIn y en las ofertas de trabajo. Las versiones cortas en vertical funcionan bien en Instagram y en las historias de la empresa.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tu empresa quiere grabar un vídeo para captar talento, escríbeme desde /contacto con el tipo de perfiles que buscas y cuántas personas podrían salir. Te respondo con un plan de rodaje y un presupuesto por partidas. Los servicios de vídeo corporativo están en /servicios.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
