@@ -2700,4 +2700,126 @@ export const enAuto: Record<string, BlogPostTranslation> = {
       },
     ],
   },
+  "grabar-keynote-ponentes-internacionales-madrid": {
+    title: "Filming a keynote with international speakers in Madrid",
+    description:
+      "How to film a keynote with international speakers in Madrid: cameras, audio, languages, releases and delivery. A guide from an event filmmaker in Madrid.",
+    readingTime: "5 min read",
+    category: "Guide",
+    tags: [
+      "film a keynote",
+      "international speakers",
+      "event video",
+      "conferences Madrid",
+      "event videographer",
+      "corporate filmmaker Madrid",
+    ],
+    keyword: "keynote videographer madrid",
+    excerpt:
+      "An international keynote is filmed with three cameras, a direct audio feed from the sound desk and a signed image release from every speaker. This is how I prepare it before the event.",
+    seoTitle: "Filming a Keynote with International Speakers | Dani Acero",
+    metaDescription:
+      "Filming a keynote with international speakers in Madrid: cameras, audio, languages, releases and delivery. A practical guide from an event filmmaker.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "A keynote with international speakers is filmed with three cameras, a direct audio feed from the sound desk and an image release signed by every speaker before they step on stage. That covers about 90% of the problems on a shoot like this.",
+      },
+      {
+        type: "paragraph",
+        text: "What makes this job hard is not the picture, it is the logistics. Speakers who land the same day, slides that change at the last minute, several languages and an organiser who wants the video online within days. All of that is decided before the event, not during it.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabar-keynote-ponentes-internacionales-madrid/hero.webp",
+        alt: "Speaker on stage addressing a large audience during a conference",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "What changes when you film a keynote with international speakers" },
+      {
+        type: "paragraph",
+        text: "At a domestic keynote the speaker is usually in-house and conditions are settled with a phone call. With speakers from abroad there are agencies, representatives and sometimes contracts that forbid recording without express permission. You need to find that out early.",
+      },
+      {
+        type: "paragraph",
+        text: "The schedule changes too. Many speakers are in Madrid for only a few hours and there is no second take. That is why I always plan a technical rehearsal the day before or, at the very least, 45 minutes before doors open.",
+      },
+      { type: "heading", level: 2, text: "How I prepare the recording step by step" },
+      { type: "heading", level: 3, text: "Releases and languages before the event" },
+      {
+        type: "paragraph",
+        text: "I ask the organiser for a list of speakers with their agency and language, and I prepare a bilingual image release in Spanish and English. I confirm in writing who allows the full recording to be published and who only allows excerpts. If there is simultaneous interpreting, I ask for a separate audio channel for each language.",
+      },
+      { type: "heading", level: 3, text: "Three cameras and a direct audio feed" },
+      {
+        type: "paragraph",
+        text: "I use one fixed camera on a wide shot, another on a medium shot of the speaker and a third handheld for the audience and reactions. Audio comes straight from the venue's sound desk, with a backup recorder and a spare lavalier microphone. If the audio is lost, the keynote is lost.",
+      },
+      { type: "heading", level: 3, text: "Screen, slides and stage lighting" },
+      {
+        type: "paragraph",
+        text: "Slides look bad on video unless you sort them out beforehand. I ask for the presentation as a PDF or take a clean projection signal to insert it in the edit. I check with the lighting technician that the speaker's face is properly exposed, because conference stage lights tend to burn out skin tones.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabar-keynote-ponentes-internacionales-madrid/detalle.webp",
+        alt: "Speaker presenting to the audience in an auditorium",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Timelines and deliverables for a filmed keynote" },
+      {
+        type: "paragraph",
+        text: "For a 30 to 45 minute keynote I deliver the full edited recording in 5 to 7 working days, with subtitles in the original language. If the event has several speakers, delivery is piece by piece so the organiser can publish without waiting for the last one.",
+      },
+      {
+        type: "paragraph",
+        text: "From the same recording I also cut two or three clips of 60 to 90 seconds for LinkedIn, with subtitles in two languages if the audience is international. If the event is at a venue such as IFEMA, I ask for the build plan in advance to place the cameras.",
+      },
+      { type: "heading", level: 2, text: "Common mistakes when filming an international keynote" },
+      {
+        type: "list",
+        items: [
+          "Leaving image releases for the day of the event.",
+          "Not asking for an audio feed from the sound desk and recording only with the camera microphone.",
+          "Forgetting the channel for each language when there is simultaneous interpreting.",
+          "Not rehearsing with the speaker and discovering lighting problems with the audience already seated.",
+          "Filming the slides with a camera instead of taking the screen signal.",
+          "Promising the video in 48 hours without being clear on language and subtitles.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "How many cameras do you need to film a keynote?",
+        answer:
+          "Three cameras cover most keynotes: a fixed wide shot, a medium shot of the speaker and a third for the audience or detail. One camera works as an archive copy, but it feels flat once the talk runs past 15 minutes.",
+      },
+      {
+        type: "faq",
+        question: "Do I need permission from each speaker to publish the recording?",
+        answer:
+          "Yes. Every speaker should sign an image release before going on stage. Some international speakers only allow excerpts to be published, and it is worth putting that in writing so you do not have to take content down later.",
+      },
+      {
+        type: "faq",
+        question: "How long does it take to deliver a filmed keynote?",
+        answer:
+          "Between 5 and 7 working days for the full edited recording of a 30 to 45 minute keynote. Social clips can be delivered earlier if the organiser needs them during the event.",
+      },
+      {
+        type: "faq",
+        question: "Can you film with simultaneous interpreting?",
+        answer:
+          "Yes, as long as the venue or the interpreting company provides one audio channel per language. Without that channel you only record the language spoken on stage, and the video cannot be subtitled properly in the other.",
+      },
+      {
+        type: "paragraph",
+        text: "If you are organising a conference or a keynote in Madrid with speakers from abroad, write to me from /contacto with the date, the venue and the number of speakers. I will reply with a camera and audio plan and an itemised quote. The corporate video services are on /servicios.",
+      },
+    ],
+  },
 }

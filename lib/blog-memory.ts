@@ -1128,6 +1128,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto (fallback evergreen, temas de la lista agotados, tema nuevo; Search Console no usado, token invalid_grant). Imágenes Unsplash.",
   },
+  {
+    slug: "grabar-keynote-ponentes-internacionales-madrid",
+    keyword: "grabar una keynote con ponentes internacionales en Madrid",
+    intent: "informacional",
+    createdAt: "2026-11-11",
+    status: "published",
+    notes: "Auto-generado por blog-auto (tema público extranjero, rotación 1/3, lista agotada, tema nuevo; Search Console no usado, token invalid_grant). Imágenes Unsplash.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {

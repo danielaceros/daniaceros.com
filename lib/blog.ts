@@ -17507,6 +17507,124 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "grabar-keynote-ponentes-internacionales-madrid",
+    title: "Grabar una keynote con ponentes internacionales en Madrid",
+    description:
+      "Cómo grabar una keynote con ponentes internacionales en Madrid: cámaras, audio, idiomas, permisos y entrega. Guía de un filmmaker de eventos en Madrid.",
+    publishedAt: "2026-11-11",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["grabar keynote", "ponentes internacionales", "vídeo de eventos", "congresos Madrid", "videógrafo de eventos", "filmmaker corporativo Madrid"],
+    keyword: "grabar una keynote con ponentes internacionales en Madrid",
+    intent: "informacional",
+    excerpt:
+      "Una keynote internacional se graba con tres cámaras, audio directo de la mesa de sonido y una autorización firmada por cada ponente. Así lo preparo antes del evento.",
+    seoTitle: "Grabar una keynote con ponentes internacionales | Daniel Acero",
+    metaDescription:
+      "Grabar una keynote con ponentes internacionales en Madrid: cámaras, audio, idiomas, autorizaciones y entrega. Guía práctica de un filmmaker de eventos.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Una keynote con ponentes internacionales se graba con tres cámaras, audio directo de la mesa de sonido y una autorización de imagen firmada por cada ponente antes de subir al escenario. Con eso resuelves el 90% de los problemas de un rodaje así.",
+      },
+      {
+        type: "paragraph",
+        text: "Lo que complica este trabajo no es la imagen, es la logística. Ponentes que llegan el mismo día, presentaciones que cambian a última hora, idiomas distintos y una organización que quiere el vídeo publicado en pocos días. Todo eso se decide antes del evento, no durante.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabar-keynote-ponentes-internacionales-madrid/hero.webp",
+        alt: "Ponente en el escenario hablando ante una gran audiencia durante una conferencia",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué cambia al grabar una keynote con ponentes internacionales" },
+      {
+        type: "paragraph",
+        text: "En una keynote nacional el ponente suele ser de la casa y las condiciones se hablan con una llamada. Con ponentes de fuera intervienen agencias, representantes y, a veces, contratos que prohíben grabar sin permiso expreso. Hay que averiguarlo con tiempo.",
+      },
+      {
+        type: "paragraph",
+        text: "También cambia el calendario. Muchos ponentes solo están en Madrid unas horas y no hay segunda toma. Por eso planteo siempre un ensayo técnico el día anterior o, como mínimo, 45 minutos antes de abrir puertas.",
+      },
+      { type: "heading", level: 2, text: "Cómo preparo la grabación paso a paso" },
+      { type: "heading", level: 3, text: "Autorizaciones e idiomas antes del evento" },
+      {
+        type: "paragraph",
+        text: "Pido a la organización una lista de ponentes con su agencia y su idioma, y preparo una autorización de imagen bilingüe, en español e inglés. Confirmo por escrito quién permite publicar la grabación completa y quién solo fragmentos. Si hay traducción simultánea, pido un canal de audio independiente para cada idioma.",
+      },
+      { type: "heading", level: 3, text: "Tres cámaras y audio directo de la mesa" },
+      {
+        type: "paragraph",
+        text: "Uso una cámara fija en plano general, otra en plano medio del ponente y una tercera de mano para público y reacciones. El audio lo tomo en directo de la mesa de sonido del recinto, con una grabadora de respaldo y un micrófono de corbata de reserva. Si se pierde el audio, se pierde la keynote.",
+      },
+      { type: "heading", level: 3, text: "Pantalla, presentación y luz de escenario" },
+      {
+        type: "paragraph",
+        text: "Las diapositivas se ven mal en vídeo si no se resuelven antes. Pido la presentación en PDF o recibo la señal limpia de proyección para insertarla en la edición. Reviso con el técnico de luces que la cara del ponente quede bien expuesta, porque las luces de escenario de congreso suelen quemar la piel.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabar-keynote-ponentes-internacionales-madrid/detalle.webp",
+        alt: "Ponente presentando ante el público en un auditorio",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Plazos y entregables de una keynote grabada" },
+      {
+        type: "paragraph",
+        text: "Para una keynote de 30 a 45 minutos entrego la grabación completa editada en 5 a 7 días laborables, con subtítulos en el idioma original. Si el evento tiene varios ponentes, la entrega se hace pieza a pieza para que la organización publique sin esperar al último.",
+      },
+      {
+        type: "paragraph",
+        text: "Del mismo bloque saco además dos o tres cortes de 60 a 90 segundos para LinkedIn, con subtítulos en dos idiomas si el público es internacional. Si el evento es en un recinto como IFEMA, pido el plan de montaje con antelación para ubicar las cámaras.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes al grabar una keynote internacional" },
+      {
+        type: "list",
+        items: [
+          "Dejar las autorizaciones de imagen para el mismo día del evento.",
+          "No pedir señal de audio a la mesa de sonido y grabar solo con el micrófono de la cámara.",
+          "Olvidar el canal de cada idioma cuando hay traducción simultánea.",
+          "No ensayar con el ponente y descubrir los problemas de luz con el público sentado.",
+          "Grabar la presentación con una cámara en lugar de recibir la señal de la pantalla.",
+          "Prometer el vídeo en 48 horas sin tener claro el idioma ni los subtítulos.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuántas cámaras hacen falta para grabar una keynote?",
+        answer:
+          "Con tres cámaras cubres la mayoría de keynotes: plano general fijo, plano medio del ponente y una tercera para público o detalle. Con una sola cámara el resultado sirve para archivo, pero resulta plano si dura más de 15 minutos.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito permiso de cada ponente para publicar la grabación?",
+        answer:
+          "Sí. Cada ponente debe firmar una autorización de imagen antes de subir al escenario. Algunos ponentes internacionales solo permiten publicar fragmentos, y conviene dejarlo escrito para no tener que retirar contenido después.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tarda la entrega de una keynote grabada?",
+        answer:
+          "Entre 5 y 7 días laborables para la grabación completa editada de una keynote de 30 a 45 minutos. Los cortes para redes pueden entregarse antes si la organización los necesita durante el evento.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar con traducción simultánea?",
+        answer:
+          "Sí, siempre que el recinto o la empresa de interpretación facilite un canal de audio por idioma. Sin ese canal solo grabas el idioma del escenario y el vídeo no se puede subtitular bien en el otro.",
+      },
+      {
+        type: "paragraph",
+        text: "Si organizas un congreso o una keynote en Madrid con ponentes de fuera, escríbeme desde /contacto con la fecha, el recinto y el número de ponentes. Te respondo con un plan de cámaras y audio y un presupuesto por partidas. Los servicios de vídeo corporativo están en /servicios.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
