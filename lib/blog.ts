@@ -17625,6 +17625,124 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-presentacion-equipo-web-empresa",
+    title: "Vídeo de presentación del equipo para la web de una empresa",
+    description:
+      "Cómo grabar un vídeo de presentación del equipo para la web de tu empresa: duración, guion, quién sale, dónde grabar y cuánto se tarda. Guía de un filmmaker en Madrid.",
+    publishedAt: "2026-11-12",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["vídeo de equipo", "página sobre nosotros", "vídeo corporativo web", "presentación de equipo", "vídeo de empresa", "filmmaker corporativo Madrid"],
+    keyword: "vídeo de presentación de equipo para web de empresa",
+    intent: "informacional",
+    excerpt:
+      "Un vídeo de equipo funciona cuando dura entre 60 y 90 segundos, deja hablar a 3 o 5 personas reales y se graba en su sitio de trabajo. Así lo planteo para una página Sobre nosotros.",
+    seoTitle: "Vídeo de presentación del equipo para web | Daniel Acero",
+    metaDescription:
+      "Vídeo de presentación del equipo para la web de tu empresa: duración, guion, quién sale y cómo se graba. Guía práctica de un filmmaker en Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Un vídeo de presentación del equipo funciona cuando dura entre 60 y 90 segundos, deja hablar a 3 o 5 personas reales y se graba en su propio sitio de trabajo. Con eso la página Sobre nosotros pasa de una lista de nombres a algo que genera confianza.",
+      },
+      {
+        type: "paragraph",
+        text: "El error habitual es grabar un discurso corporativo con todos en fila. Quien visita tu web quiere saber con quién va a trabajar, cómo hablan y qué les importa. Eso se consigue con preguntas sencillas y planos tranquilos, no con un guion cerrado.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-presentacion-equipo-web-empresa/hero.webp",
+        alt: "Equipo de profesionales sonriendo juntos en el pasillo de una oficina",
+        width: 1920,
+        height: 1080,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Para qué sirve un vídeo de presentación del equipo" },
+      {
+        type: "paragraph",
+        text: "Una empresa de servicios vende personas antes que producto. Consultoras, clínicas, despachos o estudios de diseño tienen en la página de equipo una de las más visitadas, y casi siempre es la que peor está resuelta: fotos desiguales y textos copiados de LinkedIn.",
+      },
+      {
+        type: "paragraph",
+        text: "Un vídeo corto ayuda en tres momentos: cuando un cliente decide si te llama, cuando un candidato decide si te manda el currículum y cuando un comercial necesita algo que enviar tras una primera reunión. Un solo rodaje cubre los tres usos.",
+      },
+      { type: "heading", level: 2, text: "Cómo grabo un vídeo de equipo paso a paso" },
+      { type: "heading", level: 3, text: "Quién sale y cuánto tiempo habla cada uno" },
+      {
+        type: "paragraph",
+        text: "Elijo entre 3 y 5 personas de áreas distintas, no solo la dirección. Cada una habla entre 10 y 20 segundos. Si sale todo el equipo, no hago entrevistas: grabo planos de trabajo y una frase corta por persona, y dejo las entrevistas largas para dos o tres voces.",
+      },
+      { type: "heading", level: 3, text: "Preguntas en lugar de guion" },
+      {
+        type: "paragraph",
+        text: "Preparo tres preguntas: qué haces en el día a día, qué te gusta de trabajar aquí y qué le dirías a un cliente nuevo. Nadie lee un texto. Grabo varias tomas, hablo con la persona antes de grabar para que se relaje y elijo en la edición las frases que suenan naturales.",
+      },
+      { type: "heading", level: 3, text: "Dónde grabar y con qué equipo" },
+      {
+        type: "paragraph",
+        text: "Grabo en el puesto de trabajo de cada persona, con luz natural de ventana y un foco pequeño de apoyo. Uso una cámara con dos objetivos y un micrófono de corbata por persona. Para un equipo de 5 personas, el rodaje cabe en media jornada de 4 horas, sin parar la oficina.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-presentacion-equipo-web-empresa/detalle.webp",
+        alt: "Compañeros trabajando juntos frente a un ordenador en una oficina moderna",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Duración, formatos y dónde publicarlo" },
+      {
+        type: "paragraph",
+        text: "El vídeo principal dura entre 60 y 90 segundos en formato horizontal para la web. Del mismo material saco una versión vertical de 30 segundos para LinkedIn e Instagram y un par de clips sueltos por persona para las fichas del equipo. Si la empresa tiene una página de empleo, incluyo también un corte pensado para ella.",
+      },
+      {
+        type: "paragraph",
+        text: "La entrega suele ser de 7 a 10 días laborables desde el rodaje. Pongo subtítulos siempre: mucha gente ve el vídeo sin sonido, sobre todo desde el móvil en horario de oficina.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes en un vídeo de equipo" },
+      {
+        type: "list",
+        items: [
+          "Grabar a todo el equipo en fila mirando a cámara y diciendo su cargo.",
+          "Usar un guion escrito por marketing que nadie dice con naturalidad.",
+          "Alargar el vídeo a más de 2 minutos: nadie lo ve entero.",
+          "Grabar en una sala de reuniones vacía en lugar del sitio de trabajo real.",
+          "Olvidar la autorización de imagen de cada persona que aparece.",
+          "Publicar el vídeo y no actualizarlo cuando cambian las caras del equipo.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto debe durar un vídeo de presentación del equipo?",
+        answer:
+          "Entre 60 y 90 segundos para la web. Si necesitas algo más largo para una página de empleo, puede llegar a 2 minutos, pero conviene tener también un corte de 30 segundos para redes.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánta gente debe salir en el vídeo?",
+        answer:
+          "Entre 3 y 5 personas que hablen y, si el equipo es mayor, el resto aparece en planos de trabajo. Más voces hacen el vídeo más largo sin que aporte información nueva.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta que los empleados firmen una autorización?",
+        answer:
+          "Sí. Cada persona que aparezca con imagen o voz debe firmar una autorización de uso de imagen antes del rodaje. Conviene indicar dónde se va a publicar y por cuánto tiempo.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar con el equipo trabajando?",
+        answer:
+          "Sí, y suele quedar mejor. Con un equipo ligero y micrófonos de corbata el rodaje no obliga a parar la oficina. Aviso a cada persona con antelación del horario en el que le toca grabar.",
+      },
+      {
+        type: "paragraph",
+        text: "Si quieres presentar a tu equipo con un vídeo que se parezca a cómo trabajáis de verdad, escríbeme desde /contacto con el número de personas y la ciudad. Te propongo un plan de rodaje y un presupuesto por partidas. Los servicios de vídeo corporativo están en /servicios.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {

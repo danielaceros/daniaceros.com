@@ -2822,4 +2822,126 @@ export const enAuto: Record<string, BlogPostTranslation> = {
       },
     ],
   },
+  "video-presentacion-equipo-web-empresa": {
+    title: "Team introduction video for a company website",
+    description:
+      "How to film a team introduction video for your company website: length, questions, who appears, where to shoot and turnaround. A guide from a filmmaker in Madrid.",
+    readingTime: "5 min read",
+    category: "Guide",
+    tags: [
+      "team video",
+      "about us page",
+      "corporate website video",
+      "team introduction",
+      "company video",
+      "corporate filmmaker Madrid",
+    ],
+    keyword: "team introduction video",
+    excerpt:
+      "A team video works when it runs 60 to 90 seconds, lets 3 to 5 real people speak and is filmed where they actually work. This is how I plan it for an About us page.",
+    seoTitle: "Team Introduction Video for Your Website | Dani Acero",
+    metaDescription:
+      "Team introduction video for your company website: length, questions, who appears and how it is filmed. A practical guide from a filmmaker in Madrid.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "A team introduction video works when it runs 60 to 90 seconds, lets 3 to 5 real people speak and is filmed at their own workplace. That turns an About us page from a list of names into something that builds trust.",
+      },
+      {
+        type: "paragraph",
+        text: "The usual mistake is filming a corporate speech with everyone standing in a row. Visitors want to know who they will work with, how they talk and what they care about. You get that with simple questions and calm shots, not a rigid script.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-presentacion-equipo-web-empresa/hero.webp",
+        alt: "Team of professionals smiling together in an office hallway",
+        width: 1920,
+        height: 1080,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "What is a team introduction video for?" },
+      {
+        type: "paragraph",
+        text: "A service company sells people before it sells a product. Consultancies, clinics, law firms and design studios usually have the team page among their most visited, and it is often the weakest: uneven photos and bios copied from LinkedIn.",
+      },
+      {
+        type: "paragraph",
+        text: "A short video helps at three moments: when a client decides whether to call you, when a candidate decides whether to send a CV, and when a salesperson needs something to send after a first meeting. One shoot covers all three.",
+      },
+      { type: "heading", level: 2, text: "How do I film a team video step by step?" },
+      { type: "heading", level: 3, text: "Who appears and how long each person speaks" },
+      {
+        type: "paragraph",
+        text: "I pick 3 to 5 people from different areas, not only management. Each one speaks for 10 to 20 seconds. If the whole team appears, I skip formal interviews: I film working shots and one short line per person, and keep longer interviews for two or three voices.",
+      },
+      { type: "heading", level: 3, text: "Questions instead of a script" },
+      {
+        type: "paragraph",
+        text: "I prepare three questions: what do you do day to day, what do you like about working here, and what would you tell a new client. Nobody reads a text. I film several takes, chat with each person beforehand so they relax, and pick the natural-sounding lines in the edit.",
+      },
+      { type: "heading", level: 3, text: "Where to film and with what gear" },
+      {
+        type: "paragraph",
+        text: "I film at each person's desk, with natural window light and one small fill light. I use one camera with two lenses and a lavalier microphone per person. For a team of 5, the shoot fits in a half day of 4 hours, without stopping the office.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-presentacion-equipo-web-empresa/detalle.webp",
+        alt: "Colleagues working together at a computer in a modern office",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Length, formats and where to publish it" },
+      {
+        type: "paragraph",
+        text: "The main video runs 60 to 90 seconds in horizontal format for the website. From the same footage I cut a 30-second vertical version for LinkedIn and Instagram and a couple of single-person clips for the team profiles. If the company has a careers page, I add a cut made for it.",
+      },
+      {
+        type: "paragraph",
+        text: "Delivery is usually 7 to 10 working days after the shoot. I always add subtitles: many people watch without sound, especially on mobile during office hours.",
+      },
+      { type: "heading", level: 2, text: "Common mistakes in a team video" },
+      {
+        type: "list",
+        items: [
+          "Filming the whole team in a line, looking at the camera and stating their job title.",
+          "Using a script written by marketing that nobody says naturally.",
+          "Stretching the video past 2 minutes: nobody watches it all.",
+          "Filming in an empty meeting room instead of the real workplace.",
+          "Forgetting the image release from each person who appears.",
+          "Publishing the video and never updating it when the faces change.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "How long should a team introduction video be?",
+        answer:
+          "Between 60 and 90 seconds for the website. If you need something longer for a careers page it can reach 2 minutes, but it helps to also have a 30-second cut for social media.",
+      },
+      {
+        type: "faq",
+        question: "How many people should appear in the video?",
+        answer:
+          "Between 3 and 5 people who speak and, if the team is larger, the rest appear in working shots. More voices make the video longer without adding new information.",
+      },
+      {
+        type: "faq",
+        question: "Do employees need to sign a release?",
+        answer:
+          "Yes. Everyone who appears with image or voice should sign an image release before the shoot. It helps to state where the video will be published and for how long.",
+      },
+      {
+        type: "faq",
+        question: "Can you film while the team is working?",
+        answer:
+          "Yes, and it usually looks better. With light gear and lavalier microphones the shoot does not stop the office. I tell each person in advance which time slot they are filmed in.",
+      },
+      {
+        type: "paragraph",
+        text: "If you want to introduce your team with a video that looks like how you really work, write to me from /contacto with the number of people and the city. I will propose a shooting plan and an itemised quote. The corporate video services are on /servicios.",
+      },
+    ],
+  },
 }
