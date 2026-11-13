@@ -12,7 +12,7 @@ import Header from "@/components/Header"
 import PageTransition from "@/components/PageTransition"
 import LuxuryMotionProvider from "@/components/LuxuryMotionProvider"
 import ContactClickTracking from "@/components/ContactClickTracking"
-import { BUSINESS_ID, DEFAULT_OG_IMAGE, PERSON_ID, SAME_AS, SITE_URL } from "@/lib/seo"
+import { BUSINESS_ID, DEFAULT_OG_IMAGE, PERSON_ID, SAME_AS, SITE_URL, STUDIO_ADDRESS_ID } from "@/lib/seo"
 import { OG_LOCALE, getDictionary, localizedHref, type Lang } from "@/lib/i18n"
 
 const FAVICON_URL =
@@ -143,8 +143,13 @@ export default function RootDocument({
               // GEO: idiomas de trabajo, solo en la versión inglesa (el JSON-LD español no cambia).
               ...(lang === "en" ? { knowsLanguage: ["es", "en"] } : {}),
               priceRange: "€€",
+              // Dirección real del estudio A0Studios (Ronda de Atocha 16), consistente
+              // con el NAP publicado en a0studios.es y en /a0studios.
               address: {
                 "@type": "PostalAddress",
+                "@id": STUDIO_ADDRESS_ID,
+                streetAddress: "Ronda de Atocha, 16, 7ºC esc dcha",
+                postalCode: "28012",
                 addressLocality: "Madrid",
                 addressCountry: "ES",
               },

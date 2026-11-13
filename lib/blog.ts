@@ -9871,7 +9871,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "Llevo varios años grabando para promotoras e inmobiliarias en Madrid, tanto vivienda nueva como oficinas y locales comerciales. El reto siempre es el mismo: convertir un espacio vacío o a medio construir en algo que alguien pueda imaginarse habitando.",
+        text: "Con una promotora o una inmobiliaria, tanto en vivienda nueva como en oficinas y locales comerciales, el reto siempre es el mismo: convertir un espacio vacío o a medio construir en algo que alguien pueda imaginarse habitando.",
       },
       {
         type: "image",
@@ -9992,7 +9992,17 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "He grabado en clínicas dentales, centros de fisioterapia y consultas médicas privadas en Madrid, y el reto siempre se repite: mostrar un espacio clínico sin que parezca frío, y mostrar al equipo médico sin que parezca un anuncio genérico de stock.",
+        text: "El caso más claro que puedo enseñar es el de Meridian Biohealth, una clínica de odontología biológica en Madrid para la que grabo 30 reels al mes en solo 2 horas de rodaje efectivas. Es en esas sesiones donde compruebo, mes a mes, qué hace que un espacio clínico transmita cercanía sin dejar de parecer serio, y cómo mostrar al equipo médico sin caer en el anuncio genérico de stock.",
+      },
+      {
+        type: "link-card",
+        href: "/blog/caso-meridian-biohealth",
+        avatar: "/blog/meridian/meridian-avatar.webp",
+        avatarAlt: "Logo de Meridian Biohealth, clínica de odontología biológica en Madrid",
+        title: "Meridian Biohealth",
+        subtitle: "Caso real · 30 reels al mes en 2 horas",
+        meta: "Odontología biológica · Madrid",
+        cta: "Ver el caso completo",
       },
       {
         type: "image",
@@ -10113,7 +10123,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "He grabado en colegios, academias y facultades universitarias en Madrid, y el reto siempre se repite: mostrar el dinamismo real de las aulas sin caer en el vídeo institucional acartonado, y gestionar la imagen de los menores con el cuidado que exige la ley y el sentido común.",
+        text: "En un colegio, una academia o una facultad universitaria el reto siempre se repite: mostrar el dinamismo real de las aulas sin caer en el vídeo institucional acartonado, y gestionar la imagen de los menores con el cuidado que exige la ley y el sentido común.",
       },
       {
         type: "image",
@@ -10234,7 +10244,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "He grabado para varias empresas tecnológicas en Madrid y el reto se repite casi siempre igual: convertir algo intangible en imágenes que un cliente entienda en los primeros diez segundos, sin caer en el vídeo corporativo genérico de manos escribiendo en teclado y gráficas flotando sobre pantallas verdes.",
+        text: "Con una empresa tecnológica el reto se repite casi siempre igual: convertir algo intangible en imágenes que un cliente entienda en los primeros diez segundos, sin caer en el vídeo corporativo genérico de manos escribiendo en teclado y gráficas flotando sobre pantallas verdes.",
       },
       {
         type: "image",
@@ -10355,7 +10365,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "He grabado para entidades financieras y fintech en Madrid, y el reto no suele ser técnico. Es de proceso: cómo producir algo que transmita confianza real sin que el guion se convierta en un documento legal leído a cámara.",
+        text: "Con una entidad financiera o una fintech el reto no suele ser técnico. Es de proceso: cómo producir algo que transmita confianza real sin que el guion se convierta en un documento legal leído a cámara.",
       },
       {
         type: "image",
@@ -10476,7 +10486,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "He grabado en centros de distribución y con empresas de transporte en Madrid, y lo que mejor funciona no es el vídeo más espectacular, sino el que consigue mostrar la escala y el orden de la operación real sin interrumpir un solo turno de trabajo.",
+        text: "En un centro de distribución o con una empresa de transporte, lo que mejor funciona no es el vídeo más espectacular, sino el que consigue mostrar la escala y el orden de la operación real sin interrumpir un solo turno de trabajo.",
       },
       {
         type: "image",
@@ -10597,7 +10607,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "He grabado en tiendas y cadenas en Madrid, y lo que mejor funciona no es el vídeo más pulido, sino el que respeta el ritmo del punto de venta y aun así consigue transmitir la marca con claridad.",
+        text: "En una tienda o una cadena, lo que mejor funciona no es el vídeo más pulido, sino el que respeta el ritmo del punto de venta y aun así consigue transmitir la marca con claridad.",
       },
       {
         type: "image",
@@ -10718,7 +10728,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "He grabado en parques eólicos y plantas solares en España, y lo que cambia respecto a un rodaje de oficina es que el entorno manda: la meteorología, los turnos de mantenimiento y las normas de acceso deciden cuándo y cómo se graba, no el calendario de producción.",
+        text: "En un parque eólico o una planta solar, lo que cambia respecto a un rodaje de oficina es que el entorno manda: la meteorología, los turnos de mantenimiento y las normas de acceso deciden cuándo y cómo se graba, no el calendario de producción.",
       },
       {
         type: "image",
@@ -10839,7 +10849,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "He grabado en hoteles boutique, restaurantes y negocios turísticos, y lo que distingue a este sector es que el vídeo tiene que generar deseo en segundos, no explicar procesos. Aquí cuento cómo lo enfoco para que funcione en la web, en redes y en plataformas de reserva.",
+        text: "Con un hotel boutique, un restaurante o un negocio turístico, lo que distingue a este sector es que el vídeo tiene que generar deseo en segundos, no explicar procesos. Aquí cuento cómo lo enfoco para que funcione en la web, en redes y en plataformas de reserva.",
       },
       {
         type: "image",
@@ -10960,7 +10970,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "He grabado en obras de vivienda, naves industriales y proyectos de obra civil, y lo que distingue a este sector es que el vídeo casi nunca es el objetivo principal de la jornada: la obra sigue funcionando alrededor. Aquí cuento cómo me organizo para que el rodaje no interfiera y el resultado sirva de verdad.",
+        text: "En una obra de vivienda, una nave industrial o un proyecto de obra civil, lo que distingue a este sector es que el vídeo casi nunca es el objetivo principal de la jornada: la obra sigue funcionando alrededor. Aquí cuento cómo me organizo para que el rodaje no interfiera y el resultado sirva de verdad.",
       },
       {
         type: "image",
@@ -11080,7 +11090,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "He rodado en concesionarios, en naves de montaje y en talleres de flota, y lo que cambia entre ellos no es solo el tamaño del espacio: cambia qué tiene que brillar y qué tiene que parecer sólido. Un concesionario vende deseo, una planta vende confianza técnica, y un taller de flota vende disponibilidad. Aquí cuento cómo planteo el rodaje según el objetivo real del vídeo.",
+        text: "Entre un concesionario, una nave de montaje y un taller de flota lo que cambia no es solo el tamaño del espacio: cambia qué tiene que brillar y qué tiene que parecer sólido. Un concesionario vende deseo, una planta vende confianza técnica, y un taller de flota vende disponibilidad. Aquí cuento cómo planteo el rodaje según el objetivo real del vídeo.",
       },
       {
         type: "image",
@@ -11440,7 +11450,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "Llevo varios proyectos con despachos y consultoras legales en Madrid, y el patrón se repite. Quieren presencia en vídeo pero temen que salga con el tono equivocado: demasiado corporativo y frío, o demasiado casual y poco creíble. Cuento aquí cómo lo planteo para que el resultado encaje con el sector.",
+        text: "Con un despacho o una consultora legal el patrón se repite. Quieren presencia en vídeo pero temen que salga con el tono equivocado: demasiado corporativo y frío, o demasiado casual y poco creíble. Cuento aquí cómo lo planteo para que el resultado encaje con el sector.",
       },
       {
         type: "image",
@@ -11564,7 +11574,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "Llevo años entregando piezas para LinkedIn, web corporativa, pantallas de recepción y presentaciones internas. Cada canal pide un formato distinto, y si no se habla antes del rodaje, se acaba reexportando semanas después. Esto es lo que pido yo mismo cuando cierro un proyecto, y lo que recomiendo pedir si estás al otro lado.",
+        text: "Cada pieza suele acabar repartida en canales distintos: LinkedIn, web corporativa, pantallas de recepción, presentaciones internas. Cada canal pide un formato distinto, y si no se habla antes del rodaje, se acaba reexportando semanas después. Esto es lo que pido yo mismo cuando cierro un proyecto, y lo que recomiendo pedir si estás al otro lado.",
       },
       {
         type: "image",
@@ -11684,7 +11694,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "He grabado en conserveras, envasadoras y talleres de producto fresco. Cada planta tiene sus normas concretas, pero el patrón se repite: hace falta más planificación que en un rodaje de oficina, y el mejor resultado sale cuando dejo que el proceso hable por sí solo, sin forzar nada delante de cámara.",
+        text: "En una conservera, una envasadora o un taller de producto fresco, cada planta tiene sus normas concretas, pero el patrón se repite: hace falta más planificación que en un rodaje de oficina, y el mejor resultado sale cuando dejo que el proceso hable por sí solo, sin forzar nada delante de cámara.",
       },
       {
         type: "image",
@@ -11921,7 +11931,22 @@ export const blogPosts: BlogPost[] = [
     body: [
       {
         type: "paragraph",
-        text: "La primera vez que grabé para un ayuntamiento me di cuenta de que el proceso no se parecía nada al de una empresa privada. No hubo un único interlocutor decidiendo sobre la marcha: hubo un técnico de comunicación, un jefe de prensa y, al final, una firma política que revisó cada frase del guion antes de aprobar el rodaje. Desde entonces trato estos proyectos con un calendario distinto al que uso con una pyme o una marca privada.",
+        text: "En un proyecto institucional la aprobación no funciona como en una empresa privada. No suele haber un único interlocutor decidiendo sobre la marcha: hay un técnico de comunicación, a veces un responsable de prensa y, casi siempre, una validación final que revisa cada frase del guion antes de dar luz verde al rodaje. Por eso trato estos proyectos con un calendario distinto al que uso con una pyme o una marca privada.",
+      },
+      {
+        type: "paragraph",
+        text: "El ejemplo más cercano que puedo enseñar es la cobertura que hice para la Cámara de Comercio, una corporación de derecho público que reúne a empresas, ponentes y representantes del sector económico: mismo tono institucional, misma cadena de validación, mismo cuidado con lo que se muestra y lo que se deja fuera.",
+      },
+      {
+        type: "link-card",
+        href: "/portfolio/camara-de-comercio",
+        avatar:
+          "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/camara-de-comercio-v2-poster-ZbRQboqj3Sm5GFgRqDfGeFBywMTsfd.jpg",
+        avatarAlt: "Fotograma del vídeo institucional grabado para la Cámara de Comercio",
+        title: "Cámara de Comercio",
+        subtitle: "Cobertura institucional de un evento con empresas y ponentes",
+        meta: "Institucional · Madrid",
+        cta: "Ver el proyecto",
       },
       {
         type: "paragraph",
@@ -12402,7 +12427,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "He trabajado con mediadores y correduras en Madrid que quieren vídeo corporativo pero llegan con el mismo miedo: que el resultado suene a anuncio genérico de compañía grande, sin nada que los distinga. Cuento aquí cómo lo planteo para que el vídeo explique bien y, además, se note que hay una persona detrás.",
+        text: "Con un mediador o una correduría el miedo suele ser el mismo: que el resultado suene a anuncio genérico de compañía grande, sin nada que los distinga. Cuento aquí cómo lo planteo para que el vídeo explique bien y, además, se note que hay una persona detrás.",
       },
       {
         type: "image",
