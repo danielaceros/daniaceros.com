@@ -16,6 +16,7 @@ import LandingGreeting from "@/components/landing/LandingGreeting"
 import { PersonalizeProvider, Rich } from "@/components/landing/Personalize"
 import LandingReel from "@/components/landing/LandingReel"
 import LandingTracking from "@/components/landing/LandingTracking"
+import ShowcaseVideo from "@/components/landing/ShowcaseVideo"
 import { getProjects } from "@/data/projects"
 import { buildMetadata } from "@/lib/seo"
 import { CONTACT_EMAIL, whatsappUrl } from "@/lib/contact"
@@ -49,16 +50,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 const SECTION_TITLE = "font-display text-[26px] font-semibold uppercase leading-[1.04] text-balance sm:text-[36px]"
-const EYEBROW = "font-inter text-[12px] font-semibold uppercase tracking-[0.18em] text-white/55"
+const EYEBROW = "font-inter text-[12px] font-semibold uppercase tracking-[0.18em] text-white/72"
 const LEGAL_LINK =
   "inline-flex min-h-[44px] items-center rounded transition-colors duration-300 hover:text-white/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
 
-// Packs. Los precios los fija Dani (sin IVA, cerrados). Más días: a consultar.
+// Pack único: un día de feria. Quien quiera cubrir más días habla con Dani (a medida, sin precio publicado).
 const PACKS = [
   {
     id: "un-dia",
     name: "Tu stand, un día",
-    tagline: "Un día de feria, bien contado",
+    tagline: "2 horas en tu stand, bien contadas",
     price: "600",
     features: [
       "Hasta 2 horas de cobertura en tu stand",
@@ -67,29 +68,16 @@ const PACKS = [
       "Entrevistas al fundador, clientes y equipo",
       "Todo el vertical y los recursos en bruto, para reutilizar",
     ],
-    reco: false,
-  },
-  {
-    id: "dos-dias",
-    name: "Tu feria, dos días",
-    tagline: "La feria entera, con sus dos caras",
-    price: "1.000",
-    features: [
-      "Hasta 2 horas de cobertura cada día",
-      "Todo lo del pack de un día",
-      "Un solo aftermovie con la feria completa, en horizontal y en vertical",
-      "Más material de stand, visitantes y equipo para vuestras redes y futuras campañas",
-    ],
     reco: true,
   },
 ] as const
 
 // Qué te llevas, visual: un número grande + qué es.
 const LLEVAS = [
-  { big: "2", label: "aftermovies", detail: "horizontal para web y vertical para redes, editados" },
+  { big: "H+V", label: "aftermovie", detail: "horizontal para web y vertical para redes, editado" },
   { big: "50", label: "fotos editadas", detail: "listas para prensa, LinkedIn y tu web" },
   { big: "3", label: "voces", detail: "fundador, clientes y equipo, entrevistados en tu stand" },
-  { big: "∞", label: "material en bruto", detail: "vertical y recursos para publicar durante meses" },
+  { big: "100%", label: "del bruto", detail: "todo el vertical y los recursos de la sesión, tuyos para reutilizar" },
 ] as const
 
 const POR_QUE = [
@@ -111,10 +99,14 @@ const POR_QUE = [
   },
 ] as const
 
-// Referencias de clientes de evento (AOK, VIAVI, Edugenia): ocultas hasta que Dani confirme qué se puede publicar.
-// Los aftermovies aún no están montados, no hay material aprobado y ninguna cita tiene autorización. Cuando haya
-// OK, añadir aquí { name, tag, text } con solo hechos entregados y la sección vuelve a aparecer sola.
-const REFERENCIAS: ReadonlyArray<{ name: string; tag: string; text: string }> = []
+// Referencias: solo nombre, logo y dónde fue; sin entregables ni citas (los aftermovies aún no están montados y
+// ninguna cita tiene autorización). Dani autorizó nombrarlos el 13-nov-2026.
+const REFERENCIAS = [
+  { name: "A-OK Motors", src: "/logos/ferias/aok.png", photo: "/img/ferias/aok.jpg", tag: "VETECO · IFEMA", text: "Cobertura de su stand en la feria." },
+  { name: "VIAVI", src: "/logos/ferias/viavi.png", photo: "/img/ferias/viavi.jpg", pos: "object-top", tag: "VETECO · IFEMA", text: "Su afterwork de 30 años y la feria." },
+  { name: "Edugenia", src: "/logos/ferias/edugenia.svg", photo: "/img/ferias/edugenia.jpg", tag: "SIMO Educación · IFEMA", text: "Stand, entrevistas y demos de producto." },
+  { name: "Serdatia", src: "/logos/ferias/serdatia.png", photo: "/img/ferias/serdatia.jpg", tag: "Tech Show Madrid · IFEMA", text: "Stand y entrevistas a portavoces." },
+] as const
 
 export default async function PropuestaPage({ params }: Props) {
   const { lang: rawLang, slug } = await params
@@ -144,7 +136,7 @@ export default async function PropuestaPage({ params }: Props) {
             <div className="flex flex-col items-center lg:items-start">
               <p className={EYEBROW}>Propuesta · expositores de IFEMA</p>
               <h1 className="mt-4 font-display text-[clamp(1.85rem,7.2vw,3.6rem)] font-semibold uppercase leading-[1] text-balance lg:text-[clamp(2.4rem,3.6vw,3.6rem)]">
-                <Rich text="Que el stand de {empresa|tu empresa|b} se convierta en contenido para 3 meses" />
+                <Rich text="Que el stand de {empresa|tu empresa|b} se convierta en contenido para casi 3 meses" />
               </h1>
               <p className="mt-4 max-w-2xl px-1 font-inter text-[14px] leading-[1.7] text-white/74 text-balance sm:text-[16px] lg:max-w-xl lg:px-0 lg:text-[17px]">
                 Grabo tu stand, a tu equipo y a tus clientes en pista. Te llevas un aftermovie, fotos y material para
@@ -181,9 +173,9 @@ export default async function PropuestaPage({ params }: Props) {
         {/* 2. Packs con precio: el centro de la página. El de dos días va destacado. */}
         <section id="packs" className="page-container scroll-mt-6 pb-14 sm:pb-20">
           <div className="mx-auto max-w-5xl">
-            <p className={`${EYEBROW} text-center`}>Packs · precio cerrado, sin sorpresas</p>
-            <h2 className={`${SECTION_TITLE} mt-3 text-center`}>Elige cómo grabamos tu feria</h2>
-            <div className="mt-8 grid gap-5 sm:mt-10 md:grid-cols-2 md:gap-6">
+            <p className={`${EYEBROW} text-center`}>Precio cerrado, sin sorpresas</p>
+            <h2 className={`${SECTION_TITLE} mt-3 text-center`}>Tu stand, grabado y listo para publicar</h2>
+            <div className="mx-auto mt-8 grid max-w-xl gap-5 sm:mt-10">
               {PACKS.map((pack) => (
                 <article
                   key={pack.id}
@@ -201,7 +193,7 @@ export default async function PropuestaPage({ params }: Props) {
                   <h3 className="font-display text-[22px] font-semibold uppercase leading-[1.1] sm:text-[26px]">
                     {pack.name}
                   </h3>
-                  <p className="mt-1 font-inter text-[14px] text-white/62">{pack.tagline}</p>
+                  <p className="mt-1 font-inter text-[14px] text-white/75">{pack.tagline}</p>
                   <p className="mt-6 flex items-baseline gap-2 font-display">
                     <span className="text-[52px] font-semibold leading-none sm:text-[64px]">{pack.price}€</span>
                     <span className="font-inter text-[13px] text-white/60">+ IVA · precio cerrado</span>
@@ -219,7 +211,7 @@ export default async function PropuestaPage({ params }: Props) {
                   <LandingCta
                     lpId={landing.id}
                     position={`pack-${pack.id}`}
-                    label="Reservar fecha"
+                    label="Reservar mi fecha"
                     className={`mt-8 w-full ${pack.reco ? "" : "!border-white/30 !bg-transparent !text-white hover:!bg-white/10"}`}
                   />
                 </article>
@@ -227,26 +219,26 @@ export default async function PropuestaPage({ params }: Props) {
             </div>
             <div className="mt-5 flex flex-col items-center gap-5 rounded-3xl border border-dashed border-white/30 px-6 py-7 text-center sm:mt-6 sm:flex-row sm:justify-between sm:px-10 sm:text-left md:gap-8">
               <div>
-                <p className="font-inter text-[11px] font-semibold uppercase tracking-[0.16em] text-white/55">
-                  Pack a medida · a consultar
+                <p className="font-inter text-[12px] font-semibold uppercase tracking-[0.16em] text-white/72">
+                  Si no quieres perderte nada · habla conmigo
                 </p>
                 <h3 className="mt-2 font-display text-[22px] font-semibold uppercase leading-[1.1] text-balance sm:text-[26px]">
                   ¿Quieres cubrir todos los días de tu feria?
                 </h3>
                 <p className="mt-2 max-w-xl font-inter text-[14px] leading-[1.65] text-white/70 sm:text-[15px]">
-                  Las fechas de IFEMA se llenan rápido y mi agenda también. Dime cuántos días vas a estar y te
-                  preparo una propuesta a medida.
+                  Esta es una solución de un día. Si no quieres perderte absolutamente nada, habla conmigo: las
+                  fechas de IFEMA se llenan rápido y mi agenda también.
                 </p>
               </div>
               <LandingCta
                 lpId={landing.id}
                 position="pack-medida"
-                label="Consultar disponibilidad"
+                label="Hablar conmigo"
                 className="w-full shrink-0 sm:w-auto"
               />
             </div>
-            <p className="mx-auto mt-5 max-w-2xl text-center font-inter text-[13px] leading-[1.65] text-white/50">
-              La edición del material en bruto no está incluida: es para que lo uses tú o tu equipo cuando quieras.
+            <p className="mx-auto mt-5 max-w-2xl text-center font-inter text-[14px] leading-[1.65] text-white/70">
+              El material en bruto se entrega sin editar, para que lo uses tú o tu equipo cuando quieras; la edición de piezas adicionales no está incluida.
             </p>
           </div>
         </section>
@@ -292,27 +284,62 @@ export default async function PropuestaPage({ params }: Props) {
           </div>
         </section>
 
-        {/* 5. Referencias (se muestra solo si hay alguna aprobada). */}
-        {REFERENCIAS.length > 0 ? (
+        {/* 4b. Así queda: aftermovie real de un stand en IFEMA (Serdatia, Tech Show Madrid). */}
         <section className="page-container pb-14 sm:pb-20">
-          <div className="mx-auto max-w-5xl">
-            <h2 className={`${SECTION_TITLE} text-center`}>Ya lo he hecho</h2>
-            <p className="mx-auto mt-3 max-w-xl text-center font-inter text-[15px] leading-[1.65] text-white/65">
-              Eventos y ferias cubiertos hace poco, con el mismo tipo de entregables que ves arriba.
-            </p>
-            <ul className="mt-8 grid gap-4 sm:mt-10 sm:grid-cols-2 lg:grid-cols-4">
-              {REFERENCIAS.map((ref) => (
-                <li key={ref.name} className="rounded-2xl border border-white/12 bg-white/[0.03] p-5 sm:p-6">
-                  <p className="font-inter text-[11px] font-semibold uppercase tracking-[0.14em] text-white/50">
-                    {ref.tag}
-                  </p>
-                  <h3 className="mt-2 font-display text-[22px] font-semibold uppercase leading-[1.1]">{ref.name}</h3>
-                  <p className="mt-3 font-inter text-[14px] leading-[1.65] text-white/72">{ref.text}</p>
-                </li>
-              ))}
-            </ul>
+          <div className="mx-auto max-w-4xl">
+            <p className={`${EYEBROW} text-center`}>Así queda · Serdatia en Tech Show Madrid</p>
+            <h2 className={`${SECTION_TITLE} mt-3 text-center`}>El aftermovie de un stand en IFEMA</h2>
+            <ShowcaseVideo
+              src="https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/serdatia-techshow-web-rbOR1RQXoqazTu27GWThutst8Zjjh3.mp4"
+              poster="https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/serdatia-techshow-poster-PQ1VoUYsvZgsR44qaZSuEuBPpIX1M2.jpg"
+              title="Aftermovie de Serdatia en Tech Show Madrid, IFEMA"
+              className="mt-8 sm:mt-10"
+            />
           </div>
         </section>
+
+        {/* 5. Referencias: logo sobre fondo claro (los logos son de marca, no blancos), dónde fue y qué se grabó. */}
+        {REFERENCIAS.length > 0 ? (
+          <section className="page-container pb-14 sm:pb-20">
+            <div className="mx-auto max-w-5xl">
+              <h2 className={`${SECTION_TITLE} text-center`}>Ferias que ya he grabado en IFEMA</h2>
+              <p className="mx-auto mt-3 max-w-xl text-center font-inter text-[15px] leading-[1.65] text-white/65">
+                Stands de expositores, equipo y clientes en pista, en ferias de este mismo otoño.
+              </p>
+              <ul className="mt-8 grid grid-cols-1 gap-4 sm:mt-10 sm:grid-cols-2 lg:grid-cols-4">
+                {REFERENCIAS.map((ref) => (
+                  <li key={ref.name} className="flex flex-col overflow-hidden rounded-2xl border border-white/12 bg-white/[0.03]">
+                    <div className="relative aspect-[4/3] w-full overflow-hidden bg-black">
+                      <Image
+                        src={ref.photo}
+                        alt={`Stand de ${ref.name} en IFEMA`}
+                        fill
+                        sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw"
+                        className={`object-cover ${"pos" in ref ? ref.pos : ""}`}
+                      />
+                      <div className="absolute left-3 top-3 flex h-11 items-center rounded-lg bg-white px-3 shadow-lg">
+                        <Image
+                          src={ref.src}
+                          alt={`Logo de ${ref.name}`}
+                          width={160}
+                          height={64}
+                          unoptimized
+                          className="h-7 w-auto max-w-[120px] object-contain"
+                        />
+                      </div>
+                    </div>
+                    <div className="p-5">
+                      <p className="font-inter text-[12px] font-semibold uppercase tracking-[0.14em] text-white/72">
+                        {ref.tag}
+                      </p>
+                      <h3 className="mt-2 font-display text-[20px] font-semibold uppercase leading-[1.1]">{ref.name}</h3>
+                      <p className="mt-2 font-inter text-[14px] leading-[1.6] text-white/72">{ref.text}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
         ) : null}
 
         {/* 6. Trabajos recientes. Modal: no saca del funnel. */}
@@ -344,14 +371,14 @@ export default async function PropuestaPage({ params }: Props) {
               href={whatsappUrl("Hola Dani, he visto la propuesta de IFEMA y me gustaría reservar fecha para mi stand.")}
               target="_blank"
               rel="noopener"
-              className="underline decoration-white/40 underline-offset-[0.25em] transition-colors hover:text-white"
+              className="inline-block py-3 underline decoration-white/40 underline-offset-[0.25em] transition-colors hover:text-white"
             >
               WhatsApp
             </a>{" "}
             ·{" "}
             <a
               href={`mailto:${CONTACT_EMAIL}`}
-              className="underline decoration-white/40 underline-offset-[0.25em] transition-colors hover:text-white"
+              className="inline-block py-3 underline decoration-white/40 underline-offset-[0.25em] transition-colors hover:text-white"
             >
               {CONTACT_EMAIL}
             </a>
