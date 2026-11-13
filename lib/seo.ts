@@ -21,6 +21,10 @@ export const DEFAULT_OG_IMAGE =
 // cada página).
 export const PERSON_ID = `${SITE_URL}/sobre-mi#person`
 export const BUSINESS_ID = `${SITE_URL}/#business`
+// Dirección física real (estudio A0Studios, Ronda de Atocha 16, Madrid), consistente
+// con el NAP declarado en a0studios.es y en /a0studios (ver A0_NAP en
+// app/[lang]/a0studios/content.ts).
+export const STUDIO_ADDRESS_ID = `${SITE_URL}/#a0studios-address`
 
 // Perfiles públicos de la misma entidad (Daniel Acero / Dani Acero). Solo URLs
 // confirmadas como publicadas; añadir Clutch, GoodFirms, Sortlist, Cylex,
