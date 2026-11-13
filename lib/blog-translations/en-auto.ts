@@ -2944,4 +2944,126 @@ export const enAuto: Record<string, BlogPostTranslation> = {
       },
     ],
   },
+  "video-preguntas-frecuentes-empresa": {
+    title: "FAQ video for a company website",
+    description:
+      "How to film an FAQ video for your company: which questions to pick, length, format, where to publish it and turnaround. A guide from a filmmaker in Madrid.",
+    readingTime: "5 min read",
+    category: "Guide",
+    tags: [
+      "FAQ video",
+      "frequently asked questions video",
+      "corporate website video",
+      "customer support video",
+      "company video",
+      "corporate filmmaker Madrid",
+    ],
+    keyword: "faq video for website",
+    excerpt:
+      "An FAQ video works when it answers 5 to 8 real customer questions in clips of 30 to 60 seconds, published next to each question on your website. This is how I prepare it.",
+    seoTitle: "FAQ Video for Your Company Website | Dani Acero",
+    metaDescription:
+      "FAQ video for your company website: which questions to pick, length, how it is filmed and where to publish it. A practical guide from a filmmaker in Madrid.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "An FAQ video works when it answers 5 to 8 real customer questions, in separate clips of 30 to 60 seconds, with a person from the company speaking to camera. Each clip is published next to its question on the website and settles the doubt before anyone writes to you.",
+      },
+      {
+        type: "paragraph",
+        text: "The usual mistake is recording one long video with every answer back to back. Nobody watches it all. Splitting each question into its own clip lets you show it where it is needed: on a service page, in a welcome email or in a sales reply.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-preguntas-frecuentes-empresa/hero.webp",
+        alt: "Camera on a tripod set up to film an interview in an office",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "What is an FAQ video for?" },
+      {
+        type: "paragraph",
+        text: "The questions that come up most in calls and emails are usually the same: how much does it cost, how long does it take, what is included, how do we start. Answering them in writing every time eats the time of your sales and support teams.",
+      },
+      {
+        type: "paragraph",
+        text: "A short video convinces better than a paragraph when the answer needs nuance or trust: a clinic explaining what the first visit is like, a consultancy describing how it works, a technical company showing what an installation looks like. A real person's voice and face remove friction.",
+      },
+      { type: "heading", level: 2, text: "How do I prepare an FAQ video step by step?" },
+      { type: "heading", level: 3, text: "Which questions to choose" },
+      {
+        type: "paragraph",
+        text: "I ask the sales and support teams for a list of the 15 most repeated questions from the last year. From that I pick 5 to 8. I choose the ones that create the most doubt before buying, not the ones management likes best. If an answer fits in one line of text, I do not film it.",
+      },
+      { type: "heading", level: 3, text: "Who answers and how" },
+      {
+        type: "paragraph",
+        text: "The person who really answers that question every day speaks, not always the director. I prepare the question and three key ideas, not a script. I chat with the person before filming, we do two or three takes per question and I pick the most natural one in the edit.",
+      },
+      { type: "heading", level: 3, text: "Where to film and with what gear" },
+      {
+        type: "paragraph",
+        text: "I film at the workplace, with natural light and one small fill light, a tidy background and no corridor noise. I use one camera, a tripod and a lavalier microphone. For 6 questions with one or two people, the shoot fits in a half day of 4 hours.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-preguntas-frecuentes-empresa/detalle.webp",
+        alt: "Camera operator filming a group of people during a shoot",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Length, format and where to publish it" },
+      {
+        type: "paragraph",
+        text: "Each answer runs 30 to 60 seconds. If it goes past 90, it is probably two different questions. I deliver each clip in horizontal for the website and vertical for LinkedIn and Instagram, always with subtitles, because many people watch without sound.",
+      },
+      {
+        type: "paragraph",
+        text: "The best place is the FAQ page itself, with the clip under each question, plus the service pages and the welcome email for new clients. Delivery is usually 7 to 10 working days after the shoot.",
+      },
+      { type: "heading", level: 2, text: "Common mistakes in an FAQ video" },
+      {
+        type: "list",
+        items: [
+          "Recording one long video instead of one clip per question.",
+          "Answering questions nobody asks instead of the ones that reach sales.",
+          "Reading a script written by marketing in a press-release tone.",
+          "Leaving a video without subtitles that will be watched on mobile with the sound off.",
+          "Not updating the answers when prices, timelines or terms change.",
+          "Hiding the videos in a tab nobody visits.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "How many questions should an FAQ video have?",
+        answer:
+          "Between 5 and 8 questions, each in its own clip. More than 8 dilutes the message and lengthens the shoot without adding new answers.",
+      },
+      {
+        type: "faq",
+        question: "How long should each answer be?",
+        answer:
+          "Between 30 and 60 seconds. If an answer needs more than 90, it is better to split it into two different questions.",
+      },
+      {
+        type: "faq",
+        question: "How long does it take to be ready?",
+        answer:
+          "The shoot fits in a half day of 4 hours for about 6 questions. Editing and delivery usually take 7 to 10 working days.",
+      },
+      {
+        type: "faq",
+        question: "Do the videos need updating from time to time?",
+        answer:
+          "Only the ones that mention prices, timelines or terms. That is why I avoid quoting specific figures in clips that do not need them, so they last for years without reshooting.",
+      },
+      {
+        type: "paragraph",
+        text: "If you want to turn your customers' most repeated doubts into videos that work for you, write to me from /contacto with your sector and your list of questions. I will propose a shooting plan and an itemised quote. The corporate video services are on /servicios.",
+      },
+    ],
+  },
 }

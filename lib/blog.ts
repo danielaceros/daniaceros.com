@@ -17743,6 +17743,124 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-preguntas-frecuentes-empresa",
+    title: "Vídeo de preguntas frecuentes para una empresa",
+    description:
+      "Cómo grabar un vídeo de preguntas frecuentes para tu empresa: qué preguntas elegir, duración, formato, dónde publicarlo y cuánto se tarda. Guía de un filmmaker en Madrid.",
+    publishedAt: "2026-11-13",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["vídeo de preguntas frecuentes", "vídeo FAQ", "vídeo corporativo web", "atención al cliente", "vídeo de empresa", "filmmaker corporativo Madrid"],
+    keyword: "vídeo de preguntas frecuentes para empresa",
+    intent: "informacional",
+    excerpt:
+      "Un vídeo de preguntas frecuentes funciona cuando responde 5 o 8 dudas reales de tus clientes, en piezas de 30 a 60 segundos, y se publica junto a la pregunta en tu web. Así lo preparo.",
+    seoTitle: "Vídeo de preguntas frecuentes para empresa | Daniel Acero",
+    metaDescription:
+      "Vídeo de preguntas frecuentes para tu empresa: qué preguntas elegir, duración, cómo se graba y dónde publicarlo. Guía práctica de un filmmaker en Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Un vídeo de preguntas frecuentes funciona cuando responde entre 5 y 8 dudas reales de tus clientes, en piezas sueltas de 30 a 60 segundos, con una persona de la empresa hablando a cámara. Cada pieza se publica junto a su pregunta en la web y resuelve la duda antes de que alguien te escriba.",
+      },
+      {
+        type: "paragraph",
+        text: "El error habitual es grabar un único vídeo largo con todas las respuestas seguidas. Nadie lo ve entero. Separar cada pregunta en su propio clip permite enseñarlo donde hace falta: en la ficha de un servicio, en un email de bienvenida o en una respuesta de ventas.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-preguntas-frecuentes-empresa/hero.webp",
+        alt: "Cámara sobre un trípode preparada para grabar una entrevista en una oficina",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Para qué sirve un vídeo de preguntas frecuentes" },
+      {
+        type: "paragraph",
+        text: "Las preguntas que más se repiten en llamadas y correos suelen ser las mismas: cuánto cuesta, cuánto tarda, qué incluye, cómo se empieza. Responderlas siempre por escrito consume tiempo del equipo comercial y de atención al cliente.",
+      },
+      {
+        type: "paragraph",
+        text: "Un vídeo corto convence mejor que un párrafo cuando la respuesta necesita matices o confianza: una clínica que explica cómo es la primera visita, una consultora que describe cómo trabaja, una empresa técnica que muestra cómo es una instalación. La voz y la cara de una persona real quitan fricción.",
+      },
+      { type: "heading", level: 2, text: "Cómo preparo un vídeo FAQ paso a paso" },
+      { type: "heading", level: 3, text: "Qué preguntas elegir" },
+      {
+        type: "paragraph",
+        text: "Pido al equipo comercial y de atención una lista de las 15 preguntas más repetidas del último año. De ahí salen entre 5 y 8. Elijo las que más dudas generan antes de comprar, no las que más gustan a la dirección. Si una respuesta cabe en una línea de texto, no la grabo.",
+      },
+      { type: "heading", level: 3, text: "Quién responde y cómo" },
+      {
+        type: "paragraph",
+        text: "Responde la persona que de verdad contesta esa duda cada día, no siempre el director. Preparo la pregunta y tres ideas clave, no un texto. Hablo con la persona antes de grabar, hacemos dos o tres tomas por pregunta y elijo la más natural en la edición.",
+      },
+      { type: "heading", level: 3, text: "Dónde grabar y con qué equipo" },
+      {
+        type: "paragraph",
+        text: "Grabo en el lugar de trabajo, con luz natural y un foco pequeño de apoyo, con un fondo ordenado y sin ruido de pasillo. Uso una cámara, un trípode y un micrófono de corbata. Para 6 preguntas con una o dos personas, el rodaje cabe en media jornada de 4 horas.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-preguntas-frecuentes-empresa/detalle.webp",
+        alt: "Operadora de cámara grabando a un grupo de personas durante un rodaje",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Duración, formato y dónde publicarlo" },
+      {
+        type: "paragraph",
+        text: "Cada respuesta dura entre 30 y 60 segundos. Si pasa de 90, probablemente son dos preguntas distintas. Entrego cada clip en horizontal para la web y en vertical para LinkedIn e Instagram, con subtítulos siempre, porque mucha gente ve el vídeo sin sonido.",
+      },
+      {
+        type: "paragraph",
+        text: "El sitio ideal es la propia página de preguntas frecuentes, con el clip bajo cada pregunta, y también las fichas de servicio y el email de bienvenida a clientes nuevos. La entrega suele ser de 7 a 10 días laborables desde el rodaje.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes en un vídeo de preguntas frecuentes" },
+      {
+        type: "list",
+        items: [
+          "Grabar un solo vídeo largo en lugar de un clip por pregunta.",
+          "Responder preguntas que nadie hace en lugar de las que llegan al comercial.",
+          "Leer un guion escrito por marketing con tono de nota de prensa.",
+          "Dejar sin subtítulos un vídeo que se verá en el móvil y sin sonido.",
+          "No actualizar las respuestas cuando cambian precios, plazos o condiciones.",
+          "Esconder los vídeos en una pestaña que nadie visita.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuántas preguntas debe tener un vídeo de preguntas frecuentes?",
+        answer:
+          "Entre 5 y 8 preguntas, cada una en su propio clip. Más de 8 diluye el mensaje y alarga el rodaje sin que aporte respuestas nuevas.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto debe durar cada respuesta?",
+        answer:
+          "Entre 30 y 60 segundos. Si una respuesta necesita más de 90, conviene dividirla en dos preguntas distintas.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tarda en estar listo?",
+        answer:
+          "El rodaje cabe en media jornada de 4 horas para unas 6 preguntas. La edición y la entrega suelen tardar de 7 a 10 días laborables.",
+      },
+      {
+        type: "faq",
+        question: "¿Hay que actualizar los vídeos cada cierto tiempo?",
+        answer:
+          "Solo los que hablan de precios, plazos o condiciones. Por eso evito citar cifras concretas en los clips que no lo necesitan, así duran más años sin regrabar.",
+      },
+      {
+        type: "paragraph",
+        text: "Si quieres convertir las dudas más repetidas de tus clientes en vídeos que trabajen por ti, escríbeme desde /contacto con tu sector y la lista de preguntas. Te propongo un plan de rodaje y un presupuesto por partidas. Los servicios de vídeo corporativo están en /servicios.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
