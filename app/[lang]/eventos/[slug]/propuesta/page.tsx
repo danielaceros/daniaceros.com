@@ -16,7 +16,9 @@ import LandingGreeting from "@/components/landing/LandingGreeting"
 import { PersonalizeProvider, Rich } from "@/components/landing/Personalize"
 import LandingReel from "@/components/landing/LandingReel"
 import LandingTracking from "@/components/landing/LandingTracking"
+import StickyReserveBar from "@/components/landing/StickyReserveBar"
 import ShowcaseTabs, { type ShowcaseItem } from "@/components/landing/ShowcaseTabs"
+import ReferenceCards, { type ReferenceItem } from "@/components/landing/ReferenceCards"
 import { getProjects } from "@/data/projects"
 import { buildMetadata } from "@/lib/seo"
 import { CONTACT_EMAIL, whatsappUrl } from "@/lib/contact"
@@ -117,14 +119,51 @@ const AFTERMOVIES: ShowcaseItem[] = [
   },
 ]
 
-// Referencias: solo nombre, logo y dónde fue; sin entregables ni citas (los aftermovies aún no están montados y
-// ninguna cita tiene autorización). Dani autorizó nombrarlos el 13-nov-2026.
-const REFERENCIAS = [
-  { name: "A-OK Motors", src: "/logos/ferias/aok.png", photo: "/img/ferias/aok.jpg", tag: "VETECO · IFEMA", text: "Contenido de su stand en foto y vídeo para sus redes." },
-  { name: "VIAVI", src: "/logos/ferias/viavi.png", photo: "/img/ferias/viavi.jpg", pos: "object-top", tag: "VETECO · IFEMA", text: "Más de 10 entrevistas a fundadores, clientes y empleados para celebrar sus 30 años: contenido para varios meses." },
-  { name: "Edugenia", src: "/logos/ferias/edugenia.svg", photo: "/img/ferias/edugenia.jpg", tag: "SIMO Educación · IFEMA", text: "Startup de menos de un año: foto y vídeo para sus redes, entrevistas y demos de producto en su propio stand." },
-  { name: "Serdatia", src: "/logos/ferias/serdatia.png", photo: "/img/ferias/serdatia.jpg", tag: "Tech Show Madrid · IFEMA", text: "Empresa nueva del grupo Seresco: contenido para LinkedIn y TikTok con el que hicieron su lanzamiento." },
-] as const
+// Referencias con resumen en modal. SOLO material editado y de calidad (aftermovies finales y fotos de la entrega),
+// nunca brutos ni fragmentos sin editar: lo ve el cliente final. Dani autorizó nombrarlos el 13-nov-2026.
+// Las entrevistas no entran hasta que estén editadas. Los aftermovies salen de AFTERMOVIES (mismo vídeo).
+const VIDEO_DE = (id: string) => AFTERMOVIES.find((item) => item.id === id)
+const REFERENCIAS: ReferenceItem[] = [
+  {
+    id: "aok",
+    name: "A-OK Motors",
+    tag: "VETECO · IFEMA",
+    text: "Contenido de su stand en foto y vídeo para sus redes.",
+    logo: "/logos/ferias/aok.png",
+    photo: "/img/ferias/aok.jpg",
+    video: VIDEO_DE("aok") && { src: VIDEO_DE("aok")!.src, poster: VIDEO_DE("aok")!.poster },
+    photos: ["/img/ferias/galeria/aok-01.jpg", "/img/ferias/galeria/aok-02.jpg"],
+  },
+  {
+    id: "viavi",
+    name: "VIAVI",
+    tag: "VETECO · IFEMA",
+    text: "Más de 10 entrevistas a fundadores, clientes y empleados para celebrar sus 30 años: contenido para varios meses.",
+    logo: "/logos/ferias/viavi.png",
+    photo: "/img/ferias/viavi.jpg",
+    pos: "object-top",
+    photos: ["/img/ferias/galeria/viavi-01.jpg", "/img/ferias/galeria/viavi-02.jpg"],
+  },
+  {
+    id: "edugenia",
+    name: "Edugenia",
+    tag: "SIMO Educación · IFEMA",
+    text: "Startup de menos de un año: foto y vídeo para sus redes, entrevistas y demos de producto en su propio stand.",
+    logo: "/logos/ferias/edugenia.svg",
+    photo: "/img/ferias/edugenia.jpg",
+    photos: ["/img/ferias/galeria/edugenia-01.jpg", "/img/ferias/galeria/edugenia-02.jpg"],
+  },
+  {
+    id: "serdatia",
+    name: "Serdatia",
+    tag: "Tech Show Madrid · IFEMA",
+    text: "Empresa nueva del grupo Seresco: contenido para LinkedIn y TikTok con el que hicieron su lanzamiento.",
+    logo: "/logos/ferias/serdatia.png",
+    photo: "/img/ferias/serdatia.jpg",
+    video: VIDEO_DE("serdatia") && { src: VIDEO_DE("serdatia")!.src, poster: VIDEO_DE("serdatia")!.poster },
+    photos: ["/img/ferias/galeria/serdatia-01.jpg"],
+  },
+]
 
 export default async function PropuestaPage({ params }: Props) {
   const { lang: rawLang, slug } = await params
@@ -149,7 +188,7 @@ export default async function PropuestaPage({ params }: Props) {
         <LandingTracking lpId={landing.id} />
 
         {/* 1. Hero: titular + reel de IFEMA, después marcas y VSL (misma apertura que /eventos/ifema). */}
-        <section className="relative w-full overflow-hidden pb-8 pt-8 sm:pt-10 lg:pb-12">
+        <section id="propuesta-hero" className="relative w-full overflow-hidden pb-8 pt-8 sm:pt-10 lg:pb-12">
           <div className="mx-auto grid w-full max-w-6xl items-center gap-8 px-4 text-center sm:px-6 lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-16 lg:text-left">
             <div className="flex flex-col items-center lg:items-start">
               <p className={EYEBROW}>Propuesta · expositores de IFEMA</p>
@@ -160,9 +199,13 @@ export default async function PropuestaPage({ params }: Props) {
                 Grabo tu stand, a tu equipo y a tus clientes en pista. Te llevas un aftermovie, fotos y material para
                 publicar mucho después de la feria.
               </p>
+              <p className="mt-5 font-inter text-[15px] leading-[1.5] text-white/85">
+                <strong className="font-semibold text-white">Pack de un día desde 600 € + IVA</strong> · precio cerrado ·
+                aftermovie y 50 fotos editadas
+              </p>
               <a
                 href="#packs"
-                className="mt-6 inline-flex min-h-[52px] items-center justify-center rounded-2xl border border-white/25 bg-white px-8 py-3 text-center font-inter text-[12px] font-semibold uppercase leading-[1.35] tracking-[0.06em] text-black transition-transform duration-300 hover:-translate-y-[1px] focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black sm:min-h-[56px] sm:px-10 sm:text-[13px]"
+                className="mt-4 inline-flex min-h-[52px] items-center justify-center rounded-2xl border border-white/25 bg-white px-8 py-3 text-center font-inter text-[12px] font-semibold uppercase leading-[1.35] tracking-[0.06em] text-black transition-transform duration-300 hover:-translate-y-[1px] focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black sm:min-h-[56px] sm:px-10 sm:text-[13px]"
               >
                 Ver los packs y precios
               </a>
@@ -172,7 +215,7 @@ export default async function PropuestaPage({ params }: Props) {
                 src={reel.video}
                 poster={reel.poster}
                 label="Reel · IFEMA Madrid"
-                className="lg:mx-0 lg:max-w-[340px]"
+                className="!max-w-[220px] sm:!max-w-[300px] lg:mx-0 lg:!max-w-[340px]"
               />
             ) : null}
           </div>
@@ -192,7 +235,7 @@ export default async function PropuestaPage({ params }: Props) {
         <section id="packs" className="page-container scroll-mt-6 pb-14 sm:pb-20">
           <div className="mx-auto max-w-5xl">
             <p className={`${EYEBROW} text-center`}>Precio cerrado, sin sorpresas</p>
-            <h2 className={`${SECTION_TITLE} mt-3 text-center`}>Tu stand, grabado y listo para publicar</h2>
+            <h2 className={`${SECTION_TITLE} mt-3 text-center`}><Rich text="Tu stand en {feria|IFEMA|b}, grabado y listo para publicar" /></h2>
             <div className="mx-auto mt-8 grid max-w-xl gap-5 sm:mt-10">
               {PACKS.map((pack) => (
                 <article
@@ -227,6 +270,10 @@ export default async function PropuestaPage({ params }: Props) {
                       </li>
                     ))}
                   </ul>
+                  <p className="mt-5 rounded-xl border border-white/15 bg-white/[0.04] px-4 py-3 font-inter text-[14px] leading-[1.55] text-white/80">
+                    <strong className="font-semibold text-white">Este es el pack base.</strong> Si quieres más
+                    entregables o más cosas, se añaden: dímelo y lo ajustamos a lo que necesites.
+                  </p>
                   <LandingCta
                     lpId={landing.id}
                     position={`pack-${pack.id}`}
@@ -299,7 +346,7 @@ export default async function PropuestaPage({ params }: Props) {
                 </li>
               ))}
             </ul>
-            <LandingCta lpId={landing.id} position="valor" label="Quiero este pack" className="mt-10 w-full sm:w-auto" />
+            <LandingCta lpId={landing.id} position="valor" label="Reservar mi fecha" className="mt-10 w-full sm:w-auto" />
           </div>
         </section>
 
@@ -322,38 +369,7 @@ export default async function PropuestaPage({ params }: Props) {
               <p className="mx-auto mt-3 max-w-xl text-center font-inter text-[15px] leading-[1.65] text-white/65">
                 Stands de expositores, equipo y clientes en pista, de las ferias de este mismo otoño.
               </p>
-              <ul className="mt-8 grid grid-cols-1 gap-4 sm:mt-10 sm:grid-cols-2 lg:grid-cols-4">
-                {REFERENCIAS.map((ref) => (
-                  <li key={ref.name} className="flex flex-col overflow-hidden rounded-2xl border border-white/12 bg-white/[0.03]">
-                    <div className="relative aspect-[4/3] w-full overflow-hidden bg-black">
-                      <Image
-                        src={ref.photo}
-                        alt={`Stand de ${ref.name} en IFEMA`}
-                        fill
-                        sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw"
-                        className={`object-cover ${"pos" in ref ? ref.pos : ""}`}
-                      />
-                      <div className="absolute left-3 top-3 flex h-11 items-center rounded-lg bg-white px-3 shadow-lg">
-                        <Image
-                          src={ref.src}
-                          alt={`Logo de ${ref.name}`}
-                          width={160}
-                          height={64}
-                          unoptimized
-                          className="h-7 w-auto max-w-[120px] object-contain"
-                        />
-                      </div>
-                    </div>
-                    <div className="p-5">
-                      <p className="font-inter text-[12px] font-semibold uppercase tracking-[0.14em] text-white/72">
-                        {ref.tag}
-                      </p>
-                      <h3 className="mt-2 font-display text-[20px] font-semibold uppercase leading-[1.1]">{ref.name}</h3>
-                      <p className="mt-2 font-inter text-[14px] leading-[1.6] text-white/72">{ref.text}</p>
-                    </div>
-                  </li>
-                ))}
-              </ul>
+              <ReferenceCards items={REFERENCIAS} />
               <div className="mt-4 flex flex-col items-center justify-between gap-2 rounded-2xl border border-dashed border-white/25 px-6 py-5 text-center sm:flex-row sm:text-left">
                 <p className="font-display text-[20px] font-semibold uppercase leading-[1.1] sm:text-[24px]">
                   + Muchas más
@@ -390,24 +406,22 @@ export default async function PropuestaPage({ params }: Props) {
 
         {/* 7. Formulario + contacto directo. */}
         <div id="contacto">
-          <p className="mx-auto mt-10 max-w-xl px-4 text-center font-inter text-[14px] leading-[1.6] text-white/62 sm:mt-14">
-            Escríbeme directamente:{" "}
+          <div className="mx-auto mt-10 flex max-w-xl flex-col items-stretch gap-3 px-4 sm:mt-14 sm:flex-row sm:justify-center">
             <a
               href={whatsappUrl("Hola Dani, he visto la propuesta de IFEMA y me gustaría reservar fecha para mi stand.")}
               target="_blank"
               rel="noopener"
-              className="inline-block py-3 underline decoration-white/40 underline-offset-[0.25em] transition-colors hover:text-white"
+              className="inline-flex min-h-[52px] flex-1 items-center justify-center rounded-2xl border border-white/30 px-6 py-3 font-inter text-[12px] font-semibold uppercase tracking-[0.06em] text-white transition-colors hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
             >
-              WhatsApp
-            </a>{" "}
-            ·{" "}
+              Escríbeme por WhatsApp
+            </a>
             <a
               href={`mailto:${CONTACT_EMAIL}`}
-              className="inline-block py-3 underline decoration-white/40 underline-offset-[0.25em] transition-colors hover:text-white"
+              className="inline-flex min-h-[52px] flex-1 items-center justify-center rounded-2xl border border-white/30 px-6 py-3 font-inter text-[12px] font-semibold uppercase tracking-[0.06em] text-white transition-colors hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
             >
               {CONTACT_EMAIL}
             </a>
-          </p>
+          </div>
           <ContactCTA
             lang={lang}
             mobileFormFirst
@@ -417,6 +431,9 @@ export default async function PropuestaPage({ params }: Props) {
             sectionClassName="mt-6 pb-8 sm:mt-8 sm:pb-10"
           />
         </div>
+
+        <StickyReserveBar lpId={landing.id} price="600€" label="Reservar mi fecha" />
+        <div aria-hidden className="h-20 md:hidden" />
 
         <footer className="mx-auto w-full max-w-6xl px-4 pb-6 text-center sm:px-6">
           <p className="flex flex-wrap items-center justify-center gap-x-2 font-inter text-[12px] lowercase text-white/45">
