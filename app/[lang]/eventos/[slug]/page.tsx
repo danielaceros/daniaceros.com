@@ -12,6 +12,8 @@ import ContactCTA from "@/components/ContactCTA"
 import PortfolioMarquee from "@/components/PortfolioMarquee"
 import LandingCta from "@/components/landing/LandingCta"
 import WhatsappCta from "@/components/landing/WhatsappCta"
+import ReferenceCards from "@/components/landing/ReferenceCards"
+import { REFERENCIAS } from "@/lib/ifema-referencias"
 import LandingGreeting from "@/components/landing/LandingGreeting"
 import { PersonalizeProvider, Rich } from "@/components/landing/Personalize"
 import LandingReel from "@/components/landing/LandingReel"
@@ -243,6 +245,19 @@ export default async function LandingPage({ params }: Props) {
           )}
         </div>
       </section>
+
+      {/* 4b. Últimas grabaciones en IFEMA (solo landings con whatsappOnly): breve y visual, con modal por proyecto. */}
+      {landing.whatsappOnly && REFERENCIAS.length > 0 ? (
+        <section className="page-container pb-12 sm:pb-16">
+          <div className="mx-auto max-w-5xl">
+            <h2 className={`${SECTION_TITLE} text-center`}>Mis últimas grabaciones en IFEMA</h2>
+            <p className="mx-auto mt-3 max-w-xl text-center font-inter text-[15px] leading-[1.65] text-white/65">
+              Stands de expositores, equipo y clientes en pista, de las ferias de este mismo otoño.
+            </p>
+            <ReferenceCards items={REFERENCIAS} lpId={landing.id} />
+          </div>
+        </section>
+      ) : null}
 
       {/* 5. Portfolio como prueba. Modal (no enlaza a las fichas: no saca del funnel); vídeos diferidos. */}
       <section className="pb-4">

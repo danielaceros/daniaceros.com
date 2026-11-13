@@ -15,11 +15,12 @@ import { PersonalizeProvider, Rich } from "@/components/landing/Personalize"
 import LandingReel from "@/components/landing/LandingReel"
 import LandingTracking from "@/components/landing/LandingTracking"
 import StickyReserveBar from "@/components/landing/StickyReserveBar"
-import ShowcaseTabs, { type ShowcaseItem } from "@/components/landing/ShowcaseTabs"
-import ReferenceCards, { type ReferenceItem } from "@/components/landing/ReferenceCards"
+import ShowcaseTabs from "@/components/landing/ShowcaseTabs"
+import ReferenceCards from "@/components/landing/ReferenceCards"
 import { getProjects } from "@/data/projects"
 import { buildMetadata } from "@/lib/seo"
 import { getDictionary, localizedHref, toLang } from "@/lib/i18n"
+import { AFTERMOVIES, REFERENCIAS } from "@/lib/ifema-referencias"
 import { getLanding } from "@/lib/landings"
 import { VSL } from "@/lib/media"
 
@@ -97,70 +98,6 @@ const POR_QUE = [
     text: "Llego, grabo y me voy. Tú sigues atendiendo a tus clientes: no hay que coordinar nada ni preparar guiones.",
   },
 ] as const
-
-// Aftermovies finales ya montados (versión web 720p en Vercel Blob). Se añaden aquí según estén aprobados.
-const AFTERMOVIES: ShowcaseItem[] = [
-  {
-    id: "serdatia",
-    label: "Serdatia",
-    context: "Serdatia · Tech Show Madrid · IFEMA",
-    src: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/serdatia-techshow-web-rbOR1RQXoqazTu27GWThutst8Zjjh3.mp4",
-    poster: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/serdatia-techshow-poster-PQ1VoUYsvZgsR44qaZSuEuBPpIX1M2.jpg",
-  },
-  {
-    id: "aok",
-    label: "A-OK Motors",
-    context: "A-OK Motors · VETECO · IFEMA",
-    src: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/aok-ferias-web.mp4",
-    poster: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/aok-ferias-poster.jpg",
-  },
-]
-
-// Referencias con resumen en modal. SOLO material editado y de calidad (aftermovies finales y fotos de la entrega),
-// nunca brutos ni fragmentos sin editar: lo ve el cliente final. Dani autorizó nombrarlos el 13-nov-2026.
-// Las entrevistas no entran hasta que estén editadas. Los aftermovies salen de AFTERMOVIES (mismo vídeo).
-const VIDEO_DE = (id: string) => AFTERMOVIES.find((item) => item.id === id)
-const REFERENCIAS: ReferenceItem[] = [
-  {
-    id: "aok",
-    name: "A-OK Motors",
-    tag: "VETECO · IFEMA",
-    text: "Contenido de su stand en foto y vídeo para sus redes.",
-    logo: "/logos/ferias/aok.png",
-    photo: "/img/ferias/aok.jpg",
-    video: VIDEO_DE("aok") && { src: VIDEO_DE("aok")!.src, poster: VIDEO_DE("aok")!.poster },
-    photos: ["/img/ferias/galeria/aok-01.jpg", "/img/ferias/galeria/aok-02.jpg"],
-  },
-  {
-    id: "viavi",
-    name: "VIAVI",
-    tag: "VETECO · IFEMA",
-    text: "Más de 10 entrevistas a fundadores, clientes y empleados para celebrar sus 30 años: contenido para varios meses.",
-    logo: "/logos/ferias/viavi.png",
-    photo: "/img/ferias/viavi.jpg",
-    pos: "object-top",
-    photos: ["/img/ferias/galeria/viavi-01.jpg", "/img/ferias/galeria/viavi-02.jpg"],
-  },
-  {
-    id: "edugenia",
-    name: "Edugenia",
-    tag: "SIMO Educación · IFEMA",
-    text: "Startup de menos de un año: foto y vídeo para sus redes, entrevistas y demos de producto en su propio stand.",
-    logo: "/logos/ferias/edugenia.svg",
-    photo: "/img/ferias/edugenia.jpg",
-    photos: ["/img/ferias/galeria/edugenia-01.jpg", "/img/ferias/galeria/edugenia-02.jpg"],
-  },
-  {
-    id: "serdatia",
-    name: "Serdatia",
-    tag: "Tech Show Madrid · IFEMA",
-    text: "Empresa nueva del grupo Seresco: contenido para LinkedIn y TikTok con el que hicieron su lanzamiento.",
-    logo: "/logos/ferias/serdatia.png",
-    photo: "/img/ferias/serdatia.jpg",
-    video: VIDEO_DE("serdatia") && { src: VIDEO_DE("serdatia")!.src, poster: VIDEO_DE("serdatia")!.poster },
-    photos: ["/img/ferias/galeria/serdatia-01.jpg"],
-  },
-]
 
 export default async function PropuestaPage({ params }: Props) {
   const { lang: rawLang, slug } = await params
