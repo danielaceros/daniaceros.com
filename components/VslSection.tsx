@@ -44,6 +44,8 @@ type Props = {
   inline?: boolean
   /** Landings de anuncios: la pantalla final solo ofrece el formulario (sin WhatsApp ni email que saquen del funnel). */
   formOnly?: boolean
+  /** Pantalla final con un único botón, el de WhatsApp (sin formulario ni email). Prevalece sobre formOnly. */
+  whatsappOnly?: boolean
   /**
    * Animación de entrada (cinematic-reveal + data-lux). Por defecto sí. En las landings va a false: el póster es
    * el LCP y la animación lo dejaba con opacidad 0 hasta hidratar (hasta ~2 s de render delay en móvil).
@@ -76,6 +78,7 @@ export default function VslSection({
   formHref = "#contacto",
   inline = false,
   formOnly = false,
+  whatsappOnly = false,
   reveal = true,
   className,
 }: Props) {
@@ -620,6 +623,7 @@ export default function VslSection({
             <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-black/60 px-3 text-center backdrop-blur-[3px] sm:gap-5 sm:px-4">
               <p className="font-inter text-[13px] italic text-white/85 sm:text-[17px]">{t.endTitle}</p>
               <div className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-3">
+                {whatsappOnly ? null : (
                 <a
                   href={formHref}
                   onClick={(event) => onEndCta("form", event)}
@@ -631,20 +635,22 @@ export default function VslSection({
                   </svg>
                   {t.endForm}
                 </a>
-                {formOnly ? null : (
+                )}
+                {formOnly && !whatsappOnly ? null : (
                   <>
                   <a
                     href={waUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => onEndCta("whatsapp")}
-                    className={`${endPill} border border-white/25 bg-white/10 text-white backdrop-blur-md hover:border-white/50`}
+                    className={whatsappOnly ? `${endPill} bg-white text-[#0a0a0a] shadow-[0_14px_36px_-16px_rgba(255,255,255,0.45)]` : `${endPill} border border-white/25 bg-white/10 text-white backdrop-blur-md hover:border-white/50`}
                   >
                     <svg aria-hidden viewBox="0 0 24 24" className={endIcon} strokeWidth={1.8} strokeLinejoin="round">
                       <path d="M20.5 11.6a8.5 8.5 0 0 1-12.6 7.4L3.5 20.5l1.5-4.3a8.5 8.5 0 1 1 15.5-4.6Z" />
                     </svg>
                     {t.endWhatsapp}
                   </a>
+                  {whatsappOnly ? null : (
                   <a
                     href={`mailto:${CONTACT_EMAIL}`}
                     onClick={() => onEndCta("email")}
@@ -656,6 +662,7 @@ export default function VslSection({
                     </svg>
                     {t.endEmail}
                   </a>
+                  )}
                   </>
                 )}
               </div>

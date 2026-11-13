@@ -4,14 +4,12 @@
 // qué incluye, por qué compensa, referencias y formulario. Se personaliza con #Empresa~Feria (Personalize.tsx).
 // Solo ES, noindex, fuera del sitemap. Solo existe para slugs con propuesta (hoy: ifema).
 import type { Metadata } from "next"
-import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import VslSection from "@/components/VslSection"
 import ClientLogosTicker from "@/components/landing/ClientLogosTicker"
-import ContactCTA from "@/components/ContactCTA"
 import PortfolioMarquee from "@/components/PortfolioMarquee"
-import LandingCta from "@/components/landing/LandingCta"
+import WhatsappCta from "@/components/landing/WhatsappCta"
 import LandingGreeting from "@/components/landing/LandingGreeting"
 import { PersonalizeProvider, Rich } from "@/components/landing/Personalize"
 import LandingReel from "@/components/landing/LandingReel"
@@ -21,7 +19,6 @@ import ShowcaseTabs, { type ShowcaseItem } from "@/components/landing/ShowcaseTa
 import ReferenceCards, { type ReferenceItem } from "@/components/landing/ReferenceCards"
 import { getProjects } from "@/data/projects"
 import { buildMetadata } from "@/lib/seo"
-import { CONTACT_EMAIL, whatsappUrl } from "@/lib/contact"
 import { getDictionary, localizedHref, toLang } from "@/lib/i18n"
 import { getLanding } from "@/lib/landings"
 import { VSL } from "@/lib/media"
@@ -203,16 +200,12 @@ export default async function PropuestaPage({ params }: Props) {
                 <strong className="font-semibold text-white">Pack de un día desde 600 € + IVA</strong> · precio cerrado ·
                 aftermovie y 50 fotos editadas
               </p>
-              <a
-                href="#packs"
-                className="mt-4 inline-flex min-h-[52px] items-center justify-center rounded-2xl border border-white/25 bg-white px-8 py-3 text-center font-inter text-[12px] font-semibold uppercase leading-[1.35] tracking-[0.06em] text-black transition-transform duration-300 hover:-translate-y-[1px] focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black sm:min-h-[56px] sm:px-10 sm:text-[13px]"
-              >
-                Ver los packs y precios
-              </a>
+              <WhatsappCta lpId={landing.id} position="hero" label="Reservar mi fecha por WhatsApp" className="mt-4" />
             </div>
             {reel ? (
               <LandingReel
                 src={reel.video}
+                srcMobile="https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/ifema-tranjis-mobile.mp4"
                 poster={reel.poster}
                 label="Reel · IFEMA Madrid"
                 className="!max-w-[220px] sm:!max-w-[300px] lg:mx-0 lg:!max-w-[340px]"
@@ -226,7 +219,7 @@ export default async function PropuestaPage({ params }: Props) {
           {VSL[lang] ? (
             <div className="mt-8 w-full sm:mt-10">
               <LandingGreeting className="mb-4 font-display text-[clamp(1.25rem,5.2vw,1.9rem)] font-semibold uppercase leading-[1.1] text-balance sm:mb-5" />
-              <VslSection lang={lang} hideTitle inline formOnly reveal={false} formHref="#contacto" />
+              <VslSection lang={lang} hideTitle inline whatsappOnly reveal={false} />
             </div>
           ) : null}
         </section>
@@ -274,12 +267,7 @@ export default async function PropuestaPage({ params }: Props) {
                     <strong className="font-semibold text-white">Este es el pack base.</strong> Si quieres más
                     entregables o más cosas, se añaden: dímelo y lo ajustamos a lo que necesites.
                   </p>
-                  <LandingCta
-                    lpId={landing.id}
-                    position={`pack-${pack.id}`}
-                    label="Reservar mi fecha"
-                    className={`mt-8 w-full ${pack.reco ? "" : "!border-white/30 !bg-transparent !text-white hover:!bg-white/10"}`}
-                  />
+                  <WhatsappCta lpId={landing.id} position={`pack-${pack.id}`} label="Reservar mi fecha por WhatsApp" className="mt-8 w-full" />
                 </article>
               ))}
             </div>
@@ -296,12 +284,7 @@ export default async function PropuestaPage({ params }: Props) {
                   fechas de IFEMA se llenan rápido y mi agenda también.
                 </p>
               </div>
-              <LandingCta
-                lpId={landing.id}
-                position="pack-medida"
-                label="Hablar conmigo"
-                className="w-full shrink-0 sm:w-auto"
-              />
+              <WhatsappCta lpId={landing.id} position="pack-medida" intent="dias" label="Hablar conmigo por WhatsApp" className="w-full shrink-0 sm:w-auto" />
             </div>
             <p className="mx-auto mt-5 max-w-2xl text-center font-inter text-[14px] leading-[1.65] text-white/70">
               El material en bruto se entrega sin editar, para que lo uses tú o tu equipo cuando quieras; la edición de piezas adicionales no está incluida.
@@ -346,7 +329,7 @@ export default async function PropuestaPage({ params }: Props) {
                 </li>
               ))}
             </ul>
-            <LandingCta lpId={landing.id} position="valor" label="Reservar mi fecha" className="mt-10 w-full sm:w-auto" />
+            <WhatsappCta lpId={landing.id} position="valor" label="Reservar mi fecha por WhatsApp" className="mt-10 w-full sm:w-auto" />
           </div>
         </section>
 
@@ -369,7 +352,7 @@ export default async function PropuestaPage({ params }: Props) {
               <p className="mx-auto mt-3 max-w-xl text-center font-inter text-[15px] leading-[1.65] text-white/65">
                 Stands de expositores, equipo y clientes en pista, de las ferias de este mismo otoño.
               </p>
-              <ReferenceCards items={REFERENCIAS} />
+              <ReferenceCards items={REFERENCIAS} lpId={landing.id} />
               <div className="mt-4 flex flex-col items-center justify-between gap-2 rounded-2xl border border-dashed border-white/25 px-6 py-5 text-center sm:flex-row sm:text-left">
                 <p className="font-display text-[20px] font-semibold uppercase leading-[1.1] sm:text-[24px]">
                   + Muchas más
@@ -391,46 +374,21 @@ export default async function PropuestaPage({ params }: Props) {
           <div className="mt-6 sm:mt-8">
             <PortfolioMarquee items={portfolioItems} size="xl" mode="modal" scrollable lang={lang} />
           </div>
-          <div className="mt-8 flex justify-center px-4 sm:mt-10">
-            <Link
-              href={localizedHref(lang, "https://www.daniaceros.com/")}
-              target="_blank"
-              rel="noopener"
-              prefetch={false}
-              className="inline-flex min-h-[52px] items-center justify-center rounded-2xl border border-white/30 px-8 py-3 text-center font-inter text-[12px] font-semibold uppercase leading-[1.35] tracking-[0.06em] text-white transition-colors duration-300 hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black sm:min-h-[56px] sm:px-10 sm:text-[13px]"
-            >
-              Ver más trabajos
-            </Link>
-          </div>
         </section>
 
-        {/* 7. Formulario + contacto directo. */}
-        <div id="contacto">
-          <div className="mx-auto mt-10 flex max-w-xl flex-col items-stretch gap-3 px-4 sm:mt-14 sm:flex-row sm:justify-center">
-            <a
-              href={whatsappUrl("Hola Dani, he visto la propuesta de IFEMA y me gustaría reservar fecha para mi stand.")}
-              target="_blank"
-              rel="noopener"
-              className="inline-flex min-h-[52px] flex-1 items-center justify-center rounded-2xl border border-white/30 px-6 py-3 font-inter text-[12px] font-semibold uppercase tracking-[0.06em] text-white transition-colors hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
-            >
-              Escríbeme por WhatsApp
-            </a>
-            <a
-              href={`mailto:${CONTACT_EMAIL}`}
-              className="inline-flex min-h-[52px] flex-1 items-center justify-center rounded-2xl border border-white/30 px-6 py-3 font-inter text-[12px] font-semibold uppercase tracking-[0.06em] text-white transition-colors hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
-            >
-              {CONTACT_EMAIL}
-            </a>
+        {/* 7. Cierre del funnel: un único CTA, WhatsApp con el mensaje ya escrito. */}
+        <section id="contacto" className="page-container scroll-mt-6 pb-14 pt-6 sm:pb-20">
+          <div className="mx-auto max-w-3xl rounded-3xl border border-white/20 bg-white/[0.05] px-6 py-10 text-center sm:px-12 sm:py-14">
+            <h2 className={SECTION_TITLE}>
+              <Rich text="Reserva la fecha de {empresa|tu stand|b}" />
+            </h2>
+            <p className="mx-auto mt-4 max-w-xl font-inter text-[15px] leading-[1.7] text-white/78 sm:text-[16px]">
+              Escríbeme por WhatsApp, cuéntame qué feria y qué día, y lo cerramos ahí mismo. El mensaje ya va escrito:
+              solo tienes que enviarlo.
+            </p>
+            <WhatsappCta lpId={landing.id} position="cierre" label="Reservar mi fecha por WhatsApp" className="mt-8 w-full sm:w-auto" />
           </div>
-          <ContactCTA
-            lang={lang}
-            mobileFormFirst
-            hideFooter
-            formPreloadMargin="1000px"
-            formMountAfterPaint
-            sectionClassName="mt-6 pb-8 sm:mt-8 sm:pb-10"
-          />
-        </div>
+        </section>
 
         <StickyReserveBar lpId={landing.id} price="600€" label="Reservar mi fecha" />
         <div aria-hidden className="h-20 md:hidden" />

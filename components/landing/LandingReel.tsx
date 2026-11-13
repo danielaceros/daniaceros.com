@@ -6,9 +6,9 @@
 // arranca la reproducción no baja el vídeo entero.
 import { useRef, useState } from "react"
 
-type Props = { src: string; poster: string; label?: string; className?: string }
+type Props = { src: string; srcMobile?: string; poster: string; label?: string; className?: string }
 
-export default function LandingReel({ src, poster, label, className = "" }: Props) {
+export default function LandingReel({ src, srcMobile, poster, label, className = "" }: Props) {
   const ref = useRef<HTMLVideoElement>(null)
   const [muted, setMuted] = useState(true)
 
@@ -27,14 +27,22 @@ export default function LandingReel({ src, poster, label, className = "" }: Prop
       <video
         ref={ref}
         className="aspect-[9/16] w-full object-cover"
-        src={src}
+        src={srcMobile ? undefined : src}
         poster={poster}
         autoPlay
         muted
         loop
         playsInline
         preload="metadata"
-      />
+      >
+        {srcMobile ? (
+          <>
+            {/* En móvil, versión de 480x854 (~5 MB); el original (~15 MB) solo en pantallas anchas. */}
+            <source src={srcMobile} media="(max-width: 640px)" type="video/mp4" />
+            <source src={src} type="video/mp4" />
+          </>
+        ) : null}
+      </video>
       {label ? (
         <span className="pointer-events-none absolute left-3 top-3 rounded-full bg-black/55 px-3 py-1 font-inter text-[11px] uppercase tracking-[0.08em] text-white/85 backdrop-blur">
           {label}
@@ -44,7 +52,7 @@ export default function LandingReel({ src, poster, label, className = "" }: Prop
         type="button"
         onClick={toggleSound}
         aria-label={muted ? "Activar sonido" : "Silenciar"}
-        className="absolute bottom-3 right-3 inline-flex min-h-[40px] items-center rounded-full bg-black/60 px-4 font-inter text-[12px] uppercase tracking-[0.06em] text-white backdrop-blur transition-colors duration-300 hover:bg-black/80 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+        className="absolute bottom-3 right-3 inline-flex min-h-[44px] items-center rounded-full bg-black/60 px-4 font-inter text-[12px] uppercase tracking-[0.06em] text-white backdrop-blur transition-colors duration-300 hover:bg-black/80 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
       >
         {muted ? "Activar sonido" : "Silenciar"}
       </button>

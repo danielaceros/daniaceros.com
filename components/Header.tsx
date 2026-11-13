@@ -18,6 +18,7 @@ import {
 } from "@/lib/i18n"
 import { persistLocale } from "@/lib/i18n/client"
 import { trackEvent } from "@/lib/analytics"
+import { whatsappUrl } from "@/lib/contact"
 
 // `href` = ruta española sin prefijo; se localiza con localizedHref(lang, href).
 const navItems: { key: keyof Dictionary["header"]["nav"]; href: string }[] = [
@@ -111,6 +112,8 @@ export default function Header({ lang, notFound = false }: HeaderProps) {
   // Landings de anuncios (/eventos/<slug>): la misma cabecera mínima que /hablemos, sin enlaces que saquen del funnel.
   const isLandingPage = pathname.startsWith("/eventos/")
   const isFunnelPage = isHablemosPage || isLandingPage
+  // Sublanding de propuesta (/eventos/<slug>/propuesta): su único CTA es WhatsApp.
+  const isProposalPage = isLandingPage && pathname.endsWith("/propuesta")
   const [hidden, setHidden] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const lastScrollYRef = useRef(0)
@@ -209,6 +212,17 @@ export default function Header({ lang, notFound = false }: HeaderProps) {
               >
                 daniel acero©
               </Link>
+              {isProposalPage ? (
+                <a
+                  href={whatsappUrl("Hola Dani, he visto tu propuesta de grabación para mi stand en IFEMA. Me gustaría reservar fecha.")}
+                  target="_blank"
+                  rel="noopener"
+                  onClick={() => trackEvent("lp_cta_click", { position: "header" })}
+                  className="group relative flex min-h-[44px] items-center rounded border border-white/14 bg-white/[0.03] px-3 py-2 font-inter text-[10px] uppercase text-white/92 transition-all duration-300 hover:border-white/25 hover:bg-white/[0.06] hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black xl:text-[11px]"
+                >
+                  Reservar por WhatsApp
+                </a>
+              ) : (
               <Link
                 href={`${funnelHref}#contacto`}
                 onClick={handleFunnelContactClick}
@@ -216,6 +230,7 @@ export default function Header({ lang, notFound = false }: HeaderProps) {
               >
                 {t.cta}
               </Link>
+              )}
             </>
           ) : (
             <>

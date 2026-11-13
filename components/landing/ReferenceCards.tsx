@@ -6,6 +6,7 @@
 import Image from "next/image"
 import { useEffect, useRef, useState } from "react"
 import ShowcaseVideo from "@/components/landing/ShowcaseVideo"
+import WhatsappCta from "@/components/landing/WhatsappCta"
 
 export type ReferenceItem = {
   id: string
@@ -21,7 +22,7 @@ export type ReferenceItem = {
   photos: string[]
 }
 
-export default function ReferenceCards({ items }: { items: ReferenceItem[] }) {
+export default function ReferenceCards({ items, lpId }: { items: ReferenceItem[]; lpId: string }) {
   const [openId, setOpenId] = useState<string | null>(null)
   const dialogRef = useRef<HTMLDialogElement>(null)
   const lastFocus = useRef<HTMLElement | null>(null)
@@ -49,11 +50,6 @@ export default function ReferenceCards({ items }: { items: ReferenceItem[] }) {
     document.documentElement.style.overflow = ""
     lastFocus.current?.focus()
   }
-  function goContact() {
-    close()
-    window.setTimeout(() => document.getElementById("contacto")?.scrollIntoView({ behavior: "smooth", block: "start" }), 50)
-  }
-
   return (
     <>
       <ul className="mt-8 grid grid-cols-1 gap-4 sm:mt-10 sm:grid-cols-2 lg:grid-cols-4">
@@ -155,13 +151,7 @@ export default function ReferenceCards({ items }: { items: ReferenceItem[] }) {
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
               <p className="font-inter text-[14px] text-white/70">¿Quieres algo así para tu stand?</p>
-              <button
-                type="button"
-                onClick={goContact}
-                className="inline-flex min-h-[52px] items-center justify-center rounded-2xl border border-white/25 bg-white px-8 py-3 font-inter text-[12px] font-semibold uppercase tracking-[0.06em] text-black transition-transform hover:-translate-y-[1px] focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
-              >
-                Reservar mi fecha
-              </button>
+              <WhatsappCta lpId={lpId} position={`modal-${current.id}`} label="Reservar mi fecha por WhatsApp" />
             </div>
           </div>
         ) : null}
