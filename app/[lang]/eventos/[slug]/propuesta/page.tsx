@@ -16,7 +16,7 @@ import LandingGreeting from "@/components/landing/LandingGreeting"
 import { PersonalizeProvider, Rich } from "@/components/landing/Personalize"
 import LandingReel from "@/components/landing/LandingReel"
 import LandingTracking from "@/components/landing/LandingTracking"
-import ShowcaseVideo from "@/components/landing/ShowcaseVideo"
+import ShowcaseTabs, { type ShowcaseItem } from "@/components/landing/ShowcaseTabs"
 import { getProjects } from "@/data/projects"
 import { buildMetadata } from "@/lib/seo"
 import { CONTACT_EMAIL, whatsappUrl } from "@/lib/contact"
@@ -99,13 +99,31 @@ const POR_QUE = [
   },
 ] as const
 
+// Aftermovies finales ya montados (versión web 720p en Vercel Blob). Se añaden aquí según estén aprobados.
+const AFTERMOVIES: ShowcaseItem[] = [
+  {
+    id: "serdatia",
+    label: "Serdatia",
+    context: "Serdatia · Tech Show Madrid · IFEMA",
+    src: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/serdatia-techshow-web-rbOR1RQXoqazTu27GWThutst8Zjjh3.mp4",
+    poster: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/serdatia-techshow-poster-PQ1VoUYsvZgsR44qaZSuEuBPpIX1M2.jpg",
+  },
+  {
+    id: "aok",
+    label: "A-OK Motors",
+    context: "A-OK Motors · VETECO · IFEMA",
+    src: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/aok-ferias-web.mp4",
+    poster: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/aok-ferias-poster.jpg",
+  },
+]
+
 // Referencias: solo nombre, logo y dónde fue; sin entregables ni citas (los aftermovies aún no están montados y
 // ninguna cita tiene autorización). Dani autorizó nombrarlos el 13-nov-2026.
 const REFERENCIAS = [
-  { name: "A-OK Motors", src: "/logos/ferias/aok.png", photo: "/img/ferias/aok.jpg", tag: "VETECO · IFEMA", text: "Cobertura de su stand en la feria." },
-  { name: "VIAVI", src: "/logos/ferias/viavi.png", photo: "/img/ferias/viavi.jpg", pos: "object-top", tag: "VETECO · IFEMA", text: "Su afterwork de 30 años y la feria." },
-  { name: "Edugenia", src: "/logos/ferias/edugenia.svg", photo: "/img/ferias/edugenia.jpg", tag: "SIMO Educación · IFEMA", text: "Stand, entrevistas y demos de producto." },
-  { name: "Serdatia", src: "/logos/ferias/serdatia.png", photo: "/img/ferias/serdatia.jpg", tag: "Tech Show Madrid · IFEMA", text: "Stand y entrevistas a portavoces." },
+  { name: "A-OK Motors", src: "/logos/ferias/aok.png", photo: "/img/ferias/aok.jpg", tag: "VETECO · IFEMA", text: "Contenido de su stand en foto y vídeo para sus redes." },
+  { name: "VIAVI", src: "/logos/ferias/viavi.png", photo: "/img/ferias/viavi.jpg", pos: "object-top", tag: "VETECO · IFEMA", text: "Más de 10 entrevistas a fundadores, clientes y empleados para celebrar sus 30 años: contenido para varios meses." },
+  { name: "Edugenia", src: "/logos/ferias/edugenia.svg", photo: "/img/ferias/edugenia.jpg", tag: "SIMO Educación · IFEMA", text: "Startup de menos de un año: foto y vídeo para sus redes, entrevistas y demos de producto en su propio stand." },
+  { name: "Serdatia", src: "/logos/ferias/serdatia.png", photo: "/img/ferias/serdatia.jpg", tag: "Tech Show Madrid · IFEMA", text: "Empresa nueva del grupo Seresco: contenido para LinkedIn y TikTok con el que hicieron su lanzamiento." },
 ] as const
 
 export default async function PropuestaPage({ params }: Props) {
@@ -195,6 +213,7 @@ export default async function PropuestaPage({ params }: Props) {
                   </h3>
                   <p className="mt-1 font-inter text-[14px] text-white/75">{pack.tagline}</p>
                   <p className="mt-6 flex items-baseline gap-2 font-display">
+                    <span className="font-inter text-[15px] font-semibold uppercase tracking-[0.1em] text-white/75">desde</span>
                     <span className="text-[52px] font-semibold leading-none sm:text-[64px]">{pack.price}€</span>
                     <span className="font-inter text-[13px] text-white/60">+ IVA · precio cerrado</span>
                   </p>
@@ -284,17 +303,14 @@ export default async function PropuestaPage({ params }: Props) {
           </div>
         </section>
 
-        {/* 4b. Así queda: aftermovie real de un stand en IFEMA (Serdatia, Tech Show Madrid). */}
+        {/* 4b. Así queda: aftermovies reales de stands en IFEMA, un selector por cliente. */}
         <section className="page-container pb-14 sm:pb-20">
           <div className="mx-auto max-w-4xl">
-            <p className={`${EYEBROW} text-center`}>Así queda · Serdatia en Tech Show Madrid</p>
-            <h2 className={`${SECTION_TITLE} mt-3 text-center`}>El aftermovie de un stand en IFEMA</h2>
-            <ShowcaseVideo
-              src="https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/serdatia-techshow-web-rbOR1RQXoqazTu27GWThutst8Zjjh3.mp4"
-              poster="https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/serdatia-techshow-poster-PQ1VoUYsvZgsR44qaZSuEuBPpIX1M2.jpg"
-              title="Aftermovie de Serdatia en Tech Show Madrid, IFEMA"
-              className="mt-8 sm:mt-10"
-            />
+            <p className={`${EYEBROW} text-center`}>Así queda</p>
+            <h2 className={`${SECTION_TITLE} mt-3 text-center`}>Aftermovies de stands en IFEMA</h2>
+            <div className="mt-8 sm:mt-10">
+              <ShowcaseTabs items={AFTERMOVIES} />
+            </div>
           </div>
         </section>
 
@@ -302,9 +318,9 @@ export default async function PropuestaPage({ params }: Props) {
         {REFERENCIAS.length > 0 ? (
           <section className="page-container pb-14 sm:pb-20">
             <div className="mx-auto max-w-5xl">
-              <h2 className={`${SECTION_TITLE} text-center`}>Ferias que ya he grabado en IFEMA</h2>
+              <h2 className={`${SECTION_TITLE} text-center`}>Mis últimas grabaciones en IFEMA</h2>
               <p className="mx-auto mt-3 max-w-xl text-center font-inter text-[15px] leading-[1.65] text-white/65">
-                Stands de expositores, equipo y clientes en pista, en ferias de este mismo otoño.
+                Stands de expositores, equipo y clientes en pista, de las ferias de este mismo otoño.
               </p>
               <ul className="mt-8 grid grid-cols-1 gap-4 sm:mt-10 sm:grid-cols-2 lg:grid-cols-4">
                 {REFERENCIAS.map((ref) => (
@@ -338,6 +354,15 @@ export default async function PropuestaPage({ params }: Props) {
                   </li>
                 ))}
               </ul>
+              <div className="mt-4 flex flex-col items-center justify-between gap-2 rounded-2xl border border-dashed border-white/25 px-6 py-5 text-center sm:flex-row sm:text-left">
+                <p className="font-display text-[20px] font-semibold uppercase leading-[1.1] sm:text-[24px]">
+                  + Muchas más
+                </p>
+                <p className="max-w-xl font-inter text-[14px] leading-[1.6] text-white/72 sm:text-[15px]">
+                  Estas son las más recientes. He grabado muchas más ferias y stands; aquí solo enseño las que ya
+                  tengo editadas.
+                </p>
+              </div>
             </div>
           </section>
         ) : null}
