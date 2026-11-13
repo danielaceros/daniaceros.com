@@ -29,6 +29,8 @@ export type Landing = {
   featuredProject?: string
   /** Muestra las tres vías de contacto (formulario, email y WhatsApp), no solo el formulario. */
   contactRoutes?: boolean
+  /** Todos los CTA de la landing abren WhatsApp (sin formulario ni email). Solo la de IFEMA del outreach. */
+  whatsappOnly?: boolean
   /** Botón bajo el carrusel de trabajos que lleva a otra ruta (p. ej. la home): "Ver más". Abre en pestaña nueva. */
   moreWork?: { label: string; href: string }
 }
@@ -293,6 +295,7 @@ export const LANDINGS: Landing[] = [
     ctaLabel: "Quiero contenido de mi stand",
     featuredProject: "ifema",
     contactRoutes: true,
+    whatsappOnly: true,
     moreWork: { label: "Ver más trabajos", href: "https://www.daniaceros.com/" },
   },
 ]

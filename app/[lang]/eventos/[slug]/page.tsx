@@ -11,6 +11,7 @@ import ClientLogosTicker from "@/components/landing/ClientLogosTicker"
 import ContactCTA from "@/components/ContactCTA"
 import PortfolioMarquee from "@/components/PortfolioMarquee"
 import LandingCta from "@/components/landing/LandingCta"
+import WhatsappCta from "@/components/landing/WhatsappCta"
 import LandingGreeting from "@/components/landing/LandingGreeting"
 import { PersonalizeProvider, Rich } from "@/components/landing/Personalize"
 import LandingReel from "@/components/landing/LandingReel"
@@ -144,11 +145,15 @@ export default async function LandingPage({ params }: Props) {
               <div className="mt-8 w-full sm:mt-10">
                 {/* Minititulo que sitúa el vídeo: personalizado con ?empresa=&feria= del email, genérico si faltan. */}
                 <LandingGreeting className="mb-4 font-display text-[clamp(1.25rem,5.2vw,1.9rem)] font-semibold uppercase leading-[1.1] text-balance sm:mb-5" />
-                <VslSection lang={lang} hideTitle inline formOnly reveal={false} formHref="#contacto" />
+                <VslSection lang={lang} hideTitle inline formOnly reveal={false} formHref="#contacto" whatsappOnly={landing.whatsappOnly} />
               </div>
             ) : null}
-            <LandingCta lpId={landing.id} position="hero" label={landing.ctaLabel} className="mt-7 sm:mt-9" />
-            {landing.contactRoutes ? (
+            {landing.whatsappOnly ? (
+              <WhatsappCta lpId={landing.id} position="hero" intent="pagina" label={landing.ctaLabel} className="mt-7 sm:mt-9" />
+            ) : (
+              <LandingCta lpId={landing.id} position="hero" label={landing.ctaLabel} className="mt-7 sm:mt-9" />
+            )}
+            {landing.contactRoutes && !landing.whatsappOnly ? (
               <p className="mt-4 font-inter text-[13px] leading-[1.6] text-white/62 sm:text-[14px]">
                 o escríbeme directamente:{" "}
                 <a
@@ -181,14 +186,18 @@ export default async function LandingPage({ params }: Props) {
           </div>
           {VSL[lang] ? (
             <div className="mt-7 w-full sm:mt-9">
-              <VslSection lang={lang} hideTitle inline formOnly reveal={false} formHref="#contacto" />
+              <VslSection lang={lang} hideTitle inline formOnly reveal={false} formHref="#contacto" whatsappOnly={landing.whatsappOnly} />
             </div>
           ) : null}
           {/* Autoridad antes del botón: los logos van entre el vídeo y el CTA a propósito. Ponerlos encima
               del VSL le robaría atención al vídeo, que es lo que vende.
               La tira mide lo mismo que el reproductor (VSL_INLINE_MAX_WIDTH, compartida con VslSection). */}
           <ClientLogosTicker className="mt-8 sm:mt-10" />
-          <LandingCta lpId={landing.id} position="hero" label={landing.ctaLabel} className="mt-7 sm:mt-9" />
+          {landing.whatsappOnly ? (
+              <WhatsappCta lpId={landing.id} position="hero" intent="pagina" label={landing.ctaLabel} className="mt-7 sm:mt-9" />
+            ) : (
+              <LandingCta lpId={landing.id} position="hero" label={landing.ctaLabel} className="mt-7 sm:mt-9" />
+            )}
         </div>
       </section>
       )}
@@ -227,7 +236,11 @@ export default async function LandingPage({ params }: Props) {
               </li>
             ))}
           </ul>
-          <LandingCta lpId={landing.id} position="pains" label={landing.ctaLabel} className="mt-8 w-full sm:w-auto" />
+          {landing.whatsappOnly ? (
+            <WhatsappCta lpId={landing.id} position="pains" intent="pagina" label={landing.ctaLabel} className="mt-8 w-full sm:w-auto" />
+          ) : (
+            <LandingCta lpId={landing.id} position="pains" label={landing.ctaLabel} className="mt-8 w-full sm:w-auto" />
+          )}
         </div>
       </section>
 
@@ -257,6 +270,20 @@ export default async function LandingPage({ params }: Props) {
 
       {/* 6. Formulario GHL: único final del camino. Sin email ni WhatsApp (Dani los enseña en /gracias, tras el
           lead). Redirige a /gracias, donde LeadAttribution atribuye el lead a esta landing. */}
+      {landing.whatsappOnly ? (
+        <section id="contacto" className="page-container scroll-mt-6 pb-10 pt-6 sm:pb-14">
+          <div className="mx-auto max-w-3xl rounded-3xl border border-white/20 bg-white/[0.05] px-6 py-10 text-center sm:px-12 sm:py-14">
+            <h2 className={SECTION_TITLE}>
+              <Rich text="Hablemos de {empresa|tu stand|b}" />
+            </h2>
+            <p className="mx-auto mt-4 max-w-xl font-inter text-[15px] leading-[1.7] text-white/78 sm:text-[16px]">
+              Escríbeme por WhatsApp, cuéntame qué feria y qué día, y lo vemos ahí mismo. El mensaje ya va escrito: solo
+              tienes que enviarlo.
+            </p>
+            <WhatsappCta lpId={landing.id} position="cierre" intent="pagina" label={landing.ctaLabel} className="mt-8 w-full sm:w-auto" />
+          </div>
+        </section>
+      ) : (
       <div id="contacto">
         <ContactCTA
           lang={lang}
@@ -272,6 +299,7 @@ export default async function LandingPage({ params }: Props) {
           sectionClassName="mt-10 pb-8 sm:mt-14 sm:pb-10"
         />
       </div>
+      )}
 
       {/* Legales obligatorios, en pestaña nueva: no sacan de la landing. */}
       <footer className="mx-auto w-full max-w-6xl px-4 pb-6 text-center sm:px-6">
