@@ -2,13 +2,16 @@
 
 // Barra fija inferior solo en móvil de la sublanding /eventos/ifema/propuesta: precio + botón de reserva al alcance
 // del pulgar. Aparece al salir del hero (#propuesta-hero) y se oculta cuando el formulario (#contacto) está a la vista,
-// para no taparlo. Mide el clic como `lp_cta_click` con position "sticky".
+// para no taparlo. Abre WhatsApp (único CTA). Mide el clic como `lp_cta_click` con position "sticky".
 import { useEffect, useState } from "react"
+import { usePersonalization } from "@/components/landing/Personalize"
 import { trackEvent } from "@/lib/analytics"
+import { whatsappUrl } from "@/lib/contact"
 
 export default function StickyReserveBar({ lpId, price, label }: { lpId: string; price: string; label: string }) {
   const [heroVisible, setHeroVisible] = useState(true)
   const [contactVisible, setContactVisible] = useState(false)
+  const { empresa, feria } = usePersonalization()
 
   useEffect(() => {
     const hero = document.getElementById("propuesta-hero")
@@ -39,13 +42,11 @@ export default function StickyReserveBar({ lpId, price, label }: { lpId: string;
           <span className="font-display text-[22px] font-semibold text-white">{price}</span> + IVA
         </p>
         <a
-          href="#contacto"
+          href={whatsappUrl(`Hola Dani, ${empresa ? `soy de ${empresa} y ` : ""}he visto tu propuesta de grabación ${feria ? `para ${feria}` : "para mi stand en IFEMA"}. Me gustaría reservar fecha.`)}
+          target="_blank"
+          rel="noopener"
           tabIndex={show ? 0 : -1}
-          onClick={(event) => {
-            event.preventDefault()
-            trackEvent("lp_cta_click", { lp_id: lpId, position: "sticky" })
-            document.getElementById("contacto")?.scrollIntoView({ behavior: "smooth", block: "start" })
-          }}
+          onClick={() => trackEvent("lp_cta_click", { lp_id: lpId, position: "sticky" })}
           className="inline-flex min-h-[48px] items-center justify-center rounded-2xl bg-white px-6 py-2 font-inter text-[12px] font-semibold uppercase tracking-[0.06em] text-black focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
         >
           {label}
