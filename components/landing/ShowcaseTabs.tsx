@@ -12,9 +12,23 @@ export default function ShowcaseTabs({ items }: { items: ShowcaseItem[] }) {
   const current = items.find((item) => item.id === active) ?? items[0]
   if (!current) return null
 
+  // Teclado en pestañas (patrón WAI-ARIA): flechas, Inicio y Fin cambian de pestaña y mueven el foco.
+  function onKeyDown(event: React.KeyboardEvent<HTMLDivElement>) {
+    const index = items.findIndex((item) => item.id === current.id)
+    let next = -1
+    if (event.key === "ArrowRight") next = (index + 1) % items.length
+    else if (event.key === "ArrowLeft") next = (index - 1 + items.length) % items.length
+    else if (event.key === "Home") next = 0
+    else if (event.key === "End") next = items.length - 1
+    if (next < 0) return
+    event.preventDefault()
+    setActive(items[next].id)
+    document.getElementById(`tab-${items[next].id}`)?.focus()
+  }
+
   return (
     <div>
-      <div role="tablist" aria-label="Aftermovies" className="flex flex-wrap justify-center gap-2">
+      <div role="tablist" aria-label="Aftermovies" onKeyDown={onKeyDown} className="flex flex-wrap justify-center gap-2">
         {items.map((item) => {
           const selected = item.id === current.id
           return (
@@ -23,6 +37,7 @@ export default function ShowcaseTabs({ items }: { items: ShowcaseItem[] }) {
               role="tab"
               id={`tab-${item.id}`}
               aria-selected={selected}
+              tabIndex={selected ? 0 : -1}
               aria-controls={`panel-${item.id}`}
               type="button"
               onClick={() => setActive(item.id)}
