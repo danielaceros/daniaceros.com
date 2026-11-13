@@ -111,29 +111,10 @@ const POR_QUE = [
   },
 ] as const
 
-// Referencias reales de eventos cubiertos. Solo hechos de lo contratado; nada de cifras ni citas inventadas.
-const REFERENCIAS = [
-  {
-    name: "IFEMA Madrid",
-    tag: "Recinto",
-    text: "Pieza institucional para el recinto ferial, con la escala real de sus eventos.",
-  },
-  {
-    name: "VIAVI",
-    tag: "VETECO · IFEMA",
-    text: "Sus 30 años en el sector: afterwork y feria en dos jornadas, con aftermovie H+V, entrevista, reels y fotos.",
-  },
-  {
-    name: "A-OK Motors",
-    tag: "VETECO · IFEMA",
-    text: "Aftermovie en horizontal y vertical y 50 fotografías editadas de su stand.",
-  },
-  {
-    name: "Edugenia",
-    tag: "Evento · noviembre 2026",
-    text: "Cobertura de evento con fotografía editada y material de vídeo.",
-  },
-] as const
+// Referencias de clientes de evento (AOK, VIAVI, Edugenia): ocultas hasta que Dani confirme qué se puede publicar.
+// Los aftermovies aún no están montados, no hay material aprobado y ninguna cita tiene autorización. Cuando haya
+// OK, añadir aquí { name, tag, text } con solo hechos entregados y la sección vuelve a aparecer sola.
+const REFERENCIAS: ReadonlyArray<{ name: string; tag: string; text: string }> = []
 
 export default async function PropuestaPage({ params }: Props) {
   const { lang: rawLang, slug } = await params
@@ -311,7 +292,8 @@ export default async function PropuestaPage({ params }: Props) {
           </div>
         </section>
 
-        {/* 5. Referencias. */}
+        {/* 5. Referencias (se muestra solo si hay alguna aprobada). */}
+        {REFERENCIAS.length > 0 ? (
         <section className="page-container pb-14 sm:pb-20">
           <div className="mx-auto max-w-5xl">
             <h2 className={`${SECTION_TITLE} text-center`}>Ya lo he hecho</h2>
@@ -331,6 +313,7 @@ export default async function PropuestaPage({ params }: Props) {
             </ul>
           </div>
         </section>
+        ) : null}
 
         {/* 6. Trabajos recientes. Modal: no saca del funnel. */}
         <section className="pb-4">
