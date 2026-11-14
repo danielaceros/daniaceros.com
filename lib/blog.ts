@@ -17886,6 +17886,124 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-stand-feria-madrid-expositor-extranjero",
+    title: "Vídeo del stand en una feria de Madrid para expositores extranjeros",
+    description:
+      "Cómo grabar el stand de una feria en Madrid si tu empresa es extranjera: qué filmar, permisos, plazos y entregables. Guía de un filmmaker en Madrid.",
+    publishedAt: "2026-11-14",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["vídeo de stand", "feria en Madrid", "expositor extranjero", "vídeo de feria", "filmmaker corporativo Madrid", "grabación de eventos"],
+    keyword: "vídeo del stand en una feria de Madrid para expositores extranjeros",
+    intent: "informacional",
+    excerpt:
+      "Si tu empresa expone en una feria de Madrid desde fuera de España, lo más práctico es contratar a un filmmaker local que grabe el stand en una jornada y entregue en una semana. Así lo organizo.",
+    seoTitle: "Vídeo del stand en una feria de Madrid | Daniel Acero",
+    metaDescription:
+      "Vídeo del stand en una feria de Madrid para expositores extranjeros: qué grabar, permisos, plazos y entregables. Guía práctica de un filmmaker en Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Si tu empresa expone en una feria de Madrid y tu equipo viene de fuera, lo más práctico es contratar a un filmmaker local que grabe el stand durante una jornada del evento y entregue el material en 5 a 7 días laborables. Así llegas con el vídeo ya pensado y no dependes de que alguien de tu equipo grabe con el móvil entre reuniones.",
+      },
+      {
+        type: "paragraph",
+        text: "Lo importante se decide antes de la feria: qué planos necesitas, quién es el contacto en el recinto y qué normas de grabación aplica la organización. Con eso resuelto, el rodaje en sí es sencillo. Lo que sale mal casi siempre es la improvisación el primer día de montaje.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-stand-feria-madrid-expositor-extranjero/hero.webp",
+        alt: "Pabellón de una feria comercial con stands y visitantes",
+        width: 1880,
+        height: 1253,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué conviene grabar en el stand de una feria" },
+      {
+        type: "paragraph",
+        text: "Un vídeo de stand útil combina tres cosas: el stand vacío y bien iluminado, la gente trabajando en él y las conversaciones con visitantes. El stand vacío sirve para la web y para presentar la participación. La gente en acción sirve para redes y para el recap posterior a clientes.",
+      },
+      {
+        type: "paragraph",
+        text: "Añado siempre entre 3 y 5 entrevistas cortas de 30 a 45 segundos con tu equipo comercial y con algún visitante que acepte hablar. Para una empresa extranjera esas piezas son valiosas: enseñan a tu mercado de origen que estás presente en España y con interlocutores reales.",
+      },
+      { type: "heading", level: 2, text: "Cómo organizo el rodaje de un stand" },
+      { type: "heading", level: 3, text: "Antes de la feria: contacto y normas" },
+      {
+        type: "paragraph",
+        text: "Pido a la organización de la feria las normas de grabación del recinto, la hora de apertura de pabellones y si hace falta acreditación para el equipo de vídeo. El uso de dron dentro de un recinto ferial suele estar restringido, así que no cuento con él salvo autorización expresa. Todo esto se confirma por escrito unas dos semanas antes.",
+      },
+      { type: "heading", level: 3, text: "Durante el montaje o primera hora de apertura" },
+      {
+        type: "paragraph",
+        text: "Grabo el stand limpio antes de que entre público: planos generales, detalles de producto, rótulos y pantallas. Es el momento de luz y orden. Después sigo al equipo durante 3 o 4 horas con una cámara y un estabilizador, y reservo una hora para las entrevistas en una esquina tranquila del stand.",
+      },
+      { type: "heading", level: 3, text: "Sonido y permisos de imagen" },
+      {
+        type: "paragraph",
+        text: "El ruido de un pabellón es alto. Uso micrófono de corbata para las entrevistas y grabo en una zona lateral. Aviso al equipo del stand y evito encuadrar a visitantes de forma identificable sin su aprobación. Si el visitante habla a cámara, le pido un consentimiento sencillo antes de usar su imagen.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-stand-feria-madrid-expositor-extranjero/detalle.webp",
+        alt: "Operador de cámara grabando con una cámara réflex en un evento",
+        width: 1920,
+        height: 1272,
+      },
+      { type: "heading", level: 2, text: "Plazos, idiomas y entregables" },
+      {
+        type: "paragraph",
+        text: "Con un día de rodaje, entrego en 5 a 7 días laborables un vídeo de resumen de entre 60 y 90 segundos, entre 3 y 5 clips verticales para LinkedIn e Instagram y las entrevistas editadas. Si tu equipo habla inglés u otro idioma, subtitulo en ese idioma y en español para que el material sirva en los dos mercados.",
+      },
+      {
+        type: "paragraph",
+        text: "Si la feria dura tres días y quieres material cada jornada, se puede entregar un clip rápido de 30 segundos la misma tarde. Conviene decidirlo antes, porque exige otra persona editando en paralelo.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes al grabar un stand en una feria" },
+      {
+        type: "list",
+        items: [
+          "Dejar la grabación para el primer día sin haber hablado con la organización del recinto.",
+          "Grabar el stand ya lleno de gente y cajas en lugar de limpio antes de abrir.",
+          "No decidir qué idioma van a tener los subtítulos hasta la edición.",
+          "Usar solo el micrófono de la cámara en un pabellón con mucho ruido.",
+          "Grabar a visitantes reconocibles sin su permiso.",
+          "Pedir el vídeo cuando la feria ya ha terminado y el equipo ha vuelto a su país.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuántas horas hacen falta para grabar un stand?",
+        answer:
+          "Entre 4 y 6 horas en una jornada de feria cubren el stand vacío, la actividad del equipo y 3 a 5 entrevistas. Para varios días se puede añadir una segunda jornada de menos horas.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo usar un dron en una feria en Madrid?",
+        answer:
+          "No suele ser posible dentro de un pabellón. Cada recinto marca sus propias normas, por eso las pido por escrito a la organización antes de planificar ningún plano aéreo.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito acreditación para grabar en el recinto?",
+        answer:
+          "Depende de la feria. Muchas piden registrar a los profesionales de vídeo con antelación. Lo gestiono con la organización o con tu empresa, que es la expositora, unas dos semanas antes.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede entregar el vídeo en inglés?",
+        answer:
+          "Sí. Subtitulo en inglés y en español, y si hace falta entrego una versión del resumen con locución o texto en pantalla en el idioma de tu mercado.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tu empresa expone en Madrid y necesitas el vídeo del stand sin gestionarlo tú desde fuera, escríbeme desde /contacto con la feria, las fechas y lo que quieres conseguir. Te propongo un plan de rodaje y un presupuesto por partidas. Los servicios de vídeo corporativo están en /servicios.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {

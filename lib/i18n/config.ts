@@ -209,6 +209,7 @@ export const EN_BLOG_SLUGS: Record<string, string> = {
   "grabar-keynote-ponentes-internacionales-madrid": "filming-keynote-international-speakers-madrid",
   "video-presentacion-equipo-web-empresa": "team-introduction-video-company-website",
   "video-preguntas-frecuentes-empresa": "faq-video-for-company-website",
+  "video-stand-feria-madrid-expositor-extranjero": "trade-show-booth-video-madrid",
 }
 
 const EN_PATH_TO_ES: Record<string, string> = Object.fromEntries([

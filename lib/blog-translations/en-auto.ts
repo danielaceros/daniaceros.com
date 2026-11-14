@@ -3066,4 +3066,126 @@ export const enAuto: Record<string, BlogPostTranslation> = {
       },
     ],
   },
+  "video-stand-feria-madrid-expositor-extranjero": {
+    title: "Trade show booth video in Madrid for foreign exhibitors",
+    description:
+      "How to film your booth at a trade show in Madrid if your company is based abroad: what to shoot, permissions, timelines and deliverables. A filmmaker's guide.",
+    readingTime: "5 min read",
+    category: "Guide",
+    tags: [
+      "booth video",
+      "trade show Madrid",
+      "foreign exhibitor",
+      "trade fair video",
+      "corporate filmmaker Madrid",
+      "event filming",
+    ],
+    keyword: "trade show booth video madrid",
+    excerpt:
+      "If your company exhibits at a trade show in Madrid from abroad, the simplest option is to hire a local filmmaker to film the booth in one day and deliver within a week. This is how I organise it.",
+    seoTitle: "Trade Show Booth Video in Madrid | Dani Acero",
+    metaDescription:
+      "Trade show booth video in Madrid for foreign exhibitors: what to film, permissions, timelines and deliverables. A practical guide from a filmmaker in Madrid.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "If your company exhibits at a trade show in Madrid and your team is travelling from abroad, the simplest option is to hire a local filmmaker to film the booth during one day of the fair and deliver the footage in 5 to 7 working days. You arrive with the video already planned, instead of relying on someone filming on a phone between meetings.",
+      },
+      {
+        type: "paragraph",
+        text: "The important decisions are made before the fair: which shots you need, who your contact at the venue is and which filming rules the organiser applies. Once that is sorted, the shoot itself is straightforward. What usually goes wrong is improvising on the first day of set-up.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-stand-feria-madrid-expositor-extranjero/hero.webp",
+        alt: "Trade fair hall with booths and visitors",
+        width: 1880,
+        height: 1253,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "What should you film at a trade show booth?" },
+      {
+        type: "paragraph",
+        text: "A useful booth video combines three things: the empty, well-lit booth, your people at work in it and conversations with visitors. The empty booth works for your website and for announcing your participation. The people in action work for social media and for the post-fair recap sent to clients.",
+      },
+      {
+        type: "paragraph",
+        text: "I always add 3 to 5 short interviews of 30 to 45 seconds with your sales team and with a visitor who agrees to speak. For a foreign company these pieces are valuable: they show your home market that you are present in Spain and talking to real counterparts.",
+      },
+      { type: "heading", level: 2, text: "How do I organise a booth shoot?" },
+      { type: "heading", level: 3, text: "Before the fair: contact and rules" },
+      {
+        type: "paragraph",
+        text: "I ask the fair organiser for the venue's filming rules, the hall opening times and whether the video crew needs accreditation. Drone use inside a trade fair venue is usually restricted, so I do not count on it unless it is expressly authorised. All of this is confirmed in writing about two weeks before.",
+      },
+      { type: "heading", level: 3, text: "During set-up or the first opening hour" },
+      {
+        type: "paragraph",
+        text: "I film the clean booth before visitors arrive: wide shots, product details, signs and screens. This is when the light and order are best. After that I follow your team for 3 or 4 hours with one camera and a stabiliser, and I keep one hour for interviews in a quiet corner of the booth.",
+      },
+      { type: "heading", level: 3, text: "Sound and image permissions" },
+      {
+        type: "paragraph",
+        text: "A hall is loud. I use a lavalier microphone for interviews and film in a side area. I warn your booth team and avoid framing identifiable visitors without their approval. If a visitor speaks to camera, I ask for a simple consent before using their image.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-stand-feria-madrid-expositor-extranjero/detalle.webp",
+        alt: "Camera operator filming with a DSLR camera at an event",
+        width: 1920,
+        height: 1272,
+      },
+      { type: "heading", level: 2, text: "Timelines, languages and deliverables" },
+      {
+        type: "paragraph",
+        text: "With one shooting day, I deliver within 5 to 7 working days a summary video of 60 to 90 seconds, 3 to 5 vertical clips for LinkedIn and Instagram and the edited interviews. If your team speaks English or another language, I subtitle in that language and in Spanish so the material works in both markets.",
+      },
+      {
+        type: "paragraph",
+        text: "If the fair lasts three days and you want material every day, I can deliver a quick 30-second clip the same evening. It is worth deciding in advance, because it needs a second person editing in parallel.",
+      },
+      { type: "heading", level: 2, text: "Common mistakes when filming a trade show booth" },
+      {
+        type: "list",
+        items: [
+          "Leaving the filming for the first day without talking to the venue organiser.",
+          "Filming the booth already full of people and boxes instead of clean before opening.",
+          "Not deciding the subtitle language until the edit.",
+          "Using only the camera microphone in a noisy hall.",
+          "Filming recognisable visitors without their permission.",
+          "Asking for the video once the fair is over and the team is back home.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "How many hours does it take to film a booth?",
+        answer:
+          "Between 4 and 6 hours on a fair day cover the empty booth, your team at work and 3 to 5 interviews. For several days you can add a second, shorter day.",
+      },
+      {
+        type: "faq",
+        question: "Can I use a drone at a trade show in Madrid?",
+        answer:
+          "Usually not inside a hall. Each venue sets its own rules, so I ask the organiser in writing before planning any aerial shot.",
+      },
+      {
+        type: "faq",
+        question: "Do I need accreditation to film at the venue?",
+        answer:
+          "It depends on the fair. Many ask video professionals to register in advance. I handle it with the organiser or with your company, as the exhibitor, about two weeks before.",
+      },
+      {
+        type: "faq",
+        question: "Can the video be delivered in English?",
+        answer:
+          "Yes. I subtitle in English and Spanish and, if needed, deliver a version of the summary with voice-over or on-screen text in your market's language.",
+      },
+      {
+        type: "paragraph",
+        text: "If your company exhibits in Madrid and you need the booth video without managing it from abroad, write to me from /contacto with the fair, the dates and what you want to achieve. I will propose a shooting plan and an itemised quote. The corporate video services are on /servicios.",
+      },
+    ],
+  },
 }
