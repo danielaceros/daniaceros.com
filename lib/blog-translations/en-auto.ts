@@ -3188,4 +3188,126 @@ export const enAuto: Record<string, BlogPostTranslation> = {
       },
     ],
   },
+  "video-corporativo-franquicias": {
+    title: "Franchise video production in Madrid: how to film a network without every outlet looking like a different brand",
+    description:
+      "How to plan video for a franchise network in Spain: what to film once, what to adapt per outlet, timelines and common mistakes. A Madrid filmmaker's guide.",
+    readingTime: "5 min read",
+    category: "Guide",
+    tags: [
+      "franchise video",
+      "corporate video",
+      "multi-outlet brand",
+      "franchisee recruitment",
+      "filmmaker Madrid",
+      "brand consistency",
+    ],
+    keyword: "franchise video production madrid",
+    excerpt:
+      "Franchise video works when you film once with a plan and reuse it across every outlet. Here is how I separate what belongs to the brand, to each outlet and to the people.",
+    seoTitle: "Franchise Video Production in Madrid: Guide | Dani Acero",
+    metaDescription:
+      "Franchise video production in Madrid: what to film once, what to adapt per outlet, timelines and mistakes. A practical guide from a Madrid filmmaker.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "Corporate video for a franchise works when you film once with a plan and reuse it in every outlet: one common brand video, 4 to 6 short adaptable pieces and a kit so each franchisee can add their own outlet without shooting from scratch. Two or three shooting days are enough to cover a whole network.",
+      },
+      {
+        type: "paragraph",
+        text: "The usual mistake is ordering one video per outlet. It is expensive, every piece looks different and the brand loses consistency. If your brand is opening in Spain, I split the work into three things: what belongs to the brand, what belongs to each outlet and what belongs to the people serving the customer.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-franquicias/hero.webp",
+        alt: "Interior of a food and drink outlet with a counter, pastry display and wooden tables",
+        width: 1920,
+        height: 1380,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "What does a franchise video need (and what does it not)?" },
+      {
+        type: "paragraph",
+        text: "I work in three layers. The first is a brand piece of 60 to 90 seconds that tells the promise, the product and how customers are treated; it serves the head office website and social media. The second is outlet pieces of 20 to 30 seconds, with the exterior, interior and team, and gaps for each outlet's name and address. The third, if the network is expanding, is a piece to recruit franchisees.",
+      },
+      {
+        type: "paragraph",
+        text: "What you do not need is a different script per outlet. Head office sets the voice and style in a one-page document: tone, typefaces, music and allowed shots. With those rules, outlets change the name and the people, not the brand.",
+      },
+      { type: "heading", level: 2, text: "How do I organise a shoot for a network of outlets?" },
+      { type: "heading", level: 3, text: "Pick 2 or 3 representative outlets" },
+      {
+        type: "paragraph",
+        text: "I do not film every outlet. I choose a flagship, a standard one and, if there is one, a small outlet or a shopping-centre unit. The shots that get reused across the rest come from those. If the network mixes very different formats, such as street-front and mall units, I film one of each type.",
+      },
+      { type: "heading", level: 3, text: "What gets filmed in one outlet day" },
+      {
+        type: "paragraph",
+        text: "In a day of 6 to 8 hours I cover the exterior in good light, the empty interior before opening, the team at work, the product or service in detail and 2 or 3 short interviews with the franchisee and the manager. I shoot in 4K and frame with a vertical crop in mind, so the same footage works for the website video and for Instagram.",
+      },
+      { type: "heading", level: 3, text: "Templates so each franchisee can complete their piece" },
+      {
+        type: "paragraph",
+        text: "I build the outlet pieces as templates, with the name, address and local shots in fields that are swapped. A new outlet is solved by sending a name, an address, a logo and 3 or 4 local shots, and it is a few hours of editing, not a new shoot.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-franquicias/detalle.webp",
+        alt: "Cinema camera with monitor and light during an interview filmed in front of a bookshelf",
+        width: 1920,
+        height: 1080,
+      },
+      { type: "heading", level: 2, text: "Timelines, rights and deliverables for a franchise network" },
+      {
+        type: "paragraph",
+        text: "With 2 or 3 shooting days in Madrid, I deliver within 2 to 3 weeks the brand video, 4 to 6 short pieces, loose shots organised by outlet and a one-page usage guide. If the outlets are in several cities, I group the shoots into one week to avoid multiplying travel.",
+      },
+      {
+        type: "paragraph",
+        text: "Before filming I check image permissions for the team and for any customers on screen, and I use music with a licence that covers every outlet and the planned period of use. It is worth fixing by contract who can use which material, and having your legal adviser review it.",
+      },
+      { type: "heading", level: 2, text: "Common mistakes when filming video for a franchise" },
+      {
+        type: "list",
+        items: [
+          "Ordering a full video per outlet instead of reusable pieces.",
+          "Filming only the flagship and leaving out the smallest formats in the network.",
+          "Not writing down the brand rules, so each outlet edits its own way.",
+          "Using unlicensed music across every outlet and every year of use.",
+          "Mixing the message to customers with the message to future franchisees in one piece.",
+          "Shooting only horizontally and finding out later that social media wants vertical.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "Do I need to film every outlet in the franchise?",
+        answer:
+          "No. Two or three representative outlets plus templates cover the network. I only film an outlet separately if its format is very different from the rest or if it is the brand's flagship.",
+      },
+      {
+        type: "faq",
+        question: "How long does the material take to be ready?",
+        answer:
+          "Between 2 and 3 weeks from the last shooting day for a full package with the brand video and outlet pieces. The most urgent single pieces can be delivered sooner.",
+      },
+      {
+        type: "faq",
+        question: "Can the same video be used to recruit new franchisees?",
+        answer:
+          "A separate piece works better. Someone thinking of opening an outlet wants to hear a real franchisee describe day-to-day life, with the figures they agree to show. The brand video helps, but it does not answer their questions.",
+      },
+      {
+        type: "faq",
+        question: "Who owns the footage, head office or the franchisee?",
+        answer:
+          "It is set by contract before filming. Usually head office holds a licence over all the material and each franchisee can use their own on their channels. Have your legal adviser review it.",
+      },
+      {
+        type: "paragraph",
+        text: "If you run a franchise network and want a shooting plan that works for every outlet, write to me from /contacto with the number of outlets and the cities. I will propose a shooting plan and an itemised quote. The corporate video services are on /servicios.",
+      },
+    ],
+  },
 }

@@ -18004,6 +18004,124 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-franquicias",
+    title: "Vídeo corporativo para franquicias: cómo grabar una red sin que cada local parezca otra marca",
+    description:
+      "Cómo plantear el vídeo corporativo de una franquicia: qué grabar una vez, qué adaptar en cada local, plazos y errores comunes. Guía de un filmmaker en Madrid.",
+    publishedAt: "2026-11-15",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["vídeo para franquicias", "vídeo corporativo", "red de locales", "captación de franquiciados", "filmmaker corporativo Madrid", "coherencia de marca"],
+    keyword: "vídeo corporativo para franquicias",
+    intent: "informacional",
+    excerpt:
+      "Un vídeo de franquicia funciona cuando se graba una vez con criterio y se reutiliza en todos los locales. Así separo lo que es de la marca, lo que es de cada local y lo que es de las personas.",
+    seoTitle: "Vídeo corporativo para franquicias: guía | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo para franquicias: qué grabar una vez, qué adaptar en cada local, plazos y errores comunes. Guía práctica de un filmmaker en Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Un vídeo corporativo para una franquicia funciona cuando se graba una vez con criterio y se reutiliza en todos los locales: un vídeo de marca común, entre 4 y 6 piezas cortas adaptables y un kit para que cada franquiciado añada su local sin rodar desde cero. Con 2 o 3 jornadas de rodaje se cubre una red entera.",
+      },
+      {
+        type: "paragraph",
+        text: "El error habitual es pedir un vídeo por local. Sale caro, cada pieza se ve distinta y la marca pierde coherencia. Lo que planteo es separar tres cosas: lo que es de la marca, lo que es de cada local y lo que es de las personas que atienden al cliente.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-franquicias/hero.webp",
+        alt: "Interior de un local de hostelería con mostrador, vitrina de pasteles y mesas de madera",
+        width: 1920,
+        height: 1380,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué necesita el vídeo de una franquicia (y qué no)" },
+      {
+        type: "paragraph",
+        text: "Trabajo con tres capas. La primera es una pieza de marca de 60 a 90 segundos que cuenta la promesa, el producto y el trato al cliente; sirve para la web de la central y para las redes. La segunda son piezas de local de 20 a 30 segundos, con fachada, interior y equipo, y huecos para el nombre y la dirección de cada uno. La tercera, si la red está en expansión, es una pieza para captar franquiciados.",
+      },
+      {
+        type: "paragraph",
+        text: "Lo que no hace falta es un guion distinto por local. La central fija la voz y el estilo en un documento de una página: tono, tipografías, música y planos permitidos. Con esas reglas, los locales cambian el nombre y la gente, no la marca.",
+      },
+      { type: "heading", level: 2, text: "Cómo organizo el rodaje de una red de locales" },
+      { type: "heading", level: 3, text: "Elegir 2 o 3 locales representativos" },
+      {
+        type: "paragraph",
+        text: "No grabo todos los locales. Elijo uno emblemático, uno estándar y, si existe, uno pequeño o de centro comercial. De ahí salen los planos que se reutilizan en el resto. Si la red mezcla formatos muy distintos, como local a pie de calle y local en galería, grabo uno de cada tipo.",
+      },
+      { type: "heading", level: 3, text: "Qué se graba en una jornada de local" },
+      {
+        type: "paragraph",
+        text: "En una jornada de 6 a 8 horas cubro la fachada con buena luz, el interior vacío antes de abrir, el equipo trabajando, el producto o el servicio en detalle y 2 o 3 entrevistas cortas con el franquiciado y el responsable. Grabo en 4K y dejo el encuadre pensado para recortar a vertical, así el mismo material sirve para el vídeo de la web y para Instagram.",
+      },
+      { type: "heading", level: 3, text: "Plantillas para que cada franquiciado complete su pieza" },
+      {
+        type: "paragraph",
+        text: "Monto las piezas de local como plantillas, con el nombre, la dirección y los planos propios en campos que se sustituyen. Un local nuevo se resuelve enviando nombre, dirección, logotipo y 3 o 4 planos propios, y es una tarea de edición de pocas horas, no un rodaje nuevo.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-franquicias/detalle.webp",
+        alt: "Cámara de cine con monitor y foco de luz durante una entrevista grabada ante una estantería",
+        width: 1920,
+        height: 1080,
+      },
+      { type: "heading", level: 2, text: "Plazos, derechos y entregables para una red de franquicias" },
+      {
+        type: "paragraph",
+        text: "Con 2 o 3 jornadas de rodaje en Madrid, entrego en 2 a 3 semanas el vídeo de marca, entre 4 y 6 piezas cortas, los planos sueltos ordenados por local y una guía de uso de una página. Si los locales están en varias ciudades, agrupo los rodajes en una misma semana para no multiplicar los desplazamientos.",
+      },
+      {
+        type: "paragraph",
+        text: "Antes de rodar compruebo los permisos de imagen del equipo y de los clientes que salgan en plano, y uso música con una licencia que cubra todos los locales y el tiempo de uso previsto. Conviene fijar por contrato quién puede usar qué material, y revisarlo con tu asesor legal.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes al grabar vídeo para una franquicia" },
+      {
+        type: "list",
+        items: [
+          "Pedir un vídeo completo por local en lugar de piezas reutilizables.",
+          "Grabar solo el local emblemático y dejar fuera los formatos más pequeños de la red.",
+          "No dejar por escrito las reglas de marca y que cada local edite a su manera.",
+          "Usar música sin licencia para todos los locales y todos los años de uso.",
+          "Mezclar en la misma pieza el discurso al cliente y el discurso al futuro franquiciado.",
+          "Rodar solo en horizontal y descubrir después que las redes piden vertical.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Hace falta grabar todos los locales de la franquicia?",
+        answer:
+          "No. Con 2 o 3 locales representativos y plantillas se cubre la red. Solo grabo un local aparte si es un formato muy distinto del resto o si es el emblemático de la marca.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tarda en estar listo el material?",
+        answer:
+          "Entre 2 y 3 semanas desde el último día de rodaje para un paquete completo con vídeo de marca y piezas de local. Las piezas sueltas más urgentes se pueden entregar antes.",
+      },
+      {
+        type: "faq",
+        question: "¿Sirve el mismo vídeo para captar nuevos franquiciados?",
+        answer:
+          "Mejor una pieza distinta. Quien piensa en abrir un local quiere oír a un franquiciado real contar cómo es el día a día, con los datos que él mismo autorice a mostrar. El vídeo de marca ayuda, pero no responde a sus dudas.",
+      },
+      {
+        type: "faq",
+        question: "¿Quién es dueño de las imágenes, la central o el franquiciado?",
+        answer:
+          "Se define por contrato antes de rodar. Lo habitual es que la central tenga licencia sobre todo el material y que cada franquiciado pueda usar el suyo en sus canales. Revísalo con tu asesor legal.",
+      },
+      {
+        type: "paragraph",
+        text: "Si gestionas una red de franquicias y quieres un plan de rodaje que sirva a todos los locales, escríbeme desde /contacto con el número de locales y las ciudades. Te propongo un plan de rodaje y un presupuesto por partidas. Los servicios de vídeo corporativo están en /servicios.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
