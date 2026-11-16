@@ -18122,6 +18122,124 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-mensaje-ceo-comunicacion-interna",
+    title: "Vídeo de mensaje del CEO para comunicación interna: cómo grabarlo para que los empleados lo vean",
+    description:
+      "Cómo grabar el mensaje del CEO a la plantilla: duración, guion, lugar, plazos y errores comunes. Guía práctica de un filmmaker corporativo en Madrid.",
+    publishedAt: "2026-11-16",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["mensaje del CEO", "comunicación interna", "vídeo corporativo", "vídeo para empleados", "filmmaker corporativo Madrid", "comunicación de directivos"],
+    keyword: "vídeo de mensaje del CEO para comunicación interna",
+    intent: "informacional",
+    excerpt:
+      "Un mensaje del CEO se ve hasta el final cuando dura entre 2 y 3 minutos, tiene una sola idea y suena a conversación. Así lo grabo para que la plantilla lo vea y lo recuerde.",
+    seoTitle: "Vídeo de mensaje del CEO para empleados | Daniel Acero",
+    metaDescription:
+      "Vídeo de mensaje del CEO para comunicación interna: duración, guion, lugar de rodaje, plazos y errores comunes. Guía de un filmmaker en Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Un vídeo de mensaje del CEO para comunicación interna funciona cuando dura entre 2 y 3 minutos, defiende una sola idea y suena a una persona hablando, no a un comunicado leído. Se graba en media jornada, con una cámara, un micrófono de solapa y un guion de apuntes, no de texto cerrado.",
+      },
+      {
+        type: "paragraph",
+        text: "Los empleados no abandonan estos vídeos por la calidad de imagen. Los abandonan cuando notan que el directivo lee, que el mensaje se alarga o que no entienden qué cambia para ellos. Todo lo que planteo en el rodaje sirve para evitar esas tres cosas.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-mensaje-ceo-comunicacion-interna/hero.webp",
+        alt: "Directivo hablando a cámara en una oficina durante la grabación de un mensaje interno",
+        width: 1920,
+        height: 1080,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Cuándo tiene sentido grabar un mensaje del CEO en vídeo" },
+      {
+        type: "paragraph",
+        text: "El vídeo compensa cuando el mensaje tiene carga humana: resultados del año, una fusión, un cambio de organización, una incorporación importante o un mensaje de cierre de ejercicio. Si es una instrucción operativa, un correo claro funciona mejor y no cuesta una jornada de rodaje.",
+      },
+      {
+        type: "paragraph",
+        text: "También lo recomiendo cuando la plantilla está repartida en varias sedes o trabaja a turnos. Un mensaje grabado llega a todos a la vez y con el mismo tono, algo que un acto presencial no puede hacer.",
+      },
+      { type: "heading", level: 2, text: "Cómo grabo el mensaje de un CEO para que no parezca un comunicado" },
+      { type: "heading", level: 3, text: "Un guion de apuntes, no un texto cerrado" },
+      {
+        type: "paragraph",
+        text: "Pido al CEO tres o cuatro ideas clave y una frase de apertura. No un texto completo. Hacemos una primera toma hablando con naturalidad, una segunda más corta y una tercera con los datos exactos. En el montaje se elige lo mejor de cada una. Si el mensaje exige un texto fijo, uso teleprompter, pero solo para las cifras.",
+      },
+      { type: "heading", level: 3, text: "Dónde grabar: su despacho, una sala de trabajo o la planta" },
+      {
+        type: "paragraph",
+        text: "Evito el fondo neutro de estudio, que da un aire de comunicado oficial. Grabo en el despacho, en una sala de reuniones con luz natural o, si el mensaje habla de la operación, en una zona de trabajo real. Preparo dos planos: uno frontal y otro lateral a 45 grados para cortar sin saltos y mantener el ritmo.",
+      },
+      { type: "heading", level: 3, text: "Un solo mensaje y una llamada a la acción" },
+      {
+        type: "paragraph",
+        text: "Cada vídeo defiende una idea. Si hay tres noticias, son tres vídeos o una noticia con las otras dos en un correo. Al final, una frase con lo que quiero que haga el empleado: leer el documento, asistir a una reunión o responder una encuesta. Sin esa frase, el vídeo se ve y se olvida.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-mensaje-ceo-comunicacion-interna/detalle.webp",
+        alt: "Empleados reunidos en torno a una mesa viendo una presentación en una sala de reuniones",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Cuánto dura, cuánto tarda y qué se entrega" },
+      {
+        type: "paragraph",
+        text: "El vídeo final dura entre 2 y 3 minutos. Para un mensaje de cierre de año puede llegar a 4, pero no más. El rodaje ocupa entre 3 y 4 horas con el montaje de luz y sonido incluidos, y la entrega suele ser de 3 a 5 días laborables. Si hay urgencia, un mensaje sencillo se entrega en 48 horas.",
+      },
+      {
+        type: "paragraph",
+        text: "Entrego una versión horizontal para la intranet o el correo, una versión corta de 30 a 45 segundos para canales internos de mensajería y subtítulos incrustados. Muchos empleados ven el vídeo en el móvil y sin sonido, así que los subtítulos no son opcionales.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes en el vídeo de un CEO a la plantilla" },
+      {
+        type: "list",
+        items: [
+          "Leer un texto largo sin ensayar y sin pausas, con la mirada desviada.",
+          "Pasar de 4 minutos y mezclar varios temas en la misma pieza.",
+          "Grabar con una luz plana o a contraluz, sin cuidar el sonido de la sala.",
+          "Evitar las cifras o los cambios concretos y quedarse en frases generales.",
+          "Publicar sin subtítulos ni versión corta para móvil.",
+          "No avisar a los mandos intermedios antes de que el vídeo llegue a la plantilla.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto debe durar el vídeo de un CEO para los empleados?",
+        answer:
+          "Entre 2 y 3 minutos. Más allá de 4, la mayoría deja de verlo. Si hay más contenido, lo separo en piezas distintas o lo paso a un documento adjunto.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta teleprompter para grabar al CEO?",
+        answer:
+          "No siempre. Con apuntes y dos o tres tomas suele quedar más natural. Lo uso cuando hay cifras exactas o un texto con implicaciones legales que no se puede improvisar.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar con móvil en lugar de con cámara profesional?",
+        answer:
+          "Para un mensaje urgente y sencillo sirve, si se cuida la luz y el sonido. Para cierres de año, fusiones o mensajes con impacto, prefiero cámara, micrófono de solapa y luz, porque el CEO se ve y suena como alguien en quien confiar.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tarda en estar listo un mensaje del CEO?",
+        answer:
+          "Entre 3 y 5 días laborables desde el rodaje, con montaje, subtítulos y versión corta. Con urgencia, puedo entregar un mensaje sencillo en 48 horas.",
+      },
+      {
+        type: "paragraph",
+        text: "Si necesitas grabar un mensaje de dirección para tu plantilla, escríbeme desde /contacto con el tema, la fecha y el número de sedes. Te propongo un plan de rodaje y un presupuesto por partidas. Los servicios de vídeo corporativo están en /servicios.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {

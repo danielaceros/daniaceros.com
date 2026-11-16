@@ -3310,4 +3310,126 @@ export const enAuto: Record<string, BlogPostTranslation> = {
       },
     ],
   },
+  "video-mensaje-ceo-comunicacion-interna": {
+    title: "CEO message video for internal communications: how to film one employees will actually watch",
+    description:
+      "How to film a CEO message for staff: length, script, location, timelines and common mistakes. A practical guide from a corporate filmmaker in Madrid.",
+    readingTime: "5 min read",
+    category: "Guide",
+    tags: [
+      "CEO message",
+      "internal communications",
+      "corporate video",
+      "employee video",
+      "filmmaker Madrid",
+      "executive communications",
+    ],
+    keyword: "ceo message video",
+    excerpt:
+      "A CEO message gets watched to the end when it runs 2 to 3 minutes, carries one idea and sounds like a conversation. Here is how I film it so staff watch it and remember it.",
+    seoTitle: "CEO Message Video for Employees: Guide | Dani Acero",
+    metaDescription:
+      "CEO message video for internal communications: length, script, location, timelines and common mistakes. A guide from a corporate filmmaker in Madrid.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "A CEO message video for internal communications works when it runs 2 to 3 minutes, makes one point and sounds like a person talking, not a statement being read out. It is filmed in half a day, with one camera, a lavalier microphone and a script made of notes, not closed text.",
+      },
+      {
+        type: "paragraph",
+        text: "Employees do not drop these videos because of image quality. They drop them when they notice the executive is reading, when the message drags on, or when they cannot tell what changes for them. Everything I plan on the shoot is there to avoid those three things.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-mensaje-ceo-comunicacion-interna/hero.webp",
+        alt: "Executive speaking to camera in an office while recording an internal message",
+        width: 1920,
+        height: 1080,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "When does a CEO message make sense on video?" },
+      {
+        type: "paragraph",
+        text: "Video pays off when the message has a human weight: annual results, a merger, a reorganisation, an important hire or a year-end message. If it is an operational instruction, a clear email works better and does not cost a shooting day.",
+      },
+      {
+        type: "paragraph",
+        text: "I also recommend it when staff are spread across several sites or work in shifts. A recorded message reaches everyone at once and in the same tone, something a live event cannot do.",
+      },
+      { type: "heading", level: 2, text: "How I film a CEO message so it does not feel like a press release" },
+      { type: "heading", level: 3, text: "Notes, not a closed script" },
+      {
+        type: "paragraph",
+        text: "I ask the CEO for three or four key ideas and an opening line. Not a full text. We do a first take speaking naturally, a shorter second one and a third with the exact figures. In the edit I pick the best of each. If the message needs fixed wording, I use a teleprompter, but only for the numbers.",
+      },
+      { type: "heading", level: 3, text: "Where to film: their office, a meeting room or the shop floor" },
+      {
+        type: "paragraph",
+        text: "I avoid a neutral studio backdrop, which gives an official-statement feel. I film in the office, in a meeting room with natural light or, if the message is about operations, in a real work area. I set up two angles: one frontal and one at 45 degrees to the side, so I can cut without jumps and keep the rhythm.",
+      },
+      { type: "heading", level: 3, text: "One message and one call to action" },
+      {
+        type: "paragraph",
+        text: "Each video makes one point. If there are three pieces of news, that is three videos, or one piece of news with the other two in an email. At the end, one sentence about what I want the employee to do: read the document, attend a meeting or answer a survey. Without that sentence, the video is watched and forgotten.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-mensaje-ceo-comunicacion-interna/detalle.webp",
+        alt: "Employees gathered around a table watching a presentation in a meeting room",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "How long it runs, how long it takes and what you get" },
+      {
+        type: "paragraph",
+        text: "The final video runs 2 to 3 minutes. A year-end message can reach 4, but no more. The shoot takes 3 to 4 hours including lighting and sound setup, and delivery is usually 3 to 5 working days. If it is urgent, a simple message can be delivered in 48 hours.",
+      },
+      {
+        type: "paragraph",
+        text: "I deliver a horizontal version for the intranet or email, a short version of 30 to 45 seconds for internal messaging channels and burned-in subtitles. Many employees watch on their phone with the sound off, so subtitles are not optional.",
+      },
+      { type: "heading", level: 2, text: "Common mistakes in a CEO video to staff" },
+      {
+        type: "list",
+        items: [
+          "Reading a long text without rehearsal and without pauses, eyes drifting off camera.",
+          "Going past 4 minutes and mixing several topics in one piece.",
+          "Filming with flat or backlit light and not caring about the room's sound.",
+          "Avoiding figures or specific changes and staying with general phrases.",
+          "Publishing without subtitles or a short mobile version.",
+          "Not warning middle managers before the video reaches the workforce.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "How long should a CEO video for employees be?",
+        answer:
+          "Between 2 and 3 minutes. Beyond 4, most people stop watching. If there is more content, I split it into separate pieces or move it to an attached document.",
+      },
+      {
+        type: "faq",
+        question: "Do I need a teleprompter to film the CEO?",
+        answer:
+          "Not always. With notes and two or three takes it usually comes out more natural. I use one when there are exact figures or wording with legal implications that cannot be improvised.",
+      },
+      {
+        type: "faq",
+        question: "Can it be filmed on a phone instead of a professional camera?",
+        answer:
+          "For a simple, urgent message it works, if light and sound are looked after. For year-end messages, mergers or high-impact news, I prefer a camera, a lavalier mic and lighting, because the CEO looks and sounds like someone to trust.",
+      },
+      {
+        type: "faq",
+        question: "How long does a CEO message take to be ready?",
+        answer:
+          "Between 3 and 5 working days after the shoot, with editing, subtitles and a short version. When it is urgent, I can deliver a simple message in 48 hours.",
+      },
+      {
+        type: "paragraph",
+        text: "If you need to record a leadership message for your staff, write to me from /contacto with the topic, the date and the number of sites. I will propose a shooting plan and an itemised quote. The corporate video services are on /servicios.",
+      },
+    ],
+  },
 }
