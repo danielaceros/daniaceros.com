@@ -14,7 +14,6 @@ import LandingCta from "@/components/landing/LandingCta"
 import WhatsappCta from "@/components/landing/WhatsappCta"
 import ReferenceCards from "@/components/landing/ReferenceCards"
 import ShowcaseTabs from "@/components/landing/ShowcaseTabs"
-import IfemaEntregas from "@/components/landing/IfemaEntregas"
 import { AFTERMOVIES, REFERENCIAS } from "@/lib/ifema-referencias"
 import LandingGreeting from "@/components/landing/LandingGreeting"
 import { PersonalizeProvider, Rich } from "@/components/landing/Personalize"
@@ -248,7 +247,7 @@ export default async function LandingPage({ params }: Props) {
         </div>
       </section>
 
-      {/* 4a. Aftermovies, entrevista y reels ya entregados (solo landings con whatsappOnly). */}
+      {/* 4a. Aftermovies destacados (solo landings con whatsappOnly); el resto del material va dentro de cada ficha. */}
       {landing.whatsappOnly ? (
         <>
           <section className="page-container pb-12 sm:pb-16">
@@ -258,9 +257,6 @@ export default async function LandingPage({ params }: Props) {
                 <ShowcaseTabs items={AFTERMOVIES} />
               </div>
             </div>
-          </section>
-          <section className="page-container pb-12 sm:pb-16">
-            <IfemaEntregas />
           </section>
         </>
       ) : null}

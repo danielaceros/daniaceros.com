@@ -4,7 +4,7 @@
 //  - AFTERMOVIES: vídeos finales ya montados (versión web 720p en Vercel Blob, con póster).
 //  - REFERENCIAS: tarjetas con foto, logo y modal (aftermovie + fotos editadas).
 // REGLA: solo material editado y de calidad. Nunca brutos ni fragmentos sin editar: lo ve el cliente final.
-import type { ReferenceItem } from "@/components/landing/ReferenceCards"
+import type { EntregaVideo, ReferenceItem } from "@/components/landing/ReferenceCards"
 import type { ShowcaseItem } from "@/components/landing/ShowcaseTabs"
 
 // Aftermovies finales ya montados (versión web 720p en Vercel Blob). Se añaden aquí según estén aprobados.
@@ -40,16 +40,15 @@ export const AFTERMOVIES: ShowcaseItem[] = [
 ]
 
 // Más allá del aftermovie: entrevista y reels verticales ya entregados (versión web 720p, con póster).
-// Orden de aparición en la sublanding. `vertical` = 9:16.
-export type EntregaVideo = { id: string; label: string; context: string; src: string; poster: string; vertical?: boolean }
-export const ENTREVISTA: EntregaVideo = {
+// Solo se ven dentro de la ficha de cada empresa (REFERENCIAS.extras). `vertical` = 9:16.
+const ENTREVISTA: EntregaVideo = {
   id: "viavi-entrevista",
   label: "Entrevista",
   context: "VIAVI · 30 años contados por su equipo",
   src: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/viavi-entrevista-web-Gn7B99XAMAwivIqeYQRWo5JeNNQkcN.mp4",
   poster: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/viavi-entrevista-poster-sUS42nwpvEQd6f7eEv1zqKWbMiAA9S.jpg",
 }
-export const REELS: EntregaVideo[] = [
+const REELS: EntregaVideo[] = [
   { id: "viavi-reel-cena", label: "Reel", context: "VIAVI · cena de los 30 años", src: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/viavi-reel-cena-web-9BFGFTmc1iqUUSrHALti8kKFkRVNX0.mp4", poster: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/viavi-reel-cena-poster-OBIRXupBHsbcjEYR0c8TEcBZStrkbh.jpg", vertical: true },
   { id: "viavi-reel-feria", label: "Reel", context: "VIAVI · el día de la feria", src: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/viavi-reel-feria-web-mU9JpmL6T4oTNFsL6H97YYMPgVANIS.mp4", poster: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/viavi-reel-feria-poster-2onStBco9Q59hx0Vfwz196YbcnaTnL.jpg", vertical: true },
   { id: "aok-minireel", label: "Reel", context: "A-OK Motors · stand en 8 planos", src: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/aok-minireel-web-NCE1zoc2Gv4HWu8ShjAqA7ALKbEodQ.mp4", poster: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/aok-minireel-poster-E5xghhdUlVT3uZXRwehiaCkMgqaqCH.jpg", vertical: true },
@@ -68,6 +67,7 @@ export const REFERENCIAS: ReferenceItem[] = [
     logo: "/logos/ferias/aok.png",
     photo: "/img/ferias/aok.jpg",
     video: VIDEO_DE("aok") && { src: VIDEO_DE("aok")!.src, poster: VIDEO_DE("aok")!.poster },
+    extras: [REELS[2]],
     photos: [{ src: "/img/ferias/galeria/aok-01.jpg" }, { src: "/img/ferias/galeria/aok-02.jpg" }, { src: "/img/ferias/galeria/aok-03.jpg" }, { src: "/img/ferias/galeria/aok-04.jpg" }, { src: "/img/ferias/galeria/aok-05.jpg", portrait: true }, { src: "/img/ferias/galeria/aok-06.jpg" }],
   },
   {
@@ -78,6 +78,7 @@ export const REFERENCIAS: ReferenceItem[] = [
     logo: "/logos/ferias/viavi.png",
     photo: "/img/ferias/viavi.jpg",
     pos: "object-top",
+    extras: [ENTREVISTA, REELS[0], REELS[1]],
     video: VIDEO_DE("viavi") && { src: VIDEO_DE("viavi")!.src, poster: VIDEO_DE("viavi")!.poster },
     photos: [{ src: "/img/ferias/galeria/viavi-01.jpg" }, { src: "/img/ferias/galeria/viavi-02.jpg" }, { src: "/img/ferias/galeria/viavi-03.jpg" }, { src: "/img/ferias/galeria/viavi-04.jpg" }, { src: "/img/ferias/galeria/viavi-05.jpg" }, { src: "/img/ferias/galeria/viavi-06.jpg" }],
   },
