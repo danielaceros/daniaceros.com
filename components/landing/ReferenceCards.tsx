@@ -8,6 +8,8 @@ import { useEffect, useRef, useState } from "react"
 import ShowcaseVideo from "@/components/landing/ShowcaseVideo"
 import WhatsappCta from "@/components/landing/WhatsappCta"
 
+export type EntregaVideo = { id: string; label: string; context: string; src: string; poster: string; vertical?: boolean }
+
 export type ReferenceItem = {
   id: string
   name: string
@@ -18,6 +20,8 @@ export type ReferenceItem = {
   /** Clase de object-position para la foto de la tarjeta (p. ej. "object-top"). */
   pos?: string
   video?: { src: string; poster: string }
+  /** Entrevistas y reels entregados, solo dentro del modal. */
+  extras?: EntregaVideo[]
   /** Fotos editadas del modal (`portrait` para las verticales: se muestran enteras, sin recortar). */
   photos: { src: string; portrait?: boolean }[]
 }
@@ -130,6 +134,20 @@ export default function ReferenceCards({ items, lpId }: { items: ReferenceItem[]
               </div>
             ) : null}
 
+            {current.extras && current.extras.length > 0 ? (
+              <div className="mt-8">
+                <p className="mb-3 font-inter text-[12px] font-semibold uppercase tracking-[0.14em] text-white/60">Entrevistas y reels</p>
+                <ul className="grid grid-cols-2 items-start gap-3 sm:gap-4">
+                  {current.extras.map((v) => (
+                    <li key={v.id} className={v.vertical ? "" : "col-span-2"}>
+                      <ShowcaseVideo src={v.src} poster={v.poster} title={`${v.label}: ${v.context}`} vertical={v.vertical} />
+                      <p className="mt-2 font-inter text-[12px] text-white/65">{v.context}</p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
+
             {current.photos.length > 0 ? (
               <div className="mt-6">
                 <p className="mb-3 font-inter text-[12px] font-semibold uppercase tracking-[0.14em] text-white/60">Fotografías editadas</p>
@@ -139,8 +157,8 @@ export default function ReferenceCards({ items, lpId }: { items: ReferenceItem[]
                       <Image
                         src={photo.src}
                         alt={`Fotografía editada ${i + 1} del stand de ${current.name}`}
-                        width={photo.portrait ? 1202 : 1800}
-                        height={photo.portrait ? 1800 : 1202}
+                        width={photo.portrait ? 1208 : 1800}
+                        height={photo.portrait ? 1800 : 1208}
                         sizes="(min-width:640px) 460px, 45vw"
                         className="h-auto w-full"
                       />
