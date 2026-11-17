@@ -212,6 +212,7 @@ export const EN_BLOG_SLUGS: Record<string, string> = {
   "video-stand-feria-madrid-expositor-extranjero": "trade-show-booth-video-madrid",
   "video-corporativo-franquicias": "franchise-video-production-madrid",
   "video-mensaje-ceo-comunicacion-interna": "ceo-message-video-internal-communications",
+  "grabar-rueda-de-prensa-madrid": "press-conference-videographer-madrid",
 }
 
 const EN_PATH_TO_ES: Record<string, string> = Object.fromEntries([

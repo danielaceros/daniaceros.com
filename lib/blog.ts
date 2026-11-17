@@ -18240,6 +18240,124 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "grabar-rueda-de-prensa-madrid",
+    title: "Grabar una rueda de prensa en Madrid para una empresa internacional: guía de rodaje",
+    description:
+      "Cómo grabar una rueda de prensa en Madrid: cámaras, sonido, permisos, plazos y entregables para empresas internacionales. Guía de un filmmaker corporativo.",
+    publishedAt: "2026-11-17",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["rueda de prensa", "grabación de eventos Madrid", "empresa internacional", "vídeo corporativo", "filmmaker corporativo Madrid", "comunicación corporativa"],
+    keyword: "grabar una rueda de prensa en Madrid",
+    intent: "informacional",
+    excerpt:
+      "Una rueda de prensa bien grabada necesita dos cámaras, sonido directo de la mesa y una entrega el mismo día. Así la preparo cuando la empresa viene de fuera y tiene que comunicar a la vez en España y en su país.",
+    seoTitle: "Grabar una rueda de prensa en Madrid | Daniel Acero",
+    metaDescription:
+      "Grabar una rueda de prensa en Madrid: equipo, sonido, permisos, plazos y entregables para empresas internacionales. Guía de un filmmaker en Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Grabar una rueda de prensa en Madrid exige dos cámaras, sonido directo de la mesa de ponentes y una entrega el mismo día, porque la noticia caduca en horas. Para una empresa internacional, además, hay que entregar el material en un formato que la sede central pueda usar sin pedir nada más.",
+      },
+      {
+        type: "paragraph",
+        text: "Una rueda de prensa dura entre 30 y 60 minutos y no se repite. Si falla el audio de un ponente o se pierde una respuesta, no hay segunda toma. Por eso planteo el rodaje con redundancia y llego una hora y media antes de que entren los periodistas.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabar-rueda-de-prensa-madrid/hero.webp",
+        alt: "Micrófono sobre un pie en una sala preparada para una rueda de prensa",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué necesita una empresa extranjera para una rueda de prensa en Madrid" },
+      {
+        type: "paragraph",
+        text: "Quien viene de fuera suele tener claro el mensaje y menos claro el entorno: dónde se hace, qué medios acuden y qué material necesitan después. La grabación sirve a tres usos distintos: el archivo interno, la nota de prensa en vídeo para los medios y los clips para redes de la sede central.",
+      },
+      {
+        type: "paragraph",
+        text: "Antes del rodaje pido tres cosas: el programa con horas de cada intervención, la lista de ponentes con el idioma en que hablará cada uno y el sitio donde se celebra. Con eso decido cámaras, sonido y si hace falta un técnico más.",
+      },
+      { type: "heading", level: 2, text: "Cómo grabo una rueda de prensa para que no se pierda nada" },
+      { type: "heading", level: 3, text: "Dos cámaras: plano general y plano de ponente" },
+      {
+        type: "paragraph",
+        text: "Una cámara fija en plano general cubre toda la mesa y la sala, y no se toca durante el acto. La segunda, con teleobjetivo, sigue al ponente que habla y recoge las preguntas de los periodistas. Con las dos cubro cualquier fallo de una y el montaje tiene ritmo. Grabo con Sony A7 en 4K y 25 fps.",
+      },
+      { type: "heading", level: 3, text: "Sonido: la señal de la mesa y un grabador de respaldo" },
+      {
+        type: "paragraph",
+        text: "El sonido decide si el vídeo es utilizable. Pido salida de la mesa de mezclas de la sala, y si no la hay, coloco micrófonos de solapa a cada ponente. Siempre grabo un respaldo independiente en un grabador de campo. Las preguntas del público las recojo con un micrófono de mano o con el micrófono de la sala.",
+      },
+      { type: "heading", level: 3, text: "Idiomas y subtítulos desde el primer día" },
+      {
+        type: "paragraph",
+        text: "Si la rueda de prensa tiene ponentes en inglés y en español, grabo cada idioma en una pista de audio separada cuando hay interpretación. En la entrega incluyo subtítulos incrustados en el idioma principal y un archivo de subtítulos aparte para que la sede central los traduzca o los edite.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabar-rueda-de-prensa-madrid/detalle.webp",
+        alt: "Equipo técnico trabajando en una mesa de control de vídeo con varios monitores y equipo de audio",
+        width: 1920,
+        height: 1281,
+      },
+      { type: "heading", level: 2, text: "Plazos y entregables de una rueda de prensa grabada" },
+      {
+        type: "paragraph",
+        text: "La entrega se divide en dos tiempos. En 2 o 3 horas tras el acto, un clip de 60 a 90 segundos con las declaraciones clave, listo para medios y redes. En 48 horas, el vídeo completo de la rueda de prensa, con titulares, subtítulos y los cortes por ponente.",
+      },
+      {
+        type: "paragraph",
+        text: "Para Madrid, la logística importa. En hoteles y salas de congresos pido acceso a la sala una hora y media antes y confirmo la conexión eléctrica y la salida de audio. En recintos grandes como IFEMA, la carga del equipo y la acreditación se avisan con antelación al organizador. Si se graba en un espacio público, hay que comprobar el permiso con el ayuntamiento.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes al grabar una rueda de prensa" },
+      {
+        type: "list",
+        items: [
+          "Llegar a la sala con el acto ya empezado y sin probar el audio.",
+          "Depender solo del micrófono ambiente de la sala, que recoge ruido de los periodistas.",
+          "Usar una única cámara y perder el momento clave si se desenfoca o se cae la batería.",
+          "No avisar a los ponentes de que hay cámaras y dónde mirar al responder.",
+          "Entregar un solo archivo largo, sin clips cortos para redes ni subtítulos.",
+          "Olvidar la autorización para publicar la imagen de los asistentes en la sala.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta grabar una rueda de prensa en Madrid?",
+        answer:
+          "Depende de las cámaras y de la entrega. Un rodaje con dos cámaras, sonido directo y un clip rápido ronda entre 600 y 1.200 euros, y sube si hay interpretación, subtítulos en varios idiomas o varias sedes. Te preparo un presupuesto por partidas.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tarda la entrega del vídeo?",
+        answer:
+          "Un clip corto con las declaraciones clave puede estar en 2 o 3 horas. El vídeo completo con titulares y subtítulos se entrega en 48 horas. Si hace falta, se acuerda un plazo distinto antes del rodaje.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede emitir la rueda de prensa en directo?",
+        answer:
+          "Sí, con un equipo de streaming y una conexión estable en la sala. Lo organizo como un servicio aparte, con prueba técnica previa y un plan B de grabación local por si falla la red.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta permiso para grabar en una sala de un hotel o recinto?",
+        answer:
+          "Hay que avisar al responsable del espacio, porque suele fijar horarios de montaje y accesos. En un recinto de congresos se coordina con el organizador. En la vía pública se solicita el permiso correspondiente con tiempo.",
+      },
+      {
+        type: "paragraph",
+        text: "Si preparas una rueda de prensa en Madrid para tu empresa, escríbeme desde /contacto con la fecha, la sala y los idiomas del acto. Te propongo un plan de rodaje y un presupuesto cerrado. Los servicios de grabación de eventos están en /servicios.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {

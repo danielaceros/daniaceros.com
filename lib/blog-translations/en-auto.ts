@@ -3432,4 +3432,119 @@ export const enAuto: Record<string, BlogPostTranslation> = {
       },
     ],
   },
+  "grabar-rueda-de-prensa-madrid": {
+    title: "Filming a Press Conference in Madrid for an International Company: Shoot Guide",
+    description:
+      "How to film a press conference in Madrid: cameras, audio, permits, turnaround and deliverables for international companies. A corporate filmmaker's guide.",
+    readingTime: "5 min read",
+    category: "Guide",
+    tags: ["press conference", "event filming Madrid", "international company", "corporate video", "corporate filmmaker Madrid", "corporate communications"],
+    keyword: "press conference videographer madrid",
+    excerpt:
+      "A well-filmed press conference needs two cameras, direct audio from the speakers' table and same-day delivery. This is how I set it up when the company comes from abroad and has to communicate in Spain and at home at the same time.",
+    seoTitle: "Filming a Press Conference in Madrid | Dani Acero",
+    metaDescription:
+      "Filming a press conference in Madrid: gear, audio, permits, turnaround and deliverables for international companies. A filmmaker's guide from Madrid.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "Filming a press conference in Madrid takes two cameras, direct audio from the speakers' table and same-day delivery, because the news goes stale within hours. For an international company there is one more requirement: the footage has to reach headquarters in a format they can use without asking for anything else.",
+      },
+      {
+        type: "paragraph",
+        text: "A press conference lasts 30 to 60 minutes and cannot be repeated. If a speaker's audio fails or an answer is lost, there is no second take. That is why I plan the shoot with redundancy and arrive an hour and a half before the journalists walk in.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabar-rueda-de-prensa-madrid/hero.webp",
+        alt: "Microphone on a stand in a room set up for a press conference",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "What does a foreign company need for a press conference in Madrid?" },
+      {
+        type: "paragraph",
+        text: "Visitors from abroad usually know their message well and the local setting less well: where it takes place, which outlets attend and what material they need afterwards. The recording serves three uses: the internal archive, the video press release for media and the social clips for headquarters.",
+      },
+      {
+        type: "paragraph",
+        text: "Before the shoot I ask for three things: the programme with the time of each speech, the list of speakers with the language each one will use, and the venue. With that I decide cameras, audio and whether I need an extra technician.",
+      },
+      { type: "heading", level: 2, text: "How do I film a press conference so nothing is lost?" },
+      { type: "heading", level: 3, text: "Two cameras: a wide shot and a speaker shot" },
+      {
+        type: "paragraph",
+        text: "One fixed camera on a wide shot covers the whole table and the room, and nobody touches it during the event. The second, with a telephoto lens, follows whoever is speaking and picks up the journalists' questions. Between the two I cover any failure and the edit has rhythm. I shoot on Sony A7 cameras in 4K at 25 fps.",
+      },
+      { type: "heading", level: 3, text: "Audio: the table feed and a backup recorder" },
+      {
+        type: "paragraph",
+        text: "Audio decides whether the video is usable. I ask for an output from the room's mixing desk, and if there is none, I put a lavalier microphone on each speaker. I always record an independent backup on a field recorder. Questions from the floor are captured with a handheld mic or the room microphone.",
+      },
+      { type: "heading", level: 3, text: "Languages and subtitles from day one" },
+      {
+        type: "paragraph",
+        text: "If the press conference has speakers in English and Spanish, I record each language on a separate audio track when there is interpretation. In the delivery I include burned-in subtitles in the main language and a separate subtitle file so headquarters can translate or edit them.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabar-rueda-de-prensa-madrid/detalle.webp",
+        alt: "Technical crew working at a video control desk with several monitors and audio equipment",
+        width: 1920,
+        height: 1281,
+      },
+      { type: "heading", level: 2, text: "Turnaround and deliverables for a filmed press conference" },
+      {
+        type: "paragraph",
+        text: "Delivery comes in two stages. Two or three hours after the event, a 60 to 90 second clip with the key statements, ready for media and social networks. Within 48 hours, the full press conference video, with headlines, subtitles and cuts per speaker.",
+      },
+      {
+        type: "paragraph",
+        text: "In Madrid, logistics matter. In hotels and conference halls I ask for access to the room an hour and a half early and confirm power and the audio feed. In large venues such as IFEMA, equipment loading and accreditation are arranged in advance with the organiser. If you film in a public space, check the permit with the city council.",
+      },
+      { type: "heading", level: 2, text: "Common mistakes when filming a press conference" },
+      {
+        type: "list",
+        items: [
+          "Arriving when the event has already started, without testing the audio.",
+          "Relying only on the room's ambient microphone, which picks up the journalists' noise.",
+          "Using a single camera and missing the key moment if it loses focus or the battery dies.",
+          "Not telling speakers that cameras are present and where to look when answering.",
+          "Delivering a single long file, with no short social clips and no subtitles.",
+          "Forgetting the authorisation to publish the image of attendees in the room.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "How much does it cost to film a press conference in Madrid?",
+        answer:
+          "It depends on the cameras and the delivery. A two-camera shoot with direct audio and a fast clip runs between 600 and 1,200 euros, and goes up with interpretation, multi-language subtitles or several venues. I prepare an itemised quote.",
+      },
+      {
+        type: "faq",
+        question: "How long does delivery take?",
+        answer:
+          "A short clip with the key statements can be ready in 2 or 3 hours. The full video with headlines and subtitles is delivered within 48 hours. If needed, a different deadline is agreed before the shoot.",
+      },
+      {
+        type: "faq",
+        question: "Can the press conference be streamed live?",
+        answer:
+          "Yes, with a streaming kit and a stable connection in the room. I organise it as a separate service, with a technical test beforehand and a local recording as plan B in case the network fails.",
+      },
+      {
+        type: "faq",
+        question: "Do I need a permit to film in a hotel or venue room?",
+        answer:
+          "You need to notify the venue manager, who usually sets set-up times and access. In a conference venue it is coordinated with the organiser. In a public street the corresponding permit is requested well in advance.",
+      },
+      {
+        type: "paragraph",
+        text: "If you are preparing a press conference in Madrid for your company, write to me from /contacto with the date, the room and the languages of the event. I will propose a shooting plan and a fixed quote. The event filming services are on /servicios.",
+      },
+    ],
+  },
 }
