@@ -13,7 +13,9 @@ import PortfolioMarquee from "@/components/PortfolioMarquee"
 import LandingCta from "@/components/landing/LandingCta"
 import WhatsappCta from "@/components/landing/WhatsappCta"
 import ReferenceCards from "@/components/landing/ReferenceCards"
-import { REFERENCIAS } from "@/lib/ifema-referencias"
+import ShowcaseTabs from "@/components/landing/ShowcaseTabs"
+import IfemaEntregas from "@/components/landing/IfemaEntregas"
+import { AFTERMOVIES, REFERENCIAS } from "@/lib/ifema-referencias"
 import LandingGreeting from "@/components/landing/LandingGreeting"
 import { PersonalizeProvider, Rich } from "@/components/landing/Personalize"
 import LandingReel from "@/components/landing/LandingReel"
@@ -245,6 +247,23 @@ export default async function LandingPage({ params }: Props) {
           )}
         </div>
       </section>
+
+      {/* 4a. Aftermovies, entrevista y reels ya entregados (solo landings con whatsappOnly). */}
+      {landing.whatsappOnly ? (
+        <>
+          <section className="page-container pb-12 sm:pb-16">
+            <div className="mx-auto max-w-4xl">
+              <h2 className={`${SECTION_TITLE} text-center`}>Aftermovies de stands en IFEMA</h2>
+              <div className="mt-8 sm:mt-10">
+                <ShowcaseTabs items={AFTERMOVIES} />
+              </div>
+            </div>
+          </section>
+          <section className="page-container pb-12 sm:pb-16">
+            <IfemaEntregas />
+          </section>
+        </>
+      ) : null}
 
       {/* 4b. Últimas grabaciones en IFEMA (solo landings con whatsappOnly): breve y visual, con modal por proyecto. */}
       {landing.whatsappOnly && REFERENCIAS.length > 0 ? (

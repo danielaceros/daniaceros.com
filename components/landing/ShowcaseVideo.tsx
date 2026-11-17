@@ -1,18 +1,18 @@
 "use client"
 
-// Vídeo de muestra (aftermovie de un cliente) de la sublanding /eventos/ifema/propuesta. Horizontal, con póster y
+// Vídeo de muestra (aftermovie, entrevista o reel de un cliente) de la sublanding /eventos/ifema/propuesta. Horizontal (o vertical 9:16), con póster y
 // controles nativos; `preload="none"` para no gastar CDN ni ancho de banda de quien solo hace scroll: el vídeo
 // no baja hasta que se pulsa play.
 import { useState } from "react"
 
-type Props = { src: string; poster: string; title: string; className?: string }
+type Props = { src: string; poster: string; title: string; className?: string; vertical?: boolean }
 
-export default function ShowcaseVideo({ src, poster, title, className = "" }: Props) {
+export default function ShowcaseVideo({ src, poster, title, className = "", vertical = false }: Props) {
   const [started, setStarted] = useState(false)
   return (
     <div className={`relative overflow-hidden rounded-2xl border border-white/12 bg-black ${className}`}>
       <video
-        className="aspect-video w-full bg-black object-cover"
+        className={`w-full bg-black object-cover ${vertical ? "aspect-[9/16]" : "aspect-video"}`}
         src={src}
         poster={poster}
         controls
