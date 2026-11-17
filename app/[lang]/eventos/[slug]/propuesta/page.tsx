@@ -16,6 +16,7 @@ import LandingReel from "@/components/landing/LandingReel"
 import LandingTracking from "@/components/landing/LandingTracking"
 import StickyReserveBar from "@/components/landing/StickyReserveBar"
 import ShowcaseTabs from "@/components/landing/ShowcaseTabs"
+import IfemaEntregas from "@/components/landing/IfemaEntregas"
 import ReferenceCards from "@/components/landing/ReferenceCards"
 import { getProjects } from "@/data/projects"
 import { buildMetadata } from "@/lib/seo"
@@ -279,6 +280,11 @@ export default async function PropuestaPage({ params }: Props) {
               <ShowcaseTabs items={AFTERMOVIES} />
             </div>
           </div>
+        </section>
+
+        {/* 4c. Más allá del aftermovie: entrevista y reels verticales ya entregados (material editado). */}
+        <section className="page-container pb-14 sm:pb-20">
+          <IfemaEntregas />
         </section>
 
         {/* 5. Referencias: logo sobre fondo claro (los logos son de marca, no blancos), dónde fue y qué se grabó. */}

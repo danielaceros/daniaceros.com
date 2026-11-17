@@ -18,8 +18,8 @@ export type ReferenceItem = {
   /** Clase de object-position para la foto de la tarjeta (p. ej. "object-top"). */
   pos?: string
   video?: { src: string; poster: string }
-  /** Fotos editadas del modal. */
-  photos: string[]
+  /** Fotos editadas del modal (`portrait` para las verticales: se muestran enteras, sin recortar). */
+  photos: { src: string; portrait?: boolean }[]
 }
 
 export default function ReferenceCards({ items, lpId }: { items: ReferenceItem[]; lpId: string }) {
@@ -133,15 +133,16 @@ export default function ReferenceCards({ items, lpId }: { items: ReferenceItem[]
             {current.photos.length > 0 ? (
               <div className="mt-6">
                 <p className="mb-3 font-inter text-[12px] font-semibold uppercase tracking-[0.14em] text-white/60">Fotografías editadas</p>
-                <ul className={`grid gap-3 ${current.photos.length > 1 ? "sm:grid-cols-2" : ""}`}>
-                  {current.photos.map((src, i) => (
-                    <li key={src} className="relative aspect-[3/2] overflow-hidden rounded-xl bg-black">
+                <ul className="columns-2 gap-3 [&>li]:mb-3">
+                  {current.photos.map((photo, i) => (
+                    <li key={photo.src} className="break-inside-avoid overflow-hidden rounded-xl bg-black">
                       <Image
-                        src={src}
+                        src={photo.src}
                         alt={`Fotografía editada ${i + 1} del stand de ${current.name}`}
-                        fill
-                        sizes="(min-width:640px) 460px, 90vw"
-                        className="object-cover"
+                        width={photo.portrait ? 1202 : 1800}
+                        height={photo.portrait ? 1800 : 1202}
+                        sizes="(min-width:640px) 460px, 45vw"
+                        className="h-auto w-full"
                       />
                     </li>
                   ))}
