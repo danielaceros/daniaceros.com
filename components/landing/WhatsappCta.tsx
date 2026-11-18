@@ -14,14 +14,22 @@ type Props = {
   /** "reserva": quiere el pack; "dias": más días de feria; "pagina": viene de la landing del outreach (sin precios). */
   intent?: "reserva" | "dias" | "pagina"
   className?: string
+  /** "cena": landing de cenas de empresa (mensaje sin feria ni stand). */
+  kind?: "cena"
 }
 
-export default function WhatsappCta({ lpId, position, label, intent = "reserva", className = "" }: Props) {
+export default function WhatsappCta({ lpId, position, label, intent = "reserva", className = "", kind }: Props) {
   const { empresa, feria } = usePersonalization()
   const quien = empresa ? `soy de ${empresa} y ` : ""
   const donde = feria ? `para ${feria}` : "para mi stand en IFEMA"
   const message =
-    intent === "pagina"
+    kind === "cena"
+      ? intent === "pagina"
+        ? `Hola Dani, ${quien}he visto tu página de grabación de cenas de empresa. Me gustaría hablar de grabar la nuestra.`
+        : intent === "dias"
+        ? `Hola Dani, ${quien}he visto tu propuesta para cenas de empresa. Nuestra celebración necesita algo distinto al pack base, ¿hablamos?`
+        : `Hola Dani, ${quien}he visto tu propuesta para cenas de empresa. Me gustaría reservar fecha.`
+      : intent === "pagina"
       ? `Hola Dani, ${quien}he visto tu página de grabación de stands en IFEMA. Me gustaría hablar de contenido ${feria ? `para ${feria}` : "para mi stand"}.`
       : intent === "dias"
       ? `Hola Dani, ${quien}he visto tu propuesta de grabación ${donde}. Me gustaría cubrir todos los días de la feria, ¿hablamos?`
