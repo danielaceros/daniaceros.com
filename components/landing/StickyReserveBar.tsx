@@ -8,7 +8,7 @@ import { usePersonalization } from "@/components/landing/Personalize"
 import { trackEvent } from "@/lib/analytics"
 import { whatsappUrl } from "@/lib/contact"
 
-export default function StickyReserveBar({ lpId, price, label }: { lpId: string; price: string; label: string }) {
+export default function StickyReserveBar({ lpId, price, label, kind }: { lpId: string; price: string; label: string; kind?: "cena" }) {
   const [heroVisible, setHeroVisible] = useState(true)
   const [contactVisible, setContactVisible] = useState(false)
   const { empresa, feria } = usePersonalization()
@@ -42,7 +42,11 @@ export default function StickyReserveBar({ lpId, price, label }: { lpId: string;
           <span className="font-display text-[22px] font-semibold text-white">{price}</span> + IVA
         </p>
         <a
-          href={whatsappUrl(`Hola Dani, ${empresa ? `soy de ${empresa} y ` : ""}he visto tu propuesta de grabación ${feria ? `para ${feria}` : "para mi stand en IFEMA"}. Me gustaría reservar fecha.`)}
+          href={whatsappUrl(
+            kind === "cena"
+              ? `Hola Dani, ${empresa ? `soy de ${empresa} y ` : ""}he visto tu propuesta para cenas de empresa. Me gustaría reservar fecha.`
+              : `Hola Dani, ${empresa ? `soy de ${empresa} y ` : ""}he visto tu propuesta de grabación ${feria ? `para ${feria}` : "para mi stand en IFEMA"}. Me gustaría reservar fecha.`,
+          )}
           target="_blank"
           rel="noopener"
           tabIndex={show ? 0 : -1}

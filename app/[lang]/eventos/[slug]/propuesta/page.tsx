@@ -26,7 +26,7 @@ import { VSL } from "@/lib/media"
 
 type Props = { params: Promise<{ lang: string; slug: string }> }
 
-const SLUGS_CON_PROPUESTA = ["ifema"]
+const SLUGS_CON_PROPUESTA = ["ifema", "cenas-de-empresa"]
 
 export const dynamicParams = false
 
@@ -37,15 +37,21 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   if (!SLUGS_CON_PROPUESTA.includes(slug)) return {}
+  const cena = slug === "cenas-de-empresa"
+  const title = cena
+    ? "Propuesta de vídeo y fotos para tu cena de empresa | Dani Acero"
+    : "Propuesta de vídeo para tu stand en IFEMA | Dani Acero"
   return {
     ...buildMetadata({
-      title: "Propuesta de vídeo para tu stand en IFEMA | Dani Acero",
-      description: "Packs de grabación para expositores de IFEMA: aftermovie, fotos y material en bruto para meses.",
+      title,
+      description: cena
+        ? "Pack para cenas de empresa: 3 horas de cobertura, 100 fotos editadas y vídeo resumen en horizontal y vertical."
+        : "Packs de grabación para expositores de IFEMA: aftermovie, fotos y material en bruto para meses.",
       path: `/eventos/${slug}/propuesta`,
       noIndex: true,
       translated: false,
     }),
-    title: { absolute: "Propuesta de vídeo para tu stand en IFEMA | Dani Acero" },
+    title: { absolute: title },
   }
 }
 
@@ -99,6 +105,49 @@ const POR_QUE = [
   },
 ] as const
 
+// ——— Variante cenas de empresa (mismo precio que IFEMA, vendida desde la emoción) ———
+const PACKS_CENA = [
+  {
+    id: "cena",
+    name: "Tu cena, completa",
+    tagline: "3 horas de la noche, bien contadas",
+    price: "600",
+    features: [
+      "Hasta 3 horas de cobertura: entrega de premios, cena y fiesta",
+      "100 fotografías editadas de lo mejor de la noche",
+      "Vídeo resumen editado, en horizontal y en vertical",
+      "Foto y vídeo a la vez, sin interrumpir la cena ni pedir a nadie que posé",
+    ],
+    reco: true,
+  },
+] as const
+
+const LLEVAS_CENA = [
+  { big: "3h", label: "de cobertura", detail: "de la entrega de premios a la fiesta, sin perderte nada" },
+  { big: "100", label: "fotos editadas", detail: "el equipo, las mesas y cada premiado, con color cuidado" },
+  { big: "H+V", label: "vídeo resumen", detail: "horizontal para proyectar o enviar, vertical para redes" },
+  { big: "1", label: "recuerdo", detail: "de la noche en que el equipo estuvo junto, hecho para guardar" },
+] as const
+
+const POR_QUE_CENA = [
+  {
+    title: "Se reconoce a quien se lo merece",
+    text: "Un año de lealtad merece algo más que un brindis. Cada premiado se lleva su momento y su foto, y se nota que la empresa lo valora.",
+  },
+  {
+    title: "Un regalo para empezar el año",
+    text: "El equipo recibe fotos y un vídeo de la noche: un detalle que se guarda, se comparte y se recuerda en enero.",
+  },
+  {
+    title: "La noche queda documentada",
+    text: "Una cena así pasa una vez al año. Sin cámara, mañana solo quedan cuatro fotos de móvil; con ella, queda la noche entera.",
+  },
+  {
+    title: "Tú disfrutas de tu cena",
+    text: "Llego, grabo y me voy. Tú atiendes a tu gente: no hay que coordinar nada ni avisar a nadie, y se vive como una cena normal.",
+  },
+] as const
+
 export default async function PropuestaPage({ params }: Props) {
   const { lang: rawLang, slug } = await params
   const lang = toLang(rawLang)
@@ -115,6 +164,11 @@ export default async function PropuestaPage({ params }: Props) {
   const idx = portfolioItems.findIndex((item) => item.slug === landing.featuredProject)
   if (idx > 0) portfolioItems.unshift(...portfolioItems.splice(idx, 1))
   const reel = portfolioItems.find((item) => item.slug === landing.featuredProject)
+  const cena = landing.kind === "cena"
+  const packs = cena ? PACKS_CENA : PACKS
+  const llevas = cena ? LLEVAS_CENA : LLEVAS
+  const porQue = cena ? POR_QUE_CENA : POR_QUE
+  const kind = landing.kind
 
   return (
     <PersonalizeProvider>
@@ -125,26 +179,42 @@ export default async function PropuestaPage({ params }: Props) {
         <section id="propuesta-hero" className="relative w-full overflow-hidden pb-8 pt-8 sm:pt-10 lg:pb-12">
           <div className="mx-auto grid w-full max-w-6xl items-center gap-8 px-4 text-center sm:px-6 lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-16 lg:text-left">
             <div className="flex flex-col items-center lg:items-start">
-              <p className={EYEBROW}>Propuesta · expositores de IFEMA</p>
+              <p className={EYEBROW}>{cena ? "Propuesta · cenas de empresa" : "Propuesta · expositores de IFEMA"}</p>
               <h1 className="mt-4 font-display text-[clamp(1.85rem,7.2vw,3.6rem)] font-semibold uppercase leading-[1] text-balance lg:text-[clamp(2.4rem,3.6vw,3.6rem)]">
-                <Rich text="Que el stand de {empresa|tu empresa|b} se convierta en contenido para casi 3 meses" />
+                <Rich
+                  text={
+                    cena
+                      ? "La cena de {empresa|tu empresa|b}, un recuerdo que el equipo se lleve a casa"
+                      : "Que el stand de {empresa|tu empresa|b} se convierta en contenido para casi 3 meses"
+                  }
+                />
               </h1>
               <p className="mt-4 max-w-2xl px-1 font-inter text-[14px] leading-[1.7] text-white/74 text-balance sm:text-[16px] lg:max-w-xl lg:px-0 lg:text-[17px]">
-                Grabo tu stand, a tu equipo y a tus clientes en pista. Te llevas un aftermovie, fotos y material para
-                publicar mucho después de la feria.
+                {cena
+                  ? "Quien ha estado contigo todo el año merece una noche que no se olvide. Grabo la entrega de premios, la cena y la fiesta, y te llevas las fotos y el vídeo para que se quede."
+                  : "Grabo tu stand, a tu equipo y a tus clientes en pista. Te llevas un aftermovie, fotos y material para publicar mucho después de la feria."}
               </p>
               <p className="mt-5 font-inter text-[15px] leading-[1.5] text-white/85">
-                <strong className="font-semibold text-white">Pack de un día desde 600 € + IVA</strong> · precio cerrado ·
-                aftermovie y 50 fotos editadas
+                {cena ? (
+                  <>
+                    <strong className="font-semibold text-white">Pack desde 600 € + IVA</strong> · precio cerrado · 3
+                    horas, 100 fotos y vídeo resumen
+                  </>
+                ) : (
+                  <>
+                    <strong className="font-semibold text-white">Pack de un día desde 600 € + IVA</strong> · precio
+                    cerrado · aftermovie y 50 fotos editadas
+                  </>
+                )}
               </p>
-              <WhatsappCta lpId={landing.id} position="hero" label="Reservar mi fecha por WhatsApp" className="mt-4" />
+              <WhatsappCta kind={kind} lpId={landing.id} position="hero" label="Reservar mi fecha por WhatsApp" className="mt-4" />
             </div>
             {reel ? (
               <LandingReel
                 src={reel.video}
                 srcMobile="https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/ifema-tranjis-mobile.mp4"
                 poster={reel.poster}
-                label="Reel · IFEMA Madrid"
+                label={cena ? "Reel · evento corporativo" : "Reel · IFEMA Madrid"}
                 className="!max-w-[220px] sm:!max-w-[300px] lg:mx-0 lg:!max-w-[340px]"
               />
             ) : null}
@@ -165,9 +235,11 @@ export default async function PropuestaPage({ params }: Props) {
         <section id="packs" className="page-container scroll-mt-6 pb-14 sm:pb-20">
           <div className="mx-auto max-w-5xl">
             <p className={`${EYEBROW} text-center`}>Precio cerrado, sin sorpresas</p>
-            <h2 className={`${SECTION_TITLE} mt-3 text-center`}><Rich text="Tu stand en {feria|IFEMA|b}, grabado y listo para publicar" /></h2>
+            <h2 className={`${SECTION_TITLE} mt-3 text-center`}>
+              {cena ? "La noche de tu equipo, grabada y lista para guardar" : <Rich text="Tu stand en {feria|IFEMA|b}, grabado y listo para publicar" />}
+            </h2>
             <div className="mx-auto mt-8 grid max-w-xl gap-5 sm:mt-10">
-              {PACKS.map((pack) => (
+              {packs.map((pack) => (
                 <article
                   key={pack.id}
                   className={`relative flex flex-col rounded-3xl border p-6 sm:p-8 ${
@@ -201,10 +273,12 @@ export default async function PropuestaPage({ params }: Props) {
                     ))}
                   </ul>
                   <p className="mt-5 rounded-xl border border-white/15 bg-white/[0.04] px-4 py-3 font-inter text-[14px] leading-[1.55] text-white/80">
-                    <strong className="font-semibold text-white">Este es el pack base.</strong> Si quieres más
-                    entregables o más cosas, se añaden: dímelo y lo ajustamos a lo que necesites.
+                    <strong className="font-semibold text-white">Este es el pack base.</strong>{" "}
+                    {cena
+                      ? "Si la cena es más larga o quieres reels para redes, se añade: dímelo y lo presupuestamos aparte."
+                      : "Si quieres más entregables o más cosas, se añaden: dímelo y lo ajustamos a lo que necesites."}
                   </p>
-                  <WhatsappCta lpId={landing.id} position={`pack-${pack.id}`} label="Reservar mi fecha por WhatsApp" className="mt-8 w-full" />
+                  <WhatsappCta kind={kind} lpId={landing.id} position={`pack-${pack.id}`} label="Reservar mi fecha por WhatsApp" className="mt-8 w-full" />
                 </article>
               ))}
             </div>
@@ -214,17 +288,20 @@ export default async function PropuestaPage({ params }: Props) {
                   Si no quieres perderte nada · habla conmigo
                 </p>
                 <h3 className="mt-2 font-display text-[22px] font-semibold uppercase leading-[1.1] text-balance sm:text-[26px]">
-                  ¿Quieres cubrir todos los días de tu feria?
+                  {cena ? "¿Tu celebración es más grande o más larga?" : "¿Quieres cubrir todos los días de tu feria?"}
                 </h3>
                 <p className="mt-2 max-w-xl font-inter text-[14px] leading-[1.65] text-white/70 sm:text-[15px]">
-                  Esta es una solución de un día. Si no quieres perderte absolutamente nada, habla conmigo: las
-                  fechas de IFEMA se llenan rápido y mi agenda también.
+                  {cena
+                    ? "El pack base cubre una cena de hasta 3 horas. Si necesitas más tiempo, más piezas o más de un evento, habla conmigo: diciembre se llena rápido y mi agenda también."
+                    : "Esta es una solución de un día. Si no quieres perderte absolutamente nada, habla conmigo: las fechas de IFEMA se llenan rápido y mi agenda también."}
                 </p>
               </div>
-              <WhatsappCta lpId={landing.id} position="pack-medida" intent="dias" label="Hablar conmigo por WhatsApp" className="w-full shrink-0 sm:w-auto" />
+              <WhatsappCta kind={kind} lpId={landing.id} position="pack-medida" intent="dias" label="Hablar conmigo por WhatsApp" className="w-full shrink-0 sm:w-auto" />
             </div>
             <p className="mx-auto mt-5 max-w-2xl text-center font-inter text-[14px] leading-[1.65] text-white/70">
-              El material en bruto se entrega sin editar, para que lo uses tú o tu equipo cuando quieras; la edición de piezas adicionales no está incluida.
+              {cena
+                ? "Fotos y vídeo se entregan ya editados. Cualquier pieza adicional (reels, más horas) se presupuesta aparte."
+                : "El material en bruto se entrega sin editar, para que lo uses tú o tu equipo cuando quieras; la edición de piezas adicionales no está incluida."}
             </p>
           </div>
         </section>
@@ -234,7 +311,7 @@ export default async function PropuestaPage({ params }: Props) {
           <div className="mx-auto max-w-5xl">
             <h2 className={`${SECTION_TITLE} text-center`}>Qué te llevas</h2>
             <ul className="mt-8 grid grid-cols-2 gap-3 sm:mt-10 sm:gap-5 lg:grid-cols-4">
-              {LLEVAS.map((item) => (
+              {llevas.map((item) => (
                 <li
                   key={item.label}
                   className="flex flex-col rounded-2xl border border-white/12 bg-white/[0.03] p-5 sm:p-6"
@@ -257,7 +334,7 @@ export default async function PropuestaPage({ params }: Props) {
           <div className="mx-auto max-w-5xl rounded-3xl border border-white/10 bg-white/[0.02] px-6 py-10 sm:px-12 sm:py-14">
             <h2 className={SECTION_TITLE}>Por qué merece la pena</h2>
             <ul className="mt-8 grid gap-8 sm:grid-cols-2 sm:gap-x-12 sm:gap-y-10">
-              {POR_QUE.map((item) => (
+              {porQue.map((item) => (
                 <li key={item.title}>
                   <h3 className="font-display text-[19px] font-semibold uppercase leading-[1.15] sm:text-[22px]">
                     {item.title}
@@ -266,11 +343,12 @@ export default async function PropuestaPage({ params }: Props) {
                 </li>
               ))}
             </ul>
-            <WhatsappCta lpId={landing.id} position="valor" label="Reservar mi fecha por WhatsApp" className="mt-10 w-full sm:w-auto" />
+            <WhatsappCta kind={kind} lpId={landing.id} position="valor" label="Reservar mi fecha por WhatsApp" className="mt-10 w-full sm:w-auto" />
           </div>
         </section>
 
         {/* 4b. Así queda: aftermovies reales de stands en IFEMA, un selector por cliente. */}
+        {!cena ? (
         <section className="page-container pb-14 sm:pb-20">
           <div className="mx-auto max-w-4xl">
             <p className={`${EYEBROW} text-center`}>Así queda</p>
@@ -280,9 +358,10 @@ export default async function PropuestaPage({ params }: Props) {
             </div>
           </div>
         </section>
+        ) : null}
 
         {/* 5. Referencias: logo sobre fondo claro (los logos son de marca, no blancos), dónde fue y qué se grabó. */}
-        {REFERENCIAS.length > 0 ? (
+        {!cena && REFERENCIAS.length > 0 ? (
           <section className="page-container pb-14 sm:pb-20">
             <div className="mx-auto max-w-5xl">
               <h2 className={`${SECTION_TITLE} text-center`}>Mis últimas grabaciones en IFEMA</h2>
@@ -317,17 +396,18 @@ export default async function PropuestaPage({ params }: Props) {
         <section id="contacto" className="page-container scroll-mt-6 pb-14 pt-6 sm:pb-20">
           <div className="mx-auto max-w-3xl rounded-3xl border border-white/20 bg-white/[0.05] px-6 py-10 text-center sm:px-12 sm:py-14">
             <h2 className={SECTION_TITLE}>
-              <Rich text="Reserva la fecha de {empresa|tu stand|b}" />
+              {cena ? <Rich text="Reserva la cena de {empresa|tu empresa|b}" /> : <Rich text="Reserva la fecha de {empresa|tu stand|b}" />}
             </h2>
             <p className="mx-auto mt-4 max-w-xl font-inter text-[15px] leading-[1.7] text-white/78 sm:text-[16px]">
-              Escríbeme por WhatsApp, cuéntame qué feria y qué día, y lo cerramos ahí mismo. El mensaje ya va escrito:
-              solo tienes que enviarlo.
+              {cena
+                ? "Escríbeme por WhatsApp, cuéntame qué día es la cena y cuántos sois, y lo cerramos ahí mismo. El mensaje ya va escrito: solo tienes que enviarlo."
+                : "Escríbeme por WhatsApp, cuéntame qué feria y qué día, y lo cerramos ahí mismo. El mensaje ya va escrito: solo tienes que enviarlo."}
             </p>
-            <WhatsappCta lpId={landing.id} position="cierre" label="Reservar mi fecha por WhatsApp" className="mt-8 w-full sm:w-auto" />
+            <WhatsappCta kind={kind} lpId={landing.id} position="cierre" label="Reservar mi fecha por WhatsApp" className="mt-8 w-full sm:w-auto" />
           </div>
         </section>
 
-        <StickyReserveBar lpId={landing.id} price="600€" label="Reservar mi fecha" />
+        <StickyReserveBar kind={kind} lpId={landing.id} price="600€" label="Reservar mi fecha" />
         <div aria-hidden className="h-20 md:hidden" />
 
         <footer className="mx-auto w-full max-w-6xl px-4 pb-6 text-center sm:px-6">

@@ -33,6 +33,8 @@ export type Landing = {
   whatsappOnly?: boolean
   /** Botón bajo el carrusel de trabajos que lleva a otra ruta (p. ej. la home): "Ver más". Abre en pestaña nueva. */
   moreWork?: { label: string; href: string }
+  /** Variante de la plantilla de outreach: "cena" = cenas de empresa de Navidad (sin logo IFEMA, sin ferias ni stands). */
+  kind?: "cena"
 }
 
 export const LANDINGS: Landing[] = [
@@ -294,6 +296,34 @@ export const LANDINGS: Landing[] = [
     ],
     ctaLabel: "Quiero contenido de mi stand",
     featuredProject: "ifema",
+    contactRoutes: true,
+    whatsappOnly: true,
+    moreWork: { label: "Ver más trabajos", href: "https://www.daniaceros.com/" },
+  },
+  {
+    // Landing de outreach para cenas de empresa de diciembre. Pedido de Dani 2026-11-18: misma mecánica que la de
+    // IFEMA (landing + /propuesta, mismo precio) pero vendida desde la emoción: recompensar al equipo y que la noche
+    // quede documentada. Sin cifras ni clientes que no estén ya en la web.
+    id: "ev14",
+    reel: "CENAS",
+    slug: "cenas-de-empresa",
+    kind: "cena",
+    metaTitle: "Vídeo y fotos para tu cena de empresa en Madrid | Dani Acero",
+    title: "Tu cena de empresa de Navidad, que no se quede en cuatro fotos de móvil",
+    subtitle: "Grabo la noche entera: la llegada, los brindis, la entrega de premios y la fiesta. Te llevo fotos y un vídeo resumen para que el equipo guarde ese recuerdo.",
+    pains: [
+      "Una vez al año está todo el equipo en la misma sala y, al día siguiente, solo quedan unas fotos sueltas de móvil.",
+      "Quieres agradecer su lealtad a quienes han estado todo el año contigo, y que se note que lo valoras.",
+      "Entre los brindis y los premios, nadie puede ser a la vez anfitrión y quien lo graba.",
+    ],
+    expertise: [
+      "Más de 6 años como filmmaker corporativo en Madrid",
+      "He grabado cenas y fiestas de empresa: agradecimientos, premios y mucha risa",
+      "Grabo la noche entera, sin interrumpir ni pedir a nadie que posé",
+      "Fotos editadas y un vídeo resumen, horizontal y vertical, listos para compartir",
+    ],
+    ctaLabel: "Quiero grabar mi cena de empresa",
+    featuredProject: "camara-de-comercio",
     contactRoutes: true,
     whatsappOnly: true,
     moreWork: { label: "Ver más trabajos", href: "https://www.daniaceros.com/" },

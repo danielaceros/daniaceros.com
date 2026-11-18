@@ -84,6 +84,7 @@ export default async function LandingPage({ params }: Props) {
   // "{logo}" en el titular se sustituye por el logo de IFEMA (blanco, apilado); para medir longitud cuenta como texto.
   const titleParts = landing.title.split("{logo}")
   const titleText = plain(landing.title).replace("{logo}", "IFEMA")
+  const cena = landing.kind === "cena"
 
   // Titular compartido por los dos layouts. Tráfico de Instagram/Facebook en móvil: con ganchos largos (>70
   // caracteres) baja un punto para que el vídeo siga asomando en la primera pantalla.
@@ -135,7 +136,7 @@ export default async function LandingPage({ params }: Props) {
               <LandingReel
                 src={reel.video}
                 poster={reel.poster}
-                label="Reel · IFEMA Madrid"
+                label={cena ? "Reel · evento corporativo" : "Reel · IFEMA Madrid"}
                 className="lg:mx-0 lg:max-w-[340px]"
               />
             </div>
@@ -152,7 +153,7 @@ export default async function LandingPage({ params }: Props) {
               </div>
             ) : null}
             {landing.whatsappOnly ? (
-              <WhatsappCta lpId={landing.id} position="hero" intent="pagina" label={landing.ctaLabel} className="mt-7 sm:mt-9" />
+              <WhatsappCta kind={landing.kind} lpId={landing.id} position="hero" intent="pagina" label={landing.ctaLabel} className="mt-7 sm:mt-9" />
             ) : (
               <LandingCta lpId={landing.id} position="hero" label={landing.ctaLabel} className="mt-7 sm:mt-9" />
             )}
@@ -197,7 +198,7 @@ export default async function LandingPage({ params }: Props) {
               La tira mide lo mismo que el reproductor (VSL_INLINE_MAX_WIDTH, compartida con VslSection). */}
           <ClientLogosTicker className="mt-8 sm:mt-10" />
           {landing.whatsappOnly ? (
-              <WhatsappCta lpId={landing.id} position="hero" intent="pagina" label={landing.ctaLabel} className="mt-7 sm:mt-9" />
+              <WhatsappCta kind={landing.kind} lpId={landing.id} position="hero" intent="pagina" label={landing.ctaLabel} className="mt-7 sm:mt-9" />
             ) : (
               <LandingCta lpId={landing.id} position="hero" label={landing.ctaLabel} className="mt-7 sm:mt-9" />
             )}
@@ -208,7 +209,7 @@ export default async function LandingPage({ params }: Props) {
       {/* 3. Expertise, con lo que menciona ese reel */}
       <section className="page-container pb-12 sm:pb-16">
         <div className="mx-auto max-w-3xl">
-          <h2 className={SECTION_TITLE}>Quién graba tu evento</h2>
+          <h2 className={SECTION_TITLE}>{cena ? "Quién graba tu cena" : "Quién graba tu evento"}</h2>
           <ul className="mt-6 border-t border-white/10">
             {landing.expertise.map((line) => (
               <li
@@ -240,7 +241,7 @@ export default async function LandingPage({ params }: Props) {
             ))}
           </ul>
           {landing.whatsappOnly ? (
-            <WhatsappCta lpId={landing.id} position="pains" intent="pagina" label={landing.ctaLabel} className="mt-8 w-full sm:w-auto" />
+            <WhatsappCta kind={landing.kind} lpId={landing.id} position="pains" intent="pagina" label={landing.ctaLabel} className="mt-8 w-full sm:w-auto" />
           ) : (
             <LandingCta lpId={landing.id} position="pains" label={landing.ctaLabel} className="mt-8 w-full sm:w-auto" />
           )}
@@ -248,7 +249,7 @@ export default async function LandingPage({ params }: Props) {
       </section>
 
       {/* 4a. Aftermovies destacados (solo landings con whatsappOnly); el resto del material va dentro de cada ficha. */}
-      {landing.whatsappOnly ? (
+      {landing.whatsappOnly && !cena ? (
         <>
           <section className="page-container pb-12 sm:pb-16">
             <div className="mx-auto max-w-4xl">
@@ -262,7 +263,7 @@ export default async function LandingPage({ params }: Props) {
       ) : null}
 
       {/* 4b. Últimas grabaciones en IFEMA (solo landings con whatsappOnly): breve y visual, con modal por proyecto. */}
-      {landing.whatsappOnly && REFERENCIAS.length > 0 ? (
+      {landing.whatsappOnly && !cena && REFERENCIAS.length > 0 ? (
         <section className="page-container pb-12 sm:pb-16">
           <div className="mx-auto max-w-5xl">
             <h2 className={`${SECTION_TITLE} text-center`}>Mis últimas grabaciones en IFEMA</h2>
@@ -304,13 +305,14 @@ export default async function LandingPage({ params }: Props) {
         <section id="contacto" className="page-container scroll-mt-6 pb-10 pt-6 sm:pb-14">
           <div className="mx-auto max-w-3xl rounded-3xl border border-white/20 bg-white/[0.05] px-6 py-10 text-center sm:px-12 sm:py-14">
             <h2 className={SECTION_TITLE}>
-              <Rich text="Hablemos de {empresa|tu stand|b}" />
+              <Rich text={cena ? "Hablemos de la cena de {empresa|tu empresa|b}" : "Hablemos de {empresa|tu stand|b}"} />
             </h2>
             <p className="mx-auto mt-4 max-w-xl font-inter text-[15px] leading-[1.7] text-white/78 sm:text-[16px]">
-              Escríbeme por WhatsApp, cuéntame qué feria y qué día, y lo vemos ahí mismo. El mensaje ya va escrito: solo
-              tienes que enviarlo.
+              {cena
+                ? "Escríbeme por WhatsApp, cuéntame qué día es la cena y cuántos sois, y lo vemos ahí mismo. El mensaje ya va escrito: solo tienes que enviarlo."
+                : "Escríbeme por WhatsApp, cuéntame qué feria y qué día, y lo vemos ahí mismo. El mensaje ya va escrito: solo tienes que enviarlo."}
             </p>
-            <WhatsappCta lpId={landing.id} position="cierre" intent="pagina" label={landing.ctaLabel} className="mt-8 w-full sm:w-auto" />
+            <WhatsappCta kind={landing.kind} lpId={landing.id} position="cierre" intent="pagina" label={landing.ctaLabel} className="mt-8 w-full sm:w-auto" />
           </div>
         </section>
       ) : (
