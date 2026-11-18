@@ -3547,4 +3547,126 @@ export const enAuto: Record<string, BlogPostTranslation> = {
       },
     ],
   },
+  "video-demostracion-producto-b2b": {
+    title: "B2B product demo video: how to film one buyers will actually watch",
+    description:
+      "How to film a B2B product demo video: length, script, screen capture, voice and delivery so a buyer understands your product in two minutes.",
+    readingTime: "5 min read",
+    category: "Guide",
+    tags: [
+      "product demo video",
+      "B2B product video",
+      "software demo",
+      "corporate video",
+      "videographer Madrid",
+      "B2B marketing",
+    ],
+    keyword: "b2b product demo video",
+    excerpt:
+      "A B2B demo video works when it shows the problem, the solution on screen and the next step in two minutes. Here is how I plan, film and deliver it.",
+    seoTitle: "B2B Product Demo Video: How to Film One | Dani Acero",
+    metaDescription:
+      "B2B product demo video: length, script, screen capture, voice and deliverables. A guide from a corporate filmmaker based in Madrid.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "A B2B product demo video works when it runs between 90 seconds and 3 minutes and shows three things in order: the buyer's problem, your product solving it on screen, and what to do next. Anything that does not serve those three things goes.",
+      },
+      {
+        type: "paragraph",
+        text: "A B2B buyer does not watch for entertainment. They watch to decide whether to ask you for a meeting. If after 20 seconds they do not know what the product is and who it is for, they leave. That is why I always open with the problem and keep the company introduction for another video.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-demostracion-producto-b2b/hero.webp",
+        alt: "Video editing timeline on a dark monitor, with clips and audio tracks",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "What is a B2B product demo video and what is it for?" },
+      {
+        type: "paragraph",
+        text: "It is a short piece that shows the product in real use, usually software, a machine or a service with a visible part. It goes on your website, in outreach emails, in the sales proposal and as support for the sales team before the first call.",
+      },
+      {
+        type: "paragraph",
+        text: "It is not a corporate video or a brand film. It does not try to move anyone, it tries to make the buyer understand quickly what the product does and picture themselves using it. That shapes the script, the pace and even the kind of voice I choose.",
+      },
+      { type: "heading", level: 2, text: "How to film a B2B product demo well" },
+      { type: "heading", level: 3, text: "Script: one use case per video" },
+      {
+        type: "paragraph",
+        text: "The usual mistake is showing every feature. I pick one use case, the one that comes up most often in sales calls, and tell it from start to finish. If the product has five important use cases, I make five two-minute videos, not one ten-minute video.",
+      },
+      { type: "heading", level: 3, text: "Screen and product: clean, zoomed in and with believable data" },
+      {
+        type: "paragraph",
+        text: "For software I record the screen in 4K and export in Full HD, so I can zoom into areas without losing sharpness. I set up a demo account with realistic data, no real client names and no open notifications. If the product is physical, I film it with a Sony A7 and soft light, with close-ups of real use.",
+      },
+      { type: "heading", level: 3, text: "Voice and subtitles: it has to work on mute" },
+      {
+        type: "paragraph",
+        text: "Many demos are watched on LinkedIn or in an open-plan office, with the sound off. I record the voice in a treated room with a dynamic microphone and always add burned-in subtitles. A calm human voice beats a synthetic one: buyers notice the difference in the first few seconds.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-demostracion-producto-b2b/detalle.webp",
+        alt: "Desk with a monitor, a boom-arm microphone and an LED light panel set up to record voice and screen",
+        width: 1920,
+        height: 1080,
+      },
+      { type: "heading", level: 2, text: "Length, formats and timeline for a product demo" },
+      {
+        type: "paragraph",
+        text: "I deliver a main 2-minute version for the website and a 30 to 45 second cut in vertical and square for LinkedIn. If the product is complex, I add a longer 5 to 8 minute video that is used after the first meeting, not before.",
+      },
+      {
+        type: "paragraph",
+        text: "A demo like this takes one to two weeks from briefing to delivery. Half a day of filming is enough in most cases. In Madrid I work both at the client's offices and in my studio, and for physical products I film at the plant, the lab or the shop where it is really used.",
+      },
+      { type: "heading", level: 2, text: "Common mistakes in a B2B demo video" },
+      {
+        type: "list",
+        items: [
+          "Opening with 30 seconds of logo, music and company introduction.",
+          "Showing every feature instead of one concrete use case.",
+          "Recording the screen with notifications, open tabs and real client data.",
+          "Talking about features instead of the problem each one solves.",
+          "Leaving out subtitles, even though most LinkedIn views are with the sound off.",
+          "Ending without a clear call to action: book a meeting, try the demo or ask for a quote.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "How long should a B2B product demo video be?",
+        answer:
+          "Between 90 seconds and 3 minutes for the website and outreach. If you need to explain more, make several short videos, one per use case, instead of one long video nobody watches to the end.",
+      },
+      {
+        type: "faq",
+        question: "How much does a product demo video cost?",
+        answer:
+          "It depends on whether it is software or a physical product and on the versions you need. A 2-minute demo with screen capture, voice, subtitles and a vertical cut usually runs between 900 and 2,000 euros. I prepare an itemised quote.",
+      },
+      {
+        type: "faq",
+        question: "Is a recorded demo better than a live demo?",
+        answer:
+          "They complement each other. A live demo answers specific questions in a meeting. A recorded one arrives earlier, can be watched by people who cannot attend, and the buyer can forward it inside their company to whoever decides.",
+      },
+      {
+        type: "faq",
+        question: "Does someone need to appear on camera?",
+        answer:
+          "It is not required. A 10 to 15 second introduction from someone on the team builds trust, but the rest can be screen or product with a voice-over. If the buyer already knows the sales team, having them appear helps.",
+      },
+      {
+        type: "paragraph",
+        text: "If you have a B2B product and want a demo that helps close meetings, write to me from /contacto with a description of the product and the buyer. I will propose a script and a fixed quote. My video services for companies are on /servicios.",
+      },
+    ],
+  },
 }

@@ -18358,6 +18358,124 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-demostracion-producto-b2b",
+    title: "Vídeo de demostración de producto B2B: cómo grabarlo para que lo vea el comprador",
+    description:
+      "Cómo grabar un vídeo de demostración de producto B2B: duración, guion, pantalla, voz y entrega para que el comprador entienda tu producto en dos minutos.",
+    publishedAt: "2026-11-18",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["vídeo de demostración", "vídeo de producto B2B", "demo de software", "vídeo corporativo", "filmmaker corporativo Madrid", "marketing B2B"],
+    keyword: "vídeo de demostración de producto B2B",
+    intent: "informacional",
+    excerpt:
+      "Un vídeo de demo B2B funciona cuando enseña un problema, la solución en pantalla y el siguiente paso en dos minutos. Así lo planteo, lo grabo y lo entrego.",
+    seoTitle: "Vídeo de demostración de producto B2B | Daniel Acero",
+    metaDescription:
+      "Vídeo de demostración de producto B2B: duración, guion, grabación de pantalla, voz y entregables. Guía de un filmmaker corporativo en Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Un vídeo de demostración de producto B2B funciona cuando dura entre 90 segundos y 3 minutos y enseña tres cosas en orden: el problema del comprador, tu producto resolviéndolo en pantalla y qué hacer después. Todo lo que no ayuda a esas tres cosas sobra.",
+      },
+      {
+        type: "paragraph",
+        text: "El comprador B2B no ve el vídeo por entretenimiento. Lo ve para decidir si te pide una reunión. Si a los 20 segundos no sabe qué producto es y para quién, se va. Por eso empiezo siempre por el problema y dejo la presentación de la empresa para otro vídeo.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-demostracion-producto-b2b/hero.webp",
+        alt: "Línea de tiempo de montaje de vídeo en un monitor oscuro, con clips y pistas de audio",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es un vídeo de demostración de producto B2B y para qué sirve" },
+      {
+        type: "paragraph",
+        text: "Es una pieza corta que muestra el producto en uso real, normalmente software, una máquina o un servicio con parte visible. Se usa en la web, en emails de prospección, en la propuesta comercial y como apoyo del equipo de ventas antes de la primera llamada.",
+      },
+      {
+        type: "paragraph",
+        text: "No es un vídeo corporativo ni un vídeo de marca. No busca emocionar, busca que el comprador entienda rápido qué hace el producto y se imagine usándolo. Eso condiciona el guion, el ritmo y hasta el tipo de voz que elijo.",
+      },
+      { type: "heading", level: 2, text: "Cómo grabar una demo de producto B2B bien hecha" },
+      { type: "heading", level: 3, text: "Guion: un solo caso de uso por vídeo" },
+      {
+        type: "paragraph",
+        text: "El error habitual es enseñar todas las funciones. Elijo un caso de uso, el que más veces se repite en las llamadas de ventas, y lo cuento de principio a fin. Si el producto tiene cinco casos de uso importantes, hago cinco vídeos de dos minutos, no uno de diez.",
+      },
+      { type: "heading", level: 3, text: "Pantalla y producto: limpio, ampliado y con datos creíbles" },
+      {
+        type: "paragraph",
+        text: "Para software grabo la pantalla a 4K y exporto en Full HD, de modo que pueda ampliar zonas sin perder nitidez. Preparo una cuenta de demostración con datos verosímiles, sin nombres de clientes reales ni notificaciones abiertas. Si el producto es físico, lo grabo con una cámara Sony A7 y luz suave, con planos de detalle del uso real.",
+      },
+      { type: "heading", level: 3, text: "Voz y subtítulos: se ve sin sonido" },
+      {
+        type: "paragraph",
+        text: "Muchas demos se ven en LinkedIn o en una oficina abierta, sin audio. Grabo la voz en una sala tratada con un micrófono dinámico y siempre añado subtítulos incrustados. Mejor una voz humana y tranquila que una voz sintética: el comprador percibe la diferencia en los primeros segundos.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-demostracion-producto-b2b/detalle.webp",
+        alt: "Escritorio con monitor, micrófono de brazo y panel de luz LED preparado para grabar voz y pantalla",
+        width: 1920,
+        height: 1080,
+      },
+      { type: "heading", level: 2, text: "Duración, formatos y plazos de una demo de producto" },
+      {
+        type: "paragraph",
+        text: "Entrego una versión principal de 2 minutos para la web y una versión de 30 a 45 segundos en vertical y cuadrado para LinkedIn. Si el producto es complejo, añado un vídeo largo de 5 a 8 minutos que se usa después de la primera reunión, no antes.",
+      },
+      {
+        type: "paragraph",
+        text: "Una demo de este tipo tarda entre una y dos semanas desde el briefing hasta la entrega. Medio día de grabación basta en la mayoría de los casos. En Madrid trabajo tanto en las oficinas del cliente como en mi estudio, y para productos físicos grabo en la nave, el laboratorio o la tienda donde se usa de verdad.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes en un vídeo de demostración B2B" },
+      {
+        type: "list",
+        items: [
+          "Empezar con 30 segundos de logo, música y presentación de la empresa.",
+          "Enseñar todas las funciones en lugar de un caso de uso concreto.",
+          "Grabar la pantalla con notificaciones, pestañas abiertas y datos reales de clientes.",
+          "Hablar de características en vez de explicar qué problema resuelve cada una.",
+          "No incluir subtítulos, aunque la mayoría de las visualizaciones en LinkedIn son sin sonido.",
+          "Terminar sin una llamada a la acción clara: reservar reunión, probar la demo o pedir presupuesto.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto debe durar un vídeo de demostración de producto B2B?",
+        answer:
+          "Entre 90 segundos y 3 minutos para la web y la prospección. Si necesitas explicar más, haz varios vídeos cortos, uno por caso de uso, en lugar de uno largo que nadie ve entero.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta un vídeo de demo de producto?",
+        answer:
+          "Depende de si es software o un producto físico y de las versiones que necesites. Una demo de 2 minutos con grabación de pantalla, voz, subtítulos y versión vertical suele moverse entre 900 y 2.000 euros. Te preparo un presupuesto por partidas.",
+      },
+      {
+        type: "faq",
+        question: "¿Mejor demo grabada o demo en directo?",
+        answer:
+          "Se complementan. La demo en directo sirve para resolver dudas concretas en una reunión. La grabada llega antes, la ve quien no puede reunirse y la puede reenviar el comprador dentro de su empresa a quien decide.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta que aparezca una persona a cámara?",
+        answer:
+          "No es obligatorio. Una introducción de 10 o 15 segundos con alguien del equipo da confianza, pero el resto puede ser pantalla o producto con voz en off. Si el comprador conoce al equipo comercial, ayuda que aparezca.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes un producto B2B y quieres una demo que ayude a cerrar reuniones, escríbeme desde /contacto con una descripción del producto y del comprador. Te propongo un guion y un presupuesto cerrado. Los servicios de vídeo para empresas están en /servicios.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
