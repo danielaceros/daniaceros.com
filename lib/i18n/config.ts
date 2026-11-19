@@ -214,6 +214,7 @@ export const EN_BLOG_SLUGS: Record<string, string> = {
   "video-mensaje-ceo-comunicacion-interna": "ceo-message-video-internal-communications",
   "grabar-rueda-de-prensa-madrid": "press-conference-videographer-madrid",
   "video-demostracion-producto-b2b": "b2b-product-demo-video",
+  "grabar-webinar-corporativo": "corporate-webinar-recording",
 }
 
 const EN_PATH_TO_ES: Record<string, string> = Object.fromEntries([

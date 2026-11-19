@@ -18476,6 +18476,124 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "grabar-webinar-corporativo",
+    title: "Grabar un webinar corporativo: cómo producirlo para que se vea bien y se reutilice",
+    description:
+      "Cómo grabar un webinar corporativo: equipo, sonido, luz, plataforma y edición posterior para que se vea profesional y puedas reutilizarlo en vídeo bajo demanda.",
+    publishedAt: "2026-11-19",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["webinar corporativo", "grabación de webinar", "vídeo corporativo", "vídeo bajo demanda", "filmmaker corporativo Madrid", "marketing B2B"],
+    keyword: "grabar un webinar corporativo",
+    intent: "informacional",
+    excerpt:
+      "Un webinar corporativo se graba bien con sonido limpio, luz suave y una grabación local de respaldo, no solo la de la plataforma. Así lo preparo y lo reutilizo después.",
+    seoTitle: "Grabar un webinar corporativo: guía práctica | Daniel Acero",
+    metaDescription:
+      "Grabar un webinar corporativo: equipo, sonido, luz, plataforma y edición posterior. Guía de un filmmaker corporativo en Madrid para que se vea profesional.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Para grabar un webinar corporativo que se vea profesional necesitas tres cosas: un micrófono dedicado a menos de 30 centímetros del ponente, una luz suave frontal y una grabación local de respaldo, además de la que hace la plataforma. Con eso resuelves la mayoría de los problemas habituales.",
+      },
+      {
+        type: "paragraph",
+        text: "La grabación que genera Zoom, Teams o cualquier plataforma de webinars comprime el vídeo y mezcla el audio de todos. Sirve para guardar el evento, pero no para reutilizarlo como contenido. Si quieres convertir el webinar en un vídeo bajo demanda o en clips para LinkedIn, hay que grabarlo con más cuidado desde el principio.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabar-webinar-corporativo/hero.webp",
+        alt: "Persona gesticulando frente a un portátil con una videollamada de varios participantes en pantalla",
+        width: 1920,
+        height: 1536,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es un webinar corporativo y por qué merece una buena grabación" },
+      {
+        type: "paragraph",
+        text: "Es una presentación en directo, normalmente de 30 a 60 minutos, con un ponente o varios y un turno de preguntas. Las empresas lo usan para captar leads, formar a clientes, presentar un producto o comunicar algo a equipos repartidos en varias oficinas.",
+      },
+      {
+        type: "paragraph",
+        text: "El directo lo ve una parte de los inscritos. La grabación la ve el resto durante semanas. Si el sonido es malo o el ponente aparece a contraluz, el material no se puede reutilizar y pierdes el valor de la mitad del trabajo.",
+      },
+      { type: "heading", level: 2, text: "Cómo grabar un webinar corporativo paso a paso" },
+      { type: "heading", level: 3, text: "Sonido: lo que más se nota" },
+      {
+        type: "paragraph",
+        text: "El audio decide si el webinar se ve entero. Uso un micrófono de solapa o un dinámico de mesa con brazo, siempre cerca de la boca, y pido al ponente que use auriculares para evitar el eco. Grabo el audio también en un dispositivo aparte, por si la conexión falla durante el directo.",
+      },
+      { type: "heading", level: 3, text: "Imagen y luz: una cámara a la altura de los ojos" },
+      {
+        type: "paragraph",
+        text: "La cámara del portátil mira desde abajo y deforma la cara. Prefiero una cámara externa, como una Sony A7 o una webcam de buena calidad, a la altura de los ojos y con un panel LED suave a 45 grados. El fondo, ordenado y sin ventanas detrás, para que la exposición no cambie con la hora.",
+      },
+      { type: "heading", level: 3, text: "Plataforma y grabación local: dos copias siempre" },
+      {
+        type: "paragraph",
+        text: "Para el directo uso la plataforma que ya conocen tus asistentes. En paralelo grabo en local la cámara, el audio y la pantalla de la presentación por separado. Si la conexión se corta o la plataforma falla, no pierdes el contenido, y en edición puedo recomponer la imagen con los materiales originales.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabar-webinar-corporativo/detalle.webp",
+        alt: "Estabilizador de cámara, micrófonos inalámbricos y panel de luz sobre una mesa de cristal en una sala de grabación",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Qué hacer después: edición y reutilización del webinar" },
+      {
+        type: "paragraph",
+        text: "Del directo de una hora saco una versión completa limpia, sin esperas ni silencios, y entre tres y cinco clips de 45 a 90 segundos con las respuestas más útiles. Añado subtítulos, gráficos de apoyo con nombre y cargo del ponente, y una portada coherente con la marca. La entrega suele llevar entre tres y cinco días laborables.",
+      },
+      {
+        type: "paragraph",
+        text: "Para webinars con público en Madrid o con ponentes en la oficina, puedo grabar en tu sala o en mi estudio, con dos cámaras y mezcla de sonido. Para webinars totalmente remotos, preparo al ponente en una prueba técnica de 15 minutos el día anterior.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes al grabar un webinar corporativo" },
+      {
+        type: "list",
+        items: [
+          "Fiarse solo de la grabación de la plataforma, sin copia local de respaldo.",
+          "Usar el micrófono del portátil o los altavoces, que generan eco y ruido de teclado.",
+          "Dejar una ventana detrás del ponente, con una luz que cambia durante el directo.",
+          "Compartir pantalla con notificaciones abiertas, pestañas personales o datos de clientes.",
+          "No hacer una prueba técnica previa con el ponente y su conexión.",
+          "Publicar la grabación completa sin cortes ni subtítulos, sin pensar en clips para redes.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta grabar un webinar corporativo?",
+        answer:
+          "Depende de si es remoto o presencial y de la edición posterior. Un webinar con producción remota, grabación local y una versión editada suele moverse entre 500 y 1.200 euros. Si lo grabo presencial con dos cámaras y clips para redes, el presupuesto sube y te lo preparo por partidas.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo usar solo la grabación de Zoom o Teams?",
+        answer:
+          "Sí, para guardar el evento o compartirlo internamente. Para reutilizarlo como vídeo bajo demanda o en clips, es mejor tener una copia local con mejor calidad de imagen y audio por separado.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto debe durar un webinar corporativo?",
+        answer:
+          "Entre 30 y 45 minutos de contenido más 10 o 15 de preguntas funciona bien. Más de una hora hace caer la atención. La versión bajo demanda la edito a menos tiempo, quitando esperas y partes poco útiles.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué necesita el ponente para grabarse desde casa?",
+        answer:
+          "Una conexión por cable o wifi estable, auriculares, un micrófono decente y una luz frontal suave. Con una prueba de 15 minutos antes del evento corrijo la mayoría de los problemas de encuadre, sonido y conexión.",
+      },
+      {
+        type: "paragraph",
+        text: "Si preparas un webinar y quieres que la grabación sea reutilizable, escríbeme desde /contacto con la fecha, el formato y el número de ponentes. Te propongo un plan de producción y un presupuesto cerrado. Los servicios de vídeo para empresas están en /servicios.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
