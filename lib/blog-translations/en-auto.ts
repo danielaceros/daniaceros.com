@@ -3791,4 +3791,116 @@ export const enAuto: Record<string, BlogPostTranslation> = {
       },
     ],
   },
+  "video-bienvenida-congreso-internacional-madrid": {
+    title: "Welcome video for an international conference in Madrid: how to plan it",
+    description:
+      "How to produce a welcome video for an international conference in Madrid: script, languages, subtitles, location and timing so delegates see it before they travel.",
+    readingTime: "5 min read",
+    category: "Guide",
+    tags: [
+      "conference welcome video",
+      "international conference",
+      "event video",
+      "videographer Madrid",
+      "corporate events",
+      "subtitles",
+    ],
+    keyword: "conference welcome video madrid",
+    excerpt:
+      "A welcome video for an international conference runs 60 to 90 seconds, carries English subtitles and goes out to delegates a week before the event. Here is how I plan it.",
+    seoTitle: "Conference Welcome Video in Madrid: Planning Guide | Dani Acero",
+    metaDescription:
+      "Welcome video for an international conference in Madrid: script, languages, subtitles, location and timing. A guide from a Madrid corporate filmmaker.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "A good welcome video for an international conference runs 60 to 90 seconds, is presented by an organiser or main speaker, is in English or subtitled in English, and reaches delegates about seven days before the event. It is shot in one morning and delivered in three to four working days.",
+      },
+      {
+        type: "paragraph",
+        text: "Delegates flying into Madrid want to know where the event is, how to get there, when it starts and who is hosting. A short video answers that better than a long email and cuts the number of questions reaching your organising team.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-bienvenida-congreso-internacional-madrid/hero.webp",
+        alt: "Woman in a black dress walking past chairs in a conference hall",
+        width: 1920,
+        height: 1282,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "What is a conference welcome video for?" },
+      {
+        type: "paragraph",
+        text: "It does three things: it reassures people travelling from abroad, it explains the basic logistics, and it makes the event feel well run before anyone sets foot in the venue. It also works as a promo piece on LinkedIn and on the registration page.",
+      },
+      {
+        type: "paragraph",
+        text: "It does not replace the practical event guide. The video sets the tone and covers the essentials. Schedules, maps and badges stay on the website or the conference app, and the video links to them.",
+      },
+      { type: "heading", level: 2, text: "How do you plan a conference welcome video?" },
+      { type: "heading", level: 3, text: "Short script, in the language most delegates speak" },
+      {
+        type: "paragraph",
+        text: "The script fits in 150 words: greeting, event name, dates, one line about Madrid and the venue, and a clear invitation to register or visit the website. If most delegates speak English, the host speaks English. If two languages dominate, I record two versions in the same session.",
+      },
+      { type: "heading", level: 3, text: "Where to shoot: the venue or a recognisable Madrid location" },
+      {
+        type: "paragraph",
+        text: "The best option is the venue itself, empty, early in the morning. If access is not possible until set-up, I look for a recognisable Madrid location, with a permit in advance when the area requires one. The host needs a clean background and soft light, with no signage from other events.",
+      },
+      { type: "heading", level: 3, text: "Subtitles and versions: what people see with the sound off" },
+      {
+        type: "paragraph",
+        text: "Many delegates will watch on their phone, on LinkedIn or in an email, often without sound. That is why I always burn subtitles into the picture. I deliver a 16:9 horizontal version for the website and a 30-second 9:16 vertical cut for social media.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-bienvenida-congreso-internacional-madrid/detalle.webp",
+        alt: "Green conference badges hanging from a bag at a registration desk",
+        width: 1200,
+        height: 675,
+      },
+      { type: "heading", level: 2, text: "Common mistakes in a conference welcome video" },
+      {
+        type: "list",
+        items: [
+          "Making it too long: after 90 seconds most people stop watching.",
+          "Speaking only Spanish when most registrants are from abroad.",
+          "Sending it the day before, when travel and agenda are already settled.",
+          "Recording with the camera microphone in an echoey room.",
+          "Leaving the dates and event name out of the subtitles.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "How much does a conference welcome video cost in Madrid?",
+        answer:
+          "A 60 to 90 second piece with one camera, sound and subtitles usually costs between 600 and 1,500 euros. It goes up with two languages, several presenters or different locations. I always close it with a written quote.",
+      },
+      {
+        type: "faq",
+        question: "How far ahead of the conference should it be filmed?",
+        answer:
+          "Three to four weeks before the event. That leaves room for revisions and for sending it to registrants a week out. If you are short on time, I can deliver in 48 hours with a single round of changes.",
+      },
+      {
+        type: "faq",
+        question: "Can a non-professional present it?",
+        answer:
+          "Yes, and it often works better. A natural, approachable organiser is more credible than a voice actor. I prepare the script, use a teleprompter if needed and record several takes until it comes out relaxed.",
+      },
+      {
+        type: "faq",
+        question: "Do I need a permit to film at the venue?",
+        answer:
+          "At a private venue you only need permission from the organiser or the venue itself. Filming on public streets with professional equipment may need municipal authorisation. I check this during planning so the day is not lost.",
+      },
+      {
+        type: "paragraph",
+        text: "If you are organising a conference in Madrid with delegates from other countries and want a welcome video, write to me from /contacto with the date, the venue and the languages. I will send you a shooting plan and a fixed quote.",
+      },
+    ],
+  },
 }

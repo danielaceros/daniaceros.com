@@ -18594,6 +18594,114 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-bienvenida-congreso-internacional-madrid",
+    title: "Vídeo de bienvenida para un congreso internacional en Madrid: cómo planificarlo",
+    description:
+      "Cómo grabar el vídeo de bienvenida de un congreso internacional en Madrid: guion, idiomas, subtítulos, localización y plazos para que lo vean antes del evento.",
+    publishedAt: "2026-11-20",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["vídeo de bienvenida", "congreso internacional", "vídeo de evento", "videógrafo Madrid", "eventos corporativos", "subtítulos"],
+    keyword: "vídeo de bienvenida para un congreso internacional en Madrid",
+    intent: "informacional",
+    excerpt:
+      "Un vídeo de bienvenida para un congreso internacional dura entre 60 y 90 segundos, va subtitulado en inglés y se envía a los asistentes una semana antes. Así lo planifico.",
+    seoTitle: "Vídeo de bienvenida para congreso internacional | Daniel Acero",
+    metaDescription:
+      "Vídeo de bienvenida para un congreso internacional en Madrid: guion, idiomas, subtítulos, localización y plazos. Guía de un filmmaker corporativo.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Un buen vídeo de bienvenida para un congreso internacional dura entre 60 y 90 segundos, lo presenta un organizador o ponente principal, va en inglés o con subtítulos en inglés y se envía a los asistentes unos siete días antes del evento. Se graba en una mañana y se entrega en tres o cuatro días laborables.",
+      },
+      {
+        type: "paragraph",
+        text: "Quien viaja a Madrid desde otro país quiere saber qué se va a encontrar: dónde es, cómo llegar, qué día empieza y quién da la cara. Un vídeo corto responde a eso mejor que un correo largo y baja el número de dudas que llegan a la organización.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-bienvenida-congreso-internacional-madrid/hero.webp",
+        alt: "Mujer con vestido negro caminando junto a unas sillas en una sala de congresos",
+        width: 1920,
+        height: 1282,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Para qué sirve un vídeo de bienvenida en un congreso internacional" },
+      {
+        type: "paragraph",
+        text: "Sirve para tres cosas: dar confianza a quien viene de fuera, explicar la logística básica y subir la sensación de evento cuidado antes de que nadie pise la sede. También funciona como pieza de promoción en LinkedIn y en la página de inscripción.",
+      },
+      {
+        type: "paragraph",
+        text: "No sustituye a la guía práctica del evento. El vídeo da el tono y lo esencial. Horarios, mapas y credenciales siguen en la web o en la app del congreso, y el vídeo lleva a ellos con un enlace.",
+      },
+      { type: "heading", level: 2, text: "Cómo planificar el vídeo de bienvenida paso a paso" },
+      { type: "heading", level: 3, text: "Guion corto y en el idioma de la mayoría" },
+      {
+        type: "paragraph",
+        text: "El guion cabe en 150 palabras: saludo, nombre del evento, fechas, una frase sobre Madrid y la sede, y una invitación clara a inscribirse o a consultar la web. Si la mayoría de asistentes habla inglés, el presentador habla en inglés. Si hay dos idiomas fuertes, grabo dos versiones en la misma sesión.",
+      },
+      { type: "heading", level: 3, text: "Dónde grabarlo: la sede o una localización reconocible" },
+      {
+        type: "paragraph",
+        text: "Lo ideal es grabar en la propia sede, con el recinto vacío por la mañana temprano. Si el acceso no es posible hasta el montaje, busco una localización madrileña reconocible, con permiso previo cuando la zona lo exige. El presentador debe verse con un fondo limpio y luz suave, sin carteles de otros eventos.",
+      },
+      { type: "heading", level: 3, text: "Subtítulos y versiones: lo que se ve sin sonido" },
+      {
+        type: "paragraph",
+        text: "Muchos asistentes lo verán en el móvil, en LinkedIn o en el correo, a menudo sin sonido. Por eso incluyo siempre subtítulos grabados en la imagen. Entrego una versión horizontal 16:9 para la web y otra vertical 9:16 de 30 segundos para redes.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-bienvenida-congreso-internacional-madrid/detalle.webp",
+        alt: "Acreditaciones verdes colgadas de una bolsa en el mostrador de registro de un congreso",
+        width: 1200,
+        height: 675,
+      },
+      { type: "heading", level: 2, text: "Errores comunes en un vídeo de bienvenida de congreso" },
+      {
+        type: "list",
+        items: [
+          "Hacerlo demasiado largo: pasados los 90 segundos, la mayoría deja de verlo.",
+          "Hablar solo en español cuando la mayoría de inscritos viene de fuera.",
+          "Enviarlo la víspera, cuando ya han resuelto el viaje y la agenda.",
+          "Grabar con el micrófono de la cámara en una sala con eco.",
+          "Olvidar las fechas y el nombre del evento en los subtítulos.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta un vídeo de bienvenida para un congreso?",
+        answer:
+          "Una pieza de 60 a 90 segundos con una cámara, sonido y subtítulos suele moverse entre 600 y 1.500 euros. Sube si hay dos idiomas, varios presentadores o localizaciones distintas. Lo cierro siempre con un presupuesto por escrito.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuándo hay que grabarlo?",
+        answer:
+          "Entre tres y cuatro semanas antes del congreso. Así queda margen para revisiones y para enviarlo a los inscritos una semana antes. Si hay prisa, puedo entregar en 48 horas con una sola ronda de cambios.",
+      },
+      {
+        type: "faq",
+        question: "¿Puede presentarlo alguien que no sea profesional?",
+        answer:
+          "Sí, y suele funcionar mejor. Un organizador natural y cercano resulta más creíble que un locutor. Preparo el guion, uso teleprompter si hace falta y grabo varias tomas hasta que sale con soltura.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta permiso para grabar en la sede?",
+        answer:
+          "En un recinto privado basta con el permiso de la organización o de la propia sede. Si grabamos en vía pública con equipo profesional puede hacer falta autorización municipal. Lo reviso al planificar para no perder el día.",
+      },
+      {
+        type: "paragraph",
+        text: "Si organizas un congreso en Madrid con asistentes de otros países y quieres un vídeo de bienvenida, escríbeme desde /contacto con la fecha, la sede y los idiomas. Te propongo un plan de rodaje y un presupuesto cerrado.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
