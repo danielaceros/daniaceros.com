@@ -18816,6 +18816,120 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-historia-fundador-empresa",
+    title: "Vídeo de la historia del fundador: cómo contar el origen de una empresa",
+    description:
+      "Cómo grabar el vídeo de la historia del fundador de una empresa: qué preguntas hacer, cuánto dura, dónde grabar y cómo usarlo en la web y en LinkedIn.",
+    publishedAt: "2026-11-23",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["vídeo del fundador", "historia de empresa", "vídeo de marca", "entrevista corporativa", "filmmaker corporativo Madrid", "LinkedIn"],
+    keyword: "vídeo de la historia del fundador de una empresa",
+    intent: "informacional",
+    excerpt:
+      "El vídeo del fundador funciona cuando cuenta un problema real y una decisión concreta, no un currículum. Así preparo la entrevista y el rodaje para que dure dos minutos y se vea natural.",
+    seoTitle: "Vídeo de la historia del fundador de empresa | Daniel Acero",
+    metaDescription:
+      "Vídeo de la historia del fundador de una empresa: preguntas, duración, rodaje y usos en web y LinkedIn. Guía de un filmmaker corporativo en Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Un buen vídeo de la historia del fundador dura entre dos y tres minutos y cuenta un problema concreto, la decisión que tomó el fundador y lo que cambió después. Se graba en media jornada con una entrevista de unos 40 minutos, de la que salen la pieza principal y varios cortes para LinkedIn.",
+      },
+      {
+        type: "paragraph",
+        text: "Lo que suele fallar es el enfoque: se cuenta el currículum en lugar del origen. Quien ve el vídeo no busca fechas y cargos, busca entender por qué existe la empresa y si puede fiarse de quien está detrás.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-historia-fundador-empresa/hero.webp",
+        alt: "Dos personas sentadas a una mesa durante una entrevista",
+        width: 1920,
+        height: 1323,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es el vídeo de la historia del fundador y para qué sirve" },
+      {
+        type: "paragraph",
+        text: "Es una pieza corta en la que el fundador cuenta cómo nació la empresa, normalmente en primera persona y a cámara. Va en la página Sobre nosotros, en la portada de la web, en propuestas comerciales y en el perfil de LinkedIn del fundador.",
+      },
+      {
+        type: "paragraph",
+        text: "Sirve sobre todo en servicios y B2B, donde el cliente compra confianza antes que producto. En una pyme, la cara del fundador suele pesar más que cualquier eslogan.",
+      },
+      { type: "heading", level: 2, text: "Cómo grabar la historia de un fundador bien" },
+      { type: "heading", level: 3, text: "La entrevista: preguntas que sacan historia" },
+      {
+        type: "paragraph",
+        text: "No empiezo por la empresa, empiezo por el momento. Pregunto qué problema vio, qué estaba haciendo entonces, qué estuvo a punto de salir mal y qué haría distinto. Evito preguntas de respuesta corta. Dejo silencios: la mejor frase suele llegar después de una pausa.",
+      },
+      { type: "heading", level: 3, text: "Dónde grabar: el sitio donde pasó algo" },
+      {
+        type: "paragraph",
+        text: "Prefiero el taller, la oficina original o el local de los primeros clientes antes que un fondo neutro. Una cámara fija con dos planos y un fondo con profundidad bastan. Para la luz uso una ventana como fuente principal y un panel LED de apoyo.",
+      },
+      { type: "heading", level: 3, text: "Guion o sin guion" },
+      {
+        type: "paragraph",
+        text: "Preparo un guion de puntos, no de frases. Si el fundador lee un texto, se nota. En la entrevista habla con libertad y en edición monto un relato de dos minutos con sus propias palabras, que él revisa antes de publicar.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-historia-fundador-empresa/detalle.webp",
+        alt: "Tres hombres con portátiles mirando a una persona junto a una pizarra",
+        width: 1920,
+        height: 1440,
+      },
+      { type: "heading", level: 2, text: "Cuánto debe durar y cómo reutilizarlo" },
+      {
+        type: "paragraph",
+        text: "La versión principal, de 120 a 180 segundos. Además preparo tres o cuatro cortes de 30 a 45 segundos en vertical para LinkedIn e Instagram, cada uno con una sola idea: el problema, la decisión, el primer cliente y lo que viene. Con subtítulos, porque la mayoría lo ve sin sonido.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes en un vídeo de fundador" },
+      {
+        type: "list",
+        items: [
+          "Contar cargos y fechas en lugar de un problema y una decisión.",
+          "Leer un texto con teleprompter sin haberlo ensayado.",
+          "Grabar contra una pared blanca sin ninguna pista del negocio.",
+          "Alargarlo a cinco minutos sin una idea nueva a partir del minuto tres.",
+          "Hablar de la empresa en tercera persona y con lenguaje corporativo.",
+          "No pedir al fundador una revisión final antes de publicar.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta un vídeo de la historia del fundador?",
+        answer:
+          "Una pieza de dos o tres minutos con media jornada de rodaje y varios cortes para redes suele estar entre 800 y 1.800 euros. Sube si hay varias localizaciones o más entrevistados.",
+      },
+      {
+        type: "faq",
+        question: "¿Y si el fundador no se siente cómodo delante de la cámara?",
+        answer:
+          "Es lo normal. Empiezo con diez minutos de conversación sin grabar y luego grabo la entrevista como una charla. En la mayoría de los casos, a los 15 minutos ya habla con naturalidad.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tarda la entrega?",
+        answer:
+          "Entre cinco y siete días laborables tras el rodaje, con una ronda de revisión incluida. Los cortes para redes se entregan a la vez que la pieza principal.",
+      },
+      {
+        type: "faq",
+        question: "¿Sirve también para empresas pequeñas?",
+        answer:
+          "Sí, y es donde más rinde. En una empresa de pocas personas el fundador es la marca, y un vídeo breve y honesto genera confianza antes de la primera llamada.",
+      },
+      {
+        type: "paragraph",
+        text: "Si quieres contar el origen de tu empresa en vídeo, escríbeme desde /contacto con un par de líneas sobre tu historia. Te propongo un plan de rodaje y un presupuesto cerrado. Puedes ver los servicios en /servicios.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {

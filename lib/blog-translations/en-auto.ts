@@ -4021,4 +4021,122 @@ export const enAuto: Record<string, BlogPostTranslation> = {
       },
     ],
   },
+  "video-historia-fundador-empresa": {
+    title: "Founder story video: how to tell how a company began",
+    description:
+      "How to film a founder story video for a company: which questions to ask, how long it should run, where to shoot and how to use it on your website and LinkedIn.",
+    readingTime: "5 min read",
+    category: "Guide",
+    tags: [
+      "founder story video",
+      "company story",
+      "brand video",
+      "corporate interview",
+      "corporate filmmaker Madrid",
+      "LinkedIn",
+    ],
+    keyword: "founder story video",
+    excerpt:
+      "A founder video works when it tells a real problem and a concrete decision, not a CV. Here is how I prepare the interview and the shoot so it runs two minutes and feels natural.",
+    seoTitle: "Founder Story Video for Companies: A Guide | Dani Acero",
+    metaDescription:
+      "Founder story video: questions, length, shooting and uses on your website and LinkedIn. A practical guide from a corporate filmmaker in Madrid.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "A good founder story video runs two to three minutes and tells one concrete problem, the decision the founder made and what changed afterwards. I shoot it in half a day with a 40-minute interview, which gives you the main video plus several clips for LinkedIn.",
+      },
+      {
+        type: "paragraph",
+        text: "What usually goes wrong is the angle: the video recites a CV instead of an origin. Viewers are not looking for dates and job titles. They want to know why the company exists and whether they can trust the person behind it.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-historia-fundador-empresa/hero.webp",
+        alt: "Two people sitting at a table during an interview",
+        width: 1920,
+        height: 1323,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "What is a founder story video and what is it for?" },
+      {
+        type: "paragraph",
+        text: "It is a short piece where the founder explains how the company started, usually in the first person and straight to camera. It sits on the About page, on the homepage, in sales proposals and on the founder's LinkedIn profile.",
+      },
+      {
+        type: "paragraph",
+        text: "It pays off most in services and B2B, where the client buys trust before the product. In a small company, the founder's face often weighs more than any slogan.",
+      },
+      { type: "heading", level: 2, text: "How to film a founder story well" },
+      { type: "heading", level: 3, text: "The interview: questions that bring out a story" },
+      {
+        type: "paragraph",
+        text: "I do not start with the company, I start with the moment. I ask what problem they saw, what they were doing at the time, what nearly went wrong and what they would do differently. I avoid questions with one-line answers. I leave silences: the best sentence usually comes after a pause.",
+      },
+      { type: "heading", level: 3, text: "Where to shoot: the place where it happened" },
+      {
+        type: "paragraph",
+        text: "I prefer the workshop, the original office or the place of the first clients over a neutral backdrop. A fixed camera with two framings and a background with depth is enough. For light I use a window as the main source and a small LED panel as fill.",
+      },
+      { type: "heading", level: 3, text: "Script or no script" },
+      {
+        type: "paragraph",
+        text: "I prepare a script of points, not sentences. If the founder reads a text, it shows. In the interview they speak freely, and in the edit I build a two-minute story from their own words, which they review before anything goes live.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-historia-fundador-empresa/detalle.webp",
+        alt: "Three men with laptops watching a person beside a whiteboard",
+        width: 1920,
+        height: 1440,
+      },
+      { type: "heading", level: 2, text: "How long should it be and how do you reuse it?" },
+      {
+        type: "paragraph",
+        text: "The main version runs 120 to 180 seconds. I also cut three or four clips of 30 to 45 seconds in vertical format for LinkedIn and Instagram, each with a single idea: the problem, the decision, the first client and what comes next. Add subtitles, because most people watch without sound.",
+      },
+      { type: "heading", level: 2, text: "Common mistakes in a founder video" },
+      {
+        type: "list",
+        items: [
+          "Listing job titles and dates instead of a problem and a decision.",
+          "Reading a teleprompter script that was never rehearsed.",
+          "Filming against a blank white wall with no hint of the business.",
+          "Stretching it to five minutes with no new idea after minute three.",
+          "Talking about the company in the third person and in corporate language.",
+          "Not asking the founder for a final review before publishing.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "How much does a founder story video cost?",
+        answer:
+          "A two to three minute piece with half a day of shooting and several social clips usually runs between 800 and 1,800 euros. It goes up with several locations or more people on camera.",
+      },
+      {
+        type: "faq",
+        question: "What if the founder is uncomfortable on camera?",
+        answer:
+          "That is normal. I start with ten minutes of conversation off camera and then record the interview as a chat. In most cases the founder speaks naturally after about 15 minutes.",
+      },
+      {
+        type: "faq",
+        question: "How long does delivery take?",
+        answer:
+          "Five to seven working days after the shoot, with one round of revisions included. The social clips are delivered together with the main piece.",
+      },
+      {
+        type: "faq",
+        question: "Does it work for small companies?",
+        answer:
+          "Yes, and that is where it works best. In a company of a few people the founder is the brand, and a short, honest video builds trust before the first call.",
+      },
+      {
+        type: "paragraph",
+        text: "If you want to tell the story of your company on video, write to me from /contacto with a couple of lines about it. I will send you a shooting plan and a fixed quote. You can see my services at /servicios.",
+      },
+    ],
+  },
 }

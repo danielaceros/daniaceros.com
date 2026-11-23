@@ -1216,6 +1216,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto (fallback evergreen, temas de la lista agotados, tema nuevo; Search Console no usado, token invalid_grant). Imágenes Unsplash.",
   },
+  {
+    slug: "video-historia-fundador-empresa",
+    keyword: "vídeo de la historia del fundador de una empresa",
+    intent: "informacional",
+    createdAt: "2026-11-23",
+    status: "published",
+    notes: "Auto-generado por blog-auto (fallback evergreen, temas de la lista agotados, tema nuevo; Search Console no usado, token invalid_grant). Imágenes Unsplash.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {
