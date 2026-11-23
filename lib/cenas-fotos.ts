@@ -57,13 +57,13 @@ export const CENAS_AFTERMOVIES: ShowcaseItem[] = [
   },
 ]
 
-// Reel vertical del hero de las landings de cenas (720p + versión móvil de 480x854, con póster).
+// Reel vertical del hero de las landings de cenas (720p, 114 s, + versión móvil de 480x854, con póster).
 export const CENAS_HERO = {
-  src: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/cenas-gala-v-hero-web-unEqvxdzkAjfph7XMJUAj0GZvEy0Xq.mp4",
+  src: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/cenas-gala-v-hero2-web-PfDuArw0yu5OhSI1GNi2ttTB4LS3pY.mp4",
   srcMobile:
-    "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/cenas-gala-v-hero-mobile-86WasXOFLSocrhTF11fq46tnYBiWzX.mp4",
+    "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/cenas-gala-v-hero2-mobile-0Rrviv8RPXLY9nTzgjKogAuh6Cr9mS.mp4",
   poster:
-    "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/cenas-gala-v-hero-poster-bgJCkk81FCCDvGICuLKjD2pLAOi2AR.jpg",
+    "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/cenas-gala-v-hero2-poster-85RRNVRFP0Y3wN2dkIy9VX3iqQMtFh.jpg",
 }
 
 // Versión vertical (stories y reels) del aftermovie de referencia, para la propuesta.
