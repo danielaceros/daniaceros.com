@@ -3903,4 +3903,122 @@ export const enAuto: Record<string, BlogPostTranslation> = {
       },
     ],
   },
+  "video-corporativo-sector-hotelero": {
+    title: "Hotel promo video in Madrid: what to film and how to plan it",
+    description:
+      "How to plan a corporate video for a hotel: which spaces to film, when, how to work around guests and which cuts to deliver for the website and social media.",
+    readingTime: "5 min read",
+    category: "Guide",
+    tags: [
+      "hotel promo video",
+      "hotel videographer",
+      "hospitality video",
+      "videographer Madrid",
+      "website video",
+      "hotel marketing",
+    ],
+    keyword: "hotel promo video madrid",
+    excerpt:
+      "A hotel video is shot in one or two days, outside peak hours and with rooms prepared in advance. Here is how I plan it so it looks good and does not disturb guests.",
+    seoTitle: "Hotel Promo Video in Madrid: Planning Guide | Dani Acero",
+    metaDescription:
+      "Hotel promo video in Madrid: spaces to film, timing, guests and deliverables. A practical guide from a corporate filmmaker based in Madrid.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "A hotel promo video is usually shot in one or two days, with rooms and common areas prepared before the crew arrives and avoiding check-in and breakfast. It is delivered within a week as a 60 to 90 second main piece plus several cuts for social media.",
+      },
+      {
+        type: "paragraph",
+        text: "The hard part of filming in a hotel is not the picture, it is logistics: occupied rooms, staff at work and guests who do not want to be on camera. A plan by space and time slot solves most of it.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-hotelero/hero.webp",
+        alt: "Hotel lobby with a checkered floor and a bar in the background",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "What should a hotel promo video show?" },
+      {
+        type: "paragraph",
+        text: "People booking a room compare photos and videos from several hotels in the same evening. The video has to show what decides the booking: the room, the breakfast area or restaurant, a shared space and the surroundings. Everything else is filler.",
+      },
+      {
+        type: "paragraph",
+        text: "If the hotel handles events or groups, I add the meeting room and the main ballroom. For a business or conference hotel, one shot of a room set up is worth ten sentences on the website.",
+      },
+      { type: "heading", level: 2, text: "How to plan a hotel shoot in Madrid" },
+      { type: "heading", level: 3, text: "Timing: when to film each space" },
+      {
+        type: "paragraph",
+        text: "Common areas are filmed first thing, before breakfast, or mid-afternoon when there is less movement. Rooms between 11:00 and 14:00, once they are made and before new guests check in. I ask the hotel for a list of free rooms in advance.",
+      },
+      { type: "heading", level: 3, text: "Guests and staff: permissions and releases" },
+      {
+        type: "paragraph",
+        text: "I avoid framing recognisable guests. If a shot needs people, I use hotel staff or extras with a signed image release. I let reception know where and when I am filming and leave discreet signage in the area.",
+      },
+      { type: "heading", level: 3, text: "Gear: light and quiet" },
+      {
+        type: "paragraph",
+        text: "I work with a Sony A7 type camera, a gimbal for smooth movement and a couple of LED panels that support the natural light. I do not set up large lights in corridors or walkways. Everything fits in two cases and can be packed in minutes if the space is needed.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-hotelero/detalle.webp",
+        alt: "Bed with white linen and pillows in a hotel room",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "What do you get: cuts for website, booking sites and social" },
+      {
+        type: "paragraph",
+        text: "The main piece, 60 to 90 seconds, goes on the website homepage. Then I prepare 15 to 30 second cuts, vertical for Instagram and horizontal for booking platforms, plus a longer video per space if the hotel needs it. All with licensed music and optional subtitles.",
+      },
+      { type: "heading", level: 2, text: "Common mistakes in a hotel video" },
+      {
+        type: "list",
+        items: [
+          "Filming rooms that are not prepared: creased bedding, visible cables, misplaced curtains.",
+          "Overlapping with check-in or breakfast and having to reshoot.",
+          "Framing guests without an image release.",
+          "Making an endless tour instead of picking the five spaces that sell.",
+          "Using unlicensed music that ends up blocking the video on social media.",
+          "Not thinking about the vertical format from the shoot.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "How much does a hotel promo video cost in Madrid?",
+        answer:
+          "It depends on the size of the hotel and the number of pieces. A one-day shoot with a main video and social cuts usually runs between 1,200 and 2,500 euros. With two days, events or interviews, I quote by item.",
+      },
+      {
+        type: "faq",
+        question: "Does the hotel need to close to be filmed?",
+        answer:
+          "No. I film with the hotel open, choosing low-occupancy time slots for each area. Only a few specific rooms need to be blocked for a few hours.",
+      },
+      {
+        type: "faq",
+        question: "How long does delivery take?",
+        answer:
+          "Five to seven working days from the shoot, including one round of revisions. If the hotel needs the video for a specific date, I plan backwards from it.",
+      },
+      {
+        type: "faq",
+        question: "Can I use the video on booking platforms?",
+        answer:
+          "Yes, as long as it meets each platform's format and length. I prepare horizontal and vertical versions with music licensed for commercial use.",
+      },
+      {
+        type: "paragraph",
+        text: "If you run a hotel in Madrid or elsewhere in Spain and want a video that helps sell rooms, write to me from /contacto with the type of hotel and the dates. I will send you a shooting plan and a fixed quote. My services are at /servicios.",
+      },
+    ],
+  },
 }

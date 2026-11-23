@@ -18702,6 +18702,120 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-sector-hotelero",
+    title: "Vídeo corporativo para el sector hotelero: qué grabar y cómo planificarlo",
+    description:
+      "Cómo planificar un vídeo corporativo para un hotel: qué espacios grabar, cuándo, cómo trabajar con huéspedes presentes y qué piezas entregar para web y redes.",
+    publishedAt: "2026-11-23",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["vídeo corporativo hotel", "sector hotelero", "vídeo de hotel", "filmmaker corporativo Madrid", "vídeo para web", "hostelería"],
+    keyword: "vídeo corporativo para el sector hotelero",
+    intent: "informacional",
+    excerpt:
+      "Un vídeo de hotel se graba en una o dos jornadas, fuera de las horas punta y con las habitaciones preparadas de antemano. Así lo planifico para que se vea bien y no moleste a los huéspedes.",
+    seoTitle: "Vídeo corporativo para hoteles: guía práctica | Daniel Acero",
+    metaDescription:
+      "Vídeo corporativo para el sector hotelero: qué espacios grabar, horarios, huéspedes y entregables. Guía de un filmmaker corporativo en Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Un vídeo corporativo para un hotel se graba normalmente en una o dos jornadas, con las habitaciones y zonas comunes preparadas antes de que llegue el equipo y evitando las horas de check-in y desayuno. Se entrega en una semana con una pieza principal de 60 a 90 segundos y varios cortes para redes.",
+      },
+      {
+        type: "paragraph",
+        text: "El mayor problema de grabar en un hotel no es la imagen, es la logística: habitaciones ocupadas, personal trabajando y huéspedes que no quieren salir en cámara. Con un plan por espacios y horarios se resuelve casi todo.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-hotelero/hero.webp",
+        alt: "Vestíbulo de un hotel con suelo de damero y barra al fondo",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué debe mostrar un vídeo corporativo de hotel" },
+      {
+        type: "paragraph",
+        text: "Quien reserva compara fotos y vídeos de varios hoteles en la misma tarde. El vídeo tiene que enseñar lo que decide la reserva: la habitación, la zona de desayuno o restaurante, el espacio común y el entorno. Todo lo demás sobra.",
+      },
+      {
+        type: "paragraph",
+        text: "Si el hotel trabaja con eventos o grupos, añado la sala de reuniones y el salón principal. Para un hotel de empresa o de congresos, el plano de una sala montada vale más que diez frases en la web.",
+      },
+      { type: "heading", level: 2, text: "Cómo planificar la grabación en un hotel" },
+      { type: "heading", level: 3, text: "Horarios: cuándo grabar cada espacio" },
+      {
+        type: "paragraph",
+        text: "Las zonas comunes se graban a primera hora, antes del desayuno, o a media tarde, cuando hay menos movimiento. Las habitaciones, entre las 11:00 y las 14:00, cuando ya están hechas y aún no han entrado nuevos huéspedes. Pido al hotel una lista de habitaciones libres con antelación.",
+      },
+      { type: "heading", level: 3, text: "Huéspedes y personal: permisos y autorizaciones" },
+      {
+        type: "paragraph",
+        text: "Evito encuadrar a huéspedes reconocibles. Si el plano necesita gente, uso personal del hotel o figurantes con autorización firmada de imagen. Aviso a recepción de dónde y cuándo se graba, y dejo cartelería discreta en la zona.",
+      },
+      { type: "heading", level: 3, text: "Equipo: ligero y silencioso" },
+      {
+        type: "paragraph",
+        text: "Trabajo con una cámara tipo Sony A7, un gimbal para movimientos suaves y un par de paneles LED que apoyan la luz natural. No monto grandes focos en pasillos ni zonas de paso. Todo cabe en dos maletas y se recoge en minutos si hace falta ceder el espacio.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-sector-hotelero/detalle.webp",
+        alt: "Cama con ropa de cama blanca y almohadas en una habitación de hotel",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Qué entregar: piezas para web, reservas y redes" },
+      {
+        type: "paragraph",
+        text: "La pieza principal, de 60 a 90 segundos, va en la portada de la web. Después preparo cortes de 15 a 30 segundos en vertical para Instagram y en horizontal para plataformas de reserva, además de un vídeo más largo por espacio si el hotel lo necesita. Todo con música con licencia y subtítulos opcionales.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes en un vídeo de hotel" },
+      {
+        type: "list",
+        items: [
+          "Grabar habitaciones sin preparar: ropa de cama arrugada, cables a la vista, cortinas descolocadas.",
+          "Coincidir con el check-in o el desayuno y tener que repetir planos.",
+          "Encuadrar huéspedes sin autorización de imagen.",
+          "Hacer un recorrido interminable en lugar de elegir los cinco espacios que venden.",
+          "Usar música sin licencia que acaba bloqueando el vídeo en redes.",
+          "No pensar en el formato vertical desde el rodaje.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta un vídeo corporativo para un hotel?",
+        answer:
+          "Depende del tamaño del hotel y del número de piezas. Un rodaje de una jornada con un vídeo principal y cortes para redes suele moverse entre 1.200 y 2.500 euros. Si hay dos jornadas, eventos o entrevistas, lo presupuesto por partidas.",
+      },
+      {
+        type: "faq",
+        question: "¿Hay que cerrar el hotel para grabar?",
+        answer:
+          "No. Se graba con el hotel abierto, eligiendo horarios de poca ocupación en cada zona. Solo conviene bloquear algunas habitaciones concretas durante unas horas.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tarda la entrega?",
+        answer:
+          "Entre cinco y siete días laborables desde el rodaje, incluyendo una ronda de revisión. Si el hotel necesita el vídeo para una fecha concreta, lo planifico en sentido inverso.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo usar el vídeo en plataformas de reserva?",
+        answer:
+          "Sí, siempre que cumpla los formatos y duración de cada plataforma. Preparo versiones específicas en horizontal y vertical, con la música licenciada para uso comercial.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes un hotel en Madrid o en otra ciudad y quieres un vídeo que ayude a vender habitaciones, escríbeme desde /contacto con el tipo de hotel y las fechas. Te propongo un plan de rodaje y un presupuesto cerrado. Los servicios están en /servicios.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {
