@@ -4,13 +4,25 @@
 // bucle, con un botón para activar el audio. Es la versión web ligera del vídeo (720p, ~14 MB), no el original:
 // se reproduce en móvil de un expositor y no debe gastar CDN de más. `preload="metadata"` + póster: hasta que
 // arranca la reproducción no baja el vídeo entero.
-import { useRef, useState } from "react"
+import { useEffect, useRef, useState } from "react"
+import { preload } from "react-dom"
 
 type Props = { src: string; srcMobile?: string; poster: string; label?: string; className?: string }
 
 export default function LandingReel({ src, srcMobile, poster, label, className = "" }: Props) {
   const ref = useRef<HTMLVideoElement>(null)
   const [muted, setMuted] = useState(true)
+  // El póster es lo que pinta el LCP: se pide ya, con prioridad alta. El vídeo no compite con él: solo empieza a
+  // bajar cuando la página ya ha pintado, y no arranca solo si el visitante pidió menos movimiento o ahorro de datos.
+  preload(poster, { as: "image", fetchPriority: "high" })
+  const [play, setPlay] = useState(false)
+  useEffect(() => {
+    const conn = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection
+    if (conn?.saveData || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return
+    const start = () => setPlay(true)
+    const id = setTimeout(start, 500)
+    return () => clearTimeout(id)
+  }, [])
 
   function toggleSound() {
     const video = ref.current
@@ -27,15 +39,15 @@ export default function LandingReel({ src, srcMobile, poster, label, className =
       <video
         ref={ref}
         className="aspect-[9/16] w-full object-cover"
-        src={srcMobile ? undefined : src}
+        src={play && !srcMobile ? src : undefined}
         poster={poster}
-        autoPlay
+        autoPlay={play}
         muted
         loop
         playsInline
-        preload="metadata"
+        preload="none"
       >
-        {srcMobile ? (
+        {play && srcMobile ? (
           <>
             {/* En móvil, versión de 480x854 (~5 MB); el original (~15 MB) solo en pantallas anchas. */}
             <source src={srcMobile} media="(max-width: 640px)" type="video/mp4" />
