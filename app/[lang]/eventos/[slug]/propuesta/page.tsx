@@ -17,6 +17,7 @@ import LandingTracking from "@/components/landing/LandingTracking"
 import StickyReserveBar from "@/components/landing/StickyReserveBar"
 import ShowcaseTabs from "@/components/landing/ShowcaseTabs"
 import PhotoGallery from "@/components/landing/PhotoGallery"
+import AftermovieSlider from "@/components/landing/AftermovieSlider"
 import { CENAS_AFTERMOVIES, CENAS_HERO, CENAS_REELS, CENAS_VERTICAL } from "@/lib/cenas-fotos"
 import ShowcaseVideo from "@/components/landing/ShowcaseVideo"
 import ReferenceCards from "@/components/landing/ReferenceCards"
@@ -361,7 +362,7 @@ export default async function PropuestaPage({ params }: Props) {
               <p className={`${EYEBROW} text-center`}>Así queda</p>
               <h2 className={`${SECTION_TITLE} mt-3 text-center`}>El vídeo resumen de tu cena</h2>
               <div className="mt-8 sm:mt-10">
-                <ShowcaseTabs items={CENAS_AFTERMOVIES} />
+                <AftermovieSlider items={CENAS_AFTERMOVIES} />
               </div>
               <div className="mx-auto mt-10 max-w-[300px] sm:mt-12 sm:max-w-[320px]">
                 <ShowcaseVideo

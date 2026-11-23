@@ -14,7 +14,7 @@ import LandingCta from "@/components/landing/LandingCta"
 import WhatsappCta from "@/components/landing/WhatsappCta"
 import ReferenceCards from "@/components/landing/ReferenceCards"
 import PhotoGallery from "@/components/landing/PhotoGallery"
-import ShowcaseVideo from "@/components/landing/ShowcaseVideo"
+import AftermovieSlider from "@/components/landing/AftermovieSlider"
 import { CENAS_AFTERMOVIES, CENAS_HERO } from "@/lib/cenas-fotos"
 import ShowcaseTabs from "@/components/landing/ShowcaseTabs"
 import { AFTERMOVIES, REFERENCIAS } from "@/lib/ifema-referencias"
@@ -258,15 +258,10 @@ export default async function LandingPage({ params }: Props) {
           <div className="mx-auto mb-14 max-w-4xl sm:mb-20">
             <h2 className={`${SECTION_TITLE} text-center`}>El vídeo que se queda tu equipo</h2>
             <p className="mx-auto mt-3 max-w-xl text-center font-inter text-[15px] leading-[1.65] text-white/65">
-              Un resumen de la noche, para verlo en el móvil, en la tele o compartirlo con todos.
+              Tres ejemplos de resumen, de 13 a 65 segundos: para verlo en el móvil, en la tele o compartirlo con todos. Desliza para verlos.
             </p>
             <div className="mt-8 sm:mt-10">
-              <ShowcaseVideo
-                src={CENAS_AFTERMOVIES[0].src}
-                poster={CENAS_AFTERMOVIES[0].poster}
-                title="Aftermovie de una gala de empresa"
-              />
-              <p className="mt-3 text-center font-inter text-[13px] text-white/70">{CENAS_AFTERMOVIES[0].context}</p>
+              <AftermovieSlider items={CENAS_AFTERMOVIES} />
             </div>
           </div>
           <div className="mx-auto max-w-5xl">
