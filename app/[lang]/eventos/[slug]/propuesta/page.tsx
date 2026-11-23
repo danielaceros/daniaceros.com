@@ -16,6 +16,9 @@ import LandingReel from "@/components/landing/LandingReel"
 import LandingTracking from "@/components/landing/LandingTracking"
 import StickyReserveBar from "@/components/landing/StickyReserveBar"
 import ShowcaseTabs from "@/components/landing/ShowcaseTabs"
+import PhotoGallery from "@/components/landing/PhotoGallery"
+import { CENAS_AFTERMOVIES, CENAS_HERO, CENAS_REELS, CENAS_VERTICAL } from "@/lib/cenas-fotos"
+import ShowcaseVideo from "@/components/landing/ShowcaseVideo"
 import ReferenceCards from "@/components/landing/ReferenceCards"
 import { getProjects } from "@/data/projects"
 import { buildMetadata } from "@/lib/seo"
@@ -211,9 +214,13 @@ export default async function PropuestaPage({ params }: Props) {
             </div>
             {reel ? (
               <LandingReel
-                src={reel.video}
-                srcMobile="https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/ifema-tranjis-mobile.mp4"
-                poster={reel.poster}
+                src={cena ? CENAS_HERO.src : reel.video}
+                srcMobile={
+                  cena
+                    ? CENAS_HERO.srcMobile
+                    : "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/ifema-tranjis-mobile.mp4"
+                }
+                poster={cena ? CENAS_HERO.poster : reel.poster}
                 label={cena ? "Reel · evento corporativo" : "Reel · IFEMA Madrid"}
                 className="!max-w-[220px] sm:!max-w-[300px] lg:mx-0 lg:!max-w-[340px]"
               />
@@ -346,6 +353,55 @@ export default async function PropuestaPage({ params }: Props) {
             <WhatsappCta kind={kind} lpId={landing.id} position="valor" label="Reservar mi fecha por WhatsApp" className="mt-10 w-full sm:w-auto" />
           </div>
         </section>
+
+        {/* 4b. bis. Cenas de empresa: aftermovie y fotos reales de una gala, para ver qué te llevas. */}
+        {cena ? (
+          <section className="page-container pb-14 sm:pb-20">
+            <div className="mx-auto mb-14 max-w-4xl sm:mb-20">
+              <p className={`${EYEBROW} text-center`}>Así queda</p>
+              <h2 className={`${SECTION_TITLE} mt-3 text-center`}>El vídeo resumen de tu cena</h2>
+              <div className="mt-8 sm:mt-10">
+                <ShowcaseTabs items={CENAS_AFTERMOVIES} />
+              </div>
+              <div className="mx-auto mt-10 max-w-[300px] sm:mt-12 sm:max-w-[320px]">
+                <ShowcaseVideo
+                  vertical
+                  src={CENAS_VERTICAL.src}
+                  poster={CENAS_VERTICAL.poster}
+                  title="Aftermovie vertical de una gala de empresa"
+                />
+                <p className="mt-3 text-center font-inter text-[13px] text-white/70">{CENAS_VERTICAL.context}</p>
+              </div>
+              <div className="mt-14 sm:mt-20">
+                <h3 className="text-center font-display text-[22px] font-semibold uppercase leading-[1.1] sm:text-[28px]">
+                  ¿Quieres reels para tus redes?
+                </h3>
+                <p className="mx-auto mt-3 max-w-xl text-center font-inter text-[15px] leading-[1.65] text-white/65">
+                  Se añaden aparte, con el mismo material de la noche. Así quedan.
+                </p>
+                <ul className="mx-auto mt-8 grid max-w-3xl grid-cols-1 gap-6 sm:grid-cols-3 sm:gap-5">
+                  {CENAS_REELS.map((r) => (
+                    <li key={r.id} className="mx-auto w-full max-w-[260px] sm:max-w-none">
+                      <ShowcaseVideo vertical src={r.src} poster={r.poster} title={`Reel de ejemplo: ${r.context}`} />
+                      <p className="mt-2 text-center font-inter text-[12px] text-white/65">{r.context}</p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            <div className="mx-auto max-w-5xl">
+              <p className={`${EYEBROW} text-center`}>Así queda</p>
+              <h2 className={`${SECTION_TITLE} mt-3 text-center`}>Las fotos que se queda tu equipo</h2>
+              <p className="mx-auto mt-3 max-w-xl text-center font-inter text-[15px] leading-[1.65] text-white/65">
+                Fotos reales de una de mis últimas galas de empresa en Madrid. Tú recibes 100 así, editadas y listas
+                para compartir con todos.
+              </p>
+              <div className="mt-8 sm:mt-10">
+                <PhotoGallery />
+              </div>
+            </div>
+          </section>
+        ) : null}
 
         {/* 4b. Así queda: aftermovies reales de stands en IFEMA, un selector por cliente. */}
         {!cena ? (

@@ -13,6 +13,9 @@ import PortfolioMarquee from "@/components/PortfolioMarquee"
 import LandingCta from "@/components/landing/LandingCta"
 import WhatsappCta from "@/components/landing/WhatsappCta"
 import ReferenceCards from "@/components/landing/ReferenceCards"
+import PhotoGallery from "@/components/landing/PhotoGallery"
+import ShowcaseVideo from "@/components/landing/ShowcaseVideo"
+import { CENAS_AFTERMOVIES, CENAS_HERO } from "@/lib/cenas-fotos"
 import ShowcaseTabs from "@/components/landing/ShowcaseTabs"
 import { AFTERMOVIES, REFERENCIAS } from "@/lib/ifema-referencias"
 import LandingGreeting from "@/components/landing/LandingGreeting"
@@ -134,8 +137,9 @@ export default async function LandingPage({ params }: Props) {
                 </p>
               </div>
               <LandingReel
-                src={reel.video}
-                poster={reel.poster}
+                src={cena ? CENAS_HERO.src : reel.video}
+                srcMobile={cena ? CENAS_HERO.srcMobile : undefined}
+                poster={cena ? CENAS_HERO.poster : reel.poster}
                 label={cena ? "Reel · evento corporativo" : "Reel · IFEMA Madrid"}
                 className="lg:mx-0 lg:max-w-[340px]"
               />
@@ -247,6 +251,36 @@ export default async function LandingPage({ params }: Props) {
           )}
         </div>
       </section>
+
+      {/* 4. bis. Cenas de empresa: aftermovie y fotos reales de una gala, para que se vea el recuerdo que te llevas. */}
+      {cena ? (
+        <section className="page-container pb-12 sm:pb-16">
+          <div className="mx-auto mb-14 max-w-4xl sm:mb-20">
+            <h2 className={`${SECTION_TITLE} text-center`}>El vídeo que se queda tu equipo</h2>
+            <p className="mx-auto mt-3 max-w-xl text-center font-inter text-[15px] leading-[1.65] text-white/65">
+              Un resumen de la noche, para verlo en el móvil, en la tele o compartirlo con todos.
+            </p>
+            <div className="mt-8 sm:mt-10">
+              <ShowcaseVideo
+                src={CENAS_AFTERMOVIES[0].src}
+                poster={CENAS_AFTERMOVIES[0].poster}
+                title="Aftermovie de una gala de empresa"
+              />
+              <p className="mt-3 text-center font-inter text-[13px] text-white/70">{CENAS_AFTERMOVIES[0].context}</p>
+            </div>
+          </div>
+          <div className="mx-auto max-w-5xl">
+            <h2 className={`${SECTION_TITLE} text-center`}>Así se ve una noche bien recordada</h2>
+            <p className="mx-auto mt-3 max-w-xl text-center font-inter text-[15px] leading-[1.65] text-white/65">
+              Fotos reales de una de mis últimas galas de empresa en Madrid: las caras, los brindis y los momentos que
+              nadie ve venir.
+            </p>
+            <div className="mt-8 sm:mt-10">
+              <PhotoGallery />
+            </div>
+          </div>
+        </section>
+      ) : null}
 
       {/* 4a. Aftermovies destacados (solo landings con whatsappOnly); el resto del material va dentro de cada ficha. */}
       {landing.whatsappOnly && !cena ? (
