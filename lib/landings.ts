@@ -310,7 +310,7 @@ export const LANDINGS: Landing[] = [
     kind: "cena",
     metaTitle: "Vídeo y fotos para tu cena de empresa en Madrid | Dani Acero",
     title: "Tu cena de empresa de Navidad, que no se quede en cuatro fotos de móvil",
-    subtitle: "Grabo la noche entera: la llegada, los brindis, la entrega de premios y la fiesta. Te llevo fotos y un vídeo resumen para que el equipo guarde ese recuerdo.",
+    subtitle: "Grabo la noche entera: la llegada, los brindis, la entrega de premios y la fiesta. Te llevo fotos, un vídeo resumen y los 30 segundos de gloria de tu equipo, para que guarde ese recuerdo.",
     pains: [
       "Una vez al año está todo el equipo en la misma sala y, al día siguiente, solo quedan unas fotos sueltas de móvil.",
       "Quieres agradecer su lealtad a quienes han estado todo el año contigo, y que se note que lo valoras.",
@@ -320,7 +320,7 @@ export const LANDINGS: Landing[] = [
       "Más de 6 años como filmmaker corporativo en Madrid",
       "He grabado cenas y fiestas de empresa: agradecimientos, premios y mucha risa",
       "Grabo la noche entera, sin interrumpir ni pedir a nadie que posé",
-      "Fotos editadas y un vídeo resumen, horizontal y vertical, listos para compartir",
+      "Fotos editadas, un vídeo resumen y el reel de la plantilla (los 30 segundos de gloria), en horizontal y vertical",
     ],
     ctaLabel: "Quiero grabar mi cena de empresa",
     featuredProject: "camara-de-comercio",

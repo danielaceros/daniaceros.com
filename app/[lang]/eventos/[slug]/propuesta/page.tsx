@@ -49,7 +49,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ...buildMetadata({
       title,
       description: cena
-        ? "Pack para cenas de empresa: 3 horas de cobertura, 100 fotos editadas y vídeo resumen en horizontal y vertical."
+        ? "Pack para cenas de empresa: 3 horas de cobertura, 50 fotos editadas, vídeo resumen y los 30 segundos de gloria de tu equipo, en horizontal y vertical."
         : "Packs de grabación para expositores de IFEMA: aftermovie, fotos y material en bruto para meses.",
       path: `/eventos/${slug}/propuesta`,
       noIndex: true,
@@ -118,8 +118,9 @@ const PACKS_CENA = [
     price: "600",
     features: [
       "Hasta 3 horas de cobertura: entrega de premios, cena y fiesta",
-      "100 fotografías editadas de lo mejor de la noche",
+      "50 fotografías editadas de lo mejor de la noche",
       "Vídeo resumen editado, en horizontal y en vertical",
+      "Los 30 segundos de gloria: un mini plató donde cada uno cuenta lo que quiera, en un reel de la plantilla (horizontal y vertical)",
       "Foto y vídeo a la vez, sin interrumpir la cena ni pedir a nadie que posé",
     ],
     reco: true,
@@ -128,9 +129,23 @@ const PACKS_CENA = [
 
 const LLEVAS_CENA = [
   { big: "3h", label: "de cobertura", detail: "de la entrega de premios a la fiesta, sin perderte nada" },
-  { big: "100", label: "fotos editadas", detail: "el equipo, las mesas y cada premiado, con color cuidado" },
+  { big: "50", label: "fotos editadas", detail: "el equipo, las mesas y cada premiado, con color cuidado" },
   { big: "H+V", label: "vídeo resumen", detail: "horizontal para proyectar o enviar, vertical para redes" },
-  { big: "1", label: "recuerdo", detail: "de la noche en que el equipo estuvo junto, hecho para guardar" },
+  { big: "30s", label: "de gloria", detail: "cada empleado en su momento: el reel de la plantilla, en horizontal y vertical" },
+] as const
+
+const GLORIA_PASOS = [
+  { title: "Un rincón, un foco, una cámara", text: "Monto un mini plató sin sacar a nadie de la cena. Pasas cuando te apetece y vuelves a tu mesa." },
+  { title: "30 segundos cada uno", text: "Cuenta lo que quiera: una anécdota, lo mejor del año, un pique sano con un compañero. Yo llevo tarjetas con ideas." },
+  { title: "El reel de la plantilla", text: "Con las mejores frases de todos monto un reel rápido, en horizontal y en vertical, y cada uno se queda con su clip." },
+] as const
+
+const GLORIA_IDEAS = [
+  "La anécdota que nadie debería saber",
+  "Lo mejor de este año",
+  "Mi compañero o compañera más…",
+  "Un consejo para el yo de enero",
+  "Un pique sano con alguien del equipo",
 ] as const
 
 const POR_QUE_CENA = [
@@ -195,14 +210,14 @@ export default async function PropuestaPage({ params }: Props) {
               </h1>
               <p className="mt-4 max-w-2xl px-1 font-inter text-[14px] leading-[1.7] text-white/74 text-balance sm:text-[16px] lg:max-w-xl lg:px-0 lg:text-[17px]">
                 {cena
-                  ? "Quien ha estado contigo todo el año merece una noche que no se olvide. Grabo la entrega de premios, la cena y la fiesta, y te llevas las fotos y el vídeo para que se quede."
+                  ? "Quien ha estado contigo todo el año merece una noche que no se olvide. Grabo la entrega de premios, la cena y la fiesta, monto un mini plató donde cada uno tiene sus 30 segundos de gloria, y te llevas las fotos, el vídeo resumen y el reel de la plantilla."
                   : "Grabo tu stand, a tu equipo y a tus clientes en pista. Te llevas un aftermovie, fotos y material para publicar mucho después de la feria."}
               </p>
               <p className="mt-5 font-inter text-[15px] leading-[1.5] text-white/85">
                 {cena ? (
                   <>
                     <strong className="font-semibold text-white">Pack desde 600 € + IVA</strong> · precio cerrado · 3
-                    horas, 100 fotos y vídeo resumen
+                    horas, 50 fotos, vídeo resumen y 30 segundos de gloria
                   </>
                 ) : (
                   <>
@@ -283,7 +298,7 @@ export default async function PropuestaPage({ params }: Props) {
                   <p className="mt-5 rounded-xl border border-white/15 bg-white/[0.04] px-4 py-3 font-inter text-[14px] leading-[1.55] text-white/80">
                     <strong className="font-semibold text-white">Este es el pack base.</strong>{" "}
                     {cena
-                      ? "Si la cena es más larga o quieres reels para redes, se añade: dímelo y lo presupuestamos aparte."
+                      ? "Si quieres más entregables, más edición, más reels o algo especial, se añade aparte: dímelo y lo presupuestamos."
                       : "Si quieres más entregables o más cosas, se añaden: dímelo y lo ajustamos a lo que necesites."}
                   </p>
                   <WhatsappCta kind={kind} lpId={landing.id} position={`pack-${pack.id}`} label="Reservar mi fecha por WhatsApp" className="mt-8 w-full" />
@@ -308,7 +323,7 @@ export default async function PropuestaPage({ params }: Props) {
             </div>
             <p className="mx-auto mt-5 max-w-2xl text-center font-inter text-[14px] leading-[1.65] text-white/70">
               {cena
-                ? "Fotos y vídeo se entregan ya editados. Cualquier pieza adicional (reels, más horas) se presupuesta aparte."
+                ? "Fotos, vídeo resumen y reel de la plantilla se entregan ya editados. Todo lo demás (más entregables, más edición, más reels, más horas o algo especial) se presupuesta aparte."
                 : "El material en bruto se entrega sin editar, para que lo uses tú o tu equipo cuando quieras; la edición de piezas adicionales no está incluida."}
             </p>
           </div>
@@ -336,6 +351,39 @@ export default async function PropuestaPage({ params }: Props) {
             </ul>
           </div>
         </section>
+
+        {/* 3b. Cenas de empresa: los 30 segundos de gloria, el gancho diferencial del pack. */}
+        {cena ? (
+          <section className="page-container pb-14 sm:pb-20">
+            <div className="mx-auto max-w-5xl">
+              <p className={`${EYEBROW} text-center`}>La parte con más gracia</p>
+              <h2 className={`${SECTION_TITLE} mt-3 text-center`}>Los 30 segundos de gloria</h2>
+              <p className="mx-auto mt-4 max-w-2xl text-center font-inter text-[15px] leading-[1.7] text-white/74 sm:text-[16px]">
+                Un rincón de tu cena con un foco y una cámara. Quien quiera pasa y, en 30 segundos, dice lo que le
+                apetezca. Con todos monto el reel de la plantilla: lo que de verdad piensa tu equipo, y con gracia.
+              </p>
+              <ol className="mt-8 grid gap-3 sm:mt-10 sm:grid-cols-3 sm:gap-5">
+                {GLORIA_PASOS.map((paso, i) => (
+                  <li key={paso.title} className="flex flex-col rounded-2xl border border-white/12 bg-white/[0.03] p-5 sm:p-6">
+                    <span className="font-display text-[40px] font-semibold leading-none text-white/90">{i + 1}</span>
+                    <span className="mt-3 font-inter text-[13px] font-semibold uppercase tracking-[0.1em] text-white">{paso.title}</span>
+                    <span className="mt-2 font-inter text-[14px] leading-[1.6] text-white/70">{paso.text}</span>
+                  </li>
+                ))}
+              </ol>
+              <ul className="mt-6 flex flex-wrap justify-center gap-2 sm:mt-8" aria-label="Ideas para sus 30 segundos">
+                {GLORIA_IDEAS.map((idea) => (
+                  <li key={idea} className="rounded-full border border-white/20 px-4 py-2 font-inter text-[13px] text-white/80">
+                    {idea}
+                  </li>
+                ))}
+              </ul>
+              <p className="mx-auto mt-6 max-w-xl text-center font-inter text-[13px] leading-[1.6] text-white/60">
+                Es voluntario: participa quien quiere. Y la empresa revisa el reel antes de publicarlo.
+              </p>
+            </div>
+          </section>
+        ) : null}
 
         {/* 4. Por qué merece la pena: el valor, en cuatro frases claras. */}
         <section className="page-container pb-14 sm:pb-20">
@@ -386,7 +434,7 @@ export default async function PropuestaPage({ params }: Props) {
               <p className={`${EYEBROW} text-center`}>Así queda</p>
               <h2 className={`${SECTION_TITLE} mt-3 text-center`}>Las fotos que se queda tu equipo</h2>
               <p className="mx-auto mt-3 max-w-xl text-center font-inter text-[15px] leading-[1.65] text-white/65">
-                Fotos reales de una de mis últimas galas de empresa en Madrid. Tú recibes 100 así, editadas y listas
+                Fotos reales de una de mis últimas galas de empresa en Madrid. Tú recibes 50 así, editadas y listas
                 para compartir con todos.
               </p>
               <div className="mt-8 sm:mt-10">
