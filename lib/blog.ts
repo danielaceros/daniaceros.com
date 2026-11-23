@@ -18930,6 +18930,120 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-lanzamiento-mercado-espanol-empresa-extranjera",
+    title: "Vídeo para lanzar una empresa extranjera en el mercado español",
+    description:
+      "Cómo plantear el vídeo de entrada de una empresa extranjera en España: qué contar, cuántas versiones grabar, subtitulado, plazos y presupuesto orientativo.",
+    publishedAt: "2026-11-23",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["empresa extranjera en España", "vídeo de lanzamiento", "vídeo corporativo bilingüe", "filmmaker corporativo Madrid", "vídeo de presentación", "mercado español"],
+    keyword: "vídeo de lanzamiento de una empresa extranjera en el mercado español",
+    intent: "informacional",
+    excerpt:
+      "Una empresa que abre oficina en Madrid necesita un vídeo que explique quién es, qué hace aquí y con quién hablar. Así lo planteo: un rodaje, dos idiomas y piezas cortas para web y LinkedIn.",
+    seoTitle: "Vídeo de lanzamiento para empresa extranjera en España | Daniel Acero",
+    metaDescription:
+      "Vídeo de lanzamiento de una empresa extranjera en el mercado español: contenido, idiomas, subtítulos, plazos y presupuesto. Guía de un filmmaker en Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "El vídeo de lanzamiento de una empresa extranjera en España debe responder a tres preguntas en menos de dos minutos: quién eres, qué haces aquí y a quién puede llamar un cliente español. Se graba en una jornada en Madrid, en dos idiomas, y de ahí salen la pieza principal y varios cortes para web y LinkedIn.",
+      },
+      {
+        type: "paragraph",
+        text: "El error habitual es reutilizar el vídeo corporativo de la casa matriz con subtítulos. Funciona para explicar la marca, pero no responde a lo que pregunta un cliente español: quién me atiende, en qué idioma y desde dónde.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-lanzamiento-mercado-espanol-empresa-extranjera/hero.webp",
+        alt: "Personas caminando junto a un edificio al atardecer",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué la casa matriz no te sirve para entrar en España" },
+      {
+        type: "paragraph",
+        text: "Un vídeo global habla de cifras, de oficinas en otros países y de una cultura que el cliente español no conoce. Aquí se compra confianza local: una cara, una dirección y un equipo con nombre. Si el vídeo no los muestra, el cliente sigue sin saber con quién hablará.",
+      },
+      {
+        type: "paragraph",
+        text: "Por eso planteo una pieza propia para España. Puede aprovechar planos de la marca global, pero el peso lo lleva la gente que estará en Madrid.",
+      },
+      { type: "heading", level: 2, text: "Cómo plantear el vídeo de entrada en el mercado español" },
+      { type: "heading", level: 3, text: "Qué contar: tres mensajes y nada más" },
+      {
+        type: "paragraph",
+        text: "Cuento quién es la empresa en una frase, qué ofrece concretamente en España y quién lidera la oficina de Madrid. Si hay un cliente o un proyecto local que se pueda nombrar con permiso, lo incluyo. Dejo fuera la historia corporativa completa: tiene su sitio en la web global.",
+      },
+      { type: "heading", level: 3, text: "Idiomas: grabar en dos, no solo subtitular" },
+      {
+        type: "paragraph",
+        text: "Si el responsable en España habla español, lo grabo en español y en el idioma de la casa matriz con la misma entrevista traducida en dos tomas. Un subtítulo sirve para el corte de redes, pero la pieza principal gana mucho cuando el directivo habla directamente al cliente en su idioma. Entrego versiones separadas con subtítulos incrustados y archivos SRT.",
+      },
+      { type: "heading", level: 3, text: "Dónde grabar en Madrid" },
+      {
+        type: "paragraph",
+        text: "Prefiero la oficina real, aunque sea pequeña, o un coworking con buena luz natural si todavía no hay sede definitiva. Un plano exterior del edificio y un par de calles reconocibles ayudan a situar la empresa. Si grabo en un espacio compartido o en la calle, compruebo antes los permisos con el responsable del edificio.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-lanzamiento-mercado-espanol-empresa-extranjera/detalle.webp",
+        alt: "Persona sentada frente a una estantería junto a una cámara de cine",
+        width: 1920,
+        height: 1080,
+      },
+      { type: "heading", level: 2, text: "Qué piezas entregar y qué plazos manejar" },
+      {
+        type: "paragraph",
+        text: "Con una jornada de rodaje entrego una pieza principal de 90 a 120 segundos en horizontal, dos versiones de idioma y tres o cuatro cortes de 30 a 45 segundos en vertical. La entrega suele estar entre siete y diez días laborables tras el rodaje, con una ronda de revisión incluida. Si la fecha de apertura está fijada, planifico hacia atrás desde ahí.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes al lanzar una empresa extranjera en vídeo" },
+      {
+        type: "list",
+        items: [
+          "Reutilizar el vídeo global sin ninguna referencia a España.",
+          "Subtitular en lugar de grabar al directivo en el idioma del cliente.",
+          "No mostrar a la persona concreta que atenderá a los clientes españoles.",
+          "Contar la historia de la empresa durante un minuto antes de hablar de España.",
+          "Rodar sin avisar al edificio o al coworking y descubrir una restricción el mismo día.",
+          "Pedir la aprobación a la casa matriz al final, cuando ya no hay margen para cambios.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta un vídeo de lanzamiento bilingüe en Madrid?",
+        answer:
+          "Una jornada de rodaje con pieza principal, dos idiomas y cortes para redes suele estar entre 1.200 y 2.500 euros. Sube si hay varias localizaciones, más entrevistados o grabación de equipo en otro idioma adicional.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedes grabar con un directivo que no habla español?",
+        answer:
+          "Sí. Grabo la entrevista en su idioma, la subtitulo al español y valoro con el cliente si tiene sentido una segunda versión con un responsable local hablando en español. Lo decidimos en la preparación.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tarda desde el briefing hasta la entrega?",
+        answer:
+          "Entre dos y tres semanas en total: una para preparar guion y permisos, el día de rodaje y siete a diez días laborables de edición. Con una fecha de apertura cercana se puede acortar a costa de menos margen para revisiones.",
+      },
+      {
+        type: "faq",
+        question: "¿Dónde se usa este vídeo?",
+        answer:
+          "En la web española, en la nota de prensa de apertura, en LinkedIn de la empresa y de los directivos, y en las propuestas comerciales. Los cortes verticales sirven para campañas de captación en redes.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tu empresa abre oficina en Madrid y necesitas un vídeo de entrada, escríbeme desde /contacto con la fecha prevista y los idiomas que necesitas. Te propongo un plan de rodaje y un presupuesto cerrado. Puedes ver cómo trabajo en /servicios.",
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {

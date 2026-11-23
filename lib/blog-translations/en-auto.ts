@@ -4139,4 +4139,122 @@ export const enAuto: Record<string, BlogPostTranslation> = {
       },
     ],
   },
+  "video-lanzamiento-mercado-espanol-empresa-extranjera": {
+    title: "Launch video for a foreign company entering the Spanish market",
+    description:
+      "How to plan the entry video for a foreign company in Spain: what to say, how many language versions to shoot, subtitles, timelines and a ballpark budget.",
+    readingTime: "5 min read",
+    category: "Guide",
+    tags: [
+      "foreign company in Spain",
+      "launch video",
+      "bilingual corporate video",
+      "corporate filmmaker Madrid",
+      "company introduction video",
+      "Spanish market",
+    ],
+    keyword: "market entry video spain",
+    excerpt:
+      "A company opening an office in Madrid needs a video that says who it is, what it does here and who to call. Here is how I plan it: one shoot, two languages and short clips for web and LinkedIn.",
+    seoTitle: "Market Entry Video for Foreign Companies in Spain | Dani Acero",
+    metaDescription:
+      "Market entry video for a foreign company in Spain: content, languages, subtitles, timelines and budget. A practical guide from a filmmaker in Madrid.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "A launch video for a foreign company in Spain has to answer three questions in under two minutes: who you are, what you do here and who a Spanish client can call. I shoot it in one day in Madrid, in two languages, and it yields a main piece plus several clips for your website and LinkedIn.",
+      },
+      {
+        type: "paragraph",
+        text: "The usual mistake is reusing the headquarters corporate video with subtitles. It explains the brand, but it does not answer what a Spanish client asks: who will look after me, in which language and from where.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-lanzamiento-mercado-espanol-empresa-extranjera/hero.webp",
+        alt: "People walking past a building at sunset",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Why the headquarters video will not work for entering Spain" },
+      {
+        type: "paragraph",
+        text: "A global video talks about figures, offices in other countries and a culture the Spanish client does not know. Here, clients buy local trust: a face, an address and a named team. If the video does not show them, the client still does not know who they will deal with.",
+      },
+      {
+        type: "paragraph",
+        text: "That is why I plan a dedicated piece for Spain. It can reuse footage from the global brand, but the weight is carried by the people who will be in Madrid.",
+      },
+      { type: "heading", level: 2, text: "How do you plan a market entry video for Spain?" },
+      { type: "heading", level: 3, text: "What to say: three messages and nothing more" },
+      {
+        type: "paragraph",
+        text: "I cover who the company is in one sentence, what it concretely offers in Spain and who leads the Madrid office. If there is a local client or project that can be named with permission, I include it. I leave out the full corporate history: it belongs on the global website.",
+      },
+      { type: "heading", level: 3, text: "Languages: shoot in two, do not just subtitle" },
+      {
+        type: "paragraph",
+        text: "If the manager in Spain speaks Spanish, I record the interview in Spanish and again in the headquarters language in two takes. Subtitles work for the social clips, but the main piece is far stronger when the executive speaks directly to the client in their own language. I deliver separate versions with burned-in subtitles and SRT files.",
+      },
+      { type: "heading", level: 3, text: "Where to shoot in Madrid" },
+      {
+        type: "paragraph",
+        text: "I prefer the real office, even a small one, or a coworking space with good natural light if there is no final premises yet. An exterior shot of the building and a couple of recognisable streets help place the company. If I shoot in a shared space or on the street, I check permissions with the building manager beforehand.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-lanzamiento-mercado-espanol-empresa-extranjera/detalle.webp",
+        alt: "Person sitting in front of a bookshelf next to a cinema camera",
+        width: 1920,
+        height: 1080,
+      },
+      { type: "heading", level: 2, text: "What to deliver and what timelines to expect" },
+      {
+        type: "paragraph",
+        text: "With one shooting day I deliver a main piece of 90 to 120 seconds in landscape, two language versions and three or four clips of 30 to 45 seconds in vertical format. Delivery is usually seven to ten working days after the shoot, with one round of revisions included. If the opening date is fixed, I plan backwards from it.",
+      },
+      { type: "heading", level: 2, text: "Common mistakes when launching a foreign company on video" },
+      {
+        type: "list",
+        items: [
+          "Reusing the global video with no reference to Spain.",
+          "Subtitling instead of recording the executive in the client's language.",
+          "Not showing the specific person who will serve Spanish clients.",
+          "Spending a minute on company history before mentioning Spain.",
+          "Shooting without telling the building or coworking and finding a restriction on the day.",
+          "Asking headquarters for approval at the end, when there is no room left for changes.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "How much does a bilingual launch video cost in Madrid?",
+        answer:
+          "One shooting day with a main piece, two languages and social clips usually runs between 1,200 and 2,500 euros. It goes up with several locations, more people on camera or an extra language.",
+      },
+      {
+        type: "faq",
+        question: "Can you film with an executive who does not speak Spanish?",
+        answer:
+          "Yes. I record the interview in their language, subtitle it into Spanish and discuss with you whether a second version with a local manager speaking Spanish makes sense. We decide that during preparation.",
+      },
+      {
+        type: "faq",
+        question: "How long does it take from briefing to delivery?",
+        answer:
+          "Two to three weeks in total: one week for script and permissions, the shooting day and seven to ten working days of editing. With a close opening date it can be shortened, at the cost of less room for revisions.",
+      },
+      {
+        type: "faq",
+        question: "Where is this video used?",
+        answer:
+          "On the Spanish website, in the opening press release, on the LinkedIn pages of the company and its executives, and in sales proposals. The vertical clips work for recruitment and lead campaigns on social media.",
+      },
+      {
+        type: "paragraph",
+        text: "If your company is opening an office in Madrid and needs an entry video, write to me from /contacto with the planned date and the languages you need. I will send you a shooting plan and a fixed quote. You can see how I work at /servicios.",
+      },
+    ],
+  },
 }
