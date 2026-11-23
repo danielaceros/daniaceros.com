@@ -139,7 +139,7 @@ export default function AftermovieSlider({ items }: { items: ShowcaseItem[] }) {
             aria-selected={i === active}
             aria-label={`Ir al aftermovie ${i + 1}: ${item.label}`}
             onClick={() => goTo(i)}
-            className="flex h-6 w-6 items-center justify-center focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+            className="flex h-8 w-8 items-center justify-center focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
           >
             <span className={`block h-1.5 rounded-full transition-all duration-300 ${i === active ? "w-6 bg-white" : "w-1.5 bg-white/35"}`} />
           </button>
