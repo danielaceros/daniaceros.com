@@ -113,7 +113,7 @@ export default function Header({ lang, notFound = false }: HeaderProps) {
   const isLandingPage = pathname.startsWith("/eventos/")
   const isFunnelPage = isHablemosPage || isLandingPage
   // Sublanding de propuesta (/eventos/<slug>/propuesta) y landing del outreach de IFEMA: su único CTA es WhatsApp.
-  const isProposalPage = isLandingPage && (pathname.endsWith("/propuesta") || pathname === "/eventos/ifema")
+  const isProposalPage = isLandingPage && (pathname.endsWith("/propuesta") || pathname === "/eventos/ifema" || pathname === "/eventos/cenas-de-empresa")
   const [hidden, setHidden] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const lastScrollYRef = useRef(0)
@@ -214,7 +214,11 @@ export default function Header({ lang, notFound = false }: HeaderProps) {
               </Link>
               {isProposalPage ? (
                 <a
-                  href={whatsappUrl("Hola Dani, he visto tu página de grabación de stands en IFEMA y me gustaría hablar de mi stand.")}
+                  href={whatsappUrl(
+                    pathname.startsWith("/eventos/cenas-de-empresa")
+                      ? "Hola Dani, he visto tu página de grabación de cenas de empresa y me gustaría hablar de la nuestra."
+                      : "Hola Dani, he visto tu página de grabación de stands en IFEMA y me gustaría hablar de mi stand.",
+                  )}
                   target="_blank"
                   rel="noopener"
                   onClick={() => trackEvent("lp_cta_click", { position: "header" })}

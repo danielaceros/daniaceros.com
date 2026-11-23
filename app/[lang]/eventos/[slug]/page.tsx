@@ -13,6 +13,9 @@ import PortfolioMarquee from "@/components/PortfolioMarquee"
 import LandingCta from "@/components/landing/LandingCta"
 import WhatsappCta from "@/components/landing/WhatsappCta"
 import ReferenceCards from "@/components/landing/ReferenceCards"
+import PhotoGallery from "@/components/landing/PhotoGallery"
+import ShowcaseVideo from "@/components/landing/ShowcaseVideo"
+import { CENAS_AFTERMOVIES, CENAS_HERO } from "@/lib/cenas-fotos"
 import ShowcaseTabs from "@/components/landing/ShowcaseTabs"
 import { AFTERMOVIES, REFERENCIAS } from "@/lib/ifema-referencias"
 import LandingGreeting from "@/components/landing/LandingGreeting"
@@ -84,6 +87,7 @@ export default async function LandingPage({ params }: Props) {
   // "{logo}" en el titular se sustituye por el logo de IFEMA (blanco, apilado); para medir longitud cuenta como texto.
   const titleParts = landing.title.split("{logo}")
   const titleText = plain(landing.title).replace("{logo}", "IFEMA")
+  const cena = landing.kind === "cena"
 
   // Titular compartido por los dos layouts. Tráfico de Instagram/Facebook en móvil: con ganchos largos (>70
   // caracteres) baja un punto para que el vídeo siga asomando en la primera pantalla.
@@ -133,9 +137,10 @@ export default async function LandingPage({ params }: Props) {
                 </p>
               </div>
               <LandingReel
-                src={reel.video}
-                poster={reel.poster}
-                label="Reel · IFEMA Madrid"
+                src={cena ? CENAS_HERO.src : reel.video}
+                srcMobile={cena ? CENAS_HERO.srcMobile : undefined}
+                poster={cena ? CENAS_HERO.poster : reel.poster}
+                label={cena ? "Reel · evento corporativo" : "Reel · IFEMA Madrid"}
                 className="lg:mx-0 lg:max-w-[340px]"
               />
             </div>
@@ -152,7 +157,7 @@ export default async function LandingPage({ params }: Props) {
               </div>
             ) : null}
             {landing.whatsappOnly ? (
-              <WhatsappCta lpId={landing.id} position="hero" intent="pagina" label={landing.ctaLabel} className="mt-7 sm:mt-9" />
+              <WhatsappCta kind={landing.kind} lpId={landing.id} position="hero" intent="pagina" label={landing.ctaLabel} className="mt-7 sm:mt-9" />
             ) : (
               <LandingCta lpId={landing.id} position="hero" label={landing.ctaLabel} className="mt-7 sm:mt-9" />
             )}
@@ -197,7 +202,7 @@ export default async function LandingPage({ params }: Props) {
               La tira mide lo mismo que el reproductor (VSL_INLINE_MAX_WIDTH, compartida con VslSection). */}
           <ClientLogosTicker className="mt-8 sm:mt-10" />
           {landing.whatsappOnly ? (
-              <WhatsappCta lpId={landing.id} position="hero" intent="pagina" label={landing.ctaLabel} className="mt-7 sm:mt-9" />
+              <WhatsappCta kind={landing.kind} lpId={landing.id} position="hero" intent="pagina" label={landing.ctaLabel} className="mt-7 sm:mt-9" />
             ) : (
               <LandingCta lpId={landing.id} position="hero" label={landing.ctaLabel} className="mt-7 sm:mt-9" />
             )}
@@ -208,7 +213,7 @@ export default async function LandingPage({ params }: Props) {
       {/* 3. Expertise, con lo que menciona ese reel */}
       <section className="page-container pb-12 sm:pb-16">
         <div className="mx-auto max-w-3xl">
-          <h2 className={SECTION_TITLE}>Quién graba tu evento</h2>
+          <h2 className={SECTION_TITLE}>{cena ? "Quién graba tu cena" : "Quién graba tu evento"}</h2>
           <ul className="mt-6 border-t border-white/10">
             {landing.expertise.map((line) => (
               <li
@@ -240,15 +245,45 @@ export default async function LandingPage({ params }: Props) {
             ))}
           </ul>
           {landing.whatsappOnly ? (
-            <WhatsappCta lpId={landing.id} position="pains" intent="pagina" label={landing.ctaLabel} className="mt-8 w-full sm:w-auto" />
+            <WhatsappCta kind={landing.kind} lpId={landing.id} position="pains" intent="pagina" label={landing.ctaLabel} className="mt-8 w-full sm:w-auto" />
           ) : (
             <LandingCta lpId={landing.id} position="pains" label={landing.ctaLabel} className="mt-8 w-full sm:w-auto" />
           )}
         </div>
       </section>
 
+      {/* 4. bis. Cenas de empresa: aftermovie y fotos reales de una gala, para que se vea el recuerdo que te llevas. */}
+      {cena ? (
+        <section className="page-container pb-12 sm:pb-16">
+          <div className="mx-auto mb-14 max-w-4xl sm:mb-20">
+            <h2 className={`${SECTION_TITLE} text-center`}>El vídeo que se queda tu equipo</h2>
+            <p className="mx-auto mt-3 max-w-xl text-center font-inter text-[15px] leading-[1.65] text-white/65">
+              Un resumen de la noche, para verlo en el móvil, en la tele o compartirlo con todos.
+            </p>
+            <div className="mt-8 sm:mt-10">
+              <ShowcaseVideo
+                src={CENAS_AFTERMOVIES[0].src}
+                poster={CENAS_AFTERMOVIES[0].poster}
+                title="Aftermovie de una gala de empresa"
+              />
+              <p className="mt-3 text-center font-inter text-[13px] text-white/70">{CENAS_AFTERMOVIES[0].context}</p>
+            </div>
+          </div>
+          <div className="mx-auto max-w-5xl">
+            <h2 className={`${SECTION_TITLE} text-center`}>Así se ve una noche bien recordada</h2>
+            <p className="mx-auto mt-3 max-w-xl text-center font-inter text-[15px] leading-[1.65] text-white/65">
+              Fotos reales de una de mis últimas galas de empresa en Madrid: las caras, los brindis y los momentos que
+              nadie ve venir.
+            </p>
+            <div className="mt-8 sm:mt-10">
+              <PhotoGallery />
+            </div>
+          </div>
+        </section>
+      ) : null}
+
       {/* 4a. Aftermovies destacados (solo landings con whatsappOnly); el resto del material va dentro de cada ficha. */}
-      {landing.whatsappOnly ? (
+      {landing.whatsappOnly && !cena ? (
         <>
           <section className="page-container pb-12 sm:pb-16">
             <div className="mx-auto max-w-4xl">
@@ -262,7 +297,7 @@ export default async function LandingPage({ params }: Props) {
       ) : null}
 
       {/* 4b. Últimas grabaciones en IFEMA (solo landings con whatsappOnly): breve y visual, con modal por proyecto. */}
-      {landing.whatsappOnly && REFERENCIAS.length > 0 ? (
+      {landing.whatsappOnly && !cena && REFERENCIAS.length > 0 ? (
         <section className="page-container pb-12 sm:pb-16">
           <div className="mx-auto max-w-5xl">
             <h2 className={`${SECTION_TITLE} text-center`}>Mis últimas grabaciones en IFEMA</h2>
@@ -304,13 +339,14 @@ export default async function LandingPage({ params }: Props) {
         <section id="contacto" className="page-container scroll-mt-6 pb-10 pt-6 sm:pb-14">
           <div className="mx-auto max-w-3xl rounded-3xl border border-white/20 bg-white/[0.05] px-6 py-10 text-center sm:px-12 sm:py-14">
             <h2 className={SECTION_TITLE}>
-              <Rich text="Hablemos de {empresa|tu stand|b}" />
+              <Rich text={cena ? "Hablemos de la cena de {empresa|tu empresa|b}" : "Hablemos de {empresa|tu stand|b}"} />
             </h2>
             <p className="mx-auto mt-4 max-w-xl font-inter text-[15px] leading-[1.7] text-white/78 sm:text-[16px]">
-              Escríbeme por WhatsApp, cuéntame qué feria y qué día, y lo vemos ahí mismo. El mensaje ya va escrito: solo
-              tienes que enviarlo.
+              {cena
+                ? "Escríbeme por WhatsApp, cuéntame qué día es la cena y cuántos sois, y lo vemos ahí mismo. El mensaje ya va escrito: solo tienes que enviarlo."
+                : "Escríbeme por WhatsApp, cuéntame qué feria y qué día, y lo vemos ahí mismo. El mensaje ya va escrito: solo tienes que enviarlo."}
             </p>
-            <WhatsappCta lpId={landing.id} position="cierre" intent="pagina" label={landing.ctaLabel} className="mt-8 w-full sm:w-auto" />
+            <WhatsappCta kind={landing.kind} lpId={landing.id} position="cierre" intent="pagina" label={landing.ctaLabel} className="mt-8 w-full sm:w-auto" />
           </div>
         </section>
       ) : (
