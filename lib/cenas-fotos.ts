@@ -4,28 +4,30 @@
 // Archivos optimizados (≤1100 px, JPG) en /public/eventos/cenas. Solo material editado y de calidad.
 import type { ShowcaseItem } from "@/components/landing/ShowcaseTabs"
 
-export type CenaFoto = { src: string; width: number; height: number; alt: string }
+export type CenaFoto = { src: string; width: number; height: number; alt: string; caption: string }
 
-const f = (n: number, width: number, height: number, alt: string): CenaFoto => ({
+const f = (n: number, width: number, height: number, alt: string, caption: string): CenaFoto => ({
   src: `/eventos/cenas/gala-${String(n).padStart(2, "0")}.jpg`,
   width,
   height,
   alt,
+  caption,
 })
 
+// `alt` describe la imagen (accesibilidad); `caption` es el pie que se ve al ampliarla.
 export const CENAS_FOTOS: CenaFoto[] = [
-  f(1, 880, 1100, "Sala de gala con los invitados a las mesas, bajo una lámpara de araña"),
-  f(2, 880, 1100, "Pareja brindando con copas de champán"),
-  f(3, 880, 1100, "Invitadas sonriendo a la mesa durante la cena"),
-  f(4, 880, 1100, "Invitada sonriendo con un anillo en la mano"),
-  f(5, 1100, 1100, "Pareja llegando de la mano a la gala"),
-  f(6, 880, 1100, "Dos invitadas sonrientes sentadas a la mesa"),
-  f(7, 1100, 1100, "Pareja de invitados llegando a la gala"),
-  f(8, 880, 1100, "Invitada sonriendo sentada en el salón"),
-  f(9, 880, 1100, "Invitados aplaudiendo durante la cena"),
-  f(10, 880, 1100, "Invitados conversando en la recepción"),
-  f(11, 1100, 1100, "Pareja de invitados caminando hacia la gala"),
-  f(12, 1100, 1100, "Invitado con esmoquin llegando a la gala"),
+  f(1, 1080, 1350, "Sala de gala con los invitados a las mesas, bajo una lámpara de araña", "El salón, lleno: la cena en su mejor momento."),
+  f(2, 1080, 1350, "Pareja brindando con copas de champán", "Un brindis que nadie planeó y que se queda en la foto."),
+  f(3, 1080, 1350, "Invitadas sonriendo a la mesa durante la cena", "Las mesas, entre risas y confidencias."),
+  f(4, 1080, 1350, "Invitada sonriendo con un anillo en la mano", "Los detalles de la noche: una sonrisa y un momento propio."),
+  f(5, 1600, 1600, "Pareja llegando de la mano a la gala", "La llegada, de la mano: así empieza la noche."),
+  f(6, 1080, 1350, "Dos invitadas sonrientes sentadas a la mesa", "Compañeras de mesa, sin posar y sin darse cuenta de la cámara."),
+  f(7, 1600, 1600, "Pareja de invitados llegando a la gala", "Vestidos para la ocasión, a las puertas de la gala."),
+  f(8, 1080, 1350, "Invitada sonriendo sentada en el salón", "Sin posar: la sonrisa de quien se lo está pasando bien."),
+  f(9, 1080, 1350, "Invitados aplaudiendo durante la cena", "Aplausos en la mesa: el equipo celebrando a los suyos."),
+  f(10, 1080, 1350, "Invitados conversando en la recepción", "La conversación de antes de sentarse a cenar."),
+  f(11, 1600, 1600, "Pareja de invitados caminando hacia la gala", "Cada llegada cuenta su propia historia."),
+  f(12, 1600, 1600, "Invitado con esmoquin llegando a la gala", "Llegando con ganas de fiesta."),
 ]
 
 // Aftermovies de referencia de una gala de empresa (versión web 720p en Vercel Blob, con póster).
@@ -46,15 +48,22 @@ export const CENAS_AFTERMOVIES: ShowcaseItem[] = [
     src: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/cenas-gala-b-web-FNngvTnlB8eykHDRN2lzI2km0fXltM.mp4",
     poster: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/cenas-gala-b-poster-CgK9VEqQboLuS1pxK9eyyW2E8ME5aG.jpg",
   },
+  {
+    id: "gala-teaser",
+    label: "Teaser",
+    context: "Teaser de una gala de empresa en Madrid · 13 s",
+    src: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/cenas-gala-c-web-MkptNM1DAaWPjURGXcJmIbGSBIziUs.mp4",
+    poster: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/cenas-gala-c-poster-cIiCCsxAoPzbTxaxzYl2vEM4CapBQJ.jpg",
+  },
 ]
 
-// Reel vertical del hero de las landings de cenas (720p + versión móvil de 480x854, con póster).
+// Reel vertical del hero de las landings de cenas (720p, 114 s, + versión móvil de 480x854, con póster).
 export const CENAS_HERO = {
-  src: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/cenas-gala-v-hero-web-unEqvxdzkAjfph7XMJUAj0GZvEy0Xq.mp4",
+  src: "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/cenas-gala-v-hero2-web-PfDuArw0yu5OhSI1GNi2ttTB4LS3pY.mp4",
   srcMobile:
-    "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/cenas-gala-v-hero-mobile-86WasXOFLSocrhTF11fq46tnYBiWzX.mp4",
+    "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/cenas-gala-v-hero2-mobile-0Rrviv8RPXLY9nTzgjKogAuh6Cr9mS.mp4",
   poster:
-    "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/cenas-gala-v-hero-poster-bgJCkk81FCCDvGICuLKjD2pLAOi2AR.jpg",
+    "https://kgtz1gujr7extokb.public.blob.vercel-storage.com/portfolio/cenas-gala-v-hero2-poster-85RRNVRFP0Y3wN2dkIy9VX3iqQMtFh.jpg",
 }
 
 // Versión vertical (stories y reels) del aftermovie de referencia, para la propuesta.

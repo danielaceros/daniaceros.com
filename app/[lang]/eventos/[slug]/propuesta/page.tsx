@@ -17,8 +17,9 @@ import LandingTracking from "@/components/landing/LandingTracking"
 import StickyReserveBar from "@/components/landing/StickyReserveBar"
 import ShowcaseTabs from "@/components/landing/ShowcaseTabs"
 import PhotoGallery from "@/components/landing/PhotoGallery"
+import AftermovieSlider from "@/components/landing/AftermovieSlider"
 import { CENAS_AFTERMOVIES, CENAS_HERO, CENAS_REELS, CENAS_VERTICAL } from "@/lib/cenas-fotos"
-import ShowcaseVideo from "@/components/landing/ShowcaseVideo"
+import ExpandableVideos from "@/components/landing/ExpandableVideos"
 import ReferenceCards from "@/components/landing/ReferenceCards"
 import { getProjects } from "@/data/projects"
 import { buildMetadata } from "@/lib/seo"
@@ -361,16 +362,12 @@ export default async function PropuestaPage({ params }: Props) {
               <p className={`${EYEBROW} text-center`}>Así queda</p>
               <h2 className={`${SECTION_TITLE} mt-3 text-center`}>El vídeo resumen de tu cena</h2>
               <div className="mt-8 sm:mt-10">
-                <ShowcaseTabs items={CENAS_AFTERMOVIES} />
+                <AftermovieSlider items={CENAS_AFTERMOVIES} />
               </div>
               <div className="mx-auto mt-10 max-w-[300px] sm:mt-12 sm:max-w-[320px]">
-                <ShowcaseVideo
-                  vertical
-                  src={CENAS_VERTICAL.src}
-                  poster={CENAS_VERTICAL.poster}
-                  title="Aftermovie vertical de una gala de empresa"
+                <ExpandableVideos
+                  items={[{ id: "vertical-largo", src: CENAS_VERTICAL.src, poster: CENAS_VERTICAL.poster, context: CENAS_VERTICAL.context }]}
                 />
-                <p className="mt-3 text-center font-inter text-[13px] text-white/70">{CENAS_VERTICAL.context}</p>
               </div>
               <div className="mt-14 sm:mt-20">
                 <h3 className="text-center font-display text-[22px] font-semibold uppercase leading-[1.1] sm:text-[28px]">
@@ -379,14 +376,10 @@ export default async function PropuestaPage({ params }: Props) {
                 <p className="mx-auto mt-3 max-w-xl text-center font-inter text-[15px] leading-[1.65] text-white/65">
                   Se añaden aparte, con el mismo material de la noche. Así quedan.
                 </p>
-                <ul className="mx-auto mt-8 grid max-w-3xl grid-cols-1 gap-6 sm:grid-cols-3 sm:gap-5">
-                  {CENAS_REELS.map((r) => (
-                    <li key={r.id} className="mx-auto w-full max-w-[260px] sm:max-w-none">
-                      <ShowcaseVideo vertical src={r.src} poster={r.poster} title={`Reel de ejemplo: ${r.context}`} />
-                      <p className="mt-2 text-center font-inter text-[12px] text-white/65">{r.context}</p>
-                    </li>
-                  ))}
-                </ul>
+                <ExpandableVideos
+                  items={CENAS_REELS}
+                  className="mx-auto mt-8 grid max-w-3xl grid-cols-1 gap-6 sm:grid-cols-3 sm:gap-5 [&>li]:max-w-[260px] sm:[&>li]:max-w-none"
+                />
               </div>
             </div>
             <div className="mx-auto max-w-5xl">
