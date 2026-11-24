@@ -18,7 +18,8 @@ export default function PageTransition({ children }: { children: React.ReactNode
   const isFlushTopRoute = flushTopRoutes.has(path)
   // Landings de anuncios (/eventos/...): sin fundido de página. data-lux deja todo a opacidad 0 al hidratar
   // (html.js-motion) y lo recupera con 760 ms de transición: en móvil retrasaba el LCP (póster del VSL) ~2 s.
-  const skipReveal = path.startsWith("/eventos/")
+  // /editores: pantalla fija a viewport completo (position:fixed): un ancestro con translate/opacity de data-lux la rompería.
+  const skipReveal = path.startsWith("/eventos/") || path === "/editores"
 
   return (
     <div data-lux={skipReveal ? undefined : ""} className="relative">
