@@ -125,10 +125,15 @@ export async function POST(request: Request) {
 
   // Fila en la Google Sheet (en directo, sin depender de ningún ordenador). Best-effort: el registro ya está a salvo.
   try {
+    // Orden de columnas de la hoja (el formato y las vistas filtradas dependen de él: ver ~/Projects/editores-latam/sheets/format_sheet.py).
+    // Fecha como número de serie en hora de Madrid: la hoja la muestra y ordena como fecha real.
+    const madrid = new Date(createdAt).toLocaleString("sv-SE", { timeZone: "Europe/Madrid" }).replace(" ", "T")
+    const serial = Date.parse(`${madrid}Z`) / 86_400_000 + 25569
     await appendEditorRow([
-      id, createdAt, nombre, pais, whatsapp, record.instagram ? `@${record.instagram}` : "",
-      portfolio[0] ?? "", portfolio[1] ?? "", portfolio[2] ?? "", software.join(", "), experiencia, disponibilidad, plazoEntrega,
-      record.precioVerticalUsd, record.precioHorizontalUsd, record.utm.source, record.utm.campaign, record.utm.content, "Nuevo", "",
+      "Nuevo", serial, nombre, pais, whatsapp, record.instagram ? `@${record.instagram}` : "",
+      record.precioVerticalUsd, record.precioHorizontalUsd, plazoEntrega, experiencia, disponibilidad, software.join(", "),
+      portfolio[0] ?? "", portfolio[1] ?? "", portfolio[2] ?? "",
+      "", "", "", record.utm.campaign, record.utm.content, id,
     ])
   } catch (e) {
     console.error("[editores] sheet", e)
