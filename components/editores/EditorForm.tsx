@@ -312,7 +312,7 @@ export default function EditorForm() {
       case "instagram":
         return <>{q("¿Tienes Instagram profesional?", "Opcional, pero ayuda a ver tu trabajo.")}<input ref={inputRef} {...aria(true)} className={field} value={d.instagram} onChange={(e) => set("instagram", e.target.value.slice(0, 100))} placeholder="@tuusuario" autoCapitalize="none" autoCorrect="off" spellCheck={false} autoComplete="off" enterKeyHint="next" /></>
       case "portfolio":
-        return <>{q("Muéstrame tu mejor trabajo", "Enlaces a YouTube, Vimeo, Drive o Instagram. Si puedes, uno vertical y uno horizontal.")}
+        return <>{q("Muéstrame tu mejor trabajo", "Enlaces a YouTube, Vimeo, Drive o Instagram. Si puedes, uno vertical y uno horizontal. Si usas Drive, ponlo en «Cualquier persona con el enlace»: si no puedo abrirlo, no puedo verlo.")}
           <div>
             {d.portfolio.map((v, k) => (
               <input key={k} ref={k === 0 ? inputRef : undefined} {...aria(true)} aria-label={`Enlace ${k + 1}${k ? " (opcional)" : ""}`} aria-labelledby={undefined} className={`${field} !py-2 !text-lg sm:!text-xl`} value={v} placeholder={k === 0 ? "https://…" : "Otro enlace (opcional)"} inputMode="url" autoCapitalize="none" autoCorrect="off" spellCheck={false} autoComplete="off" enterKeyHint={k === d.portfolio.length - 1 ? "next" : "next"}
