@@ -19044,6 +19044,117 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-tutorial-clientes-postventa",
+    title: "Vídeo tutorial para clientes: cómo grabar soporte y postventa que se use",
+    description:
+      "Cómo grabar vídeos tutorial para clientes: guion, pantalla, voz, duración y entrega para reducir consultas de soporte y mejorar la postventa.",
+    publishedAt: "2026-11-24",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["vídeo tutorial", "postventa", "soporte al cliente", "vídeo corporativo", "formación de clientes", "filmmaker Madrid"],
+    keyword: "vídeo tutorial para clientes",
+    intent: "informacional",
+    excerpt:
+      "Un vídeo tutorial para clientes funciona si resuelve una sola tarea en menos de tres minutos. Te cuento cómo lo preparo, lo grabo y lo entrego para que reduzca consultas de soporte.",
+    seoTitle: "Vídeo tutorial para clientes: guía de grabación | Daniel Acero",
+    metaDescription:
+      "Vídeo tutorial para clientes: guion, grabación de pantalla y voz, duración y entrega para reducir consultas de soporte y mejorar la postventa.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Un vídeo tutorial para clientes funciona cuando resuelve una sola tarea, dura entre uno y tres minutos y se puede ver sin sonido gracias a los subtítulos. Si cada vídeo intenta explicar todo el producto, nadie lo termina y las consultas de soporte siguen igual."
+      },
+      {
+        type: "paragraph",
+        text: "En una jornada de rodaje en Madrid grabo entre seis y diez tutoriales cortos con el mismo estilo visual. Lo importante no es la cámara, es el guion: una pregunta real del cliente, una respuesta paso a paso y un cierre claro."
+      },
+      {
+        type: "image",
+        src: "/blog/video-tutorial-clientes-postventa/hero.webp",
+        alt: "Portátil sobre una mesa de trabajo con una pantalla de software abierta para grabar un tutorial",
+        width: 1920,
+        height: 1281,
+        caption: "Un tutorial útil empieza por la pregunta que más repite el cliente.",
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué un vídeo tutorial reduce consultas de soporte" },
+      {
+        type: "paragraph",
+        text: "La mayoría de consultas de postventa se repiten: cómo activar algo, dónde descargar una factura, cómo configurar un equipo. Un vídeo corto que responde a una de esas preguntas se envía por email o se enlaza desde la web, y el cliente lo ve cuando lo necesita, sin esperar a que alguien conteste."
+      },
+      {
+        type: "paragraph",
+        text: "Antes de grabar, pido al equipo de soporte la lista de las diez preguntas más frecuentes del último trimestre. Esa lista decide qué vídeos hacemos y en qué orden. No grabo nada que nadie haya preguntado."
+      },
+      { type: "heading", level: 2, text: "Cómo grabar un tutorial para clientes bien hecho" },
+      { type: "heading", level: 3, text: "Un vídeo, una tarea" },
+      {
+        type: "paragraph",
+        text: "Cada pieza responde a una pregunta y empieza diciendo qué va a resolver. Si el proceso tiene más de siete pasos, lo divido en dos vídeos. Es más fácil de ver, de mantener y de actualizar cuando cambie el producto."
+      },
+      { type: "heading", level: 3, text: "Pantalla limpia y voz clara" },
+      {
+        type: "paragraph",
+        text: "Grabo la pantalla con DaVinci Resolve y OBS a 1080p, con el cursor visible y los datos de ejemplo preparados. La voz va con un micrófono de solapa o un micro de mesa en una sala sin eco. Un audio limpio importa más que una imagen perfecta: un tutorial con ruido se abandona en diez segundos."
+      },
+      { type: "heading", level: 3, text: "Persona a cámara solo en la apertura" },
+      {
+        type: "paragraph",
+        text: "Si quieres dar cercanía, un responsable de la empresa puede aparecer cinco o diez segundos al principio y al final. Lo grabo en la misma jornada con una luz sencilla y un fondo neutro. El resto del vídeo es pantalla y voz."
+      },
+      {
+        type: "image",
+        src: "/blog/video-tutorial-clientes-postventa/inline.webp",
+        alt: "Persona sentada ante una mesa en una oficina atendiendo a un cliente",
+        width: 1200,
+        height: 800,
+        caption: "El equipo de soporte sabe qué preguntas se repiten: de ahí sale el guion.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes en vídeos de postventa" },
+      {
+        type: "list",
+        items: [
+          "Empezar con una presentación de la empresa de veinte segundos antes de resolver nada.",
+          "Grabar con datos reales de clientes visibles en pantalla.",
+          "Hacer vídeos de diez minutos que mezclan varias tareas.",
+          "No subtitular, cuando muchos clientes lo ven en el trabajo sin sonido.",
+          "Olvidar actualizar el vídeo cuando cambia la interfaz del producto.",
+          "Esconderlos en un portal que el cliente no conoce en vez de enlazarlos desde la respuesta de soporte.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto debe durar un vídeo tutorial para clientes?",
+        answer:
+          "Entre uno y tres minutos. Si la tarea necesita más, es mejor dividirla en dos vídeos. Un tutorial corto se termina de ver y se puede actualizar con menos esfuerzo."
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta grabar una serie de tutoriales en Madrid?",
+        answer:
+          "Una jornada con seis a diez tutoriales cortos, voz, subtítulos y edición suele estar entre 900 y 1.800 euros, según la complejidad del producto y las versiones de idioma. Lo cierro tras ver la lista de preguntas de soporte."
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta que aparezca una persona en cámara?",
+        answer:
+          "No es necesario. Pantalla y voz bastan para la mayoría de tareas. Una breve aparición al inicio y al final aporta cercanía, pero no debe ocupar más de diez segundos."
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tardas en entregar la serie?",
+        answer:
+          "Entre cinco y diez días laborables tras el rodaje, con una ronda de revisión incluida. Si el producto va a cambiar pronto, grabo primero lo que no se va a modificar."
+      },
+      {
+        type: "paragraph",
+        text: "Si quieres reducir consultas de soporte con vídeo, escríbeme desde /contacto con la lista de preguntas que más repiten tus clientes. Te propongo un plan de grabación y un presupuesto cerrado. Puedes ver cómo trabajo en /servicios."
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {

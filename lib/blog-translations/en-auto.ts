@@ -4257,4 +4257,112 @@ export const enAuto: Record<string, BlogPostTranslation> = {
       },
     ],
   },
+  "video-tutorial-clientes-postventa": {
+    title: "Customer tutorial videos: how to record support and after-sales content people use",
+    description:
+      "How to record customer tutorial videos: script, screen, voice, length and delivery to cut support requests and improve after-sales.",
+    readingTime: "5 min read",
+    category: "Guide",
+    tags: ["customer tutorial video", "after-sales", "customer support", "corporate video", "customer training", "videographer Madrid"],
+    keyword: "customer tutorial video",
+    excerpt:
+      "A customer tutorial video works when it solves one task in under three minutes. Here is how I plan, record and deliver them so they reduce support requests.",
+    seoTitle: "Customer Tutorial Video: Recording Guide | Dani Acero",
+    metaDescription:
+      "Customer tutorial video: script, screen and voice recording, length and delivery to cut support requests and improve after-sales. By a Madrid filmmaker.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "A customer tutorial video works when it solves one task, lasts one to three minutes and can be watched without sound thanks to subtitles. If each video tries to explain the whole product, nobody finishes it and support requests stay the same."
+      },
+      {
+        type: "paragraph",
+        text: "In one shooting day in Madrid I record six to ten short tutorials in the same visual style. What matters is not the camera, it is the script: a real customer question, a step-by-step answer and a clear ending."
+      },
+      {
+        type: "image",
+        src: "/blog/video-tutorial-clientes-postventa/hero.webp",
+        alt: "Laptop on a work desk with a software screen open, ready to record a tutorial",
+        width: 1920,
+        height: 1281,
+        caption: "A useful tutorial starts with the question customers repeat most.",
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Why a tutorial video reduces support requests" },
+      {
+        type: "paragraph",
+        text: "Most after-sales requests repeat: how to activate something, where to download an invoice, how to set up a device. A short video answering one of those questions can be sent by email or linked from your website, and the customer watches it when they need it, without waiting for a reply."
+      },
+      {
+        type: "paragraph",
+        text: "Before recording, I ask the support team for the ten most frequent questions of the last quarter. That list decides which videos we make and in what order. I do not record anything nobody has asked about."
+      },
+      { type: "heading", level: 2, text: "How to record a good customer tutorial" },
+      { type: "heading", level: 3, text: "One video, one task" },
+      {
+        type: "paragraph",
+        text: "Each piece answers one question and opens by saying what it will solve. If the process has more than seven steps, I split it into two videos. It is easier to watch, to maintain and to update when the product changes."
+      },
+      { type: "heading", level: 3, text: "Clean screen and clear voice" },
+      {
+        type: "paragraph",
+        text: "I record the screen with OBS and edit in DaVinci Resolve at 1080p, with the cursor visible and sample data ready. The voice goes through a lavalier or a desk microphone in a room without echo. Clean audio matters more than a perfect picture: a noisy tutorial gets abandoned within ten seconds."
+      },
+      { type: "heading", level: 3, text: "A person on camera only at the start and end" },
+      {
+        type: "paragraph",
+        text: "If you want a human touch, someone from your company can appear for five to ten seconds at the beginning and the end. I shoot it the same day with simple lighting and a neutral background. The rest of the video is screen and voice."
+      },
+      {
+        type: "image",
+        src: "/blog/video-tutorial-clientes-postventa/inline.webp",
+        alt: "Person sitting at a table in an office talking with a customer",
+        width: 1200,
+        height: 800,
+        caption: "The support team knows which questions repeat: the script comes from there.",
+      },
+      { type: "heading", level: 2, text: "Common mistakes in after-sales videos" },
+      {
+        type: "list",
+        items: [
+          "Opening with a twenty-second company introduction before solving anything.",
+          "Recording with real customer data visible on screen.",
+          "Making ten-minute videos that mix several tasks.",
+          "Skipping subtitles, when many customers watch at work without sound.",
+          "Forgetting to update the video when the product interface changes.",
+          "Hiding them in a portal customers do not know instead of linking them from the support reply.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "How long should a customer tutorial video be?",
+        answer:
+          "Between one and three minutes. If the task needs more, split it into two videos. A short tutorial gets watched to the end and is easier to update."
+      },
+      {
+        type: "faq",
+        question: "How much does a tutorial series cost in Madrid?",
+        answer:
+          "A day with six to ten short tutorials, voice, subtitles and editing usually runs between 900 and 1,800 euros, depending on product complexity and language versions. I quote a fixed price after seeing your support question list."
+      },
+      {
+        type: "faq",
+        question: "Does someone need to appear on camera?",
+        answer:
+          "No. Screen and voice are enough for most tasks. A short appearance at the start and end adds warmth, but it should not take more than ten seconds."
+      },
+      {
+        type: "faq",
+        question: "How long until you deliver the series?",
+        answer:
+          "Between five and ten working days after the shoot, with one review round included. If the product is about to change, I record the parts that will not change first."
+      },
+      {
+        type: "paragraph",
+        text: "If you want to cut support requests with video, write to me from /contacto with the list of questions your customers repeat most. I will propose a recording plan and a fixed quote. You can see how I work at /servicios."
+      },
+    ],
+  },
 }
