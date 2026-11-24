@@ -89,7 +89,7 @@ export default function PhotoGallery({ priority = false }: { priority?: boolean 
           else if (event.key === "ArrowLeft") step(-1)
         }}
         aria-label="Foto ampliada"
-        className="m-auto max-h-[96vh] w-[min(980px,96vw)] overflow-hidden rounded-3xl border border-white/15 bg-[#0b0b0b] p-0 text-white backdrop:bg-black/85"
+        className="m-auto max-h-[calc(100dvh-1rem)] w-[min(980px,96vw)] overflow-hidden rounded-3xl border border-white/15 bg-[#0b0b0b] p-0 text-white backdrop:bg-black/85"
       >
         {current ? (
           <div
@@ -103,7 +103,7 @@ export default function PhotoGallery({ priority = false }: { priority?: boolean 
               if (Math.abs(dx) > 50) step(dx < 0 ? 1 : -1)
             }}
           >
-            <div className="relative flex max-h-[78vh] items-center justify-center bg-black">
+            <div className="relative flex max-h-[calc(100dvh-8.5rem)] items-center justify-center bg-black">
               <Image
                 key={current.src}
                 src={current.src}
@@ -111,7 +111,7 @@ export default function PhotoGallery({ priority = false }: { priority?: boolean 
                 width={current.width}
                 height={current.height}
                 sizes="(min-width: 1024px) 900px, 96vw"
-                className="max-h-[78vh] w-auto max-w-full object-contain"
+                className="max-h-[calc(100dvh-8.5rem)] w-auto max-w-full object-contain"
                 priority
               />
               <button type="button" onClick={close} aria-label="Cerrar" className={`${NAV} absolute right-3 top-3 text-[20px] leading-none`}>
@@ -130,7 +130,7 @@ export default function PhotoGallery({ priority = false }: { priority?: boolean 
             </div>
             <div className="flex items-start justify-between gap-4 px-5 py-4 sm:px-7 sm:py-5">
               <p className="font-inter text-[15px] leading-[1.6] text-white/88 sm:text-[16px]">{current.caption}</p>
-              <p className="shrink-0 pt-0.5 font-inter text-[11px] font-semibold uppercase tracking-[0.18em] text-white/55" aria-live="polite">
+              <p className="shrink-0 pt-0.5 font-inter text-[12px] font-semibold uppercase tracking-[0.18em] text-white/60" aria-live="polite">
                 {String((openIndex ?? 0) + 1).padStart(2, "0")} / {String(total).padStart(2, "0")}
               </p>
             </div>
