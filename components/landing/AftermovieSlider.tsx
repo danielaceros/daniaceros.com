@@ -79,9 +79,12 @@ export default function AftermovieSlider({ items }: { items: ShowcaseItem[] }) {
 
   return (
     <section aria-roledescription="carrusel" aria-label="Aftermovies de ejemplo" onKeyDown={onKeyDown}>
+      {/* Todos los slides tienen la misma caja 16:9 (los tres vídeos son 1280x720) y van centrados en vertical.
+          El hueco de los extremos va como margen del primero y del último (en % del carril) para que cualquier
+          slide, también el 1.º y el último, pueda quedar exactamente centrado. */}
       <ul
         ref={trackRef}
-        className="-mx-4 flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth px-[7%] pb-2 [scrollbar-width:none] sm:mx-0 sm:gap-6 sm:px-[11%] [&::-webkit-scrollbar]:hidden"
+        className="relative -mx-4 flex snap-x snap-mandatory items-center gap-3 overflow-x-auto scroll-smooth py-5 [scrollbar-width:none] sm:mx-0 sm:[mask-image:linear-gradient(to_right,transparent,#000_5%,#000_95%,transparent)] sm:gap-5 [&::-webkit-scrollbar]:hidden"
       >
         {items.map((item, i) => {
           const isActive = i === active
@@ -90,19 +93,25 @@ export default function AftermovieSlider({ items }: { items: ShowcaseItem[] }) {
               key={item.id}
               aria-roledescription="diapositiva"
               aria-label={`${i + 1} de ${items.length}: ${item.label}`}
-              className={`relative w-[86%] shrink-0 snap-center transition-all duration-500 sm:w-[78%] ${
-                isActive ? "scale-100 opacity-100" : "scale-[0.94] opacity-45"
+              className={`relative w-[80%] shrink-0 snap-center transition-[transform,opacity] duration-500 first:ml-[10%] last:mr-[10%] motion-reduce:transition-none sm:w-[72%] sm:first:ml-[14%] sm:last:mr-[14%] ${
+                isActive ? "scale-100 opacity-100" : "scale-[0.92] opacity-40"
               }`}
             >
-              <div className="overflow-hidden rounded-3xl border border-white/12 shadow-[0_30px_80px_rgba(0,0,0,0.55)]">
-                <ShowcaseVideo src={item.src} poster={item.poster} title={`Aftermovie: ${item.label}`} className="!rounded-none !border-0" />
+              <div className="overflow-hidden rounded-2xl border border-white/12 shadow-[0_24px_60px_rgba(0,0,0,0.55)] sm:rounded-3xl">
+                <ShowcaseVideo
+                  src={item.src}
+                  poster={item.poster}
+                  title={`Aftermovie: ${item.label}`}
+                  tabbable={isActive}
+                  className="!rounded-none !border-0"
+                />
               </div>
               {!isActive ? (
                 <button
                   type="button"
                   onClick={() => goTo(i)}
                   aria-label={`Ver ${item.label}`}
-                  className="absolute inset-0 z-10 cursor-pointer rounded-3xl focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+                  className="absolute inset-0 z-10 cursor-pointer rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-white sm:rounded-3xl"
                 />
               ) : null}
             </li>
@@ -110,14 +119,14 @@ export default function AftermovieSlider({ items }: { items: ShowcaseItem[] }) {
         })}
       </ul>
 
-      <div className="mt-5 flex items-center justify-between gap-4 sm:mt-6">
+      <div className="mt-2 flex items-center justify-between gap-4 sm:mt-3">
         <button type="button" onClick={() => goTo(active - 1)} disabled={active === 0} aria-label="Anterior" className={ARROW}>
           <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
             <path d="M15 5l-7 7 7 7" />
           </svg>
         </button>
         <div className="min-w-0 flex-1 text-center" aria-live="polite">
-          <p className="font-inter text-[11px] font-semibold uppercase tracking-[0.2em] text-white/55">
+          <p className="font-inter text-[12px] font-semibold uppercase tracking-[0.2em] text-white/60">
             {pad(active + 1)} / {pad(items.length)}
           </p>
           <p className="mt-1 truncate font-display text-[18px] font-semibold uppercase leading-[1.1] sm:text-[22px]">{current.label}</p>
@@ -130,16 +139,15 @@ export default function AftermovieSlider({ items }: { items: ShowcaseItem[] }) {
         </button>
       </div>
 
-      <div className="mt-4 flex justify-center gap-2" role="tablist" aria-label="Elegir aftermovie">
+      <div className="mt-3 flex justify-center gap-1" aria-label="Elegir aftermovie" role="group">
         {items.map((item, i) => (
           <button
             key={item.id}
             type="button"
-            role="tab"
-            aria-selected={i === active}
+            aria-current={i === active ? "true" : undefined}
             aria-label={`Ir al aftermovie ${i + 1}: ${item.label}`}
             onClick={() => goTo(i)}
-            className="flex h-8 w-8 items-center justify-center focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+            className="flex h-10 w-10 items-center justify-center rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
           >
             <span className={`block h-1.5 rounded-full transition-all duration-300 ${i === active ? "w-6 bg-white" : "w-1.5 bg-white/35"}`} />
           </button>
