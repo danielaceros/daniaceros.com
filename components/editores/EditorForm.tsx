@@ -61,7 +61,7 @@ export default function EditorForm() {
     switch (step) {
       case "nombre": return d.nombre.trim().length < 2 ? "Escribe tu nombre" : ""
       case "pais": return d.pais ? "" : "Elige tu país"
-      case "whatsapp": return /^\+\d{1,4}$/.test(d.dial) && /^\d{6,14}$/.test(d.tel.replace(/[\s-]/g, "")) && /^\+\d{8,15}$/.test(d.dial + d.tel.replace(/[\s-]/g, "")) ? "" : "Revisa el número (con código de país)"
+      case "whatsapp": return /^\d{8,15}$/.test(d.tel.replace(/\D/g, "")) ? "" : "Revisa el número (con código de país)"
       case "portfolio": {
         const filled = d.portfolio.map((s) => s.trim()).filter(Boolean)
         if (!filled.length) return "Pon al menos un enlace"
@@ -87,7 +87,7 @@ export default function EditorForm() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          nombre: d.nombre, pais: d.pais, whatsapp: d.dial + d.tel.replace(/[\s-]/g, ""), instagram: d.instagram,
+          nombre: d.nombre, pais: d.pais, whatsapp: "+" + d.tel.replace(/\D/g, ""), instagram: d.instagram,
           portfolio: d.portfolio.map((s) => s.trim()).filter(Boolean), software: d.software, experiencia: d.experiencia,
           disponibilidad: d.disponibilidad, plazo: d.plazo, precioVerticalUsd: Number(d.pv), precioHorizontalUsd: Number(d.ph),
           utm: { source: q.get("utm_source") ?? "", medium: q.get("utm_medium") ?? "", campaign: q.get("utm_campaign") ?? "", content: q.get("utm_content") ?? "" },
@@ -148,7 +148,7 @@ export default function EditorForm() {
           <div className="grid max-h-[46dvh] grid-cols-2 gap-2 overflow-y-auto pr-1 sm:grid-cols-3">
             {PAISES.map((p) => (
               <button key={p.n} type="button" className={chip(d.pais === p.n && p.n !== "Otro" || (p.n === "Otro" && !!d.pais && !PAISES.some((x) => x.n === d.pais)))}
-                onClick={() => { if (p.n === "Otro") { setD((s) => ({ ...s, pais: "Otro", dial: "+" })) } else { setD((s) => ({ ...s, pais: p.n, dial: p.d })); setErr(""); window.setTimeout(() => go(1), 180) } }}>{p.n}</button>
+                onClick={() => { if (p.n === "Otro") { setD((s) => ({ ...s, pais: "Otro", dial: "+", tel: "+" })) } else { setD((s) => ({ ...s, pais: p.n, dial: p.d, tel: p.d + " " })); setErr(""); window.setTimeout(() => go(1), 180) } }}>{p.n}</button>
             ))}
           </div>
           {d.pais === "Otro" || (d.pais && !PAISES.some((x) => x.n === d.pais)) ? (
@@ -157,10 +157,8 @@ export default function EditorForm() {
         </>
       case "whatsapp":
         return <>{q("¿Cuál es tu WhatsApp?", "Es por donde te escribiré si quedas seleccionado. Comprueba que el número tiene WhatsApp.")}
-          <div className="flex items-end gap-3">
-            <input className={`${field} w-24 shrink-0 text-center`} value={d.dial} onChange={(e) => set("dial", "+" + e.target.value.replace(/\D/g, "").slice(0, 4))} inputMode="tel" aria-label="Código de país" />
-            <input ref={inputRef} className={field} value={d.tel} onChange={(e) => set("tel", e.target.value.replace(/[^\d\s-]/g, "").slice(0, 16))} placeholder="Número" inputMode="tel" autoComplete="tel-national" />
-          </div></>
+          <input ref={inputRef} className={field} value={d.tel} placeholder="+57 300 123 4567" inputMode="tel" autoComplete="tel" aria-label="Número de WhatsApp con código de país"
+            onChange={(e) => { let v = e.target.value.replace(/[^\d\s+-]/g, "").slice(0, 22); if (v && !v.startsWith("+")) v = `${d.dial === "+" ? "+" : d.dial + " "}${v}`; set("tel", v) }} /></>
       case "instagram":
         return <>{q("¿Tienes Instagram profesional?", "Opcional, pero ayuda a ver tu trabajo.")}<input ref={inputRef} className={field} value={d.instagram} onChange={(e) => set("instagram", e.target.value.slice(0, 100))} placeholder="@tuusuario" autoCapitalize="none" autoCorrect="off" /></>
       case "portfolio":
@@ -208,7 +206,7 @@ export default function EditorForm() {
         return <>{q("Todo listo, " + (d.nombre.split(" ")[0] || "") + ".", "Revisa y envía. Te escribo por WhatsApp si encajas.")}
           <dl className="grid grid-cols-[auto_1fr] gap-x-4 gap-y-1.5 text-[15px]">
             <dt className="text-white/50">País</dt><dd className="font-semibold text-white">{d.pais}</dd>
-            <dt className="text-white/50">WhatsApp</dt><dd className="font-semibold text-white">{d.dial} {d.tel}</dd>
+            <dt className="text-white/50">WhatsApp</dt><dd className="font-semibold text-white">{d.tel}</dd>
             <dt className="text-white/50">Portfolio</dt><dd className="truncate font-semibold text-white">{d.portfolio.filter(Boolean).length} enlace(s)</dd>
             <dt className="text-white/50">Aftermovie vertical</dt><dd className="font-semibold text-white">{d.pv} USD</dd>
             <dt className="text-white/50">Aftermovie horizontal</dt><dd className="font-semibold text-white">{d.ph} USD</dd>
