@@ -7,6 +7,7 @@
 import { put } from "@vercel/blob"
 import nodemailer from "nodemailer"
 import { NextResponse } from "next/server"
+import { appendEditorRow } from "@/lib/editores-sheet"
 
 export const runtime = "nodejs"
 export const maxDuration = 30
@@ -120,6 +121,17 @@ export async function POST(request: Request) {
   } catch (e) {
     console.error("[editores] blob", e)
     return NextResponse.json({ ok: false, error: "storage" }, { status: 500 })
+  }
+
+  // Fila en la Google Sheet (en directo, sin depender de ningún ordenador). Best-effort: el registro ya está a salvo.
+  try {
+    await appendEditorRow([
+      id, createdAt, nombre, pais, whatsapp, record.instagram ? `@${record.instagram}` : "",
+      portfolio[0] ?? "", portfolio[1] ?? "", portfolio[2] ?? "", software.join(", "), experiencia, disponibilidad, plazoEntrega,
+      record.precioVerticalUsd, record.precioHorizontalUsd, record.utm.source, record.utm.campaign, record.utm.content, "Nuevo", "",
+    ])
+  } catch (e) {
+    console.error("[editores] sheet", e)
   }
 
   // Aviso por email: best-effort (el registro ya está a salvo). Siempre con await: en Vercel, lo que sigue
