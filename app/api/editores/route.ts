@@ -122,35 +122,45 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: false, error: "storage" }, { status: 500 })
   }
 
-  // Aviso por email: best-effort (el registro ya está a salvo).
+  // Aviso por email: best-effort (el registro ya está a salvo). Siempre con await: en Vercel, lo que sigue
+  // corriendo tras responder se pausa y el correo no sale. Preferido: API HTTP de Resend (guía de Vercel);
+  // respaldo: SMTP, solo si no hay RESEND_API_KEY.
   try {
-    const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASSWORD, EMAIL_FROM, EMAIL_TO } = process.env
-    if (SMTP_HOST && SMTP_USER && SMTP_PASSWORD && EMAIL_TO) {
-      const port = Number(SMTP_PORT ?? 465)
-      const tx = nodemailer.createTransport({ host: SMTP_HOST, port, secure: port === 465, auth: { user: SMTP_USER, pass: SMTP_PASSWORD } })
-      const wa = `https://wa.me/${whatsapp.slice(1)}`
-      const rows: [string, string][] = [
-        ["País", pais],
-        ["WhatsApp", `${whatsapp} (${wa})`],
-        ["Instagram", record.instagram ? `@${record.instagram} (https://instagram.com/${record.instagram})` : "—"],
-        ["Portfolio", portfolio.join("\n")],
-        ["Software", software.join(", ") || "—"],
-        ["Experiencia", `${experiencia} años`],
-        ["Disponibilidad", disponibilidad],
-        ["Plazo aftermovie", plazoEntrega],
-        ["Precio vertical", `${record.precioVerticalUsd} USD`],
-        ["Precio horizontal", `${record.precioHorizontalUsd} USD`],
-        ["Origen", [record.utm.source, record.utm.campaign, record.utm.content].filter(Boolean).join(" · ") || "directo"],
-      ]
-      await tx.sendMail({
-        from: EMAIL_FROM ?? SMTP_USER,
-        to: EMAIL_TO,
-        subject: `Nuevo editor LATAM: ${nombre} (${pais}) · V ${record.precioVerticalUsd} / H ${record.precioHorizontalUsd} USD`,
-        text: `${nombre} se ha registrado en /editores.\n\n${rows.map(([k, v]) => `${k}: ${v}`).join("\n")}\n\nID: ${id}`,
-        html: `<div style="font-family:system-ui,sans-serif;max-width:560px"><h2 style="margin:0 0 12px">${esc(nombre)} · ${esc(pais)}</h2><table cellpadding="6" style="border-collapse:collapse;font-size:14px">${rows
-          .map(([k, v]) => `<tr><td style="color:#666;vertical-align:top;white-space:nowrap">${esc(k)}</td><td>${esc(v).replace(/\n/g, "<br>")}</td></tr>`)
-          .join("")}</table><p style="color:#999;font-size:12px">ID ${id}</p></div>`,
+    const to = process.env.EMAIL_TO
+    const wa = `https://wa.me/${whatsapp.slice(1)}`
+    const rows: [string, string][] = [
+      ["País", pais],
+      ["WhatsApp", `${whatsapp} (${wa})`],
+      ["Instagram", record.instagram ? `@${record.instagram} (https://instagram.com/${record.instagram})` : "—"],
+      ["Portfolio", portfolio.join("\n")],
+      ["Software", software.join(", ") || "—"],
+      ["Experiencia", `${experiencia} años`],
+      ["Disponibilidad", disponibilidad],
+      ["Plazo aftermovie", plazoEntrega],
+      ["Aftermovie vertical", `${record.precioVerticalUsd} USD`],
+      ["Aftermovie horizontal", `${record.precioHorizontalUsd} USD`],
+      ["Origen", [record.utm.source, record.utm.campaign, record.utm.content].filter(Boolean).join(" · ") || "directo"],
+    ]
+    const subject = `Nuevo editor LATAM: ${nombre} (${pais}) · V ${record.precioVerticalUsd} / H ${record.precioHorizontalUsd} USD`
+    const text = `${nombre} se ha registrado en /editores.\n\n${rows.map(([k, v]) => `${k}: ${v}`).join("\n")}\n\nID: ${id}`
+    const html = `<div style="font-family:system-ui,sans-serif;max-width:560px"><h2 style="margin:0 0 12px">${esc(nombre)} · ${esc(pais)}</h2><table cellpadding="6" style="border-collapse:collapse;font-size:14px">${rows
+      .map(([k, v]) => `<tr><td style="color:#666;vertical-align:top;white-space:nowrap">${esc(k)}</td><td>${esc(v).replace(/\n/g, "<br>")}</td></tr>`)
+      .join("")}</table><p style="color:#999;font-size:12px">ID ${id}</p></div>`
+
+    if (to && process.env.RESEND_API_KEY) {
+      const r = await fetch("https://api.resend.com/emails", {
+        method: "POST",
+        headers: { Authorization: `Bearer ${process.env.RESEND_API_KEY}`, "Content-Type": "application/json" },
+        body: JSON.stringify({ from: process.env.RESEND_FROM ?? "Editores <editores@hola.daniaceros.com>", to: [to], subject, text, html }),
       })
+      if (!r.ok) console.error("[editores] resend", r.status, await r.text())
+    } else {
+      const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASSWORD, EMAIL_FROM } = process.env
+      if (to && SMTP_HOST && SMTP_USER && SMTP_PASSWORD) {
+        const port = Number(SMTP_PORT ?? 465)
+        const tx = nodemailer.createTransport({ host: SMTP_HOST, port, secure: port === 465, auth: { user: SMTP_USER, pass: SMTP_PASSWORD } })
+        await tx.sendMail({ from: EMAIL_FROM ?? SMTP_USER, to, subject, text, html })
+      }
     }
   } catch (e) {
     console.error("[editores] email", e)
