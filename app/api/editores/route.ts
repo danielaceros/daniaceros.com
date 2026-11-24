@@ -10,7 +10,8 @@
 import { createHmac } from "node:crypto"
 import { del, list, put } from "@vercel/blob"
 import nodemailer from "nodemailer"
-import { NextResponse } from "next/server"
+import { NextResponse, after } from "next/server"
+import { notifyWatch } from "@/lib/editores/watch"
 import { buildEmail, type EditorRecord } from "@/lib/editores/email"
 import { appendEditorRow, rowFromRecord } from "@/lib/editores-sheet"
 import {
@@ -231,6 +232,15 @@ export async function POST(request: Request) {
   } catch (e) {
     console.error("[editores] email", e instanceof Error ? e.message : "error")
   }
+
+  // Aviso al VPS (cuenta registros y pausa la campaña al llegar al objetivo). Con after(): no retrasa la respuesta al editor.
+  after(async () => {
+    try {
+      await notifyWatch(id)
+    } catch (e) {
+      console.error("[editores] watch", e instanceof Error ? e.message : "error")
+    }
+  })
 
   return json({ ok: true, id })
 }
