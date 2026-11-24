@@ -25,6 +25,47 @@ async function accessToken(email: string, privateKey: string): Promise<string> {
 
 /** Añade una fila al final de la primera pestaña. RAW: nada se interpreta como fórmula (el nombre lo escribe el público). */
 export async function appendEditorRow(row: Row): Promise<void> {
+  // Un reintento: un fallo puntual de Google no debe dejar el registro fuera de la hoja.
+  try {
+    await appendOnce(row)
+  } catch {
+    await new Promise((r) => setTimeout(r, 800))
+    await appendOnce(row)
+  }
+}
+
+export type EditorRecord = {
+  id: string; createdAt: string; nombre: string; pais: string; whatsapp: string; instagram: string; portfolio: string[]
+  software: string[]; experiencia: string; disponibilidad: string; plazoEntrega?: string
+  precioVerticalUsd: number; precioHorizontalUsd: number; utm: { campaign?: string; content?: string }
+}
+
+/** Fila de la hoja a partir de un registro. Orden = app/api/editores/route.ts original y ~/Projects/editores-latam/sheets/format_sheet.py. */
+export function rowFromRecord(r: EditorRecord): Row {
+  // Fecha como número de serie en hora de Madrid: la hoja la muestra y ordena como fecha real.
+  const madrid = new Date(r.createdAt).toLocaleString("sv-SE", { timeZone: "Europe/Madrid" }).replace(" ", "T")
+  const serial = Date.parse(`${madrid}Z`) / 86_400_000 + 25569
+  return [
+    "Nuevo", serial, r.nombre, r.pais, r.whatsapp, r.instagram ? `@${r.instagram}` : "",
+    r.precioVerticalUsd, r.precioHorizontalUsd, r.plazoEntrega ?? "", r.experiencia, r.disponibilidad, r.software.join(", "),
+    r.portfolio[0] ?? "", r.portfolio[1] ?? "", r.portfolio[2] ?? "",
+    "", "", "", r.utm.campaign ?? "", r.utm.content ?? "", r.id,
+  ]
+}
+
+/** IDs que ya están en la hoja (columna U). */
+export async function sheetIds(): Promise<Set<string>> {
+  const raw = process.env.GOOGLE_SA_JSON
+  const sheetId = process.env.EDITORES_SHEET_ID
+  if (!raw || !sheetId) return new Set()
+  const sa = JSON.parse(raw) as { client_email: string; private_key: string }
+  const token = await accessToken(sa.client_email, sa.private_key)
+  const r = await fetch(`https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${encodeURIComponent("Registro!U2:U")}`, { headers: { Authorization: `Bearer ${token}` }, signal: AbortSignal.timeout(8000) })
+  if (!r.ok) throw new Error(`sheets ids ${r.status}`)
+  return new Set(((await r.json()).values ?? []).map((v: string[]) => v[0]))
+}
+
+async function appendOnce(row: Row): Promise<void> {
   const raw = process.env.GOOGLE_SA_JSON
   const sheetId = process.env.EDITORES_SHEET_ID
   if (!raw || !sheetId) return
