@@ -37,4 +37,21 @@ export async function appendEditorRow(row: Row): Promise<void> {
     signal: AbortSignal.timeout(8000),
   })
   if (!r.ok) throw new Error(`sheets ${r.status} ${(await r.text()).slice(0, 200)}`)
+
+  // Enlaces clicables (WhatsApp, portfolio, Instagram) en V:X de la fila recién añadida. Son fórmulas FIJAS: no llevan
+  // texto del público, solo referencias a celdas de la propia fila, así que USER_ENTERED es seguro aquí.
+  const range = ((await r.json()) as { updates?: { updatedRange?: string } }).updates?.updatedRange ?? ""
+  const m = /^(.*)!([A-Z]+)(\d+)(?::[A-Z]+\d+)?$/.exec(range)
+  if (!m) return
+  const n = m[3]
+  await fetch(`https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${encodeURIComponent(`${m[1]}!V${n}:X${n}`)}?valueInputOption=USER_ENTERED`, {
+    method: "PUT",
+    headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
+    body: JSON.stringify({ values: [[
+      `=IF(E${n}="","",HYPERLINK("https://wa.me/"&SUBSTITUTE(E${n},"+",""),"Abrir WhatsApp"))`,
+      `=IF(M${n}="","",HYPERLINK(M${n},"Ver portfolio"))`,
+      `=IF(F${n}="","",HYPERLINK("https://instagram.com/"&SUBSTITUTE(F${n},"@",""),F${n}))`,
+    ]] }),
+    signal: AbortSignal.timeout(8000),
+  })
 }
