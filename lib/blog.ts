@@ -19155,6 +19155,117 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-visita-instalaciones-empresa",
+    title: "Vídeo de visita a las instalaciones de tu empresa: cómo grabarlo para que genere confianza",
+    description:
+      "Cómo grabar un vídeo de visita a las instalaciones de una empresa: recorrido, planos clave, permisos, duración y entrega para clientes, proveedores y candidatos.",
+    publishedAt: "2026-11-25",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["vídeo de instalaciones", "vídeo corporativo", "recorrido de empresa", "confianza del cliente", "producción audiovisual", "filmmaker Madrid"],
+    keyword: "vídeo de visita a las instalaciones de la empresa",
+    intent: "informacional",
+    excerpt:
+      "Un vídeo de visita a las instalaciones enseña cómo trabajas antes de que el cliente pise tu empresa. Te cuento cómo preparo el recorrido, qué planos grabo y cómo lo entrego.",
+    seoTitle: "Vídeo de visita a las instalaciones de empresa | Daniel Acero",
+    metaDescription:
+      "Vídeo de visita a las instalaciones de la empresa: recorrido, planos clave, permisos, duración y entrega para generar confianza en clientes y candidatos.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Un vídeo de visita a las instalaciones de la empresa sirve para que un cliente, un proveedor o un candidato vea cómo trabajas sin desplazarse. Funciona cuando sigue un recorrido lógico, dura entre dos y cuatro minutos y enseña personas trabajando, no solo espacios vacíos."
+      },
+      {
+        type: "paragraph",
+        text: "Lo grabo en medio día o una jornada completa, según el tamaño del espacio. Lo importante es decidir antes quién va a ver el vídeo, porque no se enseña lo mismo a un comprador que quiere auditar procesos que a un candidato que quiere ver el ambiente."
+      },
+      {
+        type: "image",
+        src: "/blog/video-visita-instalaciones-empresa/hero.webp",
+        alt: "Interior industrial con vigas azules y una grúa amarilla, un espacio típico para un recorrido de empresa",
+        width: 1920,
+        height: 1280,
+        caption: "Un buen recorrido empieza por decidir qué espacios se enseñan y en qué orden.",
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Para qué sirve un vídeo de visita a las instalaciones" },
+      {
+        type: "paragraph",
+        text: "Hay tres usos habituales. El primero es comercial: un cliente que no puede venir a Madrid ve la planta, el almacén o la oficina antes de firmar. El segundo es de proveedores y auditorías previas, donde el vídeo evita una primera visita presencial. El tercero es de captación de talento, que busca ver con quién va a trabajar."
+      },
+      {
+        type: "paragraph",
+        text: "No sustituye a una visita real, pero la prepara. En mis proyectos suele reducir las preguntas básicas en las primeras reuniones y filtra mejor a quien se interesa por la empresa."
+      },
+      { type: "heading", level: 2, text: "Cómo grabar un recorrido por la empresa" },
+      { type: "heading", level: 3, text: "Define el recorrido antes del rodaje" },
+      {
+        type: "paragraph",
+        text: "Hago una visita previa de una hora con la persona responsable. Marcamos un recorrido de cinco a ocho espacios en orden lógico: entrada, zona de trabajo, producción o almacén, sala de reuniones, zona común. Cada espacio tiene un plano de apertura y uno o dos de detalle."
+      },
+      { type: "heading", level: 3, text: "Planos con personas y movimiento" },
+      {
+        type: "paragraph",
+        text: "Grabo con una Sony A7 y un gimbal para los travellings y con trípode para planos fijos. Pido a dos o tres empleados que trabajen con normalidad en cada zona. Un espacio sin gente parece una foto de inmobiliaria; con gente se entiende cómo se trabaja."
+      },
+      { type: "heading", level: 3, text: "Luz natural y limpieza visual" },
+      {
+        type: "paragraph",
+        text: "Aprovecho la luz de las ventanas y apago luces mixtas cuando hay mezcla de temperaturas. Pido que se retiren papeles, cables y pantallas con información sensible una hora antes. En plantas industriales, además, reviso con prevención de riesgos dónde puedo situarme."
+      },
+      {
+        type: "image",
+        src: "/blog/video-visita-instalaciones-empresa/inline.webp",
+        alt: "Tres profesionales caminando juntos junto a un edificio de oficinas",
+        width: 1200,
+        height: 800,
+        caption: "Los planos con personas dan contexto y escala al espacio.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes en un vídeo de instalaciones" },
+      {
+        type: "list",
+        items: [
+          "Enseñar espacios vacíos y ordenados que no se parecen al día a día real.",
+          "Grabar sin permiso del equipo o sin avisar con antelación de que habrá cámara.",
+          "Dejar a la vista documentos, pantallas o datos de clientes.",
+          "Hacer un recorrido de ocho minutos sin un orden claro.",
+          "Usar música con derechos no resueltos para el vídeo que se publica en la web.",
+          "Olvidar una versión corta de 30 a 45 segundos para LinkedIn y redes.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto debe durar un vídeo de visita a las instalaciones?",
+        answer:
+          "Entre dos y cuatro minutos para la versión principal. Además suelo entregar un corte de 30 a 45 segundos para redes sociales. Si el espacio es muy grande, es mejor dividirlo en dos vídeos por zonas."
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta grabar un vídeo de instalaciones en Madrid?",
+        answer:
+          "Un recorrido de un espacio mediano, con medio día de rodaje, edición y música con licencia, suele estar entre 700 y 1.500 euros. Sube si hay varias sedes, plantas industriales o versiones en otros idiomas. Lo cierro tras la visita previa."
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta que los empleados aparezcan en el vídeo?",
+        answer:
+          "Es recomendable, pero con su consentimiento. Preparo una autorización de imagen sencilla y, si alguien prefiere no salir, lo grabo de espaldas o fuera de plano. Sin personas, el espacio se ve frío."
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tardas en entregarlo?",
+        answer:
+          "Entre cinco y diez días laborables después del rodaje, con una ronda de revisión incluida. La versión corta para redes va junto con la principal."
+      },
+      {
+        type: "paragraph",
+        text: "Si quieres enseñar tu empresa por dentro antes de que lleguen los clientes, escríbeme desde /contacto con el tipo de espacio y quién va a ver el vídeo. Te propongo un recorrido y un presupuesto cerrado. Puedes ver cómo trabajo en /servicios."
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {

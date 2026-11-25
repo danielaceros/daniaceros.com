@@ -4365,4 +4365,112 @@ export const enAuto: Record<string, BlogPostTranslation> = {
       },
     ],
   },
+  "video-visita-instalaciones-empresa": {
+    title: "Company facility tour video: how to record it so it builds trust",
+    description:
+      "How to record a company facility tour video: route, key shots, permissions, length and delivery for clients, suppliers and candidates.",
+    readingTime: "5 min read",
+    category: "Guide",
+    tags: ["facility tour video", "corporate video", "company walkthrough", "customer trust", "video production", "videographer Madrid"],
+    keyword: "company facility tour video",
+    excerpt:
+      "A facility tour video shows how you work before a client sets foot in your company. Here is how I plan the route, which shots I record and how I deliver it.",
+    seoTitle: "Company Facility Tour Video: Recording Guide | Dani Acero",
+    metaDescription:
+      "Company facility tour video: route, key shots, permissions, length and delivery to build trust with clients and candidates. By a Madrid filmmaker.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "A company facility tour video lets a client, a supplier or a candidate see how you work without travelling. It works when it follows a logical route, lasts two to four minutes and shows people working, not just empty spaces."
+      },
+      {
+        type: "paragraph",
+        text: "I record it in half a day or a full day, depending on the size of the space. What matters is deciding beforehand who will watch it, because you do not show the same things to a buyer who wants to audit processes as to a candidate who wants to see the atmosphere."
+      },
+      {
+        type: "image",
+        src: "/blog/video-visita-instalaciones-empresa/hero.webp",
+        alt: "Industrial interior with blue beams and a yellow crane, a typical space for a company walkthrough",
+        width: 1920,
+        height: 1280,
+        caption: "A good tour starts by deciding which spaces to show and in what order.",
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "What is a facility tour video used for?" },
+      {
+        type: "paragraph",
+        text: "There are three common uses. The first is sales: a client who cannot come to Madrid sees the plant, the warehouse or the office before signing. The second is for suppliers and pre-audits, where the video replaces a first on-site visit. The third is recruiting, where candidates want to see who they will work with."
+      },
+      {
+        type: "paragraph",
+        text: "It does not replace a real visit, but it prepares it. In my projects it usually cuts the basic questions in the first meetings and filters better who is genuinely interested in the company."
+      },
+      { type: "heading", level: 2, text: "How to record a company walkthrough" },
+      { type: "heading", level: 3, text: "Define the route before the shoot" },
+      {
+        type: "paragraph",
+        text: "I do a one-hour scouting visit with the person in charge. We mark a route of five to eight spaces in a logical order: entrance, work area, production or warehouse, meeting room, common area. Each space gets an opening shot and one or two detail shots."
+      },
+      { type: "heading", level: 3, text: "Shots with people and movement" },
+      {
+        type: "paragraph",
+        text: "I shoot with a Sony A7 and a gimbal for the tracking shots, and a tripod for static ones. I ask two or three employees to work as usual in each area. An empty space looks like a real estate photo; with people you understand how the work happens."
+      },
+      { type: "heading", level: 3, text: "Natural light and a clean frame" },
+      {
+        type: "paragraph",
+        text: "I use window light and switch off mixed lighting when colour temperatures clash. I ask for papers, cables and screens with sensitive information to be cleared an hour before. In industrial plants I also check with safety staff where I can stand."
+      },
+      {
+        type: "image",
+        src: "/blog/video-visita-instalaciones-empresa/inline.webp",
+        alt: "Three professionals walking together next to an office building",
+        width: 1200,
+        height: 800,
+        caption: "Shots with people give context and scale to the space.",
+      },
+      { type: "heading", level: 2, text: "Common mistakes in a facility video" },
+      {
+        type: "list",
+        items: [
+          "Showing empty, tidy spaces that look nothing like the real day to day.",
+          "Recording without the team's consent or without warning them in advance that a camera will be there.",
+          "Leaving documents, screens or customer data in view.",
+          "Making an eight-minute tour without a clear order.",
+          "Using music with unresolved rights for a video published on your website.",
+          "Forgetting a short 30 to 45 second version for LinkedIn and social media.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "How long should a facility tour video be?",
+        answer:
+          "Between two and four minutes for the main version. I also usually deliver a 30 to 45 second cut for social media. If the space is very large, it is better to split it into two videos by area."
+      },
+      {
+        type: "faq",
+        question: "How much does a facility tour video cost in Madrid?",
+        answer:
+          "A tour of a medium-sized space, with half a day of shooting, editing and licensed music, usually runs between 700 and 1,500 euros. It goes up with several sites, industrial plants or versions in other languages. I quote a fixed price after the scouting visit."
+      },
+      {
+        type: "faq",
+        question: "Do employees need to appear in the video?",
+        answer:
+          "It is recommended, but with their consent. I prepare a simple image release and, if someone prefers not to appear, I shoot them from behind or out of frame. Without people, the space feels cold."
+      },
+      {
+        type: "faq",
+        question: "How long until you deliver it?",
+        answer:
+          "Between five and ten working days after the shoot, with one review round included. The short social version comes together with the main one."
+      },
+      {
+        type: "paragraph",
+        text: "If you want to show your company from the inside before clients arrive, write to me from /contacto with the type of space and who will watch the video. I will propose a route and a fixed quote. You can see how I work at /servicios."
+      },
+    ],
+  },
 }
