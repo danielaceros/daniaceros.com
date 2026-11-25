@@ -56,7 +56,7 @@ export default function LandingReel({ src, srcMobile, poster, label, className =
         ) : null}
       </video>
       {label ? (
-        <span className="pointer-events-none absolute left-3 top-3 rounded-full bg-black/55 px-3 py-1 font-inter text-[11px] uppercase tracking-[0.08em] text-white/85 backdrop-blur">
+        <span className="pointer-events-none absolute left-3 top-3 max-w-[calc(100%-1.5rem)] rounded-2xl bg-black/55 px-3 py-1 font-inter text-[12px] uppercase leading-[1.3] tracking-[0.06em] text-white/85 backdrop-blur">
           {label}
         </span>
       ) : null}

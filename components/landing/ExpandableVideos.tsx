@@ -104,7 +104,7 @@ export default function ExpandableVideos({ items, vertical = true, className = "
           }
         }}
         aria-label="Vídeo ampliado"
-        className={`m-auto max-h-[96vh] overflow-hidden rounded-3xl border border-white/15 bg-[#0b0b0b] p-0 text-white backdrop:bg-black/85 ${
+        className={`m-auto max-h-[calc(100dvh-1rem)] overflow-hidden rounded-3xl border border-white/15 bg-[#0b0b0b] p-0 text-white backdrop:bg-black/85 ${
           vertical ? "w-[min(460px,96vw)]" : "w-[min(1100px,96vw)]"
         }`}
       >
@@ -118,7 +118,7 @@ export default function ExpandableVideos({ items, vertical = true, className = "
                 controls
                 autoPlay
                 playsInline
-                className={`w-full bg-black ${vertical ? "max-h-[82vh] object-contain" : "aspect-video"}`}
+                className={`w-full bg-black object-contain max-h-[calc(100dvh-8.5rem)] ${vertical ? "" : "aspect-video"}`}
               />
               <button type="button" onClick={close} aria-label="Cerrar" className={`${NAV} absolute right-3 top-3 text-[20px] leading-none`}>
                 ×
@@ -141,7 +141,7 @@ export default function ExpandableVideos({ items, vertical = true, className = "
             <div className="flex items-start justify-between gap-4 px-5 py-4 sm:px-6">
               <p className="font-inter text-[14.5px] leading-[1.6] text-white/88 sm:text-[15.5px]">{current.context}</p>
               {total > 1 ? (
-                <p className="shrink-0 pt-0.5 font-inter text-[11px] font-semibold uppercase tracking-[0.18em] text-white/55" aria-live="polite">
+                <p className="shrink-0 pt-0.5 font-inter text-[12px] font-semibold uppercase tracking-[0.18em] text-white/60" aria-live="polite">
                   {String((openIndex ?? 0) + 1).padStart(2, "0")} / {String(total).padStart(2, "0")}
                 </p>
               ) : null}

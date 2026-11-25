@@ -196,7 +196,7 @@ export default async function PropuestaPage({ params }: Props) {
 
         {/* 1. Hero: titular + reel de IFEMA, después marcas y VSL (misma apertura que /eventos/ifema). */}
         <section id="propuesta-hero" className="relative w-full overflow-hidden pb-8 pt-8 sm:pt-10 lg:pb-12">
-          <div className="mx-auto grid w-full max-w-6xl items-center gap-8 px-4 text-center sm:px-6 lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-16 lg:text-left">
+          <div className="mx-auto grid w-full max-w-6xl items-center gap-8 px-4 text-center sm:px-6 lg:grid-cols-[minmax(0,1fr)_340px] lg:gap-16 lg:text-left">
             <div className="flex flex-col items-center lg:items-start">
               <p className={EYEBROW}>{cena ? "Propuesta · cenas de empresa" : "Propuesta · expositores de IFEMA"}</p>
               <h1 className="mt-4 font-display text-[clamp(1.85rem,7.2vw,3.6rem)] font-semibold uppercase leading-[1] text-balance lg:text-[clamp(2.4rem,3.6vw,3.6rem)]">
@@ -272,7 +272,7 @@ export default async function PropuestaPage({ params }: Props) {
                   }`}
                 >
                   {pack.reco ? (
-                    <span className="absolute -top-3 left-6 rounded-full bg-white px-4 py-1 font-inter text-[11px] font-bold uppercase tracking-[0.14em] text-black sm:left-8">
+                    <span className="absolute -top-3 left-6 rounded-full bg-white px-4 py-1 font-inter text-[12px] font-bold uppercase tracking-[0.14em] text-black sm:left-8">
                       Recomendado
                     </span>
                   ) : null}
@@ -280,7 +280,7 @@ export default async function PropuestaPage({ params }: Props) {
                     {pack.name}
                   </h3>
                   <p className="mt-1 font-inter text-[14px] text-white/75">{pack.tagline}</p>
-                  <p className="mt-6 flex items-baseline gap-2 font-display">
+                  <p className="mt-6 flex flex-wrap items-baseline gap-x-2 gap-y-1 font-display">
                     <span className="font-inter text-[15px] font-semibold uppercase tracking-[0.1em] text-white/75">desde</span>
                     <span className="text-[52px] font-semibold leading-none sm:text-[64px]">{pack.price}€</span>
                     <span className="font-inter text-[13px] text-white/60">+ IVA · precio cerrado</span>
@@ -406,7 +406,7 @@ export default async function PropuestaPage({ params }: Props) {
         {/* 4b. bis. Cenas de empresa: aftermovie y fotos reales de una gala, para ver qué te llevas. */}
         {cena ? (
           <section className="page-container pb-14 sm:pb-20">
-            <div className="mx-auto mb-14 max-w-4xl sm:mb-20">
+            <div className="mx-auto mb-14 max-w-4xl sm:mb-20 lg:max-w-5xl">
               <p className={`${EYEBROW} text-center`}>Así queda</p>
               <h2 className={`${SECTION_TITLE} mt-3 text-center`}>El vídeo resumen de tu cena</h2>
               <div className="mt-8 sm:mt-10">

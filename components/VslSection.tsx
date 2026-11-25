@@ -549,7 +549,7 @@ export default function VslSection({
           <p
             data-lux
             style={{ "--lux-delay": "80ms" } as CSSProperties}
-            className="mb-5 flex items-center justify-center gap-3 text-center font-inter text-[10px] uppercase tracking-[0.22em] text-white/55 sm:mb-6 sm:text-[11px]"
+            className="mb-5 flex items-center justify-center gap-3 text-center font-inter text-[12px] uppercase tracking-[0.22em] text-white/55 sm:mb-6 sm:text-[12px]"
           >
             <span aria-hidden className="h-px w-8 bg-white/25" />
             {t.title}
@@ -604,7 +604,7 @@ export default function VslSection({
               type="button"
               onClick={unmute}
               // before: amplía la zona táctil a 44px sin agrandar la pill (no tapa más vídeo).
-              className="absolute right-2.5 top-2.5 flex items-center gap-1.5 whitespace-nowrap rounded-full border border-white/25 bg-black/45 px-3 py-2 font-inter text-[11px] font-semibold uppercase tracking-[0.06em] text-white before:absolute before:-inset-1.5 before:content-[''] shadow-[0_18px_48px_-18px_rgba(0,0,0,0.9)] backdrop-blur-md transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:scale-[1.04] hover:border-white/50 hover:bg-black/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-white sm:right-4 sm:top-4 sm:gap-2.5 sm:px-4 sm:py-2.5 sm:text-[11px] sm:tracking-[0.16em]"
+              className="absolute right-2.5 top-2.5 flex items-center gap-1.5 whitespace-nowrap rounded-full border border-white/25 bg-black/45 px-3 py-2 font-inter text-[12px] font-semibold uppercase tracking-[0.06em] text-white before:absolute before:-inset-1.5 before:content-[''] shadow-[0_18px_48px_-18px_rgba(0,0,0,0.9)] backdrop-blur-md transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:scale-[1.04] hover:border-white/50 hover:bg-black/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-white sm:right-4 sm:top-4 sm:gap-2.5 sm:px-4 sm:py-2.5 sm:text-[12px] sm:tracking-[0.16em]"
             >
               <span className="relative flex h-2 w-2 sm:h-2.5 sm:w-2.5">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white/60" />
@@ -669,7 +669,7 @@ export default function VslSection({
               <button
                 type="button"
                 onClick={replay}
-                className="inline-flex min-h-[44px] items-center gap-2 rounded-full px-3 font-inter text-[11px] uppercase tracking-[0.16em] text-white/60 transition-colors duration-300 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 sm:tracking-[0.18em]"
+                className="inline-flex min-h-[44px] items-center gap-2 rounded-full px-3 font-inter text-[12px] uppercase tracking-[0.16em] text-white/60 transition-colors duration-300 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 sm:tracking-[0.18em]"
               >
                 <svg aria-hidden viewBox="0 0 24 24" className="h-3.5 w-3.5 fill-none stroke-current" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
                   <path d="M3 12a9 9 0 1 0 3-6.7" />
@@ -766,7 +766,7 @@ export default function VslSection({
                     />
                   </div>
 
-                  <span className="ml-1 font-inter text-[11px] tabular-nums tracking-[0.04em] text-white/75 sm:text-[12px]">
+                  <span className="ml-1 font-inter text-[12px] tabular-nums tracking-[0.04em] text-white/75 sm:text-[12px]">
                     {formatTime(currentTime)} <span className="text-white/35">/</span> {formatTime(duration)}
                   </span>
 
@@ -780,7 +780,7 @@ export default function VslSection({
                           aria-haspopup="menu"
                           aria-expanded={qualityOpen}
                           aria-label={`${t.quality}: ${currentQualityText}`}
-                          className="flex h-8 items-center rounded-full border border-white/15 bg-white/[0.06] px-3 font-inter text-[10px] font-semibold uppercase tracking-[0.12em] text-white/85 backdrop-blur-md transition-colors duration-300 hover:border-white/35 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 sm:h-9 sm:text-[11px]"
+                          className="flex h-8 items-center rounded-full border border-white/15 bg-white/[0.06] px-3 font-inter text-[12px] font-semibold uppercase tracking-[0.12em] text-white/85 backdrop-blur-md transition-colors duration-300 hover:border-white/35 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 sm:h-9 sm:text-[12px]"
                         >
                           {currentQualityText}
                         </button>

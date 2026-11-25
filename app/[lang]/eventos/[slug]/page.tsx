@@ -129,7 +129,7 @@ export default async function LandingPage({ params }: Props) {
           {/* 1. Hero a dos columnas en escritorio: titular a la izquierda y reel a la derecha (ahorra altura);
               en móvil se apilan, titular y después el reel. */}
           <section className="relative w-full overflow-hidden pb-8 pt-8 sm:pt-10 lg:pb-12">
-            <div className="mx-auto grid w-full max-w-6xl items-center gap-8 px-4 text-center sm:px-6 lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-16 lg:text-left">
+            <div className="mx-auto grid w-full max-w-6xl items-center gap-8 px-4 text-center sm:px-6 lg:grid-cols-[minmax(0,1fr)_340px] lg:gap-16 lg:text-left">
               <div className="flex flex-col items-center lg:items-start">
                 {titleNode}
                 <p className="mt-4 max-w-2xl px-1 font-inter text-[14px] leading-[1.7] text-white/74 text-balance sm:text-[16px] lg:max-w-xl lg:px-0 lg:text-[17px]">
@@ -255,7 +255,7 @@ export default async function LandingPage({ params }: Props) {
       {/* 4. bis. Cenas de empresa: aftermovie y fotos reales de una gala, para que se vea el recuerdo que te llevas. */}
       {cena ? (
         <section className="page-container pb-12 sm:pb-16">
-          <div className="mx-auto mb-14 max-w-4xl sm:mb-20">
+          <div className="mx-auto mb-14 max-w-4xl sm:mb-20 lg:max-w-5xl">
             <h2 className={`${SECTION_TITLE} text-center`}>El vídeo que se queda tu equipo</h2>
             <p className="mx-auto mt-3 max-w-xl text-center font-inter text-[15px] leading-[1.65] text-white/65">
               Tres ejemplos de resumen, de 13 a 65 segundos: para verlo en el móvil, en la tele o compartirlo con todos. Desliza para verlos.
