@@ -19266,6 +19266,117 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-subtitulos-ingles",
+    title: "Subtitular un vídeo corporativo en inglés: cómo hacerlo bien para clientes internacionales",
+    description:
+      "Cómo subtitular un vídeo corporativo en inglés: traducción, tiempos, formato, diseño y entrega para llegar a clientes, socios e inversores fuera de España.",
+    publishedAt: "2026-11-26",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["subtítulos en inglés", "vídeo corporativo", "mercado internacional", "traducción de vídeo", "postproducción", "filmmaker Madrid"],
+    keyword: "subtitular vídeo corporativo en inglés",
+    intent: "informacional",
+    excerpt:
+      "Subtitular tu vídeo corporativo en inglés abre la puerta a clientes y socios que no hablan español. Te cuento cómo lo hago: traducción, tiempos, diseño y entrega.",
+    seoTitle: "Subtitular vídeo corporativo en inglés | Daniel Acero",
+    metaDescription:
+      "Subtitular un vídeo corporativo en inglés: traducción profesional, tiempos, diseño y archivos de entrega para clientes y socios internacionales.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Para subtitular un vídeo corporativo en inglés necesitas una traducción adaptada, no literal, subtítulos de una o dos líneas con un máximo de 42 caracteres por línea y un archivo que puedas activar o quemar en el vídeo. Un vídeo de tres minutos suele llevar unos 40 subtítulos y se resuelve en dos o tres días."
+      },
+      {
+        type: "paragraph",
+        text: "Trabajo con empresas de Madrid que venden o captan inversión fuera de España. Casi siempre piden lo mismo: que el vídeo en español lo entienda un cliente alemán, británico o norteamericano sin rehacerlo. Con subtítulos bien hechos, se consigue."
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-subtitulos-ingles/hero.webp",
+        alt: "Línea de tiempo de edición de vídeo en pantalla oscura, donde se ajustan los subtítulos",
+        width: 1920,
+        height: 1280,
+        caption: "Los subtítulos se ajustan en la línea de tiempo, plano a plano.",
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué subtitular en inglés un vídeo corporativo" },
+      {
+        type: "paragraph",
+        text: "El inglés es el idioma de trabajo de la mayoría de compradores internacionales. Si tu web, tu presentación para inversores o tu vídeo de empresa solo están en español, parte de ese público se queda fuera antes de leerte."
+      },
+      {
+        type: "paragraph",
+        text: "Los subtítulos también sirven con el vídeo sin sonido, algo habitual en LinkedIn y en oficinas. Es una razón práctica más, aunque no la principal: aquí se trata de que la persona al otro lado entienda quién eres y qué haces."
+      },
+      { type: "heading", level: 2, text: "Cómo se subtitula bien un vídeo en inglés" },
+      { type: "heading", level: 3, text: "Traducción adaptada, no literal" },
+      {
+        type: "paragraph",
+        text: "Parto de la transcripción del español y la traduzco pensando en cómo lo diría un profesional anglosajón. Las frases largas se parten, los giros españoles se reformulan y los cargos se dejan en inglés. Si la empresa tiene un traductor de confianza, prefiero revisar su texto antes que sustituirlo."
+      },
+      { type: "heading", level: 3, text: "Tiempos y longitud" },
+      {
+        type: "paragraph",
+        text: "Cada subtítulo aparece entre 1,5 y 6 segundos, con una o dos líneas de un máximo de 42 caracteres. Si la frase es muy rápida, la comprimo sin perder el sentido. Lo ajusto en DaVinci Resolve y lo reviso viendo el vídeo completo, no solo el archivo de texto."
+      },
+      { type: "heading", level: 3, text: "Diseño y formato de entrega" },
+      {
+        type: "paragraph",
+        text: "Uso una tipografía sans-serif legible, blanco con una sombra suave o una caja semitransparente, siempre dentro de la zona segura. Entrego dos versiones: una con subtítulos quemados, para LinkedIn y redes, y otra limpia con un archivo SRT, para YouTube, Vimeo o la web."
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-subtitulos-ingles/inline.webp",
+        alt: "Grupo de personas en una videollamada internacional en un portátil",
+        width: 1200,
+        height: 900,
+        caption: "Un cliente internacional suele ver el vídeo en una llamada o con el sonido apagado.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes al subtitular en inglés" },
+      {
+        type: "list",
+        items: [
+          "Usar subtítulos automáticos sin revisar: confunden nombres, cifras y términos del sector.",
+          "Traducir palabra por palabra y dejar frases que suenan raras a un nativo.",
+          "Poner tres líneas de texto que tapan la imagen o el rótulo de un entrevistado.",
+          "No dejar sitio a los rótulos gráficos, que acaban pisando los subtítulos.",
+          "Entregar solo la versión con subtítulos quemados y no un SRT editable.",
+          "Olvidar revisar nombres propios, marcas y cifras con la empresa antes de publicar.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta subtitular un vídeo corporativo en inglés?",
+        answer:
+          "Para un vídeo de dos a cuatro minutos, entre 150 y 400 euros con traducción adaptada, ajuste de tiempos y entrega en dos formatos. Sube si hay terminología técnica o más de un idioma. Lo cierro tras ver el vídeo."
+      },
+      {
+        type: "faq",
+        question: "¿Es mejor subtitular o doblar el vídeo?",
+        answer:
+          "Subtitular es más rápido, más barato y mantiene la voz original, que da credibilidad. El doblaje o una locución en inglés tiene sentido en vídeos de producto o formación para un público que no quiere leer. Para un vídeo institucional, subtitular suele bastar."
+      },
+      {
+        type: "faq",
+        question: "¿Sirven los subtítulos automáticos de YouTube o LinkedIn?",
+        answer:
+          "Sirven como borrador, no como entrega final. Fallan con acentos, nombres propios y vocabulario técnico. Un error en una cifra o en el nombre de la marca resta credibilidad justo con quien menos te conoce."
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tarda la entrega?",
+        answer:
+          "Entre dos y cinco días laborables con una ronda de revisión, si el vídeo en español ya está cerrado. Subtitular antes de la edición final obliga a rehacer los tiempos, así que espero al montaje definitivo."
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes un vídeo y quieres que lo entienda un cliente fuera de España, escríbeme desde /contacto con el vídeo y el público al que va. Te propongo la versión subtitulada y un presupuesto cerrado. Puedes ver cómo trabajo en /servicios."
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {

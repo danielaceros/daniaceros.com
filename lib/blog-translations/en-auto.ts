@@ -4473,4 +4473,112 @@ export const enAuto: Record<string, BlogPostTranslation> = {
       },
     ],
   },
+  "video-corporativo-subtitulos-ingles": {
+    title: "English subtitles for a corporate video: how to do it well for international clients",
+    description:
+      "How to add English subtitles to a corporate video: translation, timing, format, design and delivery to reach clients, partners and investors outside Spain.",
+    readingTime: "5 min read",
+    category: "Guide",
+    tags: ["English subtitles", "corporate video", "international market", "video translation", "post-production", "videographer Madrid"],
+    keyword: "english subtitles corporate video",
+    excerpt:
+      "Adding English subtitles to your corporate video opens the door to clients and partners who do not speak Spanish. Here is how I do it: translation, timing, design and delivery.",
+    seoTitle: "English Subtitles for a Corporate Video | Dani Acero",
+    metaDescription:
+      "English subtitles for a corporate video: adapted translation, timing, design and delivery files for international clients and partners. By a Madrid filmmaker.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "To subtitle a corporate video in English you need an adapted translation, not a literal one, subtitles of one or two lines with a maximum of 42 characters per line, and a file you can toggle or burn into the video. A three-minute video usually carries about 40 subtitles and takes two to three days."
+      },
+      {
+        type: "paragraph",
+        text: "I work with Madrid companies that sell or raise investment outside Spain. They almost always ask for the same thing: a Spanish video that a German, British or American client can follow without remaking it. With well-made subtitles, that works."
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-subtitulos-ingles/hero.webp",
+        alt: "Video editing timeline on a dark screen where subtitles are adjusted",
+        width: 1920,
+        height: 1280,
+        caption: "Subtitles are adjusted on the timeline, shot by shot.",
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Why add English subtitles to a corporate video?" },
+      {
+        type: "paragraph",
+        text: "English is the working language of most international buyers. If your website, your investor deck or your company video only exist in Spanish, part of that audience drops out before they get to know you."
+      },
+      {
+        type: "paragraph",
+        text: "Subtitles also help when the video plays without sound, which is common on LinkedIn and in offices. That is one more practical reason, though not the main one: the point is that the person on the other side understands who you are and what you do."
+      },
+      { type: "heading", level: 2, text: "How do you subtitle a video in English properly?" },
+      { type: "heading", level: 3, text: "Adapted translation, not literal" },
+      {
+        type: "paragraph",
+        text: "I start from the Spanish transcript and translate it thinking about how an English-speaking professional would say it. Long sentences are split, Spanish turns of phrase are reworded and job titles stay in English. If the company has a translator it trusts, I prefer to review their text rather than replace it."
+      },
+      { type: "heading", level: 3, text: "Timing and length" },
+      {
+        type: "paragraph",
+        text: "Each subtitle stays on screen between 1.5 and 6 seconds, with one or two lines of a maximum of 42 characters. If a sentence is very fast, I condense it without losing the meaning. I adjust it in DaVinci Resolve and check it by watching the full video, not just the text file."
+      },
+      { type: "heading", level: 3, text: "Design and delivery format" },
+      {
+        type: "paragraph",
+        text: "I use a readable sans-serif font, white with a soft shadow or a semi-transparent box, always inside the safe area. I deliver two versions: one with burned-in subtitles for LinkedIn and social media, and a clean one with an SRT file for YouTube, Vimeo or your website."
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-subtitulos-ingles/inline.webp",
+        alt: "Group of people on an international video call on a laptop",
+        width: 1200,
+        height: 900,
+        caption: "An international client often watches the video on a call or with the sound off.",
+      },
+      { type: "heading", level: 2, text: "Common mistakes when subtitling in English" },
+      {
+        type: "list",
+        items: [
+          "Using automatic subtitles without checking: they confuse names, figures and industry terms.",
+          "Translating word by word and leaving sentences that sound odd to a native speaker.",
+          "Putting three lines of text over the image or an interviewee's name title.",
+          "Leaving no room for graphic lower thirds, which end up colliding with the subtitles.",
+          "Delivering only the burned-in version and no editable SRT.",
+          "Not checking proper names, brands and figures with the company before publishing.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "How much does it cost to add English subtitles to a corporate video?",
+        answer:
+          "For a video of two to four minutes, between 150 and 400 euros with adapted translation, timing and delivery in two formats. It goes up with technical terminology or more than one language. I quote a fixed price after seeing the video."
+      },
+      {
+        type: "faq",
+        question: "Is it better to subtitle or dub the video?",
+        answer:
+          "Subtitling is faster, cheaper and keeps the original voice, which adds credibility. Dubbing or an English voice-over makes sense for product or training videos aimed at an audience that does not want to read. For an institutional video, subtitles are usually enough."
+      },
+      {
+        type: "faq",
+        question: "Are YouTube or LinkedIn automatic captions good enough?",
+        answer:
+          "They work as a draft, not as a final delivery. They fail with accents, proper names and technical vocabulary. A mistake in a figure or in the brand name costs credibility with the people who know you least."
+      },
+      {
+        type: "faq",
+        question: "How long does delivery take?",
+        answer:
+          "Between two and five working days with one review round, if the Spanish video is already locked. Subtitling before the final edit means redoing the timing, so I wait for the final cut."
+      },
+      {
+        type: "paragraph",
+        text: "If you have a video and want a client outside Spain to understand it, write to me from /contacto with the video and the audience it is for. I will propose the subtitled version and a fixed quote. You can see how I work at /servicios."
+      },
+    ],
+  },
 }
