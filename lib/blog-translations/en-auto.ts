@@ -4581,4 +4581,119 @@ export const enAuto: Record<string, BlogPostTranslation> = {
       },
     ],
   },
+  "video-agradecimiento-clientes": {
+    title: "Thank-you video for clients: how to film one that feels genuine",
+    description:
+      "How to film a thank-you video for clients: length, script, who speaks, where to shoot and when to send it to strengthen the relationship and encourage repeat business.",
+    readingTime: "5 min read",
+    category: "Guide",
+    tags: [
+      "thank-you video",
+      "client retention",
+      "corporate video",
+      "client communication",
+      "personalised video",
+      "filmmaker Madrid",
+    ],
+    keyword: "client thank-you video",
+    excerpt:
+      "A client thank-you video works when it is short, specific and spoken by someone recognisable. Here is how I plan it: script, length, shoot and delivery.",
+    seoTitle: "Client Thank-You Video: A Practical Guide | Dani Acero",
+    metaDescription:
+      "Client thank-you video: ideal length, script, who should speak, how to film it and when to send it. A guide from a Madrid filmmaker.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "A client thank-you video should run 30 to 60 seconds, be spoken by a real person from the company and mention something specific: a project, a year working together, a result. It can be filmed in half an hour with one camera and a lavalier microphone.",
+      },
+      {
+        type: "paragraph",
+        text: "I work with companies in Madrid that want to close the year with their clients or thank them for a renewal without sending yet another generic email. What makes the difference is not the production, it is that you can tell someone sat down and said it.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-agradecimiento-clientes/hero.webp",
+        alt: "Two people shaking hands in front of a laptop",
+        width: 1920,
+        height: 1280,
+        caption: "A thank-you video strengthens a relationship that already exists.",
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "What is a client thank-you video for?" },
+      {
+        type: "paragraph",
+        text: "It reminds the client that there are people behind the contract. It is a cheap gesture compared with winning a new client, and it shows most in service companies, B2B and long projects, where the relationship counts as much as the price.",
+      },
+      {
+        type: "paragraph",
+        text: "It is not an ad. If you add an offer or a call to buy, you lose the effect. The goal is for the client to feel their account matters. Repeat business, if it comes, is a consequence.",
+      },
+      { type: "heading", level: 2, text: "How do you film a thank-you video well?" },
+      { type: "heading", level: 3, text: "Who speaks and what they say" },
+      {
+        type: "paragraph",
+        text: "The person the client works with, or the head of the company, speaks. Three sentences: thank you, the specific thing you are thankful for, and what comes next. No reading from paper; if needed I use a small teleprompter and we repeat until it sounds like a conversation.",
+      },
+      { type: "heading", level: 3, text: "Length and format" },
+      {
+        type: "paragraph",
+        text: "Between 30 and 60 seconds. For email or WhatsApp, horizontal 16:9. For LinkedIn or Instagram, I also cut a vertical 9:16 version from the same shoot. Always add subtitles: many people open it without sound.",
+      },
+      { type: "heading", level: 3, text: "Where to film and how to look good" },
+      {
+        type: "paragraph",
+        text: "In the company's own office, next to a window, with natural light and a tidy background. A Sony A7-type camera, a lavalier and 30 minutes are enough. For several personalised messages, book one two-hour session with the same light and background, and I edit each one separately.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-agradecimiento-clientes/inline.webp",
+        alt: "Camera on a tripod ready to film",
+        width: 1200,
+        height: 800,
+        caption: "One fixed camera, a lavalier and natural light are enough.",
+      },
+      { type: "heading", level: 2, text: "Common mistakes in a thank-you video" },
+      {
+        type: "list",
+        items: [
+          "Reading a generic text that would fit any client.",
+          "Stretching it to three minutes with the company history.",
+          "Adding a promotion or discount that turns the gesture into advertising.",
+          "Sending it weeks late, when the reason for the thanks is no longer fresh.",
+          "Using loud background music that covers the voice.",
+          "Forgetting subtitles and losing people who watch without sound.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "How much does a client thank-you video cost?",
+        answer:
+          "A single video, with a half-hour shoot and a simple edit, runs between 300 and 600 euros. If you record several personalised messages in one session, the cost per video drops. I quote once I know how many and for whom.",
+      },
+      {
+        type: "faq",
+        question: "When is the best time to send it?",
+        answer:
+          "Close to the moment that prompts the thanks: the renewal, the end of a project or the year-end. In Madrid many companies send it in the first half of December, before inboxes fill up with greetings.",
+      },
+      {
+        type: "faq",
+        question: "One video for everyone or one per client?",
+        answer:
+          "A general one serves the whole client list, but a personalised one with the client's name and project has far more impact. Record individual versions for key clients and one shared version for the rest.",
+      },
+      {
+        type: "faq",
+        question: "How do I send it so people actually watch it?",
+        answer:
+          "With a link in the body of the email, a thumbnail showing a face and a subject line with the client's name. Avoid attaching the file: it is heavy and many filters block it.",
+      },
+      {
+        type: "paragraph",
+        text: "If you want to thank your clients with a video that feels like yours, write to me from /contacto with how many messages you need and for whom. I will propose the shoot plan and a fixed quote. You can see how I work at /servicios.",
+      },
+    ],
+  },
 }

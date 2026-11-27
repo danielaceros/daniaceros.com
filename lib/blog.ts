@@ -19377,6 +19377,117 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-agradecimiento-clientes",
+    title: "Vídeo de agradecimiento a clientes: cómo grabarlo para que se note que es de verdad",
+    description:
+      "Cómo grabar un vídeo de agradecimiento a clientes: duración, guion, quién habla, dónde grabar y cuándo enviarlo para reforzar la relación y favorecer la recompra.",
+    publishedAt: "2026-11-27",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["vídeo de agradecimiento", "fidelización de clientes", "vídeo corporativo", "comunicación con clientes", "vídeo personalizado", "filmmaker Madrid"],
+    keyword: "vídeo de agradecimiento a clientes",
+    intent: "informacional",
+    excerpt:
+      "Un vídeo de agradecimiento a clientes funciona cuando es corto, concreto y lo dice alguien reconocible. Te cuento cómo lo planteo: guion, duración, rodaje y envío.",
+    seoTitle: "Vídeo de agradecimiento a clientes: guía | Daniel Acero",
+    metaDescription:
+      "Vídeo de agradecimiento a clientes: duración ideal, guion, quién debe hablar, cómo grabarlo y cuándo enviarlo. Guía de un filmmaker de Madrid.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "Un vídeo de agradecimiento a clientes debe durar entre 30 y 60 segundos, lo debe decir una persona real de la empresa y tiene que mencionar algo concreto: un proyecto, un año de trabajo juntos, un resultado. Se graba en media hora con una cámara y un micrófono de solapa."
+      },
+      {
+        type: "paragraph",
+        text: "Trabajo con empresas de Madrid que quieren cerrar el año con sus clientes o agradecer una renovación sin mandar otro email genérico. Lo que marca la diferencia no es la producción, es que se note que alguien se ha sentado a decirlo."
+      },
+      {
+        type: "image",
+        src: "/blog/video-agradecimiento-clientes/hero.webp",
+        alt: "Dos personas se dan la mano delante de un portátil",
+        width: 1920,
+        height: 1280,
+        caption: "Un agradecimiento en vídeo refuerza la relación que ya existe con el cliente.",
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Para qué sirve un vídeo de agradecimiento a clientes" },
+      {
+        type: "paragraph",
+        text: "Sirve para recordar al cliente que detrás del contrato hay personas. Es un gesto barato frente a captar un cliente nuevo, y se nota sobre todo en empresas de servicios, B2B y proyectos largos, donde la relación cuenta tanto como el precio."
+      },
+      {
+        type: "paragraph",
+        text: "No es un anuncio. Si metes una oferta o un llamamiento a comprar, pierdes el efecto. El objetivo es que el cliente piense que su cuenta importa. La recompra, si llega, es consecuencia."
+      },
+      { type: "heading", level: 2, text: "Cómo grabar un vídeo de agradecimiento bien" },
+      { type: "heading", level: 3, text: "Quién habla y qué dice" },
+      {
+        type: "paragraph",
+        text: "Habla la persona con la que el cliente trabaja o quien dirige la empresa. Tres frases: gracias, lo concreto que agradeces y qué viene después. Sin leer de un papel; si hace falta, uso un teleprompter pequeño y repetimos hasta que suene a conversación."
+      },
+      { type: "heading", level: 3, text: "Duración y formato" },
+      {
+        type: "paragraph",
+        text: "Entre 30 y 60 segundos. Para un email o WhatsApp, formato horizontal 16:9. Para LinkedIn o Instagram, hago también una versión vertical 9:16 del mismo rodaje. Subtítulos siempre: mucha gente lo abre sin sonido."
+      },
+      { type: "heading", level: 3, text: "Dónde grabar y cómo cuidar la imagen" },
+      {
+        type: "paragraph",
+        text: "En la propia oficina, junto a una ventana, con luz natural y un fondo ordenado. Una cámara tipo Sony A7, una solapa y 30 minutos bastan. Si son varios mensajes personalizados, graba una sesión de dos horas con la misma luz y el mismo fondo, y edito cada uno por separado."
+      },
+      {
+        type: "image",
+        src: "/blog/video-agradecimiento-clientes/inline.webp",
+        alt: "Cámara sobre un trípode lista para grabar",
+        width: 1200,
+        height: 800,
+        caption: "Una cámara fija, una solapa y luz natural son suficientes.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes en un vídeo de agradecimiento" },
+      {
+        type: "list",
+        items: [
+          "Leer un texto genérico que valdría para cualquier cliente.",
+          "Alargarlo a tres minutos con la historia de la empresa.",
+          "Meter una promoción o un descuento que convierte el gesto en publicidad.",
+          "Enviarlo semanas tarde, cuando el motivo del agradecimiento ya no está fresco.",
+          "Usar música de fondo muy alta que tapa la voz.",
+          "Olvidar los subtítulos y perder a quien lo ve sin sonido.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta un vídeo de agradecimiento a clientes?",
+        answer:
+          "Un vídeo único, con rodaje de media hora y edición sencilla, ronda entre 300 y 600 euros. Si son varios mensajes personalizados en una misma sesión, el coste por vídeo baja. Lo cierro tras entender cuántos y para quién."
+      },
+      {
+        type: "faq",
+        question: "¿Cuándo es mejor enviarlo?",
+        answer:
+          "Cerca del momento que motiva el agradecimiento: la renovación, el final de un proyecto o el cierre de año. En Madrid muchas empresas lo mandan en la primera quincena de diciembre, antes de que los buzones se llenen de felicitaciones."
+      },
+      {
+        type: "faq",
+        question: "¿Mejor un vídeo para todos o uno por cliente?",
+        answer:
+          "Uno general sirve para toda la cartera, pero uno personalizado con el nombre y el proyecto del cliente tiene mucho más impacto. Para los clientes clave, graba versiones individuales; para el resto, uno común."
+      },
+      {
+        type: "faq",
+        question: "¿Cómo lo envío para que lo vean?",
+        answer:
+          "Con un enlace en el cuerpo del email, con una miniatura que muestre una cara, y un asunto con el nombre del cliente. Evita adjuntar el archivo: pesa y muchos filtros lo bloquean."
+      },
+      {
+        type: "paragraph",
+        text: "Si quieres agradecer a tus clientes con un vídeo que se sienta propio, escríbeme desde /contacto con cuántos mensajes necesitas y para quién. Te propongo el plan de rodaje y un presupuesto cerrado. Puedes ver cómo trabajo en /servicios."
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {

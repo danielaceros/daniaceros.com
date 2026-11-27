@@ -222,6 +222,7 @@ export const EN_BLOG_SLUGS: Record<string, string> = {
   "video-tutorial-clientes-postventa": "customer-tutorial-videos-madrid",
   "video-visita-instalaciones-empresa": "company-facility-tour-video-madrid",
   "video-corporativo-subtitulos-ingles": "english-subtitles-corporate-video",
+  "video-agradecimiento-clientes": "client-thank-you-video-madrid",
 }
 
 const EN_PATH_TO_ES: Record<string, string> = Object.fromEntries([

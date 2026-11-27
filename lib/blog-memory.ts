@@ -1256,6 +1256,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto (tema público extranjero, rotación 1/3, lista agotada, tema nuevo; Search Console no usado, token invalid_grant). Imágenes Unsplash.",
   },
+  {
+    slug: "video-agradecimiento-clientes",
+    keyword: "vídeo de agradecimiento a clientes",
+    intent: "informacional",
+    createdAt: "2026-11-27",
+    status: "published",
+    notes: "Auto-generado por blog-auto (fallback evergreen, temas de la lista agotados, tema nuevo; Search Console no usado, token invalid_grant). Imágenes Unsplash.",
+  },
 ]
 
 export function findSimilarTopic(term: string) {
