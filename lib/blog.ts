@@ -19488,6 +19488,122 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-personal-branding-directivos-linkedin",
+    title: "Vídeo de personal branding para directivos en LinkedIn: cómo grabarlo sin que parezca postureo",
+    description:
+      "Cómo grabar vídeo de personal branding para directivos en LinkedIn: qué contar, duración, formato vertical, dónde grabar y cada cuánto publicar sin que suene a anuncio.",
+    publishedAt: "2026-11-28",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["personal branding", "LinkedIn", "vídeo para directivos", "vídeo corporativo", "marca personal", "filmmaker Madrid"],
+    keyword: "vídeo de personal branding para directivos",
+    intent: "informacional",
+    excerpt:
+      "El vídeo de personal branding de un directivo funciona cuando es corto, habla de algo concreto de su trabajo y se graba en lote. Te cuento cómo lo planteo en una mañana de rodaje.",
+    seoTitle: "Vídeo de personal branding para directivos | Daniel Acero",
+    metaDescription:
+      "Vídeo de personal branding para directivos en LinkedIn: qué contar, duración, formato, dónde grabar y cómo producir un mes de piezas en una mañana.",
+    heroKicker: "Blog / Guía",
+    body: [
+      {
+        type: "paragraph",
+        text: "El vídeo de personal branding de un directivo debe durar entre 45 y 90 segundos, hablar de un problema concreto de su sector y grabarse en vertical con subtítulos. Lo eficiente es grabar entre 6 y 8 piezas en una sola mañana de tres horas y publicarlas a lo largo de un mes."
+      },
+      {
+        type: "paragraph",
+        text: "Trabajo con directivos y fundadores en Madrid que saben que LinkedIn les abre puertas, pero no tienen tiempo para grabarse cada semana. La solución no es improvisar con el móvil: es preparar los temas antes y concentrar el rodaje en un día."
+      },
+      {
+        type: "image",
+        src: "/blog/video-personal-branding-directivos-linkedin/hero.webp",
+        alt: "Retrato de una directiva sonriendo en su oficina mirando a cámara",
+        width: 1920,
+        height: 1080,
+        caption: "Un directivo que se muestra natural transmite más confianza que uno que lee un texto.",
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Para qué sirve el vídeo de personal branding de un directivo" },
+      {
+        type: "paragraph",
+        text: "Sirve para que clientes, candidatos e inversores pongan cara y criterio a la persona que dirige la empresa antes de la primera reunión. En ventas B2B largas, donde se decide entre dos o tres proveedores, que el decisor ya te haya visto explicar algo con claridad pesa."
+      },
+      {
+        type: "paragraph",
+        text: "No es un vídeo corporativo ni un anuncio. No presenta la empresa, presenta una forma de pensar. Si cada pieza termina vendiendo un servicio, la audiencia lo detecta en tres segundos y deja de verlo."
+      },
+      { type: "heading", level: 2, text: "Cómo grabar vídeo de personal branding para LinkedIn" },
+      { type: "heading", level: 3, text: "Qué contar: un tema por vídeo" },
+      {
+        type: "paragraph",
+        text: "Cada pieza responde una pregunta que el directivo oye a menudo: un error típico de sus clientes, una decisión que tomó y por qué, una opinión sobre su sector. Antes del rodaje saco con él una lista de 10 preguntas reales y elegimos las 6 u 8 mejores. Un solo punto por vídeo."
+      },
+      { type: "heading", level: 3, text: "Duración y formato" },
+      {
+        type: "paragraph",
+        text: "Entre 45 y 90 segundos. El formato vertical 9:16 se ve mejor en el móvil, que es donde se consume LinkedIn, y sirve también para Instagram y YouTube Shorts. Subtítulos siempre y en el primer plano, una frase que explique de qué va. Más de dos minutos solo si el tema lo pide."
+      },
+      { type: "heading", level: 3, text: "Dónde grabar y con qué equipo" },
+      {
+        type: "paragraph",
+        text: "En su propio despacho o en una sala con ventana, con luz natural suavizada y un fondo con algo de profundidad: estanterías, una pared neutra, nunca un fondo blanco liso. Una cámara tipo Sony A7, una solapa y un teleprompter pequeño por si hace falta. Tres horas de rodaje dan para 6 a 8 piezas con dos o tres cambios de camisa o chaqueta para que parezcan semanas distintas."
+      },
+      {
+        type: "image",
+        src: "/blog/video-personal-branding-directivos-linkedin/inline.webp",
+        alt: "Cámara sobre un trípode preparada para grabar",
+        width: 1200,
+        height: 800,
+        caption: "Una cámara fija y luz controlada permiten grabar varias piezas seguidas.",
+      },
+      { type: "heading", level: 3, text: "Cada cuánto publicar" },
+      {
+        type: "paragraph",
+        text: "Una pieza por semana es un ritmo sostenible. Es mejor publicar cuatro vídeos al mes durante un año que doce en un mes y desaparecer. Con una mañana de rodaje al trimestre se cubre el calendario y el directivo no tiene que volver a pensar en cámaras."
+      },
+      { type: "heading", level: 2, text: "Errores comunes en el vídeo de personal branding" },
+      {
+        type: "list",
+        items: [
+          "Leer un guion palabra por palabra y sonar a nota de prensa.",
+          "Hablar de la empresa en lugar de un problema que le importa al cliente.",
+          "Grabar en un espacio ruidoso o con luz de techo dura.",
+          "Publicar sin subtítulos, cuando mucha gente ve LinkedIn sin sonido.",
+          "Hacer vídeos de cinco minutos sin cortes ni ritmo.",
+          "Grabar una pieza suelta y dejar el perfil abandonado semanas.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta un vídeo de personal branding para un directivo?",
+        answer:
+          "Una mañana de rodaje con edición de 6 a 8 piezas verticales con subtítulos suele moverse entre 900 y 1.800 euros, según la edición y las versiones. Lo cierro tras hablar de cuántas piezas y qué formatos necesitas."
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta un guion cerrado?",
+        answer:
+          "No, hace falta un esquema de tres ideas por pieza. Un guion palabra por palabra suena forzado. Con teleprompter para las ideas clave y margen para hablar con naturalidad el resultado es mucho mejor."
+      },
+      {
+        type: "faq",
+        question: "¿Vertical u horizontal para LinkedIn?",
+        answer:
+          "Vertical 9:16 para el feed móvil. Si además quieres una pieza para la web, la grabo con encuadre pensado para extraer también una versión horizontal 16:9 del mismo plano."
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo necesita dedicar el directivo?",
+        answer:
+          "Una hora para preparar los temas con antelación y tres horas de rodaje. Después solo revisa las piezas editadas, normalmente en dos rondas cortas."
+      },
+      {
+        type: "paragraph",
+        text: "Si quieres que tu perfil de LinkedIn tenga vídeo con criterio y sin dedicarle una tarde a la semana, escríbeme desde /contacto con tu sector y cuántas piezas necesitas. Te propongo el plan de rodaje y un presupuesto cerrado. Puedes ver cómo trabajo en /servicios."
+      },
+    ],
+  },
 ]
 
 export function getAllPosts() {

@@ -4696,4 +4696,124 @@ export const enAuto: Record<string, BlogPostTranslation> = {
       },
     ],
   },
+  "video-personal-branding-directivos-linkedin": {
+    title: "Personal branding video for executives on LinkedIn: how to film it without looking staged",
+    description:
+      "How to film personal branding video for executives on LinkedIn: what to say, length, vertical format, where to shoot and how often to post without sounding like an ad.",
+    readingTime: "5 min read",
+    category: "Guide",
+    tags: [
+      "personal branding",
+      "LinkedIn",
+      "executive video",
+      "corporate video",
+      "personal brand",
+      "filmmaker Madrid",
+    ],
+    keyword: "executive personal branding video",
+    excerpt:
+      "An executive personal branding video works when it is short, talks about something specific from their work and is filmed in batches. Here is how I plan it in a single morning shoot.",
+    seoTitle: "Executive Personal Branding Video for LinkedIn | Dani Acero",
+    metaDescription:
+      "Executive personal branding video for LinkedIn: what to say, length, format, where to shoot and how to produce a month of pieces in one morning.",
+    heroKicker: "Blog / Guide",
+    body: [
+      {
+        type: "paragraph",
+        text: "An executive personal branding video should run 45 to 90 seconds, talk about one concrete problem in their sector and be filmed vertically with subtitles. The efficient way is to film 6 to 8 pieces in a single three-hour morning and publish them over a month.",
+      },
+      {
+        type: "paragraph",
+        text: "I work with executives and founders in Madrid who know LinkedIn opens doors but have no time to film themselves every week. The answer is not to improvise on a phone: it is to prepare the topics beforehand and concentrate the shoot into one day.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-personal-branding-directivos-linkedin/hero.webp",
+        alt: "Portrait of a smiling businesswoman in her office looking at the camera",
+        width: 1920,
+        height: 1080,
+        caption: "An executive who looks natural builds more trust than one reading a script.",
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "What is an executive personal branding video for?" },
+      {
+        type: "paragraph",
+        text: "It lets clients, candidates and investors put a face and a point of view to the person running the company before the first meeting. In long B2B sales, where the choice is between two or three suppliers, it counts that the decision-maker has already watched you explain something clearly.",
+      },
+      {
+        type: "paragraph",
+        text: "It is not a corporate video or an ad. It does not present the company, it presents a way of thinking. If every piece ends by selling a service, the audience spots it in three seconds and stops watching.",
+      },
+      { type: "heading", level: 2, text: "How do you film personal branding video for LinkedIn?" },
+      { type: "heading", level: 3, text: "What to say: one topic per video" },
+      {
+        type: "paragraph",
+        text: "Each piece answers a question the executive hears often: a typical client mistake, a decision they made and why, an opinion on their sector. Before the shoot I draw up a list of 10 real questions with them and we pick the best 6 or 8. One point per video.",
+      },
+      { type: "heading", level: 3, text: "Length and format" },
+      {
+        type: "paragraph",
+        text: "Between 45 and 90 seconds. Vertical 9:16 looks best on a phone, which is where LinkedIn is consumed, and also works for Instagram and YouTube Shorts. Always add subtitles, and put a line in the first shot that says what the video is about. Go beyond two minutes only if the topic needs it.",
+      },
+      { type: "heading", level: 3, text: "Where to film and with what gear" },
+      {
+        type: "paragraph",
+        text: "In their own office or a room with a window, with softened natural light and a background with some depth: bookshelves, a neutral wall, never a flat white backdrop. A Sony A7-type camera, a lavalier and a small teleprompter if needed. Three hours of shooting gives 6 to 8 pieces, with two or three changes of shirt or jacket so they look like different weeks.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-personal-branding-directivos-linkedin/inline.webp",
+        alt: "Camera on a tripod ready to film",
+        width: 1200,
+        height: 800,
+        caption: "A fixed camera and controlled light let you film several pieces back to back.",
+      },
+      { type: "heading", level: 3, text: "How often to post" },
+      {
+        type: "paragraph",
+        text: "One piece a week is a sustainable pace. It is better to post four videos a month for a year than twelve in one month and disappear. One morning shoot per quarter covers the calendar and the executive never has to think about cameras again.",
+      },
+      { type: "heading", level: 2, text: "Common mistakes in personal branding video" },
+      {
+        type: "list",
+        items: [
+          "Reading a script word for word and sounding like a press release.",
+          "Talking about the company instead of a problem the client cares about.",
+          "Filming in a noisy room or under harsh ceiling light.",
+          "Posting without subtitles, when many people watch LinkedIn on mute.",
+          "Making five-minute videos with no cuts or rhythm.",
+          "Recording one loose piece and leaving the profile idle for weeks.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Frequently asked questions" },
+      {
+        type: "faq",
+        question: "How much does an executive personal branding video cost?",
+        answer:
+          "A morning shoot with editing of 6 to 8 vertical subtitled pieces usually runs between 900 and 1,800 euros, depending on editing and versions. I quote once we have talked about how many pieces and which formats you need.",
+      },
+      {
+        type: "faq",
+        question: "Do you need a fixed script?",
+        answer:
+          "No, you need an outline of three ideas per piece. A word-for-word script sounds forced. With a teleprompter for the key ideas and room to speak naturally, the result is much better.",
+      },
+      {
+        type: "faq",
+        question: "Vertical or horizontal for LinkedIn?",
+        answer:
+          "Vertical 9:16 for the mobile feed. If you also want a piece for your website, I frame the shot so a horizontal 16:9 version can be extracted from the same take.",
+      },
+      {
+        type: "faq",
+        question: "How much time does the executive need to give?",
+        answer:
+          "One hour to prepare the topics beforehand and three hours of shooting. After that they only review the edited pieces, usually in two short rounds.",
+      },
+      {
+        type: "paragraph",
+        text: "If you want video on your LinkedIn profile with a point of view, without giving up an afternoon every week, write to me from /contacto with your sector and how many pieces you need. I will propose the shoot plan and a fixed quote. You can see how I work at /servicios.",
+      },
+    ],
+  },
 }
